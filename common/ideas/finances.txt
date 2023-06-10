@@ -12,6 +12,8 @@ ideas = {
 				war_support_factor = 0.05
 				production_speed_arms_factory_factor = 0.1
 				production_speed_dockyard_factor = 0.1
+				production_speed_industrial_complex_factor = -0.1
+				political_power_gain = -0.1
 			}
 			
 			cost = 150
@@ -36,10 +38,13 @@ ideas = {
 
 		
 			modifier = {
+				political_power_gain = 0.1
 				consumer_goods_factor = 0.02
 				production_speed_infrastructure_factor = 0.015
 				production_speed_industrial_complex_factor = 0.1
 				stability_factor = 0.05
+				production_speed_arms_factory_factor = -0.1 
+				mobilization_speed = -0.20
 			}
 			
 			cost = 150
@@ -72,6 +77,7 @@ ideas = {
 				local_resources_factor = 0.05
 				production_speed_buildings_factor = 0.05
 				local_building_slots_factor = 0.2
+				political_power_gain = -0.15
 			}
 
 			cost = 150
@@ -94,9 +100,10 @@ ideas = {
 			
 			modifier = {
 				research_speed_factor = 0.1
-				consumer_goods_factor = 0.08
+				consumer_goods_factor = 0.05
 				production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.05
+				political_power_gain = -0.2
 			}
 
 			cost = 150
