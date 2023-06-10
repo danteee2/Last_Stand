@@ -1754,6 +1754,7 @@ formable_nations_chinese_empire_category = {
 				745 = { add_core_of = ROOT }
 				743 = { add_core_of = ROOT }
 				749 = { add_core_of = ROOT }
+				754 = { add_core_of = ROOT }
 			}
 			524 = { add_core_of = ROOT }
 			655 = { add_core_of = ROOT }
