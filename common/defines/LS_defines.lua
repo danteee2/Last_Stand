@@ -201,8 +201,6 @@ NDefines.NMilitary.NEW_COMMANDER_RANDOM_SKILL_CHANCES = {  -- chances to give a 
 NDefines.NMilitary.NEW_NAVY_LEADER_RANDOM_SKILL_CHANCES = { -- chances to give a random stat skill point for a new admiral
 }
 
-NDefines.NMilitary.ATTRITION_DAMAGE_ORG = 1000000-- TESTING TAKE OUT
-
 NDefines.NAir.SUPPLY_NEED_FACTOR = 0.22 -- 0.28
 
 NDefines.NAir.AIR_WING_XP_LEVELS = {20, 40, 60, 80, 100, 140, 180, 220, 260, 300, 390, 480, 570, 660, 750, 780, 810, 840, 870, 900}
