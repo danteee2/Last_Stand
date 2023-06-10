@@ -29,6 +29,9 @@ NDefines.NTechnology.BASE_TECH_COST = 80					-- Base cost for a tech. multiplied
 ----------------------------------
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 50
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 50
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0
+NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 2000
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 2000
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 2000
