@@ -103,49 +103,7 @@ ideas = {
    			}
 		}
 		
-		air_production_no = {
-
-		available = {
-				
-			}
-			equipment_bonus = {
-				fighter = {
-					instant = yes
-					build_cost_ic = -9.99
-				}
-				heavy_fighter = {
-					instant = yes
-					build_cost_ic = -9.99
-				}
-				transport_plane = {
-					instant = yes
-					build_cost_ic = -9.99
-				}
-				scout_plane = {
-					instant = yes
-					build_cost_ic = -9.99
-				}
-				tactical_bomber = {
-					instant = yes
-					build_cost_ic = -9.99
-				}
-				strategic_bomber = {
-					instant = yes
-					build_cost_ic = -9.99
-				}
-				cas = {
-					instant = yes
-					build_cost_ic = -9.99
-				}
-				naval_bomber = {
-					instant = yes
-					build_cost_ic = -9.99
-				}
-				interceptor = {
-					instant = yes
-					build_cost_ic = -9.99
-				}
-				
+		
 			}
 			modifier = {
 				political_power_factor = 0.2
