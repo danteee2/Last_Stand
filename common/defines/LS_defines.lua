@@ -29,9 +29,6 @@ NDefines.NTechnology.BASE_TECH_COST = 80					-- Base cost for a tech. multiplied
 ----------------------------------
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 50
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 50
-NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0
-NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0
-NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 2000
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 2000
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 2000
@@ -110,6 +107,10 @@ NDefines.NPolitics.NAVY_LEADER_MAX_COST = 75
 
 NDefines.NMilitary.SUPPLY_GRACE = 84 -- 72 3 days as they say and remain hungry for another 12
 
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0
+NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0
+
 NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 5
 NDefines.NMilitary.UNIT_EXP_LEVELS = {0.02, 0.04, 0.06, 0.08, 0.1, 0.14, 0.18, 0.22, 0.26, 0.3, 0.39, 0.48, 0.57, 0.66, 0.75, 0.78, 0.81, 0.84, 0.87, 0.9}
 NDefines.NMilitary.ARMY_EXP_BASE_LEVEL = 5
@@ -122,9 +123,9 @@ NDefines.NMilitary.MAX_AIR_EXPERIENCE = 999  -- Max air experience a country can
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.03
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 32
 NDefines.NMilitary.RECON_SKILL_IMPACT = 6
-NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 8 -- Base cost to unlock a regiment slot
-NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 4 -- Base cost to change a regiment column.
-NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 10
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0 -- Base cost to unlock a regiment slot
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0 -- Base cost to change a regiment column.
+NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0
 
 NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.7
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.000175
@@ -147,7 +148,6 @@ NDefines.NMilitary.PLANNING_DECAY = 0.04
 NDefines.NMilitary.PLANNING_GAIN = 0.08
 
 -- PLAN_SPREAD_ATTACK_WEIGHT = 6.0
-NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 4	-- was 4 before... - Fantom
 --This is a Trace to make sure mod is taken into account
 
 NDefines.NMilitary.PLAN_PROVINCE_BASE_IMPORTANCE = 2.0
