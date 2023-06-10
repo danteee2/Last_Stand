@@ -1,0 +1,95 @@
+prca_ai_campaings_enabled = {
+	name = "PRCA_RULE_AI_CAMPAINGS_ENABLED"
+	group = "PRCA_RULE_GROUP_GENERAL"
+	default = {
+		name = "ALLOWED"
+		text = RULE_OPTION_ALLOWED
+		desc = "PRCA_RULE_AI_CAMPAINGS_ENABLED_ALLOWED_DESC"
+	}
+	option = {
+		name = "BLOCKED"
+		text = RULE_OPTION_BLOCKED
+		desc = "PRCA_RULE_AI_CAMPAINGS_ENABLED_BLOCKED_DESC"
+    allow_achievements = yes
+	}
+}
+
+prca_ai_leaflets_enabled = {
+	name = "PRCA_RULE_AI_LEAFLETS_ENABLED"
+	group = "PRCA_RULE_GROUP_GENERAL"
+  default = {
+		name = "ALLOWED"
+		text = RULE_OPTION_ALLOWED
+		desc = "PRCA_RULE_AI_LEAFLETS_ENABLED_ALLOWED_DESC"
+	}
+	option = {
+		name = "BLOCKED"
+		text = RULE_OPTION_BLOCKED
+		desc = "PRCA_RULE_AI_LEAFLETS_ENABLED_BLOCKED_DESC"
+    allow_achievements = yes
+	}
+}
+
+prca_ai_activate_leaflets_enabled = {
+	name = "PRCA_RULE_AI_ACTIVATE_LEAFLETS_ENABLED"
+	group = "PRCA_RULE_GROUP_GENERAL"
+  default = {
+		name = "ALLOWED"
+		text = RULE_OPTION_ALLOWED
+		desc = "PRCA_RULE_AI_ACTIVATE_LEAFLETS_ENABLED_ALLOWED_DESC"
+	}
+	option = {
+		name = "BLOCKED"
+		text = RULE_OPTION_BLOCKED
+		desc = "PRCA_RULE_AI_ACTIVATE_LEAFLETS_ENABLED_BLOCKED_DESC"
+    allow_achievements = yes
+	}
+}
+
+prca_sov_campaings_enabled = {
+	name = "PRCA_RULE_SOV_CAMPAINGS_ENABLED"
+	group = "PRCA_RULE_GROUP_GENERAL"
+	default = {
+		name = "ALLOWED"
+		text = RULE_OPTION_ALLOWED
+		desc = "PRCA_RULE_SOV_CAMPAINGS_ENABLED_ALLOWED_DESC"
+	}
+	option = {
+		name = "BLOCKED"
+		text = RULE_OPTION_BLOCKED
+		desc = "PRCA_RULE_SOV_CAMPAINGS_ENABLED_BLOCKED_DESC"
+    	allow_achievements = yes
+	}
+}
+
+prca_sov_leaflets_enabled = {
+	name = "PRCA_RULE_SOV_LEAFLETS_ENABLED"
+	group = "PRCA_RULE_GROUP_GENERAL"
+  	default = {
+		name = "ALLOWED"
+		text = RULE_OPTION_ALLOWED
+		desc = "PRCA_RULE_SOV_LEAFLETS_ENABLED_ALLOWED_DESC"
+	}
+	option = {
+		name = "BLOCKED"
+		text = RULE_OPTION_BLOCKED
+		desc = "PRCA_RULE_SOV_LEAFLETS_ENABLED_BLOCKED_DESC"
+    	allow_achievements = yes
+	}
+}
+
+prca_sov_activate_leaflets_enabled = {
+	name = "PRCA_RULE_SOV_ACTIVATE_LEAFLETS_ENABLED"
+	group = "PRCA_RULE_GROUP_GENERAL"
+  	default = {
+		name = "ALLOWED"
+		text = RULE_OPTION_ALLOWED
+		desc = "PRCA_RULE_SOV_ACTIVATE_LEAFLETS_ENABLED_ALLOWED_DESC"
+	}
+	option = {
+		name = "BLOCKED"
+		text = RULE_OPTION_BLOCKED
+		desc = "PRCA_RULE_SOV_ACTIVATE_LEAFLETS_ENABLED_BLOCKED_DESC"
+    	allow_achievements = yes
+	}
+}
