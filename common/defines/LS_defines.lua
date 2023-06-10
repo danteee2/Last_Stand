@@ -62,6 +62,10 @@ NDefines.NMilitary.NUKE_MAX_DAMAGE_PERCENT = 1.2;
 NDefines.NMilitary.NUKE_DELAY_HOURS = 12;
 NDefines.NCountry.NUCLEAR_BOMB_DROP_UNITY_EFFECT_MAX_INFRA = 0.35;
 NDefines.NCountry.NUCLEAR_BOMB_DROP_UNITY_EFFECT_MAX_VP = 1;
+
+
+-- R56 DEFINES START HERE
+	
 	
 NDefines.NDiplomacy.LICENSE_ACCEPTANCE_PUPPET_BASE = 20			-- Acceptance modifier for puppets requesting production licenses.
 NDefines.NDiplomacy.LICENSE_ACCEPTANCE_TECH_DIFFERENCE = 2 		-- Acceptance modifier for each year of technology difference.
@@ -196,8 +200,6 @@ NDefines.NMilitary.NEW_COMMANDER_RANDOM_SKILL_CHANCES = {  -- chances to give a 
 
 NDefines.NMilitary.NEW_NAVY_LEADER_RANDOM_SKILL_CHANCES = { -- chances to give a random stat skill point for a new admiral
 }
-
-NDDefines.NMilitary.ATTRITION_DAMAGE_ORG = 1000000-- TESTING TAKE OUT
 
 NDefines.NAir.SUPPLY_NEED_FACTOR = 0.22 -- 0.28
 
