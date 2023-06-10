@@ -37,9 +37,6 @@ ideas = {
 		#State Capitalism
 		nationalization_partial = {
 		   available = {
-				NOT = {
-					has_government = communism
-				  }
 				}
 			
 			
