@@ -14,7 +14,7 @@ ideas = {
 			}
 			
 			modifier = {
-				add_stability = 5
+				addstability = 5
 				political_power_factor = -0.2
 			    resistance_damage_to_garrison = 0.25
 				conscription_factor = 0.2
