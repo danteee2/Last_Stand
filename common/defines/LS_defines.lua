@@ -197,7 +197,7 @@ NDefines.NMilitary.NEW_COMMANDER_RANDOM_SKILL_CHANCES = {  -- chances to give a 
 NDefines.NMilitary.NEW_NAVY_LEADER_RANDOM_SKILL_CHANCES = { -- chances to give a random stat skill point for a new admiral
 }
 
-NDDefines.NMilitary.ATTRITION_DAMAGE_ORG = 1000000-- TESTING TAKE OUT
+NDefines.NMilitary.ATTRITION_DAMAGE_ORG = 1000000-- TESTING TAKE OUT
 
 NDefines.NAir.SUPPLY_NEED_FACTOR = 0.22 -- 0.28
 
