@@ -29,9 +29,6 @@ NDefines.NTechnology.BASE_TECH_COST = 80					-- Base cost for a tech. multiplied
 ----------------------------------
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 50
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 50
-NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0
-NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0
-NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 2000
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 2000
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 2000
@@ -44,7 +41,6 @@ NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.03
 NDefines.NMilitary.NUKE_MIN_DAMAGE_PERCENT = 0.9
 NDefines.NMilitary.NUKE_MAX_DAMAGE_PERCENT = 1.2
 NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.15
---NDefines.NMilitary.MAX_DIVISION_SUPPORT_WIDTH = 2
 ----------------------------------
 NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.2
 NDefines.NAir.AIR_WING_XP_LEVELS = { 20, 40, 60, 80, 100, 140, 180, 220, 260, 300, 390, 480, 570, 660, 750, 780, 810, 840, 870, 900 }
