@@ -1644,6 +1644,7 @@ formable_nations_chinese_empire_category = {
 
 						325 = { is_controlled_by = ROOT }
 						747 = { is_controlled_by = ROOT }
+
 					}
 					AND = {
 						has_global_flag = debug_mode
@@ -1730,6 +1731,29 @@ formable_nations_chinese_empire_category = {
 				598 = { add_core_of = ROOT }
 				757 = { add_core_of = ROOT }
 				758 = { add_core_of = ROOT }
+				759 = { add_core_of = ROOT }
+				760 = { add_core_of = ROOT }
+				755 = { add_core_of = ROOT }
+				756 = { add_core_of = ROOT }
+				753 = { add_core_of = ROOT }
+				752 = { add_core_of = ROOT }
+				751 = { add_core_of = ROOT }
+				747 = { add_core_of = ROOT }
+				748 = { add_core_of = ROOT }
+				750 = { add_core_of = ROOT }
+				744 = { add_core_of = ROOT }
+				746 = { add_core_of = ROOT }
+				946 = { add_core_of = ROOT }
+				947 = { add_core_of = ROOT }
+				761 = { add_core_of = ROOT }
+				945 = { add_core_of = ROOT }
+				944 = { add_core_of = ROOT }
+				943 = { add_core_of = ROOT }
+				941 = { add_core_of = ROOT }
+				942 = { add_core_of = ROOT }
+				745 = { add_core_of = ROOT }
+				743 = { add_core_of = ROOT }
+				749 = { add_core_of = ROOT }
 			}
 			524 = { add_core_of = ROOT }
 			655 = { add_core_of = ROOT }
