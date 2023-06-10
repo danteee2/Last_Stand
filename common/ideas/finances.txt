@@ -14,7 +14,7 @@ ideas = {
 				production_speed_dockyard_factor = 0.2
 			}
 			
-			cost = 60
+			cost = 150
 			
 			cancel_if_invalid = yes
 			
@@ -42,7 +42,7 @@ ideas = {
 				stability_weekly = 0.003
 			}
 			
-			cost = 60
+			cost = 150
 			
 			cancel_if_invalid = yes
 
@@ -74,7 +74,7 @@ ideas = {
 				local_building_slots_factor = 0.2
 			}
 
-			cost = 60
+			cost = 150
 			
 			cancel_if_invalid = yes
 
@@ -99,7 +99,7 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.2
 			}
 
-			cost = 60
+			cost = 150
 			
 			cancel_if_invalid = yes
 
