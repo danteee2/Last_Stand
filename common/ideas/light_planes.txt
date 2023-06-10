@@ -13,14 +13,14 @@ ideas = {
 			equipment_bonus = {
 				fighter = {
 					instant = yes
-					build_cost_ic = -0.2
+					build_cost_ic = -0.05
 				}
 			}
 			modifier = {
 				
 			}
 	
-			cost = 50
+			cost = 100
 			
 			cancel_if_invalid = yes
 			
@@ -48,14 +48,14 @@ ideas = {
 			equipment_bonus = {
 				cas = {
 					instant = yes
-					build_cost_ic = -0.10
+					build_cost_ic = -0.05
 				}
 			}
 			modifier = {
 			    
 			}
 			
-			cost = 50
+			cost = 100
 
 			
 			cancel_if_invalid = yes
@@ -91,7 +91,7 @@ ideas = {
 			equipment_bonus = {
 				naval_bomber = {
 					instant = yes
-					build_cost_ic = -0.15
+					build_cost_ic = -0.1
 				}
 			}
 			modifier = {
@@ -100,7 +100,7 @@ ideas = {
 			
 			cancel_if_invalid = yes
 			
-			cost = 50
+			cost = 100
 			
 			ai_will_do = {
 			
