@@ -905,3 +905,8 @@ MPL = {
 	color = rgb { 175  42  75 }
 	color_ui = rgb { 175  42  75 }
 }
+
+QIN = {
+	color = rgb { 255 153 153 }
+	color_ui = rgb { 255 153 153 }
+}
