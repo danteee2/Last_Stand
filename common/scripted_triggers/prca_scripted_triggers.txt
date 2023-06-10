@@ -1,0 +1,107 @@
+prca_has_available_propaganda_slot = {
+	custom_trigger_tooltip = {
+		tooltip = propaganda_available_tt
+		OR = {
+			check_variable = { THIS.prop_1_frame?1 = 1 }
+			check_variable = { THIS.prop_2_frame?1 = 1 }
+			check_variable = { THIS.prop_3_frame?1 = 1 }
+		}
+	}
+}
+
+# Note: THIS.ongoing_hostile_leaflet_operations will be removed after the decision is completed (and not the operation)
+prca_has_available_leaflet_operation = {
+	custom_trigger_tooltip = {
+		tooltip = leaflet_operation_available_tt
+		check_variable = { THIS.ongoing_hostile_leaflet_operations < 3 }
+	}
+}
+
+prca_tokens_not_maxed_out = {
+	custom_trigger_tooltip = {
+		tooltip = prca_tokens_not_maxed_out_tt
+		check_variable = { THIS.prca_tokens < 500 }
+	}
+}
+
+prca_is_included_in_main = {
+	OR = {
+		AND = {
+			is_major = yes
+			is_ai = yes
+		}
+		tag = GER
+		tag = SOV
+		tag = ENG
+		tag = FRA
+		tag = VIC
+	}
+}
+
+prca_use_default_decisions_trigger = {
+	AND = {
+		NOT = { has_country_flag = prca_disable_default_decisions }
+		prca_is_included_in_main = yes
+	}
+}
+
+prca_enabled_trigger = {
+	OR = {
+		has_country_flag = prca_enabled			# Has PRCA enabled?
+		prca_is_included_in_main = yes
+	}
+	NOT = {	AND = {						# Is AI enabled? 
+		is_ai = yes
+		has_game_rule = {
+			rule = prca_ai_campaings_enabled
+			option = BLOCKED
+		}
+	} }
+	NOT = {	AND = {						# Is SOV enabled?
+		tag = SOV
+		has_game_rule = {
+			rule = prca_sov_campaings_enabled
+			option = BLOCKED
+		}
+	} }
+}
+
+prca_leaflets_enabled_trigger = {
+	OR = {
+		has_country_flag = prca_leaflets_enabled	# Has PRCA enabled?
+		prca_is_included_in_main = yes
+	}
+	NOT = {	AND = {						# Is AI enabled?
+		is_ai = yes
+		has_game_rule = {
+			rule = prca_ai_leaflets_enabled
+			option = BLOCKED
+		}
+	} }
+	NOT = {	AND = {						# Is SOV enabled?
+		tag = SOV
+		has_game_rule = {
+			rule = prca_sov_leaflets_enabled
+			option = BLOCKED
+		}
+	} }
+}
+
+prca_leaflets_visible_trigger = {
+	has_war_with = FROM
+	FROM = { prca_leaflets_enabled_trigger = yes }
+	NOT = {	AND = {						# Is AI enabled?
+		is_ai = yes
+		has_game_rule = {
+			rule = prca_ai_activate_leaflets_enabled
+			option = BLOCKED
+		}
+	} }
+	NOT = {	AND = {						# Is SOV enabled?
+		tag = SOV
+		has_game_rule = {
+			rule = prca_sov_activate_leaflets_enabled
+			option = BLOCKED
+		}
+	} }
+}

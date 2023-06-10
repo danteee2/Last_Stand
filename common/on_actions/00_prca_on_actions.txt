@@ -1,0 +1,25 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			random_country = {
+				limit = { is_ai = no }
+				country_event = {
+					id = prca.6
+					days = 1
+				}
+			}
+		}
+	}
+
+	on_weekly = {
+		effect = {
+			if = {
+				limit = { prca_enabled_trigger = yes }
+				add_to_variable = {
+					THIS.prca_tokens = THIS.prca_tokens_weekly
+				}
+				THIS_clamp_max_tokens = yes
+			}
+		}
+	}
+}
