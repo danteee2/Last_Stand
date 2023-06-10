@@ -1672,10 +1672,6 @@ formable_nations_chinese_empire_category = {
 		icon = formable_nations_chinese_empire
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_QIN
-			JAP = {	
-				color = rgb { 255 153 153 }
-				color_ui = rgb { 255 153 153 }
-			}
 			add_stability = 0.2
 			set_capital = { state = 608 }
 			custom_effect_tooltip = core_land
