@@ -20,7 +20,7 @@ ideas = {
 				
 			}
 	
-			cost = 50
+			cost = 100
 			
 			cancel_if_invalid = yes
 			
