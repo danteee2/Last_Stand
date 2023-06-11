@@ -12,11 +12,11 @@ ideas = {
 			}
 			#traits = { marines_army_t }
 			modifier = {
-				amphibious_invasion = 0.33
-				invasion_preparation = -0.2
+				amphibious_invasion = 0.10
+				invasion_preparation = -0.15
 			}
 	
-			cost = 50
+			cost = 100
 			
 			cancel_if_invalid = yes
 			
@@ -43,11 +43,11 @@ ideas = {
 			}
 			#traits = { marines_navy_t }
 			modifier = {
-			  naval_invasion_penalty = -0.5
+			  naval_invasion_penalty = -0.05
 			  naval_invasion_capacity = 10
 			}
 			
-			cost = 50
+			cost = 100
 
 			
 			cancel_if_invalid = yes
@@ -82,8 +82,8 @@ ideas = {
 			}
 			#traits = { marines_spec_t }
 			modifier = {
-				extra_marine_supply_grace = 120.0
-				transport_capacity = -0.5
+				extra_marine_supply_grace = 24.0
+				transport_capacity = -0.10
 			}
 			
 			cancel_if_invalid = yes

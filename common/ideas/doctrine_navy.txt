@@ -12,16 +12,16 @@ ideas = {
 			}
 			equipment_bonus = {
 				submarine = {
-					max_organisation = 0.10
-					surface_detection = 0.20
-					convoy_raiding_coordination = 0.15
+					max_organisation = 0.05
+					surface_detection = 0.05
+					convoy_raiding_coordination = 0.03
 				}
 			}
 			modifier = {
-				naval_torpedo_reveal_chance_factor = -0.20
+				naval_torpedo_reveal_chance_factor = -0.05
 			}
 	
-			cost = 50
+			cost = 100
 			
 			cancel_if_invalid = yes
 			
@@ -48,19 +48,19 @@ ideas = {
 			}
 			equipment_bonus = {
 				light_cruiser = {
-					max_organisation = 0.20
-					sub_detection = 0.15
+					max_organisation = 0.05
+					sub_detection = 0.05
 				}
 				destroyer = {
-					max_organisation = 0.20	
-					sub_detection = 0.15
+					max_organisation = 0.05	
+					sub_detection = 0.05
 				}
 			}
 			modifier = {
-			    convoy_escort_efficiency = 0.33
+			    convoy_escort_efficiency = 0.10
 			}
 			
-			cost = 50
+			cost = 100
 
 			
 			cancel_if_invalid = yes
@@ -95,26 +95,26 @@ ideas = {
 			}
 			equipment_bonus = {
 				sh_battleship = {
-					max_organisation = 0.2			
+					max_organisation = 0.05		
 				}
 				battleship = {
-					max_organisation = 0.15			
+					max_organisation = 0.03			
 				}
 				battle_cruiser = {
-					max_organisation = 0.1			
+					max_organisation = 0.03			
 				}
 				heavy_cruiser = {
-					max_organisation = 0.1		
+					max_organisation = 0.03		
 				}
 			}
 			modifier = {
-				navy_capital_ship_attack_factor = 0.15
-				navy_anti_air_attack_factor = 0.20
+				navy_capital_ship_attack_factor = 0.05
+				navy_anti_air_attack_factor = 0.08
 			}
 			
 			cancel_if_invalid = yes
 			
-			cost = 50
+			cost = 100
 			
 			ai_will_do = {
 			
@@ -145,7 +145,7 @@ ideas = {
 			
 			cancel_if_invalid = yes
 			
-			cost = 50
+			cost = 100
 			
 			ai_will_do = {
 			
