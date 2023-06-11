@@ -5210,7 +5210,7 @@ focus_tree = {
 				add_tech_bonus = {
 					bonus = 1.0
 					uses = 1
-					category = engine_type_slot
+					category = air_equipment
 				}
 			}
 			else = {
