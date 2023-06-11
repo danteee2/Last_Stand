@@ -14,9 +14,9 @@ state={
 		}
 		buildings = {
 			infrastructure = 5
-			industrial_complex = 10
+			industrial_complex = 7
 			arms_factory = 5
-			buildings_max_level_factor = 20
+			add_extra_state_shared_building_slots = 20
 		}
 	}
 
