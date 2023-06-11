@@ -7,7 +7,6 @@ state={
 	}
 
 	history={
-		add_core_of = TMS
 		owner = SOV
 		buildings = {
 			infrastructure = 1
