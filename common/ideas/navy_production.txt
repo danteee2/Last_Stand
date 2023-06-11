@@ -12,12 +12,12 @@ ideas = {
 			}
 			
 			modifier = {
-				navy_max_range_factor = -0.2
-				navy_fuel_consumption_factor = -0.33
-				naval_speed_factor = -0.1
+				navy_max_range_factor = -0.10
+				navy_fuel_consumption_factor = -0.15
+				naval_speed_factor = -0.05
 			}
 	
-			cost = 50
+			cost = 100
 			
 			cancel_if_invalid = yes
 			
@@ -44,12 +44,12 @@ ideas = {
 			}
 			
 			modifier = {
-			   navy_max_range_factor = 0.1
-			   naval_speed_factor = 0.1
-			   navy_fuel_consumption_factor = 0.2
+			   navy_max_range_factor = 0.15
+			   naval_speed_factor = 0.05
+			   navy_fuel_consumption_factor = 0.15
 			}
 			
-			cost = 50
+			cost = 100
 
 			
 			cancel_if_invalid = yes
@@ -84,7 +84,7 @@ ideas = {
 			}
 			
 			modifier = {
-				industrial_capacity_dockyard = 0.1
+				industrial_capacity_dockyard = 0.05
 				navy_fuel_consumption_factor = -0.05
 			}
 			

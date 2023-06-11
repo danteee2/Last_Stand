@@ -13,11 +13,11 @@ ideas = {
 			equipment_bonus = {
 				heavy_cruiser = {
 					instant = yes
-					build_cost_ic = -0.15
+					build_cost_ic = -0.05
 				}
 				battle_cruiser = {
 					instant = yes
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05
 				}
 			}
 			
@@ -25,7 +25,7 @@ ideas = {
 				#production_dockyard_efficiency_gain_factor = -0.1
 			}
 	
-			cost = 50
+			cost = 100
 			
 			cancel_if_invalid = yes
 			
@@ -64,7 +64,7 @@ ideas = {
 			  # production_dockyard_efficiency_gain_factor = -0.1
 			}
 			
-			cost = 50
+			cost = 100
 
 			
 			cancel_if_invalid = yes
@@ -100,7 +100,7 @@ ideas = {
 			equipment_bonus = {
 				carrier = {
 					instant = yes
-					build_cost_ic = -0.10
+					build_cost_ic = -0.15
 				}
 			}
 			modifier = {
@@ -109,7 +109,7 @@ ideas = {
 			
 			cancel_if_invalid = yes
 			
-			cost = 50
+			cost = 100
 			
 			ai_will_do = {
 			
