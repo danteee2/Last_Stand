@@ -561,7 +561,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 100
-			add_extra_state_shared_building_slots = 20
+			add_extra_state_shared_building_slots = 5
 		}
 	}
 	focus = {
