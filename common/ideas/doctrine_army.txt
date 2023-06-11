@@ -12,17 +12,17 @@ ideas = {
 			}
 			
 			modifier = {
-			   recon_factor = 0.3
-				max_planning = 0.2
+			   recon_factor = 0.2
+				max_planning = 0.05
 				
 			}
 			equipment_bonus = {
 				category_army = {
-					supply_consumption = -0.15
-					soft_attack = 0.1 
+					supply_consumption = -0.05
+					soft_attack = 0.05
 				}
 			}
-			cost = 50
+			cost = 100
 			
 			cancel_if_invalid = yes
 			
@@ -46,17 +46,17 @@ ideas = {
 			}
 			equipment_bonus = {
 				category_army = {
-					supply_consumption = -0.15
-					soft_attack = 0.1 
+					supply_consumption = -0.05
+					soft_attack = 0.03
 				}
 			}
 			modifier = {
-				land_reinforce_rate = 0.1
-				supply_consumption_factor = -0.2
-				army_org_factor = 0.15
+				land_reinforce_rate = 0.05
+				supply_consumption_factor = -0.05
+				army_org_factor = 0.05
 			}
 	
-			cost = 50
+			cost = 100
 			
 			cancel_if_invalid = yes
 			
@@ -85,13 +85,13 @@ ideas = {
 			}
 			equipment_bonus = {
 				category_army = {
-					breakthrough = 0.2
-					soft_attack = 0.3
-					hard_attack = 0.10 
-					air_attack = 0.15
+					breakthrough = 0.05
+					soft_attack = 0.05
+					hard_attack = 0.02 
+					air_attack = 0.03
 				}
 			}
-			cost = 50
+			cost = 100
 
 			
 			cancel_if_invalid = yes
@@ -126,17 +126,17 @@ ideas = {
 			}
 			equipment_bonus = {
 				category_army = {
-					ap_attack = 0.20
-					breakthrough = 0.3
+					ap_attack = 0.05
+					breakthrough = 0.07
 				}
 			}
 			modifier = {
-				org_loss_when_moving = -0.10
+				org_loss_when_moving = -0.03
 				army_speed_factor = 0.05
 			}
 			cancel_if_invalid = yes
 			
-			cost = 50
+			cost = 100
 			
 			ai_will_do = {
 			
@@ -156,10 +156,10 @@ ideas = {
 			}
 			equipment_bonus = {
 				category_army = {
-					hardness = 0.3
-					casualty_trickleback = 0.1
-					recon = 0.2
-					initiative = 0.15
+					hardness = 0.10
+					casualty_trickleback = 0.05
+					recon = 0.07
+					initiative = 0.1
 				}
 			}
 			modifier = {
@@ -168,7 +168,7 @@ ideas = {
 			
 			cancel_if_invalid = yes
 			
-			cost = 50
+			cost = 100
 			
 			ai_will_do = {
 			
@@ -193,7 +193,7 @@ ideas = {
 		#	
 		#	cancel_if_invalid = yes
 		#	
-		#	cost = 50
+		#	cost = 100
 		#	
 		#	ai_will_do = {
 		#	

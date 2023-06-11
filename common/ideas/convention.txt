@@ -15,12 +15,12 @@ ideas = {
 			}
 			
 			modifier = {
-				experience_loss_factor = 0.2
-				army_defence_factor = 0.2
-				army_attack_factor = -0.1
+				experience_loss_factor = 0.05
+				army_defence_factor = 0.10
+				army_attack_factor = -0.05
 			}
 			
-			cost = 50
+			cost = 100
 			
 			cancel_if_invalid = no
 			
@@ -43,7 +43,7 @@ ideas = {
 				
 			}
 
-			cost = 50
+			cost = 100
 		
 			modifier = {
 				supply_consumption_factor = 0.1
@@ -80,7 +80,7 @@ ideas = {
 				army_attack_factor = 0.05
 			}
 
-			cost = 50
+			cost = 100
 			
 			cancel_if_invalid = no
 
@@ -98,12 +98,12 @@ ideas = {
 			}
 			
 			modifier = {
-				attrition = 0.2
+				attrition = 0.25
 				experience_loss_factor = -0.1
 				army_attack_factor = 0.10
 			}
 
-			cost = 50
+			cost = 100
 			
 			cancel_if_invalid = no
 

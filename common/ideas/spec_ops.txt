@@ -12,10 +12,10 @@ ideas = {
 			
 			modifier = {
 				special_forces_cap = 0.10
-				special_forces_defence_factor = -0.1
-				special_forces_attack_factor = -0.1
+				special_forces_defence_factor = -0.05
+				special_forces_attack_factor = -0.05
 			}
-			cost = 50
+			cost = 100
 			
 			cancel_if_invalid = yes
 			
@@ -36,11 +36,11 @@ ideas = {
 			
 			
 			modifier = {
-				special_forces_training_time_factor = 0.33
-				special_forces_out_of_supply_factor = -0.5
+				special_forces_training_time_factor = 0.10
+				special_forces_out_of_supply_factor = -0.10
 			}
 			
-			cost = 50
+			cost = 100
 			cancel_if_invalid = yes
 
 			ai_will_do = {
@@ -61,12 +61,12 @@ ideas = {
 				}
 			
 			modifier = {
-				special_forces_no_supply_grace = 720
-				special_forces_attack_factor = 0.1
-				special_forces_defence_factor = 0.1
-				special_forces_training_time_factor = 0.2
+				special_forces_no_supply_grace = 240
+				special_forces_attack_factor = 0.05
+				special_forces_defence_factor = 0.05
+				special_forces_training_time_factor = 0.15
 			}
-			cost = 50
+			cost = 100
 			cancel_if_invalid = yes
 
 			ai_will_do = {
@@ -84,10 +84,10 @@ ideas = {
 				}
 			
 			modifier = {
-				special_forces_training_time_factor = 0.33
-				special_forces_defence_factor = 0.5
+				special_forces_training_time_factor = 0.10
+				special_forces_defence_factor = 0.15
 			}
-			cost = 50
+			cost = 100
 			cancel_if_invalid = yes
 
 			ai_will_do = {

@@ -11,12 +11,12 @@ ideas = {
 			}
 			
 			modifier = {
-				max_planning = -0.2
-				planning_speed = -0.1
-				experience_gain_army_factor = 0.15
+				max_planning = -0.05
+				planning_speed = -0.05
+				experience_gain_army_factor = 0.1
 			}
 
-			cost = 50
+			cost = 100
 			
 			cancel_if_invalid = yes
 			
@@ -37,12 +37,12 @@ ideas = {
 		officer_full = {
 			
 			modifier = {
-				max_planning = 0.15
-				planning_speed = 0.3
-				experience_gain_army_factor = -0.2
+				max_planning = 0.05
+				planning_speed = 0.05
+				experience_gain_army_factor = -0.1
 			}
 			
-			cost = 50
+			cost = 100
 			
 			cancel_if_invalid = yes
 
@@ -68,12 +68,12 @@ ideas = {
 			}
 			
 			modifier = {
-				max_planning = 0.3
-				planning_speed = 0.5
-				experience_gain_army_factor = -0.33
+				max_planning = 0.1
+				planning_speed = 0.15
+				experience_gain_army_factor = -0.2
 			}
 			
-			cost = 50
+			cost = 100
 
 			cancel_if_invalid = yes
 
@@ -94,12 +94,12 @@ ideas = {
 			}
 			
 			modifier = {
-				max_planning = 0.2
+				max_planning = 0.05
 				planning_speed = 0.1
-				experience_gain_army_factor = -0.2
+				experience_gain_army_factor = -0.1
 			}
 			
-			cost = 50
+			cost = 100
 
 			cancel_if_invalid = yes
 
