@@ -13,14 +13,14 @@ ideas = {
 			equipment_bonus = {
 				heavy_fighter = {
 					instant = yes
-					build_cost_ic = -0.10
+					build_cost_ic = -0.05
 				}
 			}
 			modifier = {
 				
 			}
 	
-			cost = 50
+			cost = 100
 			
 			cancel_if_invalid = yes
 			
@@ -48,14 +48,14 @@ ideas = {
 			equipment_bonus = {
 				strategic_bomber = {
 					instant = yes
-					build_cost_ic = -0.2
+					build_cost_ic = -0.07
 				}
 			}
 			modifier = {
 			    
 			}
 			
-			cost = 50
+			cost = 100
 
 			
 			cancel_if_invalid = yes
@@ -91,7 +91,7 @@ ideas = {
 			equipment_bonus = {
 				tactical_bomber = {
 					instant = yes
-					build_cost_ic = -0.15
+					build_cost_ic = -0.07
 				}
 			}
 			modifier = {
@@ -100,7 +100,7 @@ ideas = {
 			
 			cancel_if_invalid = yes
 			
-			cost = 50
+			cost = 100
 			
 			ai_will_do = {
 			
@@ -121,7 +121,7 @@ ideas = {
 			equipment_bonus = {
 				transport_plane = {
 					instant = yes
-					build_cost_ic = -0.3
+					build_cost_ic = -0.2
 				}
 			}
 			modifier = {
@@ -130,7 +130,7 @@ ideas = {
 			
 			cancel_if_invalid = yes
 			
-			cost = 50
+			cost = 150
 			
 			ai_will_do = {
 			
