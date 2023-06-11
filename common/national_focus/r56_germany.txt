@@ -5203,9 +5203,9 @@ focus_tree = {
 					uses = 1
 				}
 				add_tech_bonus = {
-					technology = light_air
 					bonus = 1.0
 					uses = 1
+					category = aircraft 
 				}
 			}
 			else = {
