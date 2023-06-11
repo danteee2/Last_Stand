@@ -13,12 +13,12 @@ ideas = {
 			}
 			
 			modifier = {
-				strategic_bomb_visibility = -0.2
-				air_strategic_bomber_bombing_factor = 0.15
-				air_strategic_bomber_defence_factor = 0.1
+				strategic_bomb_visibility = -0.1
+				air_strategic_bomber_bombing_factor = 0.07
+				air_strategic_bomber_defence_factor = 0.05
 			}
 	
-			cost = 50
+			cost = 100
 			
 			cancel_if_invalid = yes
 			
@@ -45,12 +45,12 @@ ideas = {
 			}
 			
 			modifier = {
-				army_bonus_air_superiority_factor = 0.15
-			    air_cas_present_factor = 0.1
-				air_cas_efficiency = 0.20
+				army_bonus_air_superiority_factor = 0.05
+			    air_cas_present_factor = 0.05
+				air_cas_efficiency = 0.07
 			}
 			
-			cost = 50
+			cost = 100
 
 			
 			cancel_if_invalid = yes
@@ -85,14 +85,14 @@ ideas = {
 			}
 			
 			modifier = {
-				air_nav_efficiency = 0.15
+				air_nav_efficiency = 0.05
 				air_superiority_efficiency = 0.05
-				air_superiority_detect_factor = 0.2
+				air_superiority_detect_factor = 0.1
 			}
 			
 			cancel_if_invalid = yes
 			
-			cost = 50
+			cost = 100
 			
 			ai_will_do = {
 			
@@ -113,14 +113,14 @@ ideas = {
 			
 			modifier = {
 				
-				air_intercept_efficiency = 0.2
+				air_intercept_efficiency = 0.15
 				air_escort_efficiency = 0.15
 				air_superiority_detect_factor = 0.10
 			}
 			
 			cancel_if_invalid = yes
 			
-			cost = 50
+			cost = 100
 			
 			ai_will_do = {
 			
