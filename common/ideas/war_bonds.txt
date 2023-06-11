@@ -10,17 +10,19 @@ ideas = {
 				NOT = {
 				    
 					has_government = democratic
-				    
+				    has_government = communism
 				}
 			}
 			
 			modifier = {
-				consumer_goods_factor = -0.10
-				political_power_factor = -0.1
-				stability_weekly = -0.003
+				stability_factor = -0.05
+				consumer_goods_factor = -0.05
+				political_power_factor = 0.05
+				local_resources_factor = 0.10
+				war_support_factor = -0.07
 			}
 			
-			cost = 50
+			cost = 150
 			
 			cancel_if_invalid = no
 			
@@ -45,15 +47,16 @@ ideas = {
 				}
 			}
 
-			cost = 50
+		
 		
 			modifier = {
-				stability_weekly = -0.001
-				consumer_goods_factor = -0.05
-				political_power_factor = 0.1
+				stability_factor = -0.05
+				consumer_goods_factor = -0.03
+				war_support_factor = 0.03
+				political_power_factor = 0.10
 			}
 			
-			cost = 50
+			cost = 150
 			
 			cancel_if_invalid = yes
 
@@ -80,12 +83,14 @@ ideas = {
 			}
 			
 			modifier = {
-				political_power_factor = 0.2
-				consumer_goods_factor = 0.05
-				stability_weekly = 0.001
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				political_power_factor = -0.05
+				local_resources_factor = 0.2
+				consumer_goods_factor = 0.02
 			}
 
-			cost = 50
+			cost = 150
 			
 			cancel_if_invalid = no
 
