@@ -3280,7 +3280,6 @@ focus_tree = {
 		relative_position_id = ITA_steel_industry_in_terni
 		cost = 5
 		available = {
-			has_tech = synth_oil_experiments
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
@@ -3542,7 +3541,7 @@ focus_tree = {
 	focus = {
 		id = ITA_incease_fiat_presence_in_the_south
 		icon = GFX_goal_italy_fiat
-		cost = 10
+		cost = 5
 		prerequisite = { focus = ITA_modernize_the_mezzogiorno }
 		x = 0
 		y = 1
@@ -3560,7 +3559,7 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -3576,7 +3575,7 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
