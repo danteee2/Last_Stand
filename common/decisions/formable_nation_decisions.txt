@@ -11144,29 +11144,11 @@ greater_italy_category = {
 				AND = {
 					OR = {
 						ITA = { 
-						controls_state = 1 # Corsica 
-						}
-						any_country = {
-							is_subject_of = ITA
-							controls_state = 1 # Corsica
-						}
-					}
-					OR = {
-						ITA = { 
 						controls_state = 846 # Ticino 
 						}
 						any_country = {
 							is_subject_of = ITA
 							controls_state = 846 # Ticino
-						}
-					}
-					OR = {
-						ITA = { 
-						controls_state = 735 # Savoy 
-						}
-						any_country = {
-							is_subject_of = ITA
-							controls_state = 735 # Savoy
 						}
 					}
 					OR = {
@@ -11194,24 +11176,6 @@ greater_italy_category = {
 						any_country = {
 							is_subject_of = ITA
 							controls_state = 853 # Ljubljana
-						}
-					}
-					OR = {
-						ITA = { 
-						controls_state = 116 # Malta 
-						}
-						any_country = {
-							is_subject_of = ITA
-							controls_state = 116 # Malta
-						}
-					}
-					OR = {
-						ITA = { 
-						controls_state = 182 # Crete 
-						}
-						any_country = {
-							is_subject_of = ITA
-							controls_state = 182 # Crete
 						}
 					}
 					OR = {
