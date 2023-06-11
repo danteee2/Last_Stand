@@ -12,10 +12,10 @@ ideas = {
 			}
 			#traits = { airborne_army_t }
 			modifier = {
-				paradrop_organization_factor = 0.2
+				paradrop_organization_factor = 0.05
 			}
 			
-			cost = 50
+			cost = 100
 			
 			cancel_if_invalid = yes
 			
@@ -42,10 +42,10 @@ ideas = {
 			}
 			#traits = { airborne_air_t }
 			modifier = {
-			    paratrooper_aa_defense = 0.5
+			    paratrooper_aa_defense = 0.10
 			}
 			
-			cost = 50
+			cost = 100
 
 			
 			cancel_if_invalid = yes
@@ -80,13 +80,13 @@ ideas = {
 			}
 			#traits = { airborne_spec_t }
 			modifier = {
-				air_paradrop_attack_factor = 0.15
-				air_paradrop_defence_factor = 0.15
+				air_paradrop_attack_factor = 0.05
+				air_paradrop_defence_factor = 0.05
 			}
 			
 			cancel_if_invalid = yes
 			
-			cost = 50
+			cost = 100
 			
 			ai_will_do = {
 			
