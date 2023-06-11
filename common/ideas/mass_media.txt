@@ -16,11 +16,13 @@ ideas = {
 			
 			modifier = {
 				political_power_factor = -0.15
-				war_support_factor = 0.05
-				stability_factor = 0.05
+				war_support_factor = 0.1
+				stability_factor = -0.05
 				drift_defence_factor = 0.5
 				recruitable_population_factor = 0.01
 				consumer_goods_factor = 0.01
+				land_reinforce_rate = -0.05
+				recruitable_population = 0.15
 			}
 
 			cost = 150
@@ -44,10 +46,14 @@ ideas = {
 		mass_media_censorship = {
 			
 			modifier = {
-				stability_factor = -0.05
+				stability_factor = 0.05
 				political_power_factor = 0.15
 				drift_defence_factor = 0.2
 				consumer_goods_factor = 0.01
+				compliance_gain = 0.05
+				recruitable_population_factor = 0.01
+				recruitable_population = -0.1
+				
 				
 			}
 			cost = 150
