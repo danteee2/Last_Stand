@@ -52,7 +52,7 @@ ideas = {
 				consumer_goods_factor = 0.02
 				compliance_gain = 0.05
 				conscription_factor = -0.2
-				conscription = -0.01
+				conscription = 0.01
 				
 				
 			}
