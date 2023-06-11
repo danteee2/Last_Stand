@@ -74,7 +74,7 @@ focus_tree = {
 				ITA_cw_branches_are_visible = yes
 			}
 		}
-		cost = 5
+		cost = 0.5
 
 		bypass = {
 			OR = {
@@ -3228,10 +3228,10 @@ focus_tree = {
 			add_to_variable = { ITA_iri_production_speed_arms_factory_factor = 0.025 }
 			custom_effect_tooltip = ITA_steel_industry_in_terni_ricostruzione_industriale_tt
 			2 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 				add_resource = {
@@ -3295,10 +3295,10 @@ focus_tree = {
 				category = cat_synth_oil
 			}
 			2 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = synthetic_refinery
-					level = 1
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -3319,16 +3319,16 @@ focus_tree = {
 
 		completion_reward = {
 			158 = { #PIEDMONT (Torino, Genoa)
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 
 			159 = { #LOMBARDY (Milano, Brescia)
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -3337,16 +3337,16 @@ focus_tree = {
 			}
 
 			161 = { #EMILIA ROMAGNA (Bologna)
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
 
 			160 = { #VENETO (Venice )
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = dockyard
 					level = 1
@@ -3642,7 +3642,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = ITA_italian_highways_bba
-		cost = 10
+		cost = 5
 		available = {
 			controls_state = 2
 			controls_state = 161
@@ -3721,7 +3721,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = ITA_railway_innovations
-		cost = 10
+		cost = 5
 		available = {
 			OR = {
 				has_full_control_of_state = 159
@@ -3744,10 +3744,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
