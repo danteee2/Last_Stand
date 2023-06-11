@@ -32,6 +32,29 @@ ideas = {
 				crypto_strength = 1
 			}
 		}
+		goeringworks_idea = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = FRA_factory_strikes
+			modifier = {
+				local_resources_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+		united_steel_idea = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = FRA_factory_strikes
+			modifier = {
+				local_resources_factor = 0.1
+				production_speed_buildings_factor = 0.05
+				production_speed_arms_factory_factor = -0.05
+			}
+		}
 		GER_enigma_machine2 = {
 			allowed = {
 				original_tag = GER
