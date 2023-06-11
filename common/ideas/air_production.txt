@@ -16,7 +16,7 @@ ideas = {
 				air_accidents_factor = -0.1
 			}
 	
-			cost = 50
+			cost = 100
 			
 			cancel_if_invalid = yes
 			
@@ -48,7 +48,7 @@ ideas = {
 				air_fuel_consumption_factor = -0.33
 			}
 			
-			cost = 50
+			cost = 100
 
 			
 			cancel_if_invalid = yes
@@ -90,7 +90,7 @@ ideas = {
 			
 			cancel_if_invalid = yes
 			
-			cost = 50
+			cost = 100
 			
 			ai_will_do = {
 			

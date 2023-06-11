@@ -48,7 +48,7 @@ ideas = {
 				air_mission_xp_gain_factor = -0.3
 			}
 			
-			cost = 50
+			cost = 100
 
 			
 			cancel_if_invalid = yes
