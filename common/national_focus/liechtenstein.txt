@@ -548,7 +548,7 @@ focus_tree = {
 
 		x = 16
 		y = 0
-		cost = 5
+		cost = 0.1
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -561,6 +561,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 100
+			add_extra_state_shared_building_slots = 20
 		}
 	}
 	focus = {
