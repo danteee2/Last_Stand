@@ -10,9 +10,6 @@ state = {
 		}
 		owner = ITA
 		add_core_of = ITA
-		add_core_of = YUG
-		add_core_of = SLV
-		add_claim_by = VNZ
 		buildings = {
 			infrastructure = 1 #was 2
 		}
