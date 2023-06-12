@@ -5,6 +5,8 @@ tags={
 	"Utilities"
 }
 name="Last Stand"
-supported_version="1.12.14"
+picture="thumbnail.png"
 replace_path="history/states"
 replace_path="map/strategicregions"
+supported_version="1.12.14"
+remote_file_id="2988546232"
