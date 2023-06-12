@@ -11144,15 +11144,6 @@ greater_italy_category = {
 				AND = {
 					OR = {
 						ITA = { 
-						controls_state = 846 # Ticino 
-						}
-						any_country = {
-							is_subject_of = ITA
-							controls_state = 846 # Ticino
-						}
-					}
-					OR = {
-						ITA = { 
 						controls_state = 163 # Zara 
 						}
 						any_country = {
