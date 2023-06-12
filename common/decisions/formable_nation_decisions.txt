@@ -11207,6 +11207,111 @@ greater_italy_category = {
 					transfer_state = 163
 				} 
 				163 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 102
+				} 
+				102 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 956
+				} 
+				956 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 109
+				} 
+				109 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 958
+				} 
+				958 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 961
+				} 
+				961 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 959
+				} 
+				959 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 962
+				} 
+				962 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 804
+				} 
+				804 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 45
+				} 
+				45 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 952
+				} 
+				952 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 107
+				} 
+				107 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 963
+				} 
+				963 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 105
+				} 
+				105 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 802
+				} 
+				802 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 953
+				} 
+				953 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 108
+				} 
+				108 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 803
+				} 
+				803 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 106
+				} 
+				106 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 950
+				} 
+				950 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 104
+				} 
+				104 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 163
+				} 
+				163 = { add_core_of = ROOT }
 				
 				# Dalmatia
 				ITA = {
