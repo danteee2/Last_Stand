@@ -11309,9 +11309,9 @@ greater_italy_category = {
 				104 = { add_core_of = ROOT }
 
 				ITA = {
-					transfer_state = 163
+					transfer_state = 764
 				} 
-				163 = { add_core_of = ROOT }
+				764 = { add_core_of = ROOT }
 				
 				# Dalmatia
 				ITA = {
