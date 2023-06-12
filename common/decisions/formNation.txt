@@ -12368,27 +12368,6 @@ formable_nations_greater_japan_category = {
 				}
 			}
 			custom_trigger_tooltip = { 
-				tooltip = china_japan_requirement_tooltip 
-				OR = {
-					AND = {
-						745 = { is_controlled_by = ROOT }
-						609 = { is_controlled_by = ROOT }
-						716 = { is_controlled_by = ROOT }
-						610 = { is_controlled_by = ROOT }
-						608 = { is_controlled_by = ROOT }
-						614 = { is_controlled_by = ROOT }
-						597 = { is_controlled_by = ROOT }
-						743 = { is_controlled_by = ROOT }
-						598 = { is_controlled_by = ROOT }
-						613 = { is_controlled_by = ROOT }
-					}
-					AND = {
-						is_ai = no
-						has_global_flag = debug_mode
-					}
-				}
-			}
-			custom_trigger_tooltip = { 
 				tooltip = korea_requirement_tooltip 
 				OR = {
 					AND = {
