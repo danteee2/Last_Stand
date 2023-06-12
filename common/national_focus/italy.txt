@@ -3537,7 +3537,12 @@ focus_tree = {
 			#}
 		}
 	}
+<<<<<<< HEAD
 	
+=======
+
+
+>>>>>>> parent of 0e823242 (italy tree fix?)
 	focus = {
 		id = ITA_incease_fiat_presence_in_the_south
 		icon = GFX_goal_italy_fiat
