@@ -32,7 +32,7 @@ ideas = {
 				}
 				
 				on_add = {
-					
+					industrial_capacity_factory = 0.05
 				}
 				
 				traits = { natidea_economic_1 }
@@ -53,7 +53,8 @@ ideas = {
 				}
 				
 				on_add = {
-					
+					industrial_capacity_factory = 0.05
+					production_speed_buildings_factor = 0.05
 				}
 				
 				traits = { natidea_economic_2 }
