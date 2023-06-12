@@ -17,7 +17,7 @@ scripted_gui = {
 		effects = {
 			create_core2_click = {
 				ROOT = { 
-					add_political_power = -15 
+					add_political_power = -25
 				}
 				
 				add_core_of = FROM
