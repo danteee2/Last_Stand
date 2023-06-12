@@ -3380,8 +3380,8 @@ ideas = {
 			picture = generic_army_war_college
 			
 			modifier = {
-				experience_gain_air = 0.05
-				air_ace_generation_chance_factor = 0.1
+				experience_gain_air = 0.10
+				air_ace_generation_chance_factor = 0.15
 			}
 		}
 		
