@@ -43,6 +43,7 @@ NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.03
 NDefines.NMilitary.NUKE_MIN_DAMAGE_PERCENT = 0.9
 NDefines.NMilitary.NUKE_MAX_DAMAGE_PERCENT = 1.2
 NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.15
+NDefines.NMilitary.DIG_IN_FACTOR = 0.01
 ----------------------------------
 NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.2
 NDefines.NAir.AIR_WING_XP_LEVELS = { 20, 40, 60, 80, 100, 140, 180, 220, 260, 300, 390, 480, 570, 660, 750, 780, 810, 840, 870, 900 }
