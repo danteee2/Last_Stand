@@ -3229,8 +3229,8 @@ focus_tree = {
 			2 = {
 				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
-					type = industrial_complex
-					level = 4
+					type = arms_factory
+					level = 2
 					instant_build = yes
 				}
 				add_resource = {
@@ -3263,7 +3263,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -3318,7 +3318,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -3336,7 +3336,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -3418,7 +3418,7 @@ focus_tree = {
 							instant_build = yes						
 						}
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
 						level = 1
@@ -3453,7 +3453,7 @@ focus_tree = {
 							instant_build = yes						
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = dockyard
 						level = 1
@@ -3484,12 +3484,14 @@ focus_tree = {
 							instant_build = yes						
 						}
 					}
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = naval_base
 						level = 1
 						instant_build = yes
 						province = 4159					
 					}
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = naval_base
 						level = 1
@@ -3508,11 +3510,13 @@ focus_tree = {
 						limit = {
 							infrastructure < 5
 						}
+						add_extra_state_shared_building_slots = 4
 						add_building_construction = {
 							type = infrastructure
 							level = 1
 							instant_build = yes						
 						}
+						add_extra_state_shared_building_slots = 4
 						add_building_construction = {
 							type = naval_base
 							level = 2
