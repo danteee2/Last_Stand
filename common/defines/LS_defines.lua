@@ -19,10 +19,10 @@ NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0				-- XP cost for repl
 NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0				-- XP cost for converting one equipment module to a related module when creating an equipment variant.
 NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0				-- XP cost for removing an equipment module and leaving the slot empty when creating an equipment variant.
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 15000000
-NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 30
-NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 50
-NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 30
-NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 10
+NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 100
+NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 100
+NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 100
+NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 30
 ----------------------------------
 NDefines.NTechnology.MAX_SUBTECHS = 4						-- Max number of sub technologies a technology can have.
 NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 30.0		-- Base amount of research points a country can save per slot.
