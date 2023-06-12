@@ -408,9 +408,9 @@ ideas = {
 			picture = MEX_politicised_army_2
 			targeted_modifier = {
 				tag = GER
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.15
-				breakthrough_bonus_against = 0.15
+				attack_bonus_against = 0.50
+				defense_bonus_against = 0.50
+				breakthrough_bonus_against = 0.50
 			}
 		}
 		MPL_professional_army = {
