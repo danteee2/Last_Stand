@@ -31,11 +31,11 @@ NDefines.NTechnology.BASE_TECH_COST = 80					-- Base cost for a tech. multiplied
 ----------------------------------
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 50
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 50
-NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 2000
-NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 2000
-NDefines.NMilitary.MAX_AIR_EXPERIENCE = 2000
+NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 5000
+NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 5000
+NDefines.NMilitary.MAX_AIR_EXPERIENCE = 5000
 NDefines.NMilitary.TRAINING_MAX_LEVEL = 10
-NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 5
+NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 10
 NDefines.NMilitary.ARMY_EXP_BASE_LEVEL = 5
 NDefines.NMilitary.UNIT_EXP_LEVELS = {0.02, 0.04, 0.06,	0.08, 0.1, 0.14, 0.18, 0.22, 0.26, 0.3, 0.39, 0.48, 0.57, 0.66, 0.75, 0.78, 0.81, 0.84, 0.87, 0.9}
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0015
