@@ -11942,7 +11942,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			remove_ideas = GER_unstable_government
-			#add_ideas = GER_fourth_reich
+			sadd_ideas = GER_fourth_reich
 			if = {
 				limit = {
 					is_in_faction = no
