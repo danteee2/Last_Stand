@@ -11119,7 +11119,6 @@ greater_italy_category = {
 		}
 
 		available = {
-			has_completed_focus = ITA_towards_a_greater_italy
 			custom_trigger_tooltip = {
 				tooltip = greater_italy_required_states
 				controls_state = 852 # Istria
@@ -11231,10 +11230,6 @@ greater_italy_category = {
 				}
 				846 = { add_core_of = ROOT }
 				
-				# Savoy
-				ITA = {
-					transfer_state = 735
-				}
 				735 = { 
 					add_core_of = ROOT
 					set_state_name = ITA_italian_savoy_name
@@ -11284,16 +11279,6 @@ greater_italy_category = {
 				    name = ITA_italian_ljubljana_name
 				}
 
-				# Malta
-				ITA = {
-					transfer_state = 116
-				}
-				116 = { add_core_of = ROOT }
-
-				# Crete
-				ITA = {
-					transfer_state = 182
-				}
 				182 = { 
 					add_core_of = ROOT 
 					set_state_name = ITA_italian_crete_name
