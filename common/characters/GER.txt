@@ -1922,7 +1922,7 @@ characters={
 				}
 			}
 			traits = {
-				fascist_demagogue propaganda_expert 
+				fascist_demagogue propaganda_expert fascist_demagogue
 			}
 			do_effect = {
 				NOT = {
