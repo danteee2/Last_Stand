@@ -12114,6 +12114,18 @@ focus_tree = {
 			
 			FRA_air_force_improvement = yes
 		}
+		
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = light_air
+		}
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = air_equipment
+		}
+		
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 	
