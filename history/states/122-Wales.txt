@@ -23,7 +23,7 @@ state= {
 			}
 		}
 		add_core_of = ENG
-		add_core_of = WLS
+		add_claim_of = WLS
 	}
 
 	provinces= { 253 311 377 407 3274 6363 9364 11361 	}
