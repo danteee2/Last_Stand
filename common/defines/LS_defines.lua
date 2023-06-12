@@ -54,7 +54,7 @@ NDefines.NNavy.SUPPLY_NEED_FACTOR = 0
 NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0							-- cost to unassign/replace pride of the fleet
 NDefines.NNavy.PRIDE_OF_THE_FLEET_LOST_TEMP_MODIFIER_DURATION = 180	
 ----------------------------------
-NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 30
+NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 60
 ----------------------------------
 NDefines.NBuildings.MAX_SHARED_SLOTS = 35
 
