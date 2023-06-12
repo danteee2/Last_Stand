@@ -12135,11 +12135,11 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			air_experience = 10
+			air_experience = 30
 			add_doctrine_cost_reduction = {
 				name = FRA_faire_face
 				cost_reduction = 0.5
-				uses = 2
+				uses = 3
 				category = air_doctrine
 			}
 			FRA_air_force_improvement = yes
