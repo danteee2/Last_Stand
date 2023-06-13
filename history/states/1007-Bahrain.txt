@@ -8,7 +8,7 @@ state={
 		oil= 10 # in 1936 Barhain produced more oil than saudi arabia number is too low compared to current strating Saudi level btw.
 	}
 	history={
-		add_core_of = CYP
+		add_core_of = JOR
 		owner = ENG
 		victory_points = {
 			13306 1
