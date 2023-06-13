@@ -11859,12 +11859,12 @@ focus_tree = {
 					neutrality<0.4
 				}
 				random_list = {
-					70 = {
+					0 = {
 						country_event = {
 							id = erwache.5
 						}
 					}
-					30 = {
+					100 = {
 						country_event = {
 							id = erwache.4
 						}
@@ -11876,12 +11876,12 @@ focus_tree = {
 					neutrality < 0.6
 				}
 				random_list = {
-					55 = {
+					0 = {
 						country_event = {
 							id = erwache.5
 						}
 					}
-					45 = {
+					100 = {
 						country_event = {
 							id = erwache.4
 						}
@@ -11890,12 +11890,12 @@ focus_tree = {
 			}
 			else = {
 				random_list = {
-					25 = {
+					0 = {
 						country_event = {
 							id = erwache.5
 						}
 					}
-					75 = {
+					100 = {
 						country_event = {
 							id = erwache.4
 						}
