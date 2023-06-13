@@ -1194,11 +1194,6 @@ focus_tree = {
 		cancel_if_invalid = no
 		available = {
 			is_subject = no
-			has_army_manpower = { size > 499999 }
-			custom_trigger_tooltip = {
-			 	tooltip = GER_anschluss_eq_trigger_tt
-			 	check_variable = { num_equipment_in_armies_k@infantry_equipment > 40 }
-			}
 			NOT = {
 				has_idea = rhineland_challenge_met
 			}
@@ -1206,7 +1201,6 @@ focus_tree = {
 				hidden_trigger = {
 					is_ai = yes
 				}
-				date > 1937.7.1
 				stockpile_ratio = {
 					archetype = infantry_equipment
 					ratio > 0
