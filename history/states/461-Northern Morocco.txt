@@ -24,7 +24,7 @@ state={
 			industrial_complex = 2
 			air_base = 4
 			7069 = {
-				naval_base = 4
+				naval_base = 2
 			}
 		}
 		add_core_of = ALG
