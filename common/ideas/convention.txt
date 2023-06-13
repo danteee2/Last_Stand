@@ -42,8 +42,6 @@ ideas = {
 			available = {
 				
 			}
-
-			cost = 100
 		
 			modifier = {
 				supply_consumption_factor = 0.1
@@ -51,7 +49,7 @@ ideas = {
 				army_defence_factor = 0.05
 			}
 			
-			cost = 50
+			cost = 100
 			
 			cancel_if_invalid = yes
 
