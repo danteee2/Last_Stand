@@ -3881,7 +3881,7 @@ objectTypes = {
 	}	
 	pdxmesh = {
 		name = "generic_JAP_flying_boat_1_mesh"
-		file = "gfx/models/units/planes/JAP_heavy_plane_1.mesh"
+		file = "gfx/models/text_object.mesh"
 		animation = { id = "idle" type = "fighter_default_idle_animation" }
 
 		meshsettings = {
