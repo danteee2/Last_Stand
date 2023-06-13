@@ -1871,7 +1871,6 @@ focus_tree = {
 					has_full_control_of_state = 786
 					has_full_control_of_state = 557
 				}
-				release_puppet = MRT
 				hidden_effect = {
 					MRT = {
 						add_ideas = FRA_colonial_focus
@@ -1896,7 +1895,6 @@ focus_tree = {
 					has_full_control_of_state = 782
 					has_full_control_of_state = 556
 				}
-				release_puppet = MLI
 				hidden_effect = {
 					MLI = {
 						add_ideas = FRA_colonial_focus
@@ -1920,7 +1918,6 @@ focus_tree = {
 				limit = {
 					has_full_control_of_state = 272
 				}
-				release_puppet = SEN
 				hidden_effect = {
 					SEN = {
 						add_ideas = FRA_colonial_focus
@@ -1944,7 +1941,6 @@ focus_tree = {
 				limit = {
 					has_full_control_of_state = 780
 				}
-				release_puppet = GNA
 				hidden_effect = {
 					GNA = {
 						add_ideas = FRA_colonial_focus
@@ -1968,7 +1964,6 @@ focus_tree = {
 				limit = {
 					has_full_control_of_state = 779
 				}
-				release_puppet = IVO
 				hidden_effect = {
 					IVO = {
 						add_ideas = FRA_colonial_focus
@@ -1992,7 +1987,6 @@ focus_tree = {
 				limit = {
 					has_full_control_of_state = 778
 				}
-				release_puppet = VOL
 				hidden_effect = {
 					VOL = {
 						add_ideas = FRA_colonial_focus
@@ -2016,7 +2010,6 @@ focus_tree = {
 				limit = {
 					has_full_control_of_state = 777
 				}
-				release_puppet = TOG
 				hidden_effect = {
 					TOG = {
 						add_ideas = FRA_colonial_focus
@@ -2040,7 +2033,6 @@ focus_tree = {
 				limit = {
 					has_full_control_of_state = 776
 				}
-				release_puppet = DAH
 				hidden_effect = {
 					DAH = {
 						add_ideas = FRA_colonial_focus
@@ -2065,7 +2057,6 @@ focus_tree = {
 					has_full_control_of_state = 781
 					has_full_control_of_state = 515
 				}
-				release_puppet = NGR
 				hidden_effect = {
 					NGR = {
 						add_ideas = FRA_colonial_focus
@@ -2090,7 +2081,6 @@ focus_tree = {
 					has_full_control_of_state = 775
 					has_full_control_of_state = 774
 				}
-				release_puppet = CHA
 				hidden_effect = {
 					CHA = {
 						add_ideas = FRA_colonial_focus
@@ -2114,7 +2104,6 @@ focus_tree = {
 				limit = {
 					has_full_control_of_state = 773
 				}
-				release_puppet = CMR
 				hidden_effect = {
 					CMR = {
 						add_ideas = FRA_colonial_focus
@@ -2137,8 +2126,7 @@ focus_tree = {
 			if = {
 				limit = {
 					has_full_control_of_state = 660
-				}
-				release_puppet = CAR
+				
 				hidden_effect = {
 					CAR = {
 						add_ideas = FRA_colonial_focus
@@ -2162,7 +2150,6 @@ focus_tree = {
 				limit = {
 					has_full_control_of_state = 539
 				}
-				release_puppet = GAB
 				hidden_effect = {
 					GAB = {
 						add_ideas = FRA_colonial_focus
@@ -2186,7 +2173,6 @@ focus_tree = {
 				limit = {
 					has_full_control_of_state = 772
 				}
-				release_puppet = RCG
 				hidden_effect = {
 					RCG = {
 						add_ideas = FRA_colonial_focus
@@ -2210,7 +2196,6 @@ focus_tree = {
 				limit = {
 					has_full_control_of_state = 268
 				}
-				release_puppet = DJI
 				hidden_effect = {
 					DJI = {
 						add_ideas = FRA_colonial_focus
@@ -2234,7 +2219,6 @@ focus_tree = {
 				limit = {
 					has_full_control_of_state = 543
 				}
-				release_puppet = MAD
 				hidden_effect = {
 					MAD = {
 						add_ideas = FRA_colonial_focus
