@@ -15,8 +15,6 @@ state={
 			3922 1
 		}
 		add_core_of = YUG
-		add_core_of = SER
-		add_core_of = MNT
 	}
 
 	provinces={

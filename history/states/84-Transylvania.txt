@@ -23,8 +23,6 @@ state={
 			6679 1
 		}
 		add_core_of = ROM
-		add_claim_by = SZK
-		add_core_of = TRA
 	}
 
 	provinces={
