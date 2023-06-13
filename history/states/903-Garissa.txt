@@ -14,7 +14,7 @@ state={
 			10976 1 
 		}
 		
-		add_core_of = CYP
+		add_core_of = ZIM
 
 	}
 

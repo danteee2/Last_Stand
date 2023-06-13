@@ -20,7 +20,7 @@ state={
 			4115 2
 		}
 
-		add_core_of = CYP
+		add_core_of = JOR
 	}
 
 	provinces={
