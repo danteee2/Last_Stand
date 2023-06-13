@@ -324,7 +324,7 @@ leader_traits = {
 	rearmer = {
 		random = no
 		sprite = 12
-		industrial_capacity_factory = 0.05
+		industrial_capacity_factory = 0.1
 
 		ai_will_do = {
 			factor = 1
