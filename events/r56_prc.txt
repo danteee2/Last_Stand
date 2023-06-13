@@ -4575,25 +4575,19 @@ country_event = {
 	option = {
 		name = prc.116.a
 		custom_effect_tooltip = KMT_commie_generals_join_tt
-		
-		remove_effect = {
-			if = {
-				limit = { has_idea = KMT_weak_army }
-				swap_ideas = {
-					remove_idea = KMT_weak_army
-					add_idea = KMT_weak_army_lesser
-				}
+		if = {
+			limit = {
+				has_idea = KMT_weak_army_lesser
 			}
-			else_if = {
-				limit = { has_idea = KMT_weak_army_lesserer }
-				remove_ideas = KMT_weak_army_lesserer
+			remove_ideas = KMT_weak_army_lesser
+		}
+		if = {
+			limit = {
+				has_idea = KMT_weak_army
 			}
-			else_if = {
-				limit = { has_idea = KMT_weak_army_lesser }
-				swap_ideas = {
-					remove_idea = KMT_weak_army_lesser
-					add_idea = KMT_weak_army_lesserer
-				}
+			swap_ideas = {
+				remove_idea = KMT_weak_army
+				add_idea = KMT_weak_army_lesser
 			}
 		}
 	}
