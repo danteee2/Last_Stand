@@ -4585,15 +4585,15 @@ country_event = {
 				}
 			}
 			else_if = {
+				limit = { has_idea = KMT_weak_army_lesserer }
+				remove_ideas = KMT_weak_army_lesserer
+			}
+			else_if = {
 				limit = { has_idea = KMT_weak_army_lesser }
 				swap_ideas = {
 					remove_idea = KMT_weak_army_lesser
 					add_idea = KMT_weak_army_lesserer
 				}
-			}
-			else_if = {
-				limit = { has_idea = KMT_weak_army_lesserer }
-				remove_ideas = KMT_weak_army_lesserer
 			}
 		}
 	}
