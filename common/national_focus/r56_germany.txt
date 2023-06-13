@@ -8173,6 +8173,7 @@ focus_tree = {
 			CZE = {
 				r56_script_target_is_sane = yes
 				owns_state = 69
+			}
 		}
 		bypass = {
 			OR = {
