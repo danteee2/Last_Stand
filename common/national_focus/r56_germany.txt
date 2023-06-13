@@ -8173,10 +8173,6 @@ focus_tree = {
 			CZE = {
 				r56_script_target_is_sane = yes
 				owns_state = 69
-			}
-			has_army_manpower = {
-				size > 650000
-			}
 		}
 		bypass = {
 			OR = {
