@@ -1871,7 +1871,6 @@ focus_tree = {
 					has_full_control_of_state = 786
 					has_full_control_of_state = 557
 				}
-				release_puppet = MRT
 				hidden_effect = {
 					MRT = {
 						add_ideas = FRA_colonial_focus
