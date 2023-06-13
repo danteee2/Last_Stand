@@ -1714,7 +1714,6 @@ focus_tree = {
 						is_fully_controlled_by = ROOT
 					}
 				}
-				release_puppet = MOR
 				hidden_effect = {
 					MOR = {
 						set_politics = {
@@ -1739,7 +1738,6 @@ focus_tree = {
 						is_fully_controlled_by = ROOT
 					}
 				}
-				release_puppet = TUN
 				hidden_effect = {
 					TUN = {
 						set_politics = {
