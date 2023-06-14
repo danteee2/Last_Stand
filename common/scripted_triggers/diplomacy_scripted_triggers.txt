@@ -996,6 +996,51 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			NOT = { FROM = { tag = AHV } }
 		}
 	}
+	if = {
+		limit = {
+			OR = {
+				original_tag = ROOT
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_NOT_SLR_TOOLTIP 
+			NOT = { FROM = { tag = SLR } }
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				original_tag = ROOT
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_NOT_JOR_TOOLTIP 
+			NOT = { FROM = { tag = JOR } }
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				original_tag = ROOT
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_NOT_KOR_TOOLTIP 
+			NOT = { FROM = { tag = KOR } }
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				original_tag = ROOT
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_NOT_FSM_TOOLTIP 
+			NOT = { FROM = { tag = FSM } }
+		}
+	}
+	
 
 
 
