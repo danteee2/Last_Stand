@@ -1045,7 +1045,7 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			}
 		}
 		custom_trigger_tooltip = {
-			tooltip = RULE_ALLOW_RELEASE_NATIONS_NOT_TRANSYLVANIA_TOOLTIP
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_NOT_TOOLTIP
 			###SOVIETS
 			NOT = { FROM = { tag =BLR }}
 			NOT = { FROM = { tag =BEL }}
