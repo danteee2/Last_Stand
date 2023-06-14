@@ -3981,14 +3981,6 @@ formable_nations_carpathia_category = {
 			state = 84
 			state = 82
 			state = 76
-			
-			state = 955
-			state = 996
-			state = 73
-			state = 913
-			state = 956
-			state = 959
-			state = 952
 		}
 	}
 }
