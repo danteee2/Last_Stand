@@ -12,7 +12,7 @@ state={
 			}
 
 		}
-		add_core_of = CYP
+		add_core_of = ANG
 		victory_points = {
 			12935 1
 		}

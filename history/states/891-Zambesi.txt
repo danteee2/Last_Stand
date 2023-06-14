@@ -13,7 +13,7 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = CYP
+		add_core_of = ANG
 		victory_points = {
 			4735 1
 		}
