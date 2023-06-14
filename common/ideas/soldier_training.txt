@@ -4,7 +4,7 @@ ideas = {
 	
 		law = yes
 		
-		#Army Financing
+		
 		soldier_basic = {
 			
 			modifier = {
@@ -29,12 +29,12 @@ ideas = {
    			}
 		}
 		
-		#Civilian Spendings
+		
 		soldier_full = {
 
 		
 			modifier = {
-				army_morale_factor = 0.05
+				army_morale_factor = 0.1
 				training_time_factor = 0.1
 			}
 			
@@ -52,15 +52,15 @@ ideas = {
    			}
 		}
 		
-		#Foreign Subsidies
+		
 		soldier_extended = {
 		    available = {
 				
 			}
 			
 			modifier = {
-				army_morale_factor = 0.1
-				training_time_factor = 0.1
+				army_morale_factor = 0.05
+				training_time_factor = 0.05
 			}
 
 			cost = 100
@@ -72,7 +72,7 @@ ideas = {
    			}
 		}
 		
-		#Scientists Support
+	
 		soldier_baptism = {
 		
 			available = {
