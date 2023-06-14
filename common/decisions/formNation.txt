@@ -5024,7 +5024,7 @@ formable_nations_carpathia_category = {
 			}
 		}
 	}
-
+}
 
 formable_nations_angevin_empire_category = {
 	formable_nations_angevin_empire = {
