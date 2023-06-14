@@ -5975,11 +5975,13 @@
 			}
 			pool = {
 				weight = 50
-				limit = {
-					has_cosmetic_tag = BAL_UNIFIED
-				}
-				models = {
-					BAL_UNIFIED_light_plane_entity
+				country = {
+					limit = {
+						has_cosmetic_tag = BAL_UNIFIED
+					}
+					models = {
+						BAL_UNIFIED_light_plane_entity
+					}
 				}
 			}							
 		}
