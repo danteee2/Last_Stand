@@ -6834,7 +6834,6 @@ formable_nations_greater_finland_category = {
 				tooltip = russia_finland_requirement_tooltip
 				OR = {
 					AND = {
-						195 = { is_controlled_by = ROOT }
 						216 = { is_controlled_by = ROOT }
 						215 = { is_controlled_by = ROOT }
 						213 = { is_controlled_by = ROOT }
