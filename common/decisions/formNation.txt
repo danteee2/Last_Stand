@@ -7833,42 +7833,7 @@ formable_nations_north_america_category = {
 							AND = {
 								OR = {
 									is_on_continent = north_america
-									state = 311
-									state = 313
-									state = 312
-									state = 314
-									state = 316
-									state = 317
-									state = 685
-									state = 304
 								}
-								NOT = {
-									OR = {
-										state = 696
-										state = 101
-										state = 739
-										state = 730
-									}
-								}
-								is_controlled_by = ROOT
-							}
-							NOT = { 
-								OR = {
-									is_on_continent = north_america 
-									state = 311
-									state = 313
-									state = 312
-									state = 314
-									state = 316
-									state = 317
-									state = 685
-									state = 304
-								}
-							}
-							state = 696
-							state = 101
-							state = 739
-							state = 730
 						}
 					}
 				}
