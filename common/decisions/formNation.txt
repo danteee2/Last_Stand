@@ -4199,7 +4199,6 @@ formable_nations_mexican_empire_category = {
 						312 = { is_controlled_by = ROOT }
 						317 = { is_controlled_by = ROOT }
 						316 = { is_controlled_by = ROOT }
-						311 = { is_controlled_by = ROOT }
 					}
 					AND = {
 						has_global_flag = debug_mode
