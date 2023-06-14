@@ -1855,14 +1855,6 @@
 				threat < 0.9
 			}
 		}
-
-		available = {
-			CHI = {
-				surrender_progress > 0.25 #lowered bc of the vps added if china completes the big rear
-			}
-			has_war_with = USA
-		}
-
 		bypass = {
 			CHI = { has_capitulated = yes }
 		}
