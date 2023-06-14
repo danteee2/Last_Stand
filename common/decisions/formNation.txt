@@ -5454,20 +5454,20 @@ formable_nations_south_america_category = {
 			}
 
 			custom_trigger_tooltip = {
-				tooltip = Controls Uruguay
+				tooltip = Controls_Uruguay
 
 				300 = { is_controlled_by = ROOT }
 			}
 
 			custom_trigger_tooltip = {
-				tooltip = Controls Paraguay
+				tooltip = Controls_Paraguay
 
 				301 = { is_controlled_by = ROOT }
 				688 = { is_controlled_by = ROOT }
 			}
 
 			custom_trigger_tooltip = {
-				tooltip = Controls Argentina 
+				tooltip = Controls_Argentina 
 
 				510 = { is_controlled_by = ROOT }
 				509 = { is_controlled_by = ROOT }
@@ -5478,7 +5478,7 @@ formable_nations_south_america_category = {
 			}
 
 			custom_trigger_tooltip = {
-				tooltip = Controls Chile
+				tooltip = Controls_Chile
 
 				507 = { is_controlled_by = ROOT }
 				279 = { is_controlled_by = ROOT }
@@ -5488,7 +5488,7 @@ formable_nations_south_america_category = {
 			}
 
 			custom_trigger_tooltip = {
-				tooltip = Controls Bolivia
+				tooltip = Controls_Bolivia
 
 		
 				302 = { is_controlled_by = ROOT }
@@ -5499,7 +5499,7 @@ formable_nations_south_america_category = {
 
 
 			custom_trigger_tooltip = {
-				tooltip = Controls Peru
+				tooltip = Controls_Peru
 
 		
 				492 = { is_controlled_by = ROOT }
@@ -5513,7 +5513,7 @@ formable_nations_south_america_category = {
 
 
 			custom_trigger_tooltip = {
-				tooltip = Controls Ecuador
+				tooltip = Controls_Ecuador
 
 		
 				305 = { is_controlled_by = ROOT }
@@ -5527,7 +5527,7 @@ formable_nations_south_america_category = {
 
 			
 			custom_trigger_tooltip = {
-				tooltip = Controls Colombia
+				tooltip = Controls_Colombia
 
 		
 				486 = { is_controlled_by = ROOT }
@@ -5542,7 +5542,7 @@ formable_nations_south_america_category = {
 
 
 			custom_trigger_tooltip = {
-				tooltip = Controls Venezuela
+				tooltip = Controls_Venezuela
 
 		
 				488 = { is_controlled_by = ROOT }
