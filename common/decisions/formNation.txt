@@ -5438,7 +5438,7 @@ formable_nations_south_america_category = {
 		
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = Controls_Brazils
+				tooltip = Controls Brazil
 				
 			
 			495 = { is_controlled_by = ROOT }
@@ -5454,20 +5454,20 @@ formable_nations_south_america_category = {
 			}
 
 			custom_trigger_tooltip = {
-				tooltip = Controls_Uruguay
+				tooltip = Controls Uruguay
 
 				300 = { is_controlled_by = ROOT }
 			}
 
 			custom_trigger_tooltip = {
-				tooltip = Controls_Paraguay
+				tooltip = Controls Paraguay
 
 				301 = { is_controlled_by = ROOT }
 				688 = { is_controlled_by = ROOT }
 			}
 
 			custom_trigger_tooltip = {
-				tooltip = Controls_Argentina 
+				tooltip = Controls Argentina 
 
 				510 = { is_controlled_by = ROOT }
 				509 = { is_controlled_by = ROOT }
@@ -5478,7 +5478,7 @@ formable_nations_south_america_category = {
 			}
 
 			custom_trigger_tooltip = {
-				tooltip = Controls_Chile
+				tooltip = Controls Chile
 
 				507 = { is_controlled_by = ROOT }
 				279 = { is_controlled_by = ROOT }
@@ -5488,7 +5488,7 @@ formable_nations_south_america_category = {
 			}
 
 			custom_trigger_tooltip = {
-				tooltip = Controls_Bolivia
+				tooltip = Controls Bolivia
 
 		
 				302 = { is_controlled_by = ROOT }
@@ -5499,7 +5499,7 @@ formable_nations_south_america_category = {
 
 
 			custom_trigger_tooltip = {
-				tooltip = Controls_Peru
+				tooltip = Controls Peru
 
 		
 				492 = { is_controlled_by = ROOT }
@@ -5513,7 +5513,7 @@ formable_nations_south_america_category = {
 
 
 			custom_trigger_tooltip = {
-				tooltip = Controls_Ecuador
+				tooltip = Controls Ecuador
 
 		
 				305 = { is_controlled_by = ROOT }
@@ -5527,7 +5527,7 @@ formable_nations_south_america_category = {
 
 			
 			custom_trigger_tooltip = {
-				tooltip = Controls_Colombia
+				tooltip = Controls Colombia
 
 		
 				486 = { is_controlled_by = ROOT }
@@ -5542,7 +5542,7 @@ formable_nations_south_america_category = {
 
 
 			custom_trigger_tooltip = {
-				tooltip = Controls_Venezuela
+				tooltip = Controls Venezuela
 
 		
 				488 = { is_controlled_by = ROOT }
