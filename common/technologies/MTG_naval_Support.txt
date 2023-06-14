@@ -165,7 +165,7 @@ technologies = {
 		categories = {
 			naval_equipment
 			ship_modules_tech
-			naval_shells_tech
+			naval_shell_tech
 		}
 	}
 
@@ -269,6 +269,7 @@ technologies = {
 			naval_equipment
 			ship_modules_tech
 			naval_shell_tech
+
 		}
 	}
 
