@@ -4928,32 +4928,6 @@ formable_nations_carpathia_category = {
 				}
 			}
 			custom_trigger_tooltip = {
-				tooltip = vojvodina_banat_requirement_tooltip
-				OR = {
-					AND = {
-						43 = { is_controlled_by = ROOT }
-						154 = { is_controlled_by = ROOT }
-						155 = { is_controlled_by = ROOT }
-					}
-					AND = {
-						has_global_flag = debug_mode
-						is_ai = no
-					}
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = croatia_state_requirement_tooltip
-				OR = {
-					AND = {
-						109 = { is_controlled_by = ROOT }
-					}
-					AND = {
-						has_global_flag = debug_mode
-						is_ai = no
-					}
-				}
-			}
-			custom_trigger_tooltip = {
 				tooltip = slovakia_requirement_tooltip
 				OR = {
 					AND = {
@@ -4961,19 +4935,6 @@ formable_nations_carpathia_category = {
 						71 = { is_controlled_by = ROOT }
 						73 = { is_controlled_by = ROOT }
 						664 = { is_controlled_by = ROOT }
-					}
-					AND = {
-						has_global_flag = debug_mode
-						is_ai = no
-					}
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = krakow_stanislawow_requirement_tooltip
-				OR = {
-					AND = {
-						88 = { is_controlled_by = ROOT }
-						89 = { is_controlled_by = ROOT }
 					}
 					AND = {
 						has_global_flag = debug_mode
