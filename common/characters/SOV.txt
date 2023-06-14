@@ -3736,7 +3736,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_genrikh_yagoda
-			can_be_fired = no
+			can_be_fired = yes
 			allowed = {
 				original_tag = SOV
 			}
