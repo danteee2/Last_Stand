@@ -539,12 +539,7 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 	if = {
 		limit = {
 			OR = {
-				original_tag = ROM
-				original_tag = SOV
-				original_tag = POL
-				original_tag = UKR
-				original_tag = HUN
-				original_tag = GER
+				original_tag = ROOT
 			}
 		}
 		custom_trigger_tooltip = {
