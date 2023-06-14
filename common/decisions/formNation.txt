@@ -5486,6 +5486,52 @@ formable_nations_south_america_category = {
 							AND = {
 								is_on_continent = south_america
 								is_controlled_by = ROOT
+								NOT = {
+									state = 690
+									state = 693
+									state = 689
+									state = 315
+									state = 318
+									state = 319
+									state = 692
+									state = 694
+									state = 308
+									state = 686
+									state = 311
+									state = 313
+									state = 312
+									state = 314
+									state = 316
+									state = 317
+									state = 299
+									state = 720
+									state = 649
+								}
+							}
+							NOT = {
+								is_on_continent = south_america
+							}
+							OR = {
+								state = 690
+								state = 693
+								state = 689
+								state = 315
+								state = 318
+								state = 319
+								state = 692
+								state = 694
+								state = 308
+								state = 686
+								state = 311
+								state = 313
+								state = 312
+								state = 314
+								state = 316
+								state = 317
+								state = 299
+								state = 720
+								state = 649
+							}
 						}
 					}
 					AND = {
