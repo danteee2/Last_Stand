@@ -7834,6 +7834,10 @@ formable_nations_north_america_category = {
 								OR = {
 									is_on_continent = north_america
 								}
+								NOT = {
+								
+								}
+								is_controlled_by = ROOT
 						}
 					}
 				}
