@@ -173,10 +173,6 @@ ideas = {
 
 			removal_cost = -1
 
-			rule = {
-				can_join_opposite_factions = no
-			}
-
 			modifier = {
 				
 			}
