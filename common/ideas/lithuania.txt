@@ -1793,7 +1793,6 @@ ideas = {
 
 			rule = {
 				can_create_factions = no
-				can_join_opposite_factions = no
 			}
 		}
 
@@ -1819,7 +1818,6 @@ ideas = {
 
 			rule = {
 				can_create_factions = no
-				can_join_opposite_factions = no
 			}
 		}
 
