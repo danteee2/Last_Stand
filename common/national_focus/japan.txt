@@ -1846,7 +1846,7 @@
 		y = 1
 		relative_position_id = JAP_intervene_in_china
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 3
@@ -1855,19 +1855,34 @@
 				threat < 0.9
 			}
 		}
+
+		available = {
+			# CHI = {
+			# 	surrender_progress > 0.10 #lowered bc of the vps added if china completes the big rear
+			# }
+			has_war_with = CHI
+			NOT = {
+				OR = {
+					has_idea = JAP_intervene_in_china_1
+					has_idea = JAP_intervene_in_china_2
+					has_idea = JAP_intervene_in_china_3
+					has_idea = JAP_intervene_in_china_4
+					has_idea = JAP_intervene_in_china_5
+				}
+			}
+		}
+
 		bypass = {
 			CHI = { has_capitulated = yes }
 		}
 
 
 		completion_reward = {
-			JAP_intervene_in_china_remove = yes
-			add_named_threat = { threat = 10 name = JAP_secure_china }
-			USA = { add_war_support = 0.05 }
+			add_named_threat = { threat = 5 name = JAP_secure_china }
 			unlock_decision_tooltip = JAP_ichi_go
 		}
 	}
-
+	
 	focus = {
 		id = JAP_develop_chinese_resources
 		icon = GFX_goal_generic_construct_civilian
