@@ -71,7 +71,7 @@ characters={
 	}
 
 	ENG_stanley_baldwin={
-		name=Stanley_Baldwin
+		name=Stanley Baldwin
 		portraits={
 			civilian={
 				large="gfx/leaders/ENG/r56_portrait_ENG_Stanley_Baldwin.dds"
