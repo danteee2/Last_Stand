@@ -238,8 +238,8 @@ country_event = {
 	# Ok
 	option = {
 		name = mtg_britain.3.a
-		add_stability = -0.15
-		add_political_power = -150
+		add_stability = -0.1
+		add_political_power = -50
 		create_country_leader = {
 			name = "Fallen Government"
 			picture = "portrait_eng_fallen_government.dds"
@@ -740,7 +740,7 @@ country_event = {
 	option = {
 		name = mtg_britain.8.a
 		add_popularity = { ideology = neutrality popularity = -0.02 }
-		add_stability = -0.05
+		add_stability = -0.02
 		hidden_effect = { country_event = { id = mtg_britain.6 days = 20 random_days = 10 } }
 		clr_country_flag = ENG_newspapers_in_favor
 		clr_country_flag = ENG_prime_minister_tight_leash
@@ -979,7 +979,7 @@ country_event = {
 		name = mtg_britain.13.a
 		add_popularity = { ideology = neutrality popularity = 0.05 }
 		add_stability = 0.1
-		add_political_power = 50
+		add_political_power = 200
 		set_country_flag = ENG_abdication_crisis_held_radio_speech
 		hidden_effect = { country_event = { id = mtg_britain.6 days = 20 random_days = 10 } }
 	}
@@ -9571,13 +9571,13 @@ country_event = {
 		has_country_flag = edward_viii_married_wallis_simpson
 		126 = {
 			is_controlled_by = ENG
-			days_since_last_strategic_bombing < 8
+			date > 1937.5.5
 		}
 	}
 	
 	fire_only_once = yes
 
-	mean_time_to_happen = { days = 30 }
+	mean_time_to_happen = { days = 10 }
 	
 	option = {
 		name = mtg_britain.999.a
@@ -9606,12 +9606,12 @@ country_event = {
 	trigger = {
 		original_tag = ENG
 		has_government = neutrality
-		date > 1941.1.1
+		date > 1939.1.1
 		has_country_leader = { ruling_only = yes character = ENG_george_vi }
 	}
 
 	mean_time_to_happen = {
-		days = 1460
+		days = 10
 	}
 	
 	option = {
