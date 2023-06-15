@@ -4,7 +4,7 @@ tags={
 	"Balance"
 	"Utilities"
 }
-name="Last Stand"
+name="Last Stand - dev"
 picture="thumbnail.png"
 replace_path="history/states"
 replace_path="map/strategicregions"
