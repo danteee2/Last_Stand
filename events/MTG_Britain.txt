@@ -9571,11 +9571,13 @@ country_event = {
 		has_country_flag = edward_viii_married_wallis_simpson
 		126 = {
 			is_controlled_by = ENG
-			date > 1937.4.4
+			date > 1937.5.5
 		}
 	}
 	
 	fire_only_once = yes
+
+	mean_time_to_happen = { days = 10 }
 	
 	option = {
 		name = mtg_britain.999.a
@@ -9606,6 +9608,10 @@ country_event = {
 		has_government = neutrality
 		date > 1939.1.1
 		has_country_leader = { ruling_only = yes character = ENG_george_vi }
+	}
+
+	mean_time_to_happen = {
+		days = 10
 	}
 	
 	option = {
