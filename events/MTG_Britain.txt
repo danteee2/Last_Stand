@@ -9571,7 +9571,7 @@ country_event = {
 		has_country_flag = edward_viii_married_wallis_simpson
 		126 = {
 			is_controlled_by = ENG
-			date = 1937.8.8
+			date > 1937.4.4
 		}
 	}
 	
@@ -9604,7 +9604,7 @@ country_event = {
 	trigger = {
 		original_tag = ENG
 		has_government = neutrality
-		date = 1939.1.1
+		date > 1939.1.1
 		has_country_leader = { ruling_only = yes character = ENG_george_vi }
 	}
 	
