@@ -71,7 +71,7 @@ characters={
 	}
 
 	ENG_stanley_baldwin={
-		name=Stanley Baldwin
+		name=ENG_stanley_baldwin
 		portraits={
 			civilian={
 				large="gfx/leaders/ENG/r56_portrait_ENG_Stanley_Baldwin.dds"
@@ -95,7 +95,7 @@ characters={
 	}
 
 	ENG_elizabeth_ii={	# will become leader through event
-		name=Elizabeth_II
+		name=Elizabeth
 		portraits={
 			civilian={
 				large="gfx/leaders/ENG/portrait_eng_elizabeth_ii.dds"
