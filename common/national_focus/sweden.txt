@@ -19,13 +19,13 @@ focus_tree = {
 
 ###############  _____   ____  _      _____ _______ _____ _____  _____
 ############### |  __ \ / __ \| |    |_   _|__   __|_   _/ ____|/ ____|
-############### | |__) | |  | | |      | |    | |    | || |    | (___
+############### | |__| | |  | | |      | |    | |    | || |    | (___
 ############### |  ___/| |  | | |      | |    | |    | || |     \___ \
 ############### | |    | |__| | |____ _| |_   | |   _| || |____ ____) |
 ############### |_|     \____/|______|_____|  |_|  |_____\_____|_____/
 ####  _____  ______ __  __  ____   _____ _____         _______ _____ _____
 #### |  __ \|  ____|  \/  |/ __ \ / ____|  __ \     /\|__   __|_   _/ ____|
-#### | |  | | |__  | \  / | |  | | |    | |__) |   /  \  | |    | || |
+#### | |  | | |__  | \  / | |  | | |    | |__| |   /  \  | |    | || |
 #### | |  | |  __| | |\/| | |  | | |    |  _  /   / /\ \ | |    | || |
 #### | |__| | |____| |  | | |__| | |____| | \ \  / ____ \| |   _| || |____
 #### |_____/|______|_|  |_|\____/ \_____|_|  \_\/_/    \_\_|  |_____\_____|
@@ -6607,9 +6607,9 @@ focus_tree = {
 				news_event = { id = wtt_news.53 hours = 6 }
 				set_global_flag = form_scandinavia_flag
 			}
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification	
+			#add_ideas = generic_recent_political_unification
+			#add_ideas = generic_recent_army_unification
+			#add_ideas = generic_recent_economic_unification	
 		}
 	}
 	focus = {
@@ -6798,9 +6798,9 @@ focus_tree = {
 				news_event = { id = wtt_news.54 hours = 6 }
 				set_global_flag = form_nordic_league_flag
 			}
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification				
+			#add_ideas = generic_recent_political_unification
+			#add_ideas = generic_recent_army_unification
+			#add_ideas = generic_recent_economic_unification				
 		}
 	}		
 }

@@ -25,7 +25,7 @@ NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 100
 NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 30
 ----------------------------------
 NDefines.NTechnology.MAX_SUBTECHS = 4						-- Max number of sub technologies a technology can have.
-NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 30.0		-- Base amount of research points a country can save per slot.
+NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 50.0 --#base game 30 changed to 50 and then why not 56?
 NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 2.5		-- Base year ahead penalty
 NDefines.NTechnology.BASE_TECH_COST = 80					-- Base cost for a tech. multiplied with tech cost and ahead of time penalties
 ----------------------------------
@@ -54,7 +54,7 @@ NDefines.NNavy.SUPPLY_NEED_FACTOR = 0
 NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0							-- cost to unassign/replace pride of the fleet
 NDefines.NNavy.PRIDE_OF_THE_FLEET_LOST_TEMP_MODIFIER_DURATION = 180	
 ----------------------------------
-NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 60
+NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 35				-- This much progress can be saved while not having a focus selected
 ----------------------------------
 NDefines.NBuildings.MAX_SHARED_SLOTS = 35
 
@@ -671,7 +671,6 @@ NDefines.NAI.NAVAL_PATROL_PLANES_PER_SHIP_ESCORTING = 20 --10.0		-- Amount of na
 NDefines.NAI.COMMAND_POWER_BEFORE_SPEND_ON_TRAITS = 65.0
 
 
-NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 14				-- This much progress can be saved while not having a focus selected
 
 
 NDefines.NOperatives.OPERATIVE_MISSION_DETECTION_CHANCE_FACTOR = {
@@ -710,7 +709,6 @@ NDefines.NOperatives.BUILD_INTEL_NETWORK_DAILY_XP_GAIN = 1.25  		-- was 1.0
 
 NDefines.NTechnology.BASE_TECH_COST = 80
 NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 2 -- Base year ahead penalty from 2
-NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 56.0 --#base game 30 changed to 50 and then why not 56?
 
 
 -- Supply Abbus: It punish less compare to vanilla
