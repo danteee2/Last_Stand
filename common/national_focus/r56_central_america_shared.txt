@@ -141,9 +141,9 @@
 					news_event = { id = wtt_news.59 hours = 6 }
 					set_global_flag = form_united_central_america_flag
 				}
-				add_ideas = generic_recent_political_unification
-				add_ideas = generic_recent_army_unification
-				add_ideas = generic_recent_economic_unification		
+				#add_ideas = generic_recent_political_unification
+				#add_ideas = generic_recent_army_unification
+				#add_ideas = generic_recent_economic_unification		
 			}
 			unlock_decision_tooltip = assimilate_chiapas
 			unlock_decision_tooltip = assimilate_panama		

@@ -25,7 +25,7 @@ country_event = { #Malian Federation
 						has_idea = generic_recent_political_unification
 					}
 				}
-				add_ideas = generic_recent_political_unification
+				#add_ideas = generic_recent_political_unification
 			}
 			if = {
 				limit = {
@@ -78,7 +78,7 @@ country_event = { #annexation offer accepted
 						has_idea = generic_recent_political_unification
 					}
 				}
-				add_ideas = generic_recent_political_unification
+				#add_ideas = generic_recent_political_unification
 			}
 		}		
 	}

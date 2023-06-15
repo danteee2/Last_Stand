@@ -71,9 +71,9 @@ unite_the_levant_category = {
             add_state_claim = 421 #to prevent bordergore
             add_state_claim = 413
 
-            add_ideas = generic_recent_political_unification
-            add_ideas = generic_recent_army_unification
-            add_ideas = generic_recent_economic_unification
+            #add_ideas = generic_recent_political_unification
+			#add_ideas = generic_recent_army_unification
+			#add_ideas = generic_recent_economic_unification
         }
 
         ai_will_do = {
@@ -134,9 +134,9 @@ unify_the_peninsula_category = {
 				set_global_flag = unite_joseon_flag
             }
 
-            add_ideas = generic_recent_political_unification
-            add_ideas = generic_recent_army_unification
-            add_ideas = generic_recent_economic_unification
+            #add_ideas = generic_recent_political_unification
+			#add_ideas = generic_recent_army_unification
+			#add_ideas = generic_recent_economic_unification
         }
 
         ai_will_do = {
@@ -206,9 +206,9 @@ form_peru_bolivia_category = {
             }
         }
         remove_effect = {
-            add_ideas = generic_recent_political_unification
-            add_ideas = generic_recent_army_unification
-            add_ideas = generic_recent_economic_unification
+            #add_ideas = generic_recent_political_unification
+			#add_ideas = generic_recent_army_unification
+			#add_ideas = generic_recent_economic_unification
         }
         ai_will_do = {
             factor = 1
@@ -268,9 +268,9 @@ form_prussia_category = {
             add_state_core = 85
             add_state_core = 62
             #set_cosmetic_tag = PRS
-            add_ideas = generic_recent_political_unification
-            add_ideas = generic_recent_army_unification
-            add_ideas = generic_recent_economic_unification
+            #add_ideas = generic_recent_political_unification
+			#add_ideas = generic_recent_army_unification
+			#add_ideas = generic_recent_economic_unification
         }
     }
 }
@@ -408,9 +408,9 @@ recreate_belgium_category = {
 
             BEL = {
                 set_capital = { state = 6 }
-                add_ideas = generic_recent_political_unification
-                add_ideas = generic_recent_army_unification
-                add_ideas = generic_recent_economic_unification
+                #add_ideas = generic_recent_political_unification
+			    #add_ideas = generic_recent_army_unification
+			    #add_ideas = generic_recent_economic_unification
                 set_country_flag = BEL_1936_election
                 annex_country = {
                     target = ROOT
@@ -489,9 +489,9 @@ form_united_netherlands_category2 = {
                 news_event = { id = wtt_news.58 hours = 6 }
                 set_global_flag = form_united_netherlands_flag
             }
-            add_ideas = generic_recent_political_unification
-            add_ideas = generic_recent_army_unification
-            add_ideas = generic_recent_economic_unification
+            #add_ideas = generic_recent_political_unification
+			#add_ideas = generic_recent_army_unification
+			#add_ideas = generic_recent_economic_unification
         }
         ai_will_do = {
             factor = 200
@@ -550,9 +550,9 @@ form_united_netherlands_category2 = {
                 news_event = { id = wtt_news.58 hours = 6 }
                 set_global_flag = form_united_netherlands_flag
             }
-            add_ideas = generic_recent_political_unification
-            add_ideas = generic_recent_army_unification
-            add_ideas = generic_recent_economic_unification
+            #add_ideas = generic_recent_political_unification
+			#add_ideas = generic_recent_army_unification
+			#add_ideas = generic_recent_economic_unification
         }
         ai_will_do = {
             factor = 200
@@ -655,9 +655,9 @@ ENG_restore_the_UK = {
                 add_core_of = ROOT
             }
             set_capital = { state = 126 }
-            add_ideas = generic_recent_political_unification
-            add_ideas = generic_recent_army_unification
-            add_ideas = generic_recent_economic_unification
+            #add_ideas = generic_recent_political_unification
+			#add_ideas = generic_recent_army_unification
+			#add_ideas = generic_recent_economic_unification
             hidden_effect = {
                 news_event = { id = r56.news_event.38 hours = 6 }
             }
@@ -719,9 +719,9 @@ celtic_unification_category = {
                 news_event = { id = r56.news_event.33 hours = 6 }
             }
             123 = { add_core_of = ROOT }
-            add_ideas = generic_recent_political_unification
-            add_ideas = generic_recent_army_unification
-            add_ideas = generic_recent_economic_unification
+            #add_ideas = generic_recent_political_unification
+			#add_ideas = generic_recent_army_unification
+			#add_ideas = generic_recent_economic_unification
             set_party_name = {
                 ideology = neutrality
                 long_name = CEL_UNIFIED_neutrality_party_long
@@ -1173,9 +1173,9 @@ form_nation_mod_category = {
 			786 = { add_core_of = ROOT }
                add_political_power = 50
                add_stability = -0.05
-               add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification
+            #add_ideas = generic_recent_political_unification
+			#add_ideas = generic_recent_army_unification
+			#add_ideas = generic_recent_economic_unification
 
 			hidden_effect = {
 				set_country_flag = country_formed_greater_morocco
@@ -1247,9 +1247,9 @@ form_nation_mod_category = {
                 news_event = { id = r56.news_event.36 hours = 6 }
             }
             add_state_claim = 299
-            add_ideas = generic_recent_political_unification
-            add_ideas = generic_recent_army_unification
-            add_ideas = generic_recent_economic_unification
+            #add_ideas = generic_recent_political_unification
+			#add_ideas = generic_recent_army_unification
+			#add_ideas = generic_recent_economic_unification
         }
 
         ai_will_do = {
@@ -1367,9 +1367,9 @@ form_nation_mod_category = {
                 }
                 news_event = { id = r56.news_event.37 hours = 6 }
             }
-            add_ideas = generic_recent_political_unification
-            add_ideas = generic_recent_army_unification
-            add_ideas = generic_recent_economic_unification
+            #add_ideas = generic_recent_political_unification
+			#add_ideas = generic_recent_army_unification
+			#add_ideas = generic_recent_economic_unification
         }
 
         ai_will_do = {
@@ -1451,9 +1451,9 @@ form_nation_mod_category = {
                 }
                 news_event = { id = r56.news_event.37 hours = 6 }
             }
-            add_ideas = generic_recent_political_unification
-            add_ideas = generic_recent_army_unification
-            add_ideas = generic_recent_economic_unification
+            #add_ideas = generic_recent_political_unification
+			#add_ideas = generic_recent_army_unification
+			#add_ideas = generic_recent_economic_unification
         }
 
         ai_will_do = {
@@ -1606,9 +1606,9 @@ form_nation_mod_category = {
             62 = { add_core_of = ROOT }
             64 = { add_core_of = ROOT }
             65 = { add_core_of = ROOT }
-            add_ideas = generic_recent_political_unification
-            add_ideas = generic_recent_army_unification
-            add_ideas = generic_recent_economic_unification
+            #add_ideas = generic_recent_political_unification
+			#add_ideas = generic_recent_army_unification
+			#add_ideas = generic_recent_economic_unification
             set_country_flag = reunited_germany
             set_cosmetic_tag = GER_REUNITED
             set_capital = { state = 64 }
@@ -1753,9 +1753,9 @@ form_nation_mod_category = {
             651 = { add_core_of = ROOT }
             582 = { add_core_of = ROOT }
             401 = { add_core_of = ROOT }
-            add_ideas = generic_recent_political_unification
-            add_ideas = generic_recent_army_unification
-            add_ideas = generic_recent_economic_unification
+            #add_ideas = generic_recent_political_unification
+			#add_ideas = generic_recent_army_unification
+			#add_ideas = generic_recent_economic_unification
             set_country_flag = reunited_idel_ural
             set_cosmetic_tag = IDEL_URAL
         }
@@ -1897,9 +1897,9 @@ form_nation_mod_category = {
                 }
                 set_cosmetic_tag = ITA_REBORN_VNZ
             }
-            add_ideas = generic_recent_political_unification
-            add_ideas = generic_recent_army_unification
-            add_ideas = generic_recent_economic_unification
+            #add_ideas = generic_recent_political_unification
+			#add_ideas = generic_recent_army_unification
+			#add_ideas = generic_recent_economic_unification
 		}
 
 		ai_will_do = {
@@ -1949,9 +1949,9 @@ form_nation_mod_category = {
 
             set_cosmetic_tag = COSSACKS_UNITED
 
-            add_ideas = generic_recent_political_unification
-            add_ideas = generic_recent_army_unification
-            add_ideas = generic_recent_economic_unification
+            #add_ideas = generic_recent_political_unification
+			#add_ideas = generic_recent_army_unification
+			#add_ideas = generic_recent_economic_unification
             set_country_flag = cossacks_united
         }
 
@@ -1989,9 +1989,9 @@ form_nation_mod_category = {
             423 = { add_core_of = ROOT }
             424 = { add_core_of = ROOT }
             425 = { add_core_of = ROOT }
-            add_ideas = generic_recent_political_unification
-            add_ideas = generic_recent_army_unification
-            add_ideas = generic_recent_economic_unification
+            #add_ideas = generic_recent_political_unification
+			#add_ideas = generic_recent_army_unification
+			#add_ideas = generic_recent_economic_unification
             set_country_flag = reunited_idel_ural
             set_cosmetic_tag = DRAVIDIAN_UNITED
         }
@@ -2258,9 +2258,9 @@ form_hispanoamerica_category = {
                 set_global_flag = form_hispanomerica_flag
             }
 
-            add_ideas = generic_recent_political_unification
-            add_ideas = generic_recent_army_unification
-            add_ideas = generic_recent_economic_unification
+            #add_ideas = generic_recent_political_unification
+			#add_ideas = generic_recent_army_unification
+			#add_ideas = generic_recent_economic_unification
         }
 
         ai_will_do = {
@@ -2429,9 +2429,9 @@ reform_the_mamluks_category = {
         complete_effect = {
             custom_effect_tooltip = form_country_gs_required_coring_states_tt
             set_cosmetic_tag = MAM
-            add_ideas = generic_recent_political_unification
-            add_ideas = generic_recent_army_unification
-            add_ideas = generic_recent_economic_unification
+            #add_ideas = generic_recent_political_unification
+			#add_ideas = generic_recent_army_unification
+			#add_ideas = generic_recent_economic_unification
             hidden_effect = {
                 add_state_core = 907
                 add_state_core = 911
