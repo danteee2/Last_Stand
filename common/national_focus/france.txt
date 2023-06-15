@@ -10815,7 +10815,7 @@ focus_tree = {
 	focus = {
 		id = FRA_experiment_castex_strategies
 		icon = GFX_goal_FRA_castex_book
-		cost = 15
+		cost = 10
 		prerequisite = {
 			focus = FRA_CHEDN
 		}
