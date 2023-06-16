@@ -702,7 +702,7 @@
  mtg_britain.43.b:1 "They will be tried and sentenced."
  mtg_britain.44.t:1 "Royal Family in Exile"
  mtg_britain.44.d:1 "The [From.GetAdjective] government has shown their 'leniency' towards the Royal Family by exiling them. They have now come to our shores and request asylum."
- mtg_britain.44.a:1 "They are welcome here."
+ #mtg_britain.44.a:1 "They are welcome here."
  mtg_britain.45.t:1 "Eliminate the Upper Class"
  mtg_britain.45.d:1 "Now that we have secured the place of communism in the nation, we can begin to look towards redistributing the wealth held by its citizens. The upper classes must have their silver spoons... forcibly removed."
  mtg_britain.45.a:1 "It is the Red Fox's turn."
