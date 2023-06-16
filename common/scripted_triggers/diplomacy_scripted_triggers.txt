@@ -860,6 +860,17 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			}
 		}
 		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_RELEASE_NATIONS_NOT_HYD_TOOLTIP 
+			NOT = { FROM = { tag = ANG } }
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				original_tag = ROOT
+			}
+		}
+		custom_trigger_tooltip = {
 			tooltip = RULE_ALLOW_RELEASE_NATIONS_NOT_PAK_TOOLTIP 
 			NOT = { FROM = { tag = PAK } }
 		}
