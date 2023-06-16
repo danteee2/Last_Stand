@@ -444,6 +444,79 @@ ideas = {
 			}
 		}
 
+		#Level of Industry buff to PRC when not in faction with SOV
+
+		PRC_our_own_Eco_1 = {
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				 PRC = {
+						is_in_faction_with = SOV
+				}
+			}
+
+			modifier = {
+				local_resources_factor = 0.10
+				production_speed_buildings_factor = 0.10
+				consumer_goods_factor = -0.10
+
+			}
+
+		}
+		
+		PRC_our_own_Eco_2 = {
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				 PRC = {
+						is_in_faction_with = SOV
+				}
+			}
+
+			modifier = {
+				local_resources_factor = 0.20
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.15
+
+			}
+
+		}
+		PRC_our_own_Eco_3 = {
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				 PRC = {
+						is_in_faction_with = SOV
+				}
+			}
+
+			modifier = {
+				local_resources_factor = 0.30
+				production_speed_buildings_factor = 0.25
+				consumer_goods_factor = -0.20
+
+			}
+
+		}
+
 		PRC_save_the_soviet_people = {
 			removal_cost = -1
 
