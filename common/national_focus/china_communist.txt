@@ -3759,6 +3759,15 @@ focus_tree = {
 		icon = GFX_focus_generic_industry_2
 		prerequisite = { focus = PRC_the_new_communism_beacon  }
 		cancel = { is_in_faction_with = SOV }	
+		available = {
+			OR = {
+				num_of_factories > 150
+				AND = {
+					has_war = no
+					num_of_factories > 75
+				}
+			}
+		}
 		x = -4
 		y = 1
 		relative_position_id = PRC_the_new_communism_beacon
@@ -3777,6 +3786,15 @@ focus_tree = {
 		icon = GFX_focus_generic_industry_2
 		prerequisite = { focus = PRC_we_need_eco  }
 		cancel = { is_in_faction_with = SOV }	
+		available = {
+			OR = {
+				num_of_factories > 200
+				AND = {
+					has_war = no
+					num_of_factories > 100
+				}
+			}
+		}
 		x = 0
 		y = 1
 		relative_position_id = PRC_we_need_eco
@@ -3797,6 +3815,15 @@ focus_tree = {
 		icon = GFX_focus_generic_industry_2
 		prerequisite = { focus = PRC_we_need_eco_two  }
 		cancel = { is_in_faction_with = SOV }	
+		available = {
+			OR = {
+				num_of_factories > 250
+				AND = {
+					has_war = no
+					num_of_factories > 125
+				}
+			}
+		}
 		x = 0
 		y = 1
 		relative_position_id = PRC_we_need_eco_two
@@ -7111,6 +7138,36 @@ focus_tree = {
 			JAP = {
 				country_event = { id = prc.102 }
 			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = PRC_west_pacific_eco
+		icon = GFX_focus_generic_industry_1
+		
+		prerequisite = { focus = PRC_west_pacific_alliance  }
+		x = 2
+		y = 1
+		relative_position_id = PRC_west_pacific_alliance
+		
+		cost = 10
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = has_pact_with_jap_tt
+				has_country_flag = has_pact_with_jap
+			}
+			JAP = {
+				OR = {
+					is_in_faction = no
+					is_faction_leader = yes
+				}
+			}
+			is_in_faction = no
+		}
+
+		completion_reward = {
+			add_ideas = Japanese_support
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}

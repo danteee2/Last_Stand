@@ -462,8 +462,8 @@ ideas = {
 			}
 
 			modifier = {
-				local_resources_factor = 0.05
-				production_speed_buildings_factor = 0.05
+				local_resources_factor = 0.10
+				production_speed_buildings_factor = 0.10
 				consumer_goods_factor = -0.05
 
 			}
@@ -486,8 +486,8 @@ ideas = {
 			}
 
 			modifier = {
-				local_resources_factor = 0.10
-				production_speed_buildings_factor = 0.10
+				local_resources_factor = 0.20
+				production_speed_buildings_factor = 0.25
 				consumer_goods_factor = -0.10
 
 			}
@@ -509,8 +509,8 @@ ideas = {
 			}
 
 			modifier = {
-				local_resources_factor = 0.20
-				production_speed_buildings_factor = 0.20
+				local_resources_factor = 0.25
+				production_speed_buildings_factor = 0.35
 				consumer_goods_factor = -0.20
 
 			}
@@ -2317,5 +2317,23 @@ ideas = {
 				has_completed_focus = PRC_found_our_nation
 			}
 		}
+		Japanese_support = {
+			
+			modifier = {
+				local_resources_factor = 0.15
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.10
+				production_factory_efficiency_gain_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+			}
+			cancel = {
+				PRC = {
+						has_war_with = JAP
+						NOT = { has_government = fascism }
+					}
+				}
+			}
+
+		}
+
 	}
-}
