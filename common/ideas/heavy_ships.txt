@@ -51,11 +51,12 @@ ideas = {
 		       
 			}
 			equipment_bonus = {
-				battleship = {
+				heavy_ships_battleships = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
-				sh_battleship = {
+				SH_battleship_1 = {
+				} = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
