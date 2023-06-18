@@ -115,7 +115,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = PRC_anti_japanese_aim
-		cost = 10
+		cost = 5
 		
 		ai_will_do = {
 			factor = 10
@@ -323,7 +323,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = PRC_anti_japanese_aim
-		cost = 10
+		cost = 5
 
 		available = {
 			r56_script_i_am_sane = yes
@@ -628,7 +628,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = PRC_purge_dissident_element
-		cost = 10
+		cost = 5
 
 		available = {
 			is_subject = no
@@ -721,7 +721,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = PRC_purge_dissident_element
-		cost = 10
+		cost = 5
 
 		available = {
 			is_subject = no
@@ -3784,9 +3784,10 @@ focus_tree = {
 
 		completion_reward = {
 			
-			remove_ideas = PRC_our_own_Eco_1
-			add_ideas = PRC_our_own_Eco_2
-
+			swap_ideas = {
+				remove_idea = PRC_our_own_Eco_1
+				add_idea = PRC_our_own_Eco_2
+			} 
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -3803,8 +3804,10 @@ focus_tree = {
 
 		completion_reward = {
 			
-			remove_ideas = PRC_our_own_Eco_2
-			add_ideas = PRC_our_own_Eco_3
+			swap_ideas = {
+				remove_idea = PRC_our_own_Eco_2
+				add_idea = PRC_our_own_Eco_3
+			} 
 
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
