@@ -16323,11 +16323,15 @@ focus_tree = {
         id = GER_jewish_question
         icon = GFX_goal_ISR_aliyah_2
 		prerequisite = {
-			focus = GER_military_industrial_complex
+			focus = GER_combine_SS_gestapo
 		}
-        x = 0
+        x = 1
         y = 1
-       relative_position_id = GER_military_industrial_complex
+       relative_position_id = GER_combine_SS_gestapo
+
+	   ai_will_do = {
+		factor = 5
+	}
 
         cost = 5
 
