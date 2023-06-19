@@ -364,8 +364,7 @@ ideas = {
 				}
 			}
 			modifier = {
-				refit_speed = 0.25
-				navy_refit_ic_cost = -0.25
+				refit_speed = 0.5
 				repair_speed_factor = 0.15
 			}
 			ai_will_do = {
