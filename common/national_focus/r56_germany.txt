@@ -16330,12 +16330,11 @@ focus_tree = {
 		}
         x = 0
         y = 1
-       relative_position_id = GER_frontline_hospitals
+       relative_position_id = GER_military_industrial_complex
 
         cost = 5
 
         completion_reward = {
-			consumer_goods_factor = -0.05
 			add_stability = 0.15
 			add_popularity = {
 				ideology = fascism
