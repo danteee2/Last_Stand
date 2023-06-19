@@ -2807,7 +2807,6 @@ focus_tree = {
 		}
 		available = {
 			OR = {
-				threat > 0.2
 				GER = {
 					if = {
 						limit = {
@@ -2822,7 +2821,6 @@ focus_tree = {
 						has_completed_focus = GER_anschluss_vanilla
 					}
 				}
-				has_war_support > 0.3
 			}
 		}
 		x = 11
