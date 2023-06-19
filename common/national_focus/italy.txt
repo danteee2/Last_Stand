@@ -4061,10 +4061,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			set_division_template_lock = {
-				division_template = "Banda Indigena Irregola"
-				is_locked = no
-			}
 
 			#Fallback
 			if = {
