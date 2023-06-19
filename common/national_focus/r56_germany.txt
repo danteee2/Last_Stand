@@ -16325,7 +16325,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_combine_SS_gestapo
 		}
-        x = 2
+        x = 3
         y = 1
        relative_position_id = GER_combine_SS_gestapo
 
