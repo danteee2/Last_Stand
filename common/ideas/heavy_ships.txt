@@ -55,7 +55,7 @@ ideas = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
-				SH_battleship_2 = {
+				capital_ship = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
