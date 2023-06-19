@@ -16336,6 +16336,8 @@ focus_tree = {
         cost = 5
 
         completion_reward = {
+
+			add_war_support = 0.1
 			add_stability = 0.15
 			add_popularity = {
 				ideology = fascism
