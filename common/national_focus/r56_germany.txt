@@ -8771,9 +8771,6 @@ focus_tree = {
 		available = {
 			is_subject = no
 			r56_script_i_am_sane = yes
-			has_army_manpower = {
-				size > 550000
-			}
 			NOT = {
 				has_idea = rhineland_challenge_met
 			}
