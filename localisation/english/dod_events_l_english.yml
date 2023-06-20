@@ -547,8 +547,6 @@
  DOD_romania.50.t:0 "[ROM.GetNameDefCap] Demands Changes to the Government"
  DOD_romania.50.desc:0 "When [ROM.GetLeader] publicly demanded that he should be allowed to veto any appointment of the [HUN.GetAdjective] government, simply because it was in the [ROM.GetAdjective] interest, most people in the diplomatic service considered it simple propaganda meant for a domestic audience.\n\nWith some surprise, we received an official note to the same effect a little while later.\n\nThe threat of military force if we failed to comply has sent the General Staff into a panic, and the Army High Command has raised grave doubts whether we could hold the [ROM.GetAdjective]s on the border."
  DOD_romania.50.a:0 "We have no choice."
- DOD_romania.50.b:0 "We can make some concessions."
- DOD_romania.50.c:0 "Better to die free than to live as a slave."
  DOD_romania.51.t:0 "[From.GetNameDefCap] Aligns"
  DOD_romania.51.desc:0 "Realizing that military resistance would be both impossible and pointless, the [HUN.GetAdjective] government has decided to follow our suggestions and put itself at our disposal, with [HUN.GetLeader] promising to consult with us before any major policy decision."
  DOD_romania.51.a:0 "Good."
