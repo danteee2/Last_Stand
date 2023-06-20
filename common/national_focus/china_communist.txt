@@ -7157,13 +7157,6 @@ focus_tree = {
 				tooltip = has_pact_with_jap_tt
 				has_country_flag = has_pact_with_jap
 			}
-			JAP = {
-				OR = {
-					is_in_faction = no
-					is_faction_leader = yes
-				}
-			}
-			is_in_faction = no
 		}
 
 		completion_reward = {
