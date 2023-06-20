@@ -2317,22 +2317,6 @@ ideas = {
 				has_completed_focus = PRC_found_our_nation
 			}
 		}
-		Japanese_support = {
-			
-			modifier = {
-				local_resources_factor = 0.15
-				production_speed_buildings_factor = 0.15
-				industrial_capacity_factory = 0.10
-				production_factory_efficiency_gain_factor = 0.05
-				line_change_production_efficiency_factor = 0.05
-			}
-			cancel = {
-				PRC = {
-						has_war_with = JAP
-						NOT = { has_government = fascism }
-					}
-				}
-			}
 
 		}
 
