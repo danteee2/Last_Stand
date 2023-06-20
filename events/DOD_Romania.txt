@@ -412,33 +412,6 @@ country_event = {
 		}
 		ROM = { country_event = DOD_romania.51 }
 	}
-
-	option = { #change government to Romanian type, enter alliance
-		name = DOD_romania.50.b
-		ai_chance = {
-			factor = 25
-		}
-		ROM = { country_event = DOD_romania.52 }	
-	}
-
-	option = { #no deals
-		name = DOD_romania.50.c
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 2
-				ROM = {
-					is_in_faction = no
-				}
-			}
-			modifier = {
-				factor = 10
-				is_in_faction = yes
-			}
-		}
-		ROM = { country_event = DOD_romania.53 }	
-	}
-
 }
 #hungary agrees to become puppet
 country_event = {
