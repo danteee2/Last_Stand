@@ -3581,6 +3581,13 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 			}
+
+			equipment_bonus = {
+				capital_ship = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+			}
 		}
 
 		ITA_cantiere_oto = { #NORTH
