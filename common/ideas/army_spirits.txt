@@ -1039,7 +1039,6 @@ ideas = {
 			}
 			visible = { has_tech = r56_guerilla_warfare }
 			modifier = {
-				tactic_guerrilla_tactics_preferred_weight_factor = 1
 				supply_consumption_factor = -0.05
 				experience_gain_infantry_combat_factor = 0.05
 				pocket_penalty = -0.1
