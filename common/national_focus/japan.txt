@@ -7616,6 +7616,7 @@
 				}
 			}
 			add_ideas = JAP_supremacy_of_technology
+			add_research_slot = 1
 		}
 	}
 	

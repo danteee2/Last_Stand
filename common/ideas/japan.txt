@@ -967,10 +967,8 @@ ideas = {
 
 			picture = jap_supremacy_of_technology
 			
-			research_bonus = {
-				infantry_weapons = 0.05
-				support_tech = 0.05
-				armor = 0.05
+			modifier = {
+				research_speed_factor = 0.2
 			}
 		}
 
