@@ -1503,10 +1503,6 @@ focus_tree = {
 		prerequisite = { focus = GER_appoint_economic_positions }
 		available = {
 			OR = {
-				FRA = { has_capitulated = yes }
-				NOT = { country_exists = FRA }
-			}
-			OR = {
 				has_full_control_of_state = 19
 				has_full_control_of_state = 23
 				has_full_control_of_state = 30
