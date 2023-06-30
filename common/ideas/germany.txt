@@ -1428,13 +1428,13 @@ ideas = {
 			}
 
 			modifier = {
-				attrition = 0.02				#just a little debuff to simulate the initial struggle against resistance 
+				attrition = 0.05				#just a little debuff to simulate the initial struggle against resistance 
 				custom_modifier_tooltip = GENERIC_cant_puppet_tt
 				custom_modifier_tooltip = GENERIC_cant_create_collaboration_government_tt
 			}
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.05
+				attack_bonus_against = 0.35
 			}
 		}
 		GER_case_white = { #Idea only used on AI vs AI to try to keep Historical AI moving along

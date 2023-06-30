@@ -98,7 +98,7 @@ GER_deutsche_forschungsanstalt_fur_segelflug_desc:0 "Deutsche Forschungsanstalt 
  GER_romania_friend_desc:0 "Having [ROM.GetNameDef] as an ally will serve to check [SOV.GetAdjective] aggression and give us a new military boost."
  GER_romania_war:0 "War with [ROM.GetNameDef]"
  GER_romania_war_desc:0 "We must secure [ROM.GetNameDef]; it is unpredictable and could easily be a route of attack for our enemies in the South and the East."
- GER_soviet_invasion:0 "Invade the [SOV.GetAdjective]s"
+ GER_soviet_invasion:0 "Operation Barbarossa"
  GER_soviet_invasion_desc:0 "We have long been at odds with the [SOV.GetAdjective]s for territorial domination in Europe; the only way to deal with this threat is to entirely wipe it from the map."
  GER_train_panzergrenadiers:0 "Train Panzergrenadiers"
  GER_train_panzergrenadiers_desc:0 "Much of our standard infantry aren't trained or equipped well enough to keep up with our armor. We should upgrade some of our divisions to elite Panzergrenadier divisions to give us yet another edge over our opponents."
@@ -339,7 +339,7 @@ GER_deutsche_forschungsanstalt_fur_segelflug_desc:0 "Deutsche Forschungsanstalt 
  GER_train_colonial_troops_desc:0 "Colonial specialists must be trained to secure our overseas possessions."
  GER_the_breitspurbahn:0 "The Breitspurbahn"
  GER_the_breitspurbahn_desc:0 "Soon a giant network of railroads will cover the entirety of Europe, reinforcing [GER.GetAdjective] hegemony."
- GER_the_breitspurbah_railways_tt:0 "Build a level §Y1§! railway from §YBerlin§! to the §Ycapital of every subject§! accessible by land."
+ GER_the_breitspurbah_railways_tt:0 "Build a level §Y1§! railway from §YBerlin§! to the §Ycapital of every subject§! accessible by land."`
  #Ideas
  GER_foreign_volunteers_idea:0 "Foreign Volunteers"
  GER_establish_SS_idea:0 "SS Established"
