@@ -27440,11 +27440,6 @@ focus = {
 				}
 			}
 		}
-		bypass = {
-			SOV = {
-				r56_script_standard_bypass = yes
-			}
-		}
 		completion_reward = {
 			add_timed_idea = {
 				idea = LS_for_the_motherland
