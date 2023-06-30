@@ -2,6 +2,29 @@ ideas = {
 
 	country = {
 
+		ENG_quality_RAF_pilots = {
+		
+			name = ENG_quality_RAF_pilots
+			
+			allowed = {
+				original_tag = ENG
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_army_war_college
+			
+			modifier = {
+				experience_gain_air = 0.05
+				air_ace_generation_chance_factor = 0.25
+			}
+		}
+
 		dominion_fascist_influence = {
 			
 			name = dominion_fascist_influence

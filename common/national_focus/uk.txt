@@ -1218,6 +1218,8 @@ focus_tree = {
 					}				
 				}			
 			}
+		
+			add_ideas = ENG_quality_RAF_pilots
 					
 			random_owned_controlled_state = {
 				limit = {
