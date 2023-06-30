@@ -89,6 +89,8 @@
  SOV_mass_firearms_production_desc:0 "The war demands a rifle in the hand of every soldiers. Our industry must be mobilized to achieve this goal"
  SOV_shocktroops:0 "Shocktroops"
  SOV_shocktroops_desc:0 "Braved soldiers equipped with body armor can move up close and bring the fight so close to the enemy that it renders artillery support useless."
+SOV_for_the_motherland:0 "For The Motherland"
+SOV_for_the_motherland_desc:0 "The Fascists are at Moscow's doorstep, only the willpower of the motherland and her red army can save us now!"
 
  SOV_copy_yaroslav_rubber_factory:0 "Copy the Yaroslav Rubber Factory"
  SOV_copy_yaroslav_rubber_factory_desc:0 "Built based on technologies imported from the United States in the early 1930's, the Yaroslav rubber factory was one of the best in the world when it was built. It was also one of our only source of rubber. In order to fulfill the demands of the war effort, more bigger rubber plants must be built through the USSR." 

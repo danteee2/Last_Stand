@@ -27398,6 +27398,59 @@ focus = {
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
+	focus = {
+		id = SOV_for_the_motherland
+		icon = GFX_goal_generic_red_army
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_strengthen_the_mobilization_plan
+			focus = SOV_found_the_pcdi
+		}
+		relative_position_id = SOV_strengthen_the_mobilization_plan
+		x = -3
+		y = 1
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 10
+				is_historical_focus_on = yes
+				date > 1941.4.1
+			}
+		}
+		available = {
+			has_war = yes
+			OR = {
+				surrender_progress > 0.25
+				AND = {
+					219 = {
+						controller = {
+							has_war_with = GER
+						}
+					}
+					217 = {
+						controller = {
+							has_war_with = GER
+						}
+					}
+					251 = {
+						controller = {
+							has_war_with = GER
+						}
+					}
+				}
+			}
+		}
+		bypass = {
+			SOV = {
+				r56_script_standard_bypass = yes
+			}
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = LS_for_the_motherland
+				days = 120
+			}
+	}
 }
 ###  ###  ##  ###  ##  #  #  ##  #    	   ## ### #  # ### ###         
 #  # #   #     #  #  # ## # #  # #    	  #    #  #  # #   #   {~._.~} 

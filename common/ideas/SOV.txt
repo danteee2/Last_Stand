@@ -1157,6 +1157,24 @@ ideas = {
 			}
 		}
 
+		LS_for_the_motherland = {
+			allowed = {
+				original_tag = SOV
+				always = no
+			}
+			available = {
+				has_war = yes
+				original_tag = SOV
+			}
+			removal_cost = -1
+			picture = SPR_political_violence
+			modifier = {
+				surrender_limit = 0.05
+				army_core_attack_factor = 0.5
+				mobilization_speed = 0.5
+			}
+		}
+
 		SOV_smersh_no_lar = {
 			name = SOV_smersh
 
