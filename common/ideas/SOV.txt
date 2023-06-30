@@ -1170,7 +1170,7 @@ ideas = {
 			picture = SPR_political_violence
 			modifier = {
 				surrender_limit = 0.05
-				army_core_attack_factor = 0.5
+				army_core_attack_factor = 0.4
 				mobilization_speed = 0.5
 			}
 		}

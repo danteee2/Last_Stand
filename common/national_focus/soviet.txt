@@ -27419,7 +27419,7 @@ focus = {
 		}
 		available = {
 			has_war = yes
-			OR = {
+			
 				surrender_progress > 0.25
 				AND = {
 					219 = {
@@ -27438,7 +27438,6 @@ focus = {
 						}
 					}
 				}
-			}
 		}
 		completion_reward = {
 			add_timed_idea = {
