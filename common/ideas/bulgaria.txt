@@ -789,10 +789,6 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				army_org_Factor 0.05
-				army_defence_factor 0.05
-				army_attack_factor 0.05
-				conscription = 0.075
 				conscription_factor = 0.1
 				non_core_manpower = 0.05
 				experience_gain_navy_factor = 0.1
