@@ -2480,9 +2480,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = nuclear_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
+				bonus = 2.0
+				ahead_reduction = 3
+				uses = 2
 				category = nuclear
 			}
 			add_ideas = NOR_heavy_water
