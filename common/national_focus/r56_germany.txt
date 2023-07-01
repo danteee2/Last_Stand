@@ -10339,12 +10339,6 @@ focus_tree = {
 			focus = GER_poland_friend
 			focus = GER_poland_trade
 		}
-		mutually_exclusive = {
-			focus = GER_help_SOV_revolutionaries_r56_2
-		}
-		mutually_exclusive = {
-			focus = GER_soviet_ally_r56
-		}
 		relative_position_id = GER_poland_friend
 		x = -3
 		y = 1
@@ -10358,19 +10352,7 @@ focus_tree = {
 		}
 		available = {
 			r56_script_i_am_sane = yes
-			is_neighbor_of = SOV
-			SOV = {
-				exists = yes
-				NOT = {
-					is_subject_of = ROOT
-					is_in_faction_with = ROOT
-				}
-			}
-		}
-		bypass = {
-			SOV = {
-				r56_script_standard_bypass = yes
-			}
+			country_exists = SOV 
 		}
 		will_lead_to_war_with = SOV
 		completion_reward = {
