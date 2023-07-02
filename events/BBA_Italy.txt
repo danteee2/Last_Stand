@@ -5595,7 +5595,7 @@ country_event = {
 	desc = BBA_italy_civil_war.1.desc
 	picture = GFX_report_event_ITA_italian_civil_war
 	
-	is_triggered_only = yes
+	is_triggered_only = no
 
 	immediate = {
 		hidden_effect = {
