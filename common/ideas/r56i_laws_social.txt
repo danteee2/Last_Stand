@@ -109,12 +109,12 @@ ideas = {
 			
 			modifier = {
 				MONTHLY_POPULATION = 1
-				production_speed_industrial_complex_factor = 0.05
-				production_speed_infrastructure_factor = 0.05
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.15
 				stability_factor = -0.05
 			}
 
-			cost = 175
+			cost = 200
 
 			ai_will_do = {
 				factor = 0
