@@ -16198,4 +16198,64 @@ focus_tree = {
         }	
         
 	}
+	focus = {
+		id = GER_plunder_the_west
+		icon = GFX_goal_generic_growing_economy
+		cost = 15
+		prerequisite = {
+			focus = GER_volkswagen
+		}
+		x = 0
+		y = 2
+		relative_position_id = GER_deutsche_arbeitsfront
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			date > 1939.01.01
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = construction_tech
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = electronics
+			}
+			add_ideas = GER_plunder_the_west
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = GER_capacity_of_the_workforce
+		icon = GFX_BEL_union_agreement
+		cost = 10
+		prerequisite = {
+			focus = GER_plunder_the_west
+		}
+		x = -1	
+		y = 3
+		relative_position_id = GER_deutsche_arbeitsfront
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			# hidden_effect = {
+			# 	remove_ideas = technocrat_support_I_idea
+			# }
+			# add_ideas = technocrat_support_II_idea
+			swap_ideas = {
+				remove_idea = GER_plunder_the_west
+				add_idea = GER_plunder_the_westII
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY
+		}
+	}
 }

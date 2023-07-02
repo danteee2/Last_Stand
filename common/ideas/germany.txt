@@ -1,6 +1,30 @@
 ideas = {
 	country = {
 		#from Poland mod
+		GER_plunder_the_westII = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_research_bonus
+			modifier = {
+				global_building_slots_factor = 0.30
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		GER_plunder_the_west = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_research_bonus
+			modifier = {
+				global_building_slots_factor = 0.05
+				production_factory_max_efficiency_factor = 0.02
+				production_speed_buildings_factor = 0.05
+			}
+		}
 		GER_enigma_machine0 = {
 			allowed = {
 				original_tag = GER
