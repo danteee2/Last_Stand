@@ -1,4 +1,8 @@
-﻿##### Division Templates #####
+﻿instant_effect = {
+	CreateGreatWarArt = yes
+}
+
+##### Division Templates #####
 division_template = {
 	name = "División de Infantería" 		# Used for both regular infantry divisions and larger garrison divisions
 	division_names_group = SPR_INF_01
@@ -254,10 +258,11 @@ units = {
 	}			
 }
 
+
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_1
+			type = infantry_equipment_0
 			creator = "SPR"
 		}
 		requested_factories = 2
@@ -275,7 +280,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = artillery_equipment_1
+			type = artillery_equipment_0
 			creator = "SPR"
 		}
 		requested_factories = 1

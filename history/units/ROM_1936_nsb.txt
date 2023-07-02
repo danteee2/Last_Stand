@@ -1,4 +1,8 @@
-﻿division_template = {
+﻿instant_effect = {
+	CreateGreatWarArt = yes
+}
+
+division_template = {
 	name = "Divizia de Infanterie"			# Infantry Division
 	# Note: also Fortress divisions
 
@@ -453,7 +457,7 @@ units = {
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_1
+			type = infantry_equipment_0
 			creator = "ROM"
 		}
 		requested_factories = 2
@@ -471,21 +475,12 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = artillery_equipment_1
+			type = artillery_equipment_0
 			creator = "ROM"
 		}
 		requested_factories = 1
 		progress = 0.24
 		efficiency = 100
 	}
-	#this is unarmed, as far as I could find no armor was produced until later, owned stuff was older
-	# add_equipment_production = {
-	# 	equipment = {
-	# 		type = light_tank_chassis_1
-	# 		creator = "ROM" 
-	# 	}
-	# 	requested_factories = 1
-	# 	progress = 0.4
-	# 	efficiency = 100
-	# }
+
 }

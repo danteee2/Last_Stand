@@ -1,4 +1,8 @@
-﻿##### Division Templates #####
+﻿instant_effect = {
+	CreateGreatWarArt = yes
+}
+
+##### Division Templates #####
 division_template = {
 	name = "Strelkovaya Diviziya"			# Rifle Division
 	division_names_group = SOV_INF_01
@@ -57,11 +61,10 @@ division_template = {
 		motorized = { x = 1 y = 1 }
 		motorized = { x = 1 y = 2 }
 	}
-	#support = {
-		#mot_recon = { x = 0 y = 0 } 		# Recon bn had 16x L tanks, 45 ACs #Eng and recon removed and they seem rather OP. Could revisit if balance changes 
+	support = {
+		#recon = { x = 0 y = 0 } 		# Recon bn had 16x L tanks, 45 ACs #Eng and recon removed and they seem rather OP. Could revisit if balance changes 
 		#engineer = { x = 0 y = 1 } 	# (mot) Engineer bn
-		#light_armor = { x = 0 y = 3 }	# Tank bn had 51 L tanks, 3 ACs - (removed)
-	#}
+	}
 }
 
 division_template = {
@@ -74,9 +77,6 @@ division_template = {
 		cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
 	}
-	#support = {
-	#	light_armor = { x = 0 y = 0 }	# Tank "rgt" of 64 light tanks, 28 ACs - (removed)
-	#}
 }
 
 division_template = {
@@ -95,6 +95,7 @@ division_template = {
 		military_police = { x = 0 y = 0 }
 	}
 	priority = 0
+	is_locked = yes 
 }
 division_template = {
 	name = "Mekhanizirovaniy Korpus" 				# Represents regular mechanized corps (4 existed in 1935-38); 
@@ -113,7 +114,6 @@ division_template = {
 		motorized = { x = 2 y = 3 }		
 	}
 }
-
 division_template = {
 	name = "Vozdushno-Desantnaya Brigada"			# Airborne Brigade
 	division_names_group = SOV_PAR_01
@@ -141,7 +141,7 @@ units = {
 		location = 9203
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.85
 
 	}			
 	division= {	# "54ya Strelkovaya Diviziya"		
@@ -152,7 +152,7 @@ units = {
 		location = 142
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.85
 
 	}			
 	division= {	# "16ya Kavaleriyskaya Diviziya"		
@@ -163,7 +163,7 @@ units = {
 		location = 11181
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.85
 
 	}
 
@@ -176,7 +176,7 @@ units = {
 		location = 3134
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.85
 
 	}			
 
@@ -584,7 +584,7 @@ units = {
 	division= {			
 		name = "5ya Mekhanizirovaniy Korpus"		
 		location = 6380
-		division_template = "Mekhanizirovaniy Korpus"		# 2x Mekh Bge, 1x Mot Bge #Reps T-28's in the field as of 1936. Around 100
+		division_template = "Mekhanizirovaniy Korpus"		# 2x Mekh Bge, 1x Mot Bge
 		start_experience_factor = 0.3
 	}
 
@@ -1786,20 +1786,20 @@ units = {
 		start_equipment_factor = 0.5
 
 	}			
-}
+}					
+
+
 		
 	#########################
 	## STARTING PRODUCTION ##
 	#########################
 instant_effect = {
-	
-
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_1
+			type = infantry_equipment_0
 			creator = "SOV"
 		}
-		requested_factories = 14
+		requested_factories = 7
 		progress = 0.1
 		efficiency = 50
 	}
@@ -1809,17 +1809,17 @@ instant_effect = {
 			type = support_equipment_1
 			creator = "SOV" 
 		}
-		requested_factories = 4
+		requested_factories = 2
 		progress = 0.3
 		efficiency = 50
 	}
 
 	add_equipment_production = {
 		equipment = {
-			type = artillery_equipment_1
+			type = artillery_equipment_0
 			creator = "SOV" 
 		}
-		requested_factories = 3
+		requested_factories = 1
 		progress = 0.3
 		efficiency = 50
 	}
@@ -1829,7 +1829,7 @@ instant_effect = {
 			type = light_tank_equipment_1
 			creator = "SOV" 
 		}
-		requested_factories = 5
+		requested_factories = 3
 		progress = 0.4
 		efficiency = 50
 	}
@@ -1839,28 +1839,8 @@ instant_effect = {
 			type = motorized_equipment_1
 			creator = "SOV" 
 		}
-		requested_factories = 4
-		progress = 0.4
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_1
-			creator = "SOV" 
-		}
 		requested_factories = 3
-		progress = 0.15
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = strat_bomber_equipment_1
-			creator = "SOV" 
-		}
-		requested_factories = 2
-		progress = 0.2
+		progress = 0.4
 		efficiency = 50
 	}
 }

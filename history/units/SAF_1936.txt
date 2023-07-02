@@ -117,11 +117,12 @@ units = {
 	##### No Naval OOB #####
 }
 
+
 ##### Starting Production #####
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_1
+			type = infantry_equipment_0
 			creator = "SAF"
 		}
 		requested_factories = 1

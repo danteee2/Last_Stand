@@ -1,4 +1,7 @@
-﻿division_template = {
+﻿instant_effect = {
+	CreateGreatWarArt = yes
+}
+division_template = {
 	name = "Arméfördelning"			# Infantry Division - Planned formation for mobilization of divisions, 1937-1940
 	division_names_group = SWE_INF_01
 
@@ -31,24 +34,7 @@ division_template = {
 }
 
 division_template = {
-	name = "Fältjägarregemente"		# jaeger Division
-
-	division_names_group = SWE_INF_01
-
-	regiments = {
-		jaeger = { x = 0 y = 0 }
-		jaeger = { x = 0 y = 1 }
-		jaeger = { x = 1 y = 0 }
-	}
-	support = {
-		artillery = { x = 0 y = 0 }  # Regiment of 155mm howitzers, 105mm arty
-		engineer = { x = 0 y = 1 }   
-		recon = { x = 0 y = 2 }      # Recon consisted of ACs, motorcycle inf, cavalry
-	}
-}
-
-division_template = {
-	name = "Pansarregemente"  	
+	name = " Pansarregemente"  	
 	division_names_group = SWE_ARM_01
 
 	regiments = {
@@ -64,7 +50,6 @@ division_template = {
 	name = "Militärområde"			# Garrison Force
 	division_names_group = SWE_GAR_01
 	# For reserve and independent regiments, lower experience and equipment
-	template_counter = 3
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -115,13 +100,6 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 	}
-	division = {
-		name = "Jämtlands fältjägarregemente"
-		location = 11148 # Osterund
-		division_template = "Fältjägarregemente"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-	}	
 	# Western Military District
 	division = { # "III. Arméfördelning"
 		division_name = {
@@ -142,13 +120,6 @@ units = {
 		start_equipment_factor = 0.3
 
 	}
-	division = {
-		name = "Värmlands fältjägarbataljon"
-		location = 3375 # Osterund
-		division_template = "Fältjägarregemente"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
-	}	
 	# Eastern Military District
 	division = { # "IV. Arméfördelning"
 		division_name = {
@@ -207,7 +178,7 @@ units = {
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_1
+			type = infantry_equipment_0
 			creator = "SWE"
 		}
 		requested_factories = 1
@@ -223,4 +194,4 @@ instant_effect = {
 		progress = 0.21
 		efficiency = 100
 	}
-}	
+}

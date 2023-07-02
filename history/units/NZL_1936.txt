@@ -69,11 +69,12 @@ units = {
 	##### No Naval OOB (receives first RN ships in 1941) #####
 }
 
+
 ##### Starting Production #####
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_1
+			type = infantry_equipment_0
 			creator = "NZL"
 		}
 		requested_factories = 1
