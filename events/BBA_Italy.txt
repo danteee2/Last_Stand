@@ -5588,153 +5588,152 @@ country_event = { #TODO_Manu: Check if this solves the shit
 }
 
 
-# CIVIL WAR!!! - Event for Italy
-country_event = {
-	id = BBA_italy_civil_war.1
-	title = BBA_italy_civil_war.1.t
-	desc = BBA_italy_civil_war.1.desc
-	picture = GFX_report_event_ITA_italian_civil_war
-	
-	is_triggered_only = yes
-
-	immediate = {
-		hidden_effect = {
-			set_country_flag = ITA_fascist_side_for_character_split_flag # Used for character split
-			ITA_cw_set_sides_and_overlords = yes #MANAGES SIDES (Cosmetics, flags, overlords, etc.)
-
-			ITA_cw_manage_states_split_effect = yes #SETS THE STATE SPLIT
-		}
-	}
-
-	# Fascist
-	option = { 
-		name = BBA_italy_civil_war.1.a
-
-		ai_chance = {
-			base = 1
-		}
-
-		effect_tooltip = {
-			start_civil_war = {
-				ideology = neutrality #SPLITTING TAG
-				size = 0.35
-			}
-			custom_effect_tooltip = BBA_italy_civil_war_fascist_tt
-		}
-
-		hidden_effect = {
-			ITA_set_special_characters_as_fascist_effect = no
-			ITA_start_civil_war_effect = no
-			#complete_national_focus = ITA_the_italian_social_republic
-			RDS = { country_event = { id = BBA_italy_civil_war.0 hours = 1 } }
-			news_event = { id = bba_news.110 hours = 2 }
-		}
-		#ITA_log_the_shit = yes
-	}
-
-	# Monarchist
-	option = { 
-		name = BBA_italy_civil_war.1.b
-
-		ai_chance = {
-			base = 0
-		}
-
-		effect_tooltip = {
-			start_civil_war = {
-				ideology = neutrality #SPLITTING TAG
-				size = 0.35
-			}
-			custom_effect_tooltip = BBA_italy_civil_war_monarchist_tt
-		}
-
-		hidden_effect = {
-			ITA_set_special_characters_as_monarchist_effect = no
-			ITA_start_civil_war_effect = no
-			#RDS = { change_tag_from = ROOT }
-			#FOCUS TREE for RSI -> Needs to be here otherwise RDS player will see completion popup for this
-			RSI = { country_event = { id = BBA_italy_civil_war.0 hours = 1 } }
-			RDS = { country_event = { id = BBA_italy_civil_war.0 hours = 1 } }
-			news_event = { id = bba_news.110 hours = 2 }
-		}
-		#ITA_log_the_shit = yes
-
-		#BELLA CIAO
-		hidden_effect = {
-			play_song = "bella_ciao"
-		}
-	}
-
-	# Communist
-	option = { 
-		name = BBA_italy_civil_war.1.c
-
-		ai_chance = {
-			base = 0
-		}
-		
-		set_global_flag = ITA_communist_cw_flag
-
-		effect_tooltip = {
-			start_civil_war = {
-				ideology = neutrality #SPLITTING TAG
-				size = 0.35
-			}
-			custom_effect_tooltip = BBA_italy_civil_war_communist_tt
-		}
-
-		hidden_effect = {
-			ITA_set_special_characters_as_monarchist_effect = no #Should be enough for the split (Commies + Democ + Monarchists together)
-			ITA_start_civil_war_effect = no
-			#RDS = { change_tag_from = ROOT }
-			#FOCUS TREE for RSI -> Needs to be here otherwise RDS player will see completion popup for this
-			RSI = { country_event = { id = BBA_italy_civil_war.0 hours = 1 } }
-			RDS = { country_event = { id = BBA_italy_civil_war.0 hours = 1 } }
-			news_event = { id = bba_news.110 hours = 2 }
-		}
-		#ITA_log_the_shit = yes
-
-		#BELLA CIAO
-		hidden_effect = {
-			play_song = "bella_ciao"
-		}
-	}
-
-	# Democratic
-	option = { 
-		name = BBA_italy_civil_war.1.d
-
-		ai_chance = {
-			base = 0
-		}
-		
-		set_global_flag = ITA_democratic_cw_flag
-
-		effect_tooltip = {
-			start_civil_war = {
-				ideology = neutrality #SPLITTING TAG
-				size = 0.35
-			}
-			custom_effect_tooltip = BBA_italy_civil_war_democratic_tt
-		}
-
-		hidden_effect = {
-			ITA_set_special_characters_as_monarchist_effect = no #Should be enough for the split (Commies + Democ + Monarchists together)
-			ITA_start_civil_war_effect = no
-			#RDS = { change_tag_from = ROOT }
-			#FOCUS TREE for RSI -> Needs to be here otherwise RDS player will see completion popup for this
-			RSI = { country_event = { id = BBA_italy_civil_war.0 hours = 1 } }
-			RDS = { country_event = { id = BBA_italy_civil_war.0 hours = 1 } }
-			news_event = { id = bba_news.110 hours = 2 }
-		}
-		#ITA_log_the_shit = yes
-
-		#BELLA CIAO
-		hidden_effect = {
-			play_song = "bella_ciao"
-		}
-	}
-}
+# #CIVIL WAR!!! - Event for Italy
+#country_event = {
+#	id = BBA_italy_civil_war.1
+#	title = BBA_italy_civil_war.1.t
+#	desc = BBA_italy_civil_war.1.desc
+#	picture = GFX_report_event_ITA_italian_civil_war
+#	
+#	is_triggered_only = yes
+#
+#		hidden_effect = {
+#			set_country_flag = ITA_fascist_side_for_character_split_flag # Used for character split
+#			ITA_cw_set_sides_and_overlords = yes #MANAGES SIDES (Cosmetics, flags, overlords, etc.)
+#
+#			ITA_cw_manage_states_split_effect = yes #SETS THE STATE SPLIT
+#		}
+#	}
+#
+#	# Fascist
+#	option = { 
+#		name = BBA_italy_civil_war.1.a
+#
+#		ai_chance = {
+#			base = 1
+#		}
+#
+#		effect_tooltip = {
+#			start_civil_war = {
+#				ideology = neutrality #SPLITTING TAG
+#				size = 0.35
+#			}
+#			custom_effect_tooltip = BBA_italy_civil_war_fascist_tt
+#		}
+#
+#		hidden_effect = {
+#			ITA_set_special_characters_as_fascist_effect = no
+#			ITA_start_civil_war_effect = no
+#			#complete_national_focus = ITA_the_italian_social_republic
+#			RDS = { country_event = { id = BBA_italy_civil_war.0 hours = 1 } }
+#			news_event = { id = bba_news.110 hours = 2 }
+#		}
+#		#ITA_log_the_shit = yes
+#	}
+#
+#	# Monarchist
+#	option = { 
+#		name = BBA_italy_civil_war.1.b
+#
+#		ai_chance = {
+#			base = 0
+#		}
+#
+#		effect_tooltip = {
+#			start_civil_war = {
+#				ideology = neutrality #SPLITTING TAG
+#				size = 0.35
+#			}
+#			custom_effect_tooltip = BBA_italy_civil_war_monarchist_tt
+#		}
+#
+#		hidden_effect = {
+#			ITA_set_special_characters_as_monarchist_effect = no
+#			ITA_start_civil_war_effect = no
+#			#RDS = { change_tag_from = ROOT }
+#			#FOCUS TREE for RSI -> Needs to be here otherwise RDS player will see completion popup for this
+#			RSI = { country_event = { id = BBA_italy_civil_war.0 hours = 1 } }
+#			RDS = { country_event = { id = BBA_italy_civil_war.0 hours = 1 } }
+#			news_event = { id = bba_news.110 hours = 2 }
+#		}
+#		#ITA_log_the_shit = yes
+#
+#		#BELLA CIAO
+#		hidden_effect = {
+#			play_song = "bella_ciao"
+#		}
+#	}
+#
+#	# Communist
+#	option = { 
+#		name = BBA_italy_civil_war.1.c
+#
+#		ai_chance = {
+#			base = 0
+#		}
+#		
+#		set_global_flag = ITA_communist_cw_flag
+#
+#		effect_tooltip = {
+#			start_civil_war = {
+#				ideology = neutrality #SPLITTING TAG
+#				size = 0.35
+#			}
+#			custom_effect_tooltip = BBA_italy_civil_war_communist_tt
+#		}
+#
+#		hidden_effect = {
+#			ITA_set_special_characters_as_monarchist_effect = no #Should be enough for the split (Commies + Democ + Monarchists together)
+#			ITA_start_civil_war_effect = no
+#			#RDS = { change_tag_from = ROOT }
+#			#FOCUS TREE for RSI -> Needs to be here otherwise RDS player will see completion popup for this
+#			RSI = { country_event = { id = BBA_italy_civil_war.0 hours = 1 } }
+#			RDS = { country_event = { id = BBA_italy_civil_war.0 hours = 1 } }
+#			news_event = { id = bba_news.110 hours = 2 }
+#		}
+#		#ITA_log_the_shit = yes
+#
+#		#BELLA CIAO
+#		hidden_effect = {
+#			play_song = "bella_ciao"
+#		}
+#	}
+#
+#	# Democratic
+#	option = { 
+#		name = BBA_italy_civil_war.1.d
+#
+#		ai_chance = {
+#			base = 0
+#		}
+#		
+#		set_global_flag = ITA_democratic_cw_flag
+#
+#		effect_tooltip = {
+#			start_civil_war = {
+#				ideology = neutrality #SPLITTING TAG
+#				size = 0.35
+#			}
+#			custom_effect_tooltip = BBA_italy_civil_war_democratic_tt
+#		}
+#
+#		hidden_effect = {
+#			ITA_set_special_characters_as_monarchist_effect = no #Should be enough for the split (Commies + Democ + Monarchists together)
+#			ITA_start_civil_war_effect = no
+#			#RDS = { change_tag_from = ROOT }
+#			#FOCUS TREE for RSI -> Needs to be here otherwise RDS player will see completion popup for this
+#			RSI = { country_event = { id = BBA_italy_civil_war.0 hours = 1 } }
+#			RDS = { country_event = { id = BBA_italy_civil_war.0 hours = 1 } }
+#			news_event = { id = bba_news.110 hours = 2 }
+#		}
+#		#ITA_log_the_shit = yes
+#
+#		#BELLA CIAO
+#		hidden_effect = {
+#			play_song = "bella_ciao"
+#		}
+#	}
+#}
 
 # Fronte Militare Clandestino (state modifier) - Event for RSI
 country_event = {
