@@ -5595,7 +5595,7 @@ country_event = {
 	desc = BBA_italy_civil_war.1.desc
 	picture = GFX_report_event_ITA_italian_civil_war
 	
-	is_triggered_only = no
+	is_triggered_only = yes
 
 	immediate = {
 		hidden_effect = {
@@ -5623,9 +5623,9 @@ country_event = {
 		}
 
 		hidden_effect = {
-			ITA_set_special_characters_as_fascist_effect = yes
-			ITA_start_civil_war_effect = yes
-			complete_national_focus = ITA_the_italian_social_republic
+			ITA_set_special_characters_as_fascist_effect = no
+			ITA_start_civil_war_effect = no
+			#complete_national_focus = ITA_the_italian_social_republic
 			RDS = { country_event = { id = BBA_italy_civil_war.0 hours = 1 } }
 			news_event = { id = bba_news.110 hours = 2 }
 		}
@@ -5649,9 +5649,9 @@ country_event = {
 		}
 
 		hidden_effect = {
-			ITA_set_special_characters_as_monarchist_effect = yes
-			ITA_start_civil_war_effect = yes
-			RDS = { change_tag_from = ROOT }
+			ITA_set_special_characters_as_monarchist_effect = no
+			ITA_start_civil_war_effect = no
+			#RDS = { change_tag_from = ROOT }
 			#FOCUS TREE for RSI -> Needs to be here otherwise RDS player will see completion popup for this
 			RSI = { country_event = { id = BBA_italy_civil_war.0 hours = 1 } }
 			RDS = { country_event = { id = BBA_italy_civil_war.0 hours = 1 } }
@@ -5684,9 +5684,9 @@ country_event = {
 		}
 
 		hidden_effect = {
-			ITA_set_special_characters_as_monarchist_effect = yes #Should be enough for the split (Commies + Democ + Monarchists together)
-			ITA_start_civil_war_effect = yes
-			RDS = { change_tag_from = ROOT }
+			ITA_set_special_characters_as_monarchist_effect = no #Should be enough for the split (Commies + Democ + Monarchists together)
+			ITA_start_civil_war_effect = no
+			#RDS = { change_tag_from = ROOT }
 			#FOCUS TREE for RSI -> Needs to be here otherwise RDS player will see completion popup for this
 			RSI = { country_event = { id = BBA_italy_civil_war.0 hours = 1 } }
 			RDS = { country_event = { id = BBA_italy_civil_war.0 hours = 1 } }
@@ -5719,9 +5719,9 @@ country_event = {
 		}
 
 		hidden_effect = {
-			ITA_set_special_characters_as_monarchist_effect = yes #Should be enough for the split (Commies + Democ + Monarchists together)
-			ITA_start_civil_war_effect = yes
-			RDS = { change_tag_from = ROOT }
+			ITA_set_special_characters_as_monarchist_effect = no #Should be enough for the split (Commies + Democ + Monarchists together)
+			ITA_start_civil_war_effect = no
+			#RDS = { change_tag_from = ROOT }
 			#FOCUS TREE for RSI -> Needs to be here otherwise RDS player will see completion popup for this
 			RSI = { country_event = { id = BBA_italy_civil_war.0 hours = 1 } }
 			RDS = { country_event = { id = BBA_italy_civil_war.0 hours = 1 } }
