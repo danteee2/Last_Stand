@@ -1,8 +1,4 @@
-﻿instant_effect = {
-	CreateGreatWarArt = yes
-}
-
-division_template = {
+﻿division_template = {
 	name = "División de Infanteria"
 
 	division_names_group = SPAN_INF_01
@@ -99,7 +95,7 @@ units = {
 		location = 1965 # Mexico City
 		division_template = "División de Infanteria"
 		start_experience_factor = 0.3
-		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+		force_equipment_variants = { infantry_equipment_1 = { owner = "USA" } }
 	}
 
 	division= {	# "1a División de Caballería"
@@ -247,8 +243,6 @@ units = {
 }
 
 instant_effect = {
-	CreateGreatWarArt = yes
-
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_0
@@ -260,7 +254,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = artillery_equipment_0
+			type = artillery_equipment_1
 			creator = "MEX"
 		}
 		requested_factories = 1

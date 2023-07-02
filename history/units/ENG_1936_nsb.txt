@@ -1,9 +1,5 @@
-﻿instant_effect = {
-	CreateGreatWarArt = yes
-}
-
-division_template = {
-	name = "Infantry Division"			# 1st - 5th divisions = fully equipped, others = reserve divisions
+﻿division_template = {
+	name = "Infantry Division"		# 1st - 5th divisions = fully equipped, others = reserve divisions
 	division_names_group = ENG_INF_01
 
 	regiments = {
@@ -24,7 +20,7 @@ division_template = {
 }
 division_template = {
 	name = "Cavalry Brigade"
-	division_names_group = ENG_CAV_02
+	division_names_group = ENG_CAV_01
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -38,7 +34,7 @@ division_template = {
 }
 division_template = {
 	name = "Tank Brigade"
-	division_names_group = ENG_ARM_02
+	division_names_group = ENG_ARM_01
 	regiments = {
 		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
@@ -224,7 +220,6 @@ units = {
 		location = 9239
 		division_template = "Tank Brigade"
 		start_experience_factor = 0.3
-		force_equipment_variants = { light_tank_chassis_1 = { owner = "ENG" version_name = "Light Tank Mk. IV" } }
 	}
 	division= {	# "3rd Infantry Division"
 		division_name = {
@@ -300,7 +295,7 @@ units = {
 	}
 	division= {	
 		name = "Canal Brigade"
-		location = 1155
+		location = 4073
 		division_template = "Colonial Garrison"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.15
@@ -417,17 +412,15 @@ units = {
 	}
 }
 
-###airwings in their own file
-
-
 	#########################
 	## STARTING PRODUCTION ##
 	#########################
 instant_effect = {
+	
 
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_0
+			type = infantry_equipment_1
 			creator = "ENG"
 		}
 		requested_factories = 3
@@ -436,7 +429,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = artillery_equipment_0
+			type = artillery_equipment_1
 			creator = "ENG"
 		}
 		requested_factories = 2
@@ -458,7 +451,6 @@ instant_effect = {
 		equipment = {
 			type = light_tank_chassis_1
 			creator = "ENG" 
-			version_name = "Light Tank Mk. VI"
 		}
 		requested_factories = 1
 		progress = 0.4

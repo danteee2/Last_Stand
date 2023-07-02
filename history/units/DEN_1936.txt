@@ -1,8 +1,4 @@
-﻿instant_effect = {
-	CreateGreatWarArt = yes
-}
-
-division_template = {
+﻿division_template = {
 	name = "Infanteri Division"	# represents first part of enlarged divisions
 	division_names_group = DEN_INF_01
 
@@ -102,7 +98,7 @@ units = {
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_0
+			type = infantry_equipment_1
 			creator = "DEN"
 		}
 		requested_factories = 1

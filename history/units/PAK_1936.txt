@@ -36,17 +36,16 @@ units = {}
 	
 	
 
-air_wings = {
-	### AHQ India
-	
-}
+#air_wings = {
+#	### AHQ India
+#}
 
 
 ##### Starting Production #####
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_0
+			type = infantry_equipment_1
 			creator = "PAK"
 		}
 		requested_factories = 1
