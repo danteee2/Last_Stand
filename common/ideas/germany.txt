@@ -16,7 +16,7 @@ ideas = {
 				stability_factor = -0.2
 				air_accidents_factor = -0.2
 				air_agility_factor = 0.05
-				air_attack_factor = 0.04
+				air_attack_factor = 0.05
 			}
 		}
 		GER_plunder_the_westIV = {
