@@ -16,7 +16,7 @@ spriteTypes = {
 	SpriteType = { name = "GFX_advanced_infantry_weapons_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_GEN_infantry_equipment_03.dds" }
 	SpriteType = { name = "GFX_advanced_infantry_weapons_b_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_GEN_infantry_equipment_04.dds" }
 	SpriteType = { name = "GFX_advanced_infantry_weapons_e_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_GEN_infantry_equipment_05.dds" }
-	SpriteType = { name = "GFX_advanced_infantry_weapons_f_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_GEN_infantry_equipment_06.dds" }
+	SpriteType = { name = "GFX_advanced_infantry_weapons_f_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_GEN_infantry_equipment_06_FAL.dds" }
 #-> Ammunition <><>	
 	SpriteType = { name = "GFX_infantry_weapons2_medium" texturefile = "gfx/interface/technologies/infantry/infantry_weapons/r56_tech_infantry_weapons_01.dds" }
 	SpriteType = { name = "GFX_improved_infantry_weapons_2_medium" texturefile = "gfx/interface/technologies/infantry/infantry_weapons/r56_tech_infantry_weapons_01.dds" }
@@ -356,7 +356,7 @@ spriteTypes = {
 	SpriteType = { name = "GFX_CZE_advanced_infantry_weapons_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_CZE_infantry_equipment_03.dds" }
 	SpriteType = { name = "GFX_CZE_advanced_infantry_weapons_b_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_CZE_infantry_equipment_04.dds" }
 	SpriteType = { name = "GFX_CZE_advanced_infantry_weapons_e_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_CZE_infantry_equipment_05.dds" }
-	SpriteType = { name = "GFX_DOU_advanced_infantry_weapons_f_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_GEN_infantry_equipment_06.dds" }
+	SpriteType = { name = "GFX_DOU_advanced_infantry_weapons_f_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_GEN_infantry_equipment_06_AK.dds" }
 
 #->	Support weapons <><>
 	SpriteType = { name = "GFX_CZE_support_weapons_medium" texturefile = "gfx/interface/technologies/infantry/support_weapons/r56_tech_AUS_support_weapons_01.dds" }
@@ -380,7 +380,7 @@ spriteTypes = {
 	SpriteType = { name = "GFX_SLO_advanced_infantry_weapons_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_SLO_infantry_equipment_03.dds" }
 	SpriteType = { name = "GFX_SLO_advanced_infantry_weapons_b_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_SLO_infantry_equipment_04.dds" }
 	SpriteType = { name = "GFX_SLO_advanced_infantry_weapons_e_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_SLO_infantry_equipment_05.dds" }
-	SpriteType = { name = "GFX_SLO_advanced_infantry_weapons_f_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_GEN_infantry_equipment_06.dds" }
+	SpriteType = { name = "GFX_SLO_advanced_infantry_weapons_f_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_GEN_infantry_equipment_06_AK.dds" }
 
 #->	Support weapons <><>
 	SpriteType = { name = "GFX_SLO_support_weapons_medium" texturefile = "gfx/interface/technologies/infantry/support_weapons/r56_tech_AUS_support_weapons_01.dds" }
@@ -404,7 +404,7 @@ spriteTypes = {
 	SpriteType = { name = "GFX_DOU_advanced_infantry_weapons_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_CZE_infantry_equipment_03.dds" }
 	SpriteType = { name = "GFX_DOU_advanced_infantry_weapons_b_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_CZE_infantry_equipment_04.dds" }
 	SpriteType = { name = "GFX_DOU_advanced_infantry_weapons_e_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_CZE_infantry_equipment_05.dds" }
-	SpriteType = { name = "GFX_DOU_advanced_infantry_weapons_f_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_GEN_infantry_equipment_06.dds" }
+	SpriteType = { name = "GFX_DOU_advanced_infantry_weapons_f_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_GEN_infantry_equipment_06_AK.dds" }
 
 #->	Support weapons <><>
 	SpriteType = { name = "GFX_DOU_support_weapons_medium" texturefile = "gfx/interface/technologies/infantry/support_weapons/r56_tech_AUS_support_weapons_01.dds" }
@@ -427,7 +427,7 @@ spriteTypes = {
 	SpriteType = { name = "GFX_RUT_advanced_infantry_weapons_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_CZE_infantry_equipment_03.dds" }
 	SpriteType = { name = "GFX_RUT_advanced_infantry_weapons_b_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_CZE_infantry_equipment_04.dds" }
 	SpriteType = { name = "GFX_RUT_advanced_infantry_weapons_e_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_CZE_infantry_equipment_05.dds" }
-	SpriteType = { name = "GFX_RUT_advanced_infantry_weapons_f_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_GEN_infantry_equipment_06.dds" }
+	SpriteType = { name = "GFX_RUT_advanced_infantry_weapons_f_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_GEN_infantry_equipment_06_AK.dds" }
 
 #->	Support weapons <><>
 	SpriteType = { name = "GFX_RUT_support_weapons_medium" texturefile = "gfx/interface/technologies/infantry/support_weapons/r56_tech_AUS_support_weapons_01.dds" }
@@ -450,7 +450,6 @@ spriteTypes = {
 	SpriteType = { name = "GFX_UKR_advanced_infantry_weapons_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_CZE_infantry_equipment_03.dds" }
 	SpriteType = { name = "GFX_UKR_advanced_infantry_weapons_b_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_CZE_infantry_equipment_04.dds" }
 	SpriteType = { name = "GFX_UKR_advanced_infantry_weapons_e_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_CZE_infantry_equipment_05.dds" }
-	SpriteType = { name = "GFX_UKR_advanced_infantry_weapons_f_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_CZE_infantry_equipment_06.dds" }
 
 #->	Support weapons <><>
 	SpriteType = { name = "GFX_UKR_support_weapons_medium" texturefile = "gfx/interface/technologies/infantry/support_weapons/r56_tech_AUS_support_weapons_01.dds" }
@@ -1852,12 +1851,12 @@ spriteTypes = {
 	
 ###---> PER <><> <><> <><>	
 #-> Small arms <><>
-	SpriteType = { name = "GFX_PER_infantry_weapons_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_PER_infantry_equipment_00.dds" }	
-	SpriteType = { name = "GFX_PER_infantry_weapons1_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_PER_infantry_equipment_01.dds" }
-	SpriteType = { name = "GFX_PER_improved_infantry_weapons_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_PER_infantry_equipment_02.dds" }
-	SpriteType = { name = "GFX_PER_advanced_infantry_weapons_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_PER_infantry_equipment_03.dds" }
-	SpriteType = { name = "GFX_PER_advanced_infantry_weapons_b_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_PER_infantry_equipment_04.dds" }
-	SpriteType = { name = "GFX_PER_advanced_infantry_weapons_e_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_PER_infantry_equipment_05.dds" }
+	SpriteType = { name = "GFX_infantry_weapons_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_PER_infantry_equipment_00.dds" }	
+	SpriteType = { name = "GFX_infantry_weapons1_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_PER_infantry_equipment_01.dds" }
+	SpriteType = { name = "GFX_improved_infantry_weapons_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_PER_infantry_equipment_02.dds" }
+	SpriteType = { name = "GFX_advanced_infantry_weapons_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_PER_infantry_equipment_03.dds" }
+	SpriteType = { name = "GFX_advanced_infantry_weapons_b_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_PER_infantry_equipment_04.dds" }
+	SpriteType = { name = "GFX_advanced_infantry_weapons_e_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_PER_infantry_equipment_05.dds" }
 
 	
 ###---> POL <><> <><> <><>
@@ -2320,7 +2319,7 @@ spriteTypes = {
 	SpriteType = { name = "GFX_BOS_advanced_infantry_weapons_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_YUG_infantry_equipment_03.dds" }
 	SpriteType = { name = "GFX_BOS_advanced_infantry_weapons_b_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_YUG_infantry_equipment_04.dds" }
 	SpriteType = { name = "GFX_BOS_advanced_infantry_weapons_e_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_YUG_infantry_equipment_05.dds" }
-	SpriteType = { name = "GFX_BOS_advanced_infantry_weapons_f_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_GEN_infantry_equipment_06.dds" }
+	SpriteType = { name = "GFX_BOS_advanced_infantry_weapons_f_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_GEN_infantry_equipment_06_AK.dds" }
 
 #->	Support weapons <><>
 	SpriteType = { name = "GFX_BOS_support_weapons_medium" texturefile = "gfx/interface/technologies/infantry/support_weapons/r56_tech_AUS_support_weapons_01.dds" }
@@ -2336,7 +2335,7 @@ spriteTypes = {
 	SpriteType = { name = "GFX_CRO_advanced_infantry_weapons_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_YUG_infantry_equipment_03.dds" }
 	SpriteType = { name = "GFX_CRO_advanced_infantry_weapons_b_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_YUG_infantry_equipment_04.dds" }
 	SpriteType = { name = "GFX_CRO_advanced_infantry_weapons_e_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_YUG_infantry_equipment_05.dds" }
-	SpriteType = { name = "GFX_CRO_advanced_infantry_weapons_f_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_GEN_infantry_equipment_06.dds" }
+	SpriteType = { name = "GFX_CRO_advanced_infantry_weapons_f_medium" texturefile = "gfx/interface/technologies/infantry/equipment/r56_tech_GEN_infantry_equipment_06_AK.dds" }
 
 #->	Support weapons <><>
 	SpriteType = { name = "GFX_CRO_support_weapons_medium" texturefile = "gfx/interface/technologies/infantry/support_weapons/r56_tech_AUS_support_weapons_01.dds" }

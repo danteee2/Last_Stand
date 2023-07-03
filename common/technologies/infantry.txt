@@ -24,7 +24,7 @@ technologies = {
 	@1954 = 36
 
 	
-#####Infantry Weapons and Childern#####
+	#####Infantry Weapons and Childern#####
 	infantry_weapons = {
 
 		enable_equipments = {
@@ -35,13 +35,6 @@ technologies = {
 			tank_heavy_machine_gun
 			secondary_turret_hmg
 			additional_machine_guns
-
-			prewar_weapon
-			prewar_anti_tank
-			minimum_protective
-			bandaging_package
-			sapper_shovels
-			binoculars
 		}
 		
 		enable_subunits = {
@@ -97,7 +90,6 @@ technologies = {
 
 		enable_equipment_modules = {
 			flamethrower
-			flame_support
 		}
 
 		categories = {
@@ -109,6 +101,11 @@ technologies = {
 			factor = 1
 		}
 
+		category_all_infantry = {
+			hard_attack = 0.2
+			breakthrough = 0.1
+		}
+
 		engineer = {
 			breakthrough = 1.5
 		}
@@ -116,12 +113,13 @@ technologies = {
 	}
 
 	sniper_rifle = {
-		enable_equipment_modules = {
-			sniper_support
-		}
 
+		category_all_infantry = {
+			soft_attack = 0.3
+		}
+			
 		category_recon = {
-			soft_attack = 0.7
+			soft_attack = 1
 		}
 
 		category_special_forces = {
@@ -141,15 +139,18 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 15
 		}
 	}
 
 	infantry_weapons1 = {
 
+		enable_equipments = {
+			infantry_equipment_1
+		}
+
 		enable_equipment_modules = {
 			tank_anti_tank_rifle_gun
-			regular_weapon
 		}
 				
 		path = {
@@ -195,8 +196,8 @@ technologies = {
 
 	r56_anti_tank_kit = {
 
-		enable_equipment_modules = {
-			regular_anti_tank
+		category_all_infantry = {
+			hard_attack = 0.25
 		}
 
 		category_light_infantry = {
@@ -232,12 +233,41 @@ technologies = {
 		}
 	}
 
+	
 	infantry_weapons2 = {
 
-		enable_equipment_modules = {
-			additional_grenades
+		category_light_infantry = {
+			soft_attack = 0.05
+		}
+		
+		cavalry = {
+			soft_attack = 0.05
 		}
 
+		camelry = {
+			soft_attack = 0.05
+		}
+		
+		motorized = {
+			soft_attack = 0.05
+		}
+		
+		mechanized = {
+			soft_attack = 0.05
+		}
+
+		mot_shocktroop = {
+			soft_attack = 0.05
+		}
+
+		mech_shocktroop = {
+			soft_attack = 0.05
+		}
+
+		amphibious_mechanized = {
+			soft_attack = 0.05
+		}
+		
 		path = {
 			leads_to_tech = improved_infantry_weapons
 			research_cost_coeff = 1
@@ -280,9 +310,8 @@ technologies = {
 	
 	improved_infantry_weapons = {
 
-		enable_equipment_modules = {
-			improved_weapon
-			pistol_protective
+		enable_equipments = {
+			infantry_equipment_2
 		}
 		
 		path = {
@@ -331,18 +360,17 @@ technologies = {
 			}			
 		}
 	}
-
 	improved_infantry_weapons_2 = {
-
-		enable_equipment_modules = {
-			additional_ammo
-		}
 
 		category_light_infantry = {
 			soft_attack = 0.05
 		}
 		
 		cavalry = {
+			soft_attack = 0.05
+		}
+
+		camelry = {
 			soft_attack = 0.05
 		}
 		
@@ -353,6 +381,15 @@ technologies = {
 		mechanized = {
 			soft_attack = 0.05
 		}
+
+		mot_shocktroop = {
+			soft_attack = 0.05
+		}
+
+		mech_shocktroop = {
+			soft_attack = 0.05
+		}
+
 		amphibious_mechanized = {
 			soft_attack = 0.05
 		}
@@ -395,10 +432,11 @@ technologies = {
 	
 	infantry_at = {
 
-		enable_equipment_modules = {
-			improved_anti_tank
+		category_all_infantry = {
+			hard_attack = 0.25
+			ap_attack = 1
 		}
-				
+		
 		path = {
 			leads_to_tech = infantry_at2
 			research_cost_coeff = 1
@@ -439,9 +477,9 @@ technologies = {
 	
 	infantry_at2 = {
 
-		enable_equipment_modules = {
-			advanced_anti_tank
-			saper_protective
+		category_all_infantry = {
+			hard_attack = 0.25
+			ap_attack = 1
 		}
 		
 		path = {
@@ -485,9 +523,9 @@ technologies = {
 	
 	advanced_infantry_weapons = {
 
-		enable_equipment_modules = {
-			advanced_weapon
-		}
+		enable_equipments = {
+			infantry_equipment_3
+		}	
 		
 		path = {
 			leads_to_tech = advanced_infantry_weapons2
@@ -531,10 +569,6 @@ technologies = {
 	
 	advanced_infantry_weapons2 = {
 
-		enable_equipment_modules = {
-			gun_grease
-		}
-
 		category_light_infantry = {
 			soft_attack = 0.05
 		}
@@ -546,9 +580,19 @@ technologies = {
 		motorized = {
 			soft_attack = 0.1
 		}
+		
 		mechanized = {
-			soft_attack = 0.1
+			soft_attack = 0.05
 		}
+
+		mot_shocktroop = {
+			soft_attack = 0.05
+		}
+
+		mech_shocktroop = {
+			soft_attack = 0.05
+		}
+
 		amphibious_mechanized = {
 			soft_attack = 0.1
 		}
@@ -1332,11 +1376,9 @@ technologies = {
 
 	#Jumps Out of Order to SWA
 	night_vision = {
-		enable_equipment_modules = {
-			night_vision_device
-		}
 
 		land_night_attack = 0.15
+		air_strategic_bomber_night_penalty = -0.05
 		
 		path = {
 			leads_to_tech = night_vision2
@@ -1377,12 +1419,13 @@ technologies = {
 				date > "1946.1.1"
 			}
 		}
-		}
-		
-		#Jumps Out of Order to SWB
-		night_vision2 = {
+	}
+	
+	#Jumps Out of Order to SWB
+	night_vision2 = {
 
-		land_night_attack = 0.15	
+		land_night_attack = 0.15
+		air_strategic_bomber_night_penalty = -0.1
 		
 		path = {
 			leads_to_tech = night_vision_a
@@ -1418,15 +1461,81 @@ technologies = {
 				date > "1946.1.6"
 			}
 		}
-		}
+	}
 	
-	###------> X <><> <><> <><> <><> <><>
+###------> X <><> <><> <><> <><> <><>
 
 	support_weapons = {
 
-		enable_equipment_modules = {
-			prewar_attack_support
-			prewar_defence_support
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		bicycle_battalion = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		camelry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		
+###------> Jaeger   <><> <><> <><> <><> <><>
+
+		jaeger = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		jungletroop = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		desertinfantry = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		shocktroop = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		
+###------> Jaeger   <><> <><> <><> <><> <><>
+
+		motorized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mot_shocktroop = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mech_shocktroop = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		amphibious_mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
 		}
 		
 		path = {
@@ -1482,9 +1591,75 @@ technologies = {
 	
 	support_weapons2 = {
 
-		enable_equipment_modules = {
-			regular_attack_support
-			regular_defence_support
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		bicycle_battalion = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		camelry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		
+###------> Jaeger   <><> <><> <><> <><> <><>
+
+		jaeger = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		jungletroop = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		desertinfantry = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		shocktroop = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		
+###------> Jaeger   <><> <><> <><> <><> <><>
+
+		motorized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mot_shocktroop = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mech_shocktroop = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		amphibious_mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
 		}
 		
 		path = {
@@ -1546,9 +1721,77 @@ technologies = {
  
 	support_weapons3 = {
 
-		enable_equipment_modules = {
-			improved_attack_support
-			improved_defence_support
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		bicycle_battalion = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		camelry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}	
+		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		jaeger = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		
+###------> Jaeger   <><> <><> <><> <><> <><>
+
+		jungletroop = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+
+		desertinfantry = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+
+		shocktroop = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		
+###------> Jaeger   <><> <><> <><> <><> <><>
+
+		motorized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mot_shocktroop = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mech_shocktroop = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		amphibious_mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
 		}
 		
 		path = {
@@ -1600,9 +1843,75 @@ technologies = {
 	
 	support_weapons4 = {
 
-		enable_equipment_modules = {
-			advanced_attack_support
-			advanced_defence_support
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		bicycle_battalion = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		camelry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}	
+		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		
+###------> Jaeger   <><> <><> <><> <><> <><>
+
+		jaeger = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		jungletroop = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		desertinfantry = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		shocktroop = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		
+###------> X   <><> <><> <><> <><> <><>
+
+		motorized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mot_shocktroop = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mech_shocktroop = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		amphibious_mechanized = {
+			defense = 0.05
+			breakthrough = 0.05		  
 		}
 		
 		path = {
@@ -1649,12 +1958,14 @@ technologies = {
 			}
 		}
 	}
+
+
 	
 	advanced_infantry_weapons_b = {
 
-		enable_equipment_modules = {
-			new_weapon
-		}
+		enable_equipments = {
+			infantry_equipment_x
+		}	
 		
 		path = {
 			leads_to_tech = advanced_infantry_weapons_e
@@ -1698,12 +2009,21 @@ technologies = {
 		}
 		cavalry = {
 			soft_attack = 0.1
-		}		
+		}
+		camelry = {
+			soft_attack = 0.1
+		}			
 
 		motorized = {
 			soft_attack = 0.1
 		}
 		mechanized = {
+			soft_attack = 0.1
+		}
+		mot_shocktroop = {
+			soft_attack = 0.1
+		}
+		mech_shocktroop = {
 			soft_attack = 0.1
 		}
 		amphibious_mechanized = {
@@ -1752,12 +2072,21 @@ technologies = {
 		}
 		cavalry = {
 			soft_attack = 0.1
+		}
+		camelry = {
+			soft_attack = 0.1
 		}		
 
 		motorized = {
 			soft_attack = 0.1
 		}
 		mechanized = {
+			soft_attack = 0.1
+		}
+		mot_shocktroop = {
+			soft_attack = 0.1
+		}
+		mech_shocktroop = {
 			soft_attack = 0.1
 		}
 		amphibious_mechanized = {
@@ -1796,9 +2125,9 @@ technologies = {
 	
 	advanced_infantry_weapons_e = {
 
-		enable_equipment_modules = {
-			new_weapon_2
-		}
+		enable_equipments = {
+			infantry_equipment_x_2
+		}	
 
 		research_cost = 1.5
 		start_year = 1948
@@ -1837,9 +2166,9 @@ technologies = {
 
 	advanced_infantry_weapons_f = {
 
-		enable_equipment_modules = {
-			new_weapon_3
-		}
+		enable_equipments = {
+			infantry_equipment_x_3
+		}	
 		
 		path = {
 			leads_to_tech = advanced_infantry_weapons_d
@@ -1882,8 +2211,9 @@ technologies = {
 
 	infantry_at_a = {
 
-		enable_equipment_modules = {
-			new_anti_tank
+		category_all_infantry = {
+			hard_attack = 0.25
+			ap_attack = 1
 		}
 		
 		path = {
@@ -1924,8 +2254,9 @@ technologies = {
 	
 	infantry_at_b = {
 
-		enable_equipment_modules = {
-			new_anti_tank_2
+		category_all_infantry = {
+			hard_attack = 0.25
+			ap_attack = 1
 		}
 		
 		path = {
@@ -1966,8 +2297,9 @@ technologies = {
 	
 	infantry_at_c = {
 
-		enable_equipment_modules = {
-			new_anti_tank_3
+		category_all_infantry = {
+			hard_attack = 0.25
+			ap_attack = 1
 		}
 		
 		research_cost = 1.5
@@ -2732,11 +3064,61 @@ technologies = {
 	
 	support_weapons_a = {
 
-		enable_equipment_modules = {
-			new_attack_support
-			new_defence_support
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
 		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		camelry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}	
+		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		
+###------> Jaeger   <><> <><> <><> <><> <><>
 
+		jaeger = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		jungletroop = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		desertinfantry = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		shocktroop = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		
+###------> X   <><> <><> <><> <><> <><>
+
+		motorized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		
 		path = {
 			leads_to_tech = support_weapons_b
 			research_cost_coeff = 1
@@ -2760,9 +3142,64 @@ technologies = {
 	
 	support_weapons_b = {
 
-		enable_equipment_modules = {
-			new_attack_support_2
-			new_defence_support_2
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		
+###------> Jaeger   <><> <><> <><> <><> <><>
+
+		jaeger = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		jungletroop = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		desertinfantry = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		shocktroop = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		
+###------> X   <><> <><> <><> <><> <><>
+
+		motorized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mot_shocktroop = {
+			max_organisation = 2
+			soft_attack = 0.03
+		}
+		
+		mech_shocktroop = {
+			max_organisation = 2
+			soft_attack = 0.03
 		}
 		
 		path = {
@@ -2788,7 +3225,8 @@ technologies = {
 	
 	night_vision_a = {
 
-		land_night_attack = 0.15	
+		land_night_attack = 0.15
+		air_strategic_bomber_night_penalty = -0.1
 		
 
 		research_cost = 2
@@ -2809,9 +3247,68 @@ technologies = {
 	
 	support_weapons_c = {
 
-		enable_equipment_modules = {
-			new_attack_support_3
-			new_defence_support_3
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		camelry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}	
+		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		
+###------> Jaeger   <><> <><> <><> <><> <><>
+
+		jaeger = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		jungletroop = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		desertinfantry = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		shocktroop = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		
+###------> X   <><> <><> <><> <><> <><>
+
+		motorized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mot_shocktroop = {
+			max_organisation = 2
+			soft_attack = 0.03
+		}
+		
+		mech_shocktroop = {
+			max_organisation = 2
+			soft_attack = 0.03
 		}
 		
 		research_cost = 1.5
@@ -3018,7 +3515,7 @@ technologies = {
 	winter_clothes_1944 = {
 
 		category_all_infantry = {
-			acclimatization_cold_climate_gain_factor = 0.15f
+			acclimatization_cold_climate_gain_factor = 0.15
 			default_morale = 0.01
 		}
 		
@@ -3810,8 +4307,15 @@ technologies = {
 			research_cost_coeff = 1
 		}	
 
-		enable_equipment_modules = {
-			basic_uniform
+		category_all_infantry = {
+			default_morale = 0.02
+			breakthrough = 0.02
+			hard_attack = 0.02
+		}
+		category_support_battalions = {
+			default_morale = 0.02
+			breakthrough = 0.02
+			hard_attack = 0.02
 		}
 
 		cas_damage_reduction = 0.1
@@ -3835,8 +4339,15 @@ technologies = {
 
 	camo1942 = {
 
-		enable_equipment_modules = {
-			advanced_uniform
+		category_all_infantry = {
+			default_morale = 0.02
+			breakthrough = 0.02
+			hard_attack = 0.02
+		}
+		category_support_battalions = {
+			default_morale = 0.02
+			breakthrough = 0.02
+			hard_attack = 0.02
 		}
 		
 		cas_damage_reduction = 0.1
@@ -3865,8 +4376,15 @@ technologies = {
 	
 	camo1948 = {
 
-		enable_equipment_modules = {
-			semi_modern_uniform
+		category_all_infantry = {
+			default_morale = 0.02
+			breakthrough = 0.02
+			hard_attack = 0.02
+		}
+		category_support_battalions = {
+			default_morale = 0.02
+			breakthrough = 0.02
+			hard_attack = 0.02
 		}
 		
 		cas_damage_reduction = 0.1
@@ -3895,8 +4413,15 @@ technologies = {
 	
 	camo1955 = {
 
-		enable_equipment_modules = {
-			modern_uniform
+		category_all_infantry = {
+			default_morale = 0.02
+			breakthrough = 0.02
+			hard_attack = 0.02
+		}
+		category_support_battalions = {
+			default_morale = 0.02
+			breakthrough = 0.02
+			hard_attack = 0.02
 		}
 		
 		cas_damage_reduction = 0.1
