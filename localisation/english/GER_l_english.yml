@@ -732,6 +732,30 @@ GER_jewish_question_desc:0 "From the loss of World War One and anti-semitism dri
  r56.ger.15.b:0 "The territory is ours!"
  r56.ger.15.c:0 "Slovakia deserves to keep it."
 
+#LS industry tree
+GER_plunder_the_westV:0 "High Werhmacht Influence"
+GER_plunder_the_westIV:0 "High Socio-Economic Status"
+GER_plunder_the_westIII:0 "Low Werhmacht Influence"
+GER_plunder_the_westII:0 "Low Socio-Economic Status"
+GER_plunder_the_westI:0 "Plunder The West"
+GER_plunder_the_west:0 "Plunder The West"
+GER_expand_influence_of_the_Wehrmacht:0 "Expand Influence Of The Wehrmacht"
+GER_bail_out_the_banks:0 "Bail Out The Banks"
+GER_finalise_public_investments:0 "Finalise Public Investments"
+GER_redirect_investment_into_jobs:0 "Redirect Investment Into Jobs"
+GER_luftwaffe_investments:0 "Luftwaffe Investments"
+GER_develop_polish_territories:0 "Develop Polish Territories"
+GER_plunder_the_west_desc:0 "It's time for the German government to take back the economic status that the fatherland once had. Last ditch attempt to dwarf the Western economies, otherwise we may consider more investments into the Nation's beloved Wehrmacht."
+GER_redirect_investment_into_jobs_desc:0 "More investments will be redirected to job creation to maintain stability within the fatherland."
+GER_finalise_public_investments_desc:0 "The time has come to finalise the public investments."
+GER_develop_polish_territories_desc:0 "Time to turn national investment towards the polish, hoping for their compliance."
+GER_expand_influence_of_the_Wehrmacht_desc:0 "We have made the decision to keep pushing for investments into our military, the public is the last thing on our mind."
+GER_luftwaffe_investments_desc:0 "The government has redirected more investment into the quality of our Luftwaffe, only our foes should be worried now."
+GER_bail_out_the_banks_desc:0 "The banks no longer beg for our 'MEFO' money, as we have bailed them out via the taxpayer."
+
+
+
+
 #Extra yalta stuff marijn211
  news.339.title:0 "Allied Occupation of Germany."
  news.339.desc:0 "With the second world war in Europe over, the Allies have taken complete control over Germany and split it over four occupying nations, the [ENG.GetAdjective] and [FRA.GetAdjective] in the west and the [USA.GetAdjective] and [SOV.GetAdjective] in the east; how long it will take for these lands to recover and to be denazified remains unknown."

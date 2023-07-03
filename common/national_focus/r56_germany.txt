@@ -16196,7 +16196,6 @@ focus_tree = {
 			add_manpower = -150000
 			add_ideas = population_pure
         }	
-        
 	}
 	focus = {
 		id = GER_plunder_the_west
@@ -16205,38 +16204,29 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_volkswagen
 		}
+		available = { date > 1939.01.01 }
 		x = 0
 		y = 2
 		relative_position_id = GER_deutsche_arbeitsfront
 		ai_will_do = {
 			factor = 10
 		}
-		available = {
-			date > 1939.01.01
-		}
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 1.0
-				uses = 1
-				category = construction_tech
-			}
-			add_tech_bonus = {
-				bonus = 1.0
-				uses = 1
-				category = electronics
-			}
-			add_ideas = GER_plunder_the_west
+			add_ideas = GER_plunder_the_westI
 		}
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH
 		}
 	}
 	focus = {
-		id = GER_capacity_of_the_workforce
+		id = GER_redirect_investment_into_jobs
 		icon = GFX_BEL_union_agreement
 		cost = 10
 		prerequisite = {
 			focus = GER_plunder_the_west
+		}
+		mutually_exclusive = {
+			focus = GER_expand_influence_of_the_Wehrmacht
 		}
 		x = -1	
 		y = 3
@@ -16245,12 +16235,8 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			# hidden_effect = {
-			# 	remove_ideas = technocrat_support_I_idea
-			# }
-			# add_ideas = technocrat_support_II_idea
 			swap_ideas = {
-				remove_idea = GER_plunder_the_west
+				remove_idea = GER_plunder_the_westI
 				add_idea = GER_plunder_the_westII
 			}
 		}
@@ -16258,4 +16244,174 @@ focus_tree = {
 			FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY
 		}
 	}
+	focus = {
+		id = GER_expand_influence_of_the_Wehrmacht
+		icon = GFX_goal_GER_great_black_menace
+		cost = 10
+		prerequisite = {
+			focus = GER_plunder_the_west
+		}
+		mutually_exclusive = {
+			focus = GER_redirect_investment_into_jobs
+		}
+		x = 1	
+		y = 3
+		relative_position_id = GER_deutsche_arbeitsfront
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_plunder_the_westI
+				add_idea = GER_plunder_the_westIII
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = GER_bail_out_the_banks
+		icon = GFX_focus_generic_improve_the_administration 
+		cost = 1
+		prerequisite = {
+			focus = GER_redirect_investment_into_jobs
+		}
+		available = {
+				has_idea = GER_mefo_bills_ended
+		}
+		x = -3	
+		y = 4
+		relative_position_id = GER_deutsche_arbeitsfront
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			remove_ideas = GER_mefo_bills_ended
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = GER_finalise_public_investments
+		icon = GFX_goal_generic_building_our_industry
+		cost = 10
+		prerequisite = {
+			focus = GER_redirect_investment_into_jobs
+		}
+		x = -1
+		y = 4
+		relative_position_id = GER_deutsche_arbeitsfront
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_plunder_the_westII
+				add_idea = GER_plunder_the_westIV
+			}
+		} 
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = GER_luftwaffe_investments
+		icon = GFX_goal_italy_further_pilots_training
+		cost = 10
+		prerequisite = {
+			focus = GER_expand_influence_of_the_Wehrmacht
+		}
+		x = 1
+		y = 4
+		relative_position_id = GER_deutsche_arbeitsfront
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_plunder_the_westIII
+				add_idea = GER_plunder_the_westV
+			}
+		} 
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = GER_develop_polish_territories
+		icon = GFX_goal_central_industrial_region_strategy
+		cost = 5.00
+		prerequisite = {
+			focus = GER_nationalize_aviation_industry
+		}
+		x = 0
+		y = 2
+		relative_position_id = GER_nationalize_resource_industries
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			controls_state = 807
+			controls_state = 85
+			controls_state = 10
+			date > 1938.01.01	
+		}
+		completion_reward = {
+			85 = {
+				limit = {
+					is_core_of = POL
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			807 = {
+				limit = {
+					is_core_of = POL
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			10 = {
+				limit = {
+					is_core_of = POL
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY 
+		}
+
+	}
+
 }
