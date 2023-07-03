@@ -1,0 +1,89 @@
+equipment_modules = {
+	modern_art_weapon = {
+		category = artilery_weapon_type
+		parent = advanced_art_weapon
+
+		allow_equipment_type = artillery
+
+	    allowed_module_categories = {
+	    	special_type_slot_1 = {
+	  		  artillery_special_modules
+	    	}
+	    	special_type_slot_2 = {
+	  		  artillery_special_modules
+	    	}
+	    	special_type_slot_3 = {
+	  		  artillery_special_modules
+	    	}
+	    	special_type_slot_4 = {
+	  		  artillery_special_modules
+	    	}
+	    }
+	    forbid_equipment_type_exact_match = armor
+
+		add_stats = {
+		   #Defensive Abilities
+			defense = 25
+			breakthrough = 12
+
+		   #Offensive Abilities
+			soft_attack = 42
+			hard_attack = 4
+			ap_attack = 5
+
+		   #Misc Abilities
+			build_cost_ic = 4.5
+		}
+
+		xp_cost = 0
+
+		build_cost_resources = {
+		   tungsten = 2
+		   steel = 2
+		}
+	}
+
+	advanced_rocket_weapon = {
+		category = artilery_weapon_type
+		parent = improved_rocket_weapon
+
+		allow_equipment_type = artillery
+		allowed_module_categories = {
+			special_type_slot_1 = {
+				rocket_special_modules
+			}
+			special_type_slot_2 = {
+				rocket_special_modules
+			}
+			special_type_slot_3 = {
+				rocket_special_modules
+			}
+			special_type_slot_4 = {
+				rocket_special_modules
+			}
+		}
+	   	forbid_equipment_type_exact_match = armor
+
+		add_stats = {
+			#Defensive Abilities
+			 defense = 22
+		   	 breakthrough = 19
+
+			#Offensive Abilities
+			 soft_attack = 20
+			 hard_attack = 20
+			 ap_attack = 5
+
+			#Misc Abilities
+			 fuel_consumption = 1.2
+			 build_cost_ic = 5.5
+		}
+
+		xp_cost = 5
+
+		build_cost_resources = {
+		   	tungsten = 2
+			steel = 1
+		}
+	}
+}

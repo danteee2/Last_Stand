@@ -1,0 +1,451 @@
+on_actions = {
+	on_monthly = {
+		effect = {
+			# Regular Weapon
+			every_country = {
+				limit = {
+					is_ai = yes
+					has_tech = infantry_weapons1
+					not = {
+						has_country_flag = infantry_weapons_flag1
+					}
+				}
+				create_equipment_variant = {
+					type = infantry_equipment_0
+					parent_version = 1
+					modules = {
+						anti_tank_slot = prewar_anti_tank
+						small_arms_slot = regular_weapon
+						personal_protective_slot = minimum_protective
+						uniform_type_slot = basic_uniform
+						special_type_slot_1 = bandaging_package
+						special_type_slot_2 = sapper_shovels
+						special_type_slot_3 = binoculars
+						special_type_slot_4 = empty
+						
+					}
+				}
+				set_country_flag = infantry_weapons_flag1
+			}
+
+			every_country = {
+				limit = {
+					is_ai = yes
+					has_tech = r56_anti_tank_kit
+					has_army_experience > 3
+					not = {
+						has_country_flag = infantry_weapons_flag2
+					}
+				}
+				create_equipment_variant = {
+					type = infantry_equipment_0
+					parent_version = 2
+					modules = {
+						anti_tank_slot = regular_anti_tank
+						small_arms_slot = regular_weapon
+						personal_protective_slot = minimum_protective
+						uniform_type_slot = basic_uniform
+						special_type_slot_1 = bandaging_package
+						special_type_slot_2 = sapper_shovels
+						special_type_slot_3 = binoculars
+						special_type_slot_4 = empty
+						
+					}
+				}
+				army_experience = -3
+				set_country_flag = infantry_weapons_flag2
+			}
+
+
+			# Improved Weapons
+			every_country = {
+				limit = {
+					is_ai = yes
+					has_tech = improved_infantry_weapons
+					has_army_experience > 5
+					not = {
+						has_country_flag = infantry_weapons_flag3
+					}
+				}
+				create_equipment_variant = {
+					type = infantry_equipment_0
+					parent_version = 3
+					modules = {
+						anti_tank_slot = regular_anti_tank
+						small_arms_slot = improved_weapon
+						personal_protective_slot = pistol_protective
+						uniform_type_slot = basic_uniform
+						special_type_slot_1 = bandaging_package
+						special_type_slot_2 = sapper_shovels
+						special_type_slot_3 = binoculars
+						special_type_slot_4 = empty
+						
+					}
+				}
+				army_experience = -5
+				set_country_flag = infantry_weapons_flag3
+			}
+
+			every_country = {
+				limit = {
+					is_ai = yes
+					has_tech = improved_infantry_weapons
+					has_tech = infantry_at
+					has_army_experience > 5
+					not = {
+						has_country_flag = infantry_weapons_flag4
+					}
+				}
+				create_equipment_variant = {
+					type = infantry_equipment_0
+					parent_version = 4
+					modules = {
+						anti_tank_slot = improved_anti_tank
+						small_arms_slot = improved_weapon
+						personal_protective_slot = pistol_protective
+						uniform_type_slot = basic_uniform
+						special_type_slot_1 = bandaging_package
+						special_type_slot_2 = sapper_shovels
+						special_type_slot_3 = binoculars
+						special_type_slot_4 = empty
+						
+					}
+				}
+				army_experience = -5
+				set_country_flag = infantry_weapons_flag4
+			}
+
+			every_country = {
+				limit = {
+					is_ai = yes
+					has_tech = improved_infantry_weapons
+					has_tech = infantry_at
+					has_tech = camo1942
+					has_army_experience > 5
+					not = {
+						has_country_flag = infantry_weapons_flag5
+					}
+				}
+				create_equipment_variant = {
+					type = infantry_equipment_0
+					parent_version = 5
+					modules = {
+						anti_tank_slot = improved_anti_tank
+						small_arms_slot = improved_weapon
+						personal_protective_slot = pistol_protective
+						uniform_type_slot = advanced_uniform
+						special_type_slot_1 = bandaging_package
+						special_type_slot_2 = sapper_shovels
+						special_type_slot_3 = binoculars
+						special_type_slot_4 = empty
+						
+					}
+				}
+				army_experience = -5
+				set_country_flag = infantry_weapons_flag5
+			}
+
+
+			
+			# Advanced
+			every_country = {
+				limit = {
+					is_ai = yes
+					has_tech = advanced_infantry_weapons
+					has_tech = infantry_at
+					has_tech = camo1942
+					has_tech = sniper_rifle
+					has_army_experience > 7
+					not = {
+						has_country_flag = infantry_weapons_flag6
+					}
+				}
+				create_equipment_variant = {
+					type = infantry_equipment_0
+					parent_version = 6
+					modules = {
+						anti_tank_slot = improved_anti_tank
+						small_arms_slot = advanced_weapon
+						personal_protective_slot = pistol_protective
+						uniform_type_slot = advanced_uniform
+						special_type_slot_1 = bandaging_package
+						special_type_slot_2 = sapper_shovels
+						special_type_slot_3 = binoculars
+						special_type_slot_4 = sniper_support
+						
+					}
+				}
+				army_experience = -7
+				set_country_flag = infantry_weapons_flag6
+			}
+
+			every_country = {
+				limit = {
+					is_ai = yes
+					has_tech = advanced_infantry_weapons
+					has_tech = infantry_at2
+					has_tech = camo1942
+					has_tech = sniper_rifle
+					has_army_experience > 5
+					not = {
+						has_country_flag = infantry_weapons_flag7
+					}
+				}
+				create_equipment_variant = {
+					type = infantry_equipment_0
+					parent_version = 7
+					modules = {
+						anti_tank_slot = advanced_anti_tank
+						small_arms_slot = advanced_weapon
+						personal_protective_slot = pistol_protective
+						uniform_type_slot = advanced_uniform
+						special_type_slot_1 = bandaging_package
+						special_type_slot_2 = sapper_shovels
+						special_type_slot_3 = binoculars
+						special_type_slot_4 = sniper_support
+						
+					}
+				}
+				army_experience = -7
+				set_country_flag = infantry_weapons_flag7
+			}
+
+			every_country = {
+				limit = {
+					is_ai = yes
+					has_tech = advanced_infantry_weapons
+					has_tech = infantry_at2
+					has_tech = camo1942
+					has_tech = sniper_rifle
+					has_tech = night_vision
+					has_army_experience > 5
+					not = {
+						has_country_flag = infantry_weapons_flag8
+					}
+				}
+				create_equipment_variant = {
+					type = infantry_equipment_0
+					parent_version = 8
+					modules = {
+						anti_tank_slot = advanced_anti_tank
+						small_arms_slot = advanced_weapon
+						personal_protective_slot = pistol_protective
+						uniform_type_slot = advanced_uniform
+						special_type_slot_1 = bandaging_package
+						special_type_slot_2 = sapper_shovels
+						special_type_slot_3 = binoculars
+						special_type_slot_4 = sniper_support
+					}
+				}
+				army_experience = -5
+				set_country_flag = infantry_weapons_flag8
+			}
+
+			# New Infantry
+			every_country = {
+				limit = {
+					is_ai = yes
+					has_tech = advanced_infantry_weapons_b
+					has_tech = infantry_at2
+					has_tech = camo1942
+					has_tech = sniper_rifle
+					has_army_experience > 5
+					not = {
+						has_country_flag = infantry_weapons_flag9
+					}
+				}
+				create_equipment_variant = {
+					type = infantry_equipment_0
+					parent_version = 9
+					modules = {
+						anti_tank_slot = advanced_anti_tank
+						small_arms_slot = new_weapon
+						personal_protective_slot = pistol_protective
+						uniform_type_slot = advanced_uniform
+						special_type_slot_1 = bandaging_package
+						special_type_slot_2 = sapper_shovels
+						special_type_slot_3 = binoculars
+						special_type_slot_4 = sniper_support
+					}
+				}
+				army_experience = -5
+				set_country_flag = infantry_weapons_flag9
+			}
+
+			every_country = {
+				limit = {
+					is_ai = yes
+					has_tech = advanced_infantry_weapons_b
+					has_tech = infantry_at2
+					has_tech = camo1948
+					has_army_experience > 5
+					not = {
+						has_country_flag = infantry_weapons_flag10
+					}
+				}
+				create_equipment_variant = {
+					type = infantry_equipment_0
+					parent_version = 10
+					modules = {
+						anti_tank_slot = advanced_anti_tank
+						small_arms_slot = new_weapon
+						personal_protective_slot = pistol_protective
+						uniform_type_slot = semi_modern_uniform
+						special_type_slot_1 = bandaging_package
+						special_type_slot_2 = sapper_shovels
+						special_type_slot_3 = binoculars
+						special_type_slot_4 = sniper_support
+					}
+				}
+				army_experience = -10
+				set_country_flag = infantry_weapons_flag10
+			}
+			
+			every_country = {
+				limit = {
+					is_ai = yes
+					has_tech = advanced_infantry_weapons_e
+					has_tech = infantry_at_a
+					has_tech = camo1948
+					has_army_experience > 5
+					not = {
+						has_country_flag = infantry_weapons_flag11
+					}
+				}
+				create_equipment_variant = {
+					type = infantry_equipment_0
+					parent_version = 11
+					modules = {
+						anti_tank_slot = new_anti_tank
+						small_arms_slot = new_weapon_2
+						personal_protective_slot = pistol_protective
+						uniform_type_slot = semi_modern_uniform
+						special_type_slot_1 = bandaging_package
+						special_type_slot_2 = sapper_shovels
+						special_type_slot_3 = binoculars
+						special_type_slot_4 = sniper_support
+					}
+				}
+				army_experience = -10
+				set_country_flag = infantry_weapons_flag11
+			}
+
+			every_country = {
+				limit = {
+					is_ai = yes
+					has_tech = advanced_infantry_weapons_e
+					has_tech = infantry_at_b
+					has_tech = camo1948
+					has_army_experience > 5
+					not = {
+						has_country_flag = infantry_weapons_flag12
+					}
+				}
+				create_equipment_variant = {
+					type = infantry_equipment_0
+					parent_version = 12
+					modules = {
+						anti_tank_slot = new_anti_tank_2
+						small_arms_slot = new_weapon_2
+						personal_protective_slot = saper_protective
+						uniform_type_slot = semi_modern_uniform
+						special_type_slot_1 = bandaging_package
+						special_type_slot_2 = sapper_shovels
+						special_type_slot_3 = binoculars
+						special_type_slot_4 = sniper_support
+					}
+				}
+				army_experience = -10
+				set_country_flag = infantry_weapons_flag12
+			}
+
+			every_country = {
+				limit = {
+					is_ai = yes
+					has_tech = advanced_infantry_weapons_f
+					has_tech = infantry_at_b
+					has_tech = camo1948
+					has_army_experience > 5
+					not = {
+						has_country_flag = infantry_weapons_flag13
+					}
+				}
+				create_equipment_variant = {
+					type = infantry_equipment_0
+					parent_version = 13
+					modules = {
+						anti_tank_slot = new_anti_tank_2
+						small_arms_slot = new_weapon_3
+						personal_protective_slot = saper_protective
+						uniform_type_slot = semi_modern_uniform
+						special_type_slot_1 = bandaging_package
+						special_type_slot_2 = sapper_shovels
+						special_type_slot_3 = binoculars
+						special_type_slot_4 = sniper_support
+					}
+				}
+				army_experience = -5
+				set_country_flag = infantry_weapons_flag13
+			}
+
+			every_country = {
+				limit = {
+					is_ai = yes
+					has_tech = advanced_infantry_weapons_f
+					has_tech = infantry_at_c
+					has_tech = camo1948
+					has_army_experience > 5
+					not = {
+						has_country_flag = infantry_weapons_flag14
+					}
+				}
+				create_equipment_variant = {
+					type = infantry_equipment_0
+					parent_version = 14
+					modules = {
+						anti_tank_slot = new_anti_tank_3
+						small_arms_slot = new_weapon_3
+						personal_protective_slot = saper_protective
+						uniform_type_slot = semi_modern_uniform
+						special_type_slot_1 = bandaging_package
+						special_type_slot_2 = sapper_shovels
+						special_type_slot_3 = binoculars
+						special_type_slot_4 = sniper_support
+					}
+				}
+				army_experience = -5
+				set_country_flag = infantry_weapons_flag14
+			}
+
+			every_country = {
+				limit = {
+					is_ai = yes
+					has_tech = advanced_infantry_weapons_f
+					has_tech = infantry_at_c
+					has_tech = camo1955
+					has_army_experience > 5
+					not = {
+						has_country_flag = infantry_weapons_flag15
+					}
+				}
+				create_equipment_variant = {
+					type = infantry_equipment_0
+					parent_version = 15
+					modules = {
+						anti_tank_slot = new_anti_tank_3
+						small_arms_slot = new_weapon_3
+						personal_protective_slot = saper_protective
+						uniform_type_slot = modern_uniform
+						special_type_slot_1 = bandaging_package
+						special_type_slot_2 = sapper_shovels
+						special_type_slot_3 = binoculars
+						special_type_slot_4 = sniper_support
+					}
+				}
+				army_experience = -5
+				set_country_flag = infantry_weapons_flag15
+			}
+		}
+	}
+
+}

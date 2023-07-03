@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_EMI_modern_at_weapon"
+		textureFile = "gfx/interface/equipmentdesigner/arteliry/modules/modern_at_weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_modern_aa_weapon"
+		textureFile = "gfx/interface/equipmentdesigner/arteliry/modules/modern_aa_weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_modern_art_weapon"
+		textureFile = "gfx/interface/equipmentdesigner/arteliry/modules/modern_art_weapon.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_advanced_rocket_weapon"
+		textureFile = "gfx/interface/equipmentdesigner/arteliry/modules/advanced_rocket_weapon.dds"
+	}
+}

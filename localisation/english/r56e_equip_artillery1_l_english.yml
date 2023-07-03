@@ -1,0 +1,31 @@
+﻿l_english:
+  advanced_rocket_weapon: "Advanced rocket launcher"
+  advanced_rocket_weapon_desc: "Rockets with increased range and power. making already impressive artillery batteries even more effective."
+  modern_aa_weapon: "Modern anti-aircraft armament"
+  modern_aa_weapon_desc: "A redesigned mobile flak gun with autoloader. with upgrade potentials in the future."
+  modern_art_weapon: "Modern Howitzer"
+  modern_art_weapon_desc: "Artillery that capable of packing a strong punch despite its size."
+  modern_at_weapon: "Early anti-tank missile"
+  modern_at_weapon_desc: "Early anti-tank missile that capable of destroying any tank in service."
+ # Technology
+  rocket_artillery: "Rocket Artillery I"
+  rocket_artillery_desc: "Rocket artillery is less accurate and has a much lower sustained rate of fire than batteries of traditional artillery guns. However. they have the capability of simultaneously hitting a target with multiple rockets with devastating effect."
+  rocket_artillery4: "Rocket Artillery II"
+  rocket_artillery_c: "Rocket Artillery III"
+  rocket_artillery_c_desc: "Rockets with increased range and power. making already impressive artillery batteries even more effective."
+  interwar_artillery: "Artillery I"
+  artillery1: "Artillery II"
+  artillery4: "Artillery III"
+  artillery_b: "Artillery IV"
+  artillery_b_desc: "Artillery that capable of packing a strong punch despite its size."
+
+  antiair5: "Anti-Air III"
+  antiair_c: "Anti-Air IV"
+  antiair_c_desc: "A redesigned mobile flak gun with autoloader. with upgrade potentials in the future."
+
+  interwar_antitank: "Anti-Tank I"
+  interwar_antitank_desc: "Artillery specialized in defeating armored targets like tanks. it generally fires armor piercing shells."
+  antitank5: "Anti-Tank III"
+  antitank_c: "Anti-Tank IV"
+  antitank_c_desc: "Early anti-tank missile that capable of destroying any tank in service."
+
