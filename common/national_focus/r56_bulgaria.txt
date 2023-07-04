@@ -5281,8 +5281,8 @@ focus = {
 	focus = {
 		id = BUL_greater
 		icon = GFX_focus_greater_bulgaria
-		x = 23
-		y = 8
+		x = 73
+		y = 0
 		cost = 10
 
 		ai_will_do = {
@@ -5304,6 +5304,7 @@ focus = {
 			add_state_core = 106
 			add_state_core = 803
 			add_state_core = 77
+
 			add_ideas = BUL_greater_pre
 		}
 	}
@@ -5311,14 +5312,11 @@ focus = {
 		id = fishboy
 		icon = GFX_goal_rhineland
 		prerequisite = {focus = BUL_greater}
-		x = 27
-		y = 9
+		relative_position_id = BUL_greater
+		x = 2
+		y = 1
 		cost = 10
-		completion_reward =  {
-			# hidden_effect = {
-			# 	remove_ideas = BUL_greater_pre
-			# }
-			# add_ideas = BUL_miltiary_funny
+		completion_reward =  {			
 			swap_ideas = {
 				remove_idea = BUL_greater_pre
 				add_idea = BUL_miltiary_funny
@@ -5329,8 +5327,9 @@ focus = {
 		id = BUL_gre_fac
 		icon = GFX_goal_generic_strenght_through_industry
 		prerequisite = {focus = BUL_greater}
-		x = 23
-		y = 9
+		relative_position_id = BUL_greater
+		x = -2
+		y = 1
 		cost = 20
 		available = {
 			is_subject = no
@@ -5342,7 +5341,7 @@ focus = {
 		}
 		completion_reward = {
 			184 = {
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -5350,7 +5349,7 @@ focus = {
 				}
 			}
 			731 = {
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -5358,7 +5357,7 @@ focus = {
 				}
 			}
 			106 = {
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -5366,7 +5365,7 @@ focus = {
 				}
 			}
 			803 = {
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -5374,7 +5373,7 @@ focus = {
 				}
 			}
 			77 = {
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -5386,8 +5385,9 @@ focus = {
 	focus = {
 		id = BUL_more_funny_shit
 		cost = 10 
-		x = 24
-		y = 10
+		x = -3
+		y = 2
+		relative_position_id = BUL_greater
 		icon = GFX_goal_generic_chromium
 		available = { 
 			has_full_control_of_state = 106
@@ -5396,7 +5396,7 @@ focus = {
 		completion_reward = {
 			add_resource = {
                 type = chromium
-                amount = 50
+                amount = 19
                 state = 106
             }
 		}
@@ -5406,16 +5406,17 @@ focus = {
 		id = BUL_funny_shit
 		cost = 10
 		prerequisite = {focus = BUL_gre_fac}
+		relative_position_id = BUL_greater
 		available = { 
 			has_full_control_of_state = 731
 		}
-		x = 22
-		y = 10
+		x = -1
+		y = 2
 		icon = GFX_focus_generic_steel
 		completion_reward = {
 			add_resource = {
                 type = steel
-                amount = 75
+                amount = 45
                 state = 731
             }
 		}
@@ -5424,9 +5425,10 @@ focus = {
 		id = BUL_look_to_the_past
 		icon = GFX_focus_generic_attack_bulgaria
 		cost = 10
+		relative_position_id = BUL_greater
 		prerequisite = {focus = fishboy}
-		y = 10
-		x = 28
+		y = 2
+		x = 3
 		completion_reward = {
 		# hidden_effect = {
 		# 	remove_ideas = BUL_miltiary_funny
@@ -5446,8 +5448,9 @@ focus = {
 		icon = GFX_goal_generic_army_tanks
 		cost = 10
 		prerequisite = {focus =  BUL_look_to_the_past}
-		y = 11
-		x = 28
+		relative_position_id = BUL_greater
+		y = 3
+		x = 3
 		available = {
 			has_army_manpower = { size > 450000 }
 		}
@@ -5466,6 +5469,7 @@ focus = {
     focus = {
 		id = BUL_exand_mil_bc_funny
 		icon = GFX_goal_generic_construct_mil_factory
+		relative_position_id = BUL_greater
 	    cost= 10
 		available = {
 			is_subject = no
@@ -5476,8 +5480,8 @@ focus = {
 			has_full_control_of_state = 77
 		    }
 	    prerequisite = {focus = fishboy}
-	    y = 10
-	    x = 26
+	    y = 2
+	    x = 1
 		completion_reward = {
 		184 = {
 			add_extra_state_shared_building_slots = 2
