@@ -3250,10 +3250,7 @@ focus_tree = {
 		icon = GFX_focus_generic_the_giant_wakes
 		prerequisite = { focus = USA_arsenal_of_democracy }
 		available = {
-			OR = {
-				has_war = yes
-				has_war_support > 0.5
-			}
+		    has_war_support > 0.35
 			democratic > 0.95
 		}
 		continue_if_invalid = yes
