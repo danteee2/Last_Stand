@@ -3889,7 +3889,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = MON_choibalsan_plot
-					days = -30
+					days = 200
 				}
 			}
 		}
@@ -3934,7 +3934,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = MON_choibalsan_plot
-					days = -50
+					days = 200
 				}
 			}
 		}
@@ -3991,7 +3991,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = MON_choibalsan_plot
-					days = -70
+					days = 200
 				}
 			}
 		}
@@ -4027,7 +4027,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = MON_choibalsan_plot
-					days = -110
+					days = 200
 				}
 			}
 		}
@@ -4098,7 +4098,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = MON_choibalsan_plot
-					days = 80
+					days = 200
 				}
 			}
 		}
@@ -4138,7 +4138,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = MON_choibalsan_plot
-					days = 100
+					days = 200
 				}
 			
 			}
