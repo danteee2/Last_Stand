@@ -1035,7 +1035,7 @@ ideas = {
 
 			modifier = {
 				political_power_gain = -0.20
-				consumer_goods_factor = -0.10
+				consumer_goods_factor = -0.5
 			}
 		}
 
@@ -1253,9 +1253,11 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = -0.25
-				training_time_army_factor = -0.15
+				army_org_factor = 0.1
+				training_time_army_factor = -0.2
 				conscription_factor = 0.2
+				conscription = 0.04
+
 			}
 		}
 
@@ -1270,9 +1272,9 @@ ideas = {
 			}
 
 			modifier = {
-				army_speed_factor = 0.05
-				army_attack_factor = 0.1
-				army_defence_factor = -0.1
+				army_speed_factor = 0.1
+				army_attack_factor = 0.15
+				army_defence_factor = -0.05
 			}
 		}
 
@@ -1287,10 +1289,10 @@ ideas = {
 			}
 
 			modifier = {
-				global_building_slots_factor = 0.15
-				consumer_goods_factor = -0.05
-				production_speed_buildings_factor = 0.10
-				industrial_capacity_factory = -0.20
+				global_building_slots_factor = 0.30
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.20
+				industrial_capacity_factory = 0.20
 			}
 		}
 
