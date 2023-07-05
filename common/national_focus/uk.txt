@@ -197,111 +197,10 @@ focus_tree = {
 			factor = 6
 		}
 		
-		available = {
-		}
-		
-		bypass = {
-			custom_trigger_tooltip =  {
-				tooltip = construction_effort_tt
-				NOT = {
-					any_owned_state = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
-				}
-			}
-		}
-
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-			every_state = {
-				limit = { has_state_flag = ENG_limited_rearmament_focus_2IC }
-				add_extra_state_shared_building_slots = 6
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-
 		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 122 }
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 6
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = ENG_limited_rearmament_focus_2IC
-			}
-			random_owned_controlled_state = {
-				prioritize = { 128 }
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 6
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = ENG_limited_rearmament_focus_2IC
-			}
-			random_owned_controlled_state = {
-				prioritize = { 131 }
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 6
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = ENG_limited_rearmament_focus_2IC
-			}
-			random_owned_controlled_state = {
-				prioritize = { 127 }
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 6
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = ENG_limited_rearmament_focus_2IC
-			}
+add_political_power = 150
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -801,10 +700,10 @@ focus_tree = {
 		id = uk_extra_tech_slot
 		text = extra_tech_slot
 		icon = GFX_focus_research
-		prerequisite = { focus = uk_industrial_focus }
+		prerequisite = { focus = ENG_time_of_economic_prosperity }
 		x = 0
 		y = 6
-		relative_position_id = uk_industrial_focus
+		relative_position_id = shadow_scheme_focus
 		cost = 10
 		ai_will_do = {
 			factor = 50
@@ -17085,11 +16984,427 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_ideas
+			swap_ideas = {
+				remove_idea = ENG_state_of_the_economy
+				add_idea = ENG_state_of_the_economy_two
+			}
 		}
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH
 		}
-	}					
+	}		
+	focus = {
+		id = ENG_revitalize_northern_england
+		available = {
+			has_full_control_of_state = 131
+			has_full_control_of_state = 130
+		}
+		prerequisite = { focus = ENG_let_that_lion_roar }
+		mutually_exclusive = { focus = HOL_develop_the_randstad }
+		icon = GFX_goal_industrial_investment
+		x = 1
+		y = 2
+		relative_position_id = shadow_scheme_focus
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = ENG_revitalize_northern_england
+				bonus = 1.0
+				uses = 1
+				category = dispersed_industry_category
+			}
+			130 = {
+				if = {
+					limit = {
+						35 = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			131 = {
+				if = {
+					limit = {
+						36 = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+	}			
+	focus = {
+		id = ENG_expand_southern_industry
+		available = {
+			has_full_control_of_state = 127
+			has_full_control_of_state = 126
+		}
+		prerequisite = { focus = ENG_let_that_lion_roar }
+		mutually_exclusive = { focus = ENG_revitalize_northern_england  }
+		icon = GFX_goal_generic_industrial_planning
+		x = -1
+		y = 2
+		relative_position_id = shadow_scheme_focus
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = ENG_expand_southern_corporations
+				bonus = 1.0
+				uses = 1
+				category = concentrated_industry_category
+			}
+			126 = {
+				if = {
+					limit = {
+						35 = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+			127 = {
+				if = {
+					limit = {
+						36 = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+	}	
+	focus = {
+		id = ENG_industrialise_celtic_areas
+		prerequisite = { focus = ENG_revitalize_northern_england  }
+		icon = GFX_goal_BRI_bagadou_stourm
+		x = 1
+		y = 3
+		relative_position_id = shadow_scheme_focus
+		cost = 10
+		available = {
+			controls_state = 122
+			controls_state = 121
+			controls_state = 133
+			controls_state = 136
+			controls_state = 971
+			controls_state = 119
+			controls_state = 970
+			controls_state = 123
+			controls_state = 122
+
+		} 
+		available_if_capitulated = yes
+
+		completion_reward = {
+			122 = {
+				if = {
+					limit = {
+						122 = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			121 = {
+				if = {
+					limit = {
+						121 = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			133 = {
+				if = {
+					limit = {
+						133 = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			136 = {
+				if = {
+					limit = {
+						136 = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			971 = {
+				if = {
+					limit = {
+						971 = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			119 = {
+				if = {
+					limit = {
+						119 = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			970 = {
+				if = {
+					limit = {
+						970 = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			123 = {
+				if = {
+					limit = {
+						123 = {
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+	}	
+	focus = {
+		id = ENG_amplify_the_exploitation_of_welsh_coal
+		icon = GFX_goal_generic_mining_iron
+		cost = 5
+		prerequisite = {
+			focus = ENG_expand_southern_industry
+		}
+		available = {
+			controls_state = 122
+		} 
+		x = -1
+		y = 3
+		relative_position_id = shadow_scheme_focus
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		add_ideas = welsh_miners_exploited
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH
+		}
+	}		
+	focus = {
+		id = ENG_attract_colonial_investors
+		icon = GFX_focus_eng_global_defense
+		cost = 5
+		prerequisite = {
+			focus = ENG_amplify_the_exploitation_of_welsh_coal
+			focus = ENG_industrialise_celtic_areas
+		}
+		mutually_exclusive = {
+			focus = ENG_cut_corporation_tax
+		}
+		available = {
+			num_subjects > 0
+		} 
+		x = -1
+		y = 4
+		relative_position_id = shadow_scheme_focus
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ENG_state_of_the_economy_two
+				add_idea = ENG_state_of_the_economy_three
+			}
+			add_ideas = free_trade
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH
+		}
+	}	
+	focus = {
+		id = ENG_mobilize_the_economy
+		icon = GFX_focus_mex_privatisation
+		cost = 5
+		prerequisite = {
+			focus = ENG_amplify_the_exploitation_of_welsh_coal
+			focus = ENG_industrialise_celtic_areas
+		}
+		mutually_exclusive = { focus = ENG_attract_colonial_investors }
+		available = {
+			NOT = { has_government = communism }
+		} 
+		x = 1
+		y = 4
+		relative_position_id = shadow_scheme_focus
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		add_ideas = partial_economic_mobilisation
+		swap_ideas = {
+			remove_idea = ENG_state_of_the_economy_two
+			add_idea = ENG_state_of_the_economy_three
+		}
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH
+		}
+	}	
+	focus = {
+		id = ENG_time_of_economic_prosperity
+		icon = GFX_focus_eng_the_sun_never_sets
+		cost = 5
+		prerequisite = {
+			focus = ENG_attract_colonial_investors
+			focus = ENG_mobilize_the_economy
+		}
+		x = 0
+		y = 5
+		relative_position_id = shadow_scheme_focus
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ENG_state_of_the_economy_three
+				add_idea = ENG_state_of_the_economy_four
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH
+		}
+	}	
 }
 

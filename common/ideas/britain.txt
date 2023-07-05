@@ -12,14 +12,76 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = POL_disjointed_industry
+			picture = eng_guided_by_britain
 
 			modifier = {
 			production_speed_buildings_factor = -0.1
 			consumer_goods_factor = 0.05
 			industrial_capacity_factory = -0.1
+			political_power_cost = 0.75
 			}	
 		}
+		ENG_state_of_the_economy_two = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = eng_guided_by_britain
+
+			modifier = {
+			production_speed_buildings_factor = -0.05
+			consumer_goods_factor = 0.025
+			industrial_capacity_factory = -0.05 
+			political_power_cost = 0.50
+			}	
+		}
+		ENG_state_of_the_economy_three = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = eng_guided_by_britain
+
+			modifier = {
+			production_speed_buildings_factor = 0.05
+			consumer_goods_factor = 0
+			industrial_capacity_factory = -0.1
+			political_power_cost = 0.25
+			}	
+		}
+		ENG_state_of_the_economy_four = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = eng_guided_by_britain
+
+			modifier = {
+			production_speed_buildings_factor = -0.025
+			consumer_goods_factor = -0.025
+			industrial_capacity_factory = -0.05
+			political_power_cost = 0
+			}	
+		}
+	}
 
 		ENG_quality_RAF_pilots = {
 		
@@ -544,7 +606,27 @@ ideas = {
 				can_create_factions = yes
 			}			
 		}
+		welsh_miners_exploited = {
+			
+			name = welsh_miners_exploited
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
 
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = prc_low_popular_support3
+			
+			modifier = {
+				local_resources_factor = 0.1	
+		production_speed_buildings_factor = 0.15
+		stability_factor = -0.05
+			}
+		}
 		
 		
 		british_austerity_idea = {
@@ -564,8 +646,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				consumer_goods_factor = -0.05
-				global_building_slots_factor = 0.25
+				consumer_goods_factor = -0.05	
 			}
 		}
 		

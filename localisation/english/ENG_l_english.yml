@@ -32,6 +32,11 @@ ENG_quality_RAF_pilots:0 "Quality RAF Pilots"
   ENG_permit_plane_leasement:0 "Permit [SOV.GetAdjective] Plane Leasement"
   ENG_permit_plane_leasement_desc:0 "In our mutual war effort, leasing [SOV.GetNameDef] with planes will assist them in their fight against our common enemy."
 
+
+#ideas
+ENG_state_of_the_economy:0 "State Of The Economy"
+ENG_state_of_the_economy_two:0 "State Of The Economy"
+
   #Custom Tooltips
 
   #Flags
