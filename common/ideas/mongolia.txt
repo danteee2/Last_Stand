@@ -475,9 +475,8 @@ ideas = {
 			allowed_civil_war = { always = yes }
 
 			modifier = {
-				air_attack_factor = 0.05
-				army_attack_factor = 0.1
-				land_reinforce_rate = 0.02
+				army_attack_factor = 0.15
+				land_reinforce_rate = 0.04
 			}
 		}
 

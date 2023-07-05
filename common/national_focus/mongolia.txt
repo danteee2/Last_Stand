@@ -1289,14 +1289,19 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			army_experience = 15
+			army_experience = 100
 			add_tech_bonus = {
 				name = artillery_bonus
 				bonus = 1
-				uses = 1
+				uses = 2
 				category = artillery
 			}
-			unlock_decision_tooltip = MON_study_foreign_artillery_plans
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1
+				uses = 4
+				category = armor
+			}
 		}
 		search_filters = {	FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_XP }
 	}
@@ -1369,7 +1374,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = MON_the_ultimate_weapon_idea
+
+			custom_effect_tooltip = MON_specialized_crews_tt
 		}
 		search_filters = { FOCUS_FILTER_MILITARY_IMPROVEMENT }
 	}
@@ -2648,7 +2654,6 @@ focus_tree = {
 		cost = 10
 
 		prerequisite = { focus = MON_build_the_railroads focus = MON_expand_elementary_schools }
-		mutually_exclusive = { focus = MON_end_reliance_on_animal_husbandry }
 
 		relative_position_id = MON_expand_elementary_schools
 
@@ -2696,7 +2701,6 @@ focus_tree = {
 		y = 1
 		cost = 10
 		prerequisite = { focus = MON_improve_machine_tools focus = MON_study_foreign_radio_equipment }
-		mutually_exclusive = { focus = MON_pastures_into_farms }
 
 		relative_position_id = MON_study_foreign_radio_equipment 
 		available_if_capitulated = yes
@@ -2750,7 +2754,7 @@ focus_tree = {
 		icon = GFX_goal_generic_farm_tractor
 		x = 0
 		y = 1
-		cost = 7.2
+		cost = 5
 		relative_position_id = MON_pastures_into_farms
 		prerequisite = { focus = MON_pastures_into_farms }
 
@@ -3189,254 +3193,6 @@ focus_tree = {
 		}
 		search_filters = {	FOCUS_FILTER_INDUSTRY }
 	}
-
-	focus = {
-		id = MON_assist_subsidized_region
-		icon = GFX_goal_generic_bills
-		x = -2
-		y = 2
-		cost = 8
-		relative_position_id = MON_modernize_transportation_system
-		prerequisite = { focus = MON_modernize_transportation_system  }
-		available_if_capitulated = yes
-		available = {
-			NOT = {
-				has_idea = Mongolbank_bankrupt
-			}
-			OR = {
-				ROOT = {
-					controls_state = 329
-					controls_state = 818
-				}
-				any_other_country = {
-					is_subject_of = ROOT
-					OR = {
-						controls_state = 329
-						controls_state = 818
-					}
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 50		
-		}
-		completion_reward = {
-			329 = {
-				r56_state_category_level_up = yes
-			}
-			818 = {
-				r56_state_category_level_up = yes
-			}
-			every_state = 	{	#instead of random building slots, change it higher as if being developed
-				limit = {
-					OR = {
-						state = 329
-						state = 818
-					}
-				}
-				set_state_flag = MON_invested_into_state
-				add_dynamic_modifier = { modifier = r56_local_development }
-			}
-			MON_mongol_bank_funds_decrease = yes
-		}
-		search_filters = {	FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = MON_develop_mongolia_proper
-		icon = GFX_goal_generic_construction3
-		x = -1
-		y = 1
-		cost = 8
-		relative_position_id = MON_modernize_transportation_system
-		prerequisite = { focus = MON_modernize_transportation_system }
-		available_if_capitulated = yes
-		available = {
-			NOT = {
-				has_idea = Mongolbank_bankrupt
-			}
-			OR = {
-				ROOT = {
-					controls_state = 820
-					controls_state = 817
-				}
-				any_other_country = {
-					is_subject_of = ROOT
-					OR = {
-						controls_state = 820
-						controls_state = 817
-					}
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 50		
-		}
-		completion_reward = {
-			820 = {
-				r56_state_category_level_up = yes
-			}
-			817 = {
-				r56_state_category_level_up = yes
-			}
-			every_state = 	{	#instead of random building slots, change it higher as if being developed
-				limit = {
-					OR = {
-						state = 820
-						state = 817
-					}
-				}
-				set_state_flag = MON_invested_into_state
-				add_dynamic_modifier = { modifier = r56_local_development }
-			}
-			MON_mongol_bank_funds_decrease = yes
-		}
-		search_filters = {	FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = MON_improve_baigaal_dalai_industries
-		icon = GFX_goal_generic_land_seizure
-		x = 1
-		y = 1
-		cost = 8
-		relative_position_id = MON_modernize_transportation_system
-		prerequisite = { focus = MON_modernize_transportation_system }
-		available_if_capitulated = yes
-		available = {
-			NOT = {
-				has_idea = Mongolbank_bankrupt
-			}
-			OR = {
-				ROOT = {
-					controls_state = 566
-					controls_state = 564
-				}
-				any_other_country = {
-					is_subject_of = ROOT
-					OR = {
-						controls_state = 566
-						controls_state = 564
-					}
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 50		
-		}
-		completion_reward = {
-			every_state = 	{	#instead of random building slots, change it higher as if being developed
-				limit = {
-					OR = {
-						state = 566
-						state = 564
-					}
-				}
-				r56_state_category_level_up = yes
-				set_state_flag = MON_invested_into_state
-				add_dynamic_modifier = { modifier = r56_local_development }
-			}
-			MON_mongol_bank_funds_decrease = yes
-		}
-		search_filters = {	FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = MON_develop_the_rear
-		icon = GFX_goal_war_infrastructure
-		x = 2
-		y = 2
-		cost = 8
-		relative_position_id = MON_modernize_transportation_system
-		prerequisite = { focus = MON_modernize_transportation_system }
-		available_if_capitulated = yes
-		available = {
-			NOT = {
-				has_idea = Mongolbank_bankrupt
-			}
-			OR = {
-				ROOT = {
-					controls_state = 563
-					controls_state = 565
-				}
-				any_other_country = {
-					is_subject_of = ROOT
-					OR = {
-						controls_state = 563
-						controls_state = 565
-					}
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 50		
-		}
-		completion_reward = {
-			every_state = 	{	#instead of random building slots, change it higher as if being developed
-				limit = {
-					OR = {
-						state = 563
-						state = 565
-					}
-				}
-				r56_state_category_level_up = yes
-				set_state_flag = MON_invested_into_state
-				add_dynamic_modifier = { modifier = r56_local_development }
-			}
-			build_railway = { 
-				path = { 4797 1762 4837 10528 4766 12507 7860 10683 7786 4677 }
-			}
-			MON_mongol_bank_funds_decrease = yes
-		}
-		search_filters = {	FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = MON_military_industries_expansion
-		icon = GFX_goal_proving_grounds
-		x = -2
-		y = 1
-		cost = 10
-		relative_position_id = MON_develop_the_rear
-		prerequisite = {
-			focus = MON_develop_the_rear
-			focus = MON_improve_baigaal_dalai_industries
-			focus = MON_develop_mongolia_proper
-			focus = MON_assist_subsidized_region
-		}
-		available_if_capitulated = yes
-		available = {
-			NOT = {
-				has_idea = Mongolbank_bankrupt
-			}
-		}
-		ai_will_do = {
-			factor = 50		
-		}
-		completion_reward = {
-			custom_effect_tooltip = MON_invest_add_one_mil_factory_in_a_state_tt
-			every_state = {
-				limit = {
-					OR ={
-						is_controlled_by = ROOT
-						controller = {
-							is_subject_of = ROOT
-						}
-					}
-					has_state_flag = MON_invested_into_state
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			MON_mongol_bank_funds_decrease = yes
-		}
-		search_filters = {	FOCUS_FILTER_INDUSTRY }
-	}
-
 	focus = {
 		id = MON_southern_development_focus
 		icon = GFX_goal_MON_desert_investment
@@ -3463,252 +3219,6 @@ focus_tree = {
 		}
 		search_filters = {	FOCUS_FILTER_INDUSTRY }
 	}
-
-	focus = {
-		id = MON_southwest_resource_prospection_area
-		icon = GFX_focus_generic_industry_2
-		x = -2
-		y = 2
-		cost = 8
-		relative_position_id = MON_southern_development_focus
-		prerequisite = { focus = MON_southern_development_focus  }
-		available_if_capitulated = yes
-		available = {
-			NOT = {
-				has_idea = Mongolbank_bankrupt
-			}
-			OR = {
-				ROOT = {
-					controls_state = 618
-					controls_state = 617
-				}
-				any_other_country = {
-					is_subject_of = ROOT
-					OR = {
-						controls_state = 618
-						controls_state = 617
-					}
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 50		
-		}
-		completion_reward = {
-			820 = {
-				r56_state_category_level_up = yes
-			}
-			817 = {
-				r56_state_category_level_up = yes
-			}
-			every_state = 	{	#instead of random building slots, change it higher as if being developed
-				limit = {
-					OR = {
-						state = 820
-						state = 817
-					}
-				}
-				set_state_flag = MON_invested_into_state
-				add_dynamic_modifier = { modifier = r56_local_development }
-			}
-		}
-		search_filters = {	FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = MON_encourage_southern_agriculture
-		icon = GFX_goal_generic_agriculture
-		x = -1
-		y = 1
-		cost = 8
-		relative_position_id = MON_southern_development_focus
-		prerequisite = { focus = MON_southern_development_focus }
-		available_if_capitulated = yes
-		available = {
-			NOT = {
-				has_idea = Mongolbank_bankrupt
-			}
-			OR = {
-				ROOT = {
-					controls_state = 756
-					controls_state = 616
-				}
-				any_other_country = {
-					is_subject_of = ROOT
-					OR = {
-						controls_state = 756
-						controls_state = 616
-					}
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 50		
-		}
-		completion_reward = {
-			756 = {
-				r56_state_category_level_up = yes
-			}
-			616 = {
-				r56_state_category_level_up = yes
-			}
-			every_state = 	{	#instead of random building slots, change it higher as if being developed
-				limit = {
-					OR = {
-						state = 756
-						state = 616
-					}
-				}
-				set_state_flag = MON_invested_into_state
-				add_dynamic_modifier = { modifier = r56_local_development }
-			}
-		}
-		search_filters = {	FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = MON_expand_chahars_processing_region
-		icon = GFX_goal_generic_underground_factories
-		x = 1
-		y = 1
-		cost = 8
-		relative_position_id = MON_southern_development_focus
-		prerequisite = { focus = MON_southern_development_focus }
-		available_if_capitulated = yes
-		available = {
-			NOT = {
-				has_idea = Mongolbank_bankrupt
-			}
-			OR = {
-				ROOT = {
-					controls_state = 611
-					controls_state = 612
-				}
-				any_other_country = {
-					is_subject_of = ROOT
-					OR = {
-						controls_state = 611
-						controls_state = 612
-					}
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 50		
-		}
-		completion_reward = {
-			every_state = 	{	#instead of random building slots, change it higher as if being developed
-				limit = {
-					OR = {
-						state = 611
-						state = 612
-					}
-				}
-				r56_state_category_level_up = yes
-				set_state_flag = MON_invested_into_state
-				add_dynamic_modifier = { modifier = r56_local_development }
-			}
-		}
-		search_filters = {	FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = MON_ordos_plateau_exploitation
-		icon = GFX_goal_generic_communist_economy
-		x = 0
-		y = 2
-		cost = 8
-		relative_position_id = MON_southern_development_focus
-		prerequisite = { focus = MON_southern_development_focus }
-		available_if_capitulated = yes
-		available = {
-			NOT = {
-				has_idea = Mongolbank_bankrupt
-			}
-			OR = {
-				ROOT = {
-					controls_state = 621
-					controls_state = 746
-				}
-				any_other_country = {
-					is_subject_of = ROOT
-					OR = {
-						controls_state = 621
-						controls_state = 746
-					}
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 50		
-		}
-		completion_reward = {
-			621 = {
-				r56_state_category_level_up = yes
-			}
-			746 = {
-				r56_state_category_level_up = yes
-			}
-			every_state = 	{	#instead of random building slots, change it higher as if being developed
-				limit = {
-					OR = {
-						state = 621
-						state = 746
-					}
-				}
-				set_state_flag = MON_invested_into_state
-				add_dynamic_modifier = { modifier = r56_local_development }
-			}
-		}
-		search_filters = {	FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = MON_utilize_available_spaces
-		icon = GFX_goal_generic_light_industry
-		x = -1
-		y = 1
-		cost = 10
-		relative_position_id = MON_ordos_plateau_exploitation
-		prerequisite = {
-			focus = MON_southwest_resource_prospection_area
-			focus = MON_encourage_southern_agriculture
-			focus = MON_expand_chahars_processing_region
-			focus = MON_ordos_plateau_exploitation
-		}
-		available_if_capitulated = yes
-		available = {
-			NOT = {
-				has_idea = Mongolbank_bankrupt
-			}
-		}
-		ai_will_do = {
-			factor = 50		
-		}
-		completion_reward = {
-			custom_effect_tooltip = MON_invest_add_one_civ_factory_in_a_state_tt
-			every_state = {
-				limit = {
-					OR ={
-						is_controlled_by = ROOT
-						controller = {
-							is_subject_of = ROOT
-						}
-					}
-					has_state_flag = MON_invested_into_state
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			MON_mongol_bank_funds_decrease = yes
-		}
-		search_filters = {	FOCUS_FILTER_INDUSTRY }
-	}
-
     ###################################################################################################################
     ###################################################################################################################
     ###################################################################################################################
@@ -6233,8 +5743,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_war_support = 0.05
-			add_manpower = 2000
+			add_war_support = 0.1
+			add_manpower = 200000
 			add_tech_bonus = {
 				name = POL_study_foreign_tanks
 				bonus = 1
