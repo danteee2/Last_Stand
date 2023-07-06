@@ -31,8 +31,62 @@ ENG_quality_RAF_pilots:0 "Quality RAF Pilots"
 
   ENG_permit_plane_leasement:0 "Permit [SOV.GetAdjective] Plane Leasement"
   ENG_permit_plane_leasement_desc:0 "In our mutual war effort, leasing [SOV.GetNameDef] with planes will assist them in their fight against our common enemy."
+  ENG_let_that_lion_roar:0 "Let That Lion Roar"
+ENG_revitalize_northern_england:0 "Revitalize Northern England"
+ENG_expand_southern_industry:0 "Expand Southern Industry"
+ENG_industrialise_celtic_areas:0 "Industrialise Celtic Areas"
+ENG_amplify_the_exploitation_of_welsh_coal:0 "Amplify Exploitation Of Welsh Coal"
+ENG_devaluate_the_pound:0 "Devaluate The Pound"
+ENG_time_of_economic_prosperity:0 "Time Of Economic Prosperity"
+ENG_Open_our_Markets:0 "Open Our Markets"
+ENG_increase_military_budget:0 "Increase Military Budget"
+ENG_attract_colonial_investors:0 "Attract Colonial Investors"
+ENG_public_school_funding:0 "Public School Funding"
+ENG_Provoke_british_patriotism:0 "Provoke British Patriotism"
+ENG_adopt_bliztkrieg_tactics:0 "Adopt Bliztkrieg Tactics"
 
+
+
+
+
+ENG_revitalize_northern_england_desc:0 "Investments were chosen to revist and reform our industry in northern England."
+ENG_expand_southern_industry_desc:0 "We shall continue our economic focus and investments into the south of England, in hopes of economic recovery."
+ENG_industrialise_celtic_areas_desc:0 "The celtic areas have been disregarded by the central government, we shall now invest into civilian industry into these areas."
+ENG_amplify_the_exploitation_of_welsh_coal_desc:0 "We shall ramp up the production of coal and thus use this in aims to assist our economic recovery."
+ENG_devaluate_the_pound_desc:0 "It's time to devaluate the British Pound with hopes that it'll make a change to the struggling markets."
+ENG_time_of_economic_prosperity_desc:0 "We have peaked beyond our recovery and we shall now maintain the current state of economy."
+ENG_Open_our_Markets_desc:0 "Time to open the markets... American-style."
+ENG_increase_military_budget_desc:0 "An increase in government spending towards our beloved army is what this country needs with rising tensions in Europe."
+ENG_attract_colonial_investors_desc:0 "Seeking out colonial investments is within our best interests."
+ENG_Provoke_british_patriotism_desc:0 "From the largest empire in the world to the victors of The Great War, the British people's patriotism is needed and easy to trigger when in desperate times..."
+ENG_adopt_bliztkrieg_tactics_desc:0 "The speed of the German panzers is intruiging and we shall consider it for our newly developed 'motorized army'."
+ENG_let_that_lion_roar_desc:0 "As our economy continues to suffer from the great depression, we shall take action to ensure Britannia's lion will roar once again..."
+ENG_public_school_funding_desc:0 "Time to continue the plans of previous governments in expanding our public schools."
+
+
+<<<<<<< HEAD
+=======
+
+#ideas
+ ENG_state_of_the_economy:0 "State Of The Economy"
+ ENG_state_of_the_economy_two:0 "State Of The Economy"
+ ENG_state_of_the_economy_three:0 "State Of The Economy"
+ ENG_state_of_the_economy_four:0 "State Of The Economy"
+ ENG_state_of_the_economy_five:0 "State Of The Economy"
+welsh_miners_exploited:0 "Welsh Miners Exploited"
+ENG_public_school_funding:0 "Public School Funding"
+ENG_devaluated_pound:0 "Devaluated Pound"
+ENG_colonial_investors:0 "Colonial Investments"
+british_patriotism:0 "British Patriotism"
+motorized_army:0 "Motorized Army"
+motorized_army_two:0 "Motorized Army"
+motorized_army_three:0 "Motorized Army"
+
+
+
+>>>>>>> uk-industry-tree
   #Custom Tooltips
+
 
   #Flags
 
@@ -41,6 +95,7 @@ ENG_quality_RAF_pilots:0 "Quality RAF Pilots"
   ENG_admiralty_naval_staff:0 "Admiralty Naval Staff"
   ENG_royal_family_remnants:0 "Royal Family Remnants"
   ENG_royal_family_remnants_desc:0 "While most of the Royal Family was executed by those communist demons, there is always an heir, eager to get rid of this new rump parliament and restore the British throne."
+
 
 
   #Events
