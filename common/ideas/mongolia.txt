@@ -785,7 +785,7 @@ ideas = {
 			allowed_civil_war = { always = yes }
 
 			modifier = {
-				research_speed_factor = 0.04
+				research_speed_factor = 0.1
 			}	
 		}
 
@@ -1295,7 +1295,19 @@ ideas = {
 				industrial_capacity_factory = 0.20
 			}
 		}
-
+		MON_collectivization_of_lands = {
+			picture = new_economic_policy
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			modifier = {
+				global_building_slots_factor = 0.60
+			}
+		}
 		MON_atheist_propaganda = {
 			picture = por_iberian_workers_united
 			removal_cost = -1

@@ -2431,6 +2431,7 @@ focus_tree = {
 		completion_reward = {
 			MON_mongol_bank_funds_decrease = yes
 			add_ideas = Mon_elementary_schools_idea
+			add_research_slot = 1
 			random_owned_controlled_state = {
 				prioritize = { 64 }
 				limit = {
@@ -2992,6 +2993,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			add_ideas = MON_collectivization_of_lands
 		}
 		search_filters = {	FOCUS_FILTER_INDUSTRY }
 	}
