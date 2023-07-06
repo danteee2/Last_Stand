@@ -475,9 +475,8 @@ ideas = {
 			allowed_civil_war = { always = yes }
 
 			modifier = {
-				air_attack_factor = 0.05
-				army_attack_factor = 0.1
-				land_reinforce_rate = 0.02
+				army_attack_factor = 0.15
+				land_reinforce_rate = 0.04
 			}
 		}
 
@@ -786,7 +785,7 @@ ideas = {
 			allowed_civil_war = { always = yes }
 
 			modifier = {
-				research_speed_factor = 0.04
+				research_speed_factor = 0.1
 			}	
 		}
 
@@ -952,7 +951,7 @@ ideas = {
 				
 			modifier = {
 				consumer_goods_factor = 0.05	
-				industrial_capacity_factory = 0.15
+				industrial_capacity_factory = 0.05
 			}	
 		}
 
@@ -965,7 +964,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = 0.05	
-				industrial_capacity_factory = 0.25
+				industrial_capacity_factory = 0.15
 				production_speed_buildings_factor = 0.10
 			}	
 		}
@@ -1035,7 +1034,7 @@ ideas = {
 
 			modifier = {
 				political_power_gain = -0.20
-				consumer_goods_factor = -0.10
+				consumer_goods_factor = -0.5
 			}
 		}
 
@@ -1046,7 +1045,7 @@ ideas = {
 
 			modifier = {
 				political_power_gain = -0.10
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.5
 			}
 		}
 
@@ -1057,6 +1056,7 @@ ideas = {
 
 			modifier = {
 				political_power_gain = 0.05
+				consumer_goods_factor = -0.5
 			}
 		}
 
@@ -1067,7 +1067,7 @@ ideas = {
 
 			modifier = {
 				political_power_gain = 0.15
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = -0.5
 			}
 		}
 
@@ -1078,7 +1078,7 @@ ideas = {
 
 			modifier = {
 				political_power_gain = -0.10
-				consumer_goods_factor = 0.20
+				consumer_goods_factor = -0.5
 			}
 		}
 
@@ -1253,9 +1253,11 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = -0.25
-				training_time_army_factor = -0.15
+				army_org_factor = 0.1
+				training_time_army_factor = -0.2
 				conscription_factor = 0.2
+				conscription = 0.04
+
 			}
 		}
 
@@ -1270,9 +1272,9 @@ ideas = {
 			}
 
 			modifier = {
-				army_speed_factor = 0.05
-				army_attack_factor = 0.1
-				army_defence_factor = -0.1
+				army_speed_factor = 0.1
+				army_attack_factor = 0.15
+				army_defence_factor = -0.05
 			}
 		}
 
@@ -1287,13 +1289,25 @@ ideas = {
 			}
 
 			modifier = {
-				global_building_slots_factor = 0.15
-				consumer_goods_factor = -0.05
-				production_speed_buildings_factor = 0.10
-				industrial_capacity_factory = -0.20
+				global_building_slots_factor = 0.30
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.20
+				industrial_capacity_factory = 0.20
 			}
 		}
-
+		MON_collectivization_of_lands = {
+			picture = new_economic_policy
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			modifier = {
+				global_building_slots_factor = 0.60
+			}
+		}
 		MON_atheist_propaganda = {
 			picture = por_iberian_workers_united
 			removal_cost = -1
