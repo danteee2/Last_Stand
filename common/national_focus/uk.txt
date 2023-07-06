@@ -59,7 +59,7 @@ focus_tree = {
 		}
 		
 		icon = GFX_focus_generic_cryptologic_bomb
-		x = -6
+		x = 0
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -333,7 +333,7 @@ focus_tree = {
 		available = { 			
 		}
 		icon = GFX_goal_generic_army_motorized
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = limited_rearmament_focus
 		cost = 10
@@ -463,7 +463,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		icon = GFX_goal_fortify_city_AA
-		x = -8
+		x = -4
 		y = 1
 		relative_position_id = limited_rearmament_focus
 		cost = 10
@@ -777,13 +777,34 @@ focus_tree = {
 		id = shadow_scheme_focus
 		prerequisite = { focus = limited_rearmament_focus }
 		available = {
-			threat > 0.02
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				OR = {
+					threat > 0.05
+					has_war = yes
+					has_idea = ENG_no_further_appeasement_idea
+					NOT = { has_government = democratic }
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_dlc = "Man the Guns" }
+				}
+				OR = {
+					threat > 0.05
+					has_war = yes
+					NOT = { has_government = democratic }
+				}
+			}
 		}
+
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		
 		icon = GFX_goal_generic_construct_mil_factory
-		x = -4
+		x = -2
 		y = 1
 		relative_position_id = limited_rearmament_focus
 		cost = 10
@@ -798,12 +819,44 @@ focus_tree = {
 	}
 
 	focus = {
+		id = uk_industrial_focus
+		text = industrial_effort
+		prerequisite = { focus = shadow_scheme_focus }
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 0
+		y = 1
+		relative_position_id = shadow_scheme_focus
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}	
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 1
+				uses = 1
+				category = steel_tech
+			}			
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
 		id = uk_extra_tech_slot
 		text = extra_tech_slot
 		icon = GFX_focus_research
 		prerequisite = { focus = uk_industrial_focus }
 		x = 0
-		y = 6
+		y = 1
 		relative_position_id = uk_industrial_focus
 		cost = 10
 		ai_will_do = {
@@ -953,11 +1006,11 @@ focus_tree = {
 				}
 			}
 		} #at war with major or ger in rhineland or high threat
-		prerequisite = { focus = ENG_tank_variant_focus }
+		prerequisite = { focus = uk_industrial_focus }
 		icon = GFX_goal_generic_munitions_factories
-		relative_position_id = ENG_tank_variant_focus
-		x = 0
-		y = 1
+		x = 1
+		y = 2
+		relative_position_id = uk_industrial_focus
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1068,9 +1121,10 @@ focus_tree = {
 	}
 	focus = {
 		id = UK_secret_focus
+		prerequisite = { focus = royal_ordinance_focus }
 		prerequisite = { focus = maud_focus focus = ENG_tube_alloys }
 		icon = GFX_goal_generic_secret_weapon
-		x = -6
+		x = -1
 		y = 1
 		relative_position_id = royal_ordinance_focus
 		cost = 10
@@ -17069,27 +17123,6 @@ focus_tree = {
 			}
 		}
 		search_filters = {  FOCUS_FILTER_RESEARCH FOCUS_FILTER_ESPIONAGE }
-	}	
-	focus = {
-		id = ENG_let_that_lion_roar
-		icon = GFX_focus_hol_united_netherlands
-		cost = 15
-		prerequisite = {
-			focus = shadow_scheme_focus
-		}
-		available = {threat > 0.05}
-		x = 0
-		y = 1
-		relative_position_id = shadow_scheme_focus
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_ideas
-		}
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH
-		}
-	}					
+	}						
 }
 
