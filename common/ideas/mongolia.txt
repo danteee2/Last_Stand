@@ -951,7 +951,7 @@ ideas = {
 				
 			modifier = {
 				consumer_goods_factor = 0.05	
-				industrial_capacity_factory = 0.15
+				industrial_capacity_factory = 0.05
 			}	
 		}
 
@@ -964,7 +964,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = 0.05	
-				industrial_capacity_factory = 0.25
+				industrial_capacity_factory = 0.15
 				production_speed_buildings_factor = 0.10
 			}	
 		}
