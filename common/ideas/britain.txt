@@ -55,11 +55,10 @@ ideas = {
 			picture = eng_guided_by_britain
 
 			modifier = {
-				production_speed_buildings_factor = -0.05
-				consumer_goods_factor = 0.025
-				industrial_capacity_factory = -0.05 
-				political_power_cost = 0.50
-				production_speed_arms_factory_factor = 0.05
+				production_speed_buildings_factor = 0
+				consumer_goods_factor = 0
+				industrial_capacity_factory = -0.05
+				political_power_cost = 0.25
 				}	
 		}
 		ENG_state_of_the_economy_four = {
@@ -76,30 +75,10 @@ ideas = {
 			picture = eng_guided_by_britain
 
 			modifier = {
-				production_speed_buildings_factor = -0.05
+				production_speed_buildings_factor = 0.05
 				consumer_goods_factor = 0
-				industrial_capacity_factory = 0
-				political_power_cost = 0.50
-				}	
-		}
-		ENG_state_of_the_economy_four = {
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = eng_guided_by_britain
-
-			modifier = {
-				production_speed_buildings_factor = -0.05
-				consumer_goods_factor = 0
-				industrial_capacity_factory = 0
-				political_power_cost = 0.50
+				industrial_capacity_factory = -0.05
+				political_power_cost = 0
 				}	
 		}
 		ENG_state_of_the_economy_five = {
@@ -116,11 +95,39 @@ ideas = {
 			picture = eng_guided_by_britain
 
 			modifier = {
-				production_speed_buildings_factor = 0.05
+				production_speed_buildings_factor = 0.1
 				consumer_goods_factor = -0.025
-				industrial_capacity_factory = 0.05
-				political_power_cost = 0.25
+				industrial_capacity_factory = 0.1
+				political_power_cost = 0
 				}	
+			
+		}
+		ENG_public_school_funding = {
+			allowed = {
+				always = no
+			}
+			picture = generic_army_war_college
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		ENG_devaluated_pound = {
+			removal_cost = -1
+
+			picture = ITA_devaluated_lira
+				
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+					
+			modifier = {
+				consumer_goods_factor = -0.03
+			}
 		}
 		ENG_colonial_investors = {
 			
@@ -704,7 +711,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				consumer_goods_factor = -0.05	
+				consumer_goods_factor = -0.025	
 			}
 		}
 		
@@ -3734,4 +3741,4 @@ ideas = {
 			}
 		}				
 	}
-
+}
