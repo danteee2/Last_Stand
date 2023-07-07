@@ -17039,7 +17039,7 @@ focus_tree = {
 			has_full_control_of_state = 130
 		}
 		prerequisite = { focus = ENG_let_that_lion_roar }
-		mutually_exclusive = { focus = HOL_develop_the_randstad }
+		mutually_exclusive = { focus = ENG_expand_southern_industry }
 		icon = GFX_goal_industrial_investment
 		x = 1
 		y = 2
@@ -17499,6 +17499,7 @@ focus_tree = {
 
 
 		completion_reward = {
+			add_war_support = 0.05
 			if = {
 				limit = {
 					has_idea = war_economy
