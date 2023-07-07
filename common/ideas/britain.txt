@@ -526,6 +526,21 @@ ideas = {
 			}			
 		}
 
+<<<<<<< HEAD
+=======
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = prc_low_popular_support3
+			
+			modifier = {
+				local_resources_factor = 0.05
+		production_speed_buildings_factor = 0.1
+		stability_factor = -0.1
+			}
+		}
+>>>>>>> parent of f6c250d4 (completed tree)
 		
 		
 		british_austerity_idea = {
