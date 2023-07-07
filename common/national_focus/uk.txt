@@ -17465,6 +17465,7 @@ add_political_power = 150
 
 
 		completion_reward = {
+			add_war_support = 0.05
 			if = {
 				limit = {
 					has_idea = war_economy
