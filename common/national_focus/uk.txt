@@ -877,7 +877,7 @@ focus_tree = {
 		icon =  GFX_goal_generic_education
 		prerequisite = { focus = ENG_time_of_economic_prosperity }
 		x = 0
-		y = 7
+		y = 6
 		relative_position_id = shadow_scheme_focus
 >>>>>>> parent of f6c250d4 (completed tree)
 		cost = 10
@@ -17504,22 +17504,26 @@ focus_tree = {
 	}		
 	focus = {
 		id = ENG_attract_colonial_investors
-		icon = GFX_1_6_goal_ENG_service_overseas
-		cost = 10
-		x = -1
-		ai_will_do = { factor = 1 }
-		y = 5
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
+		icon = GFX_focus_eng_global_defense
+		cost = 5
 		prerequisite = {
-			focus = ENG_increase_military_budget
+			focus = ENG_amplify_the_exploitation_of_welsh_coal
+			focus = ENG_industrialise_celtic_areas
 		}
+		mutually_exclusive = {
+			focus = ENG_cut_corporation_tax
+		}
+		available = {
+			num_subjects > 0
+		} 
+		x = -1
+		y = 4
 		relative_position_id = shadow_scheme_focus
-		bypass = {
-			subjects = 0 
+		ai_will_do = {
+			factor = 10
 		}
 		completion_reward = {
+<<<<<<< HEAD
 			add_timed_idea = {
 				idea = ENG_colonial_investors
 				days = 1095
@@ -17528,33 +17532,55 @@ focus_tree = {
 				remove_idea = ENG_state_of_the_economy_three
 				add_idea = ENG_state_of_the_economy_four
 			}
+=======
+			swap_ideas = {
+				remove_idea = ENG_state_of_the_economy_two
+				add_idea = ENG_state_of_the_economy_three
+			}
+			add_ideas = free_trade
+>>>>>>> parent of ae828fa2 (war eco uk)
 		}
-	
-	}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH
+		}
+	}	
 	focus = {
+<<<<<<< HEAD
 		id = ENG_devaluate_the_pound
+=======
+		id = ENG_mobilize_the_economy
+>>>>>>> parent of ae828fa2 (war eco uk)
 		icon = GFX_focus_mex_privatisation
 		cost = 5
 		prerequisite = {
-			focus = ENG_Open_our_Markets
+			focus = ENG_amplify_the_exploitation_of_welsh_coal
+			focus = ENG_industrialise_celtic_areas
 		}
 		mutually_exclusive = { focus = ENG_attract_colonial_investors }
 		available = {
 			NOT = { has_government = communism }
 		} 
 		x = 1
-		y = 5
+		y = 4
 		relative_position_id = shadow_scheme_focus
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
+<<<<<<< HEAD
 			add_stability = 0.05
 			add_timed_idea = { idea = ENG_devaluated_pound days = 365 }
 			swap_ideas = {
 				remove_idea = ENG_state_of_the_economy_three
 				add_idea = ENG_state_of_the_economy_four
 			}
+=======
+		add_ideas = partial_economic_mobilisation
+		swap_ideas = {
+			remove_idea = ENG_state_of_the_economy_two
+			add_idea = ENG_state_of_the_economy_three
+		}
+>>>>>>> parent of ae828fa2 (war eco uk)
 		}
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH
@@ -17566,24 +17592,36 @@ focus_tree = {
 		cost = 5
 		prerequisite = {
 			focus = ENG_attract_colonial_investors
+<<<<<<< HEAD
 			focus = ENG_devaluate_the_pound
+=======
+			focus = ENG_mobilize_the_economy
+>>>>>>> parent of ae828fa2 (war eco uk)
 		}
 		x = 0
-		y = 6
+		y = 5
 		relative_position_id = shadow_scheme_focus
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
 			swap_ideas = {
+<<<<<<< HEAD
 				remove_idea = ENG_state_of_the_economy_four
 				add_idea = ENG_state_of_the_economy_five
 			}
 					}
+=======
+				remove_idea = ENG_state_of_the_economy_three
+				add_idea = ENG_state_of_the_economy_four
+			}
+		}
+>>>>>>> parent of ae828fa2 (war eco uk)
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH
 		}
 	}	
+<<<<<<< HEAD
 	focus = {
 		id = ENG_Open_our_Markets
 		icon = GFX_goal_free_trade
@@ -17663,5 +17701,7 @@ focus_tree = {
 		}
 	}		
 >>>>>>> parent of f6c250d4 (completed tree)
+=======
+>>>>>>> parent of ae828fa2 (war eco uk)
 }
 
