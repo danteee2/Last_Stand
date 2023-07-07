@@ -103,7 +103,7 @@ ideas = {
 				}	
 			
 		}
-		ENG_public_school_funding = {
+		public_school_funding = {
 			allowed = {
 				always = no
 			}

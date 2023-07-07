@@ -289,7 +289,8 @@ focus_tree = {
 					uses = 1
 					category = armored_cars_tech
 				}				
-			}			
+			}		
+			add_ideas = motorized_army	
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -313,6 +314,10 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = armor
+			}
+			swap_ideas = {
+				remove_idea = motorized_army
+				add_idea = motorized_army_two
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -392,7 +397,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		icon = GFX_goal_fortify_city_AA
-		x = -8
+		x = -9
 		y = 1
 		relative_position_id = limited_rearmament_focus
 		cost = 10
@@ -743,6 +748,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_research_slot = 1
+			add_timed_idea = {
+				idea = public_school_funding
+				days = 120
+			} 
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -17516,7 +17525,7 @@ focus_tree = {
 		prerequisite = {
 			focus = limited_rearmament_focus
 		}
-		x = 1
+		x = 0
 		y = 1
 		ai_will_do = {
 			factor = 10
