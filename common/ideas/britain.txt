@@ -1,8 +1,6 @@
 ideas = {
 
 	country = {
-<<<<<<< HEAD
-=======
 		ENG_state_of_the_economy = {
 			allowed = {
 				always = yes
@@ -149,7 +147,6 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.1
 			}
 		}
->>>>>>> uk-industry-tree
 
 		ENG_quality_RAF_pilots = {
 		
@@ -674,11 +671,15 @@ ideas = {
 				can_create_factions = yes
 			}			
 		}
+		welsh_miners_exploited = {
+			
+			name = welsh_miners_exploited
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
 
-<<<<<<< HEAD
-		
-		
-=======
 			allowed_civil_war = {
 				always = yes
 			}
@@ -686,9 +687,9 @@ ideas = {
 			picture = prc_low_popular_support3
 			
 			modifier = {
-		local_resources_factor = 0.1
+				local_resources_factor = 0.1	
 		production_speed_buildings_factor = 0.15
-		stability_factor = -0.05	
+		stability_factor = -0.05
 			}
 		}
 		motorized_army = {
@@ -780,7 +781,6 @@ ideas = {
 				conscription = 0.01
 			}
 		}
->>>>>>> uk-industry-tree
 		british_austerity_idea = {
 			
 			name = british_austerity_idea
@@ -798,12 +798,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-<<<<<<< HEAD
-				consumer_goods_factor = -0.05
-				global_building_slots_factor = 0.25
-=======
 				consumer_goods_factor = -0.025	
->>>>>>> uk-industry-tree
 			}
 		}
 		
