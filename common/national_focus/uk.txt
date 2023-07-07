@@ -845,6 +845,7 @@ focus_tree = {
 	focus = {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		id = uk_industrial_focus
 		text = industrial_effort
 		prerequisite = { focus = shadow_scheme_focus }
@@ -888,6 +889,9 @@ focus_tree = {
 =======
 >>>>>>> parent of f6c250d4 (completed tree)
 		id = ENG_public_school_funding_two
+=======
+		id = ENG_public_school_funding
+>>>>>>> parent of f932c3e1 (britain industry)
 		text = ENG_public_school_funding
 		icon =  GFX_goal_generic_education
 		prerequisite = { focus = ENG_time_of_economic_prosperity }
@@ -17550,10 +17554,29 @@ focus_tree = {
 		}
 		completion_reward = {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			add_timed_idea = {
 				idea = ENG_colonial_investors
 				days = 1095
+=======
+			for_each_scope_loop = {
+				array = allies
+				if = {
+					limit = {
+						OR = {
+							tag = ENG
+							is_subject_of = ENG
+						}
+					}
+					add_timed_idea = {
+						idea = ENG_colonial_investors
+						days = 365
+					}
+				}
+>>>>>>> parent of f932c3e1 (britain industry)
 			}
+			custom_effect_tooltip = conference_members_get_tt
+			show_ideas_tooltip = ENG_colonial_investors
 			swap_ideas = {
 				remove_idea = ENG_state_of_the_economy_three
 				add_idea = ENG_state_of_the_economy_four
@@ -17717,7 +17740,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_idea = partial_economic_mobilisation
+					has_idea = war_economy
 				}
 				add_political_power = 150
 				add_offsite_building = {
@@ -17726,7 +17749,7 @@ focus_tree = {
 				}
 			}
 			else = {
-				add_ideas = partial_economic_mobilisation
+				add_ideas = war_economy
 			}
 			swap_ideas = {
 				remove_idea = ENG_state_of_the_economy_two

@@ -34,18 +34,10 @@ ENG_quality_RAF_pilots:0 "Quality RAF Pilots"
 <<<<<<< HEAD
 =======
   ENG_let_that_lion_roar:0 "Let That Lion Roar"
-ENG_revitalize_northern_england:0 "Revitalize Northern England"
-ENG_expand_southern_industry:0 "Expand Southern Industry"
-ENG_industrialise_celtic_areas:0 "Industrialise Celtic Areas"
-ENG_amplify_the_exploitation_of_welsh_coal:0 "Amplify Exploitation Of Welsh Coal"
-ENG_devaluate_the_pound:0 "Devaluate The Pound"
-ENG_time_of_economic_prosperity:0 "Time Of Economic Prosperity"
-ENG_Open_our_Markets:0 "Open Our Markets"
-ENG_increase_military_budget:0 "Increase Military Budget"
-ENG_attract_colonial_investors:0 "Attract Colonial Investors"
-ENG_public_school_funding_two:0 "Public School Funding"
+
 
 #ideas
+<<<<<<< HEAD
  ENG_state_of_the_economy:0 "State Of The Economy"
  ENG_state_of_the_economy_two:0 "State Of The Economy"
  ENG_state_of_the_economy_three:0 "State Of The Economy"
@@ -58,6 +50,10 @@ ENG_colonial_investors:0 "Colonial Investments"
 
 
 >>>>>>> parent of f6c250d4 (completed tree)
+=======
+ENG_state_of_the_economy:0 "State Of The Economy"
+ENG_state_of_the_economy_two:0 "State Of The Economy"
+>>>>>>> parent of f932c3e1 (britain industry)
 
   #Custom Tooltips
 
