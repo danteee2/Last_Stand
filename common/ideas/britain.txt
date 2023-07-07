@@ -1,155 +1,6 @@
 ideas = {
 
 	country = {
-<<<<<<< HEAD
-=======
-		ENG_state_of_the_economy = {
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = eng_guided_by_britain
-
-			modifier = {
-			production_speed_buildings_factor = -0.1
-			consumer_goods_factor = 0.05
-			industrial_capacity_factory = -0.1
-			political_power_cost = 0.75
-			}	
-		}
-		ENG_state_of_the_economy_two = {
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = eng_guided_by_britain
-
-			modifier = {
-			production_speed_buildings_factor = -0.05
-			consumer_goods_factor = 0.025
-			industrial_capacity_factory = -0.05 
-			political_power_cost = 0.50
-			}	
-		}
-		ENG_state_of_the_economy_three = {
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = eng_guided_by_britain
-
-			modifier = {
-				production_speed_buildings_factor = 0
-				consumer_goods_factor = 0
-				industrial_capacity_factory = -0.05
-				political_power_cost = 0.25
-				}	
-		}
-		ENG_state_of_the_economy_four = {
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = eng_guided_by_britain
-
-			modifier = {
-				production_speed_buildings_factor = 0.05
-				consumer_goods_factor = 0
-				industrial_capacity_factory = -0.05
-				political_power_cost = 0
-				}	
-		}
-		ENG_state_of_the_economy_five = {
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = eng_guided_by_britain
-
-			modifier = {
-				production_speed_buildings_factor = 0.1
-				consumer_goods_factor = -0.025
-				industrial_capacity_factory = 0.1
-				political_power_cost = 0
-				global_building_slots_factor = 0.25
-				}	
-			
-		}
-		ENG_public_school_funding = {
-			allowed = {
-				always = no
-			}
-			picture = generic_army_war_college
-			removal_cost = -1
-			modifier = {
-				consumer_goods_factor = 0.02
-			}
-		}
-		ENG_devaluated_pound = {
-			removal_cost = -1
-
-			picture = ITA_devaluated_lira
-				
-			allowed = {
-				original_tag = ITA
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-					
-			modifier = {
-				consumer_goods_factor = -0.03
-			}
-		}
-		ENG_colonial_investors = {
-			
-			picture = generic_economic_increase
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				production_factory_efficiency_gain_factor = 0.1
-			}
-		}
->>>>>>> uk-industry-tree
 
 		ENG_quality_RAF_pilots = {
 		
@@ -675,112 +526,8 @@ ideas = {
 			}			
 		}
 
-<<<<<<< HEAD
 		
 		
-=======
-			allowed_civil_war = {
-				always = yes
-			}
-
-			picture = prc_low_popular_support3
-			
-			modifier = {
-		local_resources_factor = 0.1
-		production_speed_buildings_factor = 0.15
-		stability_factor = -0.05	
-			}
-		}
-		motorized_army = {
-			
-			name = motorized_army
-
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			picture = vauxhall
-			
-			modifier = {
-				mechanized_attack_factor = 0.05
-				mechanized_defence_factor = 0.05
-			}
-		}
-		motorized_army_two = {
-			
-			name = motorized_army_two
-
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			picture = vauxhall
-			
-			modifier = {
-				mechanized_attack_factor = 0.05
-				mechanized_defence_factor = 0.05
-				army_armor_attack_factor = 0.05
-				army_armor_defence_factor = 0.05
-			}
-		}
-		motorized_army_three = {
-			
-			name = motorized_army_three
-
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			picture = vauxhall
-			
-			modifier = {
-				mechanized_attack_factor = 0.05
-				mechanized_defence_factor = 0.05
-				army_armor_attack_factor = 0.05
-				army_armor_defence_factor = 0.05
-				army_armor_speed_factor = 0.1
-			}
-		}
-		british_patriotism = {
-			
-			name = british_patriotism
-
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			picture = generic_victors_of_ww1
-			
-			modifier = {
-				war_support_factor = 0.25
-				conscription = 0.01
-			}
-		}
->>>>>>> uk-industry-tree
 		british_austerity_idea = {
 			
 			name = british_austerity_idea
@@ -798,12 +545,8 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-<<<<<<< HEAD
 				consumer_goods_factor = -0.05
 				global_building_slots_factor = 0.25
-=======
-				consumer_goods_factor = -0.025	
->>>>>>> uk-industry-tree
 			}
 		}
 		
@@ -2575,7 +2318,6 @@ ideas = {
 			}
 		}
 	}
-
 	political_advisor = {
 		
 		harry_pollitt = {
@@ -3834,3 +3576,4 @@ ideas = {
 		}				
 	}
 }
+
