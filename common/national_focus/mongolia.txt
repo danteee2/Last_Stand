@@ -3157,7 +3157,7 @@ focus_tree = {
 			NOT = {
 				has_idea = Mongolbank_bankrupt
 			}
-			num_of_factories > 50
+			num_of_factories > 25
 		}
 		ai_will_do = {
 			factor = 50		
@@ -12191,6 +12191,27 @@ focus_tree = {
 			custom_effect_tooltip = MON_tree_is_in_development_tt
 		}
 		search_filters = { FOCUS_FILTER_INFLUENCE_INCREASE }
+	}
+	focus = {
+		id = MON_economic_boom
+		icon = GFX_goal_generic_growing_economy
+		x = 0
+		y = 6
+		relative_position_id = MON_transfer_the_funds_of_mongolbank
+		cost = 30
+		prerequisite = { focus = MON_new_research_centres }
+		prerequisite = { focus = MON_southern_development_focus }
+		prerequisite = { focus = MON_modernize_transportation_system } 
+		ai_will_do = {
+			factor = 30
+		}
+
+		completion_reward = {
+			add_ideas = MON_economic_boom_blue
+			
+
+		}
+		search_filters = {	FOCUS_FILTER_INDUSTRY }
 	}
 }
 

@@ -167,6 +167,7 @@ if = {
 		basic_fire_control_system = 1
 	}
 	add_ideas = MTG_naval_treaty_adherent
+	add_ideas = ENG_state_of_the_economy
 	set_global_flag = MTG_second_london_conference
 	set_global_flag = { flag = MTG_naval_treaty_signatories value = 5 }
 }

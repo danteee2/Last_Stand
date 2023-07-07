@@ -112,6 +112,20 @@ ideas = {
 				resistance_damage_to_garrison = -0.15
 			}
 		}
+		MON_economic_boom_blue = {
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = chi_hyper_inflation
+
+			modifier = {
+				global_building_slots_factor = 1
+				production_speed_buildings_factor = 0.25
+				industrial_capacity_factory = 0.15
+			}
+		}
 
 		MON_foundation_for_special_task_battalion_idea = {
 			allowed_civil_war = {
