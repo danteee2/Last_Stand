@@ -695,6 +695,7 @@ ideas = {
 			modifier = {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				local_resources_factor = 0.1	
 		production_speed_buildings_factor = 0.15
 		stability_factor = -0.05
@@ -713,6 +714,13 @@ ideas = {
 		production_speed_buildings_factor = 0.15
 		stability_factor = -0.05
 >>>>>>> parent of f932c3e1 (britain industry)
+			}
+		}
+>>>>>>> parent of f6c250d4 (completed tree)
+=======
+				local_resources_factor = 0.05
+		production_speed_buildings_factor = 0.1
+		stability_factor = -0.1
 			}
 		}
 >>>>>>> parent of f6c250d4 (completed tree)
