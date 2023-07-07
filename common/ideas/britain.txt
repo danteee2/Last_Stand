@@ -1,8 +1,6 @@
 ideas = {
 
 	country = {
-<<<<<<< HEAD
-=======
 		ENG_state_of_the_economy = {
 			allowed = {
 				always = yes
@@ -57,11 +55,11 @@ ideas = {
 			picture = eng_guided_by_britain
 
 			modifier = {
-			production_speed_buildings_factor = 0.05
-			consumer_goods_factor = 0
-			industrial_capacity_factory = -0.1
-			political_power_cost = 0.25
-			}	
+				production_speed_buildings_factor = 0
+				consumer_goods_factor = 0
+				industrial_capacity_factory = -0.05
+				political_power_cost = 0.25
+				}	
 		}
 		ENG_state_of_the_economy_four = {
 			allowed = {
@@ -77,13 +75,6 @@ ideas = {
 			picture = eng_guided_by_britain
 
 			modifier = {
-<<<<<<< HEAD
-			production_speed_buildings_factor = -0.025
-			consumer_goods_factor = -0.025
-			industrial_capacity_factory = -0.05
-			political_power_cost = 0
-			}	
-=======
 				production_speed_buildings_factor = 0.05
 				consumer_goods_factor = 0
 				industrial_capacity_factory = -0.05
@@ -108,6 +99,7 @@ ideas = {
 				consumer_goods_factor = -0.025
 				industrial_capacity_factory = 0.1
 				political_power_cost = 0
+				global_building_slots_factor = 0.25
 				}	
 			
 		}
@@ -152,13 +144,9 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				economy_cost_factor = -0.25
 				production_factory_efficiency_gain_factor = 0.1
 			}
->>>>>>> parent of f932c3e1 (britain industry)
 		}
-	}
->>>>>>> parent of ae828fa2 (war eco uk)
 
 		ENG_quality_RAF_pilots = {
 		
@@ -683,9 +671,15 @@ ideas = {
 				can_create_factions = yes
 			}			
 		}
+		welsh_miners_exploited = {
+			
+			name = welsh_miners_exploited
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
 
-<<<<<<< HEAD
-=======
 			allowed_civil_war = {
 				always = yes
 			}
@@ -693,45 +687,100 @@ ideas = {
 			picture = prc_low_popular_support3
 			
 			modifier = {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 				local_resources_factor = 0.1	
 		production_speed_buildings_factor = 0.15
 		stability_factor = -0.05
 			}
 		}
-<<<<<<< HEAD
->>>>>>> parent of f6c250d4 (completed tree)
-=======
->>>>>>> parent of f6c250d4 (completed tree)
-=======
-				local_resources_factor = 0.05
-		production_speed_buildings_factor = 0.1
-		stability_factor = -0.1
-=======
-				local_resources_factor = 0.1	
-		production_speed_buildings_factor = 0.15
-		stability_factor = -0.05
->>>>>>> parent of f932c3e1 (britain industry)
+		motorized_army = {
+			
+			name = motorized_army
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = vauxhall
+			
+			modifier = {
+				mechanized_attack_factor = 0.05
+				mechanized_defence_factor = 0.05
 			}
 		}
->>>>>>> parent of f6c250d4 (completed tree)
-=======
-=======
->>>>>>> parent of f6c250d4 (completed tree)
-				local_resources_factor = 0.05
-		production_speed_buildings_factor = 0.1
-		stability_factor = -0.1
+		motorized_army_two = {
+			
+			name = motorized_army_two
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = vauxhall
+			
+			modifier = {
+				mechanized_attack_factor = 0.05
+				mechanized_defence_factor = 0.05
+				army_armor_attack_factor = 0.05
+				army_armor_defence_factor = 0.05
 			}
 		}
-<<<<<<< HEAD
->>>>>>> parent of f6c250d4 (completed tree)
-=======
->>>>>>> parent of f6c250d4 (completed tree)
-		
-		
+		motorized_army_three = {
+			
+			name = motorized_army_three
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = vauxhall
+			
+			modifier = {
+				mechanized_attack_factor = 0.05
+				mechanized_defence_factor = 0.05
+				army_armor_attack_factor = 0.05
+				army_armor_defence_factor = 0.05
+				army_armor_speed_factor = 0.1
+			}
+		}
+		british_patriotism = {
+			
+			name = british_patriotism
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_victors_of_ww1
+			
+			modifier = {
+				war_support_factor = 0.25
+				conscription = 0.01
+			}
+		}
 		british_austerity_idea = {
 			
 			name = british_austerity_idea
@@ -749,8 +798,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				consumer_goods_factor = -0.05
-				global_building_slots_factor = 0.25
+				consumer_goods_factor = -0.025	
 			}
 		}
 		
@@ -2522,6 +2570,7 @@ ideas = {
 			}
 		}
 	}
+
 	political_advisor = {
 		
 		harry_pollitt = {
@@ -3780,4 +3829,3 @@ ideas = {
 		}				
 	}
 }
-
