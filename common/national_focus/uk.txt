@@ -337,7 +337,11 @@ focus_tree = {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		x = 0
+=======
+		x = -1
+>>>>>>> parent of f6c250d4 (completed tree)
 =======
 		x = -1
 >>>>>>> parent of f6c250d4 (completed tree)
@@ -797,6 +801,7 @@ focus_tree = {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if = {
 				limit = {
 					has_dlc = "Man the Guns"
@@ -830,6 +835,9 @@ focus_tree = {
 =======
 			threat > 0.02
 >>>>>>> parent of f6c250d4 (completed tree)
+=======
+			threat > 0.02
+>>>>>>> parent of f6c250d4 (completed tree)
 		}
 
 		continue_if_invalid = yes
@@ -840,7 +848,11 @@ focus_tree = {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		x = -2
+=======
+		x = -4
+>>>>>>> parent of f6c250d4 (completed tree)
 =======
 		x = -4
 >>>>>>> parent of f6c250d4 (completed tree)
@@ -867,6 +879,7 @@ focus_tree = {
 	}
 
 	focus = {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -928,6 +941,9 @@ focus_tree = {
 =======
 		id = ENG_public_school_funding_two
 >>>>>>> parent of f6c250d4 (completed tree)
+=======
+		id = ENG_public_school_funding_two
+>>>>>>> parent of f6c250d4 (completed tree)
 		text = ENG_public_school_funding
 		icon =  GFX_goal_generic_education
 		prerequisite = { focus = ENG_time_of_economic_prosperity }
@@ -941,6 +957,9 @@ focus_tree = {
 		relative_position_id = shadow_scheme_focus
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of f6c250d4 (completed tree)
+=======
 >>>>>>> parent of f6c250d4 (completed tree)
 =======
 >>>>>>> parent of f6c250d4 (completed tree)
@@ -17579,6 +17598,7 @@ focus_tree = {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		mutually_exclusive = {
 			focus = ENG_cut_corporation_tax
 		}
@@ -17591,6 +17611,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 =======
+=======
+>>>>>>> parent of f6c250d4 (completed tree)
 =======
 >>>>>>> parent of f6c250d4 (completed tree)
 =======
@@ -17670,6 +17692,9 @@ focus_tree = {
 		y = 5
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of f6c250d4 (completed tree)
+=======
 >>>>>>> parent of f6c250d4 (completed tree)
 =======
 >>>>>>> parent of f6c250d4 (completed tree)
@@ -17718,6 +17743,9 @@ focus_tree = {
 		y = 6
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of f6c250d4 (completed tree)
+=======
 >>>>>>> parent of f6c250d4 (completed tree)
 =======
 >>>>>>> parent of f6c250d4 (completed tree)
@@ -17826,9 +17854,12 @@ focus_tree = {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of f6c250d4 (completed tree)
 =======
 >>>>>>> parent of ae828fa2 (war eco uk)
+=======
+>>>>>>> parent of f6c250d4 (completed tree)
 =======
 >>>>>>> parent of f6c250d4 (completed tree)
 =======
