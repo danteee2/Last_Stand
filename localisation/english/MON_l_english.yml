@@ -28,6 +28,7 @@ MON_go_on_pilgrimage_to_the_burkhan_khaldun_desc:0 "Holiest mountain in Mongolia
 MON_economic_boom_blue:0 "The Great Mongolian Economic Boom"
 MON_economic_boom_blue_desc:0 "Genghis Khan would've been proud."
 MON_economic_boom:0 "The Great Mongolian Economic Boom"
+MON_economic_boom_desc:0 "Who would have thought that mongolia would be the place to be."
 
 #mongol.7.t:0 "Dancing Shadows"
 #mongol.7.d:0 "Since the massive political reshuffles that have occurred in [SOV.GetNameDef]. Many officials within the [SOV.GetName] fear that #[Root.GetName] may be protecting enemies of [SOV.GetLeader]’s regime. They request that possible enemies of [SOV.GetNameDef] be extradited. #Furthermore [SOV.GetLeader] has targeted [Root.GetLeader] as someone who has protected enemies of [SOV.GetNameDef] and wants his swift trial #and execution."
