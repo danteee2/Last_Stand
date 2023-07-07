@@ -624,6 +624,9 @@ ideas = {
 		stability_factor = -0.1
 			}
 		}
+<<<<<<< HEAD
+>>>>>>> parent of f6c250d4 (completed tree)
+=======
 >>>>>>> parent of f6c250d4 (completed tree)
 		
 		
