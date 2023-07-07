@@ -335,7 +335,11 @@ focus_tree = {
 		icon = GFX_goal_generic_army_motorized
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		x = 0
+=======
+		x = -1
+>>>>>>> parent of f6c250d4 (completed tree)
 =======
 		x = -1
 >>>>>>> parent of f6c250d4 (completed tree)
@@ -787,6 +791,7 @@ focus_tree = {
 		available = {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if = {
 				limit = {
 					has_dlc = "Man the Guns"
@@ -814,6 +819,9 @@ focus_tree = {
 =======
 			threat > 0.02
 >>>>>>> parent of f6c250d4 (completed tree)
+=======
+			threat > 0.02
+>>>>>>> parent of f6c250d4 (completed tree)
 		}
 
 		continue_if_invalid = yes
@@ -822,7 +830,11 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_mil_factory
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		x = -2
+=======
+		x = -4
+>>>>>>> parent of f6c250d4 (completed tree)
 =======
 		x = -4
 >>>>>>> parent of f6c250d4 (completed tree)
@@ -843,6 +855,7 @@ focus_tree = {
 	}
 
 	focus = {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -892,6 +905,9 @@ focus_tree = {
 =======
 		id = ENG_public_school_funding
 >>>>>>> parent of f932c3e1 (britain industry)
+=======
+		id = ENG_public_school_funding_two
+>>>>>>> parent of f6c250d4 (completed tree)
 		text = ENG_public_school_funding
 		icon =  GFX_goal_generic_education
 		prerequisite = { focus = ENG_time_of_economic_prosperity }
@@ -903,6 +919,9 @@ focus_tree = {
 =======
 		y = 7
 		relative_position_id = shadow_scheme_focus
+<<<<<<< HEAD
+>>>>>>> parent of f6c250d4 (completed tree)
+=======
 >>>>>>> parent of f6c250d4 (completed tree)
 		cost = 10
 		ai_will_do = {
@@ -17535,6 +17554,7 @@ focus_tree = {
 			focus = ENG_industrialise_celtic_areas
 		}
 <<<<<<< HEAD
+<<<<<<< HEAD
 		mutually_exclusive = {
 			focus = ENG_cut_corporation_tax
 		}
@@ -17547,6 +17567,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 =======
+=======
+>>>>>>> parent of f6c250d4 (completed tree)
 		relative_position_id = shadow_scheme_focus
 		bypass = {
 			subjects = 0 
@@ -17614,6 +17636,9 @@ focus_tree = {
 		y = 4
 =======
 		y = 5
+<<<<<<< HEAD
+>>>>>>> parent of f6c250d4 (completed tree)
+=======
 >>>>>>> parent of f6c250d4 (completed tree)
 		relative_position_id = shadow_scheme_focus
 		ai_will_do = {
@@ -17656,6 +17681,9 @@ focus_tree = {
 		y = 5
 =======
 		y = 6
+<<<<<<< HEAD
+>>>>>>> parent of f6c250d4 (completed tree)
+=======
 >>>>>>> parent of f6c250d4 (completed tree)
 		relative_position_id = shadow_scheme_focus
 		ai_will_do = {
@@ -17740,7 +17768,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_idea = war_economy
+					has_idea = partial_economic_mobilisation
 				}
 				add_political_power = 150
 				add_offsite_building = {
@@ -17749,7 +17777,7 @@ focus_tree = {
 				}
 			}
 			else = {
-				add_ideas = war_economy
+				add_ideas = partial_economic_mobilisation
 			}
 			swap_ideas = {
 				remove_idea = ENG_state_of_the_economy_two
@@ -17758,9 +17786,12 @@ focus_tree = {
 		}
 	}		
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of f6c250d4 (completed tree)
 =======
 >>>>>>> parent of ae828fa2 (war eco uk)
+=======
+>>>>>>> parent of f6c250d4 (completed tree)
 =======
 >>>>>>> parent of f6c250d4 (completed tree)
 }
