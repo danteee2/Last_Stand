@@ -168,7 +168,7 @@ buildings = {
 
 	fuel_silo = {
 		show_on_map = 1
-		base_cost = 5000
+		base_cost = 3500
 		icon_frame = 14
 		#max_level = 1
 
@@ -208,7 +208,7 @@ buildings = {
 
 	nuclear_reactor = {
 		show_on_map = 1
-		base_cost = 30000
+		base_cost = 25000
 		icon_frame = 13
 		nuclear_reactor = yes
 		nuclear_production_factor = 1
