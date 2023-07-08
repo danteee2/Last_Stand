@@ -2306,13 +2306,8 @@ focus_tree = {
 		y = 0
 		relative_position_id = MON_establish_provisional_airforce
 		cost = 5
-
 		ai_will_do = {
-			factor = 30
-			modifier = {
-				factor = 5
-				num_of_factories < 25
-			}
+			factor = 0
 		}
 
 		completion_reward = {
