@@ -1220,13 +1220,13 @@ ideas = {
 
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.1 instant = yes
+					build_cost_ic = -0.05 instant = yes
 				}
 				motorized_equipment = {
-					build_cost_ic = -0.1 instant = yes
+					build_cost_ic = -0.05 instant = yes
 				}
 				artillery_equipment = {
-					build_cost_ic = -0.1 instant = yes
+					build_cost_ic = -0.05  instant = yes
 				}
 			}
 		}
@@ -1764,7 +1764,7 @@ ideas = {
 
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05	
 					instant = yes
 				}
 			}
@@ -3873,41 +3873,6 @@ ideas = {
 				motorized_equipment = 0.15
 			}
 			traits = { motorized_equipment_manufacturer }
-		}
-		
-		tunis = {	#MOD
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = TUN
-				}
-			}
-			available = {
-				NOT = { has_country_flag = tunis_nat }
-			}
-			research_bonus = {
-				infantry_weapons = 0.075
-			}				
-			cost = 75
-			traits = { infantry_equipment_producer_mass_1 }
-		}
-		
-		bayonne = { #MOD
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = OCC
-				}
-			}
-			available = {
-				has_completed_focus = FRA_war_material_licence
-				NOT = { has_country_flag = bayonne_nat }
-			}
-			research_bonus = {
-				support_tech = 0.075
-			}			
-			cost = 150		
-			traits = { infantry_equipment_producer_mass_2 }
 		}
 		
 		puteaux = { #MOD
