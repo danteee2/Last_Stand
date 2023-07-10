@@ -16412,5 +16412,40 @@ focus_tree = {
 		}
 
 	}
+	focus = {
+		id = GER_import_iberian_deposits
+		icon = GFX_focus_por_iberian_summit
+		cost = 5
+		prerequisite = {
+			focus = GER_nationalize_resource_industries
+		}
+		available = {
+			OR = {	date > 1937.01.01 
+		threat > 0.1 }
+			has_full_control_of_state = 66
+			has_full_control_of_state = 67
+		}
+		x = 8
+		y = 3
+		relative_position_id = GER_appoint_economic_positions
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_resource = {
+				type = tungsten
+				amount = 42
+				state = 66
+			}
+			add_resource = {
+				type = tungsten
+				amount = 36
+				state = 67
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_STEEL FOCUS_FILTER_INDUSTRY
+		}
+	}
 
 }

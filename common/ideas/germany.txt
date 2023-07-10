@@ -461,7 +461,7 @@ ideas = {
 				conscription = 0.01
 				war_support_factor = 0.05
 				max_fuel_factor = 0.1
-				production_factory_max_efficiency_factor = 0.15
+				production_factory_max_efficiency_factor = 0.075
 			}
 			research_bonus = {
 				synth_resources = 0.1
@@ -492,9 +492,9 @@ ideas = {
 			modifier = {
 				local_resources_factor = 0.1
 				production_speed_steel_mill_factor = 0.1
-				production_speed_arms_factory_factor = 0.075
+				production_speed_arms_factory_factor = 0.05
 				production_speed_buildings_factor = -0.05
-				production_factory_max_efficiency_factor = 0.15
+				production_factory_max_efficiency_factor = 0.075
 			}
 		}
 		GER_aux_police_SS_idea = {

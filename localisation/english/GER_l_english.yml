@@ -48,6 +48,8 @@ GER_deutsche_forschungsanstalt_fur_segelflug_desc:0 "Deutsche Forschungsanstalt 
  GER_build_panzer_army:0 "Build Up the Panzer Army"
  GER_build_panzer_army_desc:0 "Before we invade [FRA.GetNameDef], we must ensure that our armored divisions are up to date and fully stocked with the tanks they need."
  GER_build_panzer_quality:0 "Favour Quality"
+GER_import_iberian_deposits:0 "Import Iberian Deposits"
+GER_import_iberian_deposits_desc:0 "We must act fast, with rising tensions we must prepare to formulate the finest Panzers with quality tungsten. The Iberian peninsula is known for it's deposits of tungsten thus we will transfer deposits in our favour...."
  GER_build_panzer_quality_desc:0 " "
  GER_build_panzer_quantity:0 "Favour Quantity"
  GER_build_panzer_quantity_desc:0 " "
