@@ -112,20 +112,6 @@ ideas = {
 				resistance_damage_to_garrison = -0.15
 			}
 		}
-		MON_economic_boom_blue = {
-			allowed_civil_war = {
-				always = yes
-			}
-			removal_cost = -1
-
-			picture = chi_hyper_inflation
-
-			modifier = {
-				global_building_slots_factor = 1
-				production_speed_buildings_factor = 0.25
-				industrial_capacity_factory = 0.15
-			}
-		}
 
 		MON_foundation_for_special_task_battalion_idea = {
 			allowed_civil_war = {
@@ -140,6 +126,18 @@ ideas = {
 				special_forces_cap = 0.1
 				special_forces_min = 2
 				winter_attrition_factor = -0.15
+			}
+		}
+		MON_economic_boom_blue = {
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = chi_hyper_inflation
+
+			modifier = {
+				industrial_capacity_factory = 0.05
 			}
 		}
 		MON_desert_specialization_idea = {
@@ -489,8 +487,9 @@ ideas = {
 			allowed_civil_war = { always = yes }
 
 			modifier = {
-				army_attack_factor = 0.15
-				land_reinforce_rate = 0.04
+				air_attack_factor = 0.05
+				army_attack_factor = 0.1
+				land_reinforce_rate = 0.02
 			}
 		}
 
@@ -799,7 +798,7 @@ ideas = {
 			allowed_civil_war = { always = yes }
 
 			modifier = {
-				research_speed_factor = 0.1
+				research_speed_factor = 0.04
 			}	
 		}
 
@@ -965,7 +964,7 @@ ideas = {
 				
 			modifier = {
 				consumer_goods_factor = 0.05	
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.15
 			}	
 		}
 
@@ -978,7 +977,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = 0.05	
-				industrial_capacity_factory = 0.15
+				industrial_capacity_factory = 0.25
 				production_speed_buildings_factor = 0.10
 			}	
 		}
@@ -1048,7 +1047,7 @@ ideas = {
 
 			modifier = {
 				political_power_gain = -0.20
-				consumer_goods_factor = -0.5
+				consumer_goods_factor = -0.10
 			}
 		}
 
@@ -1059,7 +1058,7 @@ ideas = {
 
 			modifier = {
 				political_power_gain = -0.10
-				consumer_goods_factor = -0.5
+				consumer_goods_factor = -0.05
 			}
 		}
 
@@ -1070,7 +1069,6 @@ ideas = {
 
 			modifier = {
 				political_power_gain = 0.05
-				consumer_goods_factor = -0.5
 			}
 		}
 
@@ -1081,7 +1079,7 @@ ideas = {
 
 			modifier = {
 				political_power_gain = 0.15
-				consumer_goods_factor = -0.5
+				consumer_goods_factor = 0.05
 			}
 		}
 
@@ -1092,7 +1090,7 @@ ideas = {
 
 			modifier = {
 				political_power_gain = -0.10
-				consumer_goods_factor = -0.5
+				consumer_goods_factor = 0.20
 			}
 		}
 
@@ -1267,11 +1265,9 @@ ideas = {
 			}
 
 			modifier = {
-				army_org_factor = 0.1
-				training_time_army_factor = -0.2
+				army_org_factor = -0.25
+				training_time_army_factor = -0.15
 				conscription_factor = 0.2
-				conscription = 0.04
-
 			}
 		}
 
@@ -1286,9 +1282,9 @@ ideas = {
 			}
 
 			modifier = {
-				army_speed_factor = 0.1
-				army_attack_factor = 0.15
-				army_defence_factor = -0.05
+				army_speed_factor = 0.05
+				army_attack_factor = 0.1
+				army_defence_factor = -0.1
 			}
 		}
 
@@ -1303,25 +1299,13 @@ ideas = {
 			}
 
 			modifier = {
-				global_building_slots_factor = 0.30
-				consumer_goods_factor = -0.10
-				production_speed_buildings_factor = 0.20
-				industrial_capacity_factory = 0.20
+				global_building_slots_factor = 0.15
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.10
+				industrial_capacity_factory = -0.20
 			}
 		}
-		MON_collectivization_of_lands = {
-			picture = new_economic_policy
-			removal_cost = -1
-			allowed = {
-				always = no # Added via focus
-			}
-			allowed_civil_war = {
-				has_government = communism
-			}
-			modifier = {
-				global_building_slots_factor = 0.60
-			}
-		}
+
 		MON_atheist_propaganda = {
 			picture = por_iberian_workers_united
 			removal_cost = -1
@@ -2104,7 +2088,7 @@ ideas = {
 			}
 
 			modifier = {
-				war_support_factor = -0.20
+				war_support_weekly = -0.005
 				weekly_manpower = 200
 			}
 		}
@@ -2381,7 +2365,7 @@ ideas = {
 				production_speed_buildings_factor = -0.05
 				industrial_capacity_factory = 0.20
 				stability_weekly = -0.002
-				war_support_factor = 0.20
+				war_support_weekly = 0.003
 			}
 		}
 
@@ -2661,7 +2645,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = 0.03
-				war_support_factor = -0.20
+				war_support_weekly = -0.001
 				weekly_manpower = 500
 			}
 		}

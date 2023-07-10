@@ -1289,19 +1289,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			army_experience = 100
+			army_experience = 15
 			add_tech_bonus = {
 				name = artillery_bonus
 				bonus = 1
-				uses = 2
+				uses = 1
 				category = artillery
 			}
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1
-				uses = 4
-				category = armor
-			}
+			unlock_decision_tooltip = MON_study_foreign_artillery_plans
 		}
 		search_filters = {	FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_XP }
 	}
@@ -1374,8 +1369,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
-			custom_effect_tooltip = MON_specialized_crews_tt
+			add_ideas = MON_the_ultimate_weapon_idea
 		}
 		search_filters = { FOCUS_FILTER_MILITARY_IMPROVEMENT }
 	}
@@ -2306,33 +2300,19 @@ focus_tree = {
 		y = 0
 		relative_position_id = MON_establish_provisional_airforce
 		cost = 5
+
 		ai_will_do = {
-			factor = 0
+			factor = 30
+			modifier = {
+				factor = 5
+				num_of_factories < 25
+			}
 		}
 
 		completion_reward = {
 			add_ideas = Mongolbank_very_high_funds
 			custom_effect_tooltip = available_industrial_concern
 			show_ideas_tooltip = Mongolbank
-			random_owned_controlled_state = {
-				prioritize = { 64 }
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			
-
 		}
 		search_filters = {	FOCUS_FILTER_INDUSTRY }
 	}
@@ -2372,24 +2352,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 64 }
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2426,24 +2389,6 @@ focus_tree = {
 		completion_reward = {
 			MON_mongol_bank_funds_decrease = yes
 			add_ideas = Mon_elementary_schools_idea
-			add_research_slot = 1
-			random_owned_controlled_state = {
-				prioritize = { 64 }
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
 		}
 		search_filters = {	FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 	}
@@ -2469,27 +2414,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 75
+			add_political_power = 50
 			remove_ideas = MON_weak_currency_idea
 			MON_mongol_bank_funds_increase = yes
 			unlock_decision_category_tooltip = MON_strengthen_mongolbank_category
-			330 = {
-				prioritize = { 64 }
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
 		}
 		search_filters = {	FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
 	}
@@ -2530,23 +2458,6 @@ focus_tree = {
 				days = 1105
 			}
 			MON_mongol_bank_funds_increase = yes
-			330 = {
-				prioritize = { 64 }
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
 		}
 		search_filters = {	FOCUS_FILTER_INDUSTRY }
 	}
@@ -2578,23 +2489,6 @@ focus_tree = {
 				uses = 2
 				category = industry
 			}
-			330 = {
-				prioritize = { 64 }
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
 		}
 		search_filters = {	FOCUS_FILTER_INDUSTRY }
 	}
@@ -2621,23 +2515,6 @@ focus_tree = {
 				uses = 1
 				category = electronics
 			}
-			330 = {
-				prioritize = { 64 }
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
 		}
 		search_filters = {	FOCUS_FILTER_INDUSTRY }
 	}
@@ -2650,6 +2527,7 @@ focus_tree = {
 		cost = 10
 
 		prerequisite = { focus = MON_build_the_railroads focus = MON_expand_elementary_schools }
+		mutually_exclusive = { focus = MON_end_reliance_on_animal_husbandry }
 
 		relative_position_id = MON_expand_elementary_schools
 
@@ -2667,25 +2545,7 @@ focus_tree = {
 					add_idea = MON_animal_husbandry_prioritised_idea
 				}
 			}
-			add_stability = 0.1
-			819 = {
-				prioritize = { 64 }
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-
+			add_stability = 0.05
 		}
 		search_filters = {	FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
 	}
@@ -2697,6 +2557,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		prerequisite = { focus = MON_improve_machine_tools focus = MON_study_foreign_radio_equipment }
+		mutually_exclusive = { focus = MON_pastures_into_farms }
 
 		relative_position_id = MON_study_foreign_radio_equipment 
 		available_if_capitulated = yes
@@ -2714,24 +2575,7 @@ focus_tree = {
 					add_idea = MON_industrial_growth_prioritised_idea
 				}
 			}
-			819 = {
-				prioritize = { 64 }
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = Arms_factory 
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = arms_factory
-					level = 5
-					instant_build = yes
-				}
-			}
-			add_stability = 0.2
+			add_stability = -0.10
 			every_controlled_state = 	{	#instead of random building slots, change it higher aka developing
 				limit = {
 					OR = {
@@ -2750,7 +2594,7 @@ focus_tree = {
 		icon = GFX_goal_generic_farm_tractor
 		x = 0
 		y = 1
-		cost = 5
+		cost = 7.2
 		relative_position_id = MON_pastures_into_farms
 		prerequisite = { focus = MON_pastures_into_farms }
 
@@ -2811,10 +2655,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2852,7 +2696,7 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -2892,10 +2736,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2988,7 +2832,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_ideas = MON_collectivization_of_lands
 		}
 		search_filters = {	FOCUS_FILTER_INDUSTRY }
 	}
@@ -3026,7 +2869,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				if = {
@@ -3071,12 +2914,12 @@ focus_tree = {
             }			
 			add_resource = {
 				type = steel
-				amount = 70
+				amount = 3
 				state = 820
 			}
 			add_resource = {
-				type = Tungsten 
-				amount = 30
+				type = steel
+				amount = 2
 				state = 819
 			}
 		}
@@ -3112,10 +2955,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -3128,10 +2971,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -3152,7 +2995,7 @@ focus_tree = {
 			NOT = {
 				has_idea = Mongolbank_bankrupt
 			}
-			num_of_factories > 25
+			num_of_factories > 50
 		}
 		ai_will_do = {
 			factor = 50		
@@ -3190,6 +3033,254 @@ focus_tree = {
 		}
 		search_filters = {	FOCUS_FILTER_INDUSTRY }
 	}
+
+	focus = {
+		id = MON_assist_subsidized_region
+		icon = GFX_goal_generic_bills
+		x = -2
+		y = 2
+		cost = 8
+		relative_position_id = MON_modernize_transportation_system
+		prerequisite = { focus = MON_modernize_transportation_system  }
+		available_if_capitulated = yes
+		available = {
+			NOT = {
+				has_idea = Mongolbank_bankrupt
+			}
+			OR = {
+				ROOT = {
+					controls_state = 329
+					controls_state = 818
+				}
+				any_other_country = {
+					is_subject_of = ROOT
+					OR = {
+						controls_state = 329
+						controls_state = 818
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			329 = {
+				r56_state_category_level_up = yes
+			}
+			818 = {
+				r56_state_category_level_up = yes
+			}
+			every_state = 	{	#instead of random building slots, change it higher as if being developed
+				limit = {
+					OR = {
+						state = 329
+						state = 818
+					}
+				}
+				set_state_flag = MON_invested_into_state
+				add_dynamic_modifier = { modifier = r56_local_development }
+			}
+			MON_mongol_bank_funds_decrease = yes
+		}
+		search_filters = {	FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = MON_develop_mongolia_proper
+		icon = GFX_goal_generic_construction3
+		x = -1
+		y = 1
+		cost = 8
+		relative_position_id = MON_modernize_transportation_system
+		prerequisite = { focus = MON_modernize_transportation_system }
+		available_if_capitulated = yes
+		available = {
+			NOT = {
+				has_idea = Mongolbank_bankrupt
+			}
+			OR = {
+				ROOT = {
+					controls_state = 820
+					controls_state = 817
+				}
+				any_other_country = {
+					is_subject_of = ROOT
+					OR = {
+						controls_state = 820
+						controls_state = 817
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			820 = {
+				r56_state_category_level_up = yes
+			}
+			817 = {
+				r56_state_category_level_up = yes
+			}
+			every_state = 	{	#instead of random building slots, change it higher as if being developed
+				limit = {
+					OR = {
+						state = 820
+						state = 817
+					}
+				}
+				set_state_flag = MON_invested_into_state
+				add_dynamic_modifier = { modifier = r56_local_development }
+			}
+			MON_mongol_bank_funds_decrease = yes
+		}
+		search_filters = {	FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = MON_improve_baigaal_dalai_industries
+		icon = GFX_goal_generic_land_seizure
+		x = 1
+		y = 1
+		cost = 8
+		relative_position_id = MON_modernize_transportation_system
+		prerequisite = { focus = MON_modernize_transportation_system }
+		available_if_capitulated = yes
+		available = {
+			NOT = {
+				has_idea = Mongolbank_bankrupt
+			}
+			OR = {
+				ROOT = {
+					controls_state = 566
+					controls_state = 564
+				}
+				any_other_country = {
+					is_subject_of = ROOT
+					OR = {
+						controls_state = 566
+						controls_state = 564
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			every_state = 	{	#instead of random building slots, change it higher as if being developed
+				limit = {
+					OR = {
+						state = 566
+						state = 564
+					}
+				}
+				r56_state_category_level_up = yes
+				set_state_flag = MON_invested_into_state
+				add_dynamic_modifier = { modifier = r56_local_development }
+			}
+			MON_mongol_bank_funds_decrease = yes
+		}
+		search_filters = {	FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = MON_develop_the_rear
+		icon = GFX_goal_war_infrastructure
+		x = 2
+		y = 2
+		cost = 8
+		relative_position_id = MON_modernize_transportation_system
+		prerequisite = { focus = MON_modernize_transportation_system }
+		available_if_capitulated = yes
+		available = {
+			NOT = {
+				has_idea = Mongolbank_bankrupt
+			}
+			OR = {
+				ROOT = {
+					controls_state = 563
+					controls_state = 565
+				}
+				any_other_country = {
+					is_subject_of = ROOT
+					OR = {
+						controls_state = 563
+						controls_state = 565
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			every_state = 	{	#instead of random building slots, change it higher as if being developed
+				limit = {
+					OR = {
+						state = 563
+						state = 565
+					}
+				}
+				r56_state_category_level_up = yes
+				set_state_flag = MON_invested_into_state
+				add_dynamic_modifier = { modifier = r56_local_development }
+			}
+			build_railway = { 
+				path = { 4797 1762 4837 10528 4766 12507 7860 10683 7786 4677 }
+			}
+			MON_mongol_bank_funds_decrease = yes
+		}
+		search_filters = {	FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = MON_military_industries_expansion
+		icon = GFX_goal_proving_grounds
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = MON_develop_the_rear
+		prerequisite = {
+			focus = MON_develop_the_rear
+			focus = MON_improve_baigaal_dalai_industries
+			focus = MON_develop_mongolia_proper
+			focus = MON_assist_subsidized_region
+		}
+		available_if_capitulated = yes
+		available = {
+			NOT = {
+				has_idea = Mongolbank_bankrupt
+			}
+		}
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			custom_effect_tooltip = MON_invest_add_one_mil_factory_in_a_state_tt
+			every_state = {
+				limit = {
+					OR ={
+						is_controlled_by = ROOT
+						controller = {
+							is_subject_of = ROOT
+						}
+					}
+					has_state_flag = MON_invested_into_state
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			MON_mongol_bank_funds_decrease = yes
+		}
+		search_filters = {	FOCUS_FILTER_INDUSTRY }
+	}
+
 	focus = {
 		id = MON_southern_development_focus
 		icon = GFX_goal_MON_desert_investment
@@ -3216,6 +3307,252 @@ focus_tree = {
 		}
 		search_filters = {	FOCUS_FILTER_INDUSTRY }
 	}
+
+	focus = {
+		id = MON_southwest_resource_prospection_area
+		icon = GFX_focus_generic_industry_2
+		x = -2
+		y = 2
+		cost = 8
+		relative_position_id = MON_southern_development_focus
+		prerequisite = { focus = MON_southern_development_focus  }
+		available_if_capitulated = yes
+		available = {
+			NOT = {
+				has_idea = Mongolbank_bankrupt
+			}
+			OR = {
+				ROOT = {
+					controls_state = 618
+					controls_state = 617
+				}
+				any_other_country = {
+					is_subject_of = ROOT
+					OR = {
+						controls_state = 618
+						controls_state = 617
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			820 = {
+				r56_state_category_level_up = yes
+			}
+			817 = {
+				r56_state_category_level_up = yes
+			}
+			every_state = 	{	#instead of random building slots, change it higher as if being developed
+				limit = {
+					OR = {
+						state = 820
+						state = 817
+					}
+				}
+				set_state_flag = MON_invested_into_state
+				add_dynamic_modifier = { modifier = r56_local_development }
+			}
+		}
+		search_filters = {	FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = MON_encourage_southern_agriculture
+		icon = GFX_goal_generic_agriculture
+		x = -1
+		y = 1
+		cost = 8
+		relative_position_id = MON_southern_development_focus
+		prerequisite = { focus = MON_southern_development_focus }
+		available_if_capitulated = yes
+		available = {
+			NOT = {
+				has_idea = Mongolbank_bankrupt
+			}
+			OR = {
+				ROOT = {
+					controls_state = 756
+					controls_state = 616
+				}
+				any_other_country = {
+					is_subject_of = ROOT
+					OR = {
+						controls_state = 756
+						controls_state = 616
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			756 = {
+				r56_state_category_level_up = yes
+			}
+			616 = {
+				r56_state_category_level_up = yes
+			}
+			every_state = 	{	#instead of random building slots, change it higher as if being developed
+				limit = {
+					OR = {
+						state = 756
+						state = 616
+					}
+				}
+				set_state_flag = MON_invested_into_state
+				add_dynamic_modifier = { modifier = r56_local_development }
+			}
+		}
+		search_filters = {	FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = MON_expand_chahars_processing_region
+		icon = GFX_goal_generic_underground_factories
+		x = 1
+		y = 1
+		cost = 8
+		relative_position_id = MON_southern_development_focus
+		prerequisite = { focus = MON_southern_development_focus }
+		available_if_capitulated = yes
+		available = {
+			NOT = {
+				has_idea = Mongolbank_bankrupt
+			}
+			OR = {
+				ROOT = {
+					controls_state = 611
+					controls_state = 612
+				}
+				any_other_country = {
+					is_subject_of = ROOT
+					OR = {
+						controls_state = 611
+						controls_state = 612
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			every_state = 	{	#instead of random building slots, change it higher as if being developed
+				limit = {
+					OR = {
+						state = 611
+						state = 612
+					}
+				}
+				r56_state_category_level_up = yes
+				set_state_flag = MON_invested_into_state
+				add_dynamic_modifier = { modifier = r56_local_development }
+			}
+		}
+		search_filters = {	FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = MON_ordos_plateau_exploitation
+		icon = GFX_goal_generic_communist_economy
+		x = 0
+		y = 2
+		cost = 8
+		relative_position_id = MON_southern_development_focus
+		prerequisite = { focus = MON_southern_development_focus }
+		available_if_capitulated = yes
+		available = {
+			NOT = {
+				has_idea = Mongolbank_bankrupt
+			}
+			OR = {
+				ROOT = {
+					controls_state = 621
+					controls_state = 746
+				}
+				any_other_country = {
+					is_subject_of = ROOT
+					OR = {
+						controls_state = 621
+						controls_state = 746
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			621 = {
+				r56_state_category_level_up = yes
+			}
+			746 = {
+				r56_state_category_level_up = yes
+			}
+			every_state = 	{	#instead of random building slots, change it higher as if being developed
+				limit = {
+					OR = {
+						state = 621
+						state = 746
+					}
+				}
+				set_state_flag = MON_invested_into_state
+				add_dynamic_modifier = { modifier = r56_local_development }
+			}
+		}
+		search_filters = {	FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = MON_utilize_available_spaces
+		icon = GFX_goal_generic_light_industry
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = MON_ordos_plateau_exploitation
+		prerequisite = {
+			focus = MON_southwest_resource_prospection_area
+			focus = MON_encourage_southern_agriculture
+			focus = MON_expand_chahars_processing_region
+			focus = MON_ordos_plateau_exploitation
+		}
+		available_if_capitulated = yes
+		available = {
+			NOT = {
+				has_idea = Mongolbank_bankrupt
+			}
+		}
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			custom_effect_tooltip = MON_invest_add_one_civ_factory_in_a_state_tt
+			every_state = {
+				limit = {
+					OR ={
+						is_controlled_by = ROOT
+						controller = {
+							is_subject_of = ROOT
+						}
+					}
+					has_state_flag = MON_invested_into_state
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			MON_mongol_bank_funds_decrease = yes
+		}
+		search_filters = {	FOCUS_FILTER_INDUSTRY }
+	}
+
     ###################################################################################################################
     ###################################################################################################################
     ###################################################################################################################
@@ -3362,6 +3699,14 @@ focus_tree = {
 			focus = MON_appoint_soviet_protege
 			focus = MON_reject_choibalsan_advances
 		}
+
+		available = {
+			has_country_flag = MON_kill_genden_for_future_leftist_takeover
+			NOT = {
+				has_idea = MON_khorloogiin_choibalsan
+			}
+		}
+
 		ai_will_do = {
 			factor = 30	
 		}
@@ -3370,7 +3715,9 @@ focus_tree = {
 			hidden_effect = {
 				country_lock_all_division_template = yes
 			}
-			add_stability = -0.2
+			add_ideas = MON_political_opposition_organizing
+			activate_mission = MON_choibalsan_plot
+			custom_effect_tooltip = MON_civil_wars_missions_helping_choibalsan_tt
 		}
 	}
 
@@ -3389,14 +3736,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_offsite_building = { type = arms_factory level = 4 }
+			add_offsite_building = { type = arms_factory level = 2 }
 			if = {
 				limit = {
 					has_active_mission = MON_choibalsan_plot
 				}
 				add_days_mission_timeout = {
 					mission = MON_choibalsan_plot
-					days = 200
+					days = -30
 				}
 			}
 		}
@@ -3410,7 +3757,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = MON_learn_from_lkhumbe_affair
-		cost = 5
+		cost = 7.2
 		prerequisite = {
 			focus = MON_learn_from_lkhumbe_affair
 		}
@@ -3433,7 +3780,7 @@ focus_tree = {
 				ideology = communism
 				popularity = 0.05
 			}
-			MON_mongol_bank_funds_increase = yes
+			MON_mongol_bank_funds_decrease = yes
 			MON_soviet_medium_influence_decrease_effect = yes
 			if = {
 				limit = {
@@ -3441,7 +3788,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = MON_choibalsan_plot
-					days = 200
+					days = -50
 				}
 			}
 		}
@@ -3498,7 +3845,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = MON_choibalsan_plot
-					days = 200
+					days = -70
 				}
 			}
 		}
@@ -3534,7 +3881,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = MON_choibalsan_plot
-					days = 200
+					days = -110
 				}
 			}
 		}
@@ -3548,7 +3895,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = MON_prepare_leftist_takeover
-		cost = 1
+		cost = 7.2
 		prerequisite = {
 			focus = MON_prepare_leftist_takeover
 		}
@@ -3593,10 +3940,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_manpower = 200000
-			add_stability = -0.1
-			add_ideas = MON_banditry_know_how
-
+			add_manpower = 2000
+			add_stability = -0.05
+			add_timed_idea = {
+				idea = MON_banditry_know_how
+				days = 270
+			}
 			MON_soviet_low_influence_decrease_effect = yes
 			unlock_decision_tooltip = MON_expand_the_recruitment_campaign
 			if = {
@@ -3605,7 +3954,7 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = MON_choibalsan_plot
-					days = 200
+					days = 80
 				}
 			}
 		}
@@ -3619,7 +3968,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = MON_ensure_control_over_the_railways
-		cost = 5
+		cost = 7.16
 		prerequisite = {
 			focus = MON_ensure_control_over_the_railways
 		}
@@ -3645,10 +3994,10 @@ focus_tree = {
 				}
 				add_days_mission_timeout = {
 					mission = MON_choibalsan_plot
-					days = 200
+					days = 100
 				}
-			
 			}
+			MON_mongol_bank_funds_increase = yes
 		}
 		search_filters = { FOCUS_FILTER_INFLUENCE_DECREASE }
 	}
@@ -3659,7 +4008,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = MON_invite_political_exiles
-		cost = 5
+		cost = 7.2
 		prerequisite = { focus = MON_invite_political_exiles }
 		prerequisite = { focus = MON_contact_the_bandits  focus = MON_arm_civil_militia  }
 		prerequisite = { focus = MON_partial_religious_compromise focus = MON_confiscate_soviet_weaponry }
@@ -3703,8 +4052,8 @@ focus_tree = {
 			if = {
 				limit = {
 					OR = {
-						has_stability < 0.20
-						check_variable = { sov_influence_in_mon = 90 compare = greater_than_or_equals }
+						has_stability < 0.40
+						check_variable = { sov_influence_in_mon = 60 compare = greater_than_or_equals }
 					}
 					NOT = {
 						has_country_flag = MON_choibalsan_revolted	
@@ -3965,7 +4314,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_workers_focus
-		icon = GFX_BEL_union_agreement
+		icon = GFX_tblra_union_agreement
 		prerequisite = { focus = MON_establish_socialist_society }
 		x = -1
 		y = 1
@@ -4290,15 +4639,15 @@ focus_tree = {
 				limit = {
 					is_core_of = ROOT
 					free_building_slots = {
-						building = arms_factory
+						building = industrial_complex
 						size > 1
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = arms_factory
-					level = 4
+					type = industrial_complex
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -4312,27 +4661,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 4
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 819 }
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = arms_factory
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -5244,7 +5576,7 @@ focus_tree = {
 			}
 			else = {
 				add_offsite_building = { type = arms_factory level = 1 }
-				#add_offsite_building = { type = industrial_complex level = 1 }
+				add_offsite_building = { type = industrial_complex level = 1 }
 			}
 		}
 		search_filters = {	FOCUS_FILTER_INDUSTRY }
@@ -5573,11 +5905,11 @@ focus_tree = {
 					is_core_of = ROOT
 					free_building_slots = {
 						building = industrial_complex
-						size > 1
+						size > 0
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -5594,58 +5926,7 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 820 }
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 820 }
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 820 }
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -5679,40 +5960,6 @@ focus_tree = {
 		completion_reward = {
 			MON_soviet_low_influence_increase_effect = yes
 			unlock_decision_category_tooltip = MON_support_the_red_army
-			random_owned_controlled_state = {
-				prioritize = { 820 }
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = arms_factory
-					level = 4
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 819 }
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = arms_factory
-					level = 4
-					instant_build = yes
-				}
-			}
 		}
 		search_filters = { FOCUS_FILTER_INFLUENCE_INCREASE }
 	}
@@ -5740,8 +5987,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_war_support = 0.1
-			add_manpower = 200000
+			add_war_support = 0.05
+			add_manpower = 2000
 			add_tech_bonus = {
 				name = POL_study_foreign_tanks
 				bonus = 1
@@ -7097,70 +7344,6 @@ focus_tree = {
 				category = industry
 			}
 			unlock_decision_tooltip = MON_study_foreign_machinery
-			817 = {
-				limit = {
-					is_core_of = POL
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			819 = {
-				limit = {
-					is_core_of = POL
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			820 = {
-				limit = {
-					is_core_of = POL
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			330 = {
-				limit = {
-					is_core_of = POL
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -8369,7 +8552,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_offsite_building = { type = industrial_complex level = 1 }
+			add_offsite_building = { type = industrial_complex level = 2 }
 			if = {
 				limit = {
 					has_idea = MON_new_course_policy_idea
@@ -10085,7 +10268,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_nationalism
-		icon = GFX_goal_generic_political
+		icon = GFX_goal_generic_generic_political
 		prerequisite = { focus = MON_cooperation_with_kuomintang }
 		x = 0
 		y = 1
@@ -10643,10 +10826,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -10915,7 +11098,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
