@@ -138,6 +138,8 @@ ideas = {
 
 			modifier = {
 				industrial_capacity_factory = 0.05
+				production_lack_of_resource_penalty_factor = -0.45
+				production_factory_efficiency_gain_factor = 0.05
 			}
 		}
 		MON_desert_specialization_idea = {

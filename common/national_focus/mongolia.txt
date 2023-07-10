@@ -12373,19 +12373,23 @@ focus_tree = {
 	focus = {
 		id = MON_economic_boom
 		icon = GFX_goal_generic_growing_economy
-		x = 0
-		y = 6
+		x = 5
+		y = 4
 		relative_position_id = MON_transfer_the_funds_of_mongolbank
-		cost = 30
-		prerequisite = { focus = MON_new_research_centres }
-		prerequisite = { focus = MON_southern_development_focus }
-		prerequisite = { focus = MON_modernize_transportation_system } 
+		cost = 10
+		prerequisite = { focus = MON_study_foreign_radio_equipment }
 		ai_will_do = {
 			factor = 30
 		}
+		available = {
+			date > 1940.01.01
+		}
 
 		completion_reward = {
-			add_ideas = MON_economic_boom_blue
+		add_timed_idea = {
+			idea = MON_economic_boom_blue
+			days = 195
+		}
 			
 
 		}
