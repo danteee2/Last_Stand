@@ -1179,7 +1179,7 @@
 
 	focus = {
 		id = JAP_close_the_island
-		icon = gfx/interface/goals/jap/JAP_closed_eco_focus.dds
+		icon = GFX_goal_JAP_closed_island_focus
 		cost = 10
 		prerequisite = {
 			focus = JAP_the_fate_of_the_imperial_family
