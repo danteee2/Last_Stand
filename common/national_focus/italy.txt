@@ -14987,6 +14987,8 @@ focus_tree = {
 					is_justifying_wargoal_against = ROOT
 				}
 			}
+				date > 1938.06.01
+			
 		}
 
 		completion_reward = { 

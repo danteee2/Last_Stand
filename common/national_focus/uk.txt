@@ -17178,7 +17178,7 @@ focus_tree = {
 			controls_state = 970
 			controls_state = 123
 			controls_state = 122
-
+			date > 1936.03.01
 		} 
 		available_if_capitulated = yes
 
@@ -17341,12 +17341,13 @@ focus_tree = {
 	focus = {
 		id = ENG_amplify_the_exploitation_of_welsh_coal
 		icon = GFX_goal_generic_mining_iron
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = ENG_expand_southern_industry
 		}
 		available = {
 			controls_state = 122
+			date > 1936.03.01
 		} 
 		x = -1
 		y = 3
@@ -17393,7 +17394,7 @@ focus_tree = {
 	focus = {
 		id = ENG_devaluate_the_pound
 		icon = GFX_focus_mex_privatisation
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = ENG_Open_our_Markets
 		}
@@ -17452,6 +17453,9 @@ focus_tree = {
 		y = 4
 		relative_position_id = ENG_Provoke_british_patriotism
 		bypass = { has_idea = free_trade }
+		available = {
+			date > 1936.04.01
+		}
 		completion_reward = {
 				#trade bonuses
 				if = {
@@ -17482,6 +17486,9 @@ focus_tree = {
 		y = 4
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+			available = {
+				date > 1936.06.01
+			}
 
 		cost = 10
 

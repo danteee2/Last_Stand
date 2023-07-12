@@ -1191,30 +1191,6 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = no
-		available = {
-			is_subject = no
-			NOT = {
-				has_idea = rhineland_challenge_met
-			}
-			OR = {
-				hidden_trigger = {
-					is_ai = yes
-				}
-				stockpile_ratio = {
-					archetype = infantry_equipment
-					ratio > 0
-				}
-			}
-			if = {
-				limit = {
-					SWI = { has_completed_focus = SWI_gotthard_union }
-				}
-				NOT = { 
-					AUS = { has_idea = SWI_swiss_democratic_propaganda }
-				}
-			}
-
-		}
 		bypass = {
 			OR = {
 				AUS = {
@@ -8161,13 +8137,7 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = no
-		available = {
-			r56_script_i_am_sane = yes
-			CZE = {
-				r56_script_target_is_sane = yes
-				owns_state = 69
-			}
-		}
+	
 		bypass = {
 			OR = {
 				CZE = {
@@ -8281,12 +8251,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		available = {
-			r56_script_i_am_sane = yes
-			CZE = {
-				r56_script_target_is_sane = yes
-			}
-		}
+	
 
 		cancel = {
 			NOT = {
