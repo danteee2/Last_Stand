@@ -23,7 +23,7 @@ NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 100
 NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 100
 NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 100
 NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 30
-NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 3.6
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 3.3
 ----------------------------------
 NDefines.NTechnology.MAX_SUBTECHS = 4						-- Max number of sub technologies a technology can have.
 NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 50.0 --#base game 30 changed to 50 and then why not 56?

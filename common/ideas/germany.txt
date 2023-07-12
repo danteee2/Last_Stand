@@ -22,13 +22,14 @@ ideas = {
 			modifier = {
 				production_factory_max_efficiency_factor = 0.025
 				production_speed_buildings_factor = -0.05
-				army_armor_attack_factor = 0.05
-				army_artillery_attack_factor = 0.05
+				army_armor_attack_factor = 0.1
+				army_artillery_attack_factor = 0.075
 				army_org_factor = 0.05
 				stability_factor = -0.2
 				air_accidents_factor = -0.2
-				air_agility_factor = 0.05
-				air_attack_factor = 0.05
+				air_agility_factor = 0.1
+				air_attack_factor = 0.1
+				air_defence_factor = 0.1
 			}
 		}
 		GER_plunder_the_westIV = {
@@ -56,8 +57,8 @@ ideas = {
 			modifier = {
 				production_factory_max_efficiency_factor = 0.025
 				production_speed_buildings_factor = -0.05
-				army_armor_attack_factor = 0.05
-				army_artillery_attack_factor = 0.05
+				army_armor_attack_factor = 0.1
+				army_artillery_attack_factor = 0.075
 				army_org_factor = 0.05
 				stability_factor = -0.2
 			}
