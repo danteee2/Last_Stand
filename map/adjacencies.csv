@@ -159,12 +159,11 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 10825;8029;impassable;-1;-1;-1;-1;-1;;Himalayas
 10910;1991;impassable;-1;-1;-1;-1;-1;;Himalayas
 10910;12807;impassable;-1;-1;-1;-1;-1;;Himalayas
-12730;12860;impassable;-1;-1;-1;-1;-1;;Himalayas
-12730;12860;impassable;-1;-1;-1;-1;-1;;Himalayas
 12730;5018;impassable;-1;-1;-1;-1;-1;;Himalayas
 10810;5018;impassable;-1;-1;-1;-1;-1;;Himalayas
 1996;5018;impassable;-1;-1;-1;-1;-1;;Himalayas
-1996;8041;impassable;-1;-1;-1;-1;-1;;Himalayas
+1996;8041;impassable;-1;-1;-1;-1;-1;;Himalayas  
+2098;12730;impassable;-1;-1;-1;-1;-1;;Himalayas
 1996;5102;impassable;-1;-1;-1;-1;-1;;Himalayas
 4318;5102;impassable;-1;-1;-1;-1;-1;;Himalayas
 1898;8029;impassable;-1;-1;-1;-1;-1;;Himalayas
@@ -195,7 +194,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 12218;12314;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
 12370;1766;impassable;-1;-1;-1;-1;-1;;pamir mountains
 12370;12119;impassable;-1;-1;-1;-1;-1;;pamir mountains
-12730;1116;impassable;-1;-1;-1;-1;-1;;pamir mountains
 5062;12119;impassable;-1;-1;-1;-1;-1;;pamir mountains
 5062;4828;impassable;-1;-1;-1;-1;-1;;pamir mountains
 4768;4828;impassable;-1;-1;-1;-1;-1;;pamir mountains
@@ -205,27 +203,21 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 778;3612;impassable;-1;-1;-1;-1;-1;;swiss alps
 611;3612;impassable;-1;-1;-1;-1;-1;;swiss alps
 11570;3612;impassable;-1;-1;-1;-1;-1;;swiss alps
+6635;636;impassable;-1;-1;-1;-1;-1;;swiss alps
 11570;9587;impassable;-1;-1;-1;-1;-1;;swiss alps
 6635;9587;impassable;-1;-1;-1;-1;-1;;swiss alps
 6635;3641;impassable;-1;-1;-1;-1;-1;;swiss alps
-6661;9600;impassable;-1;-1;-1;-1;-1;;swiss alps
-6661;3662;impassable;-1;-1;-1;-1;-1;;swiss alps
-11587;3662;impassable;-1;-1;-1;-1;-1;;swiss alps
 6675;9633;impassable;-1;-1;-1;-1;-1;;swiss alps
-11604;636;impassable;-1;-1;-1;-1;-1;;Inner swiss alps
+3660;9633;impassable;-1;-1;-1;-1;-1;;swiss alps
 3660;6680;impassable;-1;-1;-1;-1;-1;;swiss austrian alps
 3660;6678;impassable;-1;-1;-1;-1;-1;;swiss austrian alps
 9630;9633;impassable;-1;-1;-1;-1;-1;;austrian alps
 11618;11615;impassable;-1;-1;-1;-1;-1;;austrian alps
+11618;9630;impassable;-1;-1;-1;-1;-1;;austrian alps
 671;11615;impassable;-1;-1;-1;-1;-1;;austrian alps
-668;3675;impassable;-1;-1;-1;-1;-1;;austrian alps
-3674;3675;impassable;-1;-1;-1;-1;-1;;austrian alps
-3674;6691;impassable;-1;-1;-1;-1;-1;;austrian alps
-3764;9738;impassable;-1;-1;-1;-1;-1;;french italian alps
-6975;11721;impassable;-1;-1;-1;-1;-1;;french italian alps
-3959;11721;impassable;-1;-1;-1;-1;-1;;french italian alps
-3898;11779;impassable;-1;-1;-1;-1;-1;;andorran catalan pyrenees
 3899;3915;impassable;-1;-1;-1;-1;-1;;french spanish pyrenees
+3899;9882;impassable;-1;-1;-1;-1;-1;;french spanish pyrenees
+899;9882;impassable;-1;-1;-1;-1;-1;;french spanish pyrenees
 915;9882;impassable;-1;-1;-1;-1;-1;;french spanish pyrenees
 6674;672;impassable;-1;-1;-1;-1;-1;;georgian russian caucasus border
 6674;654;impassable;-1;-1;-1;-1;-1;;georgian russian caucasus border
@@ -234,7 +226,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 9632;1530;impassable;-1;-1;-1;-1;-1;;georgian russian caucasus border
 11609;1530;impassable;-1;-1;-1;-1;-1;;georgian russian caucasus border
 11609;4534;impassable;-1;-1;-1;-1;-1;;georgian russian caucasus border
-7554;6436;impassable;-1;-1;-1;-1;-1;;georgian dagestan caucasus border
 3188;9047;impassable;-1;-1;-1;-1;-1;;west norwegian mountains
 6216;9047;impassable;-1;-1;-1;-1;-1;;west norwegian mountains
 6216;11037;impassable;-1;-1;-1;-1;-1;;west norwegian mountains
@@ -281,9 +272,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 727;11689;impassable;-1;-1;-1;-1;-1;;Carpathian mountains
 9685;11689;impassable;-1;-1;-1;-1;-1;;Carpathian mountains
 9685;3728;impassable;-1;-1;-1;-1;-1;;Carpathian mountains
-3676;660;impassable;-1;-1;-1;-1;-1;;Carpathian mountains Central Romania
-11605;6679;impassable;-1;-1;-1;-1;-1;;Carpathian mountains Central Romania
-11605;3665;impassable;-1;-1;-1;-1;-1;;Carpathian mountains Central Romania
 12921;8136;impassable;-1;-1;-1;-1;-1;;Mamib Desert
 10978;8136;impassable;-1;-1;-1;-1;-1;;Mamib Desert
 10978;10957;impassable;-1;-1;-1;-1;-1;;Mamib Desert
