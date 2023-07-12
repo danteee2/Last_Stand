@@ -25,7 +25,7 @@
 		x = 4
 		y = 0c:\Program Files (x86)\Steam\steamapps\workshop\content\394360\2791104354\common\national_focus\japan.txt
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 0.75 #it's now more unthinkable
@@ -147,7 +147,7 @@
 		y = 1
 		relative_position_id = JAP_the_unthinkable_option
 
-		cost = 3
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -203,7 +203,7 @@
 		y = 1
 		relative_position_id = JAP_the_unthinkable_option
 
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1452,7 +1452,7 @@
 					instant_build = yes
 				}
 			}
-			unlock_decision_tooltip = JAP_develop_kanto_aluminium
+			add_ideas = JAP_internal_industry
 		}
 	}
 	focus = {
