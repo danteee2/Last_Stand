@@ -1772,12 +1772,9 @@ ideas = {
 
 			picture = jap_supremacy_of_technology
 			
-			research_bonus = {
-				infantry_weapons = 0.20
-				support_tech = 0.20
-				armor = 0.20
-				artillery = 0.20
-			}
+			modifier = { 
+				research_speed_factor = 0.2 
+			   }
 		}
 
 		JAP_superior_will = {
