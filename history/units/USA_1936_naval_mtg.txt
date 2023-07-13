@@ -118,13 +118,7 @@ units= {
 			ship = { name = "USS Barney" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }		
 			ship = { name = "USS Blakeley" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }		
 			ship = { name = "USS Biddle" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }		
-		}					
-	}
-	
-	### SCOUTING FLEET ###
-	fleet = {
-		name = "Scouting Force"			
-		naval_base = 9814 # Los Angeles
+		}
 		task_force = {				
 			name = "Scouting Force"				
 			location = 9814 # Los Angeles
@@ -206,13 +200,7 @@ units= {
 			ship = { name = "USS Porpoise" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "Porpoise Class" } } }
 			ship = { name = "USS Pike" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "Porpoise Class" } } }
 			ship = { name = "USS Shark" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = USA version_name = "Porpoise Class" } } }
-		}					
-	}
-	
-	### PACIFIC RESERVES ###
-	fleet = {
-		name = "Pacific Reserve Fleet"			
-		naval_base = 1562 # San Diego
+		}
 		task_force = {					
 			name = "Pacific Reserve Destroyers"			# Decommissioned ships docked in San Diego				
 			location = 1562 # San Diego
@@ -232,14 +220,7 @@ units= {
 			ship = { name = "USS Greene" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }		
 			ship = { name = "USS Hogan" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }		
 			ship = { name = "USS Howard" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "Clemson Class" } } }							
-		}					
-	}
-
-	##### ATLANTIC FLEET #####
-	fleet = {
-		name = "Atlantic Fleet"			
-		naval_base = 788 # Norfolk
-		# Independent Squadron #
+		}
 		task_force = {					
 			name = "Destroyer Squadron 12"				
 			location = 3878 # New York
@@ -323,13 +304,7 @@ units= {
 			ship = { name = "USS R-16" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
 			ship = { name = "USS R-17" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
 			ship = { name = "USS R-18" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
-		}					
-	}
-	
-	### CARIBBEAN AND FOREIGN DEPLOYMENTS ###
-	fleet = {
-		name = "Special Assignment Forces"			
-		naval_base = 7617 # Canal Zone
+		}		
 		task_force = {					
 			name = "Naval Detachment Atlantic"			# Historically based in France	
 			location = 6732 # Boston
@@ -355,13 +330,7 @@ units= {
 			ship = { name = "USS S-45" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
 			ship = { name = "USS S-46" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
 			ship = { name = "USS S-47" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
-		}					
-	}
-	
-	##### ASIATIC FLEET #####
-	fleet = {
-		name = "Asiatic Fleet"			
-		naval_base = 10265 # Manilla
+		}		
 		task_force = {					
 			name = "Asiatic Fleet"				
 			location = 10265 # Manilla
@@ -388,7 +357,7 @@ units= {
 			ship = { name = "USS S-39" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
 			ship = { name = "USS S-40" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
 			ship = { name = "USS S-41" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = USA version_name = "S Class" } } }
-		}					
+		}	
 	}
 } 
 
