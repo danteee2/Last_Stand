@@ -78,11 +78,6 @@ units= {
 			ship = { definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Archimede Class" } } } 
 			ship = { definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Archimede Class" } } } 
 		} 
-	}
-	
-	fleet = {
-		name = "Comando Navale Alto Tirreno"			
-		naval_base = 6973 # La Spezia, Italy
 		task_force = {				
 			name = "II Squadra Navale" # Dipartimento Militare Marittimo 'Alto Tirreno' / II Squadra
 			location = 6973 # La Spezia, Italy
@@ -141,11 +136,6 @@ units= {
 			ship = { name = "RSmg H 8" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "H Class" } } } 
 			ship = { name = "RSmg H 3" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ITA version_name = "H Class" } } } 
 		} 
-	}
-	
-	fleet = {
-		name = "Comando Navale Basso Tirreno"			
-		naval_base = 819 # Naples, Italy
 		task_force = { 
 			name = "III Squadra Navale" # Dipartimento Militare Marittimo 'Basso Tirreno' (Check - III Squadra correct?)
 			location = 819 # Naples, Italy
@@ -174,11 +164,6 @@ units= {
 			ship = { name = "RSmg Galatea" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
 			ship = { name = "RSmg Nereide" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
 		} 
-	}
-	
-	fleet = {
-		name = "Comando Navale Sardegna"			
-		naval_base = 6891 # La Maddalena, Sardinia
 		task_force = { 
 			name = "Squadra di Sardegna" # Comando Militare Marittimo 'Sardegna' (Check, here and below - 'Squadra' correct/close enough?)
 			location = 6891 # La Maddalena, Sardinia
@@ -202,13 +187,7 @@ units= {
 			# LXXI Squadriglia Sommergibili
 			ship = { name = "RSmg Medusa" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
 			ship = { name = "RSmg Anfitrite" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
-		} 
-
-	}
-	
-	fleet = {
-		name = "Comando Navale Sicilia"			
-		naval_base = 4159 # Messina, Sicily
+		}
 		task_force = { 
 			name = "Squadra di Sicilia" # Comando Militare Marittimo 'Sicilia'
 			location = 4159 # Messina, Sicily
@@ -241,13 +220,7 @@ units= {
 			ship = { name = "RSmg Pier Capponi" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Mameli Class" } } } 
 			ship = { name = "RSmg Tito Speri" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Mameli Class" } } } 
 			ship = { name = "RSmg Giovanni da Procida" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Mameli Class" } } } 
-		} 
-	}
-	
-	### EAGEAN SEA ###
-	fleet = {
-		name = "Comando Navale Mar Egeo"			
-		naval_base = 10007 # Rhodes, Greece
+		}
 		task_force = { 
 			name = "Squadra di Mar Egeo" 
 			location = 10007 # Rhodes, Greece
@@ -267,13 +240,7 @@ units= {
 			ship = { name = "RSmg Fisalia" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
 			ship = { name = "RSmg Smeraldo" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
 			ship = { name = "RSmg Naiade" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
-		} 
-	}
-	
-	### AFRICA ###
-	fleet = {
-		name = "Comando Navale Libia"			
-		naval_base = 1130 # Tobruk, Libya
+		}
 		task_force = { 
 			name = "Squadra di Libia" 
 			location = 1130 # Tobruk, Libya
@@ -293,11 +260,6 @@ units= {
 			ship = { name = "RSmg Squalo" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } } 
 			ship = { name = "RSmg Tricheco" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } } 
 		} 
-	}
-	
-	fleet = {
-		name = "Comando Navale Mar Rosso"			
-		naval_base = 12766 # Massawa, Eritrea
 		task_force = { 
 			name = "Squadra di Mar Rosso" 
 			location = 12766 # Massawa, Eritrea
@@ -329,7 +291,7 @@ units= {
 			ship = { name = "RSmg Marcantonio Bragandin" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Bragandin Class" } } } 
 			ship = { name = "RSmg Filippo Corridoni" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Bragandin Class" } } } 
 			ship = { name = "RSmg Pietro Micca" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Bragandin Class" } } } 
-		} 
+		}
 	}
 } 
 
