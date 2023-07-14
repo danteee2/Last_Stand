@@ -93,6 +93,26 @@ ideas = {
 	}
 	
 	country = {
+		disgruntled_force = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			always = yes 
+			}
+
+			removal_cost = -1
+
+			picture = SPR_political_violence
+
+			
+			modifier = {
+				surrender_limit = -0.15
+				stability_factor = -0.05
+			}
+		}
 		german_advisors = {
 		
 			allowed = {

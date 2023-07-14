@@ -304,6 +304,9 @@ GXC_generic_industrial_concern:0 "Guangxi Enterprise Corporation"
  KMT_war_propaganda_idea_2:0 "War Propaganda"
  KMT_war_propaganda_idea_2_desc:0 "The enemy shall fear our strength and courage!"
 
+disgruntled_force:0 "Disgruntled Force"
+disgruntled_force_desc:0 "The army is in a state of dissatisfaction, the government seeks to take action before war is at our doorstep!"
+
  KMT_military_first_idea:0 "Military First"
  KMT_military_first_idea_desc:0 "Everything for our soldiers, our defenders, our saviors. Everything for the front!"
 
@@ -508,8 +511,8 @@ GXC_generic_industrial_concern:0 "Guangxi Enterprise Corporation"
  KMT_the_big_rear_concept:0 "The Big Rear Plan"
  KMT_the_big_rear_concept_desc:0 "With the war raging in China's east, our west remains comparatively safe. We must try to develop these backwater areas so that they can contribute to China's fight as well."
 
- KMT_increase_funding_of_german_weaponary:0 "Adopt German-Style Equipment"
- KMT_increase_funding_of_german_weaponary_desc:0 "Although we have support from German advisers such as Von Falkenhausen and some imported German equipment, our locally produced models are of horrible quality. Using German equipment as templates in our manufacturing process can increase our quality eightfold!"
+ KMT_increase_funding_of_german_weaponary:0 "§GPurge The Dissatisfied§!"
+ KMT_increase_funding_of_german_weaponary_desc:0 "Our unhappy military is weakening the integrity of our sovereignty, we must act now and put an end to the inefficient worms in our army."
 
  KMT_lure_them_in_strategy:0 "Lure-Them-In Strategy"
  KMT_lure_them_in_strategy_desc:0 "With our nation's vast territory and rough terrain, we can afford to retreat and lure invaders into our chosen battlefields. Let the imperialists try and chase us! They shall encounter an ambush at every corner and a booby-trap with every step!"

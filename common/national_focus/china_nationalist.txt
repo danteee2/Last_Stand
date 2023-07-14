@@ -2493,27 +2493,17 @@ focus_tree = {
 	
 	focus = {
 		id = KMT_increase_funding_of_german_weaponary
-		icon = GFX_goal_generic_axis_build_infantry
+		icon = GFX_focus_SOV_military_purge
 		prerequisite = { focus = KMT_revive_hanyang_armory }
 		x = 13
 		y = 4
 		cost = 10
-		
+		available = {
+			date > 1938.06.01
+		}
 		completion_reward = {
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 1
-				uses = 1
-				category = infantry_weapons
-			}
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1
-				uses = 1
-				category = armor
-			}
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = CHI_hanyang_arsenal_tank
+
+			remove_ideas = disgruntled_force #last stand idea for japan war balance
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -2972,6 +2962,15 @@ focus_tree = {
 				category = cat_mechanized_equipment
 				category = motorized_equipment
 			}
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
+
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = CHI_hanyang_arsenal_tank
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
