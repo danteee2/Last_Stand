@@ -16325,4 +16325,62 @@ focus_tree = {
 		}
 
 	}
+	focus = {
+		id = GER_for_the_german_people
+		icon = GFX_focus_generic_concessions
+		cost = 10.00
+		available = {
+			is_subject = no
+			has_war = no
+		}
+		
+		
+		relative_position_id = GER_the_alternative
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = GER_the_alternative
+		}
+		ai_will_do = {
+			factor = 8
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+		completion_reward = {
+			
+			add_stability = 0.05
+		}
+
+	}
+	focus = {
+		id = GER_demand_dominant_germanic_lands
+		icon = GFX_GER_aryan_germany
+		cost = 10.00
+		available = {
+			is_subject = no
+			has_war = no
+		}
+		
+		
+		relative_position_id = GER_the_alternative
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = GER_the_alternative
+		}
+		ai_will_do = {
+			factor = 8
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+		completion_reward = {
+			
+			add_stability = 0.05
+		}
+
+	}
 }
