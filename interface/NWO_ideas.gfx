@@ -154,4 +154,17 @@ spriteTypes = {
 				name = "GFX_idea_MAN_kwantung_army"
 				textureFile = "gfx/interface/ideas/MAN/kwantung_army.dds"
 			}
+
+
+			#USA RAHHHHHHH
+			spriteType = {
+				name = "GFX_beacon_of_democracy"
+				textureFile = "gfx/interface/goals/usa/last_stand_beacon_of_democracy.dds"
+			}
+
+			spriteType = {
+				name = "GFX_beacon_of_democracy_shine"
+				textureFile = "gfx/interface/goals/usa/last_stand_beacon_of_democracy_shine.dds"
+			}
+
 }

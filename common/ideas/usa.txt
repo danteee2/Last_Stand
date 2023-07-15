@@ -1,6 +1,26 @@
 ideas = {
 
 	country = {
+		beacon_of_democracy_idea = {
+			picture = democratic_bastion
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				global_building_slots_factor = 0.25
+				production_factory_max_efficiency_factor = 0.1
+				conscription = 0.01
+				conscription_factor = 0.1
+				democratic_drift = 0.1
+			}
+		}
 		#new stuff Rt56 starts here#
 		rt56_USA_homeland_secuirty = {
 			picture = generic_intel_bonus

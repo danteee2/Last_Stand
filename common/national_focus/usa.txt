@@ -166,10 +166,10 @@ focus_tree = {
 	focus = {
 		id = USA_fight_jim_crow_now
 		icon = GFX_goal_african_diplomacy
-		x = -6
-		y = 3
-		prerequisite = { focus = USA_double_victory }
-		relative_position_id = USA_continue_the_new_deal
+		x = -1
+		y = 1
+		prerequisite = { focus = USA_suspend_the_presecution }
+		relative_position_id = USA_suspend_the_presecution
 		cost = 10
 
 		ai_will_do = {
@@ -12669,6 +12669,38 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_ideas = r56_usa_three_dimensional_assault_force
+		}
+	}	
+	focus = {
+		id = USA_beacon_of_democracy
+		icon = GFX_beacon_of_democracy
+		prerequisite = { focus = USA_double_victory }
+		x = 0
+		y = 1
+		relative_position_id = USA_double_victory
+		cost = 10
+		
+
+		available = {
+			OR = { 
+			OR = { 
+			GER = { controls_state = 126 }
+			GER = { controls_state = 16 }
+			GER = { controls_state = 2 }
+			}
+			OR = { 
+			JAP = { controls_state = 336 }
+			JAP = { controls_state = 439 }
+		}
+	}
+			democratic > 0.95
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.05
+			add_ideas = beacon_of_democracy_idea
 		}
 	}	
 }

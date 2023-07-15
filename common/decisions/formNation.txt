@@ -7071,8 +7071,19 @@ formable_nations_mod_category = {
 			NOT = { has_country_flag = unform_available }
 			NOT = { has_global_flag = hide_formable_nations }
 			OR = {
-				has_global_flag = no_limit
-				capital_scope = { is_on_continent = north_america }
+				OR = {
+					original_tag = DOM
+					original_tag = HAI
+					original_tag = CUB
+					original_tag = GUA
+					original_tag = MEX
+					original_tag = CAN
+					original_tag = ELS
+					original_tag = HON
+					original_tag = NIC
+					original_tag = COS
+					has_global_flag = no_limit
+				}
 			}
 		}
 		
