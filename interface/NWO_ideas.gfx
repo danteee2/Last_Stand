@@ -167,4 +167,15 @@ spriteTypes = {
 				textureFile = "gfx/interface/goals/usa/last_stand_beacon_of_democracy_shine.dds"
 			}
 
+			#GERMANY ALT HIST
+			spriteType = {
+				name = "GFX_GER_aryan_germany"
+				textureFile = "gfx/interface/goals/ger/LS_goal_GER_aryan.dds"
+			}
+
+			spriteType = {
+				name = "GFX_GER_aryan_germany_shine"
+				textureFile = "gfx/interface/goals/ger/LS_goal_GER_aryan_shine.dds"
+			}
+
 }

@@ -877,6 +877,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = GER_kill_hitler
 			focus = GER_rally_the_monarchists
+			focus = GER_the_alternative
 		}
 		x = 66
 		y = 0
@@ -10448,6 +10449,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = GER_denounce_versailles
 			focus = GER_rally_the_monarchists
+			focus = GER_the_alternative
 		}
 		#relative_position_id = GER_political_sphere
 		x = 88
@@ -11493,6 +11495,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = GER_kill_hitler
 			focus = GER_denounce_versailles
+			focus = GER_the_alternative
 		}
 		x = 37
 		y = 0
@@ -16272,5 +16275,54 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_STEEL FOCUS_FILTER_INDUSTRY
 		}
+	}
+
+
+	########new tree LAST STAND
+
+	focus = {
+		id = GER_the_alternative
+		icon = GFX_GER_aryan_germany
+		cost = 10.00
+		available = {
+			is_subject = no
+			has_war = no
+		}
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = GER_kill_hitler
+					has_completed_focus = GER_denounce_versailles
+					has_completed_focus = GER_rally_the_monarchists
+				}
+			}
+		}
+		mutually_exclusive = {
+			focus = GER_denounce_versailles
+			focus = GER_rally_the_monarchists
+			focus = GER_kill_hitler
+		}
+		#relative_position_id = GER_political_sphere
+		x = 120
+		y = 0
+		
+		ai_will_do = {
+			factor = 8
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+		completion_reward = {
+			
+			add_stability = 0.05
+		}
+
 	}
 }
