@@ -197,7 +197,7 @@ LIB = {
 	color_ui = rgb { 198 169 248 }
 }
 MEX = {
-	color = rgb { 61 118 65 }
+	color = rgb { 104 152 83 }
 	color_ui = rgb { 135 198 108 }
 }
 NEP = {
@@ -261,7 +261,7 @@ YUN = {
 	color_ui = rgb { 222 247 198 }
 }
 USA = {
-	color = rgb { 66 81 137 }
+	color = rgb { 70 107 181 }
 	color_ui = rgb { 87 160 255 }
 }
 MON = {
