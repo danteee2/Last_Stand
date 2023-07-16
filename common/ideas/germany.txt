@@ -1487,14 +1487,14 @@ ideas = {
 		}
 		GER_eastern_campaign = {
 			removal_cost = -1
-			picture = generic_soldiers_bad
+			picture = generic_soldiers_bad	
 			on_add = {
 				set_rule = { 
 					can_puppet = no
 					can_create_collaboration_government = no
 				}
 			}
-
+			
 			on_remove = {
 				set_rule = { 
 					can_puppet = yes
