@@ -177,5 +177,23 @@ spriteTypes = {
 				name = "GFX_GER_aryan_germany_shine"
 				textureFile = "gfx/interface/goals/ger/LS_goal_GER_aryan_shine.dds"
 			}
+			spriteType = {
+				name = "GFX_GER_germanic_lands"
+				textureFile = "gfx/interface/goals/ger/LS_goal_germanic_lands.dds"
+			}
+
+			spriteType = {
+				name = "GFX_GER_germanic_lands_shine"
+				textureFile = "gfx/interface/goals/ger/LS_goal_germanic_lands_shine.dds"
+			}
+			spriteType = {
+				name = "GFX_GER_black_sun"
+				textureFile = "gfx/interface/goals/ger/LS_goal_black_sun.dds"
+			}
+
+			spriteType = {
+				name = "GFX_GER_black_sun_shine"
+				textureFile = "gfx/interface/goals/ger/LS_goal_black_sun_shine.dds"
+			}
 
 }

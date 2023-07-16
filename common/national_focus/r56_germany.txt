@@ -16356,7 +16356,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_demand_dominant_germanic_lands
-		icon = GFX_GER_aryan_germany
+		icon = GFX_GER_germanic_lands
 		cost = 10.00
 		available = {
 			is_subject = no
@@ -16369,6 +16369,32 @@ focus_tree = {
 		y = 1
 		prerequisite = {
 			focus = GER_the_alternative
+		}
+		ai_will_do = {
+			factor = 8
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+		completion_reward = {
+			
+			add_stability = 0.05
+		}
+
+	}
+	focus = {
+		id = GER_a_new_germany
+		icon = GFX_GER_black_sun
+		cost = 10.00
+		
+		
+
+		relative_position_id = GER_the_alternative
+		x = 2
+		y = 2
+		prerequisite = {
+			focus = GER_demand_dominant_germanic_lands
 		}
 		ai_will_do = {
 			factor = 8
