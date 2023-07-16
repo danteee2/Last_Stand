@@ -1488,20 +1488,6 @@ ideas = {
 		GER_eastern_campaign = {
 			removal_cost = -1
 			picture = generic_soldiers_bad
-			cancel = {
-				OR = {
-					casualties_inflicted_by = {		#losses are high, it is better to rethink the policies
-						opponent = SOV
-						thousands > 4000
-					}
-					surrender_progress > 0.75		#we are losing, surely we will cooperate more, right?
-					any_owned_state = {
-						is_core_of = SOV
-						compliance > 50
-					}
-				}
-			}
-
 			on_add = {
 				set_rule = { 
 					can_puppet = no
