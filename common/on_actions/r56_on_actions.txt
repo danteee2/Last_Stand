@@ -2575,7 +2575,6 @@ on_actions = {
 				}
 			}
 			#Some ww2 interactions
-
 			if = {
 				limit = {
 					ROOT = { TAG = GER }
