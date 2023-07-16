@@ -10202,7 +10202,7 @@ focus_tree = {
 				generator = { 206 }
 			}
 			add_timed_idea = {
-				idea = GER_eastern_campaign
+				idea = GER_barbarossa
 				days = 90
 			}
 			hidden_effect = {#Filling some of the supply gaps the ai will have at this point
