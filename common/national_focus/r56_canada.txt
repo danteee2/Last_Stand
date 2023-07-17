@@ -1607,9 +1607,10 @@ focus_tree = {
 			show_ideas_tooltip = r56_CAN_gm_of_canada
 			add_tech_bonus = {
 				name = r56_CAN_cmp_truck
-				bonus = 1.5
+				bonus = 1
+				ahead_reduction = 2
 				uses = 1
-				technology = motorised_infantry
+				category = cat_mechanized_equipment
 			}
 		}
 	}

@@ -1298,13 +1298,14 @@ focus_tree = {
 				add_tech_bonus = {
 					technology = aa_cannon_1
 					technology = aa_cannon_2
-					bonus = 0.75
+					bonus = 1.0
 					uses = 1
 				}
 				add_tech_bonus = {
 					technology = improved_small_airframe
 					technology = advanced_small_airframe
 					bonus = 1
+					ahead_reduction = 2
 					uses = 1
 				}
 			}
