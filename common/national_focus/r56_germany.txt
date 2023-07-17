@@ -16404,9 +16404,14 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+		
+				set_cosmetic_tag = GER_germania
+				set_province_name = { id = 6521 name = "Germania" }
+				hidden_effect = {
+					set_global_flag = form_greater_german_reich_flag
+				}
 			
-			add_stability = 0.05
-		}
+		}	
 
 	}
 	focus = {
