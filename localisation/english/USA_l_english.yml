@@ -96,10 +96,10 @@ beacon_of_democracy_idea_desc:0 "The American dream is the dream that drove Amer
  USA_the_worlds_loco_works:0 "The Worlds Locomotive Works"
  USA_the_worlds_loco_works_desc:0 "While the rest of the world is worried about producing war goods. We must leverage our many domestic locomotive works to help keep the world supplied with locomotives."
  USA_bangalore_torpedo:0 "Bangalore Torpedo"
- USA_bangalore_torpedo_desc:0 ""
+ USA_bangalore_torpedo_desc:0 "Adopting the Bangalore Torpedo boosts our infantry's ability to clear obstacles, enhancing mobility on the battlefield. This innovation propels us forward, turning barriers into pathways."
  USA_bangalore_torpedo_tt:0 "Enables §HBangalore Torpedo§!\n§HEngineers\n    Hard Attack: §G+15%§!\n    Breakthrough: §G+15%§!§!\n"
  USA_army_rangers:0 "Army Rangers"
- USA_army_rangers_desc:0 ""
+ USA_army_rangers_desc:0 "Empowering our military with Army Rangers training improves infantry performance and reconnaissance. The U.S. forces are now quicker, sharper, and ready for high-risk operations."
  USA_army_rangers_tt:0 "Enables §HArmy Rangers§!\n§HInfantry\n    Hard Attack: §G+25%§!\n    Breakthrough: §G+25%§!§!\n§HMotoritzed\n    Hard Attack: §G+25%§!\n    Breakthrough: §G+25%§!§!\n§HMechanized\n    Hard Attack: §G+25%§!\n    Breakthrough: §G+25%§!§!"
  USA_coordinate_branch_logistics:0 "Coordinate Branch Logistics"
  USA_coordinate_branch_logistics_desc:0 """
@@ -387,3 +387,7 @@ beacon_of_democracy_idea_desc:0 "The American dream is the dream that drove Amer
  USA_manifest_destiny_r56_desc:0 "Our country became great on the back of the policy of aggressive expansion of our nation. It's about time we returned to that."
 
  mtg_usa_civil_war_fascists.20.b:0 "Dixie Must be Defended!"
+
+#LAST STAND IDEAS
+army_rangers_idea:0 "US Army Rangers"
+army_rangers_idea_desc:0 "We have trained our soldiers to be specialiezd in close quarters combat."

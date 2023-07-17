@@ -1,5 +1,6 @@
 ideas = {
 
+		#NEW IDEAS FOR USA - LAST STAND
 	country = {
 		beacon_of_democracy_idea = {
 			picture = democratic_bastion
@@ -21,6 +22,34 @@ ideas = {
 				democratic_drift = 0.1
 			}
 		}
+		
+			army_rangers_idea = {
+				picture = FRA_army_of_aggression_focus
+				allowed = {
+					always = no
+				}
+	
+				allowed_civil_war = {
+					always = no
+				}
+	
+				removal_cost = -1
+				
+				equipment_bonus = {
+					infantry_equipment = {
+						hard_attack = 0.25 = instant = yes
+						breakthrough = 0.25 = instant = yes
+					}
+					motorized_equipment = {
+						hard_attack = 0.25 = instant = yes
+						breakthrough = 0.25 = instant = yes
+					}
+					mechanized_equipment = {
+						hard_attack = 0.25 = instant = yes
+						breakthrough = 0.25 = instant = yes
+					}
+				}
+			}
 		#new stuff Rt56 starts here#
 		rt56_USA_homeland_secuirty = {
 			picture = generic_intel_bonus

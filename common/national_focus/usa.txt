@@ -9521,19 +9521,6 @@ focus_tree = {
 		}
 
 		available = {
-			has_tech = interwar_antitank
-			if = {
-				limit = {
-					ROOT = {
-						has_full_control_of_state = 371
-					}
-				}
-				divisions_in_state = {
-					size > 1
-					state = 371
-				}
-
-			}
 		}
 		
 		bypass = {
@@ -9697,10 +9684,7 @@ focus_tree = {
 		completion_reward = {
 			show_unit_leaders_tooltip = USA_lucian_truscott
 			army_experience = 15
-			hidden_effect = {
-				set_technology = { USA_army_rangers = 1 }
-			}
-			custom_effect_tooltip = USA_army_rangers_tt
+			add_ideas = army_rangers_idea
 			if = {
 				limit = {
 					has_idea = rt56_naval_funding_favoritism
@@ -9890,15 +9874,6 @@ focus_tree = {
 			if = {
 				limit = {
 					has_dlc = "No Step Back"
-				}
-				has_tech = basic_medium_tank_chassis
-				has_tech = improved_medium_tank_chassis
-				has_tech = basic_heavy_tank_chassis
-				has_tech = armor_tech_1
-				has_tech = engine_tech_1
-				OR = {
-					has_tech = artillery1
-					has_tech = antitank1
 				}
 			}
 		}
