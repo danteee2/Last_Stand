@@ -17168,7 +17168,6 @@ focus_tree = {
 			controls_state = 970
 			controls_state = 123
 			controls_state = 122
-			date > 1936.03.01
 		} 
 		available_if_capitulated = yes
 
@@ -17337,7 +17336,6 @@ focus_tree = {
 		}
 		available = {
 			controls_state = 122
-			date > 1936.03.01
 		} 
 		x = -1
 		y = 3
@@ -17443,9 +17441,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = ENG_Provoke_british_patriotism
 		bypass = { has_idea = free_trade }
-		available = {
-			date > 1936.04.01
-		}
+		
 		completion_reward = {
 				#trade bonuses
 				if = {
@@ -17461,6 +17457,7 @@ focus_tree = {
 				else = {
 					add_ideas = free_trade
 				}
+				add_ideas = Trade_expanded
 				swap_ideas = {
 					remove_idea = ENG_state_of_the_economy_two
 					add_idea = ENG_state_of_the_economy_three
@@ -17476,9 +17473,7 @@ focus_tree = {
 		y = 4
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
-			available = {
-				date > 1936.06.01
-			}
+		
 
 		cost = 10
 
