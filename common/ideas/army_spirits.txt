@@ -709,18 +709,21 @@ ideas = {
 				OR = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
+					has_tech = mobile_warfare
+					has_tech = mass_assault
 				}
 			}
 			visible = { 
 				OR = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
+					has_tech = mobile_warfare
+					has_tech = mass_assault
 				}
 			}
 			modifier = {
 				experience_gain_infantry_combat_factor = 0.05
-				special_forces_cap = 0.2
-				special_forces_training_time_factor = 0.2
+				special_forces_cap = 0.25
 				special_forces_out_of_supply_factor = -0.1
 			#	unit_marine_design_cost_factor = -1
 			#	unit_shocktroop_design_cost_factor = -1
