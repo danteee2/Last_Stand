@@ -50,6 +50,26 @@ ideas = {
 					}
 				}
 			}
+
+			operation_liberty_lion_idea = {
+				picture = generic_usa_conflict
+				allowed = {
+					always = no
+				}
+	
+				allowed_civil_war = {
+					always = no
+				}
+	
+				removal_cost = -1
+				
+				modifier = {
+					convoy_escort_efficiency = 0.1
+					naval_strike_attack_factor = 0.1
+					transport_capacity = -0.1
+					invasion_preparation = -0.1
+				}
+			}
 		#new stuff Rt56 starts here#
 		rt56_USA_homeland_secuirty = {
 			picture = generic_intel_bonus

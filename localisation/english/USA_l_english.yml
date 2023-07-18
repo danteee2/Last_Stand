@@ -391,3 +391,10 @@ beacon_of_democracy_idea_desc:0 "The American dream is the dream that drove Amer
 #LAST STAND IDEAS
 army_rangers_idea:0 "US Army Rangers"
 army_rangers_idea_desc:0 "We have trained our soldiers to be specialiezd in close quarters combat."
+
+operation_liberty_lion_idea:0 "Operation Liberty Lion"
+operation_liberty_lion_desc:0 "The new world shall liberate the old, no matter what it takes."
+
+#LAST STAND FOCUSES
+USA_operation_liberty_lion:0 "Operation Liberty Lion"
+USA_operation_liberty_lion_desc:0 "The unthinkable has happened. The british have fallen, marking German dominance in Europe. We will prepare to unleash a storm across the atlantic. The hour of reckoning has come; our unity shall echo through the corridors of time."

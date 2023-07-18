@@ -8531,6 +8531,46 @@ focus_tree = {
 			unlock_decision_tooltip = { decision = USA_execute_war_plan_silver show_effect_tooltip = yes show_modifiers = yes }
 		}
 	}
+
+	focus = {
+		id = USA_operation_liberty_lion
+		icon = GFX_operation_liberty_lion
+		x = 1
+		y = 1
+		prerequisite = { focus = USA_intervention_in_europe }
+		mutually_exclusive = { }
+		relative_position_id = USA_intervention_in_europe
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				any_other_country = {
+					original_tag = ITA
+					OR = {
+						is_in_faction_with = ROOT
+						has_war_together_with = ROOT
+					}
+					has_civil_war = no
+				}				
+			}
+		}
+	
+		available = {
+			ENG = {
+				has_capitulated = yes
+			}
+		}
+			
+		bypass = {
+	
+		}
+
+		completion_reward = {
+			add_ideas = operation_liberty_lion_idea
+		}
+	}
 	focus = {
 		id = USA_war_plan_black
 		icon = GFX_focus_attack_germany
