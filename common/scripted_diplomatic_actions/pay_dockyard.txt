@@ -1,5 +1,5 @@
 scripted_diplomatic_actions = {
-	send_dockyard= {
+	pay_dockyard = {
 		visible = {
 			has_game_rule = {
 				rule = dockyard_button_selection
@@ -70,17 +70,17 @@ scripted_diplomatic_actions = {
 		
 		}
 		
-		send_description = send_dockyard_send_text
+		send_description = pay_dockyard_send_text
+
+		receive_description =pay_dock_get_message
 		
-		receive_description =send_dockyard_get_message
+		accept_title =pay_dock_get_title
 		
-		accept_title =send_dockyard_get_title
+		accept_description =pay_dock_get_message
 		
-		accept_description =send_dockyard_get_message
+		reject_title =pay_dock_get_title
 		
-		reject_title =send_dockyard_get_title
-		
-		reject_description =send_dockyard_get_message
+		reject_description =pay_dock_get_message
 		
 		ai_acceptance = {
 		condition = {

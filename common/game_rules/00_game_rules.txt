@@ -3397,6 +3397,22 @@ micronation_annexation_status = {
 	}
 }
 
+dockyard_button_selection = {
+	name = "DOCKYARD_BUTTON_SELECTION"
+	group = "HOST_OPTIONS"
+	option = {
+		name = DISABLED
+		text = "DISABLED"
+		desc = "DOCKYARD_BUTTON_DISABLED_DESC"
+	}
+	default = {
+		name = ENABLED
+		text = "ENABLED"
+		desc = "DOCKYARD_BUTTON_ENABLED_DESC"
+		allow_achievements = yes
+	}
+}
+
 americas_colonization_status = {
 	name = "AMERICAS_COLONIZATION_STATUS"
 	required_dlc = "Man the Guns"
