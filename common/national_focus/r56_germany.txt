@@ -8709,10 +8709,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		cost = 5.00
 		prerequisite = {
-			focus = GER_anti_comitern_pact
-		}
-		prerequisite = {
-			focus = GER_prepare_poland_invasion
+			focus = GER_prepare_poland_invasion focus = GER_anti_comitern_pact
 		}
 	
 		x = 4
