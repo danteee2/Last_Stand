@@ -710,7 +710,7 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mobile_warfare
-					has tech = mass_assault
+					has_tech = mass_assault
 				}
 			}
 			visible = { 
@@ -718,7 +718,7 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mobile_warfare
-					has tech = mass_assault
+					has_tech = mass_assault
 				}
 			}
 			modifier = {
