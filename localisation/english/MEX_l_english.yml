@@ -183,7 +183,21 @@
 
  MEX_intervene_in_the_us:0 "Intervene in the United States"
  MEX_intervene_in_the_us_desc:0 "Following the Zoot Suit riots and the attack on Mexicans by US citizens and service members, there was wide outcry to intervene by the far left and far right."
- 
+
+#MEXICO LAST STAND FOCUSES
+MEX_focus_industry_1:0 "Expand Urban Areas"
+MEX_focus_industry_1_desc:0 "Mexico has been watching on as the United States, Canada and even central american nations leap forward. We cannot afford to fall behind any longer."
+
+MEX_focus_industry_2:0 "Increase Education Spending"
+MEX_focus_industry_2_desc:0 "In order to bolster our nation's industrial capabilities, it is imperative that we prioritize the education and involvement of our youth. By increasing our commitment to their education, we can ensure a skilled workforce for the future, fostering innovation and productivity within our industries."
+
+MEX_focus_mexican_miracle:0 "The Mexican Miracle"
+MEX_focus_mexican_miracle_desc:0 "Through industrial growth and innovation, we've triggered 'The Mexican Miracle.' Now as an industrial powerhouse, Mexico strides confidently forward, ready to make its mark on the global stage."
+
+#MEXICO LAST STAND IDEAS
+MEX_mexican_miracle:0 "The Mexican Miracle"
+MEX_mexican_miracle_desc:0 "We have worked and worked, and it has finally paid off. The Mexican Miracle is in full swing!"
+
  ###EVENTS
  
  mexico_calles.1.t:0 "Rebels Attack on Civilian Train!"
