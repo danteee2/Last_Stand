@@ -93,6 +93,8 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = ROM_preserve_greater_romania
+		mutually_exclusive = { focus = ROM_renew_the_romanian_polish_alliance}
+		mutually_exclusive = { focus = ROM_trade_treaty_with_germany}
 
 		cost = 10
 
@@ -122,9 +124,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_popularity = { ideology = communism popularity = 0.1 }
-			add_opinion_modifier = { target = SOV modifier = ROM_a_deal_with_the_devil }
-			SOV = { add_opinion_modifier = { target = ROOT modifier = ROM_a_deal_with_the_devil } }
+			add_stability = -0.1
+			add_popularity = { ideology = communism popularity = 0.3 }
+			add_ideas = ROM_a_deal_with_the_devil
+			
 		}
 	}
 
@@ -158,8 +161,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ROM_basing_rights_for_soviet_union
-		icon = GFX_focus_generic_soviet_politics
+		id = ROM_ignite_world_revolution
+		icon = GFX_focus_SOV_proclaim_soviet_hegemony
 		prerequisite = { focus = ROM_a_deal_with_the_devil }
 		x = 1
 		y = 1
@@ -187,9 +190,8 @@ focus_tree = {
 					has_war_with = ROOT
 				}
 			}
-			NOT = {
-				has_government = fascism
-			}
+		    has_government = communism
+			
 			NOT = {
 				has_completed_focus = ROM_codreanu_goga_cooperation
 			}			
@@ -205,17 +207,17 @@ focus_tree = {
 
 
 		completion_reward = {
-			SOV = { country_event = DOD_romania.30 }
+			add_ideas = {ROM_world_revolution}
 		}
 	}
 
 	focus = {
-		id = ROM_romanian_volunteer_brigades
+		id = Rom_red_army_2
 		icon = GFX_goal_class_a_reservists
-		prerequisite = { focus = ROM_basing_rights_for_soviet_union }
+		prerequisite = { focus = ROM_ignite_world_revolution }
 		x = -2
 		y = 1
-		relative_position_id = ROM_basing_rights_for_soviet_union
+		relative_position_id = ROM_ignite_world_revolution
 
 		cost = 10
 
@@ -247,9 +249,9 @@ focus_tree = {
 
 
 		completion_reward = {
-			add_popularity = { ideology = communism popularity = 0.05 }
+			add_popularity = { ideology = communism popularity = 0.3 }
 			add_ideas = ROM_romanian_volunteer_brigades
-			custom_effect_tooltip = ROM_scw_tooltip
+			
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
@@ -257,10 +259,10 @@ focus_tree = {
 	focus = {
 		id = ROM_join_comintern
 		icon = GFX_focus_generic_join_comintern
-		prerequisite = { focus = ROM_basing_rights_for_soviet_union }
+		prerequisite = { focus = ROM_ignite_world_revolution }
 		x = 0
 		y = 1
-		relative_position_id = ROM_basing_rights_for_soviet_union
+		relative_position_id = ROM_ignite_world_revolution
 
 		cost = 10
 
@@ -328,6 +330,8 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ROM_preserve_greater_romania
+		mutually_exclusive = { focus = ROM_a_deal_with_the_devil }
+		mutually_exclusive = { focus = ROM_renew_the_romanian_polish_alliance }
 
 		cost = 10
 
@@ -340,9 +344,18 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_popularity = { ideology = fascism popularity = 0.05 }
-			add_opinion_modifier = { target = GER modifier = ROM_trade_treaty_with_germany }
-			GER = { add_opinion_modifier = { target = ROOT modifier = ROM_trade_treaty_with_germany } }
+			ROM = {
+				give_resource_rights = {
+					receiver = GER
+					state = 46
+					resources = { oil }
+				}
+			}
+			
+			add_popularity = { ideology = fascism popularity = 0.3 }
+			add_ideas = ROM_trade_with_ger 
+			add_war_support = 0.05
+			
 		}
 	}
 
@@ -418,8 +431,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ROM_license_german_equipment
-		icon = GFX_goal_generic_license_tanks
+		id = ROM_license_german_equipment_1
+		icon = GFX_focus_generic_balkan_diplomacy
 		prerequisite = { focus = ROM_invite_german_advisors }
 		x = 0
 		y = 1
@@ -432,31 +445,28 @@ focus_tree = {
 		}
 
 		available = {
+			
+		    is_ai = no
 			OR = {
 				is_in_faction = no
-				is_in_faction_with = GER 
+				is_in_faction_with = HUN
 			}
 		}
 
 		completion_reward = {
-			add_relation_modifier = {
-				target = GER
-				modifier = ROM_license_german_equipment
+			HUN = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 5
+				}	
+				
 			}
-			if = {
-				limit = {
-					country_exists = PRE
-					NOT = {
-						FRA = {
-							has_completed_focus = FRA_disunite_germany
-						}
-					}						
-				}
-				add_relation_modifier = {
-					target = PRE
-					modifier = ROM_license_german_equipment
-				}				
-			}			
+			add_offsite_building = {
+				type = industrial_complex
+				level = 5
+			}
+			
+			
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -794,6 +804,8 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = ROM_preserve_greater_romania
+		mutually_exclusive = { focus = ROM_trade_treaty_with_germany}
+		mutually_exclusive = { focus = ROM_a_deal_with_the_devil}
 
 		cost = 10
 
@@ -818,233 +830,15 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_popularity = { ideology = democratic popularity = 0.05 }
+			add_popularity = { ideology = democratic popularity = 0.3 }
 			POL = { country_event = DOD_romania.1 }
 		}
 	}
 
-	focus = {
-		id = ROM_obtain_polish_cryptological_data
-		available = {
-			POL = {
-				is_in_faction_with = ROOT 
-				is_puppet = no
-				if = {
-					limit = {
-						has_dlc = "La Resistance"
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus = POL_expand_polish_intelligence
-				}
-				else_if = {
-					limit = {
-						NOT = { has_dlc = "La Resistance" }
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus = POL_Polish_Cipher_Bureau_no_lar
-				}
-				else_if = {
-					limit = {
-						NOT = { has_dlc = "La Resistance" }
-						NOT = { has_dlc = "Man the Guns" }
-					}
-					has_completed_focus = POL_Polish_Cipher_Bureau_no_lar_no_mtg
-				}
-			}
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				has_intelligence_agency = yes
-			}
-		}
-		prerequisite = { focus = ROM_renew_the_romanian_polish_alliance }
+	
 
-		relative_position_id = ROM_renew_the_romanian_polish_alliance
-		icon = GFX_focus_generic_cryptologic_bomb
-		x = -1
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 3
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			if = {
-				limit = {
-					NOT = { has_dlc = "La Resistance" }
-				}
-				add_tech_bonus = {
-					name = codebreaking_bonus
-					bonus = 1.0
-					uses = 2
-					category = decryption_tech
-					category = computing_tech
-				}
-				add_ideas = ENG_crypto_bomb_idea_lar
-			}
-			else_if = {
-                limit = {
-                    has_dlc = "La Resistance"
-				}			
-				add_ideas = POL_Polish_Cipher_Bureau_Focus2_lar	
-				hidden_effect = {
-					set_technology = { lar_decryption_bonus_tech = 1 }
-				}
-				custom_effect_tooltip = lar_decryption_bonus_tt
-			}
-            if = {
-                limit = {
-                    has_dlc = "La Resistance"
-                    NOT = {
-                        has_done_agency_upgrade = upgrade_form_department
-                    }
-                }
-                upgrade_intelligence_agency = upgrade_form_department            
-            }
-            else_if = {
-                limit = {
-                    has_dlc = "La Resistance"
-                    NOT = {
-                        has_done_agency_upgrade = upgrade_decryption_boost
-                    }
-                }
-                upgrade_intelligence_agency = upgrade_decryption_boost            
-            }    
-            else_if = {
-                limit = {
-                    has_dlc = "La Resistance"
-                    NOT = {
-                        has_done_agency_upgrade = upgrade_decryption_boost_2
-                    }
-                }
-                upgrade_intelligence_agency = upgrade_decryption_boost_2            
-            }			
-		}
-		search_filters = { FOCUS_FILTER_ESPIONAGE }
-	}
-
-	focus = {
-		id = ROM_the_cordon_sanitaire
-		icon = GFX_ROM_POL_alliance
-		prerequisite = { focus = ROM_renew_the_romanian_polish_alliance }
-		x = 1
-		y = 1
-		relative_position_id = ROM_renew_the_romanian_polish_alliance
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			is_in_faction = no
-			is_subject = no
-			OR = {
-				AND = {
-					country_exists = POL
-					is_in_faction = no
-					exists = yes 
-					is_puppet = no
-					OR = {
-						has_government = democratic
-						has_government = neutrality
-					}					
-				}
-				AND = {
-					country_exists = CZE
-					is_in_faction = no
-					exists = yes 
-					is_puppet = no
-					OR = {
-						has_government = democratic
-						has_government = neutrality
-					}								
-				}
-			}
-		}
-
-		completion_reward = {
-			set_rule = { can_create_factions = yes }
-			create_faction = ROM_CORDON_SANITAIRE_FACTION
-			if = {
-				limit = {
-					CZE = { 
-						exists = yes 
-						has_capitulated = no
-						is_subject = no
-						is_in_faction = no
-					}
-				}
-				CZE = { country_event = DOD_romania.10 }
-			}
-			if = {
-				limit = {
-					POL = { 
-						exists = yes 
-						has_capitulated = no
-						is_subject = no
-						is_in_faction = no
-					}
-				}
-				POL = { country_event = DOD_romania.10 }
-			}
-			if = {
-				limit = {
-					POL = {
-						is_faction_leader = yes #Poland did own faction
-						has_capitulated = no
-					}
-				}
-				POL = {
-						country_event = generic.2
-					}
-			}
-			hidden_effect = {
-				news_event = { id = news.317 days = 1 }
-			}
-		}
-		search_filters = { FOCUS_FILTER_ALLIANCE FOCUS_FILTER_POLITICAL }
-	}
-	focus = {
-		id = ROM_invite_ukraine
-		icon = GFX_focus_generic_ukrainian_deal
-		prerequisite = { focus = ROM_the_cordon_sanitaire }
-		x = 1
-		y = 1
-		relative_position_id = ROM_the_cordon_sanitaire
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			is_faction_leader = yes
-			is_subject = no
-			country_exists = UKR
-			UKR = {
-				is_in_faction = no
-				is_puppet = no
-				OR = {
-					has_government = democratic
-					has_government = neutrality
-				}
-			}			
-		}
-
-		completion_reward = {
-			UKR = {
-				country_event = generic.5
-			}
-			
-		}
-		search_filters = { FOCUS_FILTER_ALLIANCE FOCUS_FILTER_POLITICAL }
-	}
+	
+	
 	focus = {
 		id = ROM_demand_a_western_guarantee
 		icon = GFX_goal_generic_befriend_romania
@@ -1131,7 +925,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = ROM_military_modernization
+				bonus = 1.5
+				uses = 3
+				category = infantry_weapons
+			}
 			add_relation_modifier = {
 				target = ENG
 				modifier = ROM_military_modernization
@@ -1380,9 +1179,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+
+
 			add_tech_bonus = {
 				name = ROM_civil_works
-				bonus = 1.0
+				bonus = 2.0
 				uses = 3
 				category = industry
 			}
@@ -5428,6 +5229,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_tech_bonus ={
+				uses = 2
+				bonus = 1.0
+				category = armor
+			}
 			add_ideas = ROM_acquire_modern_tanks
 		}
 	}
@@ -6022,6 +5828,305 @@ focus_tree = {
 #		SOV = { add_opinion_modifier = { modifier = ROM_appoint_soviet_friendly_government target = ROOT } }
 #	}
 #	search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+ Focus = {
+	id = ROM_protect_the_nation
+	icon = GFX_focus_generic_conspiracy 
+	prerequisite = {focus = ROM_preserve_greater_romania}
+	relative_position_id = ROM_preserve_greater_romania
+	available = {
+		is_ai = no
+	}
+	x = -7
+	y = 1
+	cost = 10
+	completion_reward = {
+		add_ideas = rom_protect
+	} }
+ focus = {
+	id = ROM_surrender_contested
+	icon = GFX_goal_tripartite_pact
+	prerequisite = {focus = ROM_protect_the_nation}
+	relative_position_id = ROM_protect_the_nation
+	cost = 10
+	x = -1
+	y = 1
+	available = {
+		76 = { is_owned_by = ROM }
+		77 = { is_owned_by = ROM }
+		80 = { is_owned_by = ROM }
+		78 = { is_owned_by = ROM }
+		766 = { is_owned_by = ROM }
+	}
+	completion_reward = { 
+		add_offsite_building = {
+			type = industrial_complex
+			level = 12
+		}
+		add_offsite_building = {
+			type = arms_factory
+			level = 6
+		}
+		SOV = {
+			transfer_state = 78
+			transfer_state = 766
+			transfer_state = 80
+			add_state_core = 78
+			add_state_core = 766
+			add_state_core = 80
+		}
+		HUN = {
+			transfer_state = 76
+			add_state_core = 76
+		}
+		BUL = {
+			transfer_state = 77
+			add_state_core = 77
+		}
+	}
+ }
+ focus = {
+	id = ROM_expand_conscription
+	icon = GFX_focus_generic_little_entente
+	prerequisite = {focus = ROM_protect_the_nation}
+	relative_position_id = ROM_protect_the_nation
+	cost = 10
+	x = 1
+	y = 1
+	completion_reward = {
+		hidden_effect {
+			remove_ideas = rom_protect
+			add_ideas = rom_protect_2
+		}
+		swap_ideas = {
+			remove_idea = rom_protect
+			add_idea = rom_protect_2
+		}
+	}
+	
+
+ }
+ focus = {
+	id = ROM_better_army
+	icon = GFX_focus_generic_military_mission
+	cost = 10
+	prerequisite = {focus = ROM_expand_conscription}
+	x = 1
+	y = 2
+	relative_position_id = ROM_protect_the_nation
+	completion_reward = {swap_ideas = {
+		remove_idea = rom_protect_2
+		add_idea =  rom_protect_3
+		} 
+	}
+ }
+ focus ={
+	id = expand_romanian_industry
+	icon = GFX_goal_generic_production
+	cost = 20
+	relative_position_id = ROM_protect_the_nation
+	prerequisite {focus = ROM_surrender_contested}
+	x = -1
+	y = 2
+	completion_reward = {
+	46 = {add_extra_state_shared_building_slots = 4}
+	81 = {add_extra_state_shared_building_slots = 4}
+	82 = {add_extra_state_shared_building_slots = 4}
+	84 = {add_extra_state_shared_building_slots = 4}
+	83 = {add_extra_state_shared_building_slots = 4}
+	955 = {add_extra_state_shared_building_slots = 4}
+	79 = {add_extra_state_shared_building_slots = 4}
+	
+	46 = add_building_construction = {
+		type = infrastructure
+		level = 5
+		instant_build = yes
+	}
+	random_owned_controlled_state = {
+		prioritize = { 79 }
+		limit = {
+			free_building_slots = {
+				building = infrastructure
+				size > 0
+			}
+		}
+		add_building_construction = {
+			type = infrastructure
+			level = 5
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		prioritize = { 955 }
+		limit = {
+			free_building_slots = {
+				building = infrastructure
+				size > 0
+			}
+		}
+		add_building_construction = {
+			type = infrastructure
+			level = 5
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		prioritize = { 84 }
+		limit = {
+			free_building_slots = {
+				building = infrastructure
+				size > 0
+			}
+		}
+		add_building_construction = {
+			type = infrastructure
+			level = 5
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		prioritize = { 83 }
+		limit = {
+			free_building_slots = {
+				building = infrastructure
+				size > 0
+			}
+		}
+		add_building_construction = {
+			type = infrastructure
+			level = 5
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		prioritize = { 82 }
+		limit = {
+			free_building_slots = {
+				building = infrastructure
+				size > 0
+			}
+		}
+		add_building_construction = {
+			type = infrastructure
+			level = 5
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		prioritize = { 46 }
+		limit = {
+			free_building_slots = {
+				building = infrastructure
+				size > 0
+			}
+		}
+		add_building_construction = {
+			type = infrastructure
+			level = 5
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		prioritize = { 81 }
+		limit = {
+			free_building_slots = {
+				building = infrastructure
+				size > 0
+			}
+		}
+		add_building_construction = {
+			type = infrastructure
+			level = 5
+			instant_build = yes
+		}
+	}
+	
+	}
+
+ }
+
+ focus = {
+	id = ROM_proclaim_total_mob
+	icon = GFX_goal_generic_forceful_treaty
+	prerequisite = {focus = ROM_better_army}
+	prerequisite = {focus = expand_romanian_industry}
+	relative_position_id = ROM_protect_the_nation
+	cost = 10
+	x = 0
+	y = 3
+	completion_reward = { add_ideas = tot_economic_mobilisation}
+ }
+ focus = {
+	id = ROM_more_oil
+	icon = GFX_goal_generic_oil_refinery
+	prerequisite = {focus = expand_romanian_industry}
+	relative_position_id = ROM_protect_the_nation
+	x = -2
+	y = 3
+	cost  = 5
+	completion_reward = {
+		set_technology = { fuel_refining = 1 }
+		set_technology = { fuel_refining2 = 1 }
+		set_technology = { fuel_refining3 = 1 }
+		set_technology = { fuel_refining4 = 1 }
+		set_technology = { fuel_refining5 = 1 }
+		add_resource = {
+			type = oil
+			amount = 50
+			state = 46
+			
+		}
+	}
+ }
+ focus = {
+	id = ROM_democratic_institution
+	icon = GFX_focus_research2
+	prerequisite = {focus = ROM_renew_the_romanian_polish_alliance}
+	relative_position_id = ROM_renew_the_romanian_polish_alliance
+	x = 2
+	y = 1
+	cost = 10
+	completion_reward = {
+		add_ideas = ROM_democratic_institution
+	}
+ }
+ focus = {
+	id = ROM_allied_investment
+	icon = GFX_focus_generic_the_giant_wakes
+	prerequisite = {focus = ROM_renew_the_romanian_polish_alliance}
+	relative_position_id = ROM_renew_the_romanian_polish_alliance
+	x = 2
+	y = 2
+	cost = 10
+	completion_reward = {
+		add_offsite_building = {
+			type = industrial_complex
+			level = 5
+		}
+	}
+ }
+ focus = {
+	id = ROM_reich_protectorat
+	icon = GFX_focus_ger_reichskommisariats
+	prerequisite = {focus = ROM_alliance_with_the_kaiserreich focus = ROM_join_axis}
+	x = 3
+	y = 6
+	cost = 15
+	completion_reward = {
+		add_offsite_building = {
+			type = industrial_complex
+			level = 6
+		}
+		add_offsite_building = {
+			type = arms_factory
+			level = 8
+		}
+		GER = {
+			puppet = ROM
+		}
+	}
+
+ }
+
 #}
 }
 
