@@ -16380,6 +16380,13 @@ focus_tree = {
 		completion_reward = {
 			
 			add_stability = 0.05
+			POL = {
+				country_event = {
+					id = germany.30
+					days = 1 
+					random_days = 1	#a bit randomness
+				}
+			}	
 		}
 
 	}

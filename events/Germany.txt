@@ -2182,6 +2182,25 @@ country_event = {
 	}
 }
 
+# Poland accepts claims
+country_event = {
+	id = germany.31
+	title = germany.31.t
+	desc = germany.31.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.31.a
+		GER = {
+			transfer_state = 807
+			transfer_state = 85
+			transfer_state = 86
+		}
+	}
+}
+
 ### Munich Conference
 
 # Britain
