@@ -10,7 +10,7 @@ ideas = {
 
 			modifier = {
 				conscription = -0.005
-				production_speed_arms_factory_factor = -0.5
+				production_speed_arms_factory_factor = -1.5
 			}
 		}
 		HUN_treaty_of_triannon_2 = {
@@ -197,7 +197,7 @@ ideas = {
 			picture = FRA_scw_intervention_republicans_focus
 
 			modifier = {
-				political_power_factor = -0.25
+				political_power_factor = 0.25
 				consumer_goods_factor = -0.05
 			}
 		}
@@ -207,7 +207,8 @@ ideas = {
 			picture = FRA_scw_intervention_republicans_focus
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				political_power_factor = 0.05
+				consumer_goods_factor = -0.1
 			}
 		}
 
