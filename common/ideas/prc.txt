@@ -449,7 +449,7 @@ ideas = {
 		PRC_our_own_Eco_1 = {
 			removal_cost = -1
 
-			picture = generic_production_bonus
+			picture = GFX_goal_generic_industrial_unionism
 
 			allowed = {
 				always = no
@@ -473,7 +473,7 @@ ideas = {
 		PRC_our_own_Eco_2 = {
 			removal_cost = -1
 
-			picture = generic_production_bonus
+			picture = GFX_goal_generic_industrial_unionism
 
 			allowed = {
 				always = no
@@ -496,7 +496,7 @@ ideas = {
 		PRC_our_own_Eco_3 = {
 			removal_cost = -1
 
-			picture = generic_production_bonus
+			picture = GFX_goal_generic_industrial_unionism
 
 			allowed = {
 				always = no

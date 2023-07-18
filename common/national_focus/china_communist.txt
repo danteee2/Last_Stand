@@ -3756,7 +3756,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_we_need_eco
-		icon = GFX_focus_generic_industry_2
+		icon = GFX_goal_continuous_non_factory_construct
 		prerequisite = { focus = PRC_the_new_communism_beacon  }
 		cancel = { is_in_faction_with = SOV }	
 		available = {
@@ -3783,7 +3783,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_we_need_eco_two
-		icon = GFX_focus_generic_industry_2
+		icon = GFX_goal_generic_soviet_construction
 		prerequisite = { focus = PRC_we_need_eco  }
 		cancel = { is_in_faction_with = SOV }	
 		available = {
@@ -3812,7 +3812,7 @@ focus_tree = {
 
     focus = {
 		id = PRC_we_need_eco_three
-		icon = GFX_focus_generic_industry_2
+		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = PRC_we_need_eco_two  }
 		cancel = { is_in_faction_with = SOV }	
 		available = {
