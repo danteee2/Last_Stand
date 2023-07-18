@@ -6112,6 +6112,9 @@ focus_tree = {
 	y = 6
 	cost = 15
 	completion_reward = {
+		remove_ideas {
+			remove_idea = ROM_king_carol_ii_hedonist
+		}
 		add_offsite_building = {
 			type = industrial_complex
 			level = 6
