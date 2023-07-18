@@ -195,5 +195,14 @@ spriteTypes = {
 				name = "GFX_GER_black_sun_shine"
 				textureFile = "gfx/interface/goals/ger/LS_goal_black_sun_shine.dds"
 			}
+			spriteType = {
+				name = "GFX_GER_heinrich_himmler"
+				textureFile = "gfx/interface/goals/ger/LS_goal_himmler.dds"
+			}
+
+			spriteType = {
+				name = "GFX_GER_heinrich_himmler_shine"
+				textureFile = "gfx/interface/goals/ger/LS_goal_himmler_shine.dds"
+			}
 
 }

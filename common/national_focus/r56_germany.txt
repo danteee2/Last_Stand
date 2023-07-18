@@ -16561,6 +16561,30 @@ focus_tree = {
         id = GER_the_new_father_of_fascism
         icon = GFX_focus_generic_spread_fascism
 
+		prerequisite = { focus = GER_himmler_takes_lead }
+	
+
+        x = -2	
+        y = 3
+
+        cost = 10
+
+        ai_will_do = {
+            factor = 1
+        }
+
+    
+
+		relative_position_id = GER_the_alternative
+
+        completion_reward = {	
+			add_stability = 0.1
+		}																																																												
+	}
+	focus = {
+        id = GER_himmler_takes_lead
+        icon = GFX_GER_heinrich_himmler
+
 		prerequisite = { focus = GER_for_the_german_people }
 	
 
@@ -16578,7 +16602,18 @@ focus_tree = {
 		relative_position_id = GER_the_alternative
 
         completion_reward = {	
-			add_stability = 0.1
+			add_country_leader_role = {
+				character = GER_heinrich_himmler
+				promote_leader = yes
+				country_leader = {
+			  		ideology = fascism_ideology
+				  	expire = "1965.1.1"
+				  	traits = {
+						prince_of_terror
+				  	}
+				}
+			}	
 		}																																																												
 	}
+	
 }
