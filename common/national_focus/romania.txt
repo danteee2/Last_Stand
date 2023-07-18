@@ -5860,7 +5860,7 @@ focus_tree = {
 	completion_reward = { 
 		add_offsite_building = {
 			type = industrial_complex
-			level = 12
+			level = 8
 		}
 		add_offsite_building = {
 			type = arms_factory
@@ -5951,7 +5951,7 @@ focus_tree = {
 		}
 		add_building_construction = {
 			type = infrastructure
-			level = 5
+			level = 2
 			instant_build = yes
 		}
 	}
@@ -5965,7 +5965,7 @@ focus_tree = {
 		}
 		add_building_construction = {
 			type = infrastructure
-			level = 5
+			level = 2
 			instant_build = yes
 		}
 	}
@@ -5979,7 +5979,7 @@ focus_tree = {
 		}
 		add_building_construction = {
 			type = infrastructure
-			level = 5
+			level = 3
 			instant_build = yes
 		}
 	}
@@ -5993,7 +5993,7 @@ focus_tree = {
 		}
 		add_building_construction = {
 			type = infrastructure
-			level = 5
+			level = 2
 			instant_build = yes
 		}
 	}
@@ -6007,7 +6007,7 @@ focus_tree = {
 		}
 		add_building_construction = {
 			type = infrastructure
-			level = 5
+			level = 2
 			instant_build = yes
 		}
 	}
@@ -6021,7 +6021,7 @@ focus_tree = {
 		}
 		add_building_construction = {
 			type = infrastructure
-			level = 5
+			level = 2
 			instant_build = yes
 		}
 	}
@@ -6035,7 +6035,7 @@ focus_tree = {
 		}
 		add_building_construction = {
 			type = infrastructure
-			level = 5
+			level = 2
 			instant_build = yes
 		}
 	}
@@ -6065,14 +6065,16 @@ focus_tree = {
 	cost  = 5
 	completion_reward = {
 		set_technology = { fuel_refining = 1 }
-		set_technology = { fuel_refining2 = 1 }
-		set_technology = { fuel_refining3 = 1 }
-		set_technology = { fuel_refining4 = 1 }
-		set_technology = { fuel_refining5 = 1 }
 		add_resource = {
 			type = oil
-			amount = 50
+			amount = 13
 			state = 46
+			
+		}
+		add_resource = {
+			type = oil
+			amount = 18
+			state = 84
 			
 		}
 	}
