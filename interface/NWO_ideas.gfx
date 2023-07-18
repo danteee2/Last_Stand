@@ -167,13 +167,14 @@ spriteTypes = {
 				textureFile = "gfx/interface/goals/usa/last_stand_beacon_of_democracy_shine.dds"
 			}
 
+			#MEXICO WOOOOOOOOOOOOO
 			spriteType = {
-				name = "GFX_operation_liberty_lion"
-				textureFile = "gfx/interface/goals/usa/last_stand_operation_liberty_lion.dds"
+				name = "GFX_goal_mexican_miracle"
+				textureFile = "gfx/interface/goals/mex/goal_mexican_miracle.dds"
 			}
 
 			spriteType = {
-				name = "GFX_operation_liberty_lion_shine"
-				textureFile = "gfx/interface/goals/usa/last_stand_operation_liberty_lion_shine.dds"
+				name = "GFX_goal_mexican_miracle_shine"
+				textureFile = "gfx/interface/goals/mex/goal_mexican_miracle_shine.dds"
 			}
 }
