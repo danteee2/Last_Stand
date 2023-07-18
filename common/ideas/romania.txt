@@ -1,6 +1,85 @@
 ideas = {
 
 	country = {
+		ROM_democratic_institution = {
+
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				research_speed_factor = 0.15
+			}
+		}
+		ROM_trade_with_ger = {
+			picture = generic_fascism_drift_2
+
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.10
+			}
+		}
+
+
+
+		ROM_world_revolution = {
+
+			picture = jap_the_unthinkable_option
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = ROM
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			modifier = {
+				justify_war_goal_time = -0.75
+			}
+		}
+		rom_protect = {
+			allowed = {
+				always = yes
+			}
+			picture = YUG_federal_defense_council
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				army_core_defence_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+			removal_cost = -1
+		}
+		rom_protect_2 = {
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				army_core_defence_factor = 0.15	
+				conscription = 0.025
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+			picture = YUG_federal_defense_council
+			allowed = {
+				always = yes }
+	
+		}
+		rom_protect_3 = {
+			picture = YUG_federal_defense_council
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				army_core_defence_factor = 0.15	
+				conscription = 0.05
+				army_defence_factor = 0.05
+				army_attack_factor = 0.05
+				army_org_factor = 0.05
+				production_speed_buildings_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+
+		}
 
 		###############
 		###NEW IDEAS###
@@ -262,9 +341,9 @@ ideas = {
 			rule = { can_send_volunteers = yes }
 			
 			modifier = {
-				send_volunteer_divisions_required = -1
-				send_volunteer_size = 1
-				send_volunteers_tension = -1
+			army_org_factor = 0.05
+			army_defence_against_major_factor = 0.1
+
 			}
 		}
 
@@ -620,8 +699,8 @@ ideas = {
 			}
 			
 			modifier = {
-				guarantee_tension = -1.0
-				guarantee_cost = -0.5
+				war_support_factor = 0.2
+				stability_factor = 0.2
 			}
 		}
 
@@ -647,7 +726,7 @@ ideas = {
 			}
 			
 			modifier = {
-				communism_drift = 0.01
+				consumer_goods_factor = -0.075
 			}
 		}
 
@@ -673,8 +752,8 @@ ideas = {
 			}
 			
 			modifier = {
-				communism_drift = 0.01
-				conscription = 0.01
+				conscription = 0.02
+				industrial_capacity_factory = 0.1
 			}
 		}
 
@@ -1564,5 +1643,7 @@ ideas = {
 				factor = 1
 			}
 		}
+		
+
 	}
 }

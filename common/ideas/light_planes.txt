@@ -10,14 +10,9 @@ ideas = {
 		    available = {
 				
 			}
-			equipment_bonus = {
-				fighter = {
-					instant = yes
-					build_cost_ic = -0.05
-				}
-			}
+			
 			modifier = {
-				
+			air_attack_factor = 0.05
 			}
 	
 			cost = 100
@@ -45,14 +40,9 @@ ideas = {
 			available = {
 		       
 			}
-			equipment_bonus = {
-				cas = {
-					instant = yes
-					build_cost_ic = -0.05
-				}
-			}
+		
 			modifier = {
-			    
+			    ground_attack_factor = 0.1
 			}
 			
 			cost = 100
@@ -95,7 +85,7 @@ ideas = {
 				}
 			}
 			modifier = {
-				
+				air_nav_efficiency = 0.05
 			}
 			
 			cancel_if_invalid = yes

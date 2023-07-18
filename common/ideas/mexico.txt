@@ -1116,5 +1116,18 @@ ideas = {
 				consumer_goods_factor = 0.05
 			}
 		}
+
+		MEX_mexican_miracle = {
+			picture = generic_liberty_money
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.05
+			}
+		}
 	}
 }

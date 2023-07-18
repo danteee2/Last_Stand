@@ -1,6 +1,25 @@
 ideas = {
 
 	country = {
+		##last stand
+		Trade_expanded = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_flexible_foreign_policy
+
+			modifier = {
+			trade_opinion_factor = 0.25
+			industrial_capacity_factory = 0.05
+			}	
+		}
 		ENG_state_of_the_economy = {
 			allowed = {
 				always = yes
@@ -843,7 +862,7 @@ ideas = {
 			
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.1 instant = yes
+					build_cost_ic = -0.05 instant = yes
 				}
 			}
 		}

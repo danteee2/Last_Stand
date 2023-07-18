@@ -141,6 +141,8 @@
      heavy_planes_strategic:0 "Strategic Bomber Focus"
      heavy_planes_tactical:0 "Tactical Bomber Focus"
      heavy_planes_transport:0 "Transport Focus"
+
+strategic_bomber:0 "Strategic Bomber"
      
      airborne:0 "Paratroopers"
      airborne_army:0 "Army Command"

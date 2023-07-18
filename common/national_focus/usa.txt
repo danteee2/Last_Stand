@@ -8531,6 +8531,46 @@ focus_tree = {
 			unlock_decision_tooltip = { decision = USA_execute_war_plan_silver show_effect_tooltip = yes show_modifiers = yes }
 		}
 	}
+
+	focus = {
+		id = USA_operation_liberty_lion
+		icon = GFX_operation_liberty_lion
+		x = 1
+		y = 1
+		prerequisite = { focus = USA_intervention_in_europe }
+		mutually_exclusive = { }
+		relative_position_id = USA_intervention_in_europe
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				any_other_country = {
+					original_tag = ITA
+					OR = {
+						is_in_faction_with = ROOT
+						has_war_together_with = ROOT
+					}
+					has_civil_war = no
+				}				
+			}
+		}
+	
+		available = {
+			ENG = {
+				has_capitulated = yes
+			}
+		}
+			
+		bypass = {
+	
+		}
+
+		completion_reward = {
+			add_ideas = operation_liberty_lion_idea
+		}
+	}
 	focus = {
 		id = USA_war_plan_black
 		icon = GFX_focus_attack_germany
@@ -9521,19 +9561,6 @@ focus_tree = {
 		}
 
 		available = {
-			has_tech = interwar_antitank
-			if = {
-				limit = {
-					ROOT = {
-						has_full_control_of_state = 371
-					}
-				}
-				divisions_in_state = {
-					size > 1
-					state = 371
-				}
-
-			}
 		}
 		
 		bypass = {
@@ -9697,10 +9724,7 @@ focus_tree = {
 		completion_reward = {
 			show_unit_leaders_tooltip = USA_lucian_truscott
 			army_experience = 15
-			hidden_effect = {
-				set_technology = { USA_army_rangers = 1 }
-			}
-			custom_effect_tooltip = USA_army_rangers_tt
+			add_ideas = army_rangers_idea
 			if = {
 				limit = {
 					has_idea = rt56_naval_funding_favoritism
@@ -9890,15 +9914,6 @@ focus_tree = {
 			if = {
 				limit = {
 					has_dlc = "No Step Back"
-				}
-				has_tech = basic_medium_tank_chassis
-				has_tech = improved_medium_tank_chassis
-				has_tech = basic_heavy_tank_chassis
-				has_tech = armor_tech_1
-				has_tech = engine_tech_1
-				OR = {
-					has_tech = artillery1
-					has_tech = antitank1
 				}
 			}
 		}
