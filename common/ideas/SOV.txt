@@ -9240,7 +9240,8 @@ ideas = {
 			traits = { industrial_concern }
 			
 			modifier = {
-				consumer_goods_factor = -0.02
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = 0.10
 			}
 		}
 
