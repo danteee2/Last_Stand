@@ -6421,6 +6421,37 @@ country_event = { # 3 events to make the recruitement of Dutch generals really d
 		}		
 	}
 }
+
+#LAST STAND
+#Germania demands Belgian >:( land - LAST STAND
+# Belgium asked about territories
+country_event = {
+	id = belgium.176
+	title = belgium.176.t
+	desc = belgium.176.d
+	picture = GFX_report_event_hitler_parade
+
+	is_triggered_only = yes
+
+	option = { # Accept
+		name = belgium.176.a
+		ai_chance = {
+			base = 100
+			modifier = {
+				add = -25
+				GER = { has_army_size = { size < 40 } }
+			}
+		}
+		GER = {
+			country_event = { hours = 2 id = germany.34 }
+		}
+	}
+}
+
+
+
+
+
 #No need to load the tree if it is already there
 #country_event = {  
 #	id = belgium.177

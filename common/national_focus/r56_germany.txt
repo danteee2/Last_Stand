@@ -16386,7 +16386,49 @@ focus_tree = {
 					days = 1 
 					random_days = 1	#a bit randomness
 				}
+			}
+			CZE = {
+				country_event = {
+					id = czke.447
+					days = 1 
+					random_days = 1	#a bit randomness
+				}
+			}
+			AUS = {
+				country_event = {
+					id = erwache.11
+					days = 1 
+					random_days = 1	#a bit randomness
+				}
 			}	
+			BEL = {
+				country_event = {
+					id = belgium.176
+					days = 1 
+					random_days = 1	#a bit randomness
+				}
+			}	
+			LIE = {
+				country_event = {
+					id = liechtenstein.18
+					days = 1 
+					random_days = 1	#a bit randomness
+				}
+			}
+			DEN = {
+				country_event = {
+					id = denmark.55
+					days = 1 
+					random_days = 1	#a bit randomness
+				}
+			}
+			LIT = {
+				country_event = {
+					id = lithuania.122
+					days = 1 
+					random_days = 1	#a bit randomness
+				}
+			}
 		}
 
 	}
