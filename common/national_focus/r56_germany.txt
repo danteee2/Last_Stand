@@ -16320,7 +16320,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			
+			GER_remove_mefo_bills = yes
 			add_stability = 0.05
 		}
 
@@ -16438,7 +16438,7 @@ focus_tree = {
 		cost = 10.00
 		
 		
-
+		
 		relative_position_id = GER_the_alternative
 		x = 3
 		y = 4
@@ -16628,6 +16628,7 @@ focus_tree = {
 
         completion_reward = {	
 			add_stability = 0.1
+			add_threat = 5
 		}																																																												
 	}
 	focus = {
