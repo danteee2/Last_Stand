@@ -213,5 +213,15 @@ spriteTypes = {
 				name = "GFX_GER_imprisoned_hitler_shine"
 				textureFile = "gfx/interface/goals/ger/LS_goal_imprison_hitler_shine.dds"
 			}
+			
+			spriteType = {
+				name = "GFX_GER_woman"
+				textureFile = "gfx/interface/goals/ger/LS_goal_white_woman.dds"
+			}
+
+			spriteType = {
+				name = "GFX_GER_woman_shine"
+				textureFile = "gfx/interface/goals/ger/LS_goal_white_woman_shine.dds"
+			}
 
 }

@@ -16309,7 +16309,7 @@ focus_tree = {
 			focus = GER_kill_hitler
 		}
 		#relative_position_id = GER_political_sphere
-		x = 112
+		x = 117
 		y = 0
 		
 		ai_will_do = {
@@ -16364,11 +16364,11 @@ focus_tree = {
 		}
 		
 		
-		relative_position_id = GER_the_alternative
+		relative_position_id = GER_continue_remilitarization_in_the_rhineland
 		x = 2
 		y = 1
 		prerequisite = {
-			focus = GER_the_alternative
+			focus = GER_continue_remilitarization_in_the_rhineland
 		}
 		ai_will_do = {
 			factor = 8
@@ -16440,8 +16440,8 @@ focus_tree = {
 		
 
 		relative_position_id = GER_the_alternative
-		x = 2
-		y = 2
+		x = 3
+		y = 4
 		prerequisite = {
 			focus = GER_demand_dominant_germanic_lands
 		}
@@ -16464,7 +16464,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = GER_continue_hitler's_remilitarization_in_the_rhineland
+		id = GER_continue_remilitarization_in_the_rhineland
 		icon = GFX_goal_ger_rhineland2
 		cost = 5.0 #works oddly so I need to cut an extra day
 		prerequisite = {
@@ -16588,10 +16588,10 @@ focus_tree = {
 		
 
 		relative_position_id = GER_the_alternative
-		x = 2
-		y = 3
+		x = 1
+		y = 4
 		prerequisite = {
-			focus = GER_a_new_germany
+			focus = GER_demand_dominant_germanic_lands
 		}
 		ai_will_do = {
 			factor = 8
@@ -16613,8 +16613,8 @@ focus_tree = {
 		prerequisite = { focus = GER_himmler_takes_lead }
 	
 
-        x = -2	
-        y = 3
+        x = 0
+        y = 1
 
         cost = 10
 
@@ -16624,7 +16624,7 @@ focus_tree = {
 
     
 
-		relative_position_id = GER_the_alternative
+		relative_position_id = GER_himmler_takes_lead
 
         completion_reward = {	
 			add_stability = 0.1
@@ -16669,10 +16669,11 @@ focus_tree = {
         icon = GFX_GER_imprisoned_hitler
 
 		prerequisite = { focus = GER_the_new_father_of_fascism}
+		prerequisite = { focus = GER_formulate_ss_agency } 
 	
 
-        x = -2	
-        y = 4
+        x = -2
+        y = 2
 
         cost = 10
 
@@ -16682,7 +16683,7 @@ focus_tree = {
 
     
 
-		relative_position_id = GER_the_alternative
+		relative_position_id = GER_himmler_takes_lead
 
         completion_reward = {	
 			add_stability = 0.1
@@ -16691,9 +16692,9 @@ focus_tree = {
 	focus = {
 		id = GER_anti_communism
 		icon = GFX_goal_generic_anti_communism
-		relative_position_id = GER_the_alternative
-		x = -4
-		y = 2	
+		relative_position_id = GER_himmler_takes_lead
+		x = -2
+		y = 1
 		
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -16704,7 +16705,7 @@ focus_tree = {
 		}
 		
 		prerequisite = {
-			focus = GER_for_the_german_people
+			focus = GER_himmler_takes_lead
 		}
 		
 		available = {
@@ -16724,9 +16725,9 @@ focus_tree = {
 	focus = {
 		id = GER_formulate_ss_agency
 		icon = GFX_goal_generic_espionage
-		relative_position_id = GER_the_alternative
-		x = -5
-		y = 3
+		relative_position_id = GER_himmler_takes_lead
+		x = -4
+		y = 1
 
 		cost = 10
 
@@ -16800,35 +16801,20 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ESPIONAGE }
 	}
 	focus = {
-		id = GER_defense_of_the_fatherland
+		id = GER_defense_of_the_fatherland_in_the_east
 		icon = GFX_goal_generic_defense_of_the_lands
 		prerequisite = { focus = GER_demand_dominant_germanic_lands }
 		available = {
 			
-					has_full_control_of_state = 965
-					has_full_control_of_state = 964
 					has_full_control_of_state = 188
 					has_full_control_of_state = 763
 					has_full_control_of_state = 5
 					has_full_control_of_state = 807
 					has_full_control_of_state = 86
 					has_full_control_of_state = 762
-					has_full_control_of_state = 74
-					has_full_control_of_state = 4
-					has_full_control_of_state = 152
-					has_full_control_of_state = 153
-					has_full_control_of_state = 997
-					has_full_control_of_state = 848
-					has_full_control_of_state = 51
-					has_full_control_of_state = 989
-					has_full_control_of_state = 57
-					has_full_control_of_state = 56
-					has_full_control_of_state = 42
-					has_full_control_of_state = 923
-					has_full_control_of_state = 5
 		}
-		x = 5
-		y = 2
+		x = 4
+		y = 5
 		relative_position_id = GER_the_alternative
 		cost = 10
 		ai_will_do = {
@@ -16836,34 +16822,189 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			964 = {
+			188 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = bunker
 						level = 1
-						province = 332
+						province = 3288
+						instant_build = yes
+					}
+					
+				}
+			}
+			763 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 281
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
 						level = 1
-						province = 11251
+						province = 3384
 						instant_build = yes
 					}
 				}
 			}
-			965 = {
+			5 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = bunker
 						level = 1
-						province = 3488
+						province = 9327
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 11386
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 9372
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 6375
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 9346
+						instant_build = yes
+					}
+				}
+			}
+			807 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 6347
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 3295
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 243
+						instant_build = yes
+					}
+				}
+			}
+			86 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 3381
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 17
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 9532
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 11558
+						instant_build = yes
+					}
+				}
+			}
+			67 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 479
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 9457
+						instant_build = yes
+					}
+				}
+			}
+			762 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 506
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 6464
 						instant_build = yes
 					}
 				}
 			}
 		}
 	}
+	focus = {
+		id = GER_the_song_of_the_white_woman
+		icon = GFX_GER_woman
+		relative_position_id = GER_himmler_takes_lead
+		x = -2
+		y = 5
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = {
+			focus = GER_imprison_hitler
+		}
+		
+		available = {
+			has_government = fascism
+		}
+		
+
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	
 }
