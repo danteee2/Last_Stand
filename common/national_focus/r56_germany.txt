@@ -16320,7 +16320,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			GER_remove_mefo_bills = yes
+			hidden_effect = { GER_remove_mefo_bills = yes }
 			add_stability = 0.05
 		}
 
