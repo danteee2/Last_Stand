@@ -2197,6 +2197,127 @@ country_event = {
 			transfer_state = 807
 			transfer_state = 85
 			transfer_state = 86
+			transfer_state = 762
+			add_state_core = 807
+			add_state_core = 85
+			add_state_core = 86
+			add_state_core = 762
+		}
+	}
+}
+
+# Czechs accept claims
+country_event = {
+	id = germany.32
+	title = germany.32.t
+	desc = germany.32.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.32.a
+		GER = {
+			transfer_state = 69
+			transfer_state = 74
+			add_state_core = 69
+			add_state_core = 74
+		}
+	}
+}
+
+# Austria accept claims
+country_event = {
+	id = germany.33
+	title = germany.33.t
+	desc = germany.33.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.33.a
+		GER = {
+			transfer_state = 4
+			transfer_state = 152
+			transfer_state = 153
+			transfer_state = 848
+			add_state_core = 4
+			add_state_core = 152
+			add_state_core = 153
+			add_state_core = 848
+		}
+	}
+}
+
+# Belgium accept claims
+country_event = {
+	id = germany.34
+	title = germany.34.t
+	desc = germany.34.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.34.a
+		GER = {
+			transfer_state = 965
+			add_state_core = 965
+		}
+	}
+}
+
+# Liechtenstein accept claims
+country_event = {
+	id = germany.35
+	title = germany.35.t
+	desc = germany.35.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.35.a
+		GER = {
+			transfer_state = 997
+			add_state_core = 997
+		}
+	}
+}
+
+# Denmark accept claims
+country_event = {
+	id = germany.36
+	title = germany.36.t
+	desc = germany.36.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.36.a
+		GER = {
+			transfer_state = 964
+			add_state_core = 964
+		}
+	}
+}
+
+# Lithuania accept claims
+country_event = {
+	id = germany.37
+	title = germany.37.t
+	desc = germany.37.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.37.a
+		GER = {
+			transfer_state = 188
+			add_state_core = 188
 		}
 	}
 }
