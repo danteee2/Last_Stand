@@ -204,5 +204,14 @@ spriteTypes = {
 				name = "GFX_GER_heinrich_himmler_shine"
 				textureFile = "gfx/interface/goals/ger/LS_goal_himmler_shine.dds"
 			}
+			spriteType = {
+				name = "GFX_GER_imprisoned_hitler"
+				textureFile = "gfx/interface/goals/ger/LS_goal_imprison_hitler.dds"
+			}
+
+			spriteType = {
+				name = "GFX_GER_imprisoned_hitler_shine"
+				textureFile = "gfx/interface/goals/ger/LS_goal_imprison_hitler_shine.dds"
+			}
 
 }

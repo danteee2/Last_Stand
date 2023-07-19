@@ -16309,7 +16309,7 @@ focus_tree = {
 			focus = GER_kill_hitler
 		}
 		#relative_position_id = GER_political_sphere
-		x = 120
+		x = 112
 		y = 0
 		
 		ai_will_do = {
@@ -16622,5 +16622,206 @@ focus_tree = {
 			}	
 		}																																																												
 	}
+	focus = {
+        id = GER_imprison_hitler
+        icon = GFX_GER_imprisoned_hitler
+
+		prerequisite = { focus = GER_the_new_father_of_fascism}
 	
+
+        x = -2	
+        y = 4
+
+        cost = 10
+
+        ai_will_do = {
+            factor = 1
+        }
+
+    
+
+		relative_position_id = GER_the_alternative
+
+        completion_reward = {	
+			add_stability = 0.1
+		}																																																												
+	}
+	focus = {
+		id = GER_anti_communism
+		icon = GFX_goal_generic_anti_communism
+		relative_position_id = GER_the_alternative
+		x = -4
+		y = 2	
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = {
+			focus = GER_for_the_german_people
+		}
+		
+		available = {
+			has_government = fascism
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
+		}
+		
+
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_ideas = r56_CAN_anti_communism
+		}
+	}
+	focus = {
+		id = GER_formulate_ss_agency
+		icon = GFX_goal_generic_espionage
+		relative_position_id = GER_the_alternative
+		x = -5
+		y = 3
+
+		cost = 10
+
+		allow_branch = {
+			has_dlc = "La Resistance"
+		}		
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		prerequisite = {
+			focus = GER_himmler_takes_lead
+		}
+		
+		available = {
+
+		}
+		
+		bypass = {
+		}
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_intelligence_agency = yes
+					}
+				}
+				create_intelligence_agency = {
+					name = "SS"
+					icon = GFX_intelligence_agency_logo_generic_4
+				}			
+			}	
+			add_ideas = GER_abwehr_contacts
+			hidden_effect = {
+				set_technology = { lar_decryption_bonus_tech = 1 }
+			}
+			custom_effect_tooltip = lar_decryption_bonus_tt
+            if = {
+                limit = {
+                    has_dlc = "La Resistance"
+                    NOT = {
+                        has_done_agency_upgrade = upgrade_form_department
+                    }
+                }
+                upgrade_intelligence_agency = upgrade_form_department            
+            }
+            else_if = {
+                limit = {
+                    has_dlc = "La Resistance"
+                    NOT = {
+                        has_done_agency_upgrade = upgrade_decryption_boost
+                    }
+                }
+                upgrade_intelligence_agency = upgrade_decryption_boost            
+            }    
+            else_if = {
+                limit = {
+                    has_dlc = "La Resistance"
+                    NOT = {
+                        has_done_agency_upgrade = upgrade_decryption_boost_2
+                    }
+                }
+                upgrade_intelligence_agency = upgrade_decryption_boost_2            
+            }						
+		}
+		search_filters = { FOCUS_FILTER_ESPIONAGE }
+	}
+	focus = {
+		id = GER_defense_of_the_fatherland
+		icon = GFX_goal_generic_defense_of_the_lands
+		prerequisite = { focus = GER_demand_dominant_germanic_lands }
+		available = {
+			
+					has_full_control_of_state = 965
+					has_full_control_of_state = 964
+					has_full_control_of_state = 188
+					has_full_control_of_state = 763
+					has_full_control_of_state = 5
+					has_full_control_of_state = 807
+					has_full_control_of_state = 86
+					has_full_control_of_state = 762
+					has_full_control_of_state = 74
+					has_full_control_of_state = 4
+					has_full_control_of_state = 152
+					has_full_control_of_state = 153
+					has_full_control_of_state = 997
+					has_full_control_of_state = 848
+					has_full_control_of_state = 51
+					has_full_control_of_state = 989
+					has_full_control_of_state = 57
+					has_full_control_of_state = 56
+					has_full_control_of_state = 42
+					has_full_control_of_state = 923
+					has_full_control_of_state = 5
+		}
+		x = 5
+		y = 2
+		relative_position_id = GER_the_alternative
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			964 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 332
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 11251
+						instant_build = yes
+					}
+				}
+			}
+			965 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 3488
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
 }
