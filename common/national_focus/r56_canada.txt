@@ -429,6 +429,16 @@ focus_tree = {
                     instant_build = yes
                 }				
 			}
+			add_resource = {
+				type = tungsten
+				amount = 21
+				state = 682
+			}
+			add_resource = {
+				type = steel
+				amount = 30
+				state = 682
+			}
             add_tech_bonus = {
                 name = construction_tech_bonus
                 bonus = 1
