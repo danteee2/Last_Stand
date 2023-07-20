@@ -2341,7 +2341,7 @@ country_event = {
 		#ADD RESOURCES
 		add_resource = {
 			type = steel
-			amount = 180
+			amount = 80
 			state = 462
 		}
 		add_resource = {
