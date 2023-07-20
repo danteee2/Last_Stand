@@ -2355,7 +2355,7 @@ country_event = {
 			state = 28
 		}
 		add_resource = {
-			type = steel
+			type = oil
 			amount = -2
 			state = 28
 		}
