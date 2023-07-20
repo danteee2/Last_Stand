@@ -16321,7 +16321,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			hidden_effect = { GER_remove_mefo_bills = yes }
-			add_stability = 0.05
+			add_stability = -0.2
 		}
 
 	}
