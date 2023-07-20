@@ -2206,7 +2206,7 @@ country_event = {
 	}
 }
 
-# Czechs accept claims
+# Czechs accepts claims
 country_event = {
 	id = germany.32
 	title = germany.32.t
@@ -2226,7 +2226,7 @@ country_event = {
 	}
 }
 
-# Austria accept claims
+# Austria accepts claims
 country_event = {
 	id = germany.33
 	title = germany.33.t
@@ -2250,7 +2250,7 @@ country_event = {
 	}
 }
 
-# Belgium accept claims
+# Belgium accepts claims
 country_event = {
 	id = germany.34
 	title = germany.34.t
@@ -2268,7 +2268,7 @@ country_event = {
 	}
 }
 
-# Liechtenstein accept claims
+# Liechtenstein accepts claims
 country_event = {
 	id = germany.35
 	title = germany.35.t
@@ -2286,7 +2286,7 @@ country_event = {
 	}
 }
 
-# Denmark accept claims
+# Denmark accepts claims
 country_event = {
 	id = germany.36
 	title = germany.36.t
@@ -2304,7 +2304,7 @@ country_event = {
 	}
 }
 
-# Lithuania accept claims
+# Lithuania accepts claims
 country_event = {
 	id = germany.37
 	title = germany.37.t
@@ -2318,6 +2318,97 @@ country_event = {
 		GER = {
 			transfer_state = 188
 			add_state_core = 188
+		}
+	}
+}
+
+# France accepts claims
+country_event = {
+	id = germany.38
+	title = germany.38.t
+	desc = germany.38.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.38.a
+		GER = {
+			transfer_state = 28
+			add_state_core = 28
+		}
+
+		#ADD RESOURCES
+		add_resource = {
+			type = steel
+			amount = 180
+			state = 462
+		}
+		add_resource = {
+			type = oil
+			amount = 2
+			state = 462
+		}
+		add_resource = {
+			type = steel
+			amount = -180
+			state = 28
+		}
+		add_resource = {
+			type = steel
+			amount = -2
+			state = 28
+		}
+
+		#ADD FORTS
+		18 = {
+			add_building_construction = {
+				type = bunker
+					province = 5291
+				level = 2
+			}
+		}
+			18 = {
+				add_building_construction = {
+					type = bunker
+						province = 11516
+					level = 2
+				}
+			}
+			18 = {
+				add_building_construction = {
+					type = bunker
+						province = 521
+					level = 2
+				}
+			}
+			18 = {
+				add_building_construction = {
+					type = bunker
+						province = 698
+					level = 2
+				}
+			}
+		} 
+	}
+
+# France denies claims
+country_event = {
+	id = germany.39
+	title = germany.39.t
+	desc = germany.39.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.39.b
+		GER = {
+			create_wargoal = {
+				type = take_state
+				target = FRA
+				generator = {28}
+			}
 		}
 	}
 }

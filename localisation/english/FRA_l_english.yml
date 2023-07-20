@@ -1134,4 +1134,14 @@
  absolute_monarch:0 "Absolute Monarch"
  count_of_paris:0 "Count of Paris"
  frederic_gaston:0 "Fréderic Gaston"
+
+#LAST STAND IDEAS
+FRA_relinquished_maginot:0 "Relinquished the Maginot"
+FRA_relinquished_maginot_desc:0 "By ceding the Maginot Line, we have pooled our resources previously consumed by these dormant fortifications back into the heart of our nation."
+
+#LAST STAND EVENTS
+france.36.t:0 "Germany demands Alsace-Lorraine"
+france.36.d:0 "The German delegation has approached us, citing that Alsace-Lorraine is rightful German territory. They demand we hand it over in the next twenty four hours or face war."
+france.36.a:0 "This can work in our favour. Sign the deal!"
+france.36.b:0 "It is rightful French territory, and will stay French!"
  

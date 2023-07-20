@@ -3246,7 +3246,7 @@ erwache.11.t:0 "Germans press for Austrian Lands"
 erwache.11.d:0 "Civil unrest and acts of violence have broken out as protesters voice their desire for [CZE.getNameDef] to join [GER.getNameDef] in a union of [GER.getAdjective] peoples. Berlin is pressing hard for an annexation, which would see [CZE.getNameDef] territories annexed into their nation."
 erwache.11.a:0 "We have no choice..."
 
-germany.33.t:0 "[AUS.getAdjective] responds to our demands"
+germany.33.t:0 "Austria responds to our demands"
 germany.33.d:0 "The [AUS.getAdjective] delegation have come forward to us, accepting our demands."
 germany.33.a:0 "Excellent."
 
@@ -3254,7 +3254,7 @@ belgium.176.t:0 "Germans press for Belgian Lands"
 belgium.176.d:0 "Civil unrest and acts of violence have broken out as protesters voice their desire for [BEL.getNameDef] to join [GER.getNameDef] in a union of [GER.getAdjective] peoples. Berlin is pressing hard for an annexation, which would see [BEL.getNameDef] territories annexed into their nation."
 belgium.176.a:0 "We have no choice..."
 
-germany.34.t:0 "[BEL.getAdjective] responds to our demands"
+germany.34.t:0 "Belgium responds to our demands"
 germany.34.d:0 "The Belgian delegation have come forward to us, accepting our demands."
 germany.34.a:0 "One step closer to achieving our dream."
 
@@ -3262,7 +3262,7 @@ liechtenstein.18.t:0 "Germans press for Liechtenstein Lands"
 liechtenstein.18.d:0 "Civil unrest and acts of violence have broken out as protesters voice their desire for [LIE.getNameDef] to join [LIE.getNameDef] in a union of [GER.getAdjective] peoples. Berlin is pressing hard for an annexation, which would see [LIE.getNameDef] territories annexed into their nation."
 liechtenstein.18.a:0 "We have no choice..."
 
-germany.35.t:0 "[LIE.getAdjective] responds to our demands"
+germany.35.t:0 "Liechtenstein responds to our demands"
 germany.35.d:0 "The [LIE.getAdjective] delegation have come forward to us, accepting our demands."
 germany.35.a:0 "All according to plan."
 
@@ -3270,7 +3270,7 @@ denmark.55.t:0 "Germans press for Danish Lands"
 denmark.55.d:0 "Civil unrest and acts of violence have broken out as protesters voice their desire for [DEN.getNameDef] to join [DEN.getNameDef] in a union of [GER.getAdjective] peoples. Berlin is pressing hard for an annexation, which would see [DEN.getNameDef] territories annexed into their nation."
 denmark.55.a:0 "We have no choice..."
 
-germany.36.t:0 "[DEN.getAdjective] responds to our demands"
+germany.36.t:0 "Denmark responds to our demands"
 germany.36.d:0 "The Danish delegation have come forward to us, accepting our demands."
 germany.36.a:0 "All according to plan."
 
@@ -3278,8 +3278,15 @@ lithuania.122.t:0 "Germans press for Lithuanian Lands"
 lithuania.122.d:0 "Civil unrest and acts of violence have broken out as protesters voice their desire for [LIT.getNameDef] to join [DEN.getNameDef] in a union of [LIT.getAdjective] peoples. Berlin is pressing hard for an annexation, which would see [LIT.getNameDef] territories annexed into their nation."
 lithuania.122.a:0 "We have no choice..."
 
-germany.37.t:0 "[LIT.getAdjective] responds to our demands"
+germany.37.t:0 "Lithuania responds to our demands"
 germany.37.d:0 "The Lithunian delegation have come forward to us, accepting our demands."
 germany.37.a:0 "Eine wiedervereinte nation."
 
+germany.38.t:0 "France responds to our demands"
+germany.38.d:0 "The French delegation have come forward to us, accepting our demands."
+germany.38.a:0 "Wait, they gave in?"
+
+germany.39.t:0 "France refuses our demands"
+germany.39.d:0 "The French delegation have come forward to us, citing that Alsace-Lorraine has always been French, and will stay French."
+germany.39.b:0 "We will see about that."
 

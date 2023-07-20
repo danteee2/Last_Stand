@@ -16429,6 +16429,14 @@ focus_tree = {
 					random_days = 1	#a bit randomness
 				}
 			}
+
+			FRA = {
+				country_event = {
+					id = france.36
+					days = 1 
+					random_days = 1	#a bit randomness
+				}
+			}
 		}
 
 	}

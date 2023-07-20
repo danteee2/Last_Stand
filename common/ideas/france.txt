@@ -23,6 +23,23 @@ ideas = {
 			}
 		}
 
+		#LAST STAND IDEAS
+		FRA_relinquished_maginot = {
+		picture = generic_economic_increase
+		allowed = {
+			original_tag = FRA 
+			always = no
+		}
+		
+		removal_cost = -1
+		
+		modifier = {
+			consumer_goods_factor = -0.05
+			production_speed_bunker_factor = 0.10
+			production_speed_coastal_bunker_factor = 0.10
+		}
+	}
+
 		FRA_militarist_society = {
 			
 			allowed = {
@@ -4312,8 +4329,7 @@ ideas = {
 		}		
 		
 	}
-	
-	
+
 	theorist = {
 		
 		EFR_maxime_weygand = {
@@ -4345,5 +4361,6 @@ ideas = {
 			
 			traits = { military_theorist }
 		}
-	}	
+	}
 }
+
