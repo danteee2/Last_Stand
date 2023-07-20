@@ -3982,7 +3982,7 @@ ideology_join_faction = {
 #		text = "RULE_OPTION_SAME_IDEOLOGY_EXCEPT_NON_ALIGNED"
 #		desc = "RULE_IDEOLOGY_JOIN_FACTION_SAME_IDEOLOGY_EXCEPT_NON_ALIGNED_DESC"
 #	}		
-	option = {
+	default = {
 		name = "ALLOWED"
 		text = "RULE_OPTION_ALLOWED"
 		desc = "RULE_ALLOW_JOIN_FACTION_DESC"
@@ -4038,19 +4038,14 @@ starting_agencies = {
 	group = "RULE_GROUP_GAMEPLAY"
 	icon = "GFX_boosting_party_popularity"
 	default = {
-		name = DEFAULT
-		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_EXTRA_OPERATIVES_DESC"
+		name = ALL_MAJORS
+		text = "RULE_OPTION_ALL_MAJORS"
+		desc = "RULE_OPTION_ALL_MAJORS_DESC"
 	}
 	option = {
 		name = NON_US_MAJORS
 		text = "RULE_OPTION_NON_US_MAJORS"
 		desc = "RULE_OPTION_NON_US_MAJORS_DESC"
-	}
-	option = {
-		name = ALL_MAJORS
-		text = "RULE_OPTION_ALL_MAJORS"
-		desc = "RULE_OPTION_ALL_MAJORS_DESC"
 	}
 	option = {
 		name = ALL_MAJORS_AND_STRONG_MINORS
@@ -4070,19 +4065,14 @@ extra_operatives = {
 	group = "RULE_GROUP_GAMEPLAY"
 	icon = "GFX_volunteers"
 	default = {
-		name = DEFAULT
-		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_EXTRA_OPERATIVES_DESC"
+		name = TWO_EXTRA
+		text = "RULE_OPTION_TWO_EXTRA"
+		desc = "RULE_OPTION_TWO_EXTRA_DESC"
 	}
 	option = {
 		name = ONE_EXTRA
 		text = "RULE_OPTION_ONE_EXTRA"
 		desc = "RULE_OPTION_ONE_EXTRA_DESC"
-	}
-	option = {
-		name = TWO_EXTRA
-		text = "RULE_OPTION_TWO_EXTRA"
-		desc = "RULE_OPTION_TWO_EXTRA_DESC"
 	}
 	option = {
 		name = THREE_EXTRA
