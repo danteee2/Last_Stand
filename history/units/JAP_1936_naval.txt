@@ -260,7 +260,8 @@ units = {
 			ship = { name = "Yaeyama" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Katsuriki Class"} } }
 			ship = { name = "Atago" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Takao Class"} } }	# at Yokosuka, Flagship of "Dai 2 Kantai"
 		}	
-	}		
+	}
+}		
 			
 
 
@@ -269,19 +270,7 @@ units = {
 #########################
 instant_effect = 
 {
-	
-### Ongoing Naval Production Jan 1 1936 ###
-		# BB (x1): "Hiei"
-	#	add_equipment_production = {				
-	#		equipment = {
-	#			type = ship_hull_heavy_1
-	#			creator = "JAP"
-	#			version_name = "Kongo Class"
-	#		}
-	#		requested_factories = 1
-	#		progress = 0.2
-	#		amount = 1
-	#	}
+	{
 		# CV (x1): "Soryu"
 		add_equipment_production = {				
 			equipment = {
@@ -451,5 +440,5 @@ instant_effect =
 			progress = 0.80
 			amount = 1
 		}
-	
+	}
 }
