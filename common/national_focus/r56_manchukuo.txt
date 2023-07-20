@@ -33,9 +33,6 @@ focus_tree = {
 				717 = {
 					is_owned_by = ROOT
 				}
-				716 = {
-					is_owned_by = ROOT
-				}
 				714 = {
 					is_owned_by = ROOT
 				}
@@ -191,11 +188,7 @@ focus_tree = {
 		y = 1
 		cost = 5	
 		bypass = {
-			716 = {
-				NOT = {
-					is_owned_by = ROOT
-				}
-			}
+			
 		}
 		completion_reward = {
 			if = {
