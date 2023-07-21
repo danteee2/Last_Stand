@@ -2811,8 +2811,6 @@ technologies = {
 			max_organisation = 5
 		}
 
-		army_core_defence_factor = 0.05
-
 
 		path = {
 			leads_to_tech = large_front_operations
@@ -3349,7 +3347,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		infantry = {
-			default_morale = 0.30
+			default_morale = 0.20
 		}
 		land_reinforce_rate = 0.05
 
@@ -3391,7 +3389,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		category_all_infantry = {
-			max_organisation = 10
+			max_organisation = 5
 		}
 		category_tanks = {
 			max_organisation = 2
@@ -3444,7 +3442,7 @@ technologies = {
 			combat_width = -0.4
 		}
 
-		land_reinforce_rate = 0.15
+		land_reinforce_rate = 0.1
 
 		path = {
 			leads_to_tech = guerilla_warfare
