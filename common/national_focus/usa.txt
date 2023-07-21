@@ -12696,7 +12696,7 @@ focus_tree = {
 			JAP = { controls_state = 439 }
 		}
 	}
-			democratic > 0.95
+			democratic > 0.90
 		}
 		
 		search_filters = {FOCUS_FILTER_RESEARCH}
