@@ -10340,15 +10340,6 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-			if = {
-				limit = {
-					has_dlc = "No Step Back"
-				}
-				has_tech = interwar_antitank
-			}
-		}
-
 		completion_reward = {
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = tank_destroyer_board
@@ -10792,16 +10783,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-			if = {
-				limit = {
-					has_dlc = "No Step Back"
-				}
-				has_tech = advanced_medium_tank_chassis
-				has_tech = artillery4
-			}
 		}
 
 		completion_reward = {
