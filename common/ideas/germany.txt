@@ -1,5 +1,27 @@
 ideas = {
 	country = {
+			### new alt hist path 
+			GER_intercepted_civilian_intelligience2 = {
+				allowed = {
+					always = yes
+				}
+				removal_cost = -1
+				picture = generic_secret_police
+				modifier = {
+					civilian_intel_to_others = -50
+				}
+			}
+			GER_seized_jewish_assets2 = {
+				allowed = {
+					always = yes
+				}
+				removal_cost = -1
+				picture = tur_balkan_central_bank_wealthy_greece
+				modifier = {
+					consumer_goods_factor = -0.03
+					stability_factor = -0.1
+				}
+			}
 		#from Poland mod
 		GER_eastern_supply_logistics = {
 			allowed = {

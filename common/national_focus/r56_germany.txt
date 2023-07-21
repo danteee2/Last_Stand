@@ -17012,8 +17012,143 @@ focus_tree = {
 
 
 		completion_reward = {
-			add_stability = 0.1
+			add_war_support = 0.15
 		}
 	}
-	
+	focus = {
+		id = GER_seize_jewish_assets
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		icon = GFX_goal_generic_banking_legislation
+		cost = 5.00
+		ai_will_do = { factor = 10 }
+		prerequisite = {
+			focus = GER_assert_cultural_dominance
+		}
+		x = -2
+		y = 2
+		relative_position_id = GER_demand_dominant_germanic_lands
+		completion_reward = {
+			add_ideas = GER_seized_jewish_assets2
+		}
+
+	}
+	focus = {
+		id = GER_encourage_counterurbanisation
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		icon = GFX_goal_generic_promote_ruralism
+		cost = 5.00
+		ai_will_do = { factor = 10 }
+		prerequisite = {
+			focus = GER_the_song_of_the_white_woman
+		}
+		x = 0
+		y = 1
+		relative_position_id = GER_the_song_of_the_white_woman
+		completion_reward = {
+			add_ideas = GER_seized_jewish_assets2
+		}
+
+	}
+	focus = {
+		id = GER_intercept_civilian_intelligience
+		icon = GFX_goal_arrests
+		cost = 5.00
+		ai_will_do = { factor = 10 }
+		prerequisite = {
+			focus = GER_formulate_ss_agency
+		}
+		x = -9
+		y = 2
+		relative_position_id = GER_himmler_takes_lead
+		completion_reward = {
+			add_ideas = GER_intercepted_civilian_intelligience2
+		}
+
+	}
+	focus = {
+		id = GER_himmler_italy_attack
+		icon = GFX_focus_ger_assassinate_mussolini
+		cost = 5
+		prerequisite = {
+			focus = GER_formulate_ss_agency
+		}
+		available = {
+			is_subject = no
+			ITA = {
+				exists = yes
+				NOT = {
+					is_in_faction_with = ROOT
+					has_war_with = ROOT
+				}
+			}
+		}
+		relative_position_id = GER_himmler_takes_lead
+		x = -4
+		y = 2
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				NOT = {
+					is_neighbor_of = ITA
+					any_allied_country = {
+						is_neighbor_of = ITA
+					}
+				}
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ITA
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+	}
+	focus = {
+		id = GER_alliance_with_italy_himmler
+		icon = GFX_goal_generic_befriend_italy
+		cost = 5
+		prerequisite = {
+			focus = GER_formulate_ss_agency
+			#focus = GER_anti_comitern_pact	#improves lines
+		}
+		mutually_exclusive = {
+			focus = GER_himmler_italy_attack
+		}
+		relative_position_id = GER_himmler_takes_lead
+		x = -6
+		y = 2
+		ai_will_do = {
+			factor = 9.5
+		}
+		available = {
+			NOT = {
+				has_war_with = ITA
+			}
+			ITA = {
+				exists = yes
+				NOT = {
+					is_in_faction_with = ROOT
+					has_war_with = ROOT
+				}
+			}
+		} 
+		bypass = {
+			ITA = {
+				r56_script_standard_bypass = yes
+			}
+		}
+		completion_reward = {
+			ITA = {
+				add_opinion_modifier = {
+					target = GER
+					modifier = huge_increase
+				}
+			}
+			add_political_power = 75
+		}
+	}
 }
