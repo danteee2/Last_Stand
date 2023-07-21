@@ -187,4 +187,15 @@ spriteTypes = {
 				name = "GFX_goal_mexican_miracle_shine"
 				textureFile = "gfx/interface/goals/mex/goal_mexican_miracle_shine.dds"
 			}
+
+			#ROMANIA LAST STAND
+			spriteType = {
+				name = "GFX_goal_fuel_the_fire"
+				textureFile = "gfx/interface/goals/rom/goal_fuel_the_fire.dds"
+			}
+			
+			spriteType = {
+				name = "GFX_goal_fuel_the_fire_shine"
+				textureFile = "gfx/interface/goals/rom/goal_fuel_the_fire_shine.dds"
+			}
 }

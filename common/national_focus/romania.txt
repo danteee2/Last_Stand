@@ -6057,7 +6057,7 @@ focus_tree = {
  }
  focus = {
 	id = ROM_more_oil
-	icon = GFX_goal_generic_oil_refinery
+	icon = GFX_goal_fuel_the_fire
 	prerequisite = {focus = expand_romanian_industry}
 	relative_position_id = ROM_protect_the_nation
 	x = -2
