@@ -1026,7 +1026,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				max_command_power = 25	
+				max_command_power = 50	
 			}
 		}
 		USA_department_of_defense = {	
