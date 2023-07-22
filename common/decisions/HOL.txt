@@ -2379,7 +2379,7 @@ political_actions = {
 			LUX = { has_government = ROOT }
 		}
 
-		cost = 300
+		cost = 100
 
 		fire_only_once = yes
 
