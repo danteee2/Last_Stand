@@ -603,16 +603,15 @@ on_actions = {
 	}
 
 	#DOUBLE DOCTRINE
-	on_monthly = {
-		effect = {
-		  every_country = { 
-			limit = { has_double_doctrine = yes }
-			DDR = { change_tag_from = ROOT }
-		  }
-		}
-	}
+	#on_monthly = {
+		#effect = {
+		  #every_country = { 
+			#limit = { has_double_doctrine = yes }
+			#DDR = { change_tag_from = ROOT }
+		 # }
+		#}
+	#}
 	
-
 	# ROOT is previously capitulated country
 	on_uncapitulation = {
 		effect = {

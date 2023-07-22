@@ -975,22 +975,22 @@ is_at_peace_exiled_countries_excluded = {
 }
 
 #DOUBLE DOCTRINE FIX
-has_double_doctrine = {
-	OR = {
-		AND = { has_tech = mobile_warfare has_tech = superior_firepower }
-		AND = { has_tech = mobile_warfare has_tech = trench_warfare}
-		AND = { has_tech = mobile_warfare has_tech = mass_assault}
-		AND = { has_tech = superior_firepower has_tech = mobile_warfare }
-		AND = { has_tech = superior_firepower has_tech = trench_warfare}
-		AND = { has_tech = superior_firepower has_tech = mass_assault}
-		AND = { has_tech = trench_warfare has_tech = superior_firepower }
-		AND = { has_tech = trench_warfare has_tech = mobile_warfare}
-		AND = { has_tech = trench_warfare has_tech = mass_assault}
-		AND = { has_tech = mass_assault has_tech = superior_firepower }
-		AND = { has_tech = mass_assault has_tech = mobile_warfare}
-		AND = { has_tech = mass_assault has_tech = trench_warfare}
-	}
-}
+#has_double_doctrine = {
+	#OR = {
+		#AND = { has_tech = mobile_warfare has_tech = superior_firepower }
+		#AND = { has_tech = mobile_warfare has_tech = trench_warfare}
+		#AND = { has_tech = mobile_warfare has_tech = mass_assault}
+		#AND = { has_tech = superior_firepower has_tech = mobile_warfare }
+		#AND = { has_tech = superior_firepower has_tech = trench_warfare}
+		#AND = { has_tech = superior_firepower has_tech = mass_assault}
+		#AND = { has_tech = trench_warfare has_tech = superior_firepower }
+		#AND = { has_tech = trench_warfare has_tech = mobile_warfare}
+		#AND = { has_tech = trench_warfare has_tech = mass_assault}
+		#AND = { has_tech = mass_assault has_tech = superior_firepower }
+		#AND = { has_tech = mass_assault has_tech = mobile_warfare}
+		#AND = { has_tech = mass_assault has_tech = trench_warfare}
+	#}
+#}
 
 
 #State scope
