@@ -602,6 +602,17 @@ on_actions = {
 		}
 	}
 
+	#DOUBLE DOCTRINE
+	on_monthly_GER = {
+		effect = {
+		  every_country = { 
+			limit = { has_double_doctrine = yes }
+			DDR = { change_tag_from = ROOT }
+		  }
+		}
+	}
+	
+
 	# ROOT is previously capitulated country
 	on_uncapitulation = {
 		effect = {
@@ -2927,4 +2938,3 @@ on_actions = {
 		}
 	}
 }
-
