@@ -603,7 +603,7 @@ on_actions = {
 	}
 
 	#DOUBLE DOCTRINE
-	on_monthly_GER = {
+	on_monthly = {
 		effect = {
 		  every_country = { 
 			limit = { has_double_doctrine = yes }
