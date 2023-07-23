@@ -1,50 +1,6 @@
 ideas = {
 
 	country = {
-
-		##laststand
-		CUB_nuclear_production = {
-
-			name = CUB_nuclear_production
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-			picture = jap_supremacy_of_technology
-			
-			modifier = { 
-				nuclear_production_factor = 0.25
-			   }
-		}
-
-		CUB_world_class_scientists = {
-
-			name = CUB_world_class_scientists
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-			picture = jap_supremacy_of_technology
-			
-			modifier = { 
-				stability_factor = -0.25
-				research_speed_factor = 0.2 
-			   }
-		}
 		CUB_the_nine_cent_law = {
 
 			allowed = {
