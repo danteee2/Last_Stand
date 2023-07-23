@@ -13,21 +13,13 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = { #Enter alliance
+	option = { #Accept unification
 		name = belgium.1.a
 		set_country_flag = benelux_accepted
 		ai_chance = {
-			factor = 90
+			factor = 100
 		}
 		BEL = {
-			add_to_faction = ROOT
-			ROOT = {
-				add_ai_strategy = {
-					type = alliance
-					id = "FRA"
-					value = 200
-				}
-			}
 			country_event = { id = belgium.3 days = 1 }
 		}
 	}
@@ -35,7 +27,7 @@ country_event = {
 	option = { #Refuse
 		name = belgium.1.b
 		ai_chance = {
-			factor = 10
+			factor = 0
 		}
 		set_global_flag = benelux_alliance_failed
 		BEL = {
@@ -45,7 +37,7 @@ country_event = {
 	}
 }
 
-#alliance refused
+#Benelux refused
 country_event = {
 	id = belgium.2
 	title = belgium.2.t
@@ -57,13 +49,10 @@ country_event = {
 	option = {
 		name = belgium.2.a
 		BEL = { dismantle_faction = yes }
-		hidden_effect = {
-			news_event = { hours = 6 id = belgium.98 }
-		}
 	}
 }
 
-#alliance accepted
+#Unification accepted
 country_event = {
 	id = belgium.3
 	title = belgium.3.t
@@ -73,7 +62,34 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = belgium.3.a		
+		name = belgium.3.a
+		HOL = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		LUX = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = HOL
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = LUX
+			transfer_troops = yes
+		}
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = HOL
+					is_core_of = LUX
+				}
+			}
+			add_core_of = ROOT
+		}
 	}
 }
 
