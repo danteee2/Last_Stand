@@ -500,7 +500,7 @@
 		}		
 	}
 	FLA_adamski={
-		name="adamski"
+		name="Adamski"
 		portraits={
 			army={
 				large="gfx/leaders/BEL/adamski.dds"
