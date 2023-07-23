@@ -715,8 +715,8 @@ SpriteType = {
 
 ##--> FLA <><> <><>
 	spriteType = {
-		name = "GFX_idea_FLA_alexis_vander_veken"
-		texturefile = "gfx/interface/ideas/bel/advisors/r56_idea_FLA_advisor_alexis_vander_veken.dds"
+		name = "GFX_idea_adamski"
+		texturefile = "gfx/interface/ideas/bel/advisors/adamskiminister.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_FLA_auguste_baesens"
