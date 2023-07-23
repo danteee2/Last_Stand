@@ -1146,10 +1146,15 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = SOV_synthetic_rubber
-				bonus = 0.75
+				bonus = 1
 				uses = 2
 				category = cat_synth_rubber
 			}
+			modify_building_resources = {
+				building = rubber_refinery
+				resource = rubber
+				amount = 2
+			 }
 		}
 	}
 
@@ -28183,3 +28188,4 @@ focus = {
 #		}
 #	}
 #}
+}
