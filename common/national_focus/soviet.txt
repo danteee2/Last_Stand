@@ -7366,7 +7366,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			add_to_variable = { SOV_the_red_army_cas_damage_reduction = 0.075 }
+			add_to_variable = { SOV_the_red_army_cas_damage_reduction = 0.05 }
 			add_to_variable = { SOV_the_red_army_max_dig_in = 5 }
 			add_to_variable = { SOV_the_red_army_dig_in_speed_factor = 0.05 }
 			custom_effect_tooltip = SOV_experts_in_camouflage_ns_tt
