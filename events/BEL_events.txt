@@ -73,6 +73,9 @@ country_event = {
 				set_nationality = ROOT
 			}
 		}
+		BEL = {
+			puppet = INS
+		}
 		annex_country = {
 			target = HOL
 			transfer_troops = yes
