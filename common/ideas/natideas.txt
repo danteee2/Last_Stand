@@ -638,10 +638,8 @@ ideas = {
 				}
 				
 				on_add = {
-					
+					add_research_slot = 1
 				}
-				
-				traits = { natidea_innovation_10 }
 		
 				ai_will_do = {
 					factor = 1

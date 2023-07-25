@@ -10178,6 +10178,9 @@ focus_tree = {
 		relative_position_id = GER_anti_comitern_pact
 		x = 0
 		y = 2
+		bypass = {
+			has_war_with = SOV
+		}
 		ai_will_do = {
 			factor = 10
 			modifier = {
