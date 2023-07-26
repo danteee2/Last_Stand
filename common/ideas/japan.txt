@@ -968,6 +968,7 @@ ideas = {
 			picture = jap_supremacy_of_technology
 			
 <<<<<<< HEAD
+<<<<<<< HEAD
 			modifier = { 
 				research_speed_factor = 0.2 
 			   }
@@ -976,6 +977,14 @@ ideas = {
 				research_speed_factor = 0.2
 			}
 >>>>>>> parent of dc4b4f96 (port localisation)
+=======
+			research_bonus = {
+				infantry_weapons = 0.20
+				support_tech = 0.20
+				armor = 0.20
+				artillery = 0.20
+			}
+>>>>>>> parent of 47be9f68 (localisation)
 		}
 		JAP_internal_industry = {
 
