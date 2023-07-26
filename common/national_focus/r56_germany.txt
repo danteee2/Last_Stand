@@ -16365,7 +16365,7 @@ focus_tree = {
 		
 		
 		relative_position_id = GER_continue_remilitarization_in_the_rhineland
-		x = 2
+		x = 0
 		y = 1
 		prerequisite = {
 			focus = GER_continue_remilitarization_in_the_rhineland
@@ -16479,7 +16479,7 @@ focus_tree = {
 			focus = GER_for_the_german_people
 		}
 		relative_position_id = GER_the_alternative
-		x = 0
+		x = 1
 		y = 2
 		ai_will_do = {
 			factor = 100
@@ -16646,7 +16646,7 @@ focus_tree = {
 		prerequisite = { focus = GER_for_the_german_people }
 	
 
-        x = -2	
+        x = -1
         y = 2
 
         cost = 10
@@ -17016,7 +17016,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GER_seize_jewish_assets
+		id = GER_seize_assets_of_the_political_oppositions
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		icon = GFX_goal_generic_banking_legislation
 		cost = 5.00
@@ -17024,11 +17024,42 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_assert_cultural_dominance
 		}
-		x = -2
+		mutually_exclusive = {
+			focus = GER_silence_political_opponents
+		}
+		x = -1
 		y = 2
 		relative_position_id = GER_demand_dominant_germanic_lands
 		completion_reward = {
-			add_ideas = GER_seized_jewish_assets2
+			add_ideas = GER_seized_assets
+		}
+
+	}
+	focus = {
+		id = GER_silence_political_opponents
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		icon = GFX_focus_generic_conspiracy
+		cost = 5.00
+		ai_will_do = { factor = 10 }
+		prerequisite = {
+			focus = GER_assert_cultural_dominance
+		}
+		mutually_exclusive = {
+			focus = GER_seize_assets_of_the_political_oppositions
+		}
+		x = 1
+		y = 2
+		relative_position_id = GER_demand_dominant_germanic_lands
+		completion_reward = {
+			add_stability = 0.15
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.20
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.20
+			}
 		}
 
 	}

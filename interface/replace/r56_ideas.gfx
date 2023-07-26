@@ -926,6 +926,12 @@ spriteType = {
 		name = "GFX_idea_GER_Wilhelm_IV"
 		texturefile = "gfx/interface/ideas/ger/r56_idea_GER_Wilhelm_IV.dds"
 	}
+
+	## last stand
+	spriteType = {
+		name = "GFX_idea_GER_hitlers_shadow"
+		texturefile = "gfx/interface/ideas/ger/GER_hitlers_shadow.dds"
+	}
 ###------> GRE <><> <><> <><> <><> <><>
 	spriteType = { #Auto-Generated
 		name = "GFX_idea_eon"
