@@ -25,7 +25,7 @@
 		x = 4
 		y = 0
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 0.75 #it's now more unthinkable
@@ -79,14 +79,10 @@
 		relative_position_id = JAP_the_unthinkable_option
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 		cost = 5
 =======
 		cost = 10
 >>>>>>> parent of a1d8785e (port base tree)
-=======
-		cost = 3
->>>>>>> parent of ad5a2976 (completed focus tree)
 
 		ai_will_do = {
 			factor = 1
@@ -143,14 +139,10 @@
 		relative_position_id = JAP_the_unthinkable_option
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 		cost = 5
 =======
 		cost = 10
 >>>>>>> parent of a1d8785e (port base tree)
-=======
-		cost = 2
->>>>>>> parent of ad5a2976 (completed focus tree)
 
 		ai_will_do = {
 			factor = 1
@@ -1620,7 +1612,7 @@
 					instant_build = yes
 				}
 			}
-			unlock_decision_tooltip = JAP_develop_kanto_aluminium
+			add_ideas = JAP_internal_industry
 		}
 	}
 	focus = {

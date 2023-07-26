@@ -18,6 +18,8 @@
  JAP_japan_steel_works:0 "Japan Steel Works"
  JAP_nippon_oil:0 "Nippon Oil"
  JAP_hitachi_zosen:0 "Hitachi Zōsen Corporation"
+JAP_secure_the_philippines:0 "Secure The Philippines"
+JAP_secure_the_philippines_desc:0 "We must seize the Philippines and launch our pacfic hegemony war."
 
 
  JAP_teruhisa_komatsu:0 "Teruhisa Komatsu"
@@ -136,6 +138,7 @@
 
  JAP_invite_canada:0 "Invite Canada"
  JAP_invite_canada_desc:0 "Have you ever tried putting maple syrup on your sushi?"
+JAP_internal_industry:0 "Internal Industry"
 
  JAP_invite_the_philippines:0 "Invite the Philippines"
  JAP_invite_the_philippines_desc:0 "Now that the USA has left, it's our responsibility to defend the Philippines from other colonialist powers." 

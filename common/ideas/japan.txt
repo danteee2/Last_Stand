@@ -986,7 +986,29 @@ ideas = {
 			}
 >>>>>>> parent of 47be9f68 (localisation)
 		}
+		JAP_internal_industry = {
 
+name = JAP_internal_industry
+
+allowed = {
+	always = no
+}
+
+allowed_civil_war = {
+	always = yes
+}
+
+removal_cost = -1
+
+picture = new_economic_policy
+
+modifier = { 
+	global_building_slots_factor = 0.25
+	consumer_goods_factor = 0.05
+   }
+}
+
+		
 		JAP_superior_will = {
 
 			name = JAP_superior_will
