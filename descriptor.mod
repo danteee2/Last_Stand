@@ -4,9 +4,8 @@ tags={
 	"Balance"
 	"Utilities"
 }
-name="Last Stand"
+name="Last Stand 56-dev"
 picture="thumbnail.png"
 replace_path="history/states"
 replace_path="map/strategicregions"
 supported_version="1.12.14"
-remote_file_id="2988546232"
