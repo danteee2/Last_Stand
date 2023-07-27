@@ -17,7 +17,7 @@ ideas = {
 				traits = {  }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -38,7 +38,7 @@ ideas = {
 				traits = { natidea_economic_1 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -59,7 +59,7 @@ ideas = {
 				traits = { natidea_economic_2 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -80,7 +80,7 @@ ideas = {
 				traits = { natidea_economic_3 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -101,7 +101,7 @@ ideas = {
 				traits = { natidea_economic_4 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -122,7 +122,7 @@ ideas = {
 				traits = { natidea_economic_5 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -143,7 +143,7 @@ ideas = {
 				traits = { natidea_economic_6 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -164,7 +164,7 @@ ideas = {
 				traits = { natidea_economic_7 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -185,7 +185,7 @@ ideas = {
 				traits = { natidea_economic_8 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -206,7 +206,7 @@ ideas = {
 				traits = { natidea_economic_9 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -227,7 +227,7 @@ ideas = {
 				traits = { natidea_economic_10 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -246,7 +246,7 @@ ideas = {
 				traits = {  }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -265,7 +265,7 @@ ideas = {
 				traits = { natidea_expansion_1 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -284,7 +284,7 @@ ideas = {
 				traits = { natidea_expansion_2 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -303,7 +303,7 @@ ideas = {
 				traits = { natidea_expansion_3 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -322,7 +322,7 @@ ideas = {
 				traits = { natidea_expansion_4 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -341,7 +341,7 @@ ideas = {
 				traits = { natidea_expansion_5 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -360,7 +360,7 @@ ideas = {
 				traits = { natidea_expansion_6 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -379,7 +379,7 @@ ideas = {
 				traits = { natidea_expansion_7 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -398,7 +398,7 @@ ideas = {
 				traits = { natidea_expansion_8 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -417,7 +417,7 @@ ideas = {
 				traits = { natidea_expansion_9 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -436,11 +436,12 @@ ideas = {
 				traits = { natidea_expansion_10 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
 			natinnovation_0 = {
+				default = yes
 				
 				allowed = {
 				}
@@ -454,7 +455,7 @@ ideas = {
 				traits = {  }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -473,7 +474,7 @@ ideas = {
 				traits = { natidea_innovation_1 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -492,7 +493,7 @@ ideas = {
 				traits = { natidea_innovation_2 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -511,7 +512,7 @@ ideas = {
 				traits = { natidea_innovation_3 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -530,7 +531,7 @@ ideas = {
 				traits = { natidea_innovation_4 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -549,7 +550,7 @@ ideas = {
 				traits = { natidea_innovation_5 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -568,7 +569,7 @@ ideas = {
 				traits = { natidea_innovation_6 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -587,7 +588,7 @@ ideas = {
 				traits = { natidea_innovation_7 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -606,7 +607,7 @@ ideas = {
 				traits = { natidea_innovation_8 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -625,7 +626,7 @@ ideas = {
 				traits = { natidea_innovation_9 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -638,11 +639,13 @@ ideas = {
 				}
 				
 				on_add = {
-					add_research_slot = 1
+					
 				}
+				
+				traits = { natidea_innovation_10 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -660,7 +663,7 @@ ideas = {
 				traits = {  }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -679,7 +682,7 @@ ideas = {
 				traits = { natidea_diplomatic_1 }
 		
 				ai_will_do = {
-					factor = 1000
+					factor = 0
 				}
 			}
 			
@@ -698,7 +701,7 @@ ideas = {
 				traits = { natidea_diplomatic_2 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -717,7 +720,7 @@ ideas = {
 				traits = { natidea_diplomatic_3 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -736,7 +739,7 @@ ideas = {
 				traits = { natidea_diplomatic_4 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -755,7 +758,7 @@ ideas = {
 				traits = { natidea_diplomatic_5 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -774,7 +777,7 @@ ideas = {
 				traits = { natidea_diplomatic_6 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -793,7 +796,7 @@ ideas = {
 				traits = { natidea_diplomatic_7 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -812,7 +815,7 @@ ideas = {
 				traits = { natidea_diplomatic_8 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -831,44 +834,7 @@ ideas = {
 				traits = { natidea_diplomatic_9 }
 		
 				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natdiplomatic_9_subject = {
-				
-				allowed = {
-				}
-
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_diplomatic_9_subject }
-				
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			natdiplomatic_9_dominion = {
-				
-				allowed = {
-				}
-
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natdiplomatic_9_dominion }
-				
-				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -887,45 +853,7 @@ ideas = {
 				traits = { natidea_diplomatic_10 }
 		
 				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natdiplomatic_10_subject = {
-				
-				allowed = {
-				}
-
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_diplomatic_10_subject }
-
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natdiplomatic_10_dominion = {
-				
-				allowed = {
-				}
-
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natdiplomatic_10_dominion }
-
-				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 		
@@ -943,7 +871,7 @@ ideas = {
 				traits = {  }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -952,7 +880,7 @@ ideas = {
 				allowed = {
 				}
 				
-				cost = 150
+				cost = 250
 
 				available = {
 				}
@@ -964,7 +892,7 @@ ideas = {
 				traits = { natidea_quality_1 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -983,7 +911,7 @@ ideas = {
 				traits = { natidea_quality_2 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -1002,7 +930,7 @@ ideas = {
 				traits = { natidea_quality_3 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -1021,7 +949,7 @@ ideas = {
 				traits = { natidea_quality_4 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -1040,7 +968,7 @@ ideas = {
 				traits = { natidea_quality_5 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -1059,7 +987,7 @@ ideas = {
 				traits = { natidea_quality_6 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -1078,7 +1006,7 @@ ideas = {
 				traits = { natidea_quality_7 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -1097,7 +1025,7 @@ ideas = {
 				traits = { natidea_quality_8 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -1116,7 +1044,7 @@ ideas = {
 				traits = { natidea_quality_9 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -1135,7 +1063,7 @@ ideas = {
 				traits = { natidea_quality_10 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -1153,7 +1081,7 @@ ideas = {
 				traits = {  }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -1172,7 +1100,7 @@ ideas = {
 				traits = { natidea_quantity_1 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -1191,7 +1119,7 @@ ideas = {
 				traits = { natidea_quantity_2 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -1210,7 +1138,7 @@ ideas = {
 				traits = { natidea_quantity_3 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -1229,7 +1157,7 @@ ideas = {
 				traits = { natidea_quantity_4 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -1248,7 +1176,7 @@ ideas = {
 				traits = { natidea_quantity_5 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -1267,7 +1195,7 @@ ideas = {
 				traits = { natidea_quantity_6 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -1286,7 +1214,7 @@ ideas = {
 				traits = { natidea_quantity_7 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -1305,7 +1233,7 @@ ideas = {
 				traits = { natidea_quantity_8 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -1324,7 +1252,7 @@ ideas = {
 				traits = { natidea_quantity_9 }
 		
 				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 			
@@ -1343,838 +1271,7 @@ ideas = {
 				traits = { natidea_quantity_10 }
 		
 				ai_will_do = {
-					factor = 1
-				}
-			}
-
-			natadmirality_0 = {
-				
-				allowed = {
-				}
-
-				available = {
-				}
-				
-				on_add = {
-				}
-				
-				traits = {  }
-		
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natadmirality_1 = {
-				
-				allowed = {
-				}
-
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_admirality_1 }
-		
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natadmirality_2 = {
-				
-				allowed = {
-				}
-
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_admirality_2 }
-		
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natadmirality_3 = {
-				
-				allowed = {
-				}
-
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_admirality_3 }
-		
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natadmirality_4 = {
-				
-				allowed = {
-				}
-
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_admirality_4 }
-		
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natadmirality_5 = {
-				
-				allowed = {
-				}
-
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_admirality_5 }
-		
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natadmirality_6 = {
-				
-				allowed = {
-				}
-
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_admirality_6 }
-		
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natadmirality_7 = {
-				
-				allowed = {
-				}
-
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_admirality_7 }
-		
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natadmirality_8 = {
-				
-				allowed = {
-				}
-
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_admirality_8 }
-		
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natadmirality_9 = {
-				
-				allowed = {
-				}
-
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_admirality_9 }
-		
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natadmirality_10 = {
-				
-				allowed = {
-				}
-
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_admirality_10 }
-		
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			###########
-			### MARITIME
-			natmaritime_0 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-				}
-				
-				traits = {  }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natmaritime_1 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_maritime_1 }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natmaritime_2 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_maritime_2 }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natmaritime_3 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_maritime_3 }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natmaritime_4 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_maritime_4 }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natmaritime_5 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_maritime_5 }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natmaritime_6 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_maritime_6 }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natmaritime_7 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_maritime_7 }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natmaritime_8 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_maritime_8 }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natmaritime_9 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_maritime_9 }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natmaritime_10 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_maritime_10 }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			natpilots_0 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-				}
-				
-				traits = {  }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natpilots_1 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_pilots_1 }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natpilots_2 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_pilots_2 }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natpilots_3 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_pilots_3 }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natpilots_4 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_pilots_4 }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natpilots_5 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_pilots_5 }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natpilots_6 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_pilots_6 }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natpilots_7 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_pilots_7 }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natpilots_8 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_pilots_8 }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natpilots_9 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_pilots_9 }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natpilots_10 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_pilots_10 }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			natairframes_0 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-				}
-				
-				traits = {  }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natairframes_1 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_airframes_1 }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natairframes_2 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_airframes_2 }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natairframes_3 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_airframes_3 }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natairframes_4 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_airframes_4 }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natairframes_5 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_airframes_5 }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natairframes_6 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_airframes_6 }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natairframes_7 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_airframes_7 }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natairframes_8 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_airframes_8 }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natairframes_9 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_airframes_9 }
-			
-				ai_will_do = {
-					factor = 1
-				}
-			}
-			
-			natairframes_10 = {
-				
-				allowed = {
-				}
-			
-				available = {
-				}
-				
-				on_add = {
-					
-				}
-				
-				traits = { natidea_airframes_10 }
-			
-				ai_will_do = {
-					factor = 1
+					factor = 0
 				}
 			}
 		}
