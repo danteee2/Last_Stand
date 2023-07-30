@@ -4,9 +4,9 @@ tags={
 	"Balance"
 	"Utilities"
 }
-name="Last Stand 56-dev"
+name="Last Stand-dev"
 picture="thumbnail.png"
 replace_path="history/states"
 replace_path="map/strategicregions"
 supported_version="1.12.14"
-path="C:/Users/Admin/OneDrive/Documents/Paradox Interactive/Hearts of Iron IV/mod/Last_Stand"
+remote_file_id="2988546232"
