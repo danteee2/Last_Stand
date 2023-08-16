@@ -1933,6 +1933,10 @@ formable_nations_mod_category = {
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_IBE
 			add_stability = 0.2
+			if = {
+				limit = { original_tag = POR }
+				add_ideas = por_divided_officer_corps
+			}
 			set_capital = { state = 41 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available

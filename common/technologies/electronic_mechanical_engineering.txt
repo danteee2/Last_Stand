@@ -1916,21 +1916,21 @@ technologies = {
 
 	rdf1 = {
 
-		resistance_damage_to_garrison = -0.01
- 		foreign_subversive_activites = -0.01
-		required_garrison_factor = -0.01
-		resistance_garrison_penetration_chance = -0.01
+		resistance_damage_to_garrison = -0.05
+ 		foreign_subversive_activites = -0.05
+		required_garrison_factor = -0.05
+		resistance_garrison_penetration_chance = -0.05
 
 		cavalry = {
-			suppression_factor = 0.01
+			suppression_factor = 0.05
 		}
 
 		armored_car = {
-			suppression_factor = 0.01
+			suppression_factor = 0.05
 		}
 
 		military_police = {
-			suppression_factor = 0.01
+			suppression_factor = 0.05
 		}
 		
 		path = {
@@ -1958,21 +1958,21 @@ technologies = {
 	}
 
 	rdf2 = {
-		resistance_damage_to_garrison = -0.01
- 		foreign_subversive_activites = -0.01
-		required_garrison_factor = -0.01
-		resistance_garrison_penetration_chance = -0.01
+		resistance_damage_to_garrison = -0.05
+ 		foreign_subversive_activites = -0.05
+		required_garrison_factor = -0.05
+		resistance_garrison_penetration_chance = -0.05
 
 		cavalry = {
-			suppression_factor = 0.01
+			suppression_factor = 0.05
 		}
 
 		armored_car = {
-			suppression_factor = 0.01
+			suppression_factor = 0.05
 		}
 
 		military_police = {
-			suppression_factor = 0.01
+			suppression_factor = 0.05
 		}
 		
 		path = {
@@ -2001,26 +2001,26 @@ technologies = {
 
 	rdf3 = {
 
-		resistance_damage_to_garrison = -0.01
- 		foreign_subversive_activites = -0.01
-	 	required_garrison_factor = -0.01
-		resistance_garrison_penetration_chance = -0.01
+		resistance_damage_to_garrison = -0.05
+ 		foreign_subversive_activites = -0.05
+	 	required_garrison_factor = -0.05
+		resistance_garrison_penetration_chance = -0.05
 
 		cavalry = {
-			suppression_factor = 0.01
+			suppression_factor = 0.05
 		}
 
 		armored_car = {
-			suppression_factor = 0.01
+			suppression_factor = 0.05
 		}
 
 		military_police = {
-			suppression_factor = 0.01
+			suppression_factor = 0.05
 		}
 		
 
 		military_police = {
-			suppression_factor = 0.01
+			suppression_factor = 0.05
 		}
 		
 		path = {
@@ -2048,22 +2048,22 @@ technologies = {
 	}
 
 	rdf4 = {
-		resistance_damage_to_garrison = -0.01
- 		foreign_subversive_activites = -0.01
-		required_garrison_factor = -0.01
-		resistance_garrison_penetration_chance = -0.01
+		resistance_damage_to_garrison = -0.05
+ 		foreign_subversive_activites = -0.05
+		required_garrison_factor = -0.05
+		resistance_garrison_penetration_chance = -0.05
 
 
 		cavalry = {
-			suppression_factor = 0.01
+			suppression_factor = 0.05
 		}
 
 		armored_car = {
-			suppression_factor = 0.01
+			suppression_factor = 0.05
 		}
 
 		military_police = {
-			suppression_factor = 0.01
+			suppression_factor = 0.05
 		}
 		
 		path = {
@@ -2091,22 +2091,22 @@ technologies = {
 	}
 	
 	rdf5 = {
-		resistance_damage_to_garrison = -0.01
- 		foreign_subversive_activites = -0.01
-		required_garrison_factor = -0.01
-		resistance_garrison_penetration_chance = -0.01
+		resistance_damage_to_garrison = -0.05
+ 		foreign_subversive_activites = -0.05
+		required_garrison_factor = -0.05
+		resistance_garrison_penetration_chance = -0.05
 
 
 		cavalry = {
-			suppression_factor = 0.01
+			suppression_factor = 0.05
 		}
 
 		armored_car = {
-			suppression_factor = 0.01
+			suppression_factor = 0.05
 		}
 
 		military_police = {
-			suppression_factor = 0.01
+			suppression_factor = 0.05
 		}
 		
 		path = {
@@ -2134,22 +2134,22 @@ technologies = {
 	}
 	
 	rdf6 = {
-		resistance_damage_to_garrison = -0.01
- 		foreign_subversive_activites = -0.01
-		required_garrison_factor = -0.01
-		resistance_garrison_penetration_chance = -0.01
+		resistance_damage_to_garrison = -0.05
+ 		foreign_subversive_activites = -0.05
+		required_garrison_factor = -0.05
+		resistance_garrison_penetration_chance = -0.05
 
 
 		cavalry = {
-			suppression_factor = 0.01
+			suppression_factor = 0.05
 		}
 
 		armored_car = {
-			suppression_factor = 0.01
+			suppression_factor = 0.05
 		}
 
 		military_police = {
-			suppression_factor = 0.01
+			suppression_factor = 0.05
 		}
 		
      	research_cost = 1.75

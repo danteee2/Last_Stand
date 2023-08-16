@@ -849,7 +849,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = industry
 			}
@@ -869,7 +869,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = electronics_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = electronics
 			}
@@ -888,7 +888,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = industry
 			}
@@ -906,7 +906,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = electronics_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = electronics
 			}
@@ -941,7 +941,7 @@ focus_tree = {
 			add_ideas = bra_iti_idea
 			add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = industry
 			}
@@ -960,7 +960,7 @@ focus_tree = {
 			swap_ideas = { remove_idea = bra_federal_universities_idea add_idea = bra_federal_universities_idea_2 }
 				add_tech_bonus = {
 					name = electronics_bonus
-					bonus = 0.5
+					bonus = 1.0
 					uses = 1
 					category = electronics
 				}
@@ -982,7 +982,7 @@ focus_tree = {
 			add_research_slot = 1
 			add_tech_bonus = {
 				name = secret_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = electronics
 				category = rocketry
@@ -1441,6 +1441,26 @@ focus = {
 				category = land_doctrine
 			}
 			swap_ideas = { remove_idea = bra_ana_paulista_idea_3  add_idea = bra_ana_paulista_idea_4 }
+		}
+		search_filters = { FOCUS_FILTER_MILITARY_IMPROVEMENT FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = bra_the_brazillian_army
+		icon = GFX_focus_chi_army_reform
+		prerequisite = { focus = bra_blitz focus = bra_barragem }
+		relative_position_id = bra_mec
+		x = -1
+		y = 2
+		cost = 10
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+			swap_ideas = { remove_idea = bra_bandeirantes  add_idea = bra_bandeirantes_reformed }
 		}
 		search_filters = { FOCUS_FILTER_MILITARY_IMPROVEMENT FOCUS_FILTER_RESEARCH }
 	}

@@ -253,14 +253,14 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 10782;5043;impassable;-1;-1;-1;-1;-1;;Iran Pakistan border region
 10782;12774;impassable;-1;-1;-1;-1;-1;;Iran Pakistan border region
 13082;12774;impassable;-1;-1;-1;-1;-1;;Iran Pakistan border region
-6571;9425;impassable;-1;-1;-1;-1;-1;;Carpathian mountains
-6571;3743;impassable;-1;-1;-1;-1;-1;;Carpathian mountains
-9704;3743;impassable;-1;-1;-1;-1;-1;;Carpathian mountains
-727;3743;impassable;-1;-1;-1;-1;-1;;Carpathian mountains
-727;9548;impassable;-1;-1;-1;-1;-1;;Carpathian mountains
-727;11689;impassable;-1;-1;-1;-1;-1;;Carpathian mountains
-9685;11689;impassable;-1;-1;-1;-1;-1;;Carpathian mountains
-9685;3728;impassable;-1;-1;-1;-1;-1;;Carpathian mountains
+6571;9425;-1;-1;-1;-1;-1;;Carpathian mountains
+6571;3743;-1;-1;-1;-1;-1;;Carpathian mountains
+9704;3743;-1;-1;-1;-1;-1;;Carpathian mountains
+727;3743;-1;-1;-1;-1;-1;;Carpathian mountains
+727;9548;-1;-1;-1;-1;-1;;Carpathian mountains
+727;11689;-1;-1;-1;-1;-1;;Carpathian mountains
+9685;11689;-1;-1;-1;-1;-1;;Carpathian mountains
+9685;3728;;-1;-1;-1;-1;-1;;Carpathian mountains
 12921;8136;impassable;-1;-1;-1;-1;-1;;Mamib Desert
 10978;8136;impassable;-1;-1;-1;-1;-1;;Mamib Desert
 10978;10957;impassable;-1;-1;-1;-1;-1;;Mamib Desert

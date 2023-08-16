@@ -427,7 +427,14 @@ BRA_estado_novo_desc:0 "Ever since 1889, Brazil has shown itself fragile to subv
  BRA_technical_schools_desc:0 "Sponsorship Technical Schools by the state form in Brazil, more technical and focused experts to industrial production."
  BRA_tecnocratic_reform_desc:0 "During the First Republic Meritocracy and Sciences were extremely valued by private and public institutions of the nation's scientific progress this season is undeniable, with the introduction of electricity and steel for high achievers With the advent of new. technologies, readoção these values ​​will be of significant benefit to the technological progress of the country."
  BRA_tiro_de_guerra_desc:0 "The War of Tyre was instituted as Army policy in 1916, consisting of the basic training of the reserves not called the country in the case of the state of emergency declaration Expansion of this program ensures Army columns to be filled by men better trained and closer to become fit for combat. "
- 
+
+#LAST STAND
+bra_the_brazillian_army:0 "The Brazillian Army"
+bra_the_brazillian_army_desc:0 "Embracing the future signifies a new era of military reform. By investing in our troops' training and modernizing our strategies, that strengthen our military might, marking Brazil's ascension as a formidable force on the global stage."
+
+bra_bandeirantes_reformed:0 "The Brazillian Millitary"
+bra_bandeirantes_reforemd_desc:0 "We have invested in our troops' training and modernized our strategies. We will be able to defend Brazil better now from invaders."
+
  
  bra_naval_logistics:0 "Naval Logistics"
  bra_naval_logistics_desc:0 "The sea is calling us, the time has come for a radical transformation to occur."

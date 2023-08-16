@@ -398,3 +398,6 @@ operation_liberty_lion_desc:0 "The new world shall liberate the old, no matter w
 #LAST STAND FOCUSES
 USA_operation_liberty_lion:0 "Operation Liberty Lion"
 USA_operation_liberty_lion_desc:0 "The unthinkable has happened. The british have fallen, marking German dominance in Europe. We will prepare to unleash a storm across the atlantic. The hour of reckoning has come; our unity shall echo through the corridors of time."
+
+USA_Los_Angeles_Repair:0 "Los Angeles Repair Facilities"
+USA_Los_Angeles_Repair_desc:0 "We have expanded our naval bases in Los Angeles to accomodate for more repairing capabilities."

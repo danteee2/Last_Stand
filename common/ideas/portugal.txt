@@ -1306,5 +1306,24 @@ country = {
 
 			}
 		}
+
+		por_divided_officer_corps = {
+		
+			allowed = {
+				original_tag = POR
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = smersh
+			
+			modifier = {		
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				experience_gain_army_factor = -0.25
+
+			}
+		}
 	}
 }

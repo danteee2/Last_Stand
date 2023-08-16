@@ -2,6 +2,59 @@ ideas = {
 
 	country = {
 		##last stand
+		churchills_influence = {
+			picture = tur_etatism
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+		strike_mainland_europe = {
+			picture = escort_effort_focus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				convoy_escort_efficiency = 0.15
+				naval_invasion_capacity = 10
+				invasion_preparation = -0.5
+			}
+		}
+		Increased_enlistment = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = prc_the_long_march2
+
+			modifier = {
+			conscription = 0.025
+			conscription_factor = 0.1
+			stability_factor = -0.05
+			}	
+		}
 		Trade_expanded = {
 			allowed = {
 				always = yes
@@ -619,7 +672,7 @@ ideas = {
 			
 
 		}
-		ENG_elisabeth_ii = {
+		ENG_elizabeth_ii = {
 
 			allowed = {
 				original_tag = ENG
@@ -779,6 +832,31 @@ ideas = {
 				army_armor_speed_factor = 0.1
 			}
 		}
+		motorized_army_four = {
+			
+			name = motorized_army_four
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = vauxhall
+			
+			modifier = {
+				mechanized_attack_factor = 0.05
+				mechanized_defence_factor = 0.05
+				army_armor_attack_factor = 0.1
+				army_armor_defence_factor = 0.05
+				army_armor_speed_factor = 0.1
+			}
+			
+		}
 		british_patriotism = {
 			
 			name = british_patriotism
@@ -797,7 +875,7 @@ ideas = {
 			
 			modifier = {
 				war_support_factor = 0.25
-				conscription = 0.01
+				conscription = 0.005
 				army_core_defence_factor = 0.05
 			}
 		}

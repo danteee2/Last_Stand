@@ -397,7 +397,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		icon = GFX_goal_fortify_city_AA
-		x = -9
+		x = -10
 		y = 1
 		relative_position_id = limited_rearmament_focus
 		cost = 10
@@ -832,69 +832,14 @@ focus_tree = {
 	focus = {
 		id = royal_ordinance_focus
 		available = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				OR = {
-					has_idea = ENG_no_further_appeasement_idea
-					NOT = { has_government = democratic }
-					OR = {
-						any_other_country = {
-							has_war_with = ROOT
-							num_of_factories > 30
-						}
-						GER = {
-							if = {
-								limit = {
-									NOT = { has_global_flag = ger_vanilla_focus_tree }
-								}
-								has_completed_focus = GER_rhineland
-							}
-							if = {
-								limit = {
-									has_global_flag = ger_vanilla_focus_tree
-								}
-								has_completed_focus = GER_rhineland_vanilla
-							}
-						}
-						threat > 0.2
-					}
-				}
-			}
-			if = {
-				limit = {
-					NOT = { has_dlc = "Man the Guns" }
-				}
-				OR = {
-					NOT = { has_government = democratic }
-					OR = {
-						any_other_country = {
-							has_war_with = ROOT
-							num_of_factories > 30
-						}
-						GER = {
-							if = {
-								limit = {
-									NOT = { has_global_flag = ger_vanilla_focus_tree }
-								}
-								has_completed_focus = GER_rhineland
-							}
-							if = {
-								limit = {
-									has_global_flag = ger_vanilla_focus_tree
-								}
-								has_completed_focus = GER_rhineland_vanilla
-							}
-						}
-						threat > 0.2
-					}
-				}
-			}
+			threat > 0.25
 		} #at war with major or ger in rhineland or high threat
 		prerequisite = { focus = ENG_tank_variant_focus }
+		prerequisite = {
+			focus = ENG_let_that_lion_roar
+		}
 		icon = GFX_goal_generic_munitions_factories
-		x = 1
+		x = -1
 		y = 3
 		relative_position_id = ENG_motorized_focus
 		cost = 10
@@ -966,6 +911,28 @@ focus_tree = {
 				}
 				set_state_flag = royal_ordinance_focus_2AF
 			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+	
+	focus = {
+		id = uk_small_arms_focus
+		prerequisite = { focus = royal_ordinance_focus }
+		icon = GFX_goal_machine_gun
+		x = 0
+		y = 1
+		relative_position_id = royal_ordinance_focus
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+mutually_exclusive = {
+	focus = ENG_order_increased_tank_production
+}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = british_arms_discount
 			random_owned_controlled_state = {
 				limit = {
 					is_in_home_area = yes
@@ -981,37 +948,16 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-				set_state_flag = royal_ordinance_focus_2AF
 			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-	
-	focus = {
-		id = uk_small_arms_focus
-		prerequisite = { focus = royal_ordinance_focus }
-		icon = GFX_goal_machine_gun
-		x = 1
-		y = 1
-		relative_position_id = royal_ordinance_focus
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = british_arms_discount
 		}
 	}
 	focus = {
 		id = UK_secret_focus
 		prerequisite = { focus = maud_focus focus = ENG_tube_alloys }
 		icon = GFX_goal_generic_secret_weapon
-		x = -7
-		y = 1
-		relative_position_id = royal_ordinance_focus
+		x = 0
+		y = 4
+		relative_position_id = air_defense_focus
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2760,12 +2706,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_war_with_italy
-		available = {
-			has_offensive_war = no
-			ITA = {
-				ENG_focus_available_war = yes
-			}	
-		}
+		
 		bypass = {
 			has_war_with = ITA
 		}
@@ -8639,26 +8580,7 @@ focus_tree = {
 
 	focus = {
 		id = uk_iraq_focus
-		available = {
-			is_subject = no
-			num_of_factories > 30
-			has_navy_size = {
-				size > 15
-			}
-			NOT = {
-				is_in_faction_with = IRQ
-			}
-			IRQ = {
-				NOT = {
-					is_subject_of = ROOT
-				}
-				OR = { 
-					communism > 0.2
-			 		fascism > 0.2
-					has_country_flag = IRQ_nationalized_oil_fields
-			 	} 
-			}
-		} #UK at war with fascist/commie. iraq is fascist/commie
+		
 
 		bypass = {
 			IRQ = {
@@ -8726,22 +8648,7 @@ focus_tree = {
 	}
 	focus = {
 		id = uk_iran_focus
-		available = {
-			is_subject = no
-			NOT = {
-				is_in_faction_with = PER
-			}
-			PER = {
-				exists = yes
-				NOT = {
-					is_subject_of = ROOT
-				}
-				OR = { 
-					communism > 0.2
-			 		fascism > 0.2
-			 	} 
-			}
-		} #UK at war with fascist/commie. iran is fascist/commie
+		
 
 		bypass = {
 			PER = {
@@ -9190,12 +9097,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_war_with_germany
-		available = {
-			is_subject = no
-			GER = {
-				ENG_focus_available_war = yes
-			}
-		}
+		
 		bypass = {
 			has_war_with = GER
 		}
@@ -9372,13 +9274,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_war_with_japan
-		available = {
-			has_offensive_war = no
-			JAP = {
-				ENG_focus_available_war = yes
-			}	
-			has_government = democratic
-		}
+		
 		bypass = {
 			has_war_with = JAP
 		}
@@ -9401,7 +9297,37 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
+	focus = {
+		id = ENG_harness_churchill's_figure
+		
 
+			available = { 
+				has_country_leader =  {
+					name = "Winston Churchill"
+					ruling_only = yes
+				}
+			}
+		
+		
+		prerequisite = { focus = ENG_motion_of_no_confidence }
+		icon = GFX_focus_ETH_continuous_strengthen_the_black_lions
+		x = -3
+		y = 2
+		relative_position_id = ENG_maintaining_imperial_integrity
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+
+			add_war_support = 0.05
+
+			add_ideas = churchills_influence
+
+
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+	}
 
 	focus = {
 		id = ENG_permit_plane_leasement
@@ -9444,12 +9370,7 @@ focus_tree = {
 	focus = {
 		id = ENG_war_with_italy_2
 		text = ENG_war_with_italy
-		available = {
-			is_subject = no
-			ITA = {
-				ENG_focus_available_war = yes
-			}
-		}
+		
 		bypass = {
 			has_war_with = ITA
 		}
@@ -9479,56 +9400,7 @@ focus_tree = {
 
 	focus = {
 		id = uk_scandinavian_focus
-		available = {
-			OR = {
-				SWE = { 
-					NOT = {
-						OR = {
-							is_in_faction_with = ROOT
-							has_war_with = ROOT
-						}
-					}					
-					exists = yes
-					OR = { 
-						communism > 0.2
-				 		fascism > 0.2
-				 	} 
-				}
-				NOR = { 
-					NOT = {
-						OR = {
-							is_in_faction_with = ROOT
-							has_war_with = ROOT
-						}
-					}					
-					exists = yes
-					OR = { 
-						communism > 0.2
-				 		fascism > 0.2
-				 	} 
-				}
-				DEN = {
-					NOT = {
-						OR = {
-							is_in_faction_with = ROOT
-							has_war_with = ROOT
-						}
-					}					
-					exists = yes
-					OR = { 
-						communism > 0.2
-				 		fascism > 0.2
-				 	} 
-				}				
-			}
-			NOT = {
-				date > 1940.06.01
-				any_country = {
-					is_major = yes
-					has_war_with = ROOT
-				}
-			}						
-		}
+		
 		prerequisite = { focus = ENG_continental_intervention }
 		icon = GFX_goal_northern_lights
 		x = -3
@@ -9595,21 +9467,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_swedish_intervention
-		available = {
-			SWE = {
-				NOT = {
-					OR = {
-						is_in_faction_with = ROOT
-						has_war_with = ROOT
-					}
-				}				
-				exists = yes
-				OR = {
-					communism > 0.3
-					fascism > 0.3
-				}
-			}		
-		}
+		
 		will_lead_to_war_with = SWE
 		prerequisite = { focus = uk_scandinavian_focus }
 		icon = GFX_goal_generic_attack_sweden
@@ -9644,21 +9502,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_norwegian_intervention
-		available = {
-			NOR = {
-				NOT = {
-					OR = {
-						is_in_faction_with = ROOT
-						has_war_with = ROOT
-					}
-				}				
-				exists = yes
-				OR = {
-					communism > 0.3
-					fascism > 0.3
-				}
-			}
-		}	
+		
 		will_lead_to_war_with = NOR
 		prerequisite = { focus = uk_scandinavian_focus }
 		icon = GFX_goal_generic_attack_norway
@@ -9693,21 +9537,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_danish_intervention
-		available = {
-			DEN = {
-				NOT = {
-					OR = {
-						is_in_faction_with = ROOT
-						has_war_with = ROOT
-					}
-				}				
-				exists = yes
-				OR = {
-					communism > 0.3
-					fascism > 0.3
-				}
-			}
-		}		
+			
 		will_lead_to_war_with = DEN
 		prerequisite = { focus = uk_scandinavian_focus }
 		icon = GFX_focus_generic_attack_denmark
@@ -9745,43 +9575,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_benelux_intervention
-		available = {
-			OR = {
-				BEL = {
-					exists = yes
-					NOT = {
-						OR = {
-							is_in_faction_with = ROOT
-							has_war_with = ROOT
-						}
-					}					
-					OR = { 
-						communism > 0.15
-				 		fascism > 0.15
-				 	} 
-				}
-				HOL = { 
-					exists = yes
-					NOT = {
-						OR = {
-							is_in_faction_with = ROOT
-							has_war_with = ROOT
-						}
-					}
-					OR = { 
-						communism > 0.15
-				 		fascism > 0.15
-				 	} 
-				}								
-			}
-			NOT = {
-				date > 1941.06.01
-				any_country = {
-					is_major = yes
-					has_war_with = ROOT
-				}
-			}			
-		}
+		
 		prerequisite = { focus = ENG_continental_intervention }
 		icon = GFX_goal_generic_position_armies
 		x = 3
@@ -9822,21 +9616,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_belgium_security
-		available = {
-			BEL = {
-				exists = yes
-				NOT = {
-					OR = {
-						is_in_faction_with = ROOT
-						has_war_with = ROOT
-					}
-				}
-				OR = {
-					communism > 0.2
-					fascism > 0.2
-				}
-			}
-		}		
+			
 		prerequisite = { focus = ENG_benelux_intervention }
 		icon = GFX_goal_generic_attack_belgium
 		x = -1
@@ -9870,21 +9650,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_dutch_security
-		available = {
-			HOL = {
-				NOT = {
-					OR = {
-						is_in_faction_with = ROOT
-						has_war_with = ROOT
-					}
-				}				
-				exists = yes
-				OR = {
-					communism > 0.2
-					fascism > 0.2
-				}
-			}
-		}		
+				
 		will_lead_to_war_with = HOL
 		prerequisite = { focus = ENG_benelux_intervention }
 		icon = GFX_goal_generic_attack_netherlands
@@ -9923,8 +9689,6 @@ focus_tree = {
 	focus = {
 		id = ENG_french_alliance
 		available = {
-			is_subject = no
-			is_faction_leader = yes
 			country_exists = FRA
 			FRA = {
 				has_government = democratic
@@ -9995,7 +9759,6 @@ focus_tree = {
 
 		available = {
 			has_full_control_of_state = 119
-			is_faction_leader = yes
 			IRE = {
 				NOT = { has_war_with = ROOT }
 				has_government = democratic
@@ -10032,32 +9795,7 @@ focus_tree = {
 		relative_position_id = ENG_french_alliance
 		mutually_exclusive = { focus = ENG_northern_ireland_for_assistance }
 
-		available = {
-			is_subject = no
-			country_exists = IRE
-			OR = {
-				IRE = {
-					NOT = {
-						OR = {
-							is_in_faction_with = ROOT
-							has_war_with = ROOT
-						}
-					}				
-					OR = {
-						communism > 0.2
-						fascism > 0.2
-					}
-				}
-				any_other_country = {
-					OR = {
-						has_government = fascism
-						has_government = communism
-						has_war_with = ROOT
-					}
-					is_in_faction_with = IRE
-				}
-			}
-		}
+		
 
 		bypass = {
 			
@@ -17010,6 +16748,26 @@ focus_tree = {
 		search_filters = {  FOCUS_FILTER_RESEARCH FOCUS_FILTER_ESPIONAGE }
 	}	
 	focus = {
+		id = ENG_Provoke_british_patriotism
+		icon = GFX_focus_generic_infiltration
+		cost = 5
+		prerequisite = {
+			focus = limited_rearmament_focus
+		}
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		add_ideas = british_patriotism
+					}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH
+		}
+	}
+
+	focus = {
 		id = ENG_let_that_lion_roar
 		icon = GFX_focus_hol_united_netherlands
 		cost = 10
@@ -17374,9 +17132,6 @@ focus_tree = {
 			focus = ENG_increase_military_budget
 		}
 		relative_position_id = ENG_Provoke_british_patriotism
-		bypass = {
-			subjects = 0 
-		}
 		completion_reward = {
 			add_timed_idea = {
 				idea = ENG_colonial_investors
@@ -17521,35 +17276,17 @@ focus_tree = {
 			}
 		}
 	}		
-	focus = {
-		id = ENG_Provoke_british_patriotism
-		icon = GFX_focus_generic_infiltration
-		cost = 5
-		prerequisite = {
-			focus = limited_rearmament_focus
-		}
-		x = 0
-		y = 1
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-		add_ideas = british_patriotism
-					}
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH
-		}
-	}
+
 	focus = {
 		id = ENG_adopt_bliztkrieg_tactics
 		icon = GFX_focus_generic_army_tanks2
 		cost = 5
 		prerequisite = {
-			focus = royal_ordinance_focus
+			focus = ENG_tank_focus
 		}
 		relative_position_id = ENG_motorized_focus
-		x = 1
-		y = 5
+		x = 2
+		y = 2
 		ai_will_do = {
 			factor = 10
 		}
@@ -17593,6 +17330,121 @@ focus_tree = {
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = ENG_ramp_up_constription
+		icon = GFX_focus_SOV_penal_battalions
+		cost = 10
+		prerequisite = {
+			focus = uk_small_arms_focus
+		}
+		x = -1
+		y = 5
+		relative_position_id = ENG_motorized_focus
+		ai_will_do = {
+			factor = 2
+		}
+		
+		completion_reward = {
+			add_stability = -0.05
+			add_ideas = Increased_enlistment
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = ENG_order_increased_tank_production
+		icon = GFX_focus_generic_tank_production
+		cost = 10
+		prerequisite = {
+			focus = ENG_tank_variant_focus
+		}
+		prerequisite = {
+			focus = ENG_adopt_bliztkrieg_tactics
+		}
+		mutually_exclusive = {
+			focus = uk_small_arms_focus
+		}
+		x = 1
+		y = 4
+		relative_position_id = ENG_motorized_focus
+		ai_will_do = {
+			factor = 2
+		}
+		
+		completion_reward = {
+			add_ideas = JAP_economy_by_japan_tanks
+
+			127 = {
+			add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = ENG_britains_finest_armor_corps
+		icon = GFX_goal_ger_panzers
+		cost = 10
+		prerequisite = {
+			focus = ENG_order_increased_tank_production
+		}
+		x = 1
+		y = 5
+		relative_position_id = ENG_motorized_focus
+		ai_will_do = {
+			factor = 2
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_build_panzer_army
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 1
+				category = armor
+			}
+			swap_ideas = {
+				remove_idea = motorized_army_three
+				add_idea = motorized_army_four	
+			}
+
+		}
+	}
+	focus = {
+		id = ENG_strike_mainland_europe_together
+		icon = GFX_focus_usa_focus_on_europe
+		cost = 10
+		prerequisite = {
+			focus = ENG_maintaining_the_balance_of_power
+			focus = ENG_maintaining_imperial_integrity
+		}
+		x = 2
+		y = 2
+		relative_position_id = ENG_steady_as_she_goes
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+			GER = { has_government = fascism }
+		}
+		completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+						original_tag = ENG
+						is_subject_of = ENG
+						is_in_faction_with = ENG
+					}
+				}
+				add_timed_idea = {
+					idea = strike_mainland_europe
+					days = 365
+				}
+			}
+		}
 	}
 }
 

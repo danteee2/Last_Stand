@@ -612,6 +612,10 @@
  ITA_second_risorgimento:0 "Second Risorgimento"
  ITA_second_risorgimento_desc:0 "The dream of a unified Italy is once against within our grasp. Fratelli d'Italia, l'Italia s'è desta!"
 
+#LAST STAND FOCUSES
+ITA_increase_repair_capabilities:0 "Increase Repair Capabilities"
+ITA_increase_repair_capabilities_desc:0 "With a keen eye on our naval strength, we intensify our efforts to improve ship repair capabilities. This commitment not only revitalizes our existing fleet but also ushers in a new era of maritime resilience, ensuring Italy remains a formidable force on the high seas."
+
 
 #Leaders
 POLITICS_ITALO_BALBO:0 "Italo Balbo"

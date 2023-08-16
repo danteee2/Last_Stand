@@ -79,15 +79,16 @@ equipment_modules = {
 
 		add_stats = {
 			soft_attack = 3
-			hard_attack = 6
+			hard_attack = 20
 			ap_attack = 15
-			build_cost_ic = 0.5
+			reliability = 0.1
+			build_cost_ic = 2
 		}
-		dismantle_cost_ic = 0.5
+		dismantle_cost_ic = 2
 
 		can_convert_from = {
 			module_category = tank_small_main_armament
-			convert_cost_ic = 0.5
+			convert_cost_ic = 2
 		}
 		xp_cost = 1
 	}
@@ -99,16 +100,17 @@ equipment_modules = {
 		allow_equipment_type = anti_tank
 
 		add_stats = {
-			soft_attack = 3
-			hard_attack = 6
+			soft_attack = 5
+			hard_attack = 25
 			ap_attack = 20
-			build_cost_ic = 0.5
+			reliability = 0.1
+			build_cost_ic = 2.5
 		}
-		dismantle_cost_ic = 0.5
+		dismantle_cost_ic = 2.5
 
 		can_convert_from = {
 			module_category = tank_small_main_armament
-			convert_cost_ic = 0.5
+			convert_cost_ic = 2.5
 		}
 		
 		xp_cost = 1

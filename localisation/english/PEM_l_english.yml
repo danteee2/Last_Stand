@@ -12,9 +12,9 @@
  POR_remember_olivenca_desc:0 "For two centuries Spain has denied us sovereignty over Olivença, no matter how many treaties we sign to put a end to this injustice, our rightful lands have been denied of us time and time again. But now we shall take it all back on our own terms, and for their unfounded stubbornness, we shall go a step further and retake our lands in Galicia and Morocco!"
  POR_desenvolver_o_interior:0 "Develop the Interior"
  POR_desenvolver_o_interior_desc:0 "The Portuguese government will make sure the industry gets the support it needs, in terms of good infrastructure throughout the country."
- POR_construir_fabricas:0 "Build Factories I"
+ POR_construir_fabricas:0 "Expand Civillian Industries"
  POR_construir_fabricas_desc:0 "The Portuguese government promised to increase the production in Portugal. It is now time for them to deliver." 
- POR_construir_fabricas_2:0 "Build Military Factories I"
+ POR_construir_fabricas_2:0 "Expand Military Industries"
  POR_construir_fabricas_2_desc:0 "If Portugal is to be a Major power again we must deliver more weapons production. So be it."
  POR_acores:0 "Develop the Azores"
  POR_acores_desc:0 "Azores is a strategic group of islands on the Atlantic. We must develop it, if we wish to achieve control of the Atlantic."
@@ -22,9 +22,9 @@
  POR_acores_fort_desc:0 "Azores is a strategic group of islands on the Atlantic. We must fortify it, if we wish to achieve control of the Atlantic."
  POR_madeira:0 "Develop the Madeira"
  POR_madeira_desc:0 "Madeira may not be as strategic has Azores but, we must also develop it. It will be a support base for the Atlantic."
- POR_extra_tech_slot:0 "Extra Research Slot I"
+ POR_extra_tech_slot:0 "Fund The Education"
  POR_extra_tech_slot_desc:0 "Research is important and must not be forgotten. This way we can level up our technology to levels never seen before."
- POR_extra_tech_slot2:0 "Extra Research Slot II"
+ POR_extra_tech_slot2:0 "Reverse The Brain Drain"
  POR_extra_tech_slot2_desc:0 "Research is important and must not be forgotten. This way we can level up our technology to levels never seen before."
  POR_minas_de_ferro:0 "Steel mines of Aljustrel"
  POR_minas_de_ferro_desc:0 "The steel mines of Aljustrel were an important mining facility on WW2. The were founded in 1847 upon discovery of a steal source."
@@ -174,6 +174,20 @@ POR_silent_service_desc:0 "Submarine warfare is the most exciting naval developm
  
 POR_elastic_defense:0 "Elastic Defense"
 
+POR_modernize_the_industry:0 "Modernize The Industry"
+POR_modernize_the_industry_desc:0 "As we undertake the task to modernize our industry, the hum of cutting-edge machinery and innovative practices signals a new dawn. This industrial renaissance propels our nation forward, arming us with enhanced production capabilities and economic resilience in the face of any challenge."
+
+POR_iberian_unification:0 "Iberian Unification"
+POR_iberian_unification_desc:0 "We have bridged centuries-old divides, merged the strengths of our nations under one banner. This historic fusion not only amplifies our collective power but also promises a new era of shared prosperity and invincibility on the global stage."
+
+POR_spanish_iron:0 "Spanish Iron"
+POR_spanish_iron_desc:0 "Now that we have unified and consolidated the nation, we can make use of the Spanish mines in Madrid."
+
+POR_unify_officer_corps:0 "Unify Officer Corps"
+POR_unify_officer_corps_desc:0 "Ever since unifying, there has been a big divide in our Officer corps. Should we want our nation to survive and withstand the onslaught in Europe, then we have to work out the issues."
+
+por_divided_officer_corps:0 "Divided Officer Corps"
+por_divided_officer_corps_desc:0 "There has always been tensions between us Portugese and the Spanish. Even after unification, we continue to bicker. Will we ever get along..?"
 
 ### Opinion Modifiers
 

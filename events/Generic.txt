@@ -799,7 +799,7 @@ country_event = {
 			is_in_faction = no
 		}
 		ai_chance = {
-			factor = 50
+			factor = 0
 			
 			modifier = {
 				factor = 0.5

@@ -37,16 +37,19 @@ ideas = {
 				
 				equipment_bonus = {
 					infantry_equipment = {
-						hard_attack = 0.25 = instant = yes
-						breakthrough = 0.25 = instant = yes
+						hard_attack = 0.25 
+						breakthrough = 0.25 
+						instant = yes
 					}
 					motorized_equipment = {
-						hard_attack = 0.25 = instant = yes
-						breakthrough = 0.25 = instant = yes
+						hard_attack = 0.25 
+						breakthrough = 0.25 
+						instant = yes
 					}
 					mechanized_equipment = {
-						hard_attack = 0.25 = instant = yes
-						breakthrough = 0.25 = instant = yes
+						hard_attack = 0.25 
+						breakthrough = 0.25 
+						instant = yes
 					}
 				}
 			}
@@ -1550,7 +1553,7 @@ ideas = {
 			
 			equipment_bonus = {
 				large_plane_airframe = {
-					air_range = 0.3 instant = yes
+					air_range = 1.0 instant = yes
 				}	
 			}			
 		}

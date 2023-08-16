@@ -205,18 +205,6 @@ focus_tree = {
 					}
 				}
 			}
-
-			every_owned_state = {
-				limit = {
-					is_core_of = ROOT
-					is_fully_controlled_by = ROOT
-				}
-				add_dynamic_modifier = {
-					modifier = ITA_italian_highways_modifier
-					scope = ITA
-					days = 365
-				}
-			}		
 		}
 	}
 
@@ -324,7 +312,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = ITA_develop_eritrea
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -3227,15 +3215,15 @@ focus_tree = {
 			add_to_variable = { ITA_iri_production_speed_arms_factory_factor = 0.025 }
 			custom_effect_tooltip = ITA_steel_industry_in_terni_ricostruzione_industriale_tt
 			2 = {
-				add_extra_state_shared_building_slots = 8
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 6
+					level = 2
 					instant_build = yes
 				}
 				add_resource = {
 					type = steel
-					amount = 8
+					amount = 23
 				}
 			}
 		}
@@ -3260,10 +3248,10 @@ focus_tree = {
 			custom_effect_tooltip = ITA_power_plants_in_terni_ricostruzione_industriale_tt
 
 			2 = {
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -3315,7 +3303,7 @@ focus_tree = {
 
 		completion_reward = {
 			158 = { #PIEDMONT (Torino, Genoa)
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -3324,7 +3312,7 @@ focus_tree = {
 			}
 
 			159 = { #LOMBARDY (Milano, Brescia)
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -3333,7 +3321,7 @@ focus_tree = {
 			}
 
 			161 = { #EMILIA ROMAGNA (Bologna)
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -3342,7 +3330,7 @@ focus_tree = {
 			}
 
 			160 = { #VENETO (Venice )
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
 					level = 1
@@ -3560,7 +3548,7 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -3576,7 +3564,7 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -3740,7 +3728,7 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -4995,7 +4983,6 @@ focus_tree = {
 				limit = {
 					has_dlc = "No Step Back"
 				}
-				has_tech = basic_medium_tank_chassis
 			}
 		}
 
@@ -7124,15 +7111,8 @@ focus_tree = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}
-				has_tech = improved_ship_hull_light
-				has_tech = sonar
-				#has_tech = improved_ship_torpedo_launcher #Granting it anyways
-				#has_tech = improved_depth_charges #Granting it anyways
-			}
-			else = {
-				has_tech = improved_destroyer
-			}
-			has_tech = decimetric_radar
+				
+			}	
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
@@ -7273,10 +7253,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_cavagnari_plan
 		cost = 5
-		available = {
-			has_tech = improved_depth_charges
-			has_tech = sonar
-		}
+		
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
 
@@ -7576,12 +7553,7 @@ focus_tree = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}
-				if = {
-					limit = {
-						NOT = { has_tech = basic_ship_hull_carrier }
-					}
-					set_technology = { basic_ship_hull_carrier = 1 }
-				}
+
 
 				#Equipment Variant
 				create_equipment_variant = {
@@ -7790,6 +7762,23 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+		}
+	}
+
+	focus = {
+		id = ITA_increase_repair_capabilities
+		icon = GFX_goal_generic_expand_the_naval_industry
+		prerequisite = { focus = ITA_proper_carriers focus = ITA_refit_civilian_ships } 
+		x = 1
+		y = 1
+		relative_position_id = ITA_proper_carriers
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = ENG_expand_the_repair_yards
 		}
 	}
 

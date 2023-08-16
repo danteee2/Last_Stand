@@ -2352,7 +2352,63 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 820 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 819 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 818 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 817 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -2414,7 +2470,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 100
 			remove_ideas = MON_weak_currency_idea
 			MON_mongol_bank_funds_increase = yes
 			unlock_decision_category_tooltip = MON_strengthen_mongolbank_category
@@ -2485,7 +2541,7 @@ focus_tree = {
 			MON_mongol_bank_funds_decrease = yes
 			add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 1
+				bonus = 2
 				uses = 2
 				category = industry
 			}
@@ -2511,8 +2567,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = MON_study_foreign_radio_equipment
-				bonus = 1
-				uses = 1
+				bonus = 2
+				uses = 2
 				category = electronics
 			}
 		}
@@ -2655,10 +2711,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2696,7 +2752,7 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -2808,10 +2864,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2825,10 +2881,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2866,7 +2922,7 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -2909,18 +2965,28 @@ focus_tree = {
 			add_tech_bonus = {
                 name = industrial_bonus
                 bonus = 1
-                uses = 1
+                uses = 2
                 category = steel_tech
             }			
 			add_resource = {
 				type = steel
-				amount = 3
+				amount = 20
 				state = 820
 			}
 			add_resource = {
 				type = steel
-				amount = 2
+				amount = 16
 				state = 819
+			}
+			add_resource = {
+				type = aluminium
+				amount = 16
+				state = 819
+			}
+			add_resource = {
+				type = tungsten
+				amount = 32
+				state = 817
 			}
 		}
 		search_filters = {	FOCUS_FILTER_INDUSTRY }
@@ -3269,10 +3335,10 @@ focus_tree = {
 					}
 					has_state_flag = MON_invested_into_state
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -3541,10 +3607,10 @@ focus_tree = {
 					}
 					has_state_flag = MON_invested_into_state
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -12388,7 +12454,7 @@ focus_tree = {
 		completion_reward = {
 		add_timed_idea = {
 			idea = MON_economic_boom_blue
-			days = 195
+			days = 365
 		}
 			
 

@@ -4388,1406 +4388,1406 @@ country_event = { # we are flanders! - placeholder for broken event below
 # 		}		
 # 	}	
 # }
-country_event = { # we are wallonia!
-	id = belgium.157
-	title = belgium.157.t
-	desc = belgium.157.desc
-	picture = GFX_report_event_congres_wallon
+# country_event = { # we are wallonia!
+# 	id = belgium.157
+# 	title = belgium.157.t
+# 	desc = belgium.157.desc
+# 	picture = GFX_report_event_congres_wallon
 	
-	trigger = {
-		tag = BEL
-		owns_state = 34
-		NOT = {owns_state = 6}
-		BEL = { has_civil_war = no } 
+# 	trigger = {
+# 		tag = BEL
+# 		owns_state = 34
+# 		NOT = {owns_state = 6}
+# 		BEL = { has_civil_war = no } 
 		
-	}
-	mean_time_to_happen = {
-		days = 2
-	}	
-	option = {
-		name = belgium.157.a	#democratic
-		trigger = {
-			has_government = democratic
-		}
-		random_owned_controlled_state = {
-			WLL = { transfer_state = PREV }
-		}
-		BEL = {
-			WLL = {
-				inherit_technology = BEL
-				set_capital = { state = 34 }
-			}
-			every_army_leader = {
-				limit = { has_trait = flemish }
-				set_nationality = FLA
-			}
-			every_army_leader = {
-				limit = { has_trait = walloon }
-				set_nationality = WLL
-			}			
-		}	
-		WLL = {
-			FLA = {
-				inherit_technology = WLL
-			}
-		}				
-		if = {
-			limit = {
-				COG = { is_subject_of = BEL }  
-			}
-			WLL = { 
-				puppet = COG						  
-			}
-			COG = {
-				set_politics = {
-					ruling_party = neutrality
-					elections_allowed = no
-				}
-				create_country_leader = {
-					name = "Pierre Ryckmans"
-					desc = "Pierre Ryckmans, Governor General of the Belgian Congo"
-					picture = "gfx/leaders/COG/Pierre_Ryckmans.dds"
-					expire = "1965.1.1"
-					ideology = despotism
-					traits = {
-						r56_trait_opposed_to_communism
-					}
-				}
-				set_popularities = {
-					democratic = 10
-					fascism = 15
-					communism = 2
-					neutrality = 73
-				}
-			}
-		}
-		BEL = {
-			transfer_units_fraction = {
-				target = WLL
-				size = 0.5
-			}			
-		}			
-		WLL = { annex_country = { target = BEL transfer_troops = yes } change_tag_from = BEL }	
+# 	}
+# 	mean_time_to_happen = {
+# 		days = 2
+# 	}	
+# 	option = {
+# 		name = belgium.157.a	#democratic
+# 		trigger = {
+# 			has_government = democratic
+# 		}
+# 		random_owned_controlled_state = {
+# 			WLL = { transfer_state = PREV }
+# 		}
+# 		BEL = {
+# 			WLL = {
+# 				inherit_technology = BEL
+# 				set_capital = { state = 34 }
+# 			}
+# 			every_army_leader = {
+# 				limit = { has_trait = flemish }
+# 				set_nationality = FLA
+# 			}
+# 			every_army_leader = {
+# 				limit = { has_trait = walloon }
+# 				set_nationality = WLL
+# 			}			
+# 		}	
+# 		WLL = {
+# 			FLA = {
+# 				inherit_technology = WLL
+# 			}
+# 		}				
+# 		if = {
+# 			limit = {
+# 				COG = { is_subject_of = BEL }  
+# 			}
+# 			WLL = { 
+# 				puppet = COG						  
+# 			}
+# 			COG = {
+# 				set_politics = {
+# 					ruling_party = neutrality
+# 					elections_allowed = no
+# 				}
+# 				create_country_leader = {
+# 					name = "Pierre Ryckmans"
+# 					desc = "Pierre Ryckmans, Governor General of the Belgian Congo"
+# 					picture = "gfx/leaders/COG/Pierre_Ryckmans.dds"
+# 					expire = "1965.1.1"
+# 					ideology = despotism
+# 					traits = {
+# 						r56_trait_opposed_to_communism
+# 					}
+# 				}
+# 				set_popularities = {
+# 					democratic = 10
+# 					fascism = 15
+# 					communism = 2
+# 					neutrality = 73
+# 				}
+# 			}
+# 		}
+# 		BEL = {
+# 			transfer_units_fraction = {
+# 				target = WLL
+# 				size = 0.5
+# 			}			
+# 		}			
+# 		WLL = { annex_country = { target = BEL transfer_troops = yes } change_tag_from = BEL }	
 
-		if = {
-			limit = {
-				BEL = { is_subject = yes }  
-			}
-			OVERLORD = {
-				set_country_flag = bel_overlord				 
-			} 
-		}		
-		random_owned_controlled_state = {
-			WLL = { transfer_state = PREV }
-		}
-		random_country = {
-			limit = {
-				has_country_flag = bel_overlord
-			}
-			puppet = WLL
-		}		
-		WLL = {
-			set_politics = {
-				ruling_party = democratic
-				elections_allowed = yes
-			}
-			set_popularities = {
-				democratic = 69
-				fascism = 18
-				communism = 12
-				neutrality = 1
-			}
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_achille_van_acker
-				}
-			}
-			WLL = { add_ideas = WLL_Jules_Mahieu } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_julien_lahaut
-				}
-			}
-			WLL = { add_ideas = BEL_julien_lahaut } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_joris_van_severen
-				}
-			}
-			WLL = { add_ideas = BEL_Victor_Matthys } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_henri_denis
-				}
-			}
-			WLL = { add_ideas = BEL_henri_denis } 
-		}	
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_gustave_joassart
-				}
-			}
-			WLL = { add_ideas = BEL_gustave_joassart } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_Pierre_Daye
-				}
-			}
-			WLL = { add_ideas = BEL_Pierre_Daye } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_Jose_Streel
-				}
-			}
-			WLL = { add_ideas = BEL_Jose_Streel } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_xavier_relecom
-				}
-			}
-			WLL = { add_ideas = BEL_xavier_relecom } 
-		}	
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_andor_berei
-				}
-			}
-			WLL = { add_ideas = BEL_andor_berei } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_henri_glineur
-				}
-			}
-			WLL = { add_ideas = BEL_henri_glineur } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_jean_terfve
-				}
-			}
-			WLL = { add_ideas = BEL_jean_terfve } 
-		}		
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_oscar_michiels
-				}
-			}
-			WLL = { add_ideas = BEL_olivier_derousseaux2 } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_victor_van_strydonck_de_burkel
-				}
-			}
-			WLL = { add_ideas = BEL_gustave_fromont2 } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_jules_iserentant
-				}
-			}
-			WLL = { add_ideas = BEL_paul_hiernaux } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_paul_hiernaux
-				}
-			}
-			WLL = { add_ideas = BEL_paul_hiernaux } 
-		}		
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_henri_decarpentrie
-				}
-			}
-			WLL = { add_ideas = BEL_henri_decarpentrie } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = FLA_auguste_baesens
-				}
-			}
-			WLL = { add_ideas = BEL_jules_pire } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_olivier_derousseaux
-				}
-			}
-			WLL = { add_ideas = BEL_yvan_gerard } 
-		}		
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_robert_desmet
-				}
-			}
-			WLL = { add_ideas = BEL_andre_becquet } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_jean_de_lannoy
-				}
-			}
-			WLL = { add_ideas = BEL_jean_de_lannoy } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_raoul_overstraeten
-				}
-			}
-			WLL = { add_ideas = BEL_jules_henri_vincotte } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = avions_fairey
-				}
-			}
-			WLL = { add_ideas = avions_fairey } 
-		}		
-		if = {
-			limit = {
-				BEL = {
-					has_idea = renard
-				}
-			}
-			WLL = { add_ideas = avions_fairey } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = sabca
-				}
-			}
-			WLL = { add_ideas = sabca } 
-		}		
-		if = {
-			limit = {
-				BEL = {
-					has_idea = fn_herstol
-				}
-			}
-			WLL = { add_ideas = fn_herstol } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = frc_BEL
-				}
-			}
-			WLL = { add_ideas = frc_BEL } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = fn_trucks
-				}
-			}
-			WLL = { add_ideas = fn_trucks } 
-		}		
-		if = {
-			limit = {
-				BEL = {
-					has_idea = Cockerill_industry
-				}
-			}
-			WLL = { add_ideas = Cockerill_industry } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = srb_bel
-				}
-			}
-			WLL = { add_ideas = WLL_ACEC } 
-		}		
-		if = {
-			limit = {
-				BEL = {
-					has_idea = solvay
-				}
-			}
-			WLL = { add_ideas = Cockerill_industry } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_miesse_tank
-				}
-			}
-			WLL = { add_ideas = BEL_familleureux } 
-		}	
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_familleureux
-				}
-			}
-			WLL = { add_ideas = BEL_familleureux } 
-		}		
-		hidden_effect = {
-			news_event = { hours = 6 id = belgium.159 }
-		}		
-	}
-	option = {
-		name = belgium.157.b	#fascist
-		trigger = {
-			has_government = fascism
-		}
-		random_owned_controlled_state = {
-			WLL = { transfer_state = PREV }
-		}
-		BEL = {
-			delete_unit_template_and_units = {
- 			   division_template = "Division d'Infanterie"
-			}
-			delete_unit_template_and_units = {
- 			   division_template = "Division de Cavalerie"
-			}	
-			delete_unit_template_and_units = {
- 			   division_template = "Cavalerie Motorisée"
-			}	
-			delete_unit_template_and_units = {
- 			   division_template = "Division Coloniale"
-			}	
-			WLL = {
-				inherit_technology = BEL
-				set_capital = { state = 34 }
-			}
-			every_army_leader = {
-				limit = { has_trait = flemish }
-				set_nationality = FLA
-			}
-			every_army_leader = {
-				limit = { has_trait = walloon }
-				set_nationality = WLL
-			}			
-		}
-		WLL = {
-			FLA = {
-				inherit_technology = WLL
-			}
-		}		
-		if = {
-			limit = {
-				COG = { is_subject_of = BEL }  
-			}
-			WLL = { 
-				puppet = COG						  
-			}
-		}
-		BEL = {
-			transfer_units_fraction = {
-				target = WLL
-				size = 0.5
-			}			
-		}				
-		WLL = { annex_country = { target = BEL transfer_troops = yes } change_tag_from = BEL }	
-		if = {
-			limit = {
-				BEL = { is_subject = yes }  
-			}
-			OVERLORD = {
-				set_country_flag = bel_overlord				 
-			} 
-		}		
-		random_owned_controlled_state = {
-			WLL = { transfer_state = PREV }
-		}
-		random_country = {
-			limit = {
-				has_country_flag = bel_overlord
-			}
-			puppet = WLL
-		}	
+# 		if = {
+# 			limit = {
+# 				BEL = { is_subject = yes }  
+# 			}
+# 			OVERLORD = {
+# 				set_country_flag = bel_overlord				 
+# 			} 
+# 		}		
+# 		random_owned_controlled_state = {
+# 			WLL = { transfer_state = PREV }
+# 		}
+# 		random_country = {
+# 			limit = {
+# 				has_country_flag = bel_overlord
+# 			}
+# 			puppet = WLL
+# 		}		
+# 		WLL = {
+# 			set_politics = {
+# 				ruling_party = democratic
+# 				elections_allowed = yes
+# 			}
+# 			set_popularities = {
+# 				democratic = 69
+# 				fascism = 18
+# 				communism = 12
+# 				neutrality = 1
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_achille_van_acker
+# 				}
+# 			}
+# 			WLL = { add_ideas = WLL_Jules_Mahieu } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_julien_lahaut
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_julien_lahaut } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_joris_van_severen
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_Victor_Matthys } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_henri_denis
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_henri_denis } 
+# 		}	
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_gustave_joassart
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_gustave_joassart } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_Pierre_Daye
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_Pierre_Daye } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_Jose_Streel
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_Jose_Streel } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_xavier_relecom
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_xavier_relecom } 
+# 		}	
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_andor_berei
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_andor_berei } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_henri_glineur
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_henri_glineur } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_jean_terfve
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_jean_terfve } 
+# 		}		
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_oscar_michiels
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_olivier_derousseaux2 } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_victor_van_strydonck_de_burkel
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_gustave_fromont2 } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_jules_iserentant
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_paul_hiernaux } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_paul_hiernaux
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_paul_hiernaux } 
+# 		}		
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_henri_decarpentrie
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_henri_decarpentrie } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = FLA_auguste_baesens
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_jules_pire } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_olivier_derousseaux
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_yvan_gerard } 
+# 		}		
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_robert_desmet
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_andre_becquet } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_jean_de_lannoy
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_jean_de_lannoy } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_raoul_overstraeten
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_jules_henri_vincotte } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = avions_fairey
+# 				}
+# 			}
+# 			WLL = { add_ideas = avions_fairey } 
+# 		}		
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = renard
+# 				}
+# 			}
+# 			WLL = { add_ideas = avions_fairey } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = sabca
+# 				}
+# 			}
+# 			WLL = { add_ideas = sabca } 
+# 		}		
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = fn_herstol
+# 				}
+# 			}
+# 			WLL = { add_ideas = fn_herstol } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = frc_BEL
+# 				}
+# 			}
+# 			WLL = { add_ideas = frc_BEL } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = fn_trucks
+# 				}
+# 			}
+# 			WLL = { add_ideas = fn_trucks } 
+# 		}		
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = Cockerill_industry
+# 				}
+# 			}
+# 			WLL = { add_ideas = Cockerill_industry } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = srb_bel
+# 				}
+# 			}
+# 			WLL = { add_ideas = WLL_ACEC } 
+# 		}		
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = solvay
+# 				}
+# 			}
+# 			WLL = { add_ideas = Cockerill_industry } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_miesse_tank
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_familleureux } 
+# 		}	
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_familleureux
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_familleureux } 
+# 		}		
+# 		hidden_effect = {
+# 			news_event = { hours = 6 id = belgium.159 }
+# 		}		
+# 	}
+# 	option = {
+# 		name = belgium.157.b	#fascist
+# 		trigger = {
+# 			has_government = fascism
+# 		}
+# 		random_owned_controlled_state = {
+# 			WLL = { transfer_state = PREV }
+# 		}
+# 		BEL = {
+# 			delete_unit_template_and_units = {
+#  			   division_template = "Division d'Infanterie"
+# 			}
+# 			delete_unit_template_and_units = {
+#  			   division_template = "Division de Cavalerie"
+# 			}	
+# 			delete_unit_template_and_units = {
+#  			   division_template = "Cavalerie Motorisée"
+# 			}	
+# 			delete_unit_template_and_units = {
+#  			   division_template = "Division Coloniale"
+# 			}	
+# 			WLL = {
+# 				inherit_technology = BEL
+# 				set_capital = { state = 34 }
+# 			}
+# 			every_army_leader = {
+# 				limit = { has_trait = flemish }
+# 				set_nationality = FLA
+# 			}
+# 			every_army_leader = {
+# 				limit = { has_trait = walloon }
+# 				set_nationality = WLL
+# 			}			
+# 		}
+# 		WLL = {
+# 			FLA = {
+# 				inherit_technology = WLL
+# 			}
+# 		}		
+# 		if = {
+# 			limit = {
+# 				COG = { is_subject_of = BEL }  
+# 			}
+# 			WLL = { 
+# 				puppet = COG						  
+# 			}
+# 		}
+# 		BEL = {
+# 			transfer_units_fraction = {
+# 				target = WLL
+# 				size = 0.5
+# 			}			
+# 		}				
+# 		WLL = { annex_country = { target = BEL transfer_troops = yes } change_tag_from = BEL }	
+# 		if = {
+# 			limit = {
+# 				BEL = { is_subject = yes }  
+# 			}
+# 			OVERLORD = {
+# 				set_country_flag = bel_overlord				 
+# 			} 
+# 		}		
+# 		random_owned_controlled_state = {
+# 			WLL = { transfer_state = PREV }
+# 		}
+# 		random_country = {
+# 			limit = {
+# 				has_country_flag = bel_overlord
+# 			}
+# 			puppet = WLL
+# 		}	
 	
-		WLL = {
-			set_politics = {
-				ruling_party = fascism
-				elections_allowed = no
-			}
-			set_popularities = {
-				democratic = 31
-				fascism = 62
-				communism = 2
-				neutrality = 5
-			}
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_achille_van_acker
-				}
-			}
-			WLL = { add_ideas = WLL_Jules_Mahieu } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_julien_lahaut
-				}
-			}
-			WLL = { add_ideas = BEL_julien_lahaut } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_joris_van_severen
-				}
-			}
-			WLL = { add_ideas = BEL_Victor_Matthys } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_henri_denis
-				}
-			}
-			WLL = { add_ideas = BEL_henri_denis } 
-		}	
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_gustave_joassart
-				}
-			}
-			WLL = { add_ideas = BEL_gustave_joassart } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_Pierre_Daye
-				}
-			}
-			WLL = { add_ideas = BEL_Pierre_Daye } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_Jose_Streel
-				}
-			}
-			WLL = { add_ideas = BEL_Jose_Streel } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_xavier_relecom
-				}
-			}
-			WLL = { add_ideas = BEL_xavier_relecom } 
-		}	
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_andor_berei
-				}
-			}
-			WLL = { add_ideas = BEL_andor_berei } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_henri_glineur
-				}
-			}
-			WLL = { add_ideas = BEL_henri_glineur } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_jean_terfve
-				}
-			}
-			WLL = { add_ideas = BEL_jean_terfve } 
-		}		
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_oscar_michiels
-				}
-			}
-			WLL = { add_ideas = BEL_olivier_derousseaux2 } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_victor_van_strydonck_de_burkel
-				}
-			}
-			WLL = { add_ideas = BEL_gustave_fromont2 } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_jules_iserentant
-				}
-			}
-			WLL = { add_ideas = BEL_paul_hiernaux } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_paul_hiernaux
-				}
-			}
-			WLL = { add_ideas = BEL_paul_hiernaux } 
-		}		
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_henri_decarpentrie
-				}
-			}
-			WLL = { add_ideas = BEL_henri_decarpentrie } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = FLA_auguste_baesens
-				}
-			}
-			WLL = { add_ideas = BEL_jules_pire } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_olivier_derousseaux
-				}
-			}
-			WLL = { add_ideas = BEL_yvan_gerard } 
-		}		
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_robert_desmet
-				}
-			}
-			WLL = { add_ideas = BEL_andre_becquet } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_jean_de_lannoy
-				}
-			}
-			WLL = { add_ideas = BEL_jean_de_lannoy } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_raoul_overstraeten
-				}
-			}
-			WLL = { add_ideas = BEL_jules_henri_vincotte } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = avions_fairey
-				}
-			}
-			WLL = { add_ideas = avions_fairey } 
-		}		
-		if = {
-			limit = {
-				BEL = {
-					has_idea = renard
-				}
-			}
-			WLL = { add_ideas = avions_fairey } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = sabca
-				}
-			}
-			WLL = { add_ideas = sabca } 
-		}		
-		if = {
-			limit = {
-				BEL = {
-					has_idea = fn_herstol
-				}
-			}
-			WLL = { add_ideas = fn_herstol } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = frc_BEL
-				}
-			}
-			WLL = { add_ideas = frc_BEL } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = fn_trucks
-				}
-			}
-			WLL = { add_ideas = fn_trucks } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_miesse_tank
-				}
-			}
-			WLL = { add_ideas = BEL_familleureux } 
-		}	
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_familleureux
-				}
-			}
-			WLL = { add_ideas = BEL_familleureux } 
-		}		
-		if = {
-			limit = {
-				BEL = {
-					has_idea = Cockerill_industry
-				}
-			}
-			WLL = { add_ideas = Cockerill_industry } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = srb_bel
-				}
-			}
-			WLL = { add_ideas = WLL_ACEC } 
-		}		
-		if = {
-			limit = {
-				BEL = {
-					has_idea = solvay
-				}
-			}
-			WLL = { add_ideas = Cockerill_industry } 
-		}		
-		hidden_effect = {
-			news_event = { hours = 6 id = belgium.159 }
-		}		
-	}
-	option = {
-		name = belgium.157.c	#communist
-		trigger = {
-			has_government = communism
-		}
-		random_owned_controlled_state = {
-			WLL = { transfer_state = PREV }
-		}
-		BEL = {
-			delete_unit_template_and_units = {
- 			   division_template = "Division d'Infanterie"
-			}
-			delete_unit_template_and_units = {
- 			   division_template = "Division de Cavalerie"
-			}	
-			delete_unit_template_and_units = {
- 			   division_template = "Cavalerie Motorisée"
-			}	
-			delete_unit_template_and_units = {
- 			   division_template = "Division Coloniale"
-			}		
-			WLL = {
-				inherit_technology = BEL
-				set_capital = { state = 34 }
-			}
-			every_army_leader = {
-				limit = { has_trait = flemish }
-				set_nationality = FLA
-			}
-			every_army_leader = {
-				limit = { has_trait = walloon }
-				set_nationality = WLL
-			}			
-		}	
-		WLL = {
-			FLA = {
-				inherit_technology = WLL
-			}
-		}		
-		if = {
-			limit = {
-				COG = { is_subject_of = BEL }  
-			}
-			WLL = { 
-				puppet = COG						  
-			}
-		}
-		BEL = {
-			transfer_units_fraction = {
-				target = WLL
-				size = 0.5
-			}			
-		}		
-		WLL = { annex_country = { target = BEL transfer_troops = yes } change_tag_from = BEL }	
-		if = {
-			limit = {
-				BEL = { is_subject = yes }  
-			}
-			OVERLORD = {
-				set_country_flag = bel_overlord				 
-			} 
-		}		
-		random_owned_controlled_state = {
-			WLL = { transfer_state = PREV }
-		}
-		random_country = {
-			limit = {
-				has_country_flag = bel_overlord
-			}
-			puppet = WLL
-		}		
+# 		WLL = {
+# 			set_politics = {
+# 				ruling_party = fascism
+# 				elections_allowed = no
+# 			}
+# 			set_popularities = {
+# 				democratic = 31
+# 				fascism = 62
+# 				communism = 2
+# 				neutrality = 5
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_achille_van_acker
+# 				}
+# 			}
+# 			WLL = { add_ideas = WLL_Jules_Mahieu } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_julien_lahaut
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_julien_lahaut } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_joris_van_severen
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_Victor_Matthys } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_henri_denis
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_henri_denis } 
+# 		}	
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_gustave_joassart
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_gustave_joassart } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_Pierre_Daye
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_Pierre_Daye } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_Jose_Streel
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_Jose_Streel } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_xavier_relecom
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_xavier_relecom } 
+# 		}	
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_andor_berei
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_andor_berei } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_henri_glineur
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_henri_glineur } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_jean_terfve
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_jean_terfve } 
+# 		}		
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_oscar_michiels
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_olivier_derousseaux2 } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_victor_van_strydonck_de_burkel
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_gustave_fromont2 } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_jules_iserentant
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_paul_hiernaux } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_paul_hiernaux
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_paul_hiernaux } 
+# 		}		
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_henri_decarpentrie
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_henri_decarpentrie } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = FLA_auguste_baesens
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_jules_pire } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_olivier_derousseaux
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_yvan_gerard } 
+# 		}		
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_robert_desmet
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_andre_becquet } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_jean_de_lannoy
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_jean_de_lannoy } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_raoul_overstraeten
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_jules_henri_vincotte } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = avions_fairey
+# 				}
+# 			}
+# 			WLL = { add_ideas = avions_fairey } 
+# 		}		
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = renard
+# 				}
+# 			}
+# 			WLL = { add_ideas = avions_fairey } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = sabca
+# 				}
+# 			}
+# 			WLL = { add_ideas = sabca } 
+# 		}		
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = fn_herstol
+# 				}
+# 			}
+# 			WLL = { add_ideas = fn_herstol } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = frc_BEL
+# 				}
+# 			}
+# 			WLL = { add_ideas = frc_BEL } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = fn_trucks
+# 				}
+# 			}
+# 			WLL = { add_ideas = fn_trucks } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_miesse_tank
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_familleureux } 
+# 		}	
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_familleureux
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_familleureux } 
+# 		}		
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = Cockerill_industry
+# 				}
+# 			}
+# 			WLL = { add_ideas = Cockerill_industry } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = srb_bel
+# 				}
+# 			}
+# 			WLL = { add_ideas = WLL_ACEC } 
+# 		}		
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = solvay
+# 				}
+# 			}
+# 			WLL = { add_ideas = Cockerill_industry } 
+# 		}		
+# 		hidden_effect = {
+# 			news_event = { hours = 6 id = belgium.159 }
+# 		}		
+# 	}
+# 	option = {
+# 		name = belgium.157.c	#communist
+# 		trigger = {
+# 			has_government = communism
+# 		}
+# 		random_owned_controlled_state = {
+# 			WLL = { transfer_state = PREV }
+# 		}
+# 		BEL = {
+# 			delete_unit_template_and_units = {
+#  			   division_template = "Division d'Infanterie"
+# 			}
+# 			delete_unit_template_and_units = {
+#  			   division_template = "Division de Cavalerie"
+# 			}	
+# 			delete_unit_template_and_units = {
+#  			   division_template = "Cavalerie Motorisée"
+# 			}	
+# 			delete_unit_template_and_units = {
+#  			   division_template = "Division Coloniale"
+# 			}		
+# 			WLL = {
+# 				inherit_technology = BEL
+# 				set_capital = { state = 34 }
+# 			}
+# 			every_army_leader = {
+# 				limit = { has_trait = flemish }
+# 				set_nationality = FLA
+# 			}
+# 			every_army_leader = {
+# 				limit = { has_trait = walloon }
+# 				set_nationality = WLL
+# 			}			
+# 		}	
+# 		WLL = {
+# 			FLA = {
+# 				inherit_technology = WLL
+# 			}
+# 		}		
+# 		if = {
+# 			limit = {
+# 				COG = { is_subject_of = BEL }  
+# 			}
+# 			WLL = { 
+# 				puppet = COG						  
+# 			}
+# 		}
+# 		BEL = {
+# 			transfer_units_fraction = {
+# 				target = WLL
+# 				size = 0.5
+# 			}			
+# 		}		
+# 		WLL = { annex_country = { target = BEL transfer_troops = yes } change_tag_from = BEL }	
+# 		if = {
+# 			limit = {
+# 				BEL = { is_subject = yes }  
+# 			}
+# 			OVERLORD = {
+# 				set_country_flag = bel_overlord				 
+# 			} 
+# 		}		
+# 		random_owned_controlled_state = {
+# 			WLL = { transfer_state = PREV }
+# 		}
+# 		random_country = {
+# 			limit = {
+# 				has_country_flag = bel_overlord
+# 			}
+# 			puppet = WLL
+# 		}		
 	
-		WLL = {
-			set_politics = {
-				ruling_party = communism
-				elections_allowed = no
-			}
-			set_popularities = {
-				democratic = 33
-				fascism = 14
-				communism = 52
-				neutrality = 1
-			}
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_achille_van_acker
-				}
-			}
-			WLL = { add_ideas = WLL_Jules_Mahieu } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_julien_lahaut
-				}
-			}
-			WLL = { add_ideas = BEL_julien_lahaut } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_joris_van_severen
-				}
-			}
-			WLL = { add_ideas = BEL_Victor_Matthys } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_henri_denis
-				}
-			}
-			WLL = { add_ideas = BEL_henri_denis } 
-		}	
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_gustave_joassart
-				}
-			}
-			WLL = { add_ideas = BEL_gustave_joassart } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_Pierre_Daye
-				}
-			}
-			WLL = { add_ideas = BEL_Pierre_Daye } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_Jose_Streel
-				}
-			}
-			WLL = { add_ideas = BEL_Jose_Streel } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_xavier_relecom
-				}
-			}
-			WLL = { add_ideas = BEL_xavier_relecom } 
-		}	
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_andor_berei
-				}
-			}
-			WLL = { add_ideas = BEL_andor_berei } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_henri_glineur
-				}
-			}
-			WLL = { add_ideas = BEL_henri_glineur } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_jean_terfve
-				}
-			}
-			WLL = { add_ideas = BEL_jean_terfve } 
-		}		
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_oscar_michiels
-				}
-			}
-			WLL = { add_ideas = BEL_olivier_derousseaux2 } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_victor_van_strydonck_de_burkel
-				}
-			}
-			WLL = { add_ideas = BEL_gustave_fromont2 } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_jules_iserentant
-				}
-			}
-			WLL = { add_ideas = BEL_paul_hiernaux } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_paul_hiernaux
-				}
-			}
-			WLL = { add_ideas = BEL_paul_hiernaux } 
-		}		
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_henri_decarpentrie
-				}
-			}
-			WLL = { add_ideas = BEL_henri_decarpentrie } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = FLA_auguste_baesens
-				}
-			}
-			WLL = { add_ideas = BEL_jules_pire } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_olivier_derousseaux
-				}
-			}
-			WLL = { add_ideas = BEL_yvan_gerard } 
-		}		
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_robert_desmet
-				}
-			}
-			WLL = { add_ideas = BEL_andre_becquet } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_jean_de_lannoy
-				}
-			}
-			WLL = { add_ideas = BEL_jean_de_lannoy } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_raoul_overstraeten
-				}
-			}
-			WLL = { add_ideas = BEL_jules_henri_vincotte } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = avions_fairey
-				}
-			}
-			WLL = { add_ideas = avions_fairey } 
-		}		
-		if = {
-			limit = {
-				BEL = {
-					has_idea = renard
-				}
-			}
-			WLL = { add_ideas = avions_fairey } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = sabca
-				}
-			}
-			WLL = { add_ideas = sabca } 
-		}		
-		if = {
-			limit = {
-				BEL = {
-					has_idea = fn_herstol
-				}
-			}
-			WLL = { add_ideas = fn_herstol } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = frc_BEL
-				}
-			}
-			WLL = { add_ideas = frc_BEL } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = fn_trucks
-				}
-			}
-			WLL = { add_ideas = fn_trucks } 
-		}		
-		if = {
-			limit = {
-				BEL = {
-					has_idea = Cockerill_industry
-				}
-			}
-			WLL = { add_ideas = Cockerill_industry } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = srb_bel
-				}
-			}
-			WLL = { add_ideas = WLL_ACEC } 
-		}		
-		if = {
-			limit = {
-				BEL = {
-					has_idea = solvay
-				}
-			}
-			WLL = { add_ideas = Cockerill_industry } 
-		}		
-		hidden_effect = {
-			news_event = { hours = 6 id = belgium.159 }
-		}		
-	}
-	option = {
-		name = belgium.157.d	#neutrality
-		trigger = {
-			has_government = neutrality
-		}
-		random_owned_controlled_state = {
-			WLL = { transfer_state = PREV }
-		}
-		BEL = {
-			delete_unit_template_and_units = {
- 			   division_template = "Division d'Infanterie"
-			}
-			delete_unit_template_and_units = {
- 			   division_template = "Division de Cavalerie"
-			}	
-			delete_unit_template_and_units = {
- 			   division_template = "Cavalerie Motorisée"
-			}	
-			delete_unit_template_and_units = {
- 			   division_template = "Division Coloniale"
-			}	
-			WLL = {
-				inherit_technology = BEL
-				set_capital = { state = 34 }
-			}
-			every_army_leader = {
-				limit = { has_trait = flemish }
-				set_nationality = FLA
-			}
-			every_army_leader = {
-				limit = { has_trait = walloon }
-				set_nationality = WLL
-			}			
-		}	
-		WLL = {
-			FLA = {
-				inherit_technology = WLL
-			}
-		}		
-		if = {
-			limit = {
-				COG = { is_subject_of = BEL }  
-			}
-			WLL = { 
-				puppet = COG						  
-			}
-		}
-		BEL = {
-			transfer_units_fraction = {
-				target = WLL
-				size = 0.5
-			}			
-		}
-		WLL = { 
-			annex_country = { target = BEL transfer_troops = yes } 
-			change_tag_from = BEL 
+# 		WLL = {
+# 			set_politics = {
+# 				ruling_party = communism
+# 				elections_allowed = no
+# 			}
+# 			set_popularities = {
+# 				democratic = 33
+# 				fascism = 14
+# 				communism = 52
+# 				neutrality = 1
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_achille_van_acker
+# 				}
+# 			}
+# 			WLL = { add_ideas = WLL_Jules_Mahieu } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_julien_lahaut
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_julien_lahaut } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_joris_van_severen
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_Victor_Matthys } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_henri_denis
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_henri_denis } 
+# 		}	
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_gustave_joassart
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_gustave_joassart } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_Pierre_Daye
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_Pierre_Daye } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_Jose_Streel
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_Jose_Streel } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_xavier_relecom
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_xavier_relecom } 
+# 		}	
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_andor_berei
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_andor_berei } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_henri_glineur
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_henri_glineur } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_jean_terfve
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_jean_terfve } 
+# 		}		
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_oscar_michiels
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_olivier_derousseaux2 } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_victor_van_strydonck_de_burkel
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_gustave_fromont2 } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_jules_iserentant
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_paul_hiernaux } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_paul_hiernaux
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_paul_hiernaux } 
+# 		}		
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_henri_decarpentrie
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_henri_decarpentrie } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = FLA_auguste_baesens
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_jules_pire } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_olivier_derousseaux
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_yvan_gerard } 
+# 		}		
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_robert_desmet
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_andre_becquet } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_jean_de_lannoy
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_jean_de_lannoy } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_raoul_overstraeten
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_jules_henri_vincotte } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = avions_fairey
+# 				}
+# 			}
+# 			WLL = { add_ideas = avions_fairey } 
+# 		}		
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = renard
+# 				}
+# 			}
+# 			WLL = { add_ideas = avions_fairey } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = sabca
+# 				}
+# 			}
+# 			WLL = { add_ideas = sabca } 
+# 		}		
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = fn_herstol
+# 				}
+# 			}
+# 			WLL = { add_ideas = fn_herstol } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = frc_BEL
+# 				}
+# 			}
+# 			WLL = { add_ideas = frc_BEL } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = fn_trucks
+# 				}
+# 			}
+# 			WLL = { add_ideas = fn_trucks } 
+# 		}		
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = Cockerill_industry
+# 				}
+# 			}
+# 			WLL = { add_ideas = Cockerill_industry } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = srb_bel
+# 				}
+# 			}
+# 			WLL = { add_ideas = WLL_ACEC } 
+# 		}		
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = solvay
+# 				}
+# 			}
+# 			WLL = { add_ideas = Cockerill_industry } 
+# 		}		
+# 		hidden_effect = {
+# 			news_event = { hours = 6 id = belgium.159 }
+# 		}		
+# 	}
+# 	option = {
+# 		name = belgium.157.d	#neutrality
+# 		trigger = {
+# 			has_government = neutrality
+# 		}
+# 		random_owned_controlled_state = {
+# 			WLL = { transfer_state = PREV }
+# 		}
+# 		BEL = {
+# 			delete_unit_template_and_units = {
+#  			   division_template = "Division d'Infanterie"
+# 			}
+# 			delete_unit_template_and_units = {
+#  			   division_template = "Division de Cavalerie"
+# 			}	
+# 			delete_unit_template_and_units = {
+#  			   division_template = "Cavalerie Motorisée"
+# 			}	
+# 			delete_unit_template_and_units = {
+#  			   division_template = "Division Coloniale"
+# 			}	
+# 			WLL = {
+# 				inherit_technology = BEL
+# 				set_capital = { state = 34 }
+# 			}
+# 			every_army_leader = {
+# 				limit = { has_trait = flemish }
+# 				set_nationality = FLA
+# 			}
+# 			every_army_leader = {
+# 				limit = { has_trait = walloon }
+# 				set_nationality = WLL
+# 			}			
+# 		}	
+# 		WLL = {
+# 			FLA = {
+# 				inherit_technology = WLL
+# 			}
+# 		}		
+# 		if = {
+# 			limit = {
+# 				COG = { is_subject_of = BEL }  
+# 			}
+# 			WLL = { 
+# 				puppet = COG						  
+# 			}
+# 		}
+# 		BEL = {
+# 			transfer_units_fraction = {
+# 				target = WLL
+# 				size = 0.5
+# 			}			
+# 		}
+# 		WLL = { 
+# 			annex_country = { target = BEL transfer_troops = yes } 
+# 			change_tag_from = BEL 
 		
-		}	
+# 		}	
 		
-		if = {
-			limit = {
-				BEL = { is_subject = yes }  
-			}
-			OVERLORD = {
-				set_country_flag = bel_overlord				 
-			} 
-		}		
-		random_owned_controlled_state = {
-			WLL = { transfer_state = PREV }
-		}
-		random_country = {
-			limit = {
-				has_country_flag = bel_overlord
-			}
-			puppet = WLL
-		}		
+# 		if = {
+# 			limit = {
+# 				BEL = { is_subject = yes }  
+# 			}
+# 			OVERLORD = {
+# 				set_country_flag = bel_overlord				 
+# 			} 
+# 		}		
+# 		random_owned_controlled_state = {
+# 			WLL = { transfer_state = PREV }
+# 		}
+# 		random_country = {
+# 			limit = {
+# 				has_country_flag = bel_overlord
+# 			}
+# 			puppet = WLL
+# 		}		
 		
-		WLL = {
-			set_politics = {
-				ruling_party = neutrality
-				elections_allowed = no
-			}
-			set_popularities = {
-				democratic = 25
-				fascism = 12
-				communism = 10
-				neutrality = 51
-			}
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_achille_van_acker
-				}
-			}
-			WLL = { add_ideas = WLL_Jules_Mahieu } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_julien_lahaut
-				}
-			}
-			WLL = { add_ideas = BEL_julien_lahaut } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_joris_van_severen
-				}
-			}
-			WLL = { add_ideas = BEL_Victor_Matthys } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_henri_denis
-				}
-			}
-			WLL = { add_ideas = BEL_henri_denis } 
-		}	
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_gustave_joassart
-				}
-			}
-			WLL = { add_ideas = BEL_gustave_joassart } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_Pierre_Daye
-				}
-			}
-			WLL = { add_ideas = BEL_Pierre_Daye } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_Jose_Streel
-				}
-			}
-			WLL = { add_ideas = BEL_Jose_Streel } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_xavier_relecom
-				}
-			}
-			WLL = { add_ideas = BEL_xavier_relecom } 
-		}	
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_andor_berei
-				}
-			}
-			WLL = { add_ideas = BEL_andor_berei } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_henri_glineur
-				}
-			}
-			WLL = { add_ideas = BEL_henri_glineur } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_jean_terfve
-				}
-			}
-			WLL = { add_ideas = BEL_jean_terfve } 
-		}		
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_oscar_michiels
-				}
-			}
-			WLL = { add_ideas = BEL_olivier_derousseaux2 } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_victor_van_strydonck_de_burkel
-				}
-			}
-			WLL = { add_ideas = BEL_gustave_fromont2 } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_jules_iserentant
-				}
-			}
-			WLL = { add_ideas = BEL_paul_hiernaux } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_paul_hiernaux
-				}
-			}
-			WLL = { add_ideas = BEL_paul_hiernaux } 
-		}		
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_henri_decarpentrie
-				}
-			}
-			WLL = { add_ideas = BEL_henri_decarpentrie } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = FLA_auguste_baesens
-				}
-			}
-			WLL = { add_ideas = BEL_jules_pire } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_olivier_derousseaux
-				}
-			}
-			WLL = { add_ideas = BEL_yvan_gerard } 
-		}		
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_robert_desmet
-				}
-			}
-			WLL = { add_ideas = BEL_andre_becquet } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_jean_de_lannoy
-				}
-			}
-			WLL = { add_ideas = BEL_jean_de_lannoy } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_raoul_overstraeten
-				}
-			}
-			WLL = { add_ideas = BEL_jules_henri_vincotte } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = avions_fairey
-				}
-			}
-			WLL = { add_ideas = avions_fairey } 
-		}		
-		if = {
-			limit = {
-				BEL = {
-					has_idea = renard
-				}
-			}
-			WLL = { add_ideas = avions_fairey } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = sabca
-				}
-			}
-			WLL = { add_ideas = sabca } 
-		}		
-		if = {
-			limit = {
-				BEL = {
-					has_idea = fn_herstol
-				}
-			}
-			WLL = { add_ideas = fn_herstol } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = frc_BEL
-				}
-			}
-			WLL = { add_ideas = frc_BEL } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = fn_trucks
-				}
-			}
-			WLL = { add_ideas = fn_trucks } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_miesse_tank
-				}
-			}
-			WLL = { add_ideas = BEL_familleureux } 
-		}	
-		if = {
-			limit = {
-				BEL = {
-					has_idea = BEL_familleureux
-				}
-			}
-			WLL = { add_ideas = BEL_familleureux } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = renault_bel
-				}
-			}
-			WLL = { add_ideas = renault_bel } 
-		}		
-		if = {
-			limit = {
-				BEL = {
-					has_idea = Cockerill_industry
-				}
-			}
-			WLL = { add_ideas = Cockerill_industry } 
-		}
-		if = {
-			limit = {
-				BEL = {
-					has_idea = srb_bel
-				}
-			}
-			WLL = { add_ideas = WLL_ACEC } 
-		}		
-		if = {
-			limit = {
-				BEL = {
-					has_idea = solvay
-				}
-			}
-			WLL = { add_ideas = Cockerill_industry } 
-		}		
-		hidden_effect = {
-			news_event = { hours = 6 id = belgium.159 }
-		}		
-	}	
-}	
+# 		WLL = {
+# 			set_politics = {
+# 				ruling_party = neutrality
+# 				elections_allowed = no
+# 			}
+# 			set_popularities = {
+# 				democratic = 25
+# 				fascism = 12
+# 				communism = 10
+# 				neutrality = 51
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_achille_van_acker
+# 				}
+# 			}
+# 			WLL = { add_ideas = WLL_Jules_Mahieu } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_julien_lahaut
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_julien_lahaut } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_joris_van_severen
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_Victor_Matthys } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_henri_denis
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_henri_denis } 
+# 		}	
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_gustave_joassart
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_gustave_joassart } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_Pierre_Daye
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_Pierre_Daye } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_Jose_Streel
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_Jose_Streel } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_xavier_relecom
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_xavier_relecom } 
+# 		}	
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_andor_berei
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_andor_berei } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_henri_glineur
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_henri_glineur } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_jean_terfve
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_jean_terfve } 
+# 		}		
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_oscar_michiels
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_olivier_derousseaux2 } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_victor_van_strydonck_de_burkel
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_gustave_fromont2 } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_jules_iserentant
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_paul_hiernaux } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_paul_hiernaux
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_paul_hiernaux } 
+# 		}		
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_henri_decarpentrie
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_henri_decarpentrie } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = FLA_auguste_baesens
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_jules_pire } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_olivier_derousseaux
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_yvan_gerard } 
+# 		}		
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_robert_desmet
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_andre_becquet } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_jean_de_lannoy
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_jean_de_lannoy } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_raoul_overstraeten
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_jules_henri_vincotte } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = avions_fairey
+# 				}
+# 			}
+# 			WLL = { add_ideas = avions_fairey } 
+# 		}		
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = renard
+# 				}
+# 			}
+# 			WLL = { add_ideas = avions_fairey } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = sabca
+# 				}
+# 			}
+# 			WLL = { add_ideas = sabca } 
+# 		}		
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = fn_herstol
+# 				}
+# 			}
+# 			WLL = { add_ideas = fn_herstol } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = frc_BEL
+# 				}
+# 			}
+# 			WLL = { add_ideas = frc_BEL } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = fn_trucks
+# 				}
+# 			}
+# 			WLL = { add_ideas = fn_trucks } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_miesse_tank
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_familleureux } 
+# 		}	
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = BEL_familleureux
+# 				}
+# 			}
+# 			WLL = { add_ideas = BEL_familleureux } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = renault_bel
+# 				}
+# 			}
+# 			WLL = { add_ideas = renault_bel } 
+# 		}		
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = Cockerill_industry
+# 				}
+# 			}
+# 			WLL = { add_ideas = Cockerill_industry } 
+# 		}
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = srb_bel
+# 				}
+# 			}
+# 			WLL = { add_ideas = WLL_ACEC } 
+# 		}		
+# 		if = {
+# 			limit = {
+# 				BEL = {
+# 					has_idea = solvay
+# 				}
+# 			}
+# 			WLL = { add_ideas = Cockerill_industry } 
+# 		}		
+# 		hidden_effect = {
+# 			news_event = { hours = 6 id = belgium.159 }
+# 		}		
+# 	}	
+# }	
 news_event = {
 	id = belgium.158
 	title = belgium.158.t

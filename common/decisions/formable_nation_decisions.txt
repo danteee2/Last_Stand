@@ -11351,6 +11351,13 @@ greater_italy_category = {
 
 				news_event = { id = bba_italian_formables_news.1 hours = 8 }	
 
+				#Albania
+				ITA = {
+					910 = { add_core_of = ROOT }
+					44 = { add_core_of = ROOT }
+					805 = { add_core_of = ROOT }
+				}
+
 				set_global_flag = greater_italy_flag
 
 			}

@@ -1206,24 +1206,24 @@ country_event = {
 		name = sweden_sca_unite.1.a
 
 		ai_chance = {
-			base = 2
+			base = 100
 			modifier = {
-				factor = 2
+				factor = 100
 				has_opinion = {
 					target = SWE
-					value > 50
+					value > 1
 				}
 			}
 			modifier = {
-				factor = 2
+				factor = 100
 				is_in_faction_with = SWE
 			}
 			modifier = {
-				factor = 2
+				factor = 100
 				has_government = FROM
 			}
 			modifier = {
-				factor = 10
+				factor = 100
 				is_subject_of = SWE
 			}						
 		}
@@ -1248,16 +1248,16 @@ country_event = {
 		name = sweden_sca_unite.1.b
 
 		ai_chance = {
-			base = 4
+			base = 0
 			modifier = {
-				factor = 2
+				factor = 0
 				has_opinion = {
 					target = SWE
 					value < 50
 				}
 			}
 			modifier = {
-				factor = 2
+				factor = 0
 				NOT = { is_in_faction_with = SWE }
 			}			
 		}
@@ -1303,7 +1303,7 @@ country_event = {
 		name = sweden_sca_unite.3.a
 
 		ai_chance = {
-			base = 2						
+			base = 0						
 		}
 		add_political_power = 50	
 	}	
@@ -1319,24 +1319,24 @@ country_event = {
 		name = sweden_sca_unite.4.a
 
 		ai_chance = {
-			base = 2
+			base = 100
 			modifier = {
 				factor = 2
 				has_opinion = {
 					target = SWE
-					value > 50
+					value > 1
 				}
 			}
 			modifier = {
-				factor = 2
+				factor = 100
 				is_in_faction_with = SWE
 			}
 			modifier = {
-				factor = 2
+				factor = 100
 				has_government = FROM
 			}
 			modifier = {
-				factor = 10
+				factor = 100
 				is_subject_of = SWE
 			}						
 		}
@@ -1361,7 +1361,7 @@ country_event = {
 		name = sweden_sca_unite.4.b
 
 		ai_chance = {
-			base = 4
+			base = 0
 			modifier = {
 				factor = 2
 				has_opinion = {
@@ -1388,7 +1388,7 @@ country_event = {
 		name = sweden_sca_unite.5.a
 
 		ai_chance = {
-			base = 2						
+			base = 100						
 		}
 		SWE = {
 			annex_country = {

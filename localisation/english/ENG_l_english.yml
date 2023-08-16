@@ -31,6 +31,7 @@ ENG_quality_RAF_pilots:0 "Quality RAF Pilots"
 
   ENG_permit_plane_leasement:0 "Permit [SOV.GetAdjective] Plane Leasement"
   ENG_permit_plane_leasement_desc:0 "In our mutual war effort, leasing [SOV.GetNameDef] with planes will assist them in their fight against our common enemy."
+## last stand ##
   ENG_let_that_lion_roar:0 "Let That Lion Roar"
 ENG_revitalize_northern_england:0 "Revitalize Northern England"
 ENG_expand_southern_industry:0 "Expand Southern Industry"
@@ -44,7 +45,7 @@ ENG_attract_colonial_investors:0 "Attract Colonial Investors"
 ENG_public_school_funding:0 "Public School Funding"
 ENG_Provoke_british_patriotism:0 "Provoke British Patriotism"
 ENG_adopt_bliztkrieg_tactics:0 "Adopt Bliztkrieg Tactics"
-
+ENG_harness_churchill's_figure:0 "Harness The Power Of The Speeches"
 
 
 
@@ -62,6 +63,9 @@ ENG_Provoke_british_patriotism_desc:0 "From the largest empire in the world to t
 ENG_adopt_bliztkrieg_tactics_desc:0 "The speed of the German panzers is intruiging and we shall consider it for our newly developed 'motorized army'."
 ENG_let_that_lion_roar_desc:0 "As our economy continues to suffer from the great depression, we shall take action to ensure Britannia's lion will roar once again..."
 ENG_public_school_funding_desc:0 "Time to continue the plans of previous governments in expanding our public schools."
+ENG_harness_churchill's_figure_desc:0 "We must utilize the influential power his speeches have and redirect it into our war industry."
+
+#####
 
 
 
@@ -79,9 +83,24 @@ british_patriotism:0 "British Patriotism"
 motorized_army:0 "Motorized Army"
 motorized_army_two:0 "Motorized Army"
 motorized_army_three:0 "Motorized Army"
+motorized_army_four:0 "Motorized Army"
 Trade_expanded:0 "Trade Expanded"
+Increased_enlistment:0 "Increased Enlistment"
 
 
+
+#last stand army tree 2023 - danteee
+  ENG_britains_finest_armor_corps:0 "Britain's Finest Armor Corps"
+ENG_order_increased_tank_production:0 "Order Increased Tank Production"
+ENG_ramp_up_constription:0 "Ramp Up Conscription"
+
+ENG_britains_finest_armor_corps_desc:0 "Under the banner of 'Britain's Finest Armor Corps,' we hone our military prowess, crafting an unmatched force of steel and courage. The thunderous advance of our armored divisions sends a resounding message to all foes - the British lion remains undaunted, its claws sharper than ever."
+ENG_order_increased_tank_production_desc:0 "By ordering increased tank production, we stoke the fiery heart of our industry. The rumble of engines and the clatter of tracks become our new anthem, a powerful testament to British tenacity. Our enemies shall quake at the sight of our armored might rolling relentlessly towards victory."
+ENG_ramp_up_constription_desc:0 "As we ramp up conscription, the call to arms resonates across the breadth of our great nation. Every new enlistment, a promise of steadfast resistance against those who threaten our freedom. The United Kingdom stands firm, fortified by the courage and determination of its sons and daughters ready to defend their homeland."
+
+
+ENG_strike_mainland_europe_together:0 "§RStrike Mainland Europe Together"
+ENG_strike_mainland_europe_together_desc:0 "It is time, no matter the political state of our nation we must reach the great plains, as a beacon of liberation from Nazi scum."
 
   #Custom Tooltips
 
@@ -93,7 +112,8 @@ Trade_expanded:0 "Trade Expanded"
   ENG_admiralty_naval_staff:0 "Admiralty Naval Staff"
   ENG_royal_family_remnants:0 "Royal Family Remnants"
   ENG_royal_family_remnants_desc:0 "While most of the Royal Family was executed by those communist demons, there is always an heir, eager to get rid of this new rump parliament and restore the British throne."
-
+strike_mainland_europe:0 "Strike Mainland Europe"
+churchills_influence:0 "Churchill's Influence"
 
 
   #Events

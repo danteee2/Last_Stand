@@ -342,7 +342,6 @@ focus_tree = {
 			OR = {
 				communism > 0.1
 				has_country_leader = { ruling_only = yes name = "Harry S. Truman" }
-				has_country_leader = { ruling_only = yes character = USA_wendell_willkie }
 			}
 		}
 
@@ -679,19 +678,6 @@ focus_tree = {
 						has_country_flag = r56_USA_democratic_rebel_check
 					}
 				}
-				show_unit_leaders_tooltip = USA_benjamin_o_davis
-				#create_corps_commander = {
-				#	name = "Benjamin O. Davis"
-				#	gfx = GFX_r56_portrait_usa_benjamin_o_davis
-				#	traits = { career_officer old_guard cavalry_officer } 
-				#	id = 6298
-				#	skill = 3
-				#
-				#	attack_skill = 2
-				#	defense_skill = 1
-				#	planning_skill = 4
-				#	logistics_skill = 3
-				#}
 			}
 			if = {
 				limit = {
@@ -704,20 +690,7 @@ focus_tree = {
 					NOT = {
 						country_exists = CSA
 					}
-				}
-				if = {
-					limit = {
-						has_country_flag = mtg_usa_civil_war_fascists_1
-						not = { has_country_flag = mtg_usa_civil_war_fascists_2 }
-					}
-					country_event = mtg_usa_civil_war_fascists.2
-					custom_effect_tooltip = mtg_usa_civil_war_warning_tt
-				}
-				else_if = {
-					limit = { not = { has_country_flag = mtg_usa_civil_war_fascists_1 } }
-					country_event = mtg_usa_civil_war_fascists.1
-					custom_effect_tooltip = mtg_usa_civil_war_warning_tt
-				}				
+				}			
 			}
 
 		}
@@ -752,6 +725,8 @@ focus_tree = {
 		
 
 		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.10
 			if = {
 				limit = {
 					"PHI" = {
@@ -1219,13 +1194,22 @@ focus_tree = {
 			}
 		}
 
-		
-		
-		
-
 		completion_reward = {
 			SOV = { add_to_tech_sharing_group = USA_SOV_tech_group }
 			add_to_tech_sharing_group = USA_SOV_tech_group
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+			SOV = { add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
 		}	
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -11400,14 +11384,6 @@ focus_tree = {
 		prerequisite = { focus = USA_strategic_bombing }
 		available = {
 			has_war = yes
-			OR = {
-				is_in_faction_with = GER
-				is_in_faction_with = JAP
-				is_in_faction_with = ITA
-				is_in_faction_with = SOV
-				is_in_faction_with = FRA
-				is_in_faction_with = ENG
-			}
 		}
 		x = 0
 		y = 2
@@ -11421,7 +11397,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			air_experience = 25
+			air_experience = 50
 			add_tech_bonus = {
 				name = USA_combined_bomber_offensive
 				bonus = 1.0
@@ -12227,7 +12203,7 @@ focus_tree = {
 	focus = {
 		id = USA_fund_the_navy
 		icon = GFX_goal_USA_coa_navy
-		x = 3
+		x = 5
 		y = 1
 		relative_position_id = USA_two_ocean_navy_act
 		cost = 5
@@ -12699,4 +12675,60 @@ focus_tree = {
 			add_ideas = beacon_of_democracy_idea
 		}
 	}	
+
+	focus = {
+		id = USA_Los_Angeles_Repair
+		icon = GFX_goal_generic_expand_the_naval_industry
+		prerequisite = { focus = USA_bureau_of_ships }
+		x = 5
+		y = 1
+		relative_position_id = USA_bureau_of_ships
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 531 282 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 528 529 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}			
+			add_ideas = ENG_expand_the_repair_yards
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MILITARY_IMPROVEMENT }
+	}
 }
