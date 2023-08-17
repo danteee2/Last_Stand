@@ -8320,8 +8320,7 @@ focus_tree = {
 	focus = {
 		id = ITA_satisfy_the_branches_needs
 		icon = GFX_focus_research2
-		prerequisite = { focus = ITA_flotta_d_evasione }
-		prerequisite = { focus = ITA_supremacy_in_the_skies }
+		prerequisite = { focus = ITA_flotta_d_evasione focus = ITA_supremacy_in_the_skies }
 		x = -5
 		y = 1
 		relative_position_id = ITA_flotta_d_evasione
@@ -8331,7 +8330,7 @@ focus_tree = {
 			factor = 100
 		}
 		available = {
-			amount_research_slots < 6
+			amount_research_slots < 7
 			num_of_military_factories > 40
 			num_of_naval_factories > 16
 			num_of_factories > 80
