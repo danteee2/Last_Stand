@@ -868,6 +868,8 @@ focus_tree = {
 				}
 				NOT = {
 					has_completed_focus = GER_kill_hitler
+					has_completed_focus = GER_rally_the_monarchists
+					has_completed_focus = GER_the_alternative
 				}
 			}
 		}
@@ -5587,81 +5589,7 @@ focus_tree = {
 			FOCUS_FILTER_ANNEXATION
 		}
 	}
-	focus = {
-		id = GER_influence_brazil
-		icon = GFX_goal_ger_influence_brazil
-		cost = 10.00
-		prerequisite = {
-			focus = GER_around_maginot
-			focus = GER_above_maginot
-		}
-		x = 1
-		y = 1
-		relative_position_id = GER_around_maginot
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			SPR = {
-				has_civil_war = no
-			}
-			BRA = {
-				has_civil_war = no
-			}
-			#date > 1940.1.1
-		}
-		completion_reward = {
-			BRA = {
-				add_opinion_modifier = {
-					target = GER
-					modifier = ger_naval_intimidation_focus
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = fascism
-						}
-					}
-					add_timed_idea = {
-						idea = fascist_influence
-						days = 1035
-					}
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = communism
-						}
-					}
-					add_timed_idea = {
-						idea = communist_influence
-						days = 1035
-					}
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = democratic
-						}
-					}
-					add_timed_idea = {
-						idea = democratic_influence
-						days = 1035
-					}
-				}
-				country_event = {
-					id = generic.1
-				}
-				if = {
-					limit = {
-						has_idea = neutrality_idea
-					}
-					remove_ideas = neutrality_idea
-				}
-			}
-		}
-
-	}
+	
 	focus = {
 		id = GER_above_maginot
 		icon = GFX_goal_generic_air_bomber
@@ -5726,83 +5654,6 @@ focus_tree = {
 		}
 		search_filters = {
 			FOCUS_FILTER_ANNEXATION
-		}
-	}
-	focus = {
-		id = GER_operation_bolivar
-		icon = GFX_goal_generic_intelligence_exchange
-		cost = 5.00
-		prerequisite = {
-			focus = GER_influence_brazil
-		}
-		allow_branch = {
-			has_dlc = "La Resistance"
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					has_completed_focus = GER_kill_hitler
-				}
-			}
-		}
-		relative_position_id = GER_influence_brazil
-		x = -1
-		y = 1
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				is_historical_focus_on = yes
-				factor = 0.5
-			}
-		}
-		available = {
-			has_intelligence_agency = yes
-		}
-		completion_reward = {
-			add_ideas = GER_abwehr_contacts
-			create_operative_leader = {
-				name = "Johannes Siegfried Becker"
-				portrait_path = gfx/leaders/Europe/portrait_europe_generic_operative_male_6.dds
-				traits = {
-					operative_demolition_expert
-				}
-				bypass_recruitment = no
-				available_to_spy_master = yes
-				nationalities = {
-					GER ARG
-				}
-			}
-			create_operative_leader = {
-				name = "Bruno Dittman"
-				portrait_path = gfx/leaders/Europe/portrait_europe_generic_operative_male_24.dds
-				traits = {
-					operative_demolition_expert
-				}
-				bypass_recruitment = no
-				available_to_spy_master = yes
-				nationalities = {
-					GER CHL
-				}
-			}
-			create_operative_leader = {
-				name = "George Nicolaus"
-				portrait_path = gfx/leaders/Europe/portrait_europe_generic_operative_male_25.dds
-				traits = {
-					operative_demolition_expert
-				}
-				bypass_recruitment = no
-				available_to_spy_master = yes
-				nationalities = {
-					GER MEX
-				}
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_ESPIONAGE
 		}
 	}
 	focus = {
@@ -10436,9 +10287,15 @@ focus_tree = {
 				NOT = {
 					has_completed_focus = GER_denounce_versailles
 					has_completed_focus = GER_rally_the_monarchists
+					has_completed_focus = GER_the_alternative
 				}
 			}
 		}
+		offset = { 
+			trigger = { has_completed_focus = GER_kill_hitler }
+			x = -1
+			y = 0
+	}
 		available = {
 			is_subject = no
 			has_war = no
@@ -11486,6 +11343,7 @@ focus_tree = {
 				NOT = {
 					has_completed_focus = GER_kill_hitler
 					has_completed_focus = GER_denounce_versailles
+					has_completed_focus = GER_the_alternative
 				}
 			}
 		}
@@ -11766,21 +11624,6 @@ focus_tree = {
 		id = GER_prepare_italian_coup_r56
 		text = GER_prepare_italian_coup
 		icon = GFX_goal_italian_civil_war
-		allow_branch = {
-			has_dlc = "Waking the Tiger"
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					has_completed_focus = GER_kill_hitler
-					has_completed_focus = GER_denounce_versailles
-				}
-			}
-		}
 		prerequisite = { focus = GER_restore_the_central_powers }
 		available = {
 			is_subject = no
@@ -12152,21 +11995,6 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 5
-		allow_branch = {
-			has_dlc = "Battle for the Bosporus"
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					has_completed_focus = GER_kill_hitler
-					has_completed_focus = GER_denounce_versailles
-				}
-			}
-		}
 
 		available = {
 			OR = {
@@ -12237,21 +12065,6 @@ focus_tree = {
 		id = GER_safeguard_the_baltic_r56
 		text = GER_safeguard_the_baltic
 		icon = GFX_goal_SOV_baltic_aggression
-		allow_branch = {
-			has_dlc = "Waking the Tiger"
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					has_completed_focus = GER_kill_hitler
-					has_completed_focus = GER_denounce_versailles
-				}
-			}
-		}
 		prerequisite = {
 			focus = GER_restore_the_empire
 			#focus = GER_mon_peaceful
@@ -16303,6 +16116,11 @@ focus_tree = {
 				}
 			}
 		}
+		offset = { 
+			trigger = { has_completed_focus = GER_the_alternative }
+			x = -78
+			y = 0
+	}
 		mutually_exclusive = {
 			focus = GER_denounce_versailles
 			focus = GER_rally_the_monarchists
@@ -16322,8 +16140,8 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = { GER_remove_mefo_bills = yes }
 			add_stability = -0.2
+			mark_focus_tree_layout_dirty = yes
 		}
-
 	}
 	focus = {
 		id = GER_for_the_german_people
@@ -16739,19 +16557,15 @@ focus_tree = {
 		y = 1
 
 		cost = 10
-
-		allow_branch = {
-			has_dlc = "La Resistance"
-		}		
 		
 		ai_will_do = {
 			factor = 5
 		}
-		
+
 		prerequisite = {
 			focus = GER_himmler_takes_lead
 		}
-		
+				
 		available = {
 
 		}
@@ -17088,7 +16902,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_formulate_ss_agency
 		}
-		x = -9
+		x = -8
 		y = 2
 		relative_position_id = GER_himmler_takes_lead
 		completion_reward = {
