@@ -2,11 +2,18 @@
 defined_text = {
     name = get_super_event_title
 
-    text = {
+	text = {
         trigger = {
-            has_global_flag = GER_WW2
+            has_global_flag = SOV_Motherland
         }
-        localization_key = "sp_event_Second_World_War"
+        localization_key = "sp_event_For_The_Motherland"
+    }
+
+	text = {
+        trigger = {
+            has_global_flag = SOV_Soviet_Victory
+        }
+        localization_key = "sp_event_Soviet_Victory"
     }
 	
     text = {
@@ -1716,22 +1723,5 @@ defined_text = {
 		}
 		localization_key = "sp_event_Balkan_QUOTE"
 	}
-
-	###############
-	###SOVIETS###
-	###############
-	text = {
-        trigger = {
-            has_global_flag = SOV_Motherland
-        }
-        localization_key = "sp_event_For_The_Motherland"
-    }
-
-	text = {
-        trigger = {
-            has_global_flag = SOV_Soviet_Victory
-        }
-        localization_key = "sp_event_Soviet_Victory"
-    }
 }
 

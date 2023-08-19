@@ -29,11 +29,6 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_sp_event_Second_World_War"
-		textureFile = "/gfx/sp_events/Super_Event_World_War2.dds"
-	}
-
-	spriteType = {
 		name = "GFX_sp_event_German_Invasion_of_Italy"
 		textureFile = "/gfx/sp_events/Super_Event_Italy_Invaded.dds"
 	}
@@ -275,12 +270,7 @@ spriteTypes = {
 		name = "GFX_sp_event_Democratic_Germany"
 		textureFile = "/gfx/sp_events/Super_Event_Democratic_Germany.dds"
 	}
-	
-	spriteType = {
-		name = "GFX_sp_event_Endsieg"
-		textureFile = "/gfx/sp_events/Super_Event_Endsieg.dds"
-	}
-	
+		
 	spriteType = {
 		name = "GFX_sp_event_Fall_France"
 		textureFile = "/gfx/sp_events/Super_Event_Fall_France.dds"
