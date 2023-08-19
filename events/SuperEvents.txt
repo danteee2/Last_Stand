@@ -658,7 +658,7 @@ country_event = {	#Fall of USA
 				country_exists = USA
 			}
 			USA = { has_capitulated = yes }
-		}
+		}ù
 	}
 	
 	option = {
@@ -2168,33 +2168,6 @@ country_event = {	#Bay of Pigs Invasion
         set_global_flag = USA_bay_of_pigs
 		set_global_flag = Super_Event_Visible
 		play_song = "super_bay_of_pigs"
-	}
-}
-
-country_event = {	#2nd American Mexican War
-	id = super.60
-	title = super.60.t
-	desc = super.60.d
-	picture = GFX_report_event_diplomatic_message
-
-	is_triggered_only = no
-	
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	trigger = {
-		AND = {
-			USA = { has_war_with = MEX }
-		}
-	}
-	
-	option = {
-		name = super.60.a
-		
-        set_global_flag = USA_mexican_war
-		set_global_flag = Super_Event_Visible
-		play_song = "super_american_mexican_war"
 	}
 }
 

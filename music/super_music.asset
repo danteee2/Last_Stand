@@ -1,4 +1,9 @@
 music = {
+	name = "super_for_the_motherland"
+	file = "for_the_motherland.ogg"
+}
+
+music = {
 	name = "super_ww2"
 	file = "ww2.ogg"
 }
