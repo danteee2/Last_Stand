@@ -12497,7 +12497,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		}
 	focus = {
-		id = MON_intigration_of_xinjiangs_workers
+		id = MON_integration_of_xinjiangs_workers
 		icon = GFX_goal_CHI_sheng_shikai_issue
 		x = -14
 		y = 2
