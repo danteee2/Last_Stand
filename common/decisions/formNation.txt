@@ -8472,6 +8472,7 @@ formable_nations_mod_category = {
 						509 = { is_controlled_by = ROOT }
 						510 = { is_controlled_by = ROOT }
 						278 = { is_controlled_by = ROOT }
+						954 = { is_controlled_by = ROOT }
 					}
 				}
 				AND = {
@@ -8497,6 +8498,7 @@ formable_nations_mod_category = {
 				509 = { add_core_of = ROOT }
 				510 = { add_core_of = ROOT }
 				278 = { add_core_of = ROOT }
+				954 = { add_core_of = ROOT }
 			}
 			299 = { add_claim_by = ROOT }
 			720 = { add_claim_by = ROOT }

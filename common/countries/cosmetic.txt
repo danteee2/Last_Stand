@@ -1182,6 +1182,10 @@ FORM_GRO = {
     color = rgb { 70 0 0 }
 	color_ui = rgb { 70 0 0 }
 }
+FORM_CHG = {
+    color = rgb { 4 2 98 }
+	color_ui = rgb { 4 2 98 }
+}
 FORM_PEE = {
     color = rgb { 0 120 0 }
 	color_ui = rgb { 0 120 0 }
