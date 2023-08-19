@@ -68,6 +68,7 @@ recruit_character = SOV_pavel_milyukov
 recruit_character = SOV_aleksandr_verkhovsky
 recruit_character = SOV_sofia_panina
 recruit_character = SOV_konstantin_rodzayevsky
+recruit_character = SOV_ofournet
 
 
 recruit_character = SOV_aleksandr_vasilevsky
