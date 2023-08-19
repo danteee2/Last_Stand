@@ -468,3 +468,10 @@ music = {
 		factor = 0
 	}
 }
+
+music = {
+	song = "super_sovietvictory"
+	chance = {
+		factor = 0
+	}
+}

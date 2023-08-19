@@ -3,41 +3,6 @@
 ################
 
 add_namespace = super
-add_namespace = super_info
-
-country_event = { #info
-	id = super_info.1
-	title = super_info.1.t
-	desc = super_info.1.d
-	picture = GFX_super_event_picture
-
-	is_triggered_only = yes
-	
-	fire_only_once = no
-
-	option = { #changelog
-		name = super_info.1.a
-		country_event = { id = super_info.2 }
-	}
-	option = { #bye
-		name = super_info.1.b
-	}
-}
-
-country_event = { #changelog
-	id = super_info.2
-	title = super_info.2.t
-	desc = super_info.2.d
-	picture = GFX_report_event_physics_lab_01
-
-	is_triggered_only = yes
-	
-	fire_only_once = no
-
-	option = { #bye
-		name = super_info.2.a
-	}
-}
 
 country_event = {	#ww3
 	id = super.70
@@ -658,7 +623,7 @@ country_event = {	#Fall of USA
 				country_exists = USA
 			}
 			USA = { has_capitulated = yes }
-		}ù
+		}
 	}
 	
 	option = {
@@ -2171,6 +2136,33 @@ country_event = {	#Bay of Pigs Invasion
 	}
 }
 
+country_event = {	#2nd American Mexican War
+	id = super.60
+	title = super.60.t
+	desc = super.60.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		AND = {
+			USA = { has_war_with = MEX }
+		}
+	}
+	
+	option = {
+		name = super.60.a
+		
+        set_global_flag = USA_mexican_war
+		set_global_flag = Super_Event_Visible
+		play_song = "super_american_mexican_war"
+	}
+}
+
 country_event = { #People's Republic of China
 	id = super.62
 	title = super.62.t
@@ -2346,6 +2338,7 @@ country_event = { #Backstab Japan
 	}
 }
 
+###LAST STAND SUPER EVENTS###
 country_event = { #For The Motherland
 	id = super.78
 	title = super.78.t
@@ -2368,5 +2361,31 @@ country_event = { #For The Motherland
 		set_global_flag = SOV_Motherland
 		set_global_flag = Super_Event_Visible
 		play_song = "super_for_the_motherland"
+	}
+}
+
+country_event = { #Soviet Victory In Europe
+	id = super.79
+	title = super.79.t
+	desc = super.79.d
+	picture = GFX_report_event_diplomatic_message
+	
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		GER = { has_offensive_war_with = SOV }
+		GER = { has_capitulated = yes }
+	}
+	
+	option = {
+		name = super.79.a
+		
+		set_global_flag = SOV_Soviet_Victory
+		set_global_flag = Super_Event_Visible
+		play_song = "super_sovietvictory"
 	}
 }

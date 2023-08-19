@@ -4,6 +4,11 @@ music = {
 }
 
 music = {
+	name = "super_sovietvictory"
+	file = "sovietvictory.ogg"
+}
+
+music = {
 	name = "super_ww2"
 	file = "ww2.ogg"
 }

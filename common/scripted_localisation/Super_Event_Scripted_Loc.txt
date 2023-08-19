@@ -8,6 +8,13 @@ defined_text = {
         }
         localization_key = "sp_event_For_The_Motherland"
     }
+
+	text = {
+        trigger = {
+            has_global_flag = SOV_Soviet_Victory
+        }
+        localization_key = "sp_event_Soviet_Victory"
+    }
 	
     text = {
         trigger = {
@@ -586,6 +593,13 @@ defined_text = {
         }
         localization_key = "sp_event_For_The_Motherland_REMARK"
     }
+
+	text = {
+        trigger = {
+            has_global_flag = SOV_Soviet_Victory
+        }
+        localization_key = "sp_event_Soviet_Victory_REMARK"
+    }
     
     text = { 
         trigger = {
@@ -1163,6 +1177,13 @@ defined_text = {
             has_global_flag = SOV_Motherland
         }
         localization_key = "sp_event_For_The_Motherland_QUOTE"
+    }
+
+	text = {
+        trigger = {
+            has_global_flag = SOV_Soviet_Victory
+        }
+        localization_key = "sp_event_Soviet_Victory_QUOTE"
     }
     
     text = {
