@@ -316,13 +316,7 @@ guiTypes = {
 			spriteType = "GFX_sp_event_Democratic_Germany"
 			position = {x = 0 y = 0}
 		}
-		
-		iconType = {
-			name = "Super_Event_Image_Endsieg"
-			spriteType = "GFX_sp_event_Endsieg"
-			position = {x = 0 y = 0}
-		}
-		
+				
 		iconType = {
 			name = "Super_Event_Image_Fall_France"
 			spriteType = "GFX_sp_event_Fall_France"
