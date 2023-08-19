@@ -14,6 +14,12 @@ guiTypes = {
 			name = "Background"	
 			spriteType = "GFX_sp_event_window"
 		}
+
+		iconType = {
+			name = "Super_Event_Image_For_The_Motherland"
+			spriteType = "GFX_sp_event_For_The_Motherland"
+			position = {x = 0 y = 0}
+		}
 		
 		iconType = {
 			name = "Super_Event_Image_Second_World_War"
