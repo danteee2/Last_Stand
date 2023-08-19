@@ -352,14 +352,7 @@ defined_text = {
 		}
 		localization_key = "sp_event_German_Democracy"
 	}
-	
-	text = {
-		trigger = {
-			has_global_flag = GER_Endsieg
-		}
-		localization_key = "sp_event_Endsieg"
-	}
-	
+		
 	text = {
 		trigger = {
 			has_global_flag = FRA_Fall
@@ -940,13 +933,6 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			has_global_flag = GER_Endsieg
-		}
-		localization_key = "sp_event_Endsieg_REMARK"
-	}
-	
-	text = {
-		trigger = {
 			has_global_flag = FRA_Fall
 		}
 		localization_key = "sp_event_Fall_France_REMARK"
@@ -1522,14 +1508,7 @@ defined_text = {
 		}
 		localization_key = "sp_event_German_Democracy_QUOTE"
 	}
-	
-	text = {
-		trigger = {
-			has_global_flag = GER_Endsieg
-		}
-		localization_key = "sp_event_Endsieg_QUOTE"
-	}
-	
+		
 	text = {
 		trigger = {
 			has_global_flag = FRA_Fall
