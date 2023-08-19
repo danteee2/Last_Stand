@@ -19,13 +19,7 @@ scripted_gui = {
 				has_global_flag = SOV_Soviet_Victory
 			}
 		}
-		
-		triggers = {
-			Super_Event_Image_Second_World_War_visible = {
-				has_global_flag = GER_WW2
-			}
-		}
-		
+				
 		triggers = {
 			Super_Event_Image_Third_World_War_visible = {
 				has_global_flag = SOV_WW3
@@ -309,19 +303,7 @@ scripted_gui = {
 				has_global_flag = GER_Democracy
 			}
 		}
-		
-		triggers = {
-			Super_Event_Image_Endsieg_visible = {
-				has_global_flag = GER_Endsieg
-			}
-		}
-		
-		triggers = {
-			Super_Event_Image_Endsieg_visible = {
-				has_global_flag = GER_Endsieg
-			}
-		}
-		
+				
 		triggers = {
 			Super_Event_Image_Fall_France_visible = {
 				has_global_flag = FRA_Fall
@@ -528,14 +510,14 @@ scripted_gui = {
 					}
 					clr_global_flag = SOV_Motherland
 				}
-				
+
 				if = {
 					limit = {
-						has_global_flag = GER_WW2
+						has_global_flag = SOV_Soviet_Victory
 					}
-					clr_global_flag = GER_WW2
+					clr_global_flag = SOV_Soviet_Victory
 				}
-				
+								
 				if = {
 					limit = {
 						has_global_flag = SOV_WW3
@@ -900,14 +882,7 @@ scripted_gui = {
 					}
 					clr_global_flag = GER_Democracy
 				}
-				
-				if = {
-					limit = {
-						has_global_flag = GER_Endsieg
-					}
-					clr_global_flag = GER_Endsieg
-				}
-				
+								
 				if = {
 					limit = {
 						has_global_flag = FRA_Fall
