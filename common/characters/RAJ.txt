@@ -528,7 +528,7 @@ characters={
 			}
 			available = {
 				OR = {
-					has_completed_focus = RAJ_provincial_elections
+					has_completed_focus = RAJ_Provincial_Elections
 					has_country_flag = sarojini_naidu_enable
 					hidden_trigger = {
 						has_country_flag = INC_BYPASSED
@@ -804,7 +804,7 @@ characters={
 			idea_token = RAJ_Francis_Mudie
 			available = {
 				OR = {
-					has_completed_focus = RAJ_provincial_elections
+					has_completed_focus = RAJ_Provincial_Elections
 					hidden_trigger = {
 						has_country_flag = INC_BYPASSED
 						has_country_flag = UP_BYPASSED
@@ -924,7 +924,7 @@ characters={
 			idea_token = RAJ_john_mathai
 			available = {
 				OR = {
-					has_completed_focus = RAJ_provincial_elections
+					has_completed_focus = RAJ_Provincial_Elections
 					hidden_trigger = {
 						has_country_flag = INC_BYPASSED
 						has_country_flag = UP_BYPASSED
@@ -1443,7 +1443,7 @@ characters={
 				has_completed_focus = RAJ_Linlithgows_Reign
 				NOT = {
 					has_global_flag = azad_hind_spawed
-					has_completed_focus = RAJ_provincial_elections
+					has_completed_focus = RAJ_Provincial_Elections
 				}
 			}
 			traits = {
