@@ -2347,14 +2347,18 @@ focus_tree = {
 					has_dlc = "La Resistance"
 				}
 				add_tech_bonus = {
-					name = scout_plane
 					bonus = 1.0
 					uses = 1
-					category = cat_scout_plane
-				}				
+					category = light_air 
+				}
+				add_tech_bonus = {
+					bonus = 1.0
+					uses = 1
+					category = air_equipment
+				}			
 			}
 			add_doctrine_cost_reduction = {
-				uses = 1
+				uses = 2
 				cost_reduction = 0.5
 				category = air_doctrine
             }
@@ -2392,6 +2396,13 @@ focus_tree = {
 		completion_reward = {
 			set_variable = { SOV_soviet_airforce_aircraft_manufacturer_cost_factor = -0.25 }
 			custom_effect_tooltip = SOV_expand_the_aircraft_industry_ns_tt
+
+			add_tech_bonus = {
+				name = SOV_increase_aircraft_production
+				bonus = 1.0
+				uses = 1
+				category = light_air
+			}
 
 			random_owned_controlled_state = {
 				limit = {
@@ -2543,7 +2554,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = SOV_increase_aircraft_production
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = light_air
 			}
 		}
