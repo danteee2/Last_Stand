@@ -2377,8 +2377,15 @@ country_event = { #Soviet Victory In Europe
 	hidden = yes
 	
 	trigger = {
-		GER = { has_offensive_war_with = SOV }
-		GER = { has_capitulated = yes }
+		OR = {
+			GER = { is_subject_of = SOV }
+			SOV = {
+				owns_state = 63
+				owns_state = 86
+				owns_state = 66
+				owns_state = 64
+			}
+		}
 	}
 	
 	option = {
