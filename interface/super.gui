@@ -20,6 +20,12 @@ guiTypes = {
 			spriteType = "GFX_sp_event_For_The_Motherland"
 			position = {x = 0 y = 0}
 		}
+
+		iconType = {
+			name = "Super_Event_Image_Soviet_Victory"
+			spriteType = "GFX_sp_event_Soviet_Victory"
+			position = {x = 0 y = 0}
+		}
 		
 		iconType = {
 			name = "Super_Event_Image_Second_World_War"
