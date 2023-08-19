@@ -820,10 +820,6 @@ formable_nations_mod_category = {
 						283 = { is_controlled_by = ROOT }
 						604 = { is_controlled_by = ROOT }
 						616 = { is_controlled_by = ROOT }
-						287 = { is_controlled_by = ROOT }
-						617 = { is_controlled_by = ROOT }
-						618 = { is_controlled_by = ROOT }
-						619 = { is_controlled_by = ROOT }
 						325 = { is_controlled_by = ROOT }
 						591 = { is_controlled_by = ROOT }
 						592 = { is_controlled_by = ROOT }
