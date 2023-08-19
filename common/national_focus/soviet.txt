@@ -4512,15 +4512,6 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			if = {
-				limit = {
-					has_dlc = "No Step Back"
-				}
-				has_tech = basic_medium_tank_chassis
-			}
-			else = {
-				has_tech = basic_medium_tank
-			}
 		}
 		
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -4531,7 +4522,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = SOV_superior_war_machines
-				bonus = 0.75
+				bonus = 1.0
 				uses = 2
 				category = armor
 			}
@@ -4686,7 +4677,7 @@ focus_tree = {
 				}
 				add_tech_bonus = {
 					name = SOV_soviet_artillery_tech_bonus_name_default
-					bonus = 0.75
+					bonus = 1.0
 					uses = 2
 					ahead_reduction = 2
 					category = artillery
@@ -4695,7 +4686,7 @@ focus_tree = {
 			else  ={
 				add_tech_bonus = {
 					name = SOV_soviet_artillery_tech_bonus_name_alt
-					bonus = 0.75
+					bonus = 1.0
 					uses = 2
 					ahead_reduction = 2
 					category = artillery
