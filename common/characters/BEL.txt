@@ -513,16 +513,16 @@
 			ledger = army
 				#needs belgium too?
 				allowed = {
-					original_tag = FLA
+					original_tag = BEL
 				}
 				traits = {
-					army_infantry_2
+					army_armored_2
 				}
 				
 				ai_will_do = {
 					factor = 1.000
 				}
-		}		
+		}	
 		corps_commander={
 			traits = { flemish ranger panzer_leader }
 			skill = 1
