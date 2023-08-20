@@ -15,6 +15,13 @@ defined_text = {
         }
         localization_key = "sp_event_Soviet_Victory"
     }
+
+	text = {
+        trigger = {
+            has_global_flag = GER_Sealion
+        }
+        localization_key = "sp_event_Operation_Sealion"
+    }
 	
     text = {
         trigger = {
@@ -585,6 +592,13 @@ defined_text = {
             has_global_flag = SOV_Soviet_Victory
         }
         localization_key = "sp_event_Soviet_Victory_REMARK"
+    }
+
+	text = {
+        trigger = {
+            has_global_flag = GER_Sealion
+        }
+        localization_key = "sp_event_Operation_Sealion_REMARK"
     }
     
     text = { 
@@ -1165,6 +1179,13 @@ defined_text = {
         localization_key = "sp_event_Soviet_Victory_QUOTE"
     }
     
+	text = {
+        trigger = {
+            has_global_flag = GER_Sealion
+        }
+        localization_key = "sp_event_Operation_Sealion_QUOTE"
+    }
+
     text = {
         trigger = {
             has_global_flag = GER_WW2

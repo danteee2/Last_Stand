@@ -320,3 +320,8 @@ music = {
 	name = "super_sovietvictory"
 	file = "sovietvictory.ogg"
 }
+
+music = {
+	name = "super_sealion"
+	file = "sealion.ogg"
+}

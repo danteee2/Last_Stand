@@ -475,3 +475,10 @@ music = {
 		factor = 0
 	}
 }
+
+music = {
+	song = "super_sealion"
+	chance = {
+		factor = 0
+	}
+}

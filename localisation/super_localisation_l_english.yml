@@ -8,6 +8,10 @@ sp_event_Soviet_Victory:0 "Soviet Victory In Europe"
 sp_event_Soviet_Victory_QUOTE:0 "I congratulate you, my dear fellow countrymen and country-women, on this great victory, on the successful termination of the war, and on- the ushering in of peace all over the world! Glory to the armed forces of the Soviet Union! \n- Joseph Stalin"
 sp_event_Soviet_Victory_REMARK:0 "The terror is over."
 
+sp_event_Operation_Sealion:0 "Operation Sealion"
+sp_event_Operation_Sealion_QUOTE:0 "We shall defend our island, whatever the cost may be. We shall fight on the beaches, we shall fight on the landing-grounds, we shall fight in the fields and in the streets, we shall fight in the hills. We shall never surrender! \n- Winston Churchill"
+sp_event_Operation_Sealion_REMARK:0 "The beginning of the end..."
+
 sp_event_Second_World_War:0 "The Second World War"
 sp_event_Second_World_War_QUOTE:0 "Those who want to live, let them fight, and those who do not want to fight in this world of eternal struggle do not deserve to live. \n- Adolf Hitler"
 sp_event_Second_World_War_REMARK:0 "Here we go again..."

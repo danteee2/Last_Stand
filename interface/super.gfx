@@ -27,6 +27,11 @@ spriteTypes = {
 		name = "GFX_sp_event_Soviet_Victory"
 		textureFile = "/gfx/sp_events/Super_Event_Soviet_Victory.dds"
 	}
+
+	spriteType = {
+		name = "GFX_sp_event_Operation_Sealion"
+		textureFile = "/gfx/sp_events/Super_Event_Sealion.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_sp_event_German_Invasion_of_Italy"

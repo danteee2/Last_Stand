@@ -19,6 +19,12 @@ scripted_gui = {
 				has_global_flag = SOV_Soviet_Victory
 			}
 		}
+
+		triggers = {
+			Super_Event_Image_Operation_Sealion_visible = {
+				has_global_flag = GER_Sealion
+			}
+		}
 				
 		triggers = {
 			Super_Event_Image_Third_World_War_visible = {
