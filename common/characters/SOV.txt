@@ -3119,7 +3119,7 @@ characters = {
 	}
 
 	SOV_ofournet = {
-		name = "Ofournet"
+		name = "Ofournet 'The Camel Fox'"
 		portraits = {
 			army = {
 				large = "gfx\leaders\SOV\ofournet_moment.dds"
@@ -3127,7 +3127,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { cavalry_officer }
+			traits = { cavalry_officer desert_fox }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
