@@ -523,6 +523,13 @@ scripted_gui = {
 					}
 					clr_global_flag = SOV_Soviet_Victory
 				}
+
+				if = {
+					limit = {
+						has_global_flag = GER_Sealion
+					}
+					clr_global_flag = GER_Sealion
+				}
 								
 				if = {
 					limit = {

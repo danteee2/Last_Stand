@@ -30,7 +30,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_sp_event_Operation_Sealion"
-		textureFile = "/gfx/sp_events/Super_Event_Sealion.dds"
+		textureFile = "/gfx/sp_events/Super_Event_Operation_Sealion.dds"
 	}
 	
 	spriteType = {
