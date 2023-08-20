@@ -3118,24 +3118,6 @@ characters = {
 		}
 	}
 
-	SOV_ofournet = {
-		name = "Ofournet"
-		portraits = {
-			army = {
-				large = "gfx\leaders\SOV\ofournet_moment.dds"
-				small = "gfx\leaders\SOV\ofournet_moment.dds"
-			}
-		}
-		corps_commander = {
-			traits = { cavalry_officer }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-		}
-	}
-
 	SOV_pavel_shatilov = {
 		name = SOV_pavel_shatilov
 		portraits = {
