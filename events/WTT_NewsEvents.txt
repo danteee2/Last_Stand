@@ -7,7 +7,7 @@ news_event = {
 	id = wtt_news.1
 	title = wtt_news.1.t
 	desc = wtt_news.1.desc
-	picture = GFX_news_event_GER_mackensen_civil_war
+	picture = GFX_news_event_ger_civil_war
 	
 	major = yes
 	
@@ -72,7 +72,7 @@ news_event = {
 	id = wtt_news.3
 	title = wtt_news.3.t
 	desc = wtt_news.3.desc
-	picture = GFX_news_event_GER_wilhelm_II
+	picture = GFX_news_event_generic_parliament
 	
 	major = yes
 	
@@ -115,7 +115,7 @@ news_event = {
 	id = wtt_news.4
 	title = wtt_news.4.t
 	desc = wtt_news.4.desc
-	picture = GFX_news_event_GER_wilhelm_II
+	picture = GFX_news_event_generic_parliament
 	
 	major = yes
 	
@@ -158,7 +158,7 @@ news_event = {
 	id = wtt_news.5
 	title = wtt_news.5.t
 	desc = wtt_news.5.desc
-	picture = GFX_news_event_victor_emmanuel_III
+	picture = GFX_news_event_generic_sign_treaty3
 	
 	major = yes
 	
@@ -190,7 +190,7 @@ news_event = {
 	id = wtt_news.6
 	title = wtt_news.6.t
 	desc = wtt_news.6.desc
-	picture = GFX_news_event_HUN_blessed_otto
+	picture = GFX_news_event_generic_sign_treaty3
 	
 	major = yes
 	
@@ -230,7 +230,7 @@ news_event = {
 	id = wtt_news.7
 	title = wtt_news.7.t
 	desc = wtt_news.7.desc
-	picture = GFX_news_event_DNZ_danzig_city
+	picture = GFX_news_event_generic_sign_treaty1
 	
 	major = yes
 	
@@ -271,7 +271,7 @@ news_event = {
 	id = wtt_news.8
 	title = wtt_news.8.t
 	desc = wtt_news.8.desc
-	picture = GFX_news_event_fall_of_berlin
+	picture = GFX_news_event_german_reichstag_ruins_2
 	
 	major = yes
 	
@@ -296,7 +296,7 @@ news_event = {
 	id = wtt_news.9
 	title = wtt_news.9.t
 	desc = wtt_news.9.desc
-	picture = GFX_news_event_soviet_troops_bessarabia
+	picture = GFX_news_event_soviet_tanks
 	
 	major = yes
 	
@@ -440,7 +440,7 @@ news_event = {
 	id = wtt_news.12
 	title = wtt_news.12.t
 	desc = wtt_news.12.desc
-	picture = GFX_news_event_ENG_royal_navy_infantry
+	picture = GFX_news_event_020
 	
 	major = yes
 	
@@ -516,7 +516,7 @@ news_event = {
 	id = wtt_news.14
 	title = wtt_news.12.t
 	desc = wtt_news.14.desc
-	picture = GFX_news_event_FRA_tank_parade
+	picture = GFX_news_event_german_inspect_troops
 	
 	major = yes
 	
@@ -598,7 +598,7 @@ news_event = {
 	id = wtt_news.16
 	title = wtt_news.16.t
 	desc = wtt_news.16.desc
-	picture = GFX_news_event_GER_tsingtao
+	picture = GFX_news_event_sign_treaty3
 	
 	major = yes
 	
@@ -639,7 +639,7 @@ news_event = {
 	id = wtt_news.17
 	title = wtt_news.17.t
 	desc = wtt_news.17.desc
-	picture = GFX_news_event_jap_germano_japanese_alliance
+	picture = GFX_news_event_sign_treaty3
 	
 	major = yes
 	
@@ -814,7 +814,7 @@ news_event = {
 	id = wtt_news.22
 	title = wtt_news.22.t
 	desc = wtt_news.22.desc
-	picture = GFX_news_event_german_soldiers
+	picture = GFX_news_event_journalists_speech
 	
 	major = yes
 	
@@ -863,6 +863,8 @@ news_event = {
 
 	is_triggered_only = yes
 	
+	major = yes
+	
 	option = {
 		name = wtt_news.23.a
 		trigger = {
@@ -895,6 +897,8 @@ news_event = {
 
 	is_triggered_only = yes
 	
+	major = yes
+	
 	option = {
 		name = wtt_news.24.a
 		trigger = {
@@ -923,9 +927,11 @@ news_event = {
 	id = wtt_news.25
 	title = wtt_news.25.t
 	desc = wtt_news.25.desc
-	picture = GFX_news_event_JAP_european_treaty
+	picture = GFX_news_event_generic_read_write
 
 	is_triggered_only = yes
+	
+	major = yes
 	
 	option = {
 		name = wtt_news.25.a
@@ -971,6 +977,8 @@ news_event = {
 
 	is_triggered_only = yes
 	
+	major = yes
+	
 	option = {
 		name = wtt_news.25.a
 		trigger = {
@@ -1009,6 +1017,8 @@ news_event = {
 	picture = GFX_news_event_japanese_parade
 
 	is_triggered_only = yes
+	
+	major = yes
 	
 	option = {
 		name = wtt_news.27.a
@@ -1072,6 +1082,7 @@ news_event = {
 	picture = GFX_news_event_018
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.30.a
@@ -1110,6 +1121,7 @@ news_event = {
 	picture = GFX_news_event_generic_funeral
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.30.a
@@ -1146,9 +1158,10 @@ news_event = {
 	id = wtt_news.32
 	title = wtt_news.32.t
 	desc = wtt_news.32.desc
-	picture = GFX_news_event_CHI_chiang_review_troops2
+	picture = GFX_news_event_chinese_soldiers_march
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.32.a
@@ -1198,6 +1211,7 @@ news_event = {
 	picture = GFX_news_event_chinese_soldiers_march
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.31.c
@@ -1286,6 +1300,7 @@ news_event = {
 	picture = GFX_news_event_001
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.35.a
@@ -1328,6 +1343,7 @@ news_event = {
 	picture = GFX_news_event_generic_funeral
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.36.a
@@ -1364,6 +1380,7 @@ news_event = {
 	picture = GFX_news_event_prc_declared
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.37.a
@@ -1400,6 +1417,7 @@ news_event = {
 	picture = GFX_news_event_generic_communist_congress
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.38.a
@@ -1442,6 +1460,7 @@ news_event = {
 	picture = GFX_news_event_050
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.39.a
@@ -1493,8 +1512,8 @@ news_event = {
 		trigger = {
 			FROM = {
 				has_country_flag = blew_up_suez
-				owns_state = 995
-				owns_state = 911
+				owns_state = 446
+				#owns_state = 453
 			}
 		}
 	}
@@ -1505,24 +1524,24 @@ news_event = {
 				OR = {
 					NOT = {	has_country_flag = blew_up_suez }
 					NOT = {
-						owns_state = 995
-						owns_state = 911
+						owns_state = 446
+						#owns_state = 453
 					}
 				}
 			}
 		}
 	}
-	#What if we put the evergiven II here?
 	picture = GFX_news_event_020
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.40.a
 		trigger = {
 			NOT = { has_country_flag = blew_up_suez }
-			owns_state = 995
-			owns_state = 911
+			owns_state = 446
+			#owns_state = 453
 		}
 		if = {
 			limit = {
@@ -1536,8 +1555,8 @@ news_event = {
 		name = wtt_news.40.b
 		trigger = {
 			has_country_flag = blew_up_suez
-			owns_state = 995
-			owns_state = 911
+			owns_state = 446
+			#owns_state = 453
 		}
 		if = {
 			limit = {
@@ -1553,8 +1572,8 @@ news_event = {
 		trigger = {
 			any_country = {
 				has_war_with = ROOT
-				owns_state = 995
-				owns_state = 911
+				owns_state = 446
+				#owns_state = 453
 				has_country_flag = blew_up_suez
 			}
 		}
@@ -1564,8 +1583,8 @@ news_event = {
 		trigger = {
 			any_country = {
 				has_war_with = ROOT
-				owns_state = 995
-				owns_state = 911
+				owns_state = 446
+				#owns_state = 453
 			}
 			has_country_flag = blew_up_suez
 		}
@@ -1576,8 +1595,8 @@ news_event = {
 		trigger = {
 			any_country = {
 				has_war_with = ROOT
-				owns_state = 995
-				owns_state = 911
+				owns_state = 446
+				#owns_state = 453
 				NOT = { has_country_flag = blew_up_suez }
 			}
 			any_other_country = {
@@ -1592,8 +1611,8 @@ news_event = {
 		trigger = {
 			any_other_country = {
 				has_war_together_with = ROOT
-				owns_state = 995
-				owns_state = 911
+				owns_state = 446
+				#owns_state = 453
 				has_country_flag = blew_up_suez
 			}
 			NOT = { has_country_flag = blew_up_suez }
@@ -1608,8 +1627,8 @@ news_event = {
 			}
 			any_other_country = {
 				has_war_together_with = ROOT
-				owns_state = 995
-				owns_state = 911
+				owns_state = 446
+				#owns_state = 453
 				NOT = { has_country_flag = blew_up_suez }
 			}
 			NOT = { has_country_flag = blew_up_suez }
@@ -1627,8 +1646,8 @@ news_event = {
 			NOT = {
 				any_other_country = {
 					has_war_together_with = ROOT
-					owns_state = 995
-					owns_state = 911
+					owns_state = 446
+					#owns_state = 453
 					has_country_flag = blew_up_suez
 				}
 			}
@@ -1664,7 +1683,8 @@ news_event = {
 	picture = GFX_news_event_020
 
 	is_triggered_only = yes
-
+	major = yes
+	
 	option = {
 		name = wtt_news.41.a
 		trigger = {
@@ -1785,6 +1805,7 @@ news_event = {
 	picture = GFX_news_event_020
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.42.a
@@ -1847,9 +1868,10 @@ news_event = {
 	id = wtt_news.43
 	title = wtt_news.43.t
 	desc = wtt_news.43.desc
-	picture = GFX_news_event_panama_canal
+	picture = GFX_news_event_020
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.43.a
@@ -1912,9 +1934,10 @@ news_event = {
 	id = wtt_news.44
 	title = wtt_news.44.t
 	desc = wtt_news.44.desc
-	picture = GFX_news_event_MAN_martyr_shrine
+	picture = GFX_news_event_japanese_army_parade
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.44.a
@@ -1968,6 +1991,7 @@ news_event = {
 	picture = GFX_news_event_generic_rally_3
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.45.a
@@ -2007,6 +2031,7 @@ news_event = {
 	picture = GFX_news_event_journalists_speech
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.46.a
@@ -2036,9 +2061,10 @@ news_event = {
 	id = wtt_news.47
 	title = wtt_news.47.t
 	desc = wtt_news.47.desc
-	picture = GFX_news_event_chinese_soldiers_march
+	picture = GFX_news_event_polish_army
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.47.a
@@ -2082,9 +2108,10 @@ news_event = {
 	id = wtt_news.48
 	title = wtt_news.48.t
 	desc = wtt_news.48.desc
-	picture = GFX_news_event_MAN_puyi_saluting
+	picture = GFX_news_event_japanese_parade
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.48.a
@@ -2124,6 +2151,7 @@ news_event = {
 	picture = GFX_news_event_generic_ruins
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.50.a
@@ -2169,6 +2197,7 @@ news_event = {
 	picture = GFX_news_event_generic_ruins
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.50.a
@@ -2215,6 +2244,7 @@ news_event = {
 	picture = GFX_news_event_generic_ruins
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.50.a
@@ -2261,6 +2291,7 @@ news_event = {
 	picture = GFX_news_event_generic_parliament
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.53.a
@@ -2298,6 +2329,7 @@ news_event = {
 	picture = GFX_news_event_generic_parliament
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.54.a
@@ -2339,6 +2371,7 @@ news_event = {
 	picture = GFX_news_event_generic_parliament
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.55.a
@@ -2377,9 +2410,10 @@ news_event = {
 	id = wtt_news.56
 	title = wtt_news.56.t
 	desc = wtt_news.56.desc
-	picture = GFX_news_event_AUS_austrian_soldiers
-	
+	picture = GFX_news_event_generic_parliament
+
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.56.a
@@ -2414,9 +2448,10 @@ news_event = {
 	id = wtt_news.57
 	title = wtt_news.57.t
 	desc = wtt_news.57.desc
-	picture = GFX_news_event_polish_army
+	picture = GFX_news_event_generic_parliament
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.57.a
@@ -2452,6 +2487,7 @@ news_event = {
 	picture = GFX_news_event_generic_parliament
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.58.a
@@ -2486,9 +2522,10 @@ news_event = {
 	id = wtt_news.59
 	title = wtt_news.59.t
 	desc = wtt_news.59.desc
-	picture = GFX_news_event_guatemalan_cadet_parade
+	picture = GFX_news_event_generic_parliament
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.59.a
@@ -2530,6 +2567,7 @@ news_event = {
 	picture = GFX_news_event_generic_parliament
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.60.a
@@ -2564,9 +2602,10 @@ news_event = {
 	id = wtt_news.61
 	title = wtt_news.61.t
 	desc = wtt_news.61.desc
-	picture = GFX_news_event_ottoman_sultan_returns
+	picture = GFX_news_event_generic_parliament
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.61.a
@@ -2595,9 +2634,10 @@ news_event = {
 	id = wtt_news.62
 	title = wtt_news.62.t
 	desc = wtt_news.62.desc
-	picture = GFX_news_event_european_union
+	picture = GFX_news_event_generic_parliament
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.62.a
@@ -2650,9 +2690,10 @@ news_event = {
 	id = wtt_news.63
 	title = wtt_news.63.t
 	desc = wtt_news.63.desc
-	picture = GFX_news_event_african_diplomats
+	picture = GFX_news_event_generic_parliament
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.63.a
@@ -2689,9 +2730,10 @@ news_event = {
 	id = wtt_news.64
 	title = wtt_news.64.t
 	desc = wtt_news.64.desc
-	picture = GFX_news_event_roman_empire
+	picture = GFX_news_event_generic_parliament
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.64.a
@@ -2722,6 +2764,7 @@ news_event = {
 	picture = GFX_news_event_generic_parliament
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.65.a
@@ -2754,9 +2797,10 @@ news_event = {
 	id = wtt_news.66
 	title = wtt_news.66.t
 	desc = wtt_news.66.desc
-	picture = GFX_news_event_greek_civil_war
+	picture = GFX_news_event_generic_parliament
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.66.a
@@ -2784,9 +2828,10 @@ news_event = {
 	id = wtt_news.67
 	title = wtt_news.67.t
 	desc = wtt_news.67.desc
-	picture = GFX_news_event_arab_diplomats_neutral
+	picture = GFX_news_event_generic_parliament
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.67.a
@@ -2838,6 +2883,7 @@ news_event = {
 	picture = GFX_news_event_generic_parliament
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.68.a
@@ -2873,6 +2919,7 @@ news_event = {
 	picture = GFX_news_event_generic_parliament
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.69.a
@@ -2905,9 +2952,10 @@ news_event = {
 	id = wtt_news.70
 	title = wtt_news.70.t
 	desc = wtt_news.70.desc
-	picture = GFX_news_event_GER_mackensen_civil_war
+	picture = GFX_news_event_generic_parliament
 
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = wtt_news.70.a
