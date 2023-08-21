@@ -391,6 +391,7 @@ ideas = {
 				stability_factor = 0.1
 				industrial_capacity_factory = 0.1
 				production_lack_of_resource_penalty_factor = -0.1
+				production_factory_max_efficiency_factor = 0.1
 			}
 		}
 		r56_usa_three_dimensional_assault_force = {
