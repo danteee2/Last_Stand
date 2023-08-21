@@ -4249,6 +4249,10 @@ focus = JAP_black_dragon_society }
 				name = JAP_neutrality_party_kodoha
 			}
 			mark_focus_tree_layout_dirty = yes
+			set_truce = {
+                target = CHI
+                days = 608
+            }
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -4462,7 +4466,10 @@ focus = JAP_black_dragon_society }
 		x = 0
 		y = 2
 		cost = 10
-		prerequisite = { focus = JAP_break_up_Yasuda focus = JAP_break_up_Mitsui focus = JAP_break_up_Mitsubishi focus = JAP_break_up_Sumitomo}
+		prerequisite = { focus = JAP_break_up_Yasuda }
+		prerequisite = { focus = JAP_break_up_Sumitomo}
+		prerequisite = { focus = JAP_break_up_Mitsubishi }
+		prerequisite = { focus = JAP_break_up_Mitsui }
 		completion_reward = {
 			add_ideas = emperors_economy
 		   }
