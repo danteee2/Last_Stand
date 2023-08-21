@@ -508,7 +508,9 @@ scripted_gui = {
 		
 		effects = {
 			sp_event_close_button_click = {
-				clr_global_flag = Super_Event_Visible
+				from = {
+					clr_global_flag = Super_Event_Visible
+				}
 
 				if = {
 					limit = {
