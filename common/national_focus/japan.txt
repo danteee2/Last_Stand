@@ -4166,7 +4166,7 @@ focus = JAP_black_dragon_society }
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = JAP_support_the_kodoha_tt
+		
 			609 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
