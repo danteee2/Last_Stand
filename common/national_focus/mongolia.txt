@@ -12529,7 +12529,7 @@ focus_tree = {
 		y = 3
 		realative_position_id = MON_study_foreign_radio_equipment
 		cost = 10
-		prerequisite = { focus = MON_intigration_of_xinjiangs_workers}
+		prerequisite = { focus = MON_integration_of_xinjiangs_workers}
 
 		ai_will_do = {
 			factor = 30	
