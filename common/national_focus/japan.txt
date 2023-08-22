@@ -4251,7 +4251,7 @@ focus = JAP_black_dragon_society }
 			mark_focus_tree_layout_dirty = yes
 			set_truce = {
                 target = CHI
-                days = 608
+                days = 485
             }
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
