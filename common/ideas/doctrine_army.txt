@@ -12,19 +12,17 @@ ideas = {
 			}
 			
 			modifier = {
-			   recon_factor = 0.2
+			   	recon_factor = 0.2
 				max_planning = 0.05
+				supply_consumption_factor = -0.05
 				
 			}
 			equipment_bonus = {
 				category_army = {
-					supply_consumption = -0.05
 					soft_attack = 0.05
 				}
 			}
 			cost = 100
-			
-			cancel_if_invalid = yes
 			
 			ai_will_do = {
    				factor = 0.5
@@ -46,7 +44,6 @@ ideas = {
 			}
 			equipment_bonus = {
 				category_army = {
-					supply_consumption = -0.05
 					soft_attack = 0.03
 				}
 			}
@@ -57,8 +54,6 @@ ideas = {
 			}
 	
 			cost = 100
-			
-			cancel_if_invalid = yes
 			
 			ai_will_do = {
    				factor = 0.5
@@ -93,8 +88,6 @@ ideas = {
 			}
 			cost = 100
 
-			
-			cancel_if_invalid = yes
 
 			ai_will_do = {
    				factor = 0.5
@@ -134,18 +127,12 @@ ideas = {
 				org_loss_when_moving = -0.03
 				army_speed_factor = 0.05
 			}
-			cancel_if_invalid = yes
 			
 			cost = 100
 			
 			ai_will_do = {
 			
    				factor = 0.5
-
-   				modifier = {
-				    
-					
-				}
    			}
 		}
 		
@@ -158,7 +145,7 @@ ideas = {
 				category_army = {
 					hardness = 0.10
 					casualty_trickleback = 0.05
-					recon = 0.07
+					recon = 0.05
 					initiative = 0.1
 				}
 			}
@@ -166,44 +153,13 @@ ideas = {
 			
 			}
 			
-			cancel_if_invalid = yes
-			
 			cost = 100
 			
 			ai_will_do = {
 			
    				factor = 0.5
 
-   				modifier = {
-				    
-					
-				}
    			}
 		}
-		
-		#doctrine_army_indirect = {
-		#
-		#	available = {
-		#		
-		#	}
-		#	
-		#	modifier = {
-		#		
-		#	}
-		#	
-		#	cancel_if_invalid = yes
-		#	
-		#	cost = 100
-		#	
-		#	ai_will_do = {
-		#	
-   		#		factor = 0.5
-		#
-   		#		modifier = {
-		#		    
-		#			
-		#		}
-   		#	}
-		#}
 	}
 }

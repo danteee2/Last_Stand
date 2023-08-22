@@ -6,39 +6,6 @@ ideas = {
 		
 
 		# Equality for all
-		heavy_planes_fighters = {
-		    available = {
-				
-			}
-			equipment_bonus = {
-				heavy_fighter = {
-					instant = yes
-					build_cost_ic = -0.05
-				}
-			}
-			modifier = {
-				
-			}
-	
-			cost = 100
-			
-			cancel_if_invalid = yes
-			
-			ai_will_do = {
-   				factor = 0.5
-				modifier = {
-				    OR = {
-					has_government = communism
-					has_government = democratic
-					}
-					factor = 1
-					
-				}
-			}		
-			
-		}
-		
-		
 		
 		heavy_planes_strategic = {
 
@@ -48,7 +15,7 @@ ideas = {
 			equipment_bonus = {
 				strategic_bomber = {
 					instant = yes
-					build_cost_ic = -0.07
+					build_cost_ic = -0.10
 				}
 			}
 			modifier = {
@@ -56,9 +23,6 @@ ideas = {
 			}
 			
 			cost = 100
-
-			
-			cancel_if_invalid = yes
 
 			ai_will_do = {
    				factor = 0.5
@@ -83,35 +47,6 @@ ideas = {
 		
 		
 		# Mixed conscr (Contract + Obligation)
-		heavy_planes_tactical = {
-
-		available = {
-				
-			}
-			equipment_bonus = {
-				tactical_bomber = {
-					instant = yes
-					build_cost_ic = -0.07
-				}
-			}
-			modifier = {
-				
-			}
-			
-			cancel_if_invalid = yes
-			
-			cost = 100
-			
-			ai_will_do = {
-			
-   				factor = 0.5
-
-   				modifier = {
-				    
-					
-				}
-   			}
-		}
 		
 		heavy_planes_transport = {
 
@@ -128,18 +63,11 @@ ideas = {
 				
 			}
 			
-			cancel_if_invalid = yes
-			
 			cost = 150
 			
 			ai_will_do = {
 			
    				factor = 0.5
-
-   				modifier = {
-				    
-					
-				}
    			}
 		}
 	}

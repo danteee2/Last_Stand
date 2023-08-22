@@ -21,9 +21,7 @@ ideas = {
 			}
 	
 			cost = 100
-			
-			cancel_if_invalid = yes
-			
+						
 			ai_will_do = {
    				factor = 0.5
 				modifier = {
@@ -38,50 +36,6 @@ ideas = {
 			
 		}
 		
-		
-		
-		light_ships_cruisers = {
-
-			available = {
-		       
-			}
-			equipment_bonus = {
-				light_cruiser = {
-					instant = yes
-					build_cost_ic = -0.05
-				}
-			}
-			modifier = {
-			    
-			}
-			
-			cost = 100
-
-			
-			cancel_if_invalid = yes
-
-			ai_will_do = {
-   				factor = 0.5
-
-				modifier = {
-				    OR = {
-					has_government = fascism
-					has_government = neutrality
-					}
-					factor = 0.5
-					
-				}
-				modifier = {
-				    OR = {
-					has_government = fascism
-					}
-					factor = 2.0
-					
-				}
-   			}
-		}
-		
-		
 		# Mixed conscr (Contract + Obligation)
 		light_ships_destroyers = {
 
@@ -90,7 +44,7 @@ ideas = {
 			}
 			
 			equipment_bonus = {
-				destroyer = {
+				ship_hull_light = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
@@ -98,18 +52,12 @@ ideas = {
 			modifier = {
 			    
 			}
-			cancel_if_invalid = yes
 			
 			cost = 100
 			
 			ai_will_do = {
 			
    				factor = 0.5
-
-   				modifier = {
-				    
-					
-				}
    			}
 		}
 		
