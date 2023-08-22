@@ -3996,83 +3996,7 @@
 				}				
 				search_filters = { FOCUS_FILTER_MANPOWER }
 		}
-		
-#		focus = {
-#				id = ARG_befriend_uruguay
-#				icon = GFX_goal_generic_improve_relations
-#				prerequisite = { focus = ARG_south_americas_talks }
-#				x = 55
-#				y = 4
-#				cost = 10
-#				
-#				available = {
-#					country_exists = URG
-#				}
-#				
-#				bypass = {
-#					OR = {
-#						NOT = { has_war_with = URG}
-#						URG = { is_puppet = yes }
-#					}
-#				}
-#				
-#				completion_reward = {
-#					URG = {
-#						add_opinion_modifier = { target = ARG modifier = arg_influence }
-#						country_event = { id = argentina.19 }
-#					}
-#				}
-#		}
-		
-#		focus = {
-#				id = ARG_befriend_bolivia
-#				icon = GFX_goal_generic_improve_relations
-#				prerequisite = { focus = ARG_south_americas_talks }
-#				x = 55
-#				y = 6
-#				cost = 10
-#				
-#				completion_reward = {
-#					BOL = {
-#						add_opinion_modifier = { target = ARG modifier = arg_influence }
-#						country_event = { id = argentina.21 }
-#					}
-#				}				
-#		}
-		
-#		focus = {
-#				id = ARG_befriend_paraguay
-#				icon = GFX_goal_generic_improve_relations
-#				prerequisite = { focus = ARG_south_americas_talks }
-#				x = 55
-#				y = 5
-#				cost = 10
-#				
-#				completion_reward = {
-#					PAR = {
-#						add_opinion_modifier = { target = ARG modifier = arg_influence }
-#						country_event = { id = argentina.20 }
-#					}
-#				}
-#				
-#		}
-		
-#		focus = {
-#				id = ARG_befriend_chile
-#				icon = GFX_goal_generic_improve_relations
-#				prerequisite = { focus = ARG_south_americas_talks }
-#				x = 55
-#				y = 7
-#				cost = 10
-#				
-#				completion_reward = {
-#					CHL = {
-#						add_opinion_modifier = { target = ARG modifier = arg_influence }
-#						country_event = { id = argentina.22 }
-#					}
-#				}
-#		}
-		
+
 		focus = {
 				id = ARG_brazil_coop
 				icon = GFX_goal_generic_befriend_brazil
@@ -4159,21 +4083,7 @@
 			}
 			search_filters = { FOCUS_FILTER_RESEARCH }
 		}
-		
-#		focus = {
-#				id = ARG_aliance_with_brazil
-#				icon =
-#				prerequisite = { focus = ARG_brazil_coop }
-#				x = 46
-#				y = 6
-#				cost = 10
-#
-#				completion_reward = {
-#				
-#				}
-#				
-#		}
-		
+			
 		focus = {
 			id = ARG_external_help_focus
 			icon = GFX_goal_generic_intelligence_exchange
