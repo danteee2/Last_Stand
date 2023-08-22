@@ -1,11 +1,5 @@
 music_station = "super_station"
 music = {
-	song = "super_ww2"
-	chance = {
-		factor = 0
-	}
-}
-music = {
 	song = "super_ww3"
 	chance = {
 		factor = 0
@@ -60,48 +54,6 @@ music = {
 	}
 }
 music = {
-	song = "super_nationalist_victory"
-	chance = {
-		factor = 0
-	}
-}
-music = {
-	song = "super_republican_victory"
-	chance = {
-		factor = 0
-	}
-}
-music = {
-	song = "super_anarchist_victory"
-	chance = {
-		factor = 0
-	}
-}
-music = {
-	song = "super_communist_victory"
-	chance = {
-		factor = 0
-	}
-}
-music = {
-	song = "super_falangist_victory"
-	chance = {
-		factor = 0
-	}
-}
-music = {
-	song = "super_stalinist_victory"
-	chance = {
-		factor = 0
-	}
-}
-music = {
-	song = "super_carlist_victory"
-	chance = {
-		factor = 0
-	}
-}
-music = {
 	song = "super_british_collapse"
 	chance = {
 		factor = 0
@@ -144,12 +96,6 @@ music = {
 	}
 }
 music = {
-	song = "super_decolonization"
-	chance = {
-		factor = 0
-	}
-}
-music = {
 	song = "super_king_edward"
 	chance = {
 		factor = 0
@@ -186,12 +132,6 @@ music = {
 	}
 }
 music = {
-	song = "super_endsieg"
-	chance = {
-		factor = 0
-	}
-}
-music = {
 	song = "super_fall_france"
 	chance = {
 		factor = 0
@@ -205,12 +145,6 @@ music = {
 }
 music = {
 	song = "super_unholy_alliance"
-	chance = {
-		factor = 0
-	}
-}
-music = {
-	song = "super_austria_hungary"
 	chance = {
 		factor = 0
 	}
@@ -234,31 +168,7 @@ music = {
 	}
 }
 music = {
-	song = "super_chinese_civil_war"
-	chance = {
-		factor = 0
-	}
-}
-music = {
-	song = "super_unify_china_commie"
-	chance = {
-		factor = 0
-	}
-}
-music = {
-	song = "super_unify_china_nationalist"
-	chance = {
-		factor = 0
-	}
-}
-music = {
 	song = "super_russo_japanese_war"
-	chance = {
-		factor = 0
-	}
-}
-music = {
-	song = "super_qing"
 	chance = {
 		factor = 0
 	}
@@ -312,36 +222,6 @@ music = {
 	}
 }
 music = {
-	song = "super_macedon"
-	chance = {
-		factor = 0
-	}
-}
-music = {
-	song = "super_byzantium"
-	chance = {
-		factor = 0
-	}
-}
-music = {
-	song = "super_turan"
-	chance = {
-		factor = 0
-	}
-}
-music = {
-	song = "super_ottoman_empire"
-	chance = {
-		factor = 0
-	}
-}
-music = {
-	song = "super_balkan_unification"
-	chance = {
-		factor = 0
-	}
-}
-music = {
 	song = "super_fall_brazil"
 	chance = {
 		factor = 0
@@ -361,30 +241,6 @@ music = {
 }
 music = {
 	song = "super_fall_of_los_angeles"
-	chance = {
-		factor = 0
-	}
-}
-music = {
-	song = "super_leopoldine"
-	chance = {
-		factor = 0
-	}
-}
-music = {
-	song = "china_yellow_river"
-	chance = {
-		factor = 0
-	}
-}
-music = {
-	song = "super_bay_of_pigs"
-	chance = {
-		factor = 0
-	}
-}
-music = {
-	song = "super_american_mexican_war"
 	chance = {
 		factor = 0
 	}

@@ -31,34 +31,6 @@ music = {
 	file = "barbarossa.ogg"
 }
 music = {
-	name = "super_nationalist_victory"
-	file = "nationalist_victory.ogg"
-}
-music = {
-	name = "super_republican_victory"
-	file = "republican_victory.ogg"
-}
-music = {
-	name = "super_anarchist_victory"
-	file = "anarchist_victory.ogg"
-}
-music = {
-	name = "super_communist_victory"
-	file = "communist_victory.ogg"
-}
-music = {
-	name = "super_falangist_victory"
-	file = "falangist_victory.ogg"
-}
-music = {
-	name = "super_stalinist_victory"
-	file = "stalinist_victory.ogg"
-}
-music = {
-	name = "super_carlist_victory"
-	file = "carlist_victory.ogg"
-}
-music = {
 	name = "super_british_collapse"
 	file = "british_collapse.ogg"
 }
@@ -85,10 +57,6 @@ music = {
 music = {
 	name = "super_imperial_federation"
 	file = "imperial_federation.ogg"
-}
-music = {
-	name = "super_decolonization"
-	file = "decolonization.ogg"
 }
 music = {
 	name = "super_king_edward"
@@ -131,10 +99,6 @@ music = {
 	file = "unholy_alliance.ogg"
 }
 music = {
-	name = "super_austria_hungary"
-	file = "austria_hungary.ogg"
-}
-music = {
 	name = "super_eastern_front"
 	file = "eastern_front.ogg"
 }
@@ -151,20 +115,8 @@ music = {
 	file = "chinese_civil_war.ogg"
 }
 music = {
-	name = "super_unify_china_commie"
-	file = "unify_china_commie.ogg"
-}
-music = {
-	name = "super_unify_china_nationalist"
-	file = "unify_china_nationalist.ogg"
-}
-music = {
 	name = "super_russo_japanese_war"
 	file = "russo_japanese_war.ogg"
-}
-music = {
-	name = "super_qing"
-	file = "qing.ogg"
 }
 music = {
 	name = "super_geacps"
@@ -199,26 +151,6 @@ music = {
 	file = "winter_war.ogg"
 }
 music = {
-	name = "super_macedon"
-	file = "macedon.ogg"
-}
-music = {
-	name = "super_byzantium"
-	file = "byzantium.ogg"
-}
-music = {
-	name = "super_turan"
-	file = "turan.ogg"
-}
-music = {
-	name = "super_ottoman_empire"
-	file = "ottoman_empire.ogg"
-}
-music = {
-	name = "super_balkan_unification"
-	file = "balkan_unification.ogg"
-}
-music = {
 	name = "super_fall_brazil"
 	file = "fall_brazil.ogg"
 }
@@ -238,22 +170,6 @@ music = {
 	file = "fall_la.ogg"
 }
 
-music = {
-	name = "super_leopoldine"
-	file = "fall_leopoldine.ogg"
-}
-music = {
-	name = "china_yellow_river"
-	file = "yellow_river.ogg"
-}
-music = {
-	name = "super_bay_of_pigs"
-	file = "bay_of_pigs.ogg"
-}
-music = {
-	name = "super_american_mexican_war"
-	file = "american_mexican_war.ogg"
-}
 music = {
 	name = "super_prc"
 	file = "prc.ogg"
@@ -281,22 +197,6 @@ music = {
 music = {
 	name = "super_moscow_allies"
 	file = "moscow_allies.ogg"
-}
-music = {
-    name = "super_iraqi_war"
-	file = "iraqi_war.ogg"
-}
-music = {
-    name = "super_fascist"
-	file = "tno.ogg"
-}
-music = {
-    name = "super_democratic"
-	file = "world_democracy.ogg"
-}
-music = {
-    name = "super_communist"
-	file = "world_revolution.ogg"
 }
 music = {
     name = "super_german_invasion_italy"

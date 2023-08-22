@@ -57,22 +57,7 @@ spriteTypes = {
 		name = "GFX_sp_event_Third_World_War_Allies"
 		textureFile = "/gfx/sp_events/Super_Event_World_War3_Allies.dds"
 	}
-	
-	spriteType = {
-		name = "GFX_sp_event_The_New_Order"
-		textureFile = "/gfx/sp_events/Super_Event_The_New_Order.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_sp_event_Global_Hegemony"
-		textureFile = "/gfx/sp_events/Super_Event_Global_Hegemony.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_sp_event_World_Revolution"
-		textureFile = "/gfx/sp_events/Super_Event_World_Revolution.dds"
-	}
-	
+			
 	spriteType = {
 		name = "GFX_sp_event_Sino_Japanese"
 		textureFile = "/gfx/sp_events/Super_Event_Sino_Japanese.dds"
@@ -97,57 +82,12 @@ spriteTypes = {
 		name = "GFX_sp_event_Pacific_War"
 		textureFile = "/gfx/sp_events/Super_Event_Pacific_War.dds"
 	}
-	
-	spriteType = {
-		name = "GFX_sp_event_Anglo_Iraqi_War"
-		textureFile = "/gfx/sp_events/Super_Event_Iraqi_War.dds"
-	}
-	
+		
 	spriteType = {
 		name = "GFX_sp_event_Barbarossa"
 		textureFile = "/gfx/sp_events/Super_Event_Barbarossa.dds"
 	}
-	
-	spriteType = {
-		name = "GFX_sp_event_Fall_Leopoldine"
-		textureFile = "/gfx/sp_events/Super_Event_Fall_Leopoldine.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_sp_event_Nationalist"
-		textureFile = "/gfx/sp_events/Super_Event_Nationalist_Victory.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_sp_event_Republican"
-		textureFile = "/gfx/sp_events/Super_Event_Republican_Victory.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_sp_event_Anarchist"
-		textureFile = "/gfx/sp_events/Super_Event_Anarchist_Victory.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_sp_event_Communist"
-		textureFile = "/gfx/sp_events/Super_Event_Communist_Victory.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_sp_event_Falangist"
-		textureFile = "/gfx/sp_events/Super_Event_Falangist_Victory.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_sp_event_Stalinist"
-		textureFile = "/gfx/sp_events/Super_Event_Stalinist_Victory.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_sp_event_Carlist"
-		textureFile = "/gfx/sp_events/Super_Event_Carlist_Victory.dds"
-	}
-	
+			
 	spriteType = {
 		name = "GFX_sp_event_British_Collapse"
 		textureFile = "/gfx/sp_events/Super_Event_British_Collapse.dds"
@@ -162,17 +102,7 @@ spriteTypes = {
 		name = "GFX_sp_event_American_Civil_War"
 		textureFile = "/gfx/sp_events/Super_Event_American_Civil_War.dds"
 	}
-	
-	spriteType = {
-		name = "GFX_sp_event_Bay_of_Pigs_Invasion"
-		textureFile = "/gfx/sp_events/Super_Event_Bay_of_Pigs.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_sp_event_Second_American_Mexican_War"
-		textureFile = "/gfx/sp_events/Super_Event_American_Mexican_War.dds"
-	}
-	
+			
 	spriteType = {
 		name = "GFX_sp_event_Fall_of_Los_Angeles"
 		textureFile = "/gfx/sp_events/Super_Event_Fall_of_Los_Angeles.dds"
@@ -233,11 +163,6 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_sp_event_Decolonization"
-		textureFile = "/gfx/sp_events/Super_Event_Decolonization.dds"
-	}
-	
-	spriteType = {
 		name = "GFX_sp_event_King_Party"
 		textureFile = "/gfx/sp_events/Super_Event_King_Party.dds"
 	}
@@ -292,11 +217,6 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_sp_event_Austria_Hungary"
-		textureFile = "/gfx/sp_events/Super_Event_Austria_Hungary.dds"
-	}
-	
-	spriteType = {
 		name = "GFX_sp_event_Eastern_Front"
 		textureFile = "/gfx/sp_events/Super_Event_Eastern_Front.dds"
 	}
@@ -314,35 +234,10 @@ spriteTypes = {
 		name = "GFX_sp_event_Fall_China"
 		textureFile = "/gfx/sp_events/Super_Event_Fall_China.dds"
 	}
-	
-	spriteType = {
-		name = "GFX_sp_event_Chinese_Civil_War"
-		textureFile = "/gfx/sp_events/Super_Event_Chinese_Civil_War.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_sp_event_China_Yellow_River"
-		textureFile = "/gfx/sp_events/Super_Event_Yellow_River.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_sp_event_China_Communist"
-		textureFile = "/gfx/sp_events/Super_Event_China_Communist.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_sp_event_China_Nationalist"
-		textureFile = "/gfx/sp_events/Super_Event_China_Nationalist.dds"
-	}
-	
+			
 	spriteType = {
 		name = "GFX_sp_event_Russo_Japanese"
 		textureFile = "/gfx/sp_events/Super_Event_Russo_Japanese.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_sp_event_Qing"
-		textureFile = "/gfx/sp_events/Super_Event_Qing.dds"
 	}
 	
 	spriteType = {
@@ -397,12 +292,7 @@ spriteTypes = {
 	###############
 	###BOSPHORUS###
 	###############
-	
-	spriteType = {
-		name = "GFX_sp_event_Macedon"
-		textureFile = "/gfx/sp_events/Super_Event_Macedon.dds"
-	}
-	
+		
 	spriteType = {
 		name = "GFX_sp_event_Ethiopian_Victory"
 		textureFile = "/gfx/sp_events/Super_Event_Ethiopian_Victory.dds"
@@ -412,24 +302,5 @@ spriteTypes = {
 		name = "GFX_sp_event_Fall_of_Moscow_Allies"
 		textureFile = "/gfx/sp_events/Super_Event_Fall_of_Moscow_Allies.dds"
 	}
-	
-	spriteType = {
-		name = "GFX_sp_event_Byzantine"
-		textureFile = "/gfx/sp_events/Super_Event_Byzantine.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_sp_event_Ottoman"
-		textureFile = "/gfx/sp_events/Super_Event_Ottoman.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_sp_event_Turan"
-		textureFile = "/gfx/sp_events/Super_Event_Turan.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_sp_event_Balkan"
-		textureFile = "/gfx/sp_events/Super_Event_Balkan.dds"
-	}
+				
 }
