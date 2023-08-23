@@ -4588,6 +4588,7 @@ focus = JAP_black_dragon_society }
 		id = JAP_invade_china
 		icon = GFX_focus_attack_china
 		prerequisite = { focus = JAP_emperors_army}
+		prerequisite = {focus = JAP_claim_siberia }
 		mutually_exclusive = {
 			focus = JAP_Hokushin-ron
 		}
@@ -4670,11 +4671,6 @@ focus = JAP_black_dragon_society }
 		  id = JAP_prepare_to_strike_north
 		  prerequisite = {focus = JAP_strike_north_doctrine}
 		  prerequisite = {focus = JAP_cultural_dominance } 
-		  available = {
-			  owns_state = 605
-			  owns_state = 608
-			  owns_state = 613
-		  }
   
 		  icon = GFX_goal_generic_army_motorized
 		  relative_position_id = JAP_showa_restoration
