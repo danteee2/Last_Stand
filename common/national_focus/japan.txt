@@ -4587,7 +4587,6 @@ focus = JAP_black_dragon_society }
 	  focus = {
 		id = JAP_invade_china
 		icon = GFX_focus_attack_china
-		prerequisite = { focus = JAP_claim_siberia}
 		prerequisite = { focus = JAP_emperors_army}
 		mutually_exclusive = {
 			focus = JAP_Hokushin-ron
