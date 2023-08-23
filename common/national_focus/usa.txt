@@ -1113,6 +1113,31 @@ focus_tree = {
 			unlock_decision_tooltip = { decision = USA_readmit_state show_effect_tooltip = yes }
 		}
 	}
+	focus = {
+		id = USA_mobilize_the_workers
+		icon =  GFX_focus_YUG_pan_slavic_congress
+		available = {
+			has_war = yes
+		}
+		x = 0
+		y = 4
+		prerequisite = {focus = USA_reintegration}
+		relative_position_id = USA_guarantee_the_american_dream
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		
+		
+		
+		
+		completion_reward = {
+			add_ideas = workers_mobilized
+		}
+	}
+
 	
 #   #  ##  ###  ###      ##  ###   ##  #  # ###  
 #   # #  # #  # #       #    #  # #  # #  # #  # 

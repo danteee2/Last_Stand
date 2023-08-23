@@ -37,6 +37,9 @@ USA_beacon_of_democracy:0 "§2Beacon Of Democracy§!"
 beacon_of_democracy_idea:0 "Beacon Of Democracy"
 USA_beacon_of_democracy_desc:0 "Now that the enemy is on the move, the American spirit shall not dwindle but we fuel it with workers from fallen nations."
 beacon_of_democracy_idea_desc:0 "The American dream is the dream that drove America to success, it will now drive us through rising tensions and war."
+USA_mobilize_the_workers:0 "§RMobilize The Workers"
+USA_mobilize_the_workers_desc:0 "With war on the horizon it is clear that we need to not only mobilize our army but also our workers to take a stance to defend global communism"
+workers_mobilized:0 "Workes Mobilized"
 
 
  USA_curtiss_wright:0 "Curtiss-Wright"
