@@ -1,37 +1,181 @@
 ideas = {
 	country = {
-			### new alt hist path 
-			GER_hitlers_shadow1 = {
-				allowed = {
-					always = yes
-				}
-				removal_cost = -1
-				picture = GER_hitlers_shadow
-				modifier = {
-					stability_factor = -0.25
-				}
+		### new alt hist path 
+		GER_himmlers_plan = {
+			allowed = {
+				always = yes
 			}
-			GER_intercepted_civilian_intelligience2 = {
-				allowed = {
-					always = yes
-				}
-				removal_cost = -1
-				picture = generic_secret_police
-				modifier = {
-					civilian_intel_to_others = -50
-				}
+			removal_cost = -1
+			picture = generic_central_management
+			modifier = {
+				production_speed_buildings_factor = 0.15
 			}
-			GER_seized_assets = {
-				allowed = {
-					always = yes
-				}
-				removal_cost = -1
-				picture = tur_balkan_central_bank_wealthy_greece
-				modifier = {
-					consumer_goods_factor = -0.02
-					stability_factor = -0.1
-				}
+		}
+		GER_military_purges_idea = {
+			allowed = {
+				always = yes
 			}
+			removal_cost = -1
+			picture = SPR_disbanded_army
+			modifier = {
+				weekly_manpower = -25000
+			}
+		}
+		beacon_of_purity = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_oppression
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = -0.05
+			}
+		}
+		continued_purges = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = prc_the_long_march2
+			modifier = {
+				monthly_population = -1.5
+			}
+		}
+		generals_allegience_assured = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = german_advisors
+			modifier = {
+				max_planning_factor = 0.15
+				planning_speed = 0.25
+				army_leader_start_logistics_level = 2
+			}
+		}
+		declared_ethnostate = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = triumphant_will
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		investments_into_the_purge= {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_foreign_capital
+			modifier = {
+				consumer_goods_factor = 0.15
+			}
+		}
+		GER_hitlers_shadow1 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = GER_hitlers_shadow
+			modifier = {
+				stability_factor = -0.25
+			}
+		}
+
+		####white woman regime
+		new_regime2 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.1
+				conscription_factor = -0.15
+				conscription = -0.025
+			}
+		}
+		new_regime3 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.1
+				
+				conscription_factor = -0.1
+			}
+		}
+		new_regime4 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.1
+				conscription_factor = 0.1
+				consumer_goods_factor = -0.025
+				stability_factor = 0.05
+				conscription_factor = -0.1
+
+			}
+		}
+		new_regime5 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_intel_bonus
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.15
+				conscription_factor = 0.1
+				consumer_goods_factor = -0.025
+				stability_factor = 0.05
+				navy_screen_attack_factor = 0.1
+				navy_screen_defence_factor = 0.1
+				navy_capital_ship_attack_factor = 0.1
+				navy_capital_ship_defence_factor = 0.1
+				army_armor_attack_factor = 0.05
+				army_armor_defence_factor = 0.05
+				army_org_regain = -0.15
+				conscription_factor = -0.1
+			}
+		}
+		GER_intercepted_civilian_intelligience2 = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_secret_police
+			modifier = {
+				civilian_intel_to_others = -50
+			}
+		}
+		GER_seized_assets = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = tur_balkan_central_bank_wealthy_greece
+			modifier = {
+				consumer_goods_factor = -0.02
+				stability_factor = -0.1
+			}
+		}
 		#from Poland mod
 		GER_eastern_supply_logistics = {
 			allowed = {
@@ -1511,51 +1655,13 @@ ideas = {
 			}
 			removal_cost = -1
 			picture = generic_acquire_tanks
-			targeted_modifier = {
-				tag = SOV
-				attack_bonus_against = 0.05
-				defense_bonus_against = 0.05
-			}
-		}
-		GER_eastern_campaign = {
-			removal_cost = -1
-			picture = generic_soldiers_bad
-			cancel = {
-				OR = {
-					casualties_inflicted_by = {		#losses are high, it is better to rethink the policies
-						opponent = SOV
-						thousands > 4000
-					}
-					surrender_progress > 0.75		#we are losing, surely we will cooperate more, right?
-					any_owned_state = {
-						is_core_of = SOV
-						compliance > 50
-					}
-				}
-			}
-
-			on_add = {
-				set_rule = { 
-					can_puppet = no
-					can_create_collaboration_government = no
-				}
-			}
-
-			on_remove = {
-				set_rule = { 
-					can_puppet = yes
-					can_create_collaboration_government = yes
-				}
-			}
-
 			modifier = {
-				attrition = 0.05				#just a little debuff to simulate the initial struggle against resistance 
-				custom_modifier_tooltip = GENERIC_cant_puppet_tt
-				custom_modifier_tooltip = GENERIC_cant_create_collaboration_government_tt
+				attrition = 0.05
 			}
 			targeted_modifier = {
 				tag = SOV
 				attack_bonus_against = 0.35
+
 			}
 		}
 		GER_case_white = { #Idea only used on AI vs AI to try to keep Historical AI moving along
