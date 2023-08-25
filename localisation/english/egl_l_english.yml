@@ -111,44 +111,6 @@
      marine_corps_navy:0 "Navy Command"
      marine_corps_spec:0 "Spec-Ops Command"
      #################
- # AIR POLICIES #
-     air_policies:0 "Airforce Policies"
-     
-     doctrine_air:0 "Airforce Doctrine"
-     doctrine_air_strategic:0 "Strategic Bombing"
-     doctrine_air_land:0 "Land Forces Support"
-     doctrine_air_fleet:0 "Fleet Support"
-     doctrine_air_defence:0 "Air Defence"
-     
-     training_air:0 "Airforce Training"
-     training_air_theory:0 "Theoretical Studying"
-     training_air_practic:0 "Practical Training"
-     training_air_basic:0 "Basic Stuff"
-     
-     air_production:0 "Planes Production"
-     air_production_normal:0 "Standard Designs"
-     air_production_cheap:0 "Cheap Production"
-     air_production_quality:0 "Quality Manufacturing"
-     air_production_no:0 "No Production"
-     
-     light_planes:0 "Light Planes Focus"
-     light_planes_naval:0 "Naval Bombers Focus"
-     light_planes_fighters:0 "Fighter Focus"
-     light_planes_cas:0 "CAS Focus"
-     
-     heavy_planes:0 "Heavy Planes Focus"
-     heavy_planes_fighters:0 "Heavy Fighter Focus"
-     heavy_planes_strategic:0 "Strategic Bomber Focus"
-     heavy_planes_tactical:0 "Tactical Bomber Focus"
-     heavy_planes_transport:0 "Transport Focus"
-
-strategic_bomber:0 "Strategic Bomber"
-     
-     airborne:0 "Paratroopers"
-     airborne_army:0 "Army Command"
-     airborne_air:0 "Airforce Command"
-     airborne_spec:0 "Spec-Ops Command"
-     #################
  # TRAITS #
      airborne_spec_t:0 " 1"
      airborne_army_t:0 " 2"
