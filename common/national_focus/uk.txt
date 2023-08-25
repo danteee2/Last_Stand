@@ -13050,13 +13050,6 @@ mutually_exclusive = {
 		mutually_exclusive = { focus = ENG_pre_empt_spanish_alignment }
 		available = {
 			is_subject = no
-			any_country = {
-				original_tag = SPR
-				has_government = fascism
-				exists = yes
-				NOT = { is_in_faction_with = ENG }
-				has_war = yes
-			}
 			has_global_flag = scw_over
 		}
 		icon = GFX_goal_generic_befriend_spain_nationalist
@@ -13084,13 +13077,6 @@ mutually_exclusive = {
 		mutually_exclusive = { focus = ENG_gibraltar_for_spanish_support }
 		available = {
 			is_subject = no
-			any_country = {
-				original_tag = SPR
-				has_government = fascism
-				exists = yes
-				NOT = { is_in_faction_with = ENG }
-				NOT = { has_war_with = ENG }
-			}
 			has_global_flag = scw_over
 		}
 		bypass = {
@@ -16828,7 +16814,7 @@ mutually_exclusive = {
 							}
 						}
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
 						level = 1
@@ -16847,7 +16833,7 @@ mutually_exclusive = {
 							}
 						}
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
 						level = 1
@@ -16892,7 +16878,7 @@ mutually_exclusive = {
 							}
 						}
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
 						level = 1
@@ -16911,7 +16897,7 @@ mutually_exclusive = {
 							}
 						}
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
 						level = 1
