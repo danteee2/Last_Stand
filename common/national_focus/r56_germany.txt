@@ -46,10 +46,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -63,10 +63,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -17656,6 +17656,7 @@ focus = {
 				remove_idea = new_regime4
 				add_idea = new_regime5
 			}
+			add_research_slot = 1
 			add_ideas = limited_exports
 			add_ideas = tot_economic_mobilisation
 			add_ideas = extensive_conscription
