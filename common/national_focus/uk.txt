@@ -1985,6 +1985,10 @@ mutually_exclusive = {
 		y = 2
 		relative_position_id = uk_battleship_focus
 		cost = 10
+		available = {
+			date > 1940.01.01
+			has_war = yes
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -2000,6 +2004,7 @@ mutually_exclusive = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			set_technology = { advanced_ship_hull_heavy = 1 }
 			navy_experience = 25
 			create_equipment_variant = {
 				name = "Vanguard"
