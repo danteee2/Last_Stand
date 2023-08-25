@@ -17620,7 +17620,7 @@ focus = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = GER_himmlers_plan
-				days = 120
+				days = 365
 			}
 		}
 }
@@ -17646,7 +17646,7 @@ focus = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = SOV_mass_tank_procution_idea
-				days = 120
+				days = 365
 			}
 		}
 }
