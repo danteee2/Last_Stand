@@ -12239,21 +12239,7 @@ focus_tree = {
 		id = GER_safeguard_the_baltic_r56
 		text = GER_safeguard_the_baltic
 		icon = GFX_goal_SOV_baltic_aggression
-		allow_branch = {
-			has_dlc = "Waking the Tiger"
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					has_completed_focus = GER_kill_hitler
-					has_completed_focus = GER_denounce_versailles
-				}
-			}
-		}
+	
 		prerequisite = {
 			focus = GER_restore_the_empire
 			#focus = GER_mon_peaceful
