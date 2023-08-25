@@ -2004,7 +2004,9 @@ mutually_exclusive = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			set_technology = { advanced_ship_hull_heavy = 1 }
+			hidden_effect = {
+				set_technology = { advanced_ship_hull_heavy = 1 }	
+			}
 			navy_experience = 25
 			create_equipment_variant = {
 				name = "Vanguard"
