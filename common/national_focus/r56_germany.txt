@@ -869,12 +869,10 @@ focus_tree = {
 				NOT = {
 					has_completed_focus = GER_kill_hitler
 					has_completed_focus = GER_the_alternative
+					has_completed_focus = GER_rally_the_monarchists
 				}
 			}
 		}
-		# prerequisite = {
-		# 	focus = GER_political_sphere
-		# }
 		mutually_exclusive = {
 			focus = GER_kill_hitler
 			focus = GER_rally_the_monarchists
@@ -5769,20 +5767,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_influence_brazil
 		}
-		allow_branch = {
-			has_dlc = "La Resistance"
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					has_completed_focus = GER_kill_hitler
-				}
-			}
-		}
 		relative_position_id = GER_influence_brazil
 		x = -1
 		y = 1
@@ -10478,15 +10462,11 @@ focus_tree = {
 			is_subject = no
 			has_war = no
 		}
-		# prerequisite = {
-		# 	focus = GER_political_sphere
-		# }
 		mutually_exclusive = {
 			focus = GER_denounce_versailles
 			focus = GER_rally_the_monarchists
 			focus = GER_the_alternative
 		}
-		#relative_position_id = GER_political_sphere
 		x = 88
 		y = 0
 		offset = {
@@ -11802,21 +11782,7 @@ focus_tree = {
 		id = GER_prepare_italian_coup_r56
 		text = GER_prepare_italian_coup
 		icon = GFX_goal_italian_civil_war
-		allow_branch = {
-			has_dlc = "Waking the Tiger"
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					has_completed_focus = GER_kill_hitler
-					has_completed_focus = GER_denounce_versailles
-				}
-			}
-		}
+		
 		prerequisite = { focus = GER_restore_the_central_powers }
 		available = {
 			is_subject = no
@@ -13328,23 +13294,6 @@ focus_tree = {
 		id = GER_asian_claims
 		icon = GFX_focus_por_luso_tropicalism
 		cost = 5
-		allow_branch = {
-			NOT = {
-				has_dlc = "Waking the Tiger"
-			}
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					has_completed_focus = GER_kill_hitler
-					has_completed_focus = GER_denounce_versailles
-				}
-			}
-		}
 		prerequisite = {
 			focus = GER_european_claims
 		}
@@ -16342,7 +16291,19 @@ focus = {
 		focus = GER_rally_the_monarchists
 		focus = GER_kill_hitler
 	}
-	#relative_position_id = GER_political_sphere
+
+	offset = {
+		x = -75
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = obsolete_focus_branches_visibility
+				option = HIDE
+			}
+			has_completed_focus = GER_the_alternative
+		}
+	}
+
 	x = 117
 	y = 0
 	
@@ -16373,9 +16334,9 @@ focus = {
 				  ideology = fascism_ideology
 				  expire = "1965.1.1"
 			}
-		}	
+		}
+		mark_focus_tree_layout_dirty = yes	
 	}
-
 }
 focus = {
 	id = GER_for_the_german_people
@@ -17568,7 +17529,7 @@ available = {
 	}
 }
 focus = {
-	id = GER_ensure_general's_allegience
+	id = GER_ensure_generals_allegience
 	icon = GFX_focus_generic_national_security
 	x = -1
 	y = 4
@@ -17637,7 +17598,7 @@ focus = {
 	icon = GFX_focus_POL_support_global_falangism
 		cost = 10.00
 		prerequisite = {
-			focus = GER_ensure_general's_allegience
+			focus = GER_ensure_generals_allegience
 		}
 		prerequisite = {
 			focus = GER_defense_of_the_fatherland
