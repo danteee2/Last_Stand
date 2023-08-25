@@ -16788,17 +16788,7 @@ focus = {
 
 
 	completion_reward = {
-		if = {
-			limit = {
-				NOT = {
-					has_intelligence_agency = yes
-				}
-			}
-			create_intelligence_agency = {
-				name = "SS"
-				icon = GFX_intelligence_agency_logo_generic_4
-			}			
-		}	
+
 		add_ideas = GER_abwehr_contacts
 		hidden_effect = {
 			set_technology = { lar_decryption_bonus_tech = 1 }
@@ -17116,7 +17106,7 @@ focus = {
 	icon = GFX_focus_generic_conspiracy
 	cost = 5.00
 	ai_will_do = { factor = 10 }
-	prerequisite = {T
+	prerequisite = {
 		focus = GER_assert_cultural_dominance
 	}
 	mutually_exclusive = {
@@ -17184,7 +17174,7 @@ focus = {
 focus = {
 	id = GER_intercept_civilian_intelligience
 	icon = GFX_goal_arrests
-	cost = 5.00
+	cost = 10
 	ai_will_do = { factor = 10 }
 	prerequisite = {
 		focus = GER_imprison_hitler
