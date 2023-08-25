@@ -367,6 +367,7 @@ formable_nations_mod_category = {
 		visible = {
 			NOT = { has_country_flag = unform_available }
 			NOT = { has_global_flag = hide_formable_nations }
+			NOT = { has_completed_focus = GER_the_alternative }
 			OR = {
 				has_global_flag = no_limit
 				original_tag = GER
