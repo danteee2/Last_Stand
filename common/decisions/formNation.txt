@@ -1096,7 +1096,6 @@ formable_nations_mod_category = {
 						35 = { is_controlled_by = ROOT }
 						36 = { is_controlled_by = ROOT }
 						8 = { is_controlled_by = ROOT }
-						965 = { is_controlled_by = ROOT }
 					}
 					AND = {
 						has_global_flag = debug_mode
@@ -1708,7 +1707,7 @@ formable_nations_mod_category = {
 						35 = { is_controlled_by = ROOT }
 						36 = { is_controlled_by = ROOT }
 						8 = { is_controlled_by = ROOT }
-						965 = { is_controlled_by = ROOT }
+						
 					}
 					AND = {
 						has_global_flag = debug_mode
@@ -2413,7 +2412,7 @@ formable_nations_mod_category = {
 						35 = { is_controlled_by = ROOT }
 						36 = { is_controlled_by = ROOT }
 						8 = { is_controlled_by = ROOT }
-						965 = { is_controlled_by = ROOT }
+						
 					}
 					AND = {
 						has_global_flag = debug_mode
