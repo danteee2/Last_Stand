@@ -15,7 +15,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				global_building_slots_factor = 0.3
+				global_building_slots_factor = 0.35
 				consumer_goods_factor = -0.05
 				conscription = 0.03
 				production_speed_buildings_factor = 0.15
