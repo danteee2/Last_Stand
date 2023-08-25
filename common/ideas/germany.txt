@@ -39,7 +39,7 @@ ideas = {
 			removal_cost = -1
 			picture = prc_the_long_march2
 			modifier = {
-				monthly_population = -1.5
+				monthly_population = -3.5
 			}
 		}
 		generals_allegience_assured = {
@@ -49,7 +49,7 @@ ideas = {
 			removal_cost = -1
 			picture = german_advisors
 			modifier = {
-				max_planning_factor = 0.15
+				max_planning_factor = 0.05
 				planning_speed = 0.25
 				army_leader_start_logistics_level = 2
 			}
@@ -112,7 +112,7 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.05
 				production_speed_buildings_factor = 0.1
 				
-				conscription_factor = -0.1
+				conscription_factor = -0.15
 			}
 		}
 		new_regime4 = {
@@ -125,10 +125,10 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.05
 				production_factory_max_efficiency_factor = 0.05
 				production_speed_buildings_factor = 0.1
-				conscription_factor = 0.1
+				conscription_factor = -0.15
 				consumer_goods_factor = -0.025
 				stability_factor = 0.05
-				conscription_factor = -0.1
+				conscription_factor = -0.15
 
 			}
 		}
@@ -142,7 +142,7 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.05
 				production_factory_max_efficiency_factor = 0.05
 				production_speed_buildings_factor = 0.15
-				conscription_factor = 0.1
+				conscription_factor = -0.15
 				consumer_goods_factor = -0.025
 				stability_factor = 0.05
 				navy_screen_attack_factor = 0.1
