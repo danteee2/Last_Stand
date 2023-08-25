@@ -538,3 +538,29 @@ country_event = {
         name = liechtenstein.16.a
     }
 }
+
+#LAST STAND
+#Germania demands Czech land - LAST STAND
+# Czechs asked about territories
+country_event = {
+	id = liechtenstein.18
+	title = liechtenstein.18.t
+	desc = liechtenstein.18.d
+	picture = GFX_report_event_hitler_parade
+
+	is_triggered_only = yes
+
+	option = { # Accept
+		name = liechtenstein.18.a
+		ai_chance = {
+			base = 100
+			modifier = {
+				add = -25
+				GER = { has_army_size = { size < 40 } }
+			}
+		}
+		GER = {
+			country_event = { hours = 2 id = germany.35 }
+		}
+	}
+}

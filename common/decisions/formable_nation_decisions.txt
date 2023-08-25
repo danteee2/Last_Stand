@@ -6694,6 +6694,7 @@ form_greater_german_reich_category = {
 				has_government = neutrality
 			}
 			NOT = { has_global_flag = form_greater_german_reich_flag }
+			NOT = { has_completed_focus = GER_the_alternative }
 		}
 
 		complete_effect = {

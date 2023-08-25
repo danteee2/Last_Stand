@@ -910,3 +910,7 @@ QIN = {
 	color = rgb { 255 153 153 }
 	color_ui = rgb { 255 153 153 }
 }
+ARY = {
+	color = rgb { 7 7 7 }
+	color_ui = rgb { 255 153 153 }
+}

@@ -2614,6 +2614,31 @@ country_event = {
 	}
 }
 
+#LAST STAND
+#Germania demands Lithunian land - LAST STAND
+# Lithunia asked about territories
+country_event = {
+	id = lithuania.122
+	title = lithuania.122.t
+	desc = lithuania.122.d
+	picture = GFX_report_event_hitler_parade
+
+	is_triggered_only = yes
+
+	option = { # Accept
+		name = lithuania.122.a
+		ai_chance = {
+			base = 100
+			modifier = {
+				add = -25
+				GER = { has_army_size = { size < 40 } }
+			}
+		}
+		GER = {
+			country_event = { hours = 2 id = germany.37 }
+		}
+	}
+}
 
 
 

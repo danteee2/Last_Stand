@@ -2182,6 +2182,237 @@ country_event = {
 	}
 }
 
+# Poland accepts claims
+country_event = {
+	id = germany.31
+	title = germany.31.t
+	desc = germany.31.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.31.a
+		GER = {
+			transfer_state = 807
+			transfer_state = 85
+			transfer_state = 86
+			transfer_state = 762
+			add_state_core = 807
+			add_state_core = 85
+			add_state_core = 86
+			add_state_core = 762
+		}
+	}
+}
+
+# Czechs accepts claims
+country_event = {
+	id = germany.32
+	title = germany.32.t
+	desc = germany.32.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.32.a
+		GER = {
+			transfer_state = 69
+			transfer_state = 74
+			add_state_core = 69
+			add_state_core = 74
+		}
+	}
+}
+
+# Austria accepts claims
+country_event = {
+	id = germany.33
+	title = germany.33.t
+	desc = germany.33.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.33.a
+		GER = {
+			transfer_state = 4
+			transfer_state = 152
+			transfer_state = 153
+			transfer_state = 848
+			add_state_core = 4
+			add_state_core = 152
+			add_state_core = 153
+			add_state_core = 848
+		}
+	}
+}
+
+# Belgium accepts claims
+country_event = {
+	id = germany.34
+	title = germany.34.t
+	desc = germany.34.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.34.a
+		GER = {
+			transfer_state = 965
+			add_state_core = 965
+		}
+	}
+}
+
+# Liechtenstein accepts claims
+country_event = {
+	id = germany.35
+	title = germany.35.t
+	desc = germany.35.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.35.a
+		GER = {
+			transfer_state = 997
+			add_state_core = 997
+		}
+	}
+}
+
+# Denmark accepts claims
+country_event = {
+	id = germany.36
+	title = germany.36.t
+	desc = germany.36.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.36.a
+		GER = {
+			transfer_state = 964
+			add_state_core = 964
+		}
+	}
+}
+
+# Lithuania accepts claims
+country_event = {
+	id = germany.37
+	title = germany.37.t
+	desc = germany.37.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.37.a
+		GER = {
+			transfer_state = 188
+			add_state_core = 188
+		}
+	}
+}
+
+# France accepts claims
+country_event = {
+	id = germany.38
+	title = germany.38.t
+	desc = germany.38.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.38.a
+		GER = {
+			transfer_state = 28
+			add_state_core = 28
+		}
+
+		#ADD RESOURCES
+		add_resource = {
+			type = steel
+			amount = 80
+			state = 462
+		}
+		add_resource = {
+			type = oil
+			amount = 2
+			state = 462
+		}
+		add_resource = {
+			type = steel
+			amount = -180
+			state = 28
+		}
+		add_resource = {
+			type = oil
+			amount = -2
+			state = 28
+		}
+
+		#ADD FORTS
+		18 = {
+			add_building_construction = {
+				type = bunker
+					province = 5291
+				level = 2
+			}
+		}
+			18 = {
+				add_building_construction = {
+					type = bunker
+						province = 11516
+					level = 2
+				}
+			}
+			18 = {
+				add_building_construction = {
+					type = bunker
+						province = 521
+					level = 2
+				}
+			}
+			18 = {
+				add_building_construction = {
+					type = bunker
+						province = 698
+					level = 2
+				}
+			}
+		} 
+	}
+
+# France denies claims
+country_event = {
+	id = germany.39
+	title = germany.39.t
+	desc = germany.39.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.39.b
+		GER = {
+			create_wargoal = {
+				type = take_state
+				target = FRA
+				generator = {28}
+			}
+		}
+	}
+}
+
 ### Munich Conference
 
 # Britain

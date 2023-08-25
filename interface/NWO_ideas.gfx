@@ -96,4 +96,61 @@ spriteTypes = {
 				name = "GFX_idea_emperors_economy"
 				textureFile = "gfx/interface/ideas/jap/JAP_emperors_economy.dds"
 			}
+			#GERMANY ALT HIST
+			spriteType = {
+				name = "GFX_GER_aryan_germany"
+				textureFile = "gfx/interface/goals/ger/LS_goal_GER_aryan.dds"
+			}
+
+			spriteType = {
+				name = "GFX_GER_aryan_germany_shine"
+				textureFile = "gfx/interface/goals/ger/LS_goal_GER_aryan_shine.dds"
+			}
+			spriteType = {
+				name = "GFX_GER_germanic_lands"
+				textureFile = "gfx/interface/goals/ger/LS_goal_germanic_lands.dds"
+			}
+
+			spriteType = {
+				name = "GFX_GER_germanic_lands_shine"
+				textureFile = "gfx/interface/goals/ger/LS_goal_germanic_lands_shine.dds"
+			}
+			spriteType = {
+				name = "GFX_GER_black_sun"
+				textureFile = "gfx/interface/goals/ger/LS_goal_black_sun.dds"
+			}
+
+			spriteType = {
+				name = "GFX_GER_black_sun_shine"
+				textureFile = "gfx/interface/goals/ger/LS_goal_black_sun_shine.dds"
+			}
+			spriteType = {
+				name = "GFX_GER_heinrich_himmler"
+				textureFile = "gfx/interface/goals/ger/LS_goal_himmler.dds"
+			}
+
+			spriteType = {
+				name = "GFX_GER_heinrich_himmler_shine"
+				textureFile = "gfx/interface/goals/ger/LS_goal_himmler_shine.dds"
+			}
+			spriteType = {
+				name = "GFX_GER_imprisoned_hitler"
+				textureFile = "gfx/interface/goals/ger/LS_goal_imprison_hitler.dds"
+			}
+
+			spriteType = {
+				name = "GFX_GER_imprisoned_hitler_shine"
+				textureFile = "gfx/interface/goals/ger/LS_goal_imprison_hitler_shine.dds"
+			}
+			
+			spriteType = {
+				name = "GFX_GER_woman"
+				textureFile = "gfx/interface/goals/ger/LS_goal_white_woman.dds"
+			}
+
+			spriteType = {
+				name = "GFX_GER_woman_shine"
+				textureFile = "gfx/interface/goals/ger/LS_goal_white_woman_shine.dds"
+			}
+
 }
