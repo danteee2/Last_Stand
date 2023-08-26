@@ -1143,19 +1143,19 @@ country_event = {
 						has_completed_focus = USA_ally_with_the_silver_shirts
 					}
 				}
-				country_event = { id = mtg_usa_civil_war_democrats.20 days = 280 }
+				country_event = { id = mtg_usa_civil_war_democrats.20 days = 25 }
 			}
 			else = {
-				country_event = { id = mtg_usa_civil_war_democrats.20 days = 180 }	
+				country_event = { id = mtg_usa_civil_war_democrats.20 days = 35 }	
 			}
 		}
 		hidden_effect = {
-			country_event = { id = mtg_usa_civil_war_democrats.3 days = 15 random_days = 6 }
+			country_event = { id = mtg_usa_civil_war_democrats.3 days = 15 random_days = 3 }
 			if = {
 				limit = {
 					has_completed_focus = USA_national_prosperity_program
 				}
-				country_event = { id = mtg_usa_civil_war_democrats.4 days = 15 random_days = 12 }
+				country_event = { id = mtg_usa_civil_war_democrats.4 days = 15 random_days = 8 }
 			}
 		}
 	}
@@ -1338,7 +1338,7 @@ country_event = {
 
 	option = {
 		name = mtg_usa_civil_war_democrats.14.a
-		add_timed_idea = { idea = strikes_1 days = 30 }
+		add_timed_idea = { idea = strikes_1 days = 10 }
 		hidden_effect = {
 			country_event = {
 				id = mtg_usa_civil_war_democrats.3
@@ -1704,6 +1704,14 @@ country_event = {
 						division = "name = \"III/Free Corps Texas\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
 						owner = ROOT
 					}
+					create_unit = {
+						division = "name = \"IV/Free Corps Texas\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"V/Free Corps Texas\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
+						owner = ROOT
+					}
 				}
 				372 = {
 					create_unit = {
@@ -1716,6 +1724,18 @@ country_event = {
 					}
 					create_unit = {
 						division = "name = \"III/Free Corps Arkansas\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"IV/Free Corps Arkansas\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"V/Free Corps Arkansas\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"VI/Free Corps Arkansas\" division_template = \"Free Corps\" start_experience_factor = 0.5" 
 						owner = ROOT
 					}
 				}
@@ -1957,50 +1977,15 @@ country_event = {
 						division = "name = \"Oregon Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
-					create_unit = {
-						division = "name = \"Oregon Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
-						owner = PREV
-					}
-					create_unit = {
-						division = "name = \"Oregon Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
-						owner = PREV
-					}
-					create_unit = {
-						division = "name = \"Oregon Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
-						owner = PREV
-					}
 				}
 				386 = {
 					create_unit = {
 						division = "name = \"Washington Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
-					create_unit = {
-						division = "name = \"Washington Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
-						owner = PREV
-					}
-					create_unit = {
-						division = "name = \"Washington Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
-						owner = PREV
-					}
-					create_unit = {
-						division = "name = \"Washington Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
-						owner = PREV
-					}
+					
 				}
 				378 = {
-					create_unit = {
-						division = "name = \"California Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
-						owner = PREV
-					}
-					create_unit = {
-						division = "name = \"California Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
-						owner = PREV
-					}
-					create_unit = {
-						division = "name = \"California Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
-						owner = PREV
-					}
 					create_unit = {
 						division = "name = \"California Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
@@ -2149,18 +2134,6 @@ country_event = {
 						division = "name = \"Idaho Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
-					create_unit = {
-						division = "name = \"Idaho Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
-						owner = PREV
-					}
-					create_unit = {
-						division = "name = \"Idaho Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
-						owner = PREV
-					}
-					create_unit = {
-						division = "name = \"Idaho Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
-						owner = PREV
-					}
 				}
 			}
 		}
@@ -2181,18 +2154,6 @@ country_event = {
 		hidden_effect = {
 			ROOT = {
 				387 = {
-					create_unit = {
-						division = "name = \"Idaho Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
-						owner = PREV
-					}
-					create_unit = {
-						division = "name = \"Idaho Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
-						owner = PREV
-					}
-					create_unit = {
-						division = "name = \"Idaho Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
-						owner = PREV
-					}
 					create_unit = {
 						division = "name = \"Idaho Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
@@ -2235,18 +2196,6 @@ country_event = {
 						division = "name = \"Utah Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV
 					}
-					create_unit = {
-						division = "name = \"Utah Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
-						owner = PREV
-					}
-					create_unit = {
-						division = "name = \"Utah Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
-						owner = PREV
-					}
-					create_unit = {
-						division = "name = \"Utah Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
-						owner = PREV
-					}
 				}
 			}
 		}
@@ -2267,18 +2216,6 @@ country_event = {
 		hidden_effect = {
 			ROOT = {
 				380 = {
-					create_unit = {
-						division = "name = \"Utah Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
-						owner = PREV
-					}
-					create_unit = {
-						division = "name = \"Utah Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
-						owner = PREV
-					}
-					create_unit = {
-						division = "name = \"Utah Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
-						owner = PREV
-					}
 					create_unit = {
 						division = "name = \"Utah Volunteers\" division_template = \"Local Volunteers\" start_experience_factor = 0" 
 						owner = PREV

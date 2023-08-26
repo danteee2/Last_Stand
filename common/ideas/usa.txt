@@ -2,6 +2,22 @@ ideas = {
 
 		#NEW IDEAS FOR USA - LAST STAND
 	country = {
+		USA_economic_reform = {
+			picture = LIT_invested_in_farms
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.25
+			}
+		}
 		workers_mobilized = {
 			picture = jap_the_unthinkable_option
 			allowed = {
@@ -1265,7 +1281,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.02
 				stability_factor = 0.1
 			}
 		}
@@ -1303,7 +1319,7 @@ ideas = {
 			}
 		}
 		USA_privatization = {
-			picture = man_five_year_plan_industry
+			picture = SOV_organize_wreckers
 			
 			allowed = {
 				always = no
