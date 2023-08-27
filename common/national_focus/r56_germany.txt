@@ -16268,7 +16268,7 @@ focus = {
 	}
 	completion_reward = {
 		hidden_effect = { GER_remove_mefo_bills = yes }
-		add_stability = -0.2
+		add_stability = -0.25
 		custom_effect_tooltip = mefo_bills_removed_tt
 		add_ideas = GER_hitlers_shadow1
 		random_owned_controlled_state = {
@@ -16315,7 +16315,7 @@ focus = {
 	}
 	completion_reward = {
 		add_political_power = 25
-		add_stability = 0.05
+		add_stability = 0.025
 	}
 
 }
@@ -16343,7 +16343,7 @@ focus = {
 		}
 	}
 	completion_reward = {
-		
+		add_threat = 5
 		POL = {
 			country_event = {
 				id = germany.30
@@ -16635,7 +16635,7 @@ focus = {
 
 	completion_reward = {	
 		add_country_leader_trait = dictator
-		add_threat = 5
+		add_threat = 2
 		random_owned_controlled_state = {
 			prioritize = { 50 }
 			add_manpower = -500000
@@ -16669,6 +16669,13 @@ focus = {
 	relative_position_id = GER_the_alternative
 
 	completion_reward = {	
+		effect_tooltip = { 
+		set_party_name = {
+			ideology = fascist
+			long_name = "Schutzstaffel"
+			name = "SS"
+		}
+	}
 		add_country_leader_role = {
 			character = GER_heinrich_himmler
 			promote_leader = yes
@@ -17028,6 +17035,7 @@ focus = {
 
 
 	completion_reward = {
+		add_stability = -0.1
 		add_war_support = 0.1
 		add_political_power = -100
 		random_owned_controlled_state = {
@@ -17076,7 +17084,7 @@ focus = {
 			add_extra_state_shared_building_slots = 2
 		}
 		add_timed_idea = {
-			days = 90
+			days = 180
 			idea = investments_into_the_purge
 		}
 	}
@@ -17389,7 +17397,7 @@ focus = {
 			add_idea = new_regime3
 		}
 		random_owned_controlled_state = {
-			add_manpower = -100000
+			add_manpower = -500000
 		}
 	}
 }
@@ -17425,7 +17433,7 @@ focus = {
 	completion_reward = {
 		add_ideas = declared_ethnostate
 		random_owned_controlled_state = {
-			add_manpower = -100000
+			add_manpower = -500000
 		}
 	}
 }
@@ -17466,7 +17474,7 @@ available = {
 			add_idea = new_regime4
 		}
 		random_owned_controlled_state = {
-			add_manpower = -100000
+			add_manpower = -500000
 		}
 	}
 }
@@ -17507,7 +17515,7 @@ available = {
 	completion_reward = {
 		add_ideas = generals_allegience_assured
 		random_owned_controlled_state = {
-			add_manpower = -100000
+			add_manpower = -500000
 		}
 	}
 }
@@ -17531,7 +17539,7 @@ focus = {
 			add_war_support = 0.15
 			add_ideas = GER_defense_and_deterence_idea
 			random_owned_controlled_state = {
-				add_manpower = -100000
+				add_manpower = -500000
 			}
 		}
 }
@@ -17560,7 +17568,6 @@ focus = {
 				add_idea = new_regime5
 			}
 			add_war_support = 0.025
-			add_research_slot = 1
 			add_ideas = limited_exports
 			add_ideas = tot_economic_mobilisation
 			add_ideas = extensive_conscription
@@ -17575,7 +17582,7 @@ focus = {
 			}
 			random_owned_controlled_state = {
 				prioritize = { 64 }
-				add_manpower = -500000
+				add_manpower = -1000000
 			}
 		}
 }
