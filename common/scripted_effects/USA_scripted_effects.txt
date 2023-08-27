@@ -847,6 +847,146 @@ USA_set_president_effect = {
 	}
 }
 
+USA_give_confederate_units = {
+	if = {
+		limit = {
+			has_completed_focus = USA_ally_with_the_silver_shirts
+		}
+		division_template = {
+			name = "Freedom Fighters"
+			priority = 1
+			division_names_group = USA_INF_01
+			regiments = {
+				infantry = {
+					x = 0
+					y = 0
+				}
+				infantry = {
+					x = 0
+					y = 1
+				}
+				infantry = {
+					x = 0
+					y = 2
+				}
+				infantry = {
+					x = 0
+					y = 3
+				}
+				infantry = {
+					x = 0
+					y = 4
+				}
+				infantry = {
+					x = 1
+					y = 0
+				}
+				infantry = {
+					x = 1
+					y = 1
+				}
+				infantry = {
+					x = 1
+					y = 2
+				}
+				infantry = {
+					x = 1
+					y = 3
+				}
+				infantry = {
+					x = 1
+					y = 4
+				}
+				infantry = {
+					x = 2
+					y = 0
+				}
+				infantry = {
+					x = 2
+					y = 1
+				}
+				artillery_brigade = {
+					x = 2
+					y = 2
+				}
+				artillery_brigade = {
+					x = 2
+					y = 3
+				}
+				support = {
+					recon = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1 }
+					enginner = { x = 0 y = 3 }
+				}
+			}
+			support = {
+				recon = { x = 0 y = 0 }
+				artillery = { x = 0 y = 1 }
+				enginner = { x = 0 y = 3 }
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = USA_ally_with_the_silver_shirts
+			controls_state = 393
+		}
+		364 = {
+			create_unit = {
+				division = "name = \"South Carolina I\" division_template = \"Freedom Fighters\" start_experience_factor = 0.5" 
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"South Carolina II\" division_template = \"Freedom Fighters\" start_experience_factor = 0.5" 
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"South Carolina III\" division_template = \"Freedom Fighters\" start_experience_factor = 0.5" 
+				owner = ROOT
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = USA_ally_with_the_silver_shirts
+			controls_state = 358
+		}
+		367 = {
+			create_unit = {
+				division = "name = \"Alabama I\" division_template = \"Freedom Fighters\" start_experience_factor = 0.5" 
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"Alabama II\" division_template = \"Freedom Fighters\" start_experience_factor = 0.5" 
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"Alabama III\" division_template = \"Freedom Fighters\" start_experience_factor = 0.5" 
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"Alabama Iv\" division_template = \"Freedom Fighters\" start_experience_factor = 0.5" 
+				owner = ROOT
+			}
+			create_unit = {
+				division = "name = \"Alabama V\" division_template = \"Mafia\" start_experience_factor = 0.5" 
+				owner = ROOT
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = USA_ally_with_the_silver_shirts
+			controls_state = 379
+		}
+		369 = {
+			create_unit = {
+				division = "name = \"The Kentucky Boys\" division_template = \"Freedom Fighters\" start_experience_factor = 0.5" 
+				owner = ROOT
+			}
+		}
+	}
+}
 USA_give_mafia_units = {
 	if = {
 		limit = {

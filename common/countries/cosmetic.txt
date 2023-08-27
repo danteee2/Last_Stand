@@ -2,11 +2,14 @@ MAL_UK = {
     color = rgb { 201 56 93 }
     color_ui = rgb { 255 73 121 }
 }
+USA_columbus = {
+    color = rgb { 0 51 153 }
+    color_ui = rgb { 0 51 153 }
+}
 GER_germania = {
     color = rgb { 7 7 7 }
     color_ui = rgb { 67 65 64 }
 }
-
 
 RAJ_UK = {
 	color = rgb { 170  10  10 }

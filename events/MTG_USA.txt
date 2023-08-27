@@ -1556,9 +1556,10 @@ country_event = {
 				}
 			}
 			USA_give_mafia_units = yes
+			USA_give_confederate_units = yes
 			if = {
 				limit = {
-					has_completed_focus = USA_recruit_the_free_corps
+					has_completed_focus = USA_ally_with_the_silver_shirts
 				}
 				set_country_flag = USA_free_corps_raised
 				division_template = {
@@ -1577,6 +1578,7 @@ country_event = {
 						infantry = { x = 2 y = 0 }
 						infantry = { x = 2 y = 1 }
 						infantry = { x = 2 y = 2 }
+						
 					}
 				}
 				366 = {
