@@ -750,7 +750,7 @@ focus_tree = {
 		y = 3
 		prerequisite = { focus = USA_liberty_for_the_philippines }
 		relative_position_id = USA_desegregate_the_armed_forces
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -6160,15 +6160,11 @@ focus_tree = {
 		mutually_exclusive = { focus = USA_continue_the_new_deal }
 		available = {
 			has_government = democratic
-			NOT = {
-				has_country_leader = { ruling_only = yes character = USA_franklin_delano_roosevelt }
-			}
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
 			add_ideas = USA_gold_standard
-			USA_congress_small_opposition = yes
 			mark_focus_tree_layout_dirty = yes
 		}
 	}
@@ -6396,6 +6392,7 @@ focus_tree = {
 		    	add_ideas = charles_coughlin
 		    }
 			USA_congress_small_opposition = yes #Making rushing alt USA a little harder in Rt56
+			
 		}
 	}
 	focus = {
@@ -6405,7 +6402,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_america_first }
 		relative_position_id = USA_america_first
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -6486,19 +6483,9 @@ focus_tree = {
 				}
 				add_stability = -0.1
 			}
-			if = {
-				limit = {
-					has_country_flag = mtg_usa_civil_war_democrats_1
-					not = { has_country_flag = mtg_usa_civil_war_democrats_2 }
-				}
 				country_event = mtg_usa_civil_war_democrats.2
 				custom_effect_tooltip = mtg_usa_civil_war_warning_tt
-			}
-			else_if = {
-				limit = { not = { has_country_flag = mtg_usa_civil_war_democrats_1 } }
-				country_event = mtg_usa_civil_war_democrats.1
-				custom_effect_tooltip = mtg_usa_civil_war_warning_tt
-			}
+	
 		}
 	}
 
@@ -6543,19 +6530,11 @@ focus_tree = {
 		completion_reward = {
 			USA_congress_medium_support = yes
 			unlock_decision_tooltip = { decision = USA_beat_up_opposition show_effect_tooltip = yes }
-			if = {
-				limit = {
-					has_country_flag = mtg_usa_civil_war_democrats_1
-					not = { has_country_flag = mtg_usa_civil_war_democrats_2 }
-				}
+		
 				country_event = mtg_usa_civil_war_democrats.2
 				custom_effect_tooltip = mtg_usa_civil_war_warning_tt
-			}
-			else_if = {
-				limit = { not = { has_country_flag = mtg_usa_civil_war_democrats_1 } }
-				country_event = mtg_usa_civil_war_democrats.1
-				custom_effect_tooltip = mtg_usa_civil_war_warning_tt
-			}
+			
+			
 		}
 	}
 
@@ -6566,7 +6545,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_ally_with_the_silver_shirts }
 		relative_position_id = USA_ally_with_the_silver_shirts
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -6579,6 +6558,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
 			add_stability = 0.1
+			add_ideas = civilian_economy
 		}
 	}
 	focus = {
@@ -6588,7 +6568,7 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = USA_national_prosperity_program }
 		relative_position_id = USA_ally_with_the_silver_shirts
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -6613,7 +6593,7 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = USA_national_prosperity_program }
 		relative_position_id = USA_ally_with_the_silver_shirts
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -6635,7 +6615,7 @@ focus_tree = {
 		prerequisite = { focus = USA_privatize_the_TVA }
 		prerequisite = { focus = USA_de_regulate_the_banking_sector }
 		relative_position_id = USA_ally_with_the_silver_shirts
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -6672,7 +6652,6 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_MILITARY_EQUIPMENT FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			custom_effect_tooltip = USA_collaboration_with_the_mafia_tt
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = USA_frank_nitti
 		}
@@ -6720,12 +6699,12 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_work_with_the_bund
-		icon = GFX_goal_generic_dangerous_deal
-		x = -1
+		icon = GFX_focus_POL_beck_ribbentrop
+		x = 1
 		y = 1
-		prerequisite = { focus = USA_send_lindbergh_to_germany }
-		relative_position_id = USA_send_lindbergh_to_germany
-		cost = 10
+		prerequisite = { focus = USA_ally_with_the_silver_shirts }
+		relative_position_id = USA_ally_with_the_silver_shirts
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
@@ -6755,11 +6734,11 @@ focus_tree = {
 	focus = {
 		id = USA_recruit_the_free_corps
 		icon = GFX_focus_usa_recruit_the_free_corps
-		x = 1
+		x = -1
 		y = 2
 		prerequisite = { focus = USA_send_lindbergh_to_germany }
 		relative_position_id = USA_invite_foreign_support
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
@@ -6776,8 +6755,7 @@ focus_tree = {
 		icon = GFX_goal_generic_secret_police_2
 		cost = 10
 		prerequisite = {
-			focus = USA_recruit_the_free_corps
-			focus = USA_work_with_the_bund
+			focus = USA_send_lindbergh_to_germany
 		}
 		available = {
 			if = {
@@ -6793,8 +6771,8 @@ focus_tree = {
 			}
 		}
 
-		relative_position_id = USA_recruit_the_free_corps
-		x = -1
+		relative_position_id = USA_send_lindbergh_to_germany
+		x = 1
 		y = 1
 		ai_will_do = {
 			factor = 10
@@ -6850,7 +6828,7 @@ focus_tree = {
 		icon = GFX_focus_usa_honor_the_confederacy
 		x = 1
 		y = 1
-		prerequisite = { focus = USA_work_with_the_bund }
+		prerequisite = { focus = USA_recruit_the_free_corps }
 		prerequisite = { focus = USA_national_employment_strategy }
 		mutually_exclusive = { focus = USA_cult_of_washington }
 		relative_position_id = USA_national_employment_strategy
@@ -6889,9 +6867,7 @@ focus_tree = {
 				has_government = fascism
 				has_government = neutrality
 			}
-			NOT = {
-				has_country_leader = { ruling_only = yes character = USA_douglas_macarthur }
-			}
+			
 			NOT = {
 				country_exists = CSA
 			}
@@ -6900,9 +6876,6 @@ focus_tree = {
 		completion_reward = {
 			unlock_decision_category_tooltip = USA_honor_the_confederacy
 			custom_effect_tooltip = USA_honor_the_confederacy_tt
-			every_state = {
-				remove_core_of = CSA
-			}
 		}
 	}
 	focus = {
@@ -6919,7 +6892,7 @@ focus_tree = {
 				}
 			}
 		}
-		prerequisite = { focus = USA_work_with_the_bund }
+		prerequisite = { focus = USA_recruit_the_free_corps }
 		prerequisite = { focus = USA_national_employment_strategy }
 		mutually_exclusive = { focus = USA_honor_the_confederacy }
 		relative_position_id = USA_national_employment_strategy
@@ -9540,7 +9513,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					has_war_support < 0.1
+					has_war_support < 0.25
 				}
 				set_war_support = 0.1
 			}
@@ -12789,5 +12762,188 @@ focus_tree = {
 			add_ideas = ENG_expand_the_repair_yards
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MILITARY_IMPROVEMENT }
+	}
+
+	focus = {
+		id = USA_americas_socialite
+		icon = GFX_focus_rom_royal_dictatorship
+		prerequisite = { focus = USA_cult_of_washington }
+		x = 0
+		y = 2
+		relative_position_id = USA_cult_of_washington
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		completion_reward = {
+
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+
+			create_country_leader = {
+				name = "Wallis I"
+				desc = "POLITICS_WALLIS_I_DESC"
+				picture = GFX_portrait_eng_wallis_simpson
+				expire = "1965.1.1"
+				ideology = absolute_monarchism
+				female = yes
+				traits = {
+					unpopular_monarch socialite_connections wallis_fancy_title
+				}
+			}
+			set_cosmetic_tag = USA_columbus
+		}
+	}
+	focus = {
+		id = USA_affirm_catholic_benevolent_attitude
+		icon = GFX_focus_generic_catholic_dominion
+		prerequisite = { focus = USA_americas_socialite }
+		x = 1
+		y = 3
+		relative_position_id = USA_cult_of_washington
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		completion_reward = {
+			remove_country_leader_trait = unpopular_monarch
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = USA_economic_plans_for_colombus
+		icon = GFX_focus_SWI_dissolve_the_federal_council
+		prerequisite = { focus = USA_americas_socialite }
+		x = 0
+		y = 4
+		relative_position_id = USA_cult_of_washington
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		completion_reward = {
+		add_timed_idea = {
+			idea = USA_economic_reform
+			days = 180
+		}
+		}
+	}
+	focus = {
+		id = USA_the_new_confederacy
+		icon = GFX_focus_ITA_banda_carita
+		prerequisite = { focus = USA_honor_the_confederacy }
+		x = -1
+		y = 6
+		relative_position_id = USA_ally_with_the_silver_shirts
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		completion_reward = {
+
+		add_war_support = 0.15
+
+		add_ideas = USA_new_confederacy_idea
+
+		}
+	}
+	focus = {
+		id = USA_arm_the_nation
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		prerequisite = { focus = USA_the_new_confederacy }
+		x = -1
+		y = 8
+		relative_position_id = USA_ally_with_the_silver_shirts
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = USA_new_image
+		icon = GFX_focus_generic_court
+		prerequisite = { focus = USA_the_new_confederacy }
+		x = -2
+		y = 7
+		relative_position_id = USA_ally_with_the_silver_shirts
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		completion_reward = {
+
+		add_country_leader_trait = dictator
+
+		}
 	}
 }

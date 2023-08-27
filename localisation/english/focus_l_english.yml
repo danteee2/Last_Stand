@@ -2194,7 +2194,7 @@
  USA_invite_foreign_support_desc:1 "With some very disturbing reports coming in about the loyalty of the military and some state governments, we might have to look abroad for support."
  USA_send_lindbergh_to_germany:1 "Send Lindbergh To Germany"
  USA_send_lindbergh_to_germany_desc:1 "The famous aviator has offered to go to Europe to investigate how Germany has rebuilt itself after the last war. This should give us valuable experience. Lindbergh has also indicated that he would be willing to join the government in a consulting role."
- USA_work_with_the_bund:1 "Work With the Bund"
+ USA_work_with_the_bund:1 "§2Work With The Bund§!"
  USA_work_with_the_bund_desc:1 "The German-American Bund has offered to help us communicate our positions to the many Americans of German ancestry. It would ensure that we have a sympathetic base in their states."
  USA_work_with_the_bund_tt:0 "Ensures that the following states remain with the government in the event of a civil war: Ohio, Missouri, Wisconsin, Illinois, Indiana and Michigan"
  USA_recruit_the_free_corps:1 "Recruit the Free Corps"
