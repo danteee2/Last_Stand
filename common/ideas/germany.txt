@@ -39,7 +39,7 @@ ideas = {
 			removal_cost = -1
 			picture = prc_the_long_march2
 			modifier = {
-				monthly_population = -3.5
+				monthly_population = -5
 			}
 		}
 		generals_allegience_assured = {
@@ -62,6 +62,8 @@ ideas = {
 			picture = triumphant_will
 			modifier = {
 				consumer_goods_factor = -0.05
+				conscription_factor = -0.05
+				monthly_population = -0.1
 			}
 		}
 		
@@ -83,6 +85,7 @@ ideas = {
 			picture = GER_hitlers_shadow
 			modifier = {
 				stability_factor = -0.25
+				political_power_factor = -0.15
 			}
 		}
 
@@ -96,7 +99,6 @@ ideas = {
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.05
 				production_factory_max_efficiency_factor = 0.05
-				production_speed_buildings_factor = 0.1
 				conscription_factor = -0.15
 				conscription = -0.025
 			}
@@ -110,7 +112,6 @@ ideas = {
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.05
 				production_factory_max_efficiency_factor = 0.05
-				production_speed_buildings_factor = 0.1
 				
 				conscription_factor = -0.15
 			}
@@ -124,7 +125,6 @@ ideas = {
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.05
 				production_factory_max_efficiency_factor = 0.05
-				production_speed_buildings_factor = 0.1
 				conscription_factor = -0.15
 				consumer_goods_factor = -0.025
 				stability_factor = 0.05
@@ -141,7 +141,6 @@ ideas = {
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.05
 				production_factory_max_efficiency_factor = 0.05
-				production_speed_buildings_factor = 0.15
 				conscription_factor = -0.15
 				consumer_goods_factor = -0.025
 				stability_factor = 0.05
