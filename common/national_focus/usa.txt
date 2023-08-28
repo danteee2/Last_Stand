@@ -12784,7 +12784,11 @@ focus_tree = {
 				ruling_party = neutrality
 				elections_allowed = no
 			}
-
+			set_party_name = {
+				ideology = neutral
+				long_name = "Queen's Party"
+				name = "Queen's Party"
+			}
 			create_country_leader = {
 				name = "Wallis I"
 				desc = "POLITICS_WALLIS_I_DESC"
