@@ -2,6 +2,39 @@ ideas = {
 
 		#NEW IDEAS FOR USA - LAST STAND
 	country = {
+		USA_new_confederacy_idea = {
+			picture = tur_sectarian_troubles_fundamentalism
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				offensive_war_stability_factor = 0.2
+				army_org_factor = 0.05
+				mobilization_speed = 0.25
+				industrial_capacity_factory = 0.05
+			}
+		}
+		USA_economic_reform = {
+			picture = LIT_invested_in_farms
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.25
+			}
+		}
 		workers_mobilized = {
 			picture = jap_the_unthinkable_option
 			allowed = {
@@ -408,9 +441,7 @@ ideas = {
 			
 			modifier = {
 				stability_factor = 0.1
-				industrial_capacity_factory = 0.1
 				production_lack_of_resource_penalty_factor = -0.1
-				production_factory_max_efficiency_factor = 0.1
 			}
 		}
 		r56_usa_three_dimensional_assault_force = {
@@ -1303,7 +1334,7 @@ ideas = {
 			}
 		}
 		USA_privatization = {
-			picture = man_five_year_plan_industry
+			picture = SOV_organize_wreckers
 			
 			allowed = {
 				always = no

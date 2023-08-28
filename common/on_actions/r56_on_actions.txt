@@ -10206,7 +10206,6 @@ on_actions = {
 				limit = {
 					is_ai = no
 				}
-				country_event = { id = r56.startup.event.01 }
 			}
 
 			if = { # Micronations annexation
