@@ -1,7 +1,57 @@
 ideas = {
 
 	country = {
+## last stand content
 
+PRC_blood_to_spare_idea_3 = {
+	removal_cost = -1
+
+	picture = generic_spy_coup
+
+	allowed = {
+		always = no
+	}
+
+	modifier = {
+		conscription = 0.025
+		army_core_defence_factor = 0.05
+		max_planning = 0.25
+		planning_speed = 0.25
+	}
+}
+PRC_blood_to_spare_idea_2 = {
+	removal_cost = -1
+
+	picture = generic_spy_coup
+
+	allowed = {
+		always = no
+	}
+
+	modifier = {
+		conscription = 0.025
+		army_core_defence_factor = 0.1
+		conscription_factor = 0.15
+		supply_consumption_factor = -0.1
+		recon_factor = 0.05
+		army_org_factor = 0.05
+	}
+}
+
+PRC_blood_to_spare_idea = {
+	removal_cost = -1
+
+	picture = generic_spy_coup
+
+	allowed = {
+		always = no
+	}
+
+	modifier = {
+		conscription = 0.025
+		army_core_defence_factor = 0.05
+	}
+}
 
 		####MOD CONTENT####
 

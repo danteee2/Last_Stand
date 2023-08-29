@@ -1353,7 +1353,21 @@
  prc.126.d:0 "After the long march, many of our other military leaders' divisions have been weakened by fighting. Mao's own army has been relatively untouched. Furthermore, his recent speeches among the army have also made one thing clear. He's now the undisputed leader of our cause!"
  prc.126.a:0 "Forward to better days."
 
+##last stand additions 
+PRC_blood_to_spare:0 "Blood To Spare"
+PRC_blood_to_spare_desc:0 "We must use the masses in order to defend our ideas."
+PRC_our_red_army:0 "Our Red Army"
+PRC_our_red_army_desc:0 "Our army is the centre of the nation, we must equip more troops in order to make the red army great."
+PRC_quality_of_the_soldiers:0 "Quality Of The Soldiers"
+PRC_quality_of_the_soldiers_desc:0 "The quality is essential for if we decide to attempt to beat the fascists."
+PRC_salvage_weaponry:0 "Salvage Weaponry"
+PRC_salvage_weaponry_desc:0 "We must equip our troops with whatever we can find..."
 
+#ideas
+PRC_blood_to_spare_idea:0 "Blood To Spare"
+PRC_blood_to_spare_idea_2:0 "Blood To Spare"
+PRC_blood_to_spare_idea_3:0 "Blood To Spare"
+PRC_blood_to_spare_idea_desc:0 "In a nation torn by ideals, Mao Zedong has issued a policy for the army to ensure we utilize our great resource of manpower..."
  ## UNUSED ##
  #prc_continuous_partisan_tt:0 "§YPartisans will rise up at a 30-day interval in our core state that is controlled by our enemy that has the §REnemy Partisans Behind Our Frontline§! national spirit.§!"
  #PRC_continuous_partisan:0 "Footholds Behind Enemy Line"
