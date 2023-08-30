@@ -1362,7 +1362,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = PRC_neccessary_flexibility focus = PRC_focus_on_red_army }
 		prerequisite = { focus = PRC_war_of_attrition focus = PRC_focus_on_red_army }
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = PRC_neccessary_flexibility
 		cost = 10
@@ -3714,7 +3714,6 @@ focus_tree = {
 				category = naval_equipment
 				category = motorized_equipment
 			}
-			add_ideas = lin_biao_generalissimo
 			add_research_slot = 1
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
@@ -6072,7 +6071,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_focus_on_red_army
-		icon = GFX_goal_PRC_focus_on_red_army
+		icon = GFX_focus_SOV_the_last_purge
 		prerequisite = { focus = PRC_reform_high_command focus = PRC_study_kmt_equipment}
 		mutually_exclusive = { focus = PRC_focus_on_dong_beijun }
 		x = 0
@@ -7475,4 +7474,79 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
+	focus = {
+		id = PRC_blood_to_spare
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		prerequisite = { focus = PRC_neccessary_flexibility
+	focus = PRC_war_of_attrition }
+		x = 0
+		y = 1
+		relative_position_id = PRC_neccessary_flexibility
+		cost = 10
+		available = {
+			has_government = communism
+		}
+		completion_reward = {
+			add_ideas = PRC_blood_to_spare_idea
+		}
+	}
+	focus = {
+		id = PRC_our_red_army
+		icon = GFX_goal_PRC_focus_on_red_army
+		prerequisite = { focus = PRC_blood_to_spare }
+		x = -1
+		y = 2
+		relative_position_id = PRC_neccessary_flexibility
+		cost = 10
+		mutually_exclusive = {
+			focus = PRC_quality_of_the_soldiers
+		}
+		available = {
+			has_government = communism
+		}
+		completion_reward = {
+			swap_ideas = 
+			{ add_idea = PRC_blood_to_spare_idea_2 
+		remove_idea = PRC_blood_to_spare_idea }
+		}
+	}
+	focus = {
+		id = PRC_quality_of_the_soldiers
+		icon = GFX_focus_generic_infiltration
+		prerequisite = { focus = PRC_blood_to_spare }
+		x = 1
+		y = 2
+		mutually_exclusive = {
+			focus = PRC_our_red_army
+		}
+		available = {
+			has_government = communism
+		}
+		relative_position_id = PRC_neccessary_flexibility
+		cost = 10
+
+		completion_reward = {
+			swap_ideas = 
+			{ add_idea = PRC_blood_to_spare_idea_3
+		remove_idea = PRC_blood_to_spare_idea }
+		} 
+	}
+	focus = {
+		id = PRC_salvage_weaponry
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		prerequisite = { focus = PRC_quality_of_the_soldiers focus = PRC_our_red_army }
+		x = 0
+		y = 3
+		available = {
+			has_government = communism
+		}
+		relative_position_id = PRC_neccessary_flexibility
+		cost = 10
+
+		completion_reward = {
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 7500 producer = ROOT }
+			add_equipment_to_stockpile = { type = support_equipment amount = 1500 producer = ROOT }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 250 producer = ROOT }
+		}
+	} 
 }
