@@ -3736,7 +3736,7 @@
 
 		prerequisite = { 
 	focus = JAP_national_mobilization_law 
-focus = JAP_black_dragon_society } 
+	focus = JAP_black_dragon_society } 
 	
 		x = 2
 		y = 1
@@ -3941,21 +3941,6 @@ focus = JAP_black_dragon_society }
 		prerequisite = {
 			focus = JAP_purge_the_kodoha_faction
 		}
-		allow_branch = {
-			has_dlc = "La Resistance"
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					has_completed_focus = JAP_the_unthinkable_option
-					has_completed_focus = JAP_strengthen_civilian_government
-				}
-			}
-		}		
 		relative_position_id = JAP_purge_the_kodoha_faction
 		x = 4
 		y = 1
