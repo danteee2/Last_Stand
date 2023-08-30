@@ -1302,11 +1302,10 @@ focus_tree = {
 					uses = 1
 				}
 				add_tech_bonus = {
-					technology = improved_small_airframe
-					technology = advanced_small_airframe
+					name = AST_R56_cac_boomerang
 					bonus = 1
-					ahead_reduction = 2
 					uses = 1
+					category = light_air
 				}
 			}
 			else = {
@@ -1425,35 +1424,12 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			if = {
-				limit = {
-					NOT = { has_dlc = "By Blood Alone" }
-				}
-				add_tech_bonus = {
-					name = AST_R56_cac_boomerang
-					bonus = 1.0
-					ahead_reduction = 2
-					uses = 1
-					category = light_fighter
-				}
-			}
-			else = {
-				add_tech_bonus = {
-					name = AST_R56_cac_boomerang
-					bonus = 1
-					uses = 1
-					category = light_air
-				}
-				create_equipment_variant = {
-					name = "CAC Boomerang" #
-					type = small_plane_airframe_1
-					modules = {
-						fixed_main_weapon_slot = light_mg_4x
-						fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
-						engine_type_slot = engine_2_1x
-						special_type_slot_1 = drop_tanks
-					}
-				}	
+			add_tech_bonus = {
+				technology = improved_small_airframe
+				technology = advanced_small_airframe
+				bonus = 1
+				ahead_reduction = 2
+				uses = 1
 			}
 		}		
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -4795,8 +4771,7 @@ focus_tree = {
 
 		available = {
 			OR = {
-				has_war = yes
-				threat > 0.45
+				threat > 0.10
 			}
 			has_government = democratic
 		}
