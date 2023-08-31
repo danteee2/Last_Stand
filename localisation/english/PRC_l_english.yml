@@ -125,8 +125,7 @@
  
  ################  IDEAS  ###############################
  PRC_our_own_Eco_1:0 "Industrial Autarky"
- PRC_our_own_Eco_2:0 "Industrial Autarky"
- PRC_our_own_Eco_3:0 "Industrial Autarky"
+ PRC_our_own_Eco_2:0 "Industrial Expansion"
  PRC_defeatism_1:0 "Defeatism"
  PRC_defeatism_1_desc:0 "Some of our comrades think that if we fight against the Japanese, we will be come the next Abyssinia. Such thought dampens our people's will greatly."
 
@@ -389,14 +388,14 @@
 
 
  ####################### FOCUSES ########################
- PRC_we_need_eco:0 "Mao Zedong's Industrial Development Plan"
- PRC_we_need_eco_desc:0 "Our own economy has for too long lagged behind the rest of the world this is our first step to rectifying our short commings"
+ PRC_new_chinese_economic_policy:0 "New Chinese Economic Policy"
+ PRC_new_chinese_economic_policy_desc:0 "Our own economy has for too long lagged behind the rest of the world this is our first step to rectifying our short commings."
  
- PRC_we_need_eco_two:0 "Rural Development Plan"
- PRC_we_need_eco_two_desc:0 "Another step forward to get an economy as large as our enemies"
+ PRC_new_extraction_licences:0 "New Extraction Licences"
+ PRC_new_extraction_licences_desc:0 "We must adapt to autarky ideals in order to fuel our industry."
 
- PRC_we_need_eco_three:0 "Anti-Imperialist Industry"
- PRC_we_need_eco_three_desc:0 "With this we will finally achieve our economic superiority against the Imperialist Dogs"
+ PRC_industrial_expansion:0 "Industrial Expansion"
+ PRC_industrial_expansion_desc:0 "With this we will finally achieve our economic superiority against the Imperialist Dogs."
 
  PRC_recover_from_the_long_march:0 "Recover From the Long March"
  PRC_recover_from_the_long_march_desc:0 "The Long March has cost us greatly, we must start recovering before the Kuomintang see this as an opportunity to strike us down!"
