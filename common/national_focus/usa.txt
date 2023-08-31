@@ -6993,11 +6993,15 @@ focus_tree = {
 
 		available = {
 			has_civil_war = no
-			has_government = fascism
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
 		}
 
 		completion_reward = {
 			add_ideas = r56_USA_american_christian_identity
+			add_research_slot = 1
 		}
 	}
 
@@ -7022,9 +7026,7 @@ focus_tree = {
 		}
 
 		available = {
-			congress_high_support_trigger = yes
 			has_completed_focus = USA_war_department
-			fascism > 0.3
 		}
 
 		cancel_if_invalid = no
@@ -11540,10 +11542,9 @@ focus_tree = {
 					category = light_air
 				}
 				add_tech_bonus = {
-					name = USA_escort_fighters
-					bonus = 1
+					bonus = 1.0
 					uses = 1
-					category = medium_air
+					category = air_equipment
 				}
 				create_equipment_variant = {
 					name = "P-38 Lightning" # Why not?
