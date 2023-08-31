@@ -6,7 +6,7 @@ ideas = {
 PRC_blood_to_spare_idea_3 = {
 	removal_cost = -1
 
-	picture = generic_spy_coup
+	picture = nkvd_2
 
 	allowed = {
 		always = no
@@ -22,7 +22,7 @@ PRC_blood_to_spare_idea_3 = {
 PRC_blood_to_spare_idea_2 = {
 	removal_cost = -1
 
-	picture = generic_spy_coup
+	picture = nkvd_2
 
 	allowed = {
 		always = no
@@ -30,18 +30,18 @@ PRC_blood_to_spare_idea_2 = {
 
 	modifier = {
 		conscription = 0.025
-		army_core_defence_factor = 0.1
+		army_core_defence_factor = 0.15
 		conscription_factor = 0.15
 		supply_consumption_factor = -0.1
 		recon_factor = 0.05
-		army_org_factor = 0.05
+		army_org_factor = 0.15
 	}
 }
 
 PRC_blood_to_spare_idea = {
 	removal_cost = -1
 
-	picture = generic_spy_coup
+	picture = nkvd_2
 
 	allowed = {
 		always = no

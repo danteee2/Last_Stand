@@ -149,10 +149,8 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = prc_east_expedition_tt
-			create_wargoal = {
+			annex_country = {
 				target = SHX
-				expire = 0
-				type = annex_everything
 			}
 			hidden_effect = {
 				load_oob = "PRC_east_expedition"
@@ -347,6 +345,10 @@ focus_tree = {
 			}
 			hidden_effect = {
 				load_oob = "PRC_west_expedition"
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 5000
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_MANPOWER }
@@ -1194,7 +1196,6 @@ focus_tree = {
 
 		available = {
 			is_in_faction_with = CHI
-			has_war = yes
 			CHI = { has_war = yes }
 			NOT = {
 				has_country_leader = {
@@ -1226,7 +1227,6 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			has_war = yes
 			NOT = {
 				has_country_leader = {
 					name = "Zhang Xueliang"
@@ -1253,7 +1253,6 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			has_war = yes
 			has_government = communism
 		}
 		continue_if_invalid = yes
@@ -1272,11 +1271,10 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = PRC_protracted_war
-		cost = 10
+		cost = 5
 
 		available = {
 			has_government = communism
-			has_war = yes
 		}
 		continue_if_invalid = yes
 		available_if_capitulated = yes
@@ -1318,11 +1316,10 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = PRC_protracted_war
-		cost = 10
+		cost = 5
 		
 		available = {
 			has_government = communism
-			has_war = yes
 		}
 		continue_if_invalid = yes
 		available_if_capitulated = yes
@@ -1576,7 +1573,6 @@ focus_tree = {
 		
 		available = {
 			has_government = communism
-			has_war = yes
 		}
 		continue_if_invalid = yes
 
