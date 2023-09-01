@@ -1948,6 +1948,7 @@ focus_tree = {
 			has_government = democratic
 			NOT = { has_idea_with_trait = fascist_demagogue }
 			NOT = { has_idea_with_trait = communist_revolutionary }
+			NOT = { has_completed_focus = USA_adjusted_compensation_act }
 		}
 		bypass = {
 			
