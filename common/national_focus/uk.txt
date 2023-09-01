@@ -7101,7 +7101,7 @@ mutually_exclusive = {
 				OR = {
 					AND = {
 						is_subject_of = ENG
-						has_government = ROOT
+						
 					}
 					exists = no
 				}
@@ -7110,14 +7110,11 @@ mutually_exclusive = {
 				OR = {
 					AND = {
 						is_subject_of = ENG
-						has_government = ROOT
+
 					}
 					AND = {
 						is_subject_of = ENG
-						has_government = neutrality
-						ENG = {
-							has_government = democratic
-						}
+						
 					}
 					exists = no
 				}
@@ -7126,7 +7123,7 @@ mutually_exclusive = {
 				OR = {
 					AND = {
 						is_subject_of = ENG
-						has_government = ROOT
+						
 					}
 					exists = no
 				}
@@ -7135,7 +7132,7 @@ mutually_exclusive = {
 				OR = {
 					AND = {
 						is_subject_of = ENG
-						has_government = ROOT
+						
 					}
 					exists = no
 				}
