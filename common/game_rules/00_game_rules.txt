@@ -244,15 +244,15 @@ POR_focus_tree_selection = {
 	required_dlc = "La Resistance"
 	group = "RULE_GROUP_CHOOSE_FOCUS_TREE"
 	default = {
-		name = STANDARD_TREE
-		text = "RULE_OPTION_STANDARD_TREE"
-		desc = "RULE_OPTION_STANDARD_TREE_DESC"
-	}
-	option = {
 		name = R56_TREE
 		text = "RULE_OPTION_R56_TREE"
 		desc = "RULE_OPTION_R56_TREE_DESC"
 		allow_achievements = yes
+	}
+	option = {
+		name = STANDARD_TREE
+		text = "RULE_OPTION_STANDARD_TREE"
+		desc = "RULE_OPTION_STANDARD_TREE_DESC"
 	}
 }
 
@@ -2913,12 +2913,12 @@ allow_lend_lease = {
 	name = "RULE_ALLOW_LEND_LEASE"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
 	icon = "GFX_lend_lease"
-	option = {
+	default = {
 		name = "FREE"
 		text = "RULE_OPTION_FREE"
 		desc = "RULE_ALLOW_LEND_LEASE_FREE_DESC"
 	}
-	default = {
+	option = {
 		name = "LIMITED"
 		text = "RULE_OPTION_LIMITED"
 		desc = "RULE_ALLOW_LEND_LEASE_LIMITED_DESC"
@@ -3383,16 +3383,16 @@ minor_releasables_status = {
 micronation_annexation_status = {
 	name = "MICRONATION_ANNEXATION_STATUS"
 	group = "RULE_GROUP_GAME_SETUP"
-	default = { # For the love of god stop changing this
-		name = SHOW_MICRONATIONS
-		text = "RULE_OPTION_SHOW_MICRONATIONS"
-		desc = "RULE_OPTION_SHOW_MICRONATIONS_DESC"
-		allow_achievements = yes
-	}
-	option = {
+	default = {
 		name = ANNEX_MICRONATIONS
 		text = "RULE_OPTION_ANNEX_MICRONATIONS"
 		desc = "RULE_OPTION_ANNEX_MICRONATIONS_DESC"
+		allow_achievements = yes
+	}
+	option = { # For the love of god stop changing this
+		name = SHOW_MICRONATIONS
+		text = "RULE_OPTION_SHOW_MICRONATIONS"
+		desc = "RULE_OPTION_SHOW_MICRONATIONS_DESC"
 		allow_achievements = yes
 	}
 }
