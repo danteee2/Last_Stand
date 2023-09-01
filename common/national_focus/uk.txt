@@ -1289,10 +1289,9 @@ mutually_exclusive = {
 					category = light_air
 				}
 				add_tech_bonus = {
-					name = fighter_command_focus
-					bonus = 0.75
+					bonus = 1.0
 					uses = 1
-					technology = range_improvements
+					category = air_equipment
 				}
 				add_doctrine_cost_reduction = {
 					name = ENG_fighter_command_focus #land_doc_bonus
@@ -9280,7 +9279,7 @@ mutually_exclusive = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 	focus = {
-		id = ENG_harness_churchill's_figure
+		id = ENG_harness_churchills_figure
 		
 
 			available = { 

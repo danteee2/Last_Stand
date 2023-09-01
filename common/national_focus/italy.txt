@@ -5295,8 +5295,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ITA_citta_dell_aria
-				bonus = 0.5
-				uses = 3
+				bonus = 1.0
+				uses = 2
 				category = air_equipment
 			}
 

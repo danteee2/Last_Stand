@@ -149,10 +149,8 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = prc_east_expedition_tt
-			create_wargoal = {
+			annex_country = {
 				target = SHX
-				expire = 0
-				type = annex_everything
 			}
 			hidden_effect = {
 				load_oob = "PRC_east_expedition"
@@ -347,6 +345,10 @@ focus_tree = {
 			}
 			hidden_effect = {
 				load_oob = "PRC_west_expedition"
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 5000
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_MANPOWER }
@@ -631,84 +633,19 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			is_subject = no
-			NOT = {
-				owns_state = 759
-				owns_state = 760
-			}
-			OR = {
-				any_owned_state = {
-					any_neighbor_state = {
-						owner = { tag = SIK }
-					}
-				}
-				any_owned_state = {
-					any_neighbor_state = {
-						owner = { tag = TNG }
-					}
-				}
-			}
+		 country_exists = SIK
+		 country_exists = TNG
+		 
 		}
 
-		bypass = {
-			owns_state = 759
-			owns_state = 760
-		}
+	
 
 		completion_reward = {
-			if = {
-				limit = {
-					any_other_country = {
-						owns_state = 759
-					}
-				}
-				759 = {
-					OWNER = {
-						ROOT = {
-							create_wargoal = {
-								target = PREV
-								expire = 0
-								type = take_core_state
-								generator = { 759 287 619 }
-							}
-						}
-					}
-				}
+			annex_country = {
+				target = SIK 
 			}
-			if = {
-				limit = {
-					any_other_country = {
-						owns_state = 760
-					}
-				}
-				760 = {
-					OWNER = {
-						ROOT = {
-							create_wargoal = {
-								target = PREV
-								expire = 0
-								type = take_core_state
-								generator = { 760 617 618 }
-							}
-						}
-					}
-				}
-			}
-			hidden_effect = {
-				if = {
-					limit = {
-						SOV = {
-							is_puppet = no
-							has_government = communism
-						}
-						SIK = {
-							is_in_faction_with = SOV
-						}
-					}
-					SOV = {
-						country_event = { id = prc.36 }
-					}
-				}
+			annex_country = {
+				target = TNG
 			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -1194,7 +1131,6 @@ focus_tree = {
 
 		available = {
 			is_in_faction_with = CHI
-			has_war = yes
 			CHI = { has_war = yes }
 			NOT = {
 				has_country_leader = {
@@ -1226,7 +1162,6 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			has_war = yes
 			NOT = {
 				has_country_leader = {
 					name = "Zhang Xueliang"
@@ -1253,7 +1188,6 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			has_war = yes
 			has_government = communism
 		}
 		continue_if_invalid = yes
@@ -1272,11 +1206,10 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = PRC_protracted_war
-		cost = 10
+		cost = 5
 
 		available = {
 			has_government = communism
-			has_war = yes
 		}
 		continue_if_invalid = yes
 		available_if_capitulated = yes
@@ -1318,11 +1251,10 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = PRC_protracted_war
-		cost = 10
+		cost = 5
 		
 		available = {
 			has_government = communism
-			has_war = yes
 		}
 		continue_if_invalid = yes
 		available_if_capitulated = yes
@@ -1362,7 +1294,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = PRC_neccessary_flexibility focus = PRC_focus_on_red_army }
 		prerequisite = { focus = PRC_war_of_attrition focus = PRC_focus_on_red_army }
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = PRC_neccessary_flexibility
 		cost = 10
@@ -1576,7 +1508,6 @@ focus_tree = {
 		
 		available = {
 			has_government = communism
-			has_war = yes
 		}
 		continue_if_invalid = yes
 
@@ -3544,7 +3475,6 @@ focus_tree = {
 		cost = 10
 		
 		available = {
-			has_war = no
 			has_government = communism
 		}
 
@@ -3571,19 +3501,6 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			has_war = no
-			has_country_flag = KMT_leap_stop
-			SOV = {
-				OR = {
-					NOT = {
-						has_country_leader = {
-							name = "Iosif Stalin"
-							ruling_only = yes
-						}
-					}
-					is_puppet = yes
-				}
-			}
 			has_country_leader = {
 				name = "Mao Zedong"
 				ruling_only = yes
@@ -3602,19 +3519,14 @@ focus_tree = {
 	focus = {
 		id = PRC_economic_reform
 		icon = GFX_goal_generic_production2
-		prerequisite = { focus = PRC_begin_cultural_revolution }
-		mutually_exclusive = { focus = PRC_generalissimo_lin }
-		x = -1
-		y = 1
-		relative_position_id = PRC_begin_cultural_revolution
-		cost = 50
+		prerequisite = { focus = PRC_new_extraction_licences }
+		prerequisite = { focus = PRC_industrial_expansion }
+		x = 0
+		y = 2
+		relative_position_id = PRC_new_chinese_economic_policy
+		cost = 10
 		
-		available = {
-			has_global_flag = CR_ended
-			has_country_flag = deng_xiao_ping
-		}
-		cancel = { has_war = yes }
-		cancel_if_invalid = no
+		
 
 		select_effect = {
 			add_ideas = PRC_socialism_with_chinese_characteristics
@@ -3635,16 +3547,17 @@ focus_tree = {
 	focus = {
 		id = PRC_generalissimo_lin
 		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = PRC_begin_cultural_revolution }
-		mutually_exclusive = { focus = PRC_economic_reform }
-		x = 1
-		y = 1
-		relative_position_id = PRC_begin_cultural_revolution
+		prerequisite = { focus = PRC_prepare_for_decisive_battle }
+		x = 0
+		y = 2
+		relative_position_id = PRC_self_perservation
 		cost = 10
 		
 		available = {
-			has_global_flag = CR_ended
-			has_country_flag = lin_biao
+			has_country_leader = {
+				name = "Mao Zedong"
+				ruling_only = yes
+			}
 		}
 
 		completion_reward = {
@@ -3714,7 +3627,6 @@ focus_tree = {
 				category = naval_equipment
 				category = motorized_equipment
 			}
-			add_ideas = lin_biao_generalissimo
 			add_research_slot = 1
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
@@ -3755,86 +3667,92 @@ focus_tree = {
 	}
 
 	focus = {
-		id = PRC_we_need_eco
+		id = PRC_new_chinese_economic_policy
 		icon = GFX_goal_continuous_non_factory_construct
 		prerequisite = { focus = PRC_the_new_communism_beacon  }
-		cancel = { is_in_faction_with = SOV }	
 		available = {
 			OR = {
-				num_of_factories > 150
+				num_of_factories > 40
 				AND = {
 					has_war = no
-					num_of_factories > 75
+					num_of_factories > 25
 				}
 			}
 		}
-		x = -4
+		x = -5
 		y = 1
 		relative_position_id = PRC_the_new_communism_beacon
 		cost = 10
 
 		completion_reward = {
-			
-			add_ideas = PRC_our_own_Eco_1
-
+			random_owned_controlled_state = {
+				prioritize = { 622 }
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 283 }
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 	focus = {
-		id = PRC_we_need_eco_two
-		icon = GFX_goal_generic_soviet_construction
-		prerequisite = { focus = PRC_we_need_eco  }
-		cancel = { is_in_faction_with = SOV }	
-		available = {
-			OR = {
-				num_of_factories > 200
-				AND = {
-					has_war = no
-					num_of_factories > 100
-				}
-			}
-		}
-		x = 0
+		id = PRC_new_extraction_licences
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = PRC_new_chinese_economic_policy  }
+	
+		x = -1
 		y = 1
-		relative_position_id = PRC_we_need_eco
+		relative_position_id = PRC_new_chinese_economic_policy
 		cost = 10
 
 		completion_reward = {
 			
-			swap_ideas = {
-				remove_idea = PRC_our_own_Eco_1
-				add_idea = PRC_our_own_Eco_2
-			} 
+			add_ideas = PRC_our_own_Eco_1
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
     focus = {
-		id = PRC_we_need_eco_three
-		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = PRC_we_need_eco_two  }
-		cancel = { is_in_faction_with = SOV }	
-		available = {
-			OR = {
-				num_of_factories > 250
-				AND = {
-					has_war = no
-					num_of_factories > 125
-				}
-			}
-		}
-		x = 0
+		id = PRC_industrial_expansion
+		icon = GFX_goal_generic_soviet_construction 
+		prerequisite = { focus = PRC_new_chinese_economic_policy  }
+		
+		x = 1
 		y = 1
-		relative_position_id = PRC_we_need_eco_two
+		relative_position_id = PRC_new_chinese_economic_policy
 		cost = 10
 
 		completion_reward = {
 			
-			swap_ideas = {
-				remove_idea = PRC_our_own_Eco_2
-				add_idea = PRC_our_own_Eco_3
-			} 
+		add_ideas = PRC_our_own_Eco_2
 
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -6072,7 +5990,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_focus_on_red_army
-		icon = GFX_goal_PRC_focus_on_red_army
+		icon = GFX_focus_SOV_the_last_purge
 		prerequisite = { focus = PRC_reform_high_command focus = PRC_study_kmt_equipment}
 		mutually_exclusive = { focus = PRC_focus_on_dong_beijun }
 		x = 0
@@ -7475,4 +7393,79 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
+	focus = {
+		id = PRC_blood_to_spare
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		prerequisite = { focus = PRC_neccessary_flexibility
+	focus = PRC_war_of_attrition }
+		x = 0
+		y = 1
+		relative_position_id = PRC_neccessary_flexibility
+		cost = 5
+		available = {
+			has_government = communism
+		}
+		completion_reward = {
+			add_ideas = PRC_blood_to_spare_idea
+		}
+	}
+	focus = {
+		id = PRC_our_red_army
+		icon = GFX_goal_PRC_focus_on_red_army
+		prerequisite = { focus = PRC_blood_to_spare }
+		x = -1
+		y = 2
+		relative_position_id = PRC_neccessary_flexibility
+		cost = 5
+		mutually_exclusive = {
+			focus = PRC_quality_of_the_soldiers
+		}
+		available = {
+			has_government = communism
+		}
+		completion_reward = {
+			swap_ideas = 
+			{ add_idea = PRC_blood_to_spare_idea_2 
+		remove_idea = PRC_blood_to_spare_idea }
+		}
+	}
+	focus = {
+		id = PRC_quality_of_the_soldiers
+		icon = GFX_focus_generic_infiltration
+		prerequisite = { focus = PRC_blood_to_spare }
+		x = 1
+		y = 2
+		mutually_exclusive = {
+			focus = PRC_our_red_army
+		}
+		available = {
+			has_government = communism
+		}
+		relative_position_id = PRC_neccessary_flexibility
+		cost = 5
+
+		completion_reward = {
+			swap_ideas = 
+			{ add_idea = PRC_blood_to_spare_idea_3
+		remove_idea = PRC_blood_to_spare_idea }
+		} 
+	}
+	focus = {
+		id = PRC_salvage_weaponry
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		prerequisite = { focus = PRC_quality_of_the_soldiers focus = PRC_our_red_army }
+		x = 0
+		y = 3
+		available = {
+			has_government = communism
+		}
+		relative_position_id = PRC_neccessary_flexibility
+		cost = 5
+
+		completion_reward = {
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 7500 producer = ROOT }
+			add_equipment_to_stockpile = { type = support_equipment amount = 1500 producer = ROOT }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 250 producer = ROOT }
+		}
+	} 
 }

@@ -125,8 +125,7 @@
  
  ################  IDEAS  ###############################
  PRC_our_own_Eco_1:0 "Industrial Autarky"
- PRC_our_own_Eco_2:0 "Industrial Autarky"
- PRC_our_own_Eco_3:0 "Industrial Autarky"
+ PRC_our_own_Eco_2:0 "Industrial Expansion"
  PRC_defeatism_1:0 "Defeatism"
  PRC_defeatism_1_desc:0 "Some of our comrades think that if we fight against the Japanese, we will be come the next Abyssinia. Such thought dampens our people's will greatly."
 
@@ -389,14 +388,14 @@
 
 
  ####################### FOCUSES ########################
- PRC_we_need_eco:0 "Mao Zedong's Industrial Development Plan"
- PRC_we_need_eco_desc:0 "Our own economy has for too long lagged behind the rest of the world this is our first step to rectifying our short commings"
+ PRC_new_chinese_economic_policy:0 "New Chinese Economic Policy"
+ PRC_new_chinese_economic_policy_desc:0 "Our own economy has for too long lagged behind the rest of the world this is our first step to rectifying our short commings."
  
- PRC_we_need_eco_two:0 "Rural Development Plan"
- PRC_we_need_eco_two_desc:0 "Another step forward to get an economy as large as our enemies"
+ PRC_new_extraction_licences:0 "New Extraction Licences"
+ PRC_new_extraction_licences_desc:0 "We must adapt to autarky ideals in order to fuel our industry."
 
- PRC_we_need_eco_three:0 "Anti-Imperialist Industry"
- PRC_we_need_eco_three_desc:0 "With this we will finally achieve our economic superiority against the Imperialist Dogs"
+ PRC_industrial_expansion:0 "Industrial Expansion"
+ PRC_industrial_expansion_desc:0 "With this we will finally achieve our economic superiority against the Imperialist Dogs."
 
  PRC_recover_from_the_long_march:0 "Recover From the Long March"
  PRC_recover_from_the_long_march_desc:0 "The Long March has cost us greatly, we must start recovering before the Kuomintang see this as an opportunity to strike us down!"
@@ -407,7 +406,7 @@
  PRC_west_expedition:0 "Organize the Western Expedition"
  PRC_west_expedition_desc:0 "If we can open a more direct route for the Soviets to send us supplies, we can strengthen our revolution. However, the Ma clique stands in our way. We shall liberate our brothers and open the new path we so desperately need!"
 
- PRC_approach_the_front:0 "Approach the Front"
+ PRC_approach_the_front:0 "Annex Shanxi"
  PRC_approach_the_front_desc:0 "If we are to repel the Japanese, we must first liberate our brothers to the north and the east. Only then will we have the strength necessary to fight off the invaders!"
  
  PRC_supply_line_from_sov:0 "Soviet Supplies"
@@ -1353,7 +1352,21 @@
  prc.126.d:0 "After the long march, many of our other military leaders' divisions have been weakened by fighting. Mao's own army has been relatively untouched. Furthermore, his recent speeches among the army have also made one thing clear. He's now the undisputed leader of our cause!"
  prc.126.a:0 "Forward to better days."
 
+##last stand additions 
+PRC_blood_to_spare:0 "Blood To Spare"
+PRC_blood_to_spare_desc:0 "We must use the masses in order to defend our ideas."
+PRC_our_red_army:0 "Our Red Army"
+PRC_our_red_army_desc:0 "Our army is the centre of the nation, we must equip more troops in order to make the red army great."
+PRC_quality_of_the_soldiers:0 "Quality Of The Soldiers"
+PRC_quality_of_the_soldiers_desc:0 "The quality is essential for if we decide to attempt to beat the fascists."
+PRC_salvage_weaponry:0 "Salvage Weaponry"
+PRC_salvage_weaponry_desc:0 "We must equip our troops with whatever we can find..."
 
+#ideas
+PRC_blood_to_spare_idea:0 "Blood To Spare"
+PRC_blood_to_spare_idea_2:0 "Blood To Spare"
+PRC_blood_to_spare_idea_3:0 "Blood To Spare"
+PRC_blood_to_spare_idea_desc:0 "In a nation torn by ideals, Mao Zedong has issued a policy for the army to ensure we utilize our great resource of manpower..."
  ## UNUSED ##
  #prc_continuous_partisan_tt:0 "§YPartisans will rise up at a 30-day interval in our core state that is controlled by our enemy that has the §REnemy Partisans Behind Our Frontline§! national spirit.§!"
  #PRC_continuous_partisan:0 "Footholds Behind Enemy Line"

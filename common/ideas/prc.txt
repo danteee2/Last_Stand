@@ -1,7 +1,57 @@
 ideas = {
 
 	country = {
+## last stand content
 
+PRC_blood_to_spare_idea_3 = {
+	removal_cost = -1
+
+	picture = nkvd_2
+
+	allowed = {
+		always = no
+	}
+
+	modifier = {
+		conscription = 0.025
+		army_core_defence_factor = 0.05
+		max_planning = 0.25
+		planning_speed = 0.25
+	}
+}
+PRC_blood_to_spare_idea_2 = {
+	removal_cost = -1
+
+	picture = nkvd_2
+
+	allowed = {
+		always = no
+	}
+
+	modifier = {
+		conscription = 0.025
+		army_core_defence_factor = 0.15
+		conscription_factor = 0.15
+		supply_consumption_factor = -0.1
+		recon_factor = 0.05
+		army_org_factor = 0.15
+	}
+}
+
+PRC_blood_to_spare_idea = {
+	removal_cost = -1
+
+	picture = nkvd_2
+
+	allowed = {
+		always = no
+	}
+
+	modifier = {
+		conscription = 0.025
+		army_core_defence_factor = 0.05
+	}
+}
 
 		####MOD CONTENT####
 
@@ -444,7 +494,6 @@ ideas = {
 			}
 		}
 
-		#Level of Industry buff to PRC when not in faction with SOV
 
 		PRC_our_own_Eco_1 = {
 			removal_cost = -1
@@ -455,15 +504,10 @@ ideas = {
 				always = no
 			}
 
-			cancel = {
-				 PRC = {
-						is_in_faction_with = SOV
-				}
-			}
+			
 
 			modifier = {
-				local_resources_factor = 0.10
-				production_speed_buildings_factor = 0.10
+				local_resources_factor = 0.15
 				consumer_goods_factor = -0.05
 
 			}
@@ -479,43 +523,15 @@ ideas = {
 				always = no
 			}
 
-			cancel = {
-				 PRC = {
-						is_in_faction_with = SOV
-				}
-			}
+		
 
 			modifier = {
-				local_resources_factor = 0.20
 				production_speed_buildings_factor = 0.25
-				consumer_goods_factor = -0.10
 
 			}
 
 		}
-		PRC_our_own_Eco_3 = {
-			removal_cost = -1
-
-			picture = jap_the_unthinkable_option
-
-			allowed = {
-				always = no
-			}
-
-			cancel = {
-				 PRC = {
-						is_in_faction_with = SOV
-				}
-			}
-
-			modifier = {
-				local_resources_factor = 0.25
-				production_speed_buildings_factor = 0.35
-				consumer_goods_factor = -0.20
-
-			}
-
-		}
+		
 
 		PRC_save_the_soviet_people = {
 			removal_cost = -1
@@ -798,14 +814,13 @@ ideas = {
 			}
 
 			modifier = {
-				industrial_capacity_factory = -1.5
-				research_speed_factor = 0.1
-				conscription_factor = -0.6
-				stability_factor = -0.15
+				industrial_capacity_factory = -0.15
+				research_speed_factor = 0.05
+				conscription_factor = -0.35
+				stability_factor = -0.05
 				communism_drift = 10
-				drift_defence_factor = 100
-				political_power_factor = -1
-				army_org_factor = -0.5
+				drift_defence_factor = 10
+				political_power_factor = -0.05
 			}
 		}
 
@@ -820,12 +835,9 @@ ideas = {
 			}
 
 			modifier = {
-				industrial_capacity_factory = -0.5
-				research_speed_factor = 1
-				conscription_factor = -0.4
-				stability_factor = -0.1
-				political_power_factor = -0.5
-				army_org_factor = -0.25
+				industrial_capacity_factory = -0.05
+				research_speed_factor = 0.25
+				conscription_factor = -0.15
 			}
 		}
 

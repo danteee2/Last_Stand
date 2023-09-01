@@ -808,7 +808,6 @@ focus_tree = {
 			owns_state = 976
 		}
 		prerequisite = { focus = HOL_the_crown_jewel_colony }
-		mutually_exclusive = { focus = HOL_the_zuiderzee_works }
 		icon = GFX_focus_generic_treaty
 		x = 2
 		y = 3

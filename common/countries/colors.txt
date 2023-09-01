@@ -261,7 +261,7 @@ YUN = {
 	color_ui = rgb { 222 247 198 }
 }
 USA = {
-	color = rgb { 70 107 181 }
+	color = rgb { 49 47 183 }
 	color_ui = rgb { 87 160 255 }
 }
 MON = {
