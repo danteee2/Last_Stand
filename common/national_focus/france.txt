@@ -466,10 +466,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -483,24 +483,7 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 15 }
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -591,7 +574,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_continue_mandat
-		icon = GFX_focus_eng_move_to_secure_the_dominions
+		icon = GFX_focus_generic_africa_defense
 		cost = 10
 		prerequisite = {
 			focus = FRA_colonial_investments
@@ -739,9 +722,9 @@ focus_tree = {
 					value = -0.3
 					localization = FRA_colonial_investments
 				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_TFV_AUTONOMY }
+			add_ideas = FRA_defeatism
+		    }
+	    }
 	}
 	focus = {
 		id = FRA_develop_algeria
@@ -749,7 +732,6 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = FRA_continue_mandat
-			focus = FRA_sncf
 		}
 		x = 2
 		y = 2
@@ -1536,7 +1518,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_vienot_agreement
-		icon = GFX_focus_generic_treaty
+		icon = GFX_focus_SWI_fortify_border_with_france
 		cost = 10
 		prerequisite = {
 			focus = FRA_colonial_investments
@@ -1552,6 +1534,7 @@ focus_tree = {
 			OR = {
 				has_government = democratic
 				has_government = fascism
+				has_government = neutrality
 			}
 		}
 		
@@ -1559,107 +1542,43 @@ focus_tree = {
 			factor = 1.5
 		}
 		completion_reward = {
-			add_stability = 0.05
-			add_political_power = 110
-			if = {
-				limit = {
-					SYR = {
-						exists = no
-					}
-					ROOT = {
-						OR = {
-							controls_state = 677
-							controls_state = 680
-							controls_state = 554
-						}
-					}
-				}
-				release = SYR
-				set_autonomy = {
-					target = SYR
-					autonomy_state = autonomy_free
-				}
-				give_guarantee = SYR
-				SYR = {
-					add_opinion_modifier = {
-						target = ROOT
-						modifier = ENG_guiding_the_colonies
-					}
-				}
-				hidden_effect = {
-					every_other_country = {
-						limit = {
-							has_war_with = ROOT
-						}
-						SYR = {
-							add_to_war = {
-								targeted_alliance = ROOT
-								enemy = PREV
-								hostility_reason = asked_to_join
-							}
-						}
-					}
-				}
-			}
-			if = {
-				limit = {
-					LEB = {
-						exists = no
-					}
-					ROOT = {
-						controls_state = 553
-					}
-				}
-				release = LEB
-				set_autonomy = {
-					target = LEB
-					autonomy_state = autonomy_free
-				}
-				give_guarantee = LEB
-				LEB = {
-					add_opinion_modifier = {
-						target = ROOT
-						modifier = ENG_guiding_the_colonies
-					}
-				}
-				hidden_effect = {
-					every_other_country = {
-						limit = {
-							has_war_with = ROOT
-						}
-						LEB = {
-							add_to_war = {
-								targeted_alliance = ROOT
-								enemy = PREV
-								hostility_reason = asked_to_join
-							}
-						}
-					}
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_TFV_AUTONOMY FOCUS_FILTER_POLITICAL }
+			add_ideas = Fra_defence_mainland
+	    }
+	
 	}
 	focus = {
 		id = FRA_rewrite_protectorate_treaties
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		cost = 5
+		icon = GFX_focus_mex_privatisation
+		cost = 10
 		prerequisite = {
 			focus = FRA_vienot_agreement
 		}
 		x = -1
 		y = 1
 		relative_position_id = FRA_vienot_agreement
-		available = {
-			is_subject = no
-		}
+	
 		
 		ai_will_do = {
 			factor = 1.5
 		}
 		completion_reward = {
 			add_stability = 0.05
-			add_political_power = 110
+			14 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			30 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 			if = {
 				limit = {
 					OR ={
@@ -1804,70 +1723,37 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_consolidate_african_federations
-		icon = GFX_focus_generic_self_management
-		cost = 5
+		icon = GFX_focus_generic_africa_factory
+		cost = 10
 		prerequisite = {
 			focus = FRA_vienot_agreement
 		}
 		x = 1
 		y = 1
 		relative_position_id = FRA_vienot_agreement
-		available = {
-			is_subject = no
-			OR = {
-				has_full_control_of_state = 557
-				has_full_control_of_state = 786
-				has_full_control_of_state = 782
-				has_full_control_of_state = 515
-				has_full_control_of_state = 556
-				has_full_control_of_state = 781
-				has_full_control_of_state = 778
-				has_full_control_of_state = 776
-				has_full_control_of_state = 777
-				has_full_control_of_state = 779
-				has_full_control_of_state = 780
-				has_full_control_of_state = 272
-				has_full_control_of_state = 775
-				has_full_control_of_state = 774
-				has_full_control_of_state = 660
-				has_full_control_of_state = 773
-				has_full_control_of_state = 772
-				has_full_control_of_state = 539
-				has_full_control_of_state = 543
-				has_full_control_of_state = 268
-			}
-		}
-		bypass = {
-			NOT = {
-				AND = {
-					owns_state = 557
-					owns_state = 786
-					owns_state = 782
-					owns_state = 515
-					owns_state = 556
-					owns_state = 781
-					owns_state = 778
-					owns_state = 776
-					owns_state = 777
-					owns_state = 779
-					owns_state = 780
-					owns_state = 272
-					owns_state = 775
-					owns_state = 774
-					owns_state = 660
-					owns_state = 773
-					owns_state = 772
-					owns_state = 539
-				}
-			}
-		}
+
 		
 		ai_will_do = {
 			factor = 1.5
 		}
 		completion_reward = {
 			add_stability = 0.05
-			add_political_power = 110
+			 16 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			17 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 			if = {
 				limit = {
 					has_full_control_of_state = 786
@@ -2245,8 +2131,8 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_autonomy_indochina
-		icon = GFX_goal_indochina_a_true_federation
-		cost = 5
+		icon = GFX_focus_generic_vatican_state
+		cost = 20
 		prerequisite = {
 			focus = FRA_rewrite_protectorate_treaties
 		}
@@ -2256,126 +2142,43 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = FRA_rewrite_protectorate_treaties
-		available = {
-			is_subject = no
-			FRI = {
-				is_subject_of = ROOT
-			}
-		}
-		bypass = {
-			OR = {
-				FRI = {
-					is_subject = no
-				}
-				FRI = {
-					is_subject_of = ROOT
-					NOT = {
-						OR = {
-							has_full_control_of_state = 286
-							has_full_control_of_state = 671
-							has_full_control_of_state = 670
-							has_full_control_of_state = 741
-						}
-					}
-				}
-			}
-		}
 		
 		ai_will_do = {
 			factor = 1.5
 		}
 		completion_reward = {
-			add_stability = 0.05
-			add_political_power = 110
-			if = {
-				limit = {
-					FRI = {
-						has_full_control_of_state = 286
-						has_full_control_of_state = 671
-					}
-				}
-				FRI = {
-					release = VIN
-				}
-				FRA = {
-					set_autonomy = {
-						target = VIN
-						autonomy_state = autonomy_dominion
-					}
-				}
-				hidden_effect = {
-					VIN = {
-						set_politics = {
-							ruling_party = neutrality
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = no
-						}
-						set_popularities = {
-							neutrality = 60
-							democratic = 40
-						}
-					}
+			add_stability = 0.10
+			add_war_support = 0.10
+			20 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
 				}
 			}
-			if = {
-				limit = {
-					FRI = {
-						has_full_control_of_state = 670
-					}
-				}
-				FRI = {
-					release = LAO
-				}
-				FRA = {
-					set_autonomy = {
-						target = LAO
-						autonomy_state = autonomy_dominion
-					}
-				}
-				hidden_effect = {
-					LAO = {
-						set_politics = {
-							ruling_party = neutrality
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = no
-						}
-						set_popularities = {
-							neutrality = 60
-							democratic = 40
-						}
-					}
+			19 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
 				}
 			}
-			if = {
-				limit = {
-					FRI = {
-						has_full_control_of_state = 741
-					}
+			23 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
 				}
-				FRI = {
-					release = CAM
-				}
-				FRA = {
-					set_autonomy = {
-						target = CAM
-						autonomy_state = autonomy_dominion
-					}
-				}
-				hidden_effect = {
-					CAM = {
-						set_politics = {
-							ruling_party = neutrality
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = no
-						}
-						set_popularities = {
-							neutrality = 60
-							democratic = 40
-						}
-					}
+			}
+			27 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
 				}
 			}
 		}
@@ -2401,18 +2204,7 @@ focus_tree = {
 			add_stability = 0.15
 			add_war_support = 0.05
 			add_political_power = 250
-			every_country = {
-				limit = {
-					is_subject_of = ROOT
-				}
-				add_stability = 0.15
-				add_war_support = 0.05
-				add_political_power = 250
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = ENG_guiding_the_colonies
-				}
-			}
+
 		}
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 	}
