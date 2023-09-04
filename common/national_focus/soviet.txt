@@ -94,7 +94,7 @@ focus_tree = {
 					}
 					set_state_flag = SOV_infrastructure_effort_3Inf
 				}
-				random_owned_controlled_state = {
+				651 = {
 					limit = {
 						free_building_slots = {
 							building = infrastructure
@@ -109,7 +109,7 @@ focus_tree = {
 					set_state_flag = SOV_infrastructure_effort_3Inf
 				}				
 			}
-			random_owned_controlled_state = {
+			218 = {
 				limit = {
 					infrastructure < 3
 				}
@@ -120,7 +120,7 @@ focus_tree = {
 				}
 				set_state_flag = SOV_infrastructure_effort_3Inf	
 			}
-			random_owned_controlled_state = {
+			234 = {
 				limit = {
 					infrastructure < 3
 				}
@@ -131,7 +131,7 @@ focus_tree = {
 				}
 				set_state_flag = SOV_infrastructure_effort_3Inf	
 			}
-			random_owned_controlled_state = {
+			653 = {
 				limit = {
 					infrastructure < 3
 				}
@@ -142,7 +142,7 @@ focus_tree = {
 				}
 				set_state_flag = SOV_infrastructure_effort_3Inf	
 			}
-			random_owned_controlled_state = {
+			252 = {
 				limit = {
 					infrastructure < 3
 				}
