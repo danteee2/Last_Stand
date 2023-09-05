@@ -2612,6 +2612,10 @@ ideas = {
 				medium_tank_chassis = {
 					build_cost_ic = -0.1 instant = yes
 					reliability = -0.05
+				}
+				heavy_tank_chassis = {
+					build_cost_ic = -0.1 instant = yes
+					reliability = -0.05
 				}		
 			}
 		}
