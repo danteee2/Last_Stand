@@ -2333,7 +2333,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			factor = 10		
+			factor = 30		
 		}
 
 		bypass = {
@@ -2956,7 +2956,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 50		
+			factor = 100	
 		}
 
 		completion_reward = {
