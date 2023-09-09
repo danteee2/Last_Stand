@@ -1757,10 +1757,10 @@ ideas = {
 			picture = generic_fortify_the_borders
 			
 			modifier = {
-				max_planning = 0.25
-				planning_speed = -0.1
-				army_speed_factor = 0.05
-				army_org_factor = 0.08
+				max_planning = 0.15
+				planning_speed = -0.15
+				army_speed_factor = 0.08
+				army_org_factor = 0.05
 			}
 		}
 		
