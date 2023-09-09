@@ -1910,6 +1910,9 @@ focus_tree = {
 		id = SIA_retake_our_lands
 		icon = GFX_goal_strike_indochina
 		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
 		prerequisite = {
 			focus = SIA_dictatorial_control
 			focus = SIA_replace_the_national_anthem
