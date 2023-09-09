@@ -222,6 +222,13 @@ if =  {
 	#}
 }
 
+add_equipment_to_stockpile = {
+
+	type = infantry_equipment
+	amount = 2000
+	producer = CAN
+}
+
 add_ideas = {
 	r56_CAN_great_depression_01
 	r56_CAN_the_big_cut_01
