@@ -1690,7 +1690,7 @@ ideas = {
 			picture = generic_wall_line
 			
 			modifier = {
-				max_planning = 0.25
+				max_planning = 0.05
 				planning_speed = -0.25
 			}
 		}
@@ -1714,7 +1714,7 @@ ideas = {
 			picture = generic_fortify_the_borders
 			
 			modifier = {
-				max_planning = 0.35
+				max_planning = 0.15
 				planning_speed = -0.25
 				max_command_power = 25
 				command_power_gain_mult = 0.1
@@ -1757,7 +1757,7 @@ ideas = {
 			picture = generic_fortify_the_borders
 			
 			modifier = {
-				max_planning = 0.25
+				max_planning = 0.05
 				planning_speed = -0.1
 				army_speed_factor = 0.05
 				army_org_factor = 0.08
