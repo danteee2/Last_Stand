@@ -1691,7 +1691,7 @@ ideas = {
 			
 			modifier = {
 				max_planning = 0.05
-				planning_speed = -0.25
+				planning_speed = -0.15
 			}
 		}
 
@@ -1715,7 +1715,7 @@ ideas = {
 			
 			modifier = {
 				max_planning = 0.15
-				planning_speed = -0.25
+				planning_speed = -0.15
 				max_command_power = 25
 				command_power_gain_mult = 0.1
 			}
@@ -1758,7 +1758,6 @@ ideas = {
 			
 			modifier = {
 				max_planning = 0.05
-				planning_speed = -0.1
 				army_speed_factor = 0.05
 				army_org_factor = 0.08
 			}
