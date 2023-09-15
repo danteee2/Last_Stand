@@ -399,7 +399,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_production_bonus
 			modifier = {
-				production_speed_buildings_factor = 0.1
+				production_speed_buildings_factor = 0.05
 				conversion_cost_civ_to_mil_factor = -0.05
 				mobilization_speed = 0.05
 				stability_factor = 0.05
@@ -608,7 +608,7 @@ ideas = {
 				#global_building_slots_factor = 0.1
 				production_speed_buildings_factor = 0.10
 				production_speed_arms_factory_factor = -0.05
-				global_building_slots_factor = 0.25
+				global_building_slots_factor = 0.15
 				#political_power_gain = 0.15
 				civilian_intel_to_others = 10
 				stability_factor = 0.05
@@ -648,7 +648,7 @@ ideas = {
 				conscription = 0.01
 				war_support_factor = 0.05
 				max_fuel_factor = 0.1
-				production_factory_max_efficiency_factor = 0.075
+				production_factory_max_efficiency_factor = 0.05
 			}
 			research_bonus = {
 				synth_resources = 0.1
@@ -681,7 +681,7 @@ ideas = {
 				production_speed_steel_mill_factor = 0.1
 				production_speed_arms_factory_factor = 0.05
 				production_speed_buildings_factor = -0.05
-				production_factory_max_efficiency_factor = 0.075
+				production_factory_max_efficiency_factor = 0.05
 			}
 		}
 		GER_aux_police_SS_idea = {
