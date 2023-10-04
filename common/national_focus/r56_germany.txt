@@ -16699,7 +16699,7 @@ focus = {
 	x = -8
 	y = 3
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -17084,7 +17084,7 @@ focus = {
 			add_extra_state_shared_building_slots = 2
 		}
 		add_timed_idea = {
-			days = 180
+			days = 60
 			idea = investments_into_the_purge
 		}
 	}
