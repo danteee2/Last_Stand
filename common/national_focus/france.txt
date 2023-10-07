@@ -792,7 +792,7 @@ focus_tree = {
 						level = 3
 						instant_build = yes
 					}
-					
+					add_core_of = FRA
 				}
 			}
 			if = {
@@ -871,7 +871,7 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-				
+				add_core_of = FRA
 			}
 			every_other_country = {
 				limit = {
@@ -2337,7 +2337,6 @@ focus_tree = {
 			add_state_core = 513
 			add_state_core = 933
 			add_state_core = 514
-			
 			if = {
 				limit = {
 					ALG = {
