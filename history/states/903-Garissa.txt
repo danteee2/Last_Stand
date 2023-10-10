@@ -14,8 +14,7 @@ state={
 			10976 1 
 		}
 		
-		add_core_of = KEN
-		add_core_of = SOM
+		add_core_of = ZIM
 
 	}
 

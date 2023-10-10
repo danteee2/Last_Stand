@@ -20,8 +20,7 @@ state=
 				naval_base = 1
 			}		
 		}		
-		add_core_of = SOM
-		add_core_of = SMA
+		add_core_of = JOR
 	}
 	provinces={
 		1905 5068 8094 10777 10833 10921 12759 12814
