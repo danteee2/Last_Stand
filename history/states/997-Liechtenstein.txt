@@ -2,9 +2,9 @@
 state={
 	id=997
 	name="STATE_997"
-	manpower = 100500
+	manpower = 10500
 	
-	state_category = developed_urban
+	state_category = developed_rural
 
 	history={
 		owner = LIE
@@ -13,9 +13,8 @@ state={
 			6680 3
 		}
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 7
-			arms_factory = 5
+			infrastructure = 2
+			industrial_complex = 1
 		}
 	}
 

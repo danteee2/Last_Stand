@@ -12,7 +12,7 @@ state={
 			}
 
 		}
-		add_core_of = ANG
+		add_core_of = MZB
 		victory_points = {
 			12935 1
 		}

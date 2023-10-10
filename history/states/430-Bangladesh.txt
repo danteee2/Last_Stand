@@ -3,8 +3,7 @@ state={
 	name="STATE_430"
 
 	history={
-		add_core_of = RAJ
-		add_core_of = PAK
+		add_core_of = BAN
 		owner = RAJ
 		victory_points = {
 			11929 10
@@ -20,6 +19,8 @@ state={
 				naval_base = 3
 			}
 		}
+		add_core_of = PAK
+		add_core_of = RAJ
 
 	}
 

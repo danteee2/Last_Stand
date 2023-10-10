@@ -19,7 +19,8 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = CYP
+		add_core_of = SYR
+		add_core_of = KUR
 	}
 
 

@@ -28,6 +28,8 @@ state={
 			746 1
 		}
 		add_core_of = ROM
+		add_core_of = SZK
+		add_core_of = TRA
 	}
 
 	provinces={

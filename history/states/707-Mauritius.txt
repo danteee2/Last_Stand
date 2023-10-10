@@ -7,7 +7,7 @@ state={
 
 	history={
 		owner = ENG
-		add_core_of = ZIM
+		add_core_of = MAU
 		buildings = {
 			infrastructure = 2
 			13018 = {
