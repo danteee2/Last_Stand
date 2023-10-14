@@ -15,11 +15,7 @@ ideas = {
 
 			available = {
 				threat > 0.20
-				NOT = {
-					hidden_trigger = {
-						has_global_flag = NATIONAL_CHARACTERS_BLOCKED
-					}
-				}
+				
 			}
 			
 			modifier = {
@@ -43,11 +39,7 @@ ideas = {
 
 			available = {
 				threat > 0.05
-				NOT = {
-					hidden_trigger = {
-						has_global_flag = NATIONAL_CHARACTERS_BLOCKED
-					}
-				}
+				
 			}
 			
 			modifier = {
@@ -71,11 +63,7 @@ ideas = {
 
 			available = {
 				threat > 0.05
-				NOT = {
-					hidden_trigger = {
-						has_global_flag = NATIONAL_CHARACTERS_BLOCKED
-					}
-				}
+			
 			}
 			
 			modifier = {
@@ -97,11 +85,7 @@ ideas = {
 
 			available = {
 				threat > 0.20
-				NOT = {
-					hidden_trigger = {
-						has_global_flag = NATIONAL_CHARACTERS_BLOCKED
-					}
-				}
+			
 			}
 			
 			cost = 125

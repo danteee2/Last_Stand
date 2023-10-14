@@ -3,10 +3,10 @@ state=
 	id=116
 	name="STATE_116"
 	manpower = 241621
-	state_category = small_island	
+	state_category = small_island
 	history= {
 		owner = ENG
-		add_core_of = ITA
+		add_core_of = ENG
 		victory_points = {
 			12003 5 
 		}
@@ -19,6 +19,7 @@ state=
 			}
 		}
 	}
+
 	provinces= { 12003 }
 
 	local_supplies=0.0 

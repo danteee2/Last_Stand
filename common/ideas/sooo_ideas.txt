@@ -25,10 +25,9 @@ ideas = {
 
 			removal_cost = -1
 			
-			rule = {
-				can_create_factions = yes
-				can_join_opposite_factions = yes
-				can_send_volunteers = yes
+			modifier = {
+
+
 			}
 		}		
 	}

@@ -1,12 +1,12 @@
 soo_optimization = {
 	name = "SOO_OPTIMIZATION"
 	group = "RULE_GROUP_SOO"
-	option = {
+	default = {
 		name = SOO_NORMAL
 		text = "RULE_OPTION_SOO_NORMAL"
 		desc = "RULE_OPTION_SOO_NORMAL_DESC"
 	}
-	default = {
+	option = {
 		name = SOO_HARD
 		text = "RULE_OPTION_SOO_HARD"
 		desc = "RULE_OPTION_SOO_HARD_DESC"

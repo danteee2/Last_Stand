@@ -286,15 +286,7 @@ ideas = {
 						has_idea = GER_treaty_of_versailles_3
 					}
 				}
-				if = {
-					limit = {
-						original_tag = MPL
-						has_idea = MPL_mandate
-					}
-					NOT = {
-						has_idea = MPL_mandate
-					}
-				}
+				
 				if = { 
 					limit = {
 					 	original_tag = LIE
@@ -517,15 +509,7 @@ ideas = {
 					}
 				}
 				
-				if = {
-					limit = {
-						original_tag = MPL
-						has_idea = MPL_mandate
-					}
-					NOT = {
-						has_idea = MPL_mandate
-					}
-				}
+				
 				if = { 
 					limit = {
 					 	original_tag = LIE
@@ -766,15 +750,7 @@ ideas = {
 						has_idea = GER_treaty_of_versailles_3
 					}
 				}
-				if = {
-					limit = {
-						original_tag = MPL
-						has_idea = MPL_mandate
-					}
-					NOT = {
-						has_idea = MPL_mandate
-					}
-				}
+				
 				if = { 
 					limit = {
 					 	original_tag = LIE
@@ -1011,15 +987,7 @@ ideas = {
 						has_idea = GER_treaty_of_versailles_3
 					}
 				}
-				if = {
-					limit = {
-						original_tag = MPL
-						has_idea = MPL_mandate
-					}
-					NOT = {
-						has_idea = MPL_mandate
-					}
-				}
+			
 				if = { 
 					limit = {
 					 	original_tag = LIE
@@ -1245,15 +1213,7 @@ ideas = {
 						has_idea = GER_treaty_of_versailles_3
 					}
 				}
-				if = {
-					limit = {
-						original_tag = MPL
-						has_idea = MPL_mandate
-					}
-					NOT = {
-						has_idea = MPL_mandate
-					}
-				}
+			
 				if = { 
 					limit = {
 					 	original_tag = LIE

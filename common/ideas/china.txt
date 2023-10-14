@@ -106,11 +106,14 @@ ideas = {
 			removal_cost = -1
 
 			picture = SPR_political_violence
-
+			rule = {
+				can_access_market = no
+			}
 			
 			modifier = {
 				surrender_limit = -0.15
-				stability_factor = -0.05
+				stability_factor = -0.25
+				
 			}
 		}
 		german_advisors = {

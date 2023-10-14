@@ -17,6 +17,7 @@ state={
 			6799 1
 		}
 		add_core_of = YUG
+
 	}
 
 	provinces={

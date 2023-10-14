@@ -629,6 +629,24 @@
 			}
 		}
 
+		available = {
+			num_of_controlled_states > 0
+			any_other_country = {
+				OR = {
+					original_tag = GER
+					original_tag = BAY
+					original_tag = PRE
+					original_tag = WGR
+				}
+				has_capitulated = no
+				has_opinion = { target = ROOT value > 49 }
+				has_government = ROOT
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+		}
+
 		completion_reward = {
 			every_other_country = {
 				limit = {
@@ -713,6 +731,19 @@
 			}
 		}
 
+		available = {
+			num_of_controlled_states > 0
+			any_other_country = {
+				original_tag = SOV
+				has_capitulated = no
+				has_opinion = { target = ROOT value > 49 }
+				has_government = ROOT
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+		}
+
 		completion_reward = {
 			every_other_country = {
 				limit = {
@@ -780,6 +811,21 @@
 			factor = 2
 		}
 
+		available = {
+			num_of_controlled_states > 0
+			OR = {
+				has_tech = concentrated_industry2
+				has_tech = dispersed_industry2
+			}
+			any_other_country = {
+				original_tag = SOV
+				has_capitulated = no				
+				has_government = ROOT
+				NOT = { has_war_with = ROOT }
+				has_opinion = { target = ROOT value > 49 }					
+			}
+		}
+
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -818,6 +864,27 @@
 			factor = 2
 		}
 
+		available = {
+			num_of_controlled_states > 0
+			OR = {
+				has_tech = concentrated_industry2
+				has_tech = dispersed_industry2
+			}
+			any_other_country = {
+				OR = {
+					original_tag = GER
+					original_tag = BAY
+					original_tag = PRE
+					original_tag = WGR
+				}
+				has_capitulated = no
+				has_opinion = { target = ROOT value > 49 }
+				has_government = ROOT
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+		}
 
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -859,6 +926,19 @@
 			modifier = {
 				factor = 6
 				has_government = democratic
+			}
+		}
+
+		available = {
+			num_of_controlled_states > 0
+			any_other_country = {
+				original_tag = USA
+				has_capitulated = no
+				has_opinion = { target = ROOT value > 49 }
+				has_government = ROOT
+				NOT = {
+					has_war_with = ROOT
+				}
 			}
 		}
 
@@ -932,6 +1012,23 @@
 
 		ai_will_do = {
 			factor = 2
+		}
+
+		available = {
+			num_of_controlled_states > 0
+			OR = {
+				has_tech = concentrated_industry2
+				has_tech = dispersed_industry2
+			}
+			any_other_country = {
+				original_tag = USA
+				has_capitulated = no
+				has_opinion = { target = ROOT value > 49 }
+				has_government = ROOT
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
 		}
 
 		completion_reward = {
@@ -3591,7 +3688,7 @@
 				category = bc_tech
 			}
 
-			custom_effect_tooltip = GEN_Generals_Other_nav_tt
+			#custom_effect_tooltip = GEN_Generals_Other_nav_tt
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -3847,6 +3944,10 @@
 						}
 					}
 				}
+			}
+			modifier = {
+				factor = 0
+				original_tag = MPL
 			}
 			modifier = {
 				factor = 0

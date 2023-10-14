@@ -9,8 +9,7 @@ state={
 	history={
 		owner = FRA
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 2
+			infrastructure = 2 #was 4
 		}
                  victory_points = {
                     4046 2

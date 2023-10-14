@@ -171,7 +171,7 @@ focus_tree = {
 	focus = {
 		id = PER_sugar_exports
 		icon = GFX_goal_generic_consumer_goods
-		cost = 5
+		cost = 7.00
 		prerequisite = {
 			focus = PER_foreign_exchange_controls
 		}
@@ -189,10 +189,10 @@ focus_tree = {
 											include_locked = yes
 										}
 								}
-							add_extra_state_shared_building_slots = 2
+							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = industrial_complex
-									level = 2
+									level = 1
 									instant_build = yes
 								}
 						}
@@ -236,7 +236,7 @@ focus_tree = {
 	focus = {
 		id = PER_finish_the_trans_iranian_railway
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 5
+		cost = 10.00
 		prerequisite = {
 			focus = PER_foreign_exchange_controls
 			focus = PER_increase_machines_import
@@ -425,7 +425,7 @@ focus_tree = {
 	focus = {
 		id = PER_increase_textile_production
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 5
+		cost = 10.00
 		prerequisite = {
 			focus = PER_increase_machines_import
 		}

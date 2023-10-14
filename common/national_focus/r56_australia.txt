@@ -1298,14 +1298,14 @@ focus_tree = {
 				add_tech_bonus = {
 					technology = aa_cannon_1
 					technology = aa_cannon_2
-					bonus = 1.0
+					bonus = 0.75
 					uses = 1
 				}
 				add_tech_bonus = {
-					name = AST_R56_cac_boomerang
+					technology = improved_small_airframe
+					technology = advanced_small_airframe
 					bonus = 1
 					uses = 1
-					category = light_air
 				}
 			}
 			else = {
@@ -1424,12 +1424,35 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_tech_bonus = {
-				technology = improved_small_airframe
-				technology = advanced_small_airframe
-				bonus = 1
-				ahead_reduction = 2
-				uses = 1
+			if = {
+				limit = {
+					NOT = { has_dlc = "By Blood Alone" }
+				}
+				add_tech_bonus = {
+					name = AST_R56_cac_boomerang
+					bonus = 1.0
+					ahead_reduction = 2
+					uses = 1
+					category = light_fighter
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = AST_R56_cac_boomerang
+					bonus = 1
+					uses = 1
+					category = light_air
+				}
+				create_equipment_variant = {
+					name = "CAC Boomerang" #
+					type = small_plane_airframe_1
+					modules = {
+						fixed_main_weapon_slot = light_mg_4x
+						fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+						engine_type_slot = engine_2_1x
+						special_type_slot_1 = drop_tanks
+					}
+				}	
 			}
 		}		
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -2547,10 +2570,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = AST_R56_expand_lithgow_ic
@@ -2590,10 +2613,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = AST_R56_greater_newcastle_act_ic
 				}
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -4771,7 +4794,8 @@ focus_tree = {
 
 		available = {
 			OR = {
-				threat > 0.10
+				has_war = yes
+				threat > 0.45
 			}
 			has_government = democratic
 		}

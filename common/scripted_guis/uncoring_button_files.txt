@@ -20,9 +20,6 @@ scripted_gui = {
 			uncreate_core_click_enabled = {
 				is_fully_controlled_by = ROOT
 				is_core_of = ROOT
-				ROOT = {
-					has_war = no
-				}
 			}
 		}
 		        

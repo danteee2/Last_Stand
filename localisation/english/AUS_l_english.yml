@@ -9,6 +9,7 @@
  AUS_subsidize_STRABAG_construction:0 "Subsidize STRABAG Construction"
  AUS_subsidize_STRABAG_construction_desc:0 "No matter how many resources we apply, [AUS.GetNameDef] can only produce new military installations so quickly. We must secure more industrial assets, such as STRABAG SE's. Their assistance will be invaluable in keeping us ahead in industrial matters."
  AUS_subsidize_STRABAG_construction_tt:0 "Unlocks STRABAG Construction Industrial Concern\n"
+ erwache.11.t:0 "Germany Demands"
 
  AUS_fortify_the_austrian_alps:0 "Fortify the Austrian Alps"
  AUS_fortify_the_austrian_alps_desc:0 "The Austrian Alps represent an indispensable natural barrier. We can render our territories practically impregnable if we put effort into ensuring that they are adequately fortified."

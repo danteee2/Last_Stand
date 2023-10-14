@@ -21,7 +21,7 @@ state={
 		victory_points = {
 			11775 1
 		}
-		add_core_of = KOR
+		add_core_of = JAP
 	}
 
 	provinces={

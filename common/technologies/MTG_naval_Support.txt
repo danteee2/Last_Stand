@@ -67,7 +67,6 @@ technologies = {
 			cat_ship_light_battery
 			cat_ship_medium_battery
 			cat_ship_heavy_battery
-			naval_gunnery_tech
 		}
 	}
 
@@ -108,7 +107,6 @@ technologies = {
 			naval_equipment
 			ship_modules_tech
 			cat_ship_light_battery
-			naval_gunnery_tech
 		}
 	}
 
@@ -165,7 +163,6 @@ technologies = {
 		categories = {
 			naval_equipment
 			ship_modules_tech
-			naval_shell_tech
 		}
 	}
 
@@ -212,7 +209,6 @@ technologies = {
 			naval_equipment
 			ship_modules_tech
 			cat_ship_light_battery
-			naval_gunnery_tech
 		}
 	}
 
@@ -268,8 +264,6 @@ technologies = {
 		categories = {
 			naval_equipment
 			ship_modules_tech
-			naval_shell_tech
-
 		}
 	}
 
@@ -305,7 +299,6 @@ technologies = {
 			naval_equipment
 			ship_modules_tech
 			cat_ship_light_battery
-			naval_gunnery_tech
 		}
 	}
 
@@ -351,7 +344,6 @@ technologies = {
 			naval_equipment
 			ship_modules_tech
 			cat_ship_medium_battery
-			naval_gunnery_tech
 		}
 	}
 
@@ -390,7 +382,6 @@ technologies = {
 
 		categories = {
 			naval_equipment
-			naval_shell_tech
 		}
 	}
 
@@ -432,7 +423,6 @@ technologies = {
 			naval_equipment
 			ship_modules_tech
 			cat_ship_medium_battery
-			naval_gunnery_tech
 		}
 	}
 
@@ -477,7 +467,6 @@ technologies = {
 
 		categories = {
 			naval_equipment
-			naval_shell_tech
 		}
 	}
 
@@ -509,7 +498,6 @@ technologies = {
 			naval_equipment
 			ship_modules_tech
 			cat_ship_medium_battery
-			naval_gunnery_tech
 		}
 	}
 	
@@ -558,7 +546,6 @@ technologies = {
 			naval_equipment
 			ship_modules_tech
 			cat_ship_heavy_battery
-			naval_gunnery_tech
 		}
 	}
 	improved_heavy_battery = {
@@ -604,7 +591,6 @@ technologies = {
 			naval_equipment
 			ship_modules_tech
 			cat_ship_heavy_battery
-			naval_gunnery_tech
 		}
 	}
 	advanced_heavy_battery = {
@@ -645,7 +631,6 @@ technologies = {
 			naval_equipment
 			ship_modules_tech
 			cat_ship_heavy_battery
-			naval_gunnery_tech
 		}
 	}
 	basic_heavy_shell = {
@@ -685,7 +670,6 @@ technologies = {
 
 		categories = {
 			naval_equipment
-			naval_shell_tech
 		}
 	}
 	improved_heavy_shell = {
@@ -724,7 +708,6 @@ technologies = {
 
 		categories = {
 			naval_equipment
-			naval_shell_tech
 		}
 	}
 
@@ -770,7 +753,6 @@ technologies = {
 		categories = {
 			naval_equipment
 			ship_modules_tech
-			naval_gunnery_tech
 		}
 	}
 
@@ -814,7 +796,6 @@ technologies = {
 		categories = {
 			naval_equipment
 			ship_modules_tech
-			naval_gunnery_tech
 		}
 	}
 
@@ -853,7 +834,6 @@ technologies = {
 		categories = {
 			naval_equipment
 			ship_modules_tech
-			naval_gunnery_tech
 		}
 	}
 
@@ -891,7 +871,6 @@ technologies = {
 		categories = {
 			naval_equipment
 			ship_modules_tech
-			naval_gunnery_tech
 		}
 	}
 
@@ -1944,7 +1923,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 0.0001
+		research_cost = 1.5
 		start_year = 1922
 
 		folder = {

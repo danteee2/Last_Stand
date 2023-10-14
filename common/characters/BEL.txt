@@ -499,36 +499,36 @@
 			legacy_id=-1
 		}		
 	}
-	FLA_adamski={
-		name="Adamski"
+	FLA_alexis_vander_veken={
+		name="Alexis Vander Veken"
 		portraits={
 			army={
-				large="gfx/leaders/BEL/adamski.dds"
-				small="GFX_idea_adamski"
+				large="gfx/leaders/BEL/r56_portrait_BEL_Alexis_Vander_Veken.dds"
+				small="GFX_idea_FLA_alexis_vander_veken"
 			}
 		}
 		advisor={
 			slot = high_command
-			idea_token = FLA_adamski
+			idea_token = FLA_alexis_vander_veken
 			ledger = army
 				#needs belgium too?
 				allowed = {
-					original_tag = BEL
+					original_tag = FLA
 				}
 				traits = {
-					army_armored_2
+					army_infantry_2
 				}
 				
 				ai_will_do = {
 					factor = 1.000
 				}
-		}	
+		}		
 		corps_commander={
-			traits = { flemish ranger panzer_leader }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
+			traits = { flemish cavalry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
 			logistics_skill = 1
 			legacy_id=-1
 		}

@@ -17,7 +17,7 @@ state={
 			2123 1
 		}		
 
-		add_core_of = ANG
+		add_core_of = Cyp
 
 	}
 	provinces={

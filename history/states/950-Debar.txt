@@ -14,7 +14,7 @@ state={
 			833 1 
 		}
 		add_core_of = YUG
-		add_claim_by = ALB
+
 
 	}
 	manpower=150100

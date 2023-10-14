@@ -151,9 +151,9 @@ form_scandinavia_category = {
 				news_event = { id = wtt_news.53 hours = 6 }
 				set_global_flag = form_scandinavia_flag
 			}
-			#add_ideas = generic_recent_political_unification
-			#add_ideas = generic_recent_army_unification
-			#add_ideas = generic_recent_economic_unification				
+			add_ideas = generic_recent_political_unification
+			add_ideas = generic_recent_army_unification
+			add_ideas = generic_recent_economic_unification				
 		}
 
 		ai_will_do = {
@@ -518,9 +518,9 @@ form_gran_colombia_category = {
 				set_global_flag = form_gran_colombia_flag
 				set_country_flag = has_formed_gran_colombia
 			}
-			#add_ideas = generic_recent_political_unification
-			#add_ideas = generic_recent_army_unification
-			#add_ideas = generic_recent_economic_unification				
+			add_ideas = generic_recent_political_unification
+			add_ideas = generic_recent_army_unification
+			add_ideas = generic_recent_economic_unification				
 		}
 
 		ai_will_do = {
@@ -718,9 +718,9 @@ form_austria_hungary_category = {
 				set_global_flag = form_austria_hungary_flag
 				set_country_flag = formed_austria_hungary
 			}
-			#add_ideas = generic_recent_political_unification
-			#add_ideas = generic_recent_army_unification
-			#dd_ideas = generic_recent_economic_unification				
+			add_ideas = generic_recent_political_unification
+			add_ideas = generic_recent_army_unification
+			add_ideas = generic_recent_economic_unification				
 		}
 
 		ai_will_do = {
@@ -843,9 +843,9 @@ form_austria_hungary_category = {
 			91 = { add_core_of = ROOT }
 			89 = { add_core_of = ROOT }
 			set_global_flag = reintegrate_the_empire_flag
-			#add_ideas = generic_recent_political_unification
-			#add_ideas = generic_recent_army_unification
-			#add_ideas = generic_recent_economic_unification				
+			add_ideas = generic_recent_political_unification
+			add_ideas = generic_recent_army_unification
+			add_ideas = generic_recent_economic_unification				
 		}
 
 		ai_will_do = {
@@ -930,9 +930,9 @@ form_commonwealth_category = {
 				set_cosmetic_tag = PLC_UNIFIED
 			}
 			POL_basic_form_commonwealth = yes
-			#add_ideas = generic_recent_political_unification
-			#add_ideas = generic_recent_army_unification
-			#add_ideas = generic_recent_economic_unification		
+			add_ideas = generic_recent_political_unification
+			add_ideas = generic_recent_army_unification
+			add_ideas = generic_recent_economic_unification	
 		}
 	}
 }
@@ -945,7 +945,6 @@ form_united_netherlands_category = {
 
 		allowed = {
 			OR = {
-				original_tag = HOL
 				original_tag = BEL
 				original_tag = LUX
 				original_tag = WLL
@@ -976,7 +975,6 @@ form_united_netherlands_category = {
 
 		visible = {
 			OR = {
-				original_tag = HOL
 				original_tag = BEL
 				original_tag = LUX
 				original_tag = WLL
@@ -1007,9 +1005,9 @@ form_united_netherlands_category = {
 				news_event = { id = wtt_news.58 hours = 6 }
 				set_global_flag = form_united_netherlands_flag
 			}
-			#add_ideas = generic_recent_political_unification
-			#add_ideas = generic_recent_army_unification
-			#add_ideas = generic_recent_economic_unification					
+			add_ideas = generic_recent_political_unification
+			add_ideas = generic_recent_army_unification
+			add_ideas = generic_recent_economic_unification				
 		}
 
 		ai_will_do = {
@@ -1084,9 +1082,9 @@ form_united_central_america_category = {
 				news_event = { id = wtt_news.59 hours = 6 }
 				set_global_flag = form_united_central_america_flag
 			}
-			#add_ideas = generic_recent_political_unification
-			#add_ideas = generic_recent_army_unification
-			#add_ideas = generic_recent_economic_unification					
+			add_ideas = generic_recent_political_unification
+			add_ideas = generic_recent_army_unification
+			add_ideas = generic_recent_economic_unification				
 		}
 
 		ai_will_do = {
@@ -1232,9 +1230,9 @@ form_baltic_federation_category = {
 				news_event = { id = wtt_news.60 hours = 6 }
 				set_global_flag = form_baltic_federation_flag
 			}
-			#add_ideas = generic_recent_political_unification
-			#add_ideas = generic_recent_army_unification
-			#add_ideas = generic_recent_economic_unification					
+			add_ideas = generic_recent_political_unification
+			add_ideas = generic_recent_army_unification
+			add_ideas = generic_recent_economic_unification				
 		}
 
 		ai_will_do = {
@@ -1271,6 +1269,8 @@ form_ottoman_empire_category = {
 			controls_state = 949
 			controls_state = 966
 			controls_state = 455
+			controls_state = 1021
+			controls_state = 1022
 			controls_state = 656
 			controls_state = 731
 			controls_state = 184
@@ -1382,11 +1382,15 @@ form_ottoman_empire_category = {
 				457 = { add_core_of = ROOT }
 				453 = { add_core_of = ROOT }
 				454 = { add_core_of = ROOT }
+				966 = { add_core_of = ROOT }
+				949 = { add_core_of = ROOT }
 				1016 = { add_core_of = ROOT }
 				1017 = { add_core_of = ROOT }
 				949 = { add_core_of = ROOT }
 				966 = { add_core_of = ROOT }
 				455 = { add_core_of = ROOT }
+				1021 = { add_core_of = ROOT }
+				1022 = { add_core_of = ROOT }
 				183 = { add_core_of = ROOT }
 				656 = { add_core_of = ROOT }
 			}
@@ -1394,9 +1398,9 @@ form_ottoman_empire_category = {
 				news_event = { id = wtt_news.61 hours = 6 }
 				set_global_flag = form_ottoman_empire_flag
 			}
-			#add_ideas = generic_recent_political_unification
-			#add_ideas = generic_recent_army_unification
-			#add_ideas = generic_recent_economic_unification					
+			add_ideas = generic_recent_political_unification
+			add_ideas = generic_recent_army_unification
+			add_ideas = generic_recent_economic_unification				
 		}
 
 		ai_will_do = {
@@ -1785,6 +1789,8 @@ form_ottoman_empire_category = {
 				}
 			}
 			controls_state = 454
+			controls_state = 949
+			controls_state = 966
 			controls_state = 1016
 			controls_state = 1017
 			controls_state = 455
@@ -1800,9 +1806,13 @@ form_ottoman_empire_category = {
 		complete_effect = {
 			set_province_name = { id = 1086 name = "Al-Quds" }
 			454 = { add_core_of = ROOT }
+			966 = { add_core_of = ROOT }
+			949 = { add_core_of = ROOT }
 			1016 = { add_core_of = ROOT }
 			1017 = { add_core_of = ROOT }
 			455 = { add_core_of = ROOT }
+			1021 = { add_core_of = ROOT }
+			1022 = { add_core_of = ROOT }
 			553 = { add_core_of = ROOT }
 			hidden_effect = {
 				set_global_flag = ottoman_levant_flag
@@ -2469,9 +2479,9 @@ form_european_union_category = {
 				set_global_flag = form_european_union_flag
 				set_country_flag = formed_european_union
 			}
-			#add_ideas = generic_recent_political_unification
-			#add_ideas = generic_recent_army_unification
-			#add_ideas = generic_recent_economic_unification	
+			add_ideas = generic_recent_political_unification
+			add_ideas = generic_recent_army_unification
+			add_ideas = generic_recent_economic_unification
 		}
 
 		ai_will_do = {
@@ -2943,9 +2953,9 @@ form_mutapa_category = {
 				news_event = { id = wtt_news.63 hours = 6 }
 				set_global_flag = form_mutapa_flag
 			}
-			#add_ideas = generic_recent_political_unification
-			#add_ideas = generic_recent_army_unification
-			#add_ideas = generic_recent_economic_unification					
+			add_ideas = generic_recent_political_unification
+			add_ideas = generic_recent_army_unification
+			add_ideas = generic_recent_economic_unification				
 		}
 
 		ai_will_do = {
@@ -3085,6 +3095,8 @@ form_roman_empire_category = {
 				controls_state = 116	#Malta
 				controls_state = 183	#Cyprus
 				controls_state = 454 	#Jaffa
+				controls_state = 949	#Gaza
+				controls_state = 966	#West Bank
 				controls_state = 1016   #Jerusalem
 				controls_state = 1017	#Beersheba
 				controls_state = 453	#Sinai, Egypt
@@ -3145,6 +3157,8 @@ form_roman_empire_category = {
  				446 = { add_core_of = ROOT }
  				453 = { add_core_of = ROOT }
  				454 = { add_core_of = ROOT }
+				966 = { add_core_of = ROOT }
+				949 = { add_core_of = ROOT }
 				1016 = { add_core_of = ROOT }
 				1017 = { add_core_of = ROOT }
  				553 = { add_core_of = ROOT }
@@ -3883,6 +3897,8 @@ form_roman_empire_category = {
 			
 			controls_state = 554 #Damascus
 			controls_state = 455 #Jordan
+			controls_state = 1022
+			controls_state = 1021
 			controls_state = 854 #Jawf
 			controls_state = 855 #Tabuk
 			
@@ -3903,7 +3919,8 @@ form_roman_empire_category = {
 
 			# Jordan
 			455 = { add_core_of = ROOT }
-
+			1021 = { add_core_of = ROOT }
+			1022 = { add_core_of = ROOT }
 			# Jawf
 			854 = { add_core_of = ROOT }
 
@@ -4953,9 +4970,10 @@ form_persian_empire_category = {
 				controls_state = 966
 				controls_state = 949
 				controls_state = 455
+				controls_state = 1022
+				controls_state = 1021
 				controls_state = 183
 				controls_state = 656
-				controls_state = 911
 			}
 		}
 
@@ -5038,11 +5056,15 @@ form_persian_empire_category = {
 				457 = { add_core_of = ROOT }
 				453 = { add_core_of = ROOT }
 				454 = { add_core_of = ROOT }
+				966 = { add_core_of = ROOT }
+				949 = { add_core_of = ROOT }
 				1016 = { add_core_of = ROOT }
 				1017 = { add_core_of = ROOT }
 				949 = { add_core_of = ROOT }
 				966 = { add_core_of = ROOT }
 				455 = { add_core_of = ROOT }
+				1022 = { add_core_of = ROOT }
+				1021 = { add_core_of = ROOT }
 				183 = { add_core_of = ROOT }
 				656 = { add_core_of = ROOT }
 				911 = { add_core_of = ROOT }
@@ -5058,9 +5080,9 @@ form_persian_empire_category = {
 				news_event = { id = wtt_news.65 hours = 6 }
 				set_global_flag = form_persian_empire_flag
 			}
-			#add_ideas = generic_recent_political_unification
-			#add_ideas = generic_recent_army_unification
-			#add_ideas = generic_recent_economic_unification					
+			add_ideas = generic_recent_political_unification
+			add_ideas = generic_recent_army_unification
+			add_ideas = generic_recent_economic_unification				
 		}
 
 		ai_will_do = {
@@ -5132,9 +5154,9 @@ form_byzantine_empire_category = {
 				set_global_flag = form_byzantine_empire_flag
 			}
 			set_country_flag = achivement_i_swear_im_not_a_byzantophile
-			#add_ideas = generic_recent_political_unification
-			#add_ideas = generic_recent_army_unification
-			#add_ideas = generic_recent_economic_unification						
+			add_ideas = generic_recent_political_unification
+			add_ideas = generic_recent_army_unification
+			add_ideas = generic_recent_economic_unification					
 		}
 
 		ai_will_do = {
@@ -5304,9 +5326,9 @@ form_byzantine_empire_category = {
 			}
 			set_country_flag = achivement_i_swear_im_not_a_byzantophile
 			set_country_flag = achivement_istanbul_is_constantinople_again
-			#add_ideas = generic_recent_political_unification
-			#add_ideas = generic_recent_army_unification
-			#add_ideas = generic_recent_economic_unification							
+			add_ideas = generic_recent_political_unification
+			add_ideas = generic_recent_army_unification
+			add_ideas = generic_recent_economic_unification						
 		}
 
 		ai_will_do = {
@@ -5816,6 +5838,8 @@ form_byzantine_empire_category = {
 			controls_state = 949
 			controls_state = 966
 			controls_state = 455
+			controls_state = 1022
+			controls_state = 1021
 			controls_state = 183
 			controls_state = 911
 			controls_state = 995
@@ -5839,11 +5863,15 @@ form_byzantine_empire_category = {
 			164 = { add_core_of = ROOT }
 			453 = { add_core_of = ROOT }
 			454 = { add_core_of = ROOT }
+				966 = { add_core_of = ROOT }
+				949 = { add_core_of = ROOT }
 			1016 = { add_core_of = ROOT }
 			1017 = { add_core_of = ROOT }
 			949 = { add_core_of = ROOT }
 			966 = { add_core_of = ROOT }
 			455 = { add_core_of = ROOT }
+			1022 = { add_core_of = ROOT }
+			1021 = { add_core_of = ROOT }
 			183 = { add_core_of = ROOT }
 			799 = { add_core_of = ROOT }
 			911 = { add_core_of = ROOT }
@@ -6046,6 +6074,8 @@ form_arabia_category = {
 				controls_state = 949
 				controls_state = 966
 				controls_state = 455
+				controls_state = 1022
+				controls_state = 1021
 				controls_state = 656
 				controls_state = 658
 				controls_state = 659
@@ -6149,11 +6179,15 @@ form_arabia_category = {
 				551 = { add_core_of = ROOT }
 				549 = { add_core_of = ROOT }
 				454 = { add_core_of = ROOT }
+				966 = { add_core_of = ROOT }
+				949 = { add_core_of = ROOT }
 				1016 = { add_core_of = ROOT }
 				1017 = { add_core_of = ROOT }
 				949 = { add_core_of = ROOT }
 				966 = { add_core_of = ROOT }
 				455 = { add_core_of = ROOT }
+				1022 = { add_core_of = ROOT }
+				1021 = { add_core_of = ROOT }
 				656 = { add_core_of = ROOT }
 				658 = { add_core_of = ROOT }
 				659 = { add_core_of = ROOT }
@@ -6172,9 +6206,9 @@ form_arabia_category = {
 				news_event = { id = wtt_news.67 hours = 6 }
 				set_global_flag = form_arabia_flag
 			}
-			#add_ideas = generic_recent_political_unification
-			#add_ideas = generic_recent_army_unification
-			#add_ideas = generic_recent_economic_unification					
+			add_ideas = generic_recent_political_unification
+			add_ideas = generic_recent_army_unification
+			add_ideas = generic_recent_economic_unification				
 		}
 
 		ai_will_do = {
@@ -6321,9 +6355,9 @@ form_majapahit_empire_category = {
 				news_event = { id = wtt_news.68 hours = 6 }
 				set_global_flag = form_majapahit_empire_flag
 			}
-			#add_ideas = generic_recent_political_unification
-			#add_ideas = generic_recent_army_unification
-			#add_ideas = generic_recent_economic_unification					
+			add_ideas = generic_recent_political_unification
+			add_ideas = generic_recent_army_unification
+			add_ideas = generic_recent_economic_unification				
 		}
 
 		ai_will_do = {
@@ -6382,7 +6416,7 @@ form_rattanakosin_kingdom_category = {
 			}
 			# Laos basically
 			custom_trigger_tooltip = {
-				tooltip = state_in_north_indochina_except_vietnam_tt
+				tooltip = state_in_south_indochina_except_vietnam_tt
 				all_state = {
 					OR = {
 						NOT = {
@@ -6454,7 +6488,12 @@ form_hre_category = {
 		icon = generic_form_nation
 
 		allowed = {
-			original_tag = GER
+			OR = {
+				original_tag = GER
+				original_tag = AUS
+				original_tag = CZE
+				original_tag = LIE
+			}
 			has_dlc = "Waking the Tiger"
 		}
 
@@ -6519,6 +6558,8 @@ form_hre_category = {
 				controls_state = 846	#Ticino
 				controls_state = 847	#Western Swiss Alps
 			}
+			# Liechtenstein
+			controls_state = 997
 			# Austria
 			custom_trigger_tooltip = {
 				tooltip = form_country_austria_required_states_tt
@@ -6544,10 +6585,24 @@ form_hre_category = {
 		}
 
 		visible = {
-			AND = {
-				original_tag = GER
-				has_government = neutrality
-				has_country_leader = { ruling_only = yes name = "Victoria" }
+			OR = {
+				AND = {
+					original_tag = GER
+					has_government = neutrality
+					has_country_leader = { ruling_only = yes name = "Victoria" }
+				}
+				AND = {
+					original_tag = AUS
+					has_government = neutrality
+				}
+				AND = {
+					original_tag = CZE
+					has_government = neutrality
+				}
+				AND = {
+					original_tag = LIE
+					has_government = neutrality
+				}
 			}
 			NOT = { has_global_flag = form_hre_flag }
 		}
@@ -6568,6 +6623,35 @@ form_hre_category = {
 			161 = { add_core_of = ROOT }
 			162 = { add_core_of = ROOT }
 			736 = { add_core_of = ROOT }
+			# Germany
+			custom_effect_tooltip = form_country_germany_coring_states_tt
+			hidden_effect = {
+				add_state_core = 51
+				add_state_core = 42
+				add_state_core = 56
+				add_state_core = 57
+				add_state_core = 55
+				add_state_core = 50
+				add_state_core = 59
+				add_state_core = 58
+				add_state_core = 998
+				add_state_core = 60
+				add_state_core = 54
+				add_state_core = 52
+				add_state_core = 53
+				add_state_core = 61
+				add_state_core = 64
+				add_state_core = 65
+				add_state_core = 62
+				add_state_core = 68
+				add_state_core = 66
+				add_state_core = 67
+				add_state_core = 63
+				add_state_core = 989 #Ostrhineland
+				add_state_core = 922 #Frankfurt
+				add_state_core = 923 #Baden
+				add_state_core = 998 #Southern Schleswig
+			}
 			# Switzerland
 			custom_effect_tooltip = form_country_switzerland_coring_states_tt
 			hidden_effect = {
@@ -6577,6 +6661,8 @@ form_hre_category = {
 				846 = { add_core_of = ROOT }
 				847 = { add_core_of = ROOT }
 			}
+			# Liechtenstein
+			997 = { add_core_of = ROOT }
 			# Austria
 			custom_effect_tooltip = form_country_austria_coring_states_tt
 			hidden_effect = {
@@ -6603,9 +6689,9 @@ form_hre_category = {
 				news_event = { id = wtt_news.70 hours = 6 }
 				set_global_flag = form_hre_flag
 			}
-			#add_ideas = generic_recent_political_unification
-			#add_ideas = generic_recent_army_unification
-			#add_ideas = generic_recent_economic_unification				
+			add_ideas = generic_recent_political_unification
+			add_ideas = generic_recent_army_unification
+			add_ideas = generic_recent_economic_unification				
 		}
 
 		ai_will_do = {
@@ -6694,7 +6780,6 @@ form_greater_german_reich_category = {
 				has_government = neutrality
 			}
 			NOT = { has_global_flag = form_greater_german_reich_flag }
-			NOT = { has_completed_focus = GER_the_alternative }
 		}
 
 		complete_effect = {
@@ -6834,9 +6919,9 @@ form_andalusia_category = {
 				795 = { add_core_of = ROOT }
 				118 = { add_core_of = ROOT }
 				set_capital = { state = 789 }
-				#add_ideas = generic_recent_political_unification
-				#add_ideas = generic_recent_army_unification
-				#add_ideas = generic_recent_economic_unification						
+				add_ideas = generic_recent_political_unification
+				add_ideas = generic_recent_army_unification
+				add_ideas = generic_recent_economic_unification						
 			}
 			hidden_effect = {
 				news_event = { id = lar_news.281 hours = 6 }
@@ -7057,8 +7142,12 @@ form_andalusia_category = {
 			controls_state = 949
 			controls_state = 966
 			controls_state = 455
+			controls_state = 1021
+			controls_state = 1022
 			controls_state = 656
 			controls_state = 658
+			controls_state = 1021
+			controls_state = 1022
 		}
 
 		visible = {
@@ -7096,11 +7185,15 @@ form_andalusia_category = {
 				293 = { add_core_of = ROOT }
 				294 = { add_core_of = ROOT }
 				454 = { add_core_of = ROOT }
+				966 = { add_core_of = ROOT }
+				949 = { add_core_of = ROOT }
 				1016 = { add_core_of = ROOT }
 				1017 = { add_core_of = ROOT }
 				949 = { add_core_of = ROOT }
 				966 = { add_core_of = ROOT }
 				455 = { add_core_of = ROOT }
+				1022 = { add_core_of = ROOT }
+				1021 = { add_core_of = ROOT }
 				656 = { add_core_of = ROOT }
 				658 = { add_core_of = ROOT }
 				# Egypt
@@ -7120,7 +7213,9 @@ form_andalusia_category = {
 				979 = { add_core_of = ROOT }
 				911 = { add_core_of = ROOT }
 				995 = { add_core_of = ROOT }
-			}
+				1021 = { add_core_of = ROOT }
+				1022 = { add_core_of = ROOT }
+ 			}
 		}
 
 		ai_will_do = {
@@ -8070,9 +8165,13 @@ form_macedonian_empire_category = {
 			custom_trigger_tooltip = {
 				tooltip = form_country_british_levant_required_states_tt
 				controls_state = 454
+				controls_state = 949
+				controls_state = 966
 				controls_state = 1016
 				controls_state = 1017
 				controls_state = 455
+				controls_state = 1022
+				controls_state = 1021
 				controls_state = 656
 			}
 			# Raj / Punjab
@@ -8195,9 +8294,13 @@ form_macedonian_empire_category = {
 				457 = { add_core_of = ROOT }
 				453 = { add_core_of = ROOT }
 				454 = { add_core_of = ROOT }
+				966 = { add_core_of = ROOT }
+				949 = { add_core_of = ROOT }
 				1016 = { add_core_of = ROOT }
 				1017 = { add_core_of = ROOT }
 				455 = { add_core_of = ROOT }
+				1022 = { add_core_of = ROOT }
+				1021 = { add_core_of = ROOT }
 				183 = { add_core_of = ROOT }
 				656 = { add_core_of = ROOT }
 				118 = { add_core_of = ROOT }
@@ -8822,9 +8925,9 @@ form_turkestan_category = {
 			}
 			
 			add_ideas = soldiers_of_the_steppe
-            #add_ideas = generic_recent_political_unification
-			#add_ideas = generic_recent_army_unification
-			#add_ideas = generic_recent_economic_unification				
+            add_ideas = generic_recent_political_unification
+            add_ideas = generic_recent_army_unification
+            add_ideas = generic_recent_economic_unification				
 			hidden_effect = {
 				news_event = { id = nsb_news.3 hours = 6 }
 				set_global_flag = form_turkestan_flag
@@ -8900,9 +9003,9 @@ form_mountainous_republic_category = {
 			233 = { add_core_of = ROOT }
 			
 			
-            #add_ideas = generic_recent_political_unification
-			#add_ideas = generic_recent_army_unification
-			#add_ideas = generic_recent_economic_unification	
+            add_ideas = generic_recent_political_unification
+            add_ideas = generic_recent_army_unification
+            add_ideas = generic_recent_economic_unification	
 			
 			hidden_effect = { 
 				news_event = { id = nsb_news.301 hours = 8 }
@@ -8970,9 +9073,9 @@ form_transcaucasus_category = {
 			229 = { add_core_of = ROOT }
 			
 			
-            #add_ideas = generic_recent_political_unification
-			#add_ideas = generic_recent_army_unification
-			#add_ideas = generic_recent_economic_unification	
+            add_ideas = generic_recent_political_unification
+            add_ideas = generic_recent_army_unification
+            add_ideas = generic_recent_economic_unification	
 			
 			hidden_effect = { 
 				news_event = { id = nsb_news.302 hours = 8 }
@@ -9029,9 +9132,9 @@ form_transcaucasus_category = {
 			# Gilan
 			420 = { add_core_of = ROOT }
 			
-            #add_ideas = generic_recent_political_unification
-			#add_ideas = generic_recent_army_unification
-			#add_ideas = generic_recent_economic_unification	
+            add_ideas = generic_recent_political_unification
+            add_ideas = generic_recent_army_unification
+            add_ideas = generic_recent_economic_unification	
 			
 			hidden_effect = { 
 				set_global_flag = azeris_united_flag
@@ -9098,9 +9201,9 @@ form_transcaucasus_category = {
 			# Gagestan
 			232 = { add_core_of = ROOT }
 			
-            #add_ideas = generic_recent_political_unification
-			#add_ideas = generic_recent_army_unification
-			#add_ideas = generic_recent_economic_unification	
+            add_ideas = generic_recent_political_unification
+            add_ideas = generic_recent_army_unification
+            add_ideas = generic_recent_economic_unification	
 			
 			hidden_effect = { 
 				set_global_flag = northern_caucasus_claimed_flag
@@ -9155,9 +9258,9 @@ form_transcaucasus_category = {
 			# Van
 			800 = { add_core_of = ROOT }
 			
-            #add_ideas = generic_recent_political_unification
-			#add_ideas = generic_recent_army_unification
-			#add_ideas = generic_recent_economic_unification	
+            add_ideas = generic_recent_political_unification
+            add_ideas = generic_recent_army_unification
+            add_ideas = generic_recent_economic_unification	
 			
 			hidden_effect = { 
 				set_global_flag = anatolians_liberated_flag
@@ -9593,9 +9696,9 @@ form_siberia_category = {
 			563 = { add_core_of = ROOT }
 			
 			
-            #add_ideas = generic_recent_political_unification
-			#add_ideas = generic_recent_army_unification
-			#add_ideas = generic_recent_economic_unification	
+            add_ideas = generic_recent_political_unification
+            add_ideas = generic_recent_army_unification
+            add_ideas = generic_recent_economic_unification	
 			
 			hidden_effect = { 
 			
@@ -9993,9 +10096,9 @@ form_idel_ural_category = {
 			651 = { add_core_of = ROOT }
 			
 			
-            #add_ideas = generic_recent_political_unification
-			#add_ideas = generic_recent_army_unification
-			#add_ideas = generic_recent_economic_unification	
+            add_ideas = generic_recent_political_unification
+            add_ideas = generic_recent_army_unification
+            add_ideas = generic_recent_economic_unification	
 			
 			hidden_effect = { 
 				
@@ -10126,7 +10229,9 @@ form_ethiopian_empire_category  = {
 
 		available = {
 			controls_all_ethiopian_core_states = yes 
-			controls_state = 454 # Palestine 
+			controls_state = 454 
+			controls_state = 966
+			controls_state = 949
 			controls_state = 1016
 			controls_state = 1017
 			controls_state = 453 # Siniai
@@ -10350,9 +10455,9 @@ form_east_africa_category = {
 			
 			#add_ideas = soldiers_of_the_steppe
 
-			#add_ideas = generic_recent_political_unification
-			#add_ideas = generic_recent_army_unification
-			#add_ideas = generic_recent_economic_unification				
+			add_ideas = generic_recent_political_unification
+			add_ideas = generic_recent_army_unification
+			add_ideas = generic_recent_economic_unification				
 			hidden_effect = { 
 
 				
@@ -11120,6 +11225,7 @@ greater_italy_category = {
 		}
 
 		available = {
+			has_completed_focus = ITA_towards_a_greater_italy
 			custom_trigger_tooltip = {
 				tooltip = greater_italy_required_states
 				controls_state = 852 # Istria
@@ -11142,6 +11248,33 @@ greater_italy_category = {
 			custom_trigger_tooltip = {
 				tooltip = greater_italy_required_other_states 
 				AND = {
+					OR = {
+						ITA = { 
+						controls_state = 1 # Corsica 
+						}
+						any_country = {
+							is_subject_of = ITA
+							controls_state = 1 # Corsica
+						}
+					}
+					OR = {
+						ITA = { 
+						controls_state = 846 # Ticino 
+						}
+						any_country = {
+							is_subject_of = ITA
+							controls_state = 846 # Ticino
+						}
+					}
+					OR = {
+						ITA = { 
+						controls_state = 735 # Savoy 
+						}
+						any_country = {
+							is_subject_of = ITA
+							controls_state = 735 # Savoy
+						}
+					}
 					OR = {
 						ITA = { 
 						controls_state = 163 # Zara 
@@ -11167,6 +11300,24 @@ greater_italy_category = {
 						any_country = {
 							is_subject_of = ITA
 							controls_state = 853 # Ljubljana
+						}
+					}
+					OR = {
+						ITA = { 
+						controls_state = 116 # Malta 
+						}
+						any_country = {
+							is_subject_of = ITA
+							controls_state = 116 # Malta
+						}
+					}
+					OR = {
+						ITA = { 
+						controls_state = 182 # Crete 
+						}
+						any_country = {
+							is_subject_of = ITA
+							controls_state = 182 # Crete
 						}
 					}
 					OR = {
@@ -11203,116 +11354,47 @@ greater_italy_category = {
 			
 			hidden_effect = { 
 
+				# Corsica
+				ITA = {
+					transfer_state = 1
+				}
+				1 = { 
+					add_core_of = ROOT
+					set_state_name = ITA_italian_corsica_name
+				}
+				set_province_name = {
+				    id = 3838 
+				    name = ITA_italian_ajaccio_name   
+				} 
+				
+				# Ticino
+				ITA = {
+					transfer_state = 846
+				}
+				846 = { add_core_of = ROOT }
+				
+				# Savoy
+				ITA = {
+					transfer_state = 735
+				}
+				735 = { 
+					add_core_of = ROOT
+					set_state_name = ITA_italian_savoy_name
+				}
+				set_province_name = {
+				    id = 9909 
+				    name = ITA_italian_nice_name
+				} 
+				set_province_name = {
+				    id = 778  
+				    name = ITA_italian_annecy_name
+				} 
+				 
 				# Zara
 				ITA = {
 					transfer_state = 163
 				} 
 				163 = { add_core_of = ROOT }
-
-				ITA = {
-					transfer_state = 102
-				} 
-				102 = { add_core_of = ROOT }
-
-				ITA = {
-					transfer_state = 956
-				} 
-				956 = { add_core_of = ROOT }
-
-				ITA = {
-					transfer_state = 109
-				} 
-				109 = { add_core_of = ROOT }
-
-				ITA = {
-					transfer_state = 958
-				} 
-				958 = { add_core_of = ROOT }
-
-				ITA = {
-					transfer_state = 961
-				} 
-				961 = { add_core_of = ROOT }
-
-				ITA = {
-					transfer_state = 959
-				} 
-				959 = { add_core_of = ROOT }
-
-				ITA = {
-					transfer_state = 962
-				} 
-				962 = { add_core_of = ROOT }
-
-				ITA = {
-					transfer_state = 804
-				} 
-				804 = { add_core_of = ROOT }
-
-				ITA = {
-					transfer_state = 45
-				} 
-				45 = { add_core_of = ROOT }
-
-				ITA = {
-					transfer_state = 952
-				} 
-				952 = { add_core_of = ROOT }
-
-				ITA = {
-					transfer_state = 107
-				} 
-				107 = { add_core_of = ROOT }
-
-				ITA = {
-					transfer_state = 963
-				} 
-				963 = { add_core_of = ROOT }
-
-				ITA = {
-					transfer_state = 105
-				} 
-				105 = { add_core_of = ROOT }
-
-				ITA = {
-					transfer_state = 802
-				} 
-				802 = { add_core_of = ROOT }
-
-				ITA = {
-					transfer_state = 953
-				} 
-				953 = { add_core_of = ROOT }
-
-				ITA = {
-					transfer_state = 108
-				} 
-				108 = { add_core_of = ROOT }
-
-				ITA = {
-					transfer_state = 803
-				} 
-				803 = { add_core_of = ROOT }
-
-				ITA = {
-					transfer_state = 106
-				} 
-				106 = { add_core_of = ROOT }
-
-				ITA = {
-					transfer_state = 950
-				} 
-				950 = { add_core_of = ROOT }
-
-				ITA = {
-					transfer_state = 104
-				} 
-				104 = { add_core_of = ROOT }
-
-				ITA = {
-					transfer_state = 764
-				} 
-				764 = { add_core_of = ROOT }
 				
 				# Dalmatia
 				ITA = {
@@ -11344,6 +11426,29 @@ greater_italy_category = {
 				    name = ITA_italian_ljubljana_name
 				}
 
+				# Malta
+				ITA = {
+					transfer_state = 116
+				}
+				116 = { add_core_of = ROOT }
+
+				# Crete
+				ITA = {
+					transfer_state = 182
+				}
+				182 = { 
+					add_core_of = ROOT 
+					set_state_name = ITA_italian_crete_name
+				}
+				set_province_name = {
+				    id = 12058  
+				    name = ITA_italian_chania_name 
+				} 
+				set_province_name = {
+				    id = 9940  
+				    name = ITA_italian_heraklion_name 
+				} 
+
 				# Dodecaneso
 				ITA = {
 					transfer_state = 164
@@ -11351,13 +11456,6 @@ greater_italy_category = {
 				164 = { add_core_of = ROOT }
 
 				news_event = { id = bba_italian_formables_news.1 hours = 8 }	
-
-				#Albania
-				ITA = {
-					910 = { add_core_of = ROOT }
-					44 = { add_core_of = ROOT }
-					805 = { add_core_of = ROOT }
-				}
 
 				set_global_flag = greater_italy_flag
 

@@ -68,7 +68,6 @@ recruit_character = SOV_pavel_milyukov
 recruit_character = SOV_aleksandr_verkhovsky
 recruit_character = SOV_sofia_panina
 recruit_character = SOV_konstantin_rodzayevsky
-recruit_character = SOV_ofournet
 
 
 recruit_character = SOV_aleksandr_vasilevsky
@@ -411,7 +410,7 @@ if = {
 
 #Initialize character flags Part II (aka who's what)
 SOV_lev_trotsky = {
-	set_character_flag = SOV_aligned_left_opposition_flag #Probably not needed, but just in case
+	set_character_flag = SOV_aligned_left_opposition_flag #Probably not needed, but just in case ;)
 }
 SOV_ivan_smirnov = {
 	set_character_flag = SOV_aligned_left_opposition_flag
@@ -976,13 +975,13 @@ set_technology = {
 	
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	interwar_antiair = 1
 	tech_recon = 1
 	tech_support = 1		
 	tech_engineers = 1
 	tech_military_police = 1
 	tech_mountaineers = 1
-	motorised_infantry = 1
+	tech_trucks = 1
+motorised_infantry = 1
 	paratroopers = 1
 	gw_artillery = 1
 	#basic_heavy_tank = 1  # PLACEHOLDER
@@ -1050,6 +1049,7 @@ if = {
 		has_dlc = "No Step Back"
 	}
 	set_technology = {
+		gwtank_chassis = 1
 		basic_light_tank_chassis = 1
 		improved_light_tank_chassis = 1
 		basic_heavy_tank_chassis = 1
@@ -1339,7 +1339,7 @@ if = {
 			tank_nsb_armor_upgrade = 1
 		}
 		obsolete = yes
-		icon = "gfx/interface/technologies/gwtank.dds"
+		icon = "gfx/interface/equipmentdesigner/tanks/designer/lamp_SOV/light_0/sov_t27.dds"
 	}
 
 	create_equipment_variant = {
@@ -1359,7 +1359,7 @@ if = {
 			tank_nsb_armor_upgrade = 2
 		}
 		obsolete = yes
-		icon = "gfx/interface/technologies/SOV_basic_light_tank.dds"
+		icon = "gfx/interface/equipmentdesigner/tanks/designer/lamp_SOV/light_1/sov_t26_tu_m1933.dds"
 	}
 	create_equipment_variant = {
 		name = "BT-5"
@@ -1376,7 +1376,7 @@ if = {
 			tank_nsb_engine_upgrade = 8
 			tank_nsb_armor_upgrade = 1
 		}
-		icon = "gfx/interface/technologies/SOV_imp_light_tank.dds"
+		icon = "gfx/interface/equipmentdesigner/tanks/designer/lamp_SOV/light_1/sov_bt5.dds"
 	}
 	create_equipment_variant = {
 		name = "BT-7"
@@ -1393,7 +1393,7 @@ if = {
 			tank_nsb_engine_upgrade = 10
 			tank_nsb_armor_upgrade = 2
 		}
-		icon = "GFX_SOV_improved_light_tank_medium"
+		icon = "gfx/interface/equipmentdesigner/tanks/designer/lamp_SOV/light_2/sov_bt7_1.dds"
 	} #T-26 first in line so AI produces these instead so they can field more light tanks fyi
 	create_equipment_variant = { #Engine improvements over first gen mod. 1933. Produced as "mod. 1933" but these had upgrades over parents compared to first gen mod. 1933
 		name = "T-26 mod. 1933"
@@ -1411,7 +1411,7 @@ if = {
 			tank_nsb_engine_upgrade = 3
 			tank_nsb_armor_upgrade = 2
 		}
-		icon = "gfx/interface/technologies/SOV_basic_light_tank.dds"
+		icon = "gfx/interface/equipmentdesigner/tanks/designer/lamp_SOV/light_1/sov_t26_m1933.dds"
 	}
 
 	create_equipment_variant = {
@@ -1432,7 +1432,7 @@ if = {
 			tank_nsb_armor_upgrade = 3
 			tank_nsb_engine_upgrade = 9
 		}
-		icon = "gfx/interface/technologies/SOV_basic_heavy_tank.dds"
+		icon = "gfx/interface/equipmentdesigner/tanks/designer/lamp_SOV/medium_0/sov_t28_m1933.dds"
 	}
 	create_equipment_variant = {
 		name = "T-35"
@@ -1453,7 +1453,7 @@ if = {
 			tank_nsb_armor_upgrade = 3
 			tank_nsb_engine_upgrade = 10
 		}
-		icon = "gfx/interface/technologies/SOV_basic_heavy_tank.dds"
+		icon = "gfx/interface/equipmentdesigner/tanks/designer/lamp_SOV/heavy_0/sov_t35_m1935.dds"
 	}
 }
 

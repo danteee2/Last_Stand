@@ -27,13 +27,12 @@ ENG_alternate_democratic_plan = {
 		shadow_scheme_focus
 		air_defense_focus
 		radar_focus
-		uk_industrial_focus
+		ENG_Provoke_british_patriotism
 		ENG_steady_as_she_goes
 		ENG_maintaining_imperial_integrity
 		general_rearmament_focus
 		royal_ordinance_focus
 		uk_small_arms_focus
-		uk_extra_tech_slot
 		ENG_motion_of_no_confidence
 		ENG_no_further_appeasement
 		ENG_prepare_for_the_inevitable

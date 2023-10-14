@@ -3,7 +3,7 @@ state={
 	name="STATE_966"
 
 	history={
-		owner = MPL
+		owner = ENG
 		buildings = {
 			infrastructure = 3 #was 5
 		}
@@ -13,8 +13,7 @@ state={
 		victory_points = {
 			7107 1
 		}
-		add_core_of = PAL
-		add_claim_by = ISR
+		add_core_of = CYP
 		set_compliance = 50
 	}
 

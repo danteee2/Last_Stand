@@ -11,6 +11,7 @@
  #focuses
 
  LIE_adressing_liechtensteins_future:0 "Adressing [ROOT.GetNonIdeologyName]'s future"
+ liechtenstein.18.t:0 "Germany Demands"
  LIE_adressing_liechtensteins_future_desc:0 ""
  LIE_maintain_international_neutrality:0 "The Way of [ROOT.GetNeutralParty]" 
  LIE_maintain_international_neutrality_desc:0 ""

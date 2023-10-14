@@ -4,7 +4,7 @@ state={
 	name="STATE_461"
 	manpower = 3197719
 	
-	state_category = developed_urban
+	state_category = rural
 
 	#resources = {
 	#	#oil = 1 #oil field near Petitjean (auj. Sidi Kacem) exploited by the SOCIÉTÉ CHÉRIFIENNE DES PÉTROLES
@@ -20,11 +20,11 @@ state={
 			11987 3
 		}
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 2
+			infrastructure = 2 #was 3
+			industrial_complex = 1
 			air_base = 4
 			7069 = {
-				naval_base = 2
+				naval_base = 4
 			}
 		}
 		add_core_of = ALG

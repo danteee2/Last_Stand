@@ -22,13 +22,13 @@ JAP_manchukuo_player_plan = {
 
 	focus_factors = {
 		JAP_the_manchurian_project = 5
-		JAP_expand_manchurian_railways = 5
+		JAP_factory_manchu = 5
 		JAP_light_industry_development = 5
 		JAP_heavy_industry_development = 5
 		JAP_expand_the_showa_steel_works = 5
 		JAP_japanese_settlement = 5
-		JAP_build_up_the_manchurian_army = 5
-		JAP_create_a_manchurian_imperial_air_force = 5
+		JAP_resource_manchu =  = 5
+		JAP_expand_the_showa_steel_works = 5
 	}
 
 	ai_strategy = {
@@ -74,7 +74,7 @@ JAP_manchukuo_player_historical_plan = {
 		#1936
 		JAP_purge_the_kodoha_faction #March 10 1936
 		JAP_the_manchurian_project #May 20 1936
-		JAP_expand_manchurian_railways #July 30 1936
+		JAP_factory_manchu #July 30 1936
 		JAP_light_industry_development #October 10 1936
 		JAP_heavy_industry_development #December 20 1936
 		
@@ -279,19 +279,19 @@ JAP_alternate_plan_strike_north = {
 		#1937
 		JAP_bicycle_battalions #70
 		JAP_supremacy_of_will #70
-		JAP_national_mobilization_law #70
-		JAP_national_research_policy #70
+		JAP_break_up_the_big_four #70
+		JAP_emperors_unitversity #70
 		JAP_imperial_arsenals #70
 		
 		#1938
-		JAP_modern_shogunate #70
-		JAP_national_defense_state #70
-		JAP_prepare_for_war_with_the_soviet_union #70
+		JAP_showa_restoration #70
+		JAP_break_up_Sumimoto #70
+		JAP_stirke_north_doctrine #70
 		JAP_the_manchurian_project #70
 		JAP_fortify_the_border #70
 		
 		#1939
-		JAP_expand_manchurian_railways #70
+		JAP_factory_manchu #70
 		JAP_expand_the_showa_steel_works #70
 		JAP_heavy_industry_development #70
 		JAP_fighter_modernization #70
@@ -300,23 +300,15 @@ JAP_alternate_plan_strike_north = {
 		
 		#1940
 		JAP_new_naval_estimates #70
-		JAP_join_the_london_naval_treaty #70
-		JAP_non_aggression_pact_with_china #70
-		JAP_bomber_modernization #70
-		JAP_build_up_the_manchurian_army #70
+		JAP_cultural_dominance #70
 		
 		#1941
-		JAP_create_a_manchurian_imperial_air_force #70
 		JAP_armored_divisions #70
 		JAP_pack_guns #35
 		JAP_seek_alliances #35
-		JAP_preemptive_war #70
-		JAP_spiritual_mobilization #70
 		
 		#1942
-		JAP_warrior_spirit #70
-		JAP_establish_the_northern_resource_area #70
-		JAP_german_rocketry #70
+		JAP_emperors_economy
 	}
 
 	
@@ -392,7 +384,6 @@ JAP_alternate_plan_democratic = {
 		JAP_supremacy_of_technology #70
 		JAP_liberate_manchuria #70
 		JAP_anti_communist_bulwark #70
-		JAP_anti_communist_volunteers #70
 	}
 
 	

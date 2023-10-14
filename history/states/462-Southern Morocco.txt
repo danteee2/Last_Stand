@@ -4,12 +4,13 @@ state={
 	name="STATE_462"
 	manpower = 1865552
 	
-	state_category = rural
+	state_category = wasteland
 
 	history={
 		owner = FRA
 		buildings = {
-			infrastructure = 4
+			infrastructure = 1
+			air_base = 1
 		}
 		victory_points = {
 			4108 5

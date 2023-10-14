@@ -20,6 +20,7 @@ state = {
 			}
 		}
 		add_core_of = ITA
+		add_core_of = YUG
 		#LBV
 
 		#CONTROLLED BY ITALY AT GAME START -> ITALIAN NAMES

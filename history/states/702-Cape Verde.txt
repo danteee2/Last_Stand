@@ -7,7 +7,7 @@ state={
 
 	history={
 		owner = POR
-		add_core_of = CYP
+		add_core_of = CAP
 		add_claim_by = GNB
 		buildings = {
 			infrastructure = 2

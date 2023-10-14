@@ -61,7 +61,7 @@
 
  BBA_italo_ethiopian_war_events.100.t:0 "A Request from [FROM.GetNameDef]"
  BBA_italo_ethiopian_war_events.100.desc:0 "The [FROM.GetAdjective] ambassador has approached the government with a formal request from [FROM.GetLeader] to be allowed to set up a temporary  Government in Exile here in [ROOT.GetName] if the war against [ITA.GetName] goes badly. Accepting would definitely make maintaining good relations with [ITA.GetName] more difficult."
- #BBA_italo_ethiopian_war_events.100.a:0 "They are welcome here"
+ BBA_italo_ethiopian_war_events.100.a:0 "They are welcome here"
  BBA_italo_ethiopian_war_events.100.b:0 "We cannot allow this"
 
  BBA_italo_ethiopian_war_events.101.t:0 "[FROM.GetNameDefCap] Accepts Request to Host Government"

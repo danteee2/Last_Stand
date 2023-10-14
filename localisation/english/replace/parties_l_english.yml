@@ -45,8 +45,6 @@
  centrism_desc:1 "Centrism is a form of government that wants to achieve common-sense solutions that appropriately address current and future needs, support public trust, and serve the common good with consideration of risk and capacity in the context of these needs."
  GER_fascism_party:0 "NSDAP"
  GER_fascism_party_long:0 "Nationalsozialistische Deutsche Arbeiterpartei"
- GER_germania_party_long:0 "Schutzstaffel"
- GER_germania_party:0 "SS"
  GER_communism_party:0 "KPD - SPD - KPD(O)"
  GER_communism_party_long:0 "Kommunistische Partei Deutschlands - Sozialdemokratische Partei Deutschlands - Kommunistische Partei Deutschlands (Op)"
  GER_democratic_party:1 "Zentrum"
@@ -378,8 +376,8 @@
  NIC_democratic_party_long:0 "Partido Liberal Nacionalista"
  COS_democratic_party:0 "PRN"
  COS_democratic_party_long:0 "Partido Republicano Nacional" 
- COS_communism_party:0 "PVP"
- COS_communism_party_long:0 "Partido Vanguardia Popular"
+ COS_communism_party:0 "BOC" #Renamed to PVP in 43
+ COS_communism_party_long:0 "Bloque de Obreros y Campesinos"
  ELS_fascism_party:0 "Pro-Patria"
  ELS_fascism_party_long:0 "Partido Nacional 'Pro-Patria'"
  GUA_democratic_party:0 "PLP"
@@ -549,7 +547,7 @@
  ISR_communism_party_long:0 "Mifleget Poalim Hashomer Hatsair"
  ISR_democratic_party:0 "Mapai"
  ISR_democratic_party_long:0 "Mifleget Poalei Eretz Yisrael"
- ISR_fascism_party:0 "Brit HaBirionim"
+ ISR_fascism_party:0 "Irgun - Stern Gang"
  ISR_neutrality_party:0 "Hatzohar"
  ISR_neutrality_party_long:0 "Brit HaTzionim HaRevizionistim"
  VIN_fascism_party:0 "Vietnamese Restoration League" #or Reformation Society   

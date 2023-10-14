@@ -22,12 +22,23 @@ state={
 			}
 		}
 		add_core_of = CAN
-		add_core_of = QBC
 		victory_points = {
 			4345 20
 		}
 		victory_points = {
-			12149 3
+			12149 5
+		}		
+		victory_points = {
+			10230 3
+		}		
+		victory_points = {
+			7291 3
+		}
+		victory_points = {
+			7345 1
+		}
+		victory_points = {
+			7289 1
 		}
 		victory_points = {
 			4422 1

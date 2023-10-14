@@ -2,7 +2,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "st_open_container"
-		position = { x = 1130 y = 4 }
+		position = { x = 1100 y = 3 }
 
 		buttonType = {
 			name = "open_ST"

@@ -2333,7 +2333,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			factor = 30		
+			factor = 10		
 		}
 
 		bypass = {
@@ -2352,63 +2352,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 820 }
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 819 }
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 818 }
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 817 }
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2470,7 +2414,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 50
 			remove_ideas = MON_weak_currency_idea
 			MON_mongol_bank_funds_increase = yes
 			unlock_decision_category_tooltip = MON_strengthen_mongolbank_category
@@ -2541,7 +2485,7 @@ focus_tree = {
 			MON_mongol_bank_funds_decrease = yes
 			add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 2
+				bonus = 1
 				uses = 2
 				category = industry
 			}
@@ -2567,8 +2511,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = MON_study_foreign_radio_equipment
-				bonus = 2
-				uses = 2
+				bonus = 1
+				uses = 1
 				category = electronics
 			}
 		}
@@ -2711,10 +2655,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2752,7 +2696,7 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 8
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -2864,10 +2808,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2881,10 +2825,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2922,7 +2866,7 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -2956,7 +2900,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 100	
+			factor = 50		
 		}
 
 		completion_reward = {
@@ -2965,28 +2909,18 @@ focus_tree = {
 			add_tech_bonus = {
                 name = industrial_bonus
                 bonus = 1
-                uses = 2
+                uses = 1
                 category = steel_tech
             }			
 			add_resource = {
 				type = steel
-				amount = 20
+				amount = 3
 				state = 820
 			}
 			add_resource = {
 				type = steel
-				amount = 16
+				amount = 2
 				state = 819
-			}
-			add_resource = {
-				type = aluminium
-				amount = 16
-				state = 819
-			}
-			add_resource = {
-				type = tungsten
-				amount = 32
-				state = 817
 			}
 		}
 		search_filters = {	FOCUS_FILTER_INDUSTRY }
@@ -3335,10 +3269,10 @@ focus_tree = {
 					}
 					has_state_flag = MON_invested_into_state
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -3607,10 +3541,10 @@ focus_tree = {
 					}
 					has_state_flag = MON_invested_into_state
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -4380,7 +4314,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_workers_focus
-		icon = GFX_tblra_union_agreement
+		icon = GFX_BEL_union_agreement
 		prerequisite = { focus = MON_establish_socialist_society }
 		x = -1
 		y = 1
@@ -10334,7 +10268,7 @@ focus_tree = {
 
 	focus = {
 		id = MON_nationalism
-		icon = GFX_goal_generic_generic_political
+		icon = GFX_goal_generic_political
 		prerequisite = { focus = MON_cooperation_with_kuomintang }
 		x = 0
 		y = 1
@@ -12435,147 +12369,6 @@ focus_tree = {
 			custom_effect_tooltip = MON_tree_is_in_development_tt
 		}
 		search_filters = { FOCUS_FILTER_INFLUENCE_INCREASE }
-	}
-	focus = {
-		id = MON_economic_boom
-		icon = GFX_goal_generic_growing_economy
-		x = 5
-		y = 4
-		relative_position_id = MON_transfer_the_funds_of_mongolbank
-		cost = 10
-		prerequisite = { focus = MON_study_foreign_radio_equipment }
-		ai_will_do = {
-			factor = 30
-		}
-		available = {
-			date > 1940.01.01
-		}
-
-		completion_reward = {
-		add_timed_idea = {
-			idea = MON_economic_boom_blue
-			days = 365
-		}
-			
-
-		}
-		search_filters = {	FOCUS_FILTER_INDUSTRY }
-	}
-	focus = {
-		id = MON_mongolian_spheres_of_influence
-		icon = GFX_goal_generic_communism
-		x = -14
-		y = 1
-		realative_position_id = MON_study_foreign_radio_equipment
-		cost = 10
-		prerequisite = { focus = MON_transfer_the_funds_of_mongolbank}
-
-		ai_will_do = {
-			factor = 0
-		}
-		completion_reward = {
-			add_political_power = -100
-			SIK = {
-				add_opinion_modifier = {
-					target = MON
-					modifier = huge_increase
-				}
-			}
-			TNG = {
-				add_opinion_modifier = {
-					target = MON
-					modifier = huge_increase
-				}
-			}
-			TAN = {
-				add_opinion_modifier = {
-					target = MON
-					modifier = huge_increase
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		}
-	focus = {
-		id = MON_integration_of_xinjiangs_workers
-		icon = GFX_goal_CHI_sheng_shikai_issue
-		x = -14
-		y = 2
-		realative_position_id = MON_study_foreign_radio_equipment
-		cost = 10
-		prerequisite = { focus = MON_mongolian_spheres_of_influence}
-		cancel_if_invalid = yes
-		available = {
-			has_army_manpower = {
-				size > 49999
-			}
-		}
-		ai_will_do = {
-			factor = 30	
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-		add_political_power = -100
-		annex_country = {
-    	target = SIK
-    	transfer_troops = yes
-		}
-		}
-	}
-	focus = {
-		id = MON_liberation_of_the_tunganistan_working_class
-		icon = GFX_goal_CHI_sinkiang
-		x = -14
-		y = 3
-		realative_position_id = MON_study_foreign_radio_equipment
-		cost = 10
-		prerequisite = { focus = MON_integration_of_xinjiangs_workers}
-
-		ai_will_do = {
-			factor = 30	
-		}
-		cancel_if_invalid = yes
-		available = {
-			has_army_manpower = {
-				size > 74999
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-		add_political_power = -100
-		annex_country = {
-    	target = TNG
-    	transfer_troops = yes
-		}
-		}
-		
-	}
-	focus = {
-		id = MON_invite_tuvan_workers
-		icon = GFX_focus_generic_diplomatic_treaty
-		x = -12
-		y = 2
-		realative_position_id = MON_study_foreign_radio_equipment
-		cost = 10
-		prerequisite = { focus = MON_mongolian_spheres_of_influence}
-		cancel_if_invalid = yes
-		available = {
-			has_army_manpower = {
-				size > 49999
-			}
-		}
-
-		ai_will_do = {
-			factor = 30	
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-		add_political_power = -100
-		annex_country = {
-    	target = TAN
-    	transfer_troops = yes
-		}
-		}
 	}
 }
 

@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		add_core_of = JOR
+		add_core_of = Cyp
 		owner = ENG
 		victory_points = {
 			7960 1 

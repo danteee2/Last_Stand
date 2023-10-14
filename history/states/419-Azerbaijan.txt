@@ -1,4 +1,7 @@
 
+
+
+
 state={
 	id=419
 	name="STATE_419"
@@ -13,8 +16,6 @@ state={
 			1896 10 
 		}
 		add_core_of = PER
-		add_core_of = KUR
-		add_core_of = AZR
 
 	}
 

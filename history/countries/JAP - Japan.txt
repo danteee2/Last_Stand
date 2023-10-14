@@ -104,10 +104,11 @@ recruit_character = JAP_kijuro_shidehara
 recruit_character = JAP_koyata_iwasaki
 recruit_character = JAP_minoru_takano
 recruit_character = JAP_kenji_miyamoto
-recruit_character =JAP_machida_chuji
 recruit_character =JAP_miyamoto_yuriko
 
-
+#r56 additional characters
+recruit_character =JAP_machida_chuji
+recruit_character =JAP_ichiro_hatoyama
 
 add_ideas = {
 	state_shintoism
@@ -121,96 +122,6 @@ add_ideas = {
 	JAP_militarism
 }
 
-609 = {
-	start_resistance = yes
-	set_compliance = 15
-	set_resistance = 1
-	set_garrison_strength = 1.0
-}
-
-527 = {
-	start_resistance = yes
-	set_compliance = 15
-	set_resistance = 1
-	set_garrison_strength = 1.0
-}
-
-917 = {
-	start_resistance = yes
-	set_compliance = 15
-	set_resistance = 1
-	set_garrison_strength = 1.0
-}
-
-918 = {
-	start_resistance = yes
-	set_compliance = 15
-	set_resistance = 1
-	set_garrison_strength = 1.0
-}
-
-919 = {
-	start_resistance = yes
-	set_compliance = 15
-	set_resistance = 1
-	set_garrison_strength = 1.0
-}
-
-920 = {
-	start_resistance = yes
-	set_compliance = 15
-	set_resistance = 1
-	set_garrison_strength = 1.0
-}
-
-525 = {
-	start_resistance = yes
-	set_compliance = 15
-	set_resistance = 1
-	set_garrison_strength = 1.0
-}
-
-745 = {
-	start_resistance = yes
-	set_compliance = 15
-	set_resistance = 1
-	set_garrison_strength = 1.0
-}
-
-524 = {
-	start_resistance = yes
-	set_compliance = 15
-	set_resistance = 1
-	set_garrison_strength = 1.0
-}
-
-647 = {
-	start_resistance = yes
-	set_compliance = 15
-	set_resistance = 0
-	set_garrison_strength = 1.0
-}
-
-684 = {
-	start_resistance = yes
-	set_compliance = 15
-	set_resistance = 0
-	set_garrison_strength = 1.0
-}
-
-633 = {
-	start_resistance = yes
-	set_compliance = 15
-	set_resistance = 0
-	set_garrison_strength = 1.0
-}
-
-648 = {
-	start_resistance = yes
-	set_compliance = 15
-	set_resistance = 0
-	set_garrison_strength = 1.0
-}
 
 
 
@@ -242,7 +153,8 @@ set_technology = {
 	tech_support = 1		
 	tech_recon = 1
 	tech_engineers = 1
-	motorised_infantry = 1
+	tech_trucks = 1
+motorised_infantry = 1
 	marines  = 1
 	gw_artillery = 1
 	#basic_heavy_tank = 1  # PLACEHOLDER

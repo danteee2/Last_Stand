@@ -41,11 +41,7 @@ ideas = {
 		#Personality Cult
 		r56i_laws_leadership_cult = {
 
-			available = {
-				NOT = {	
-					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
-				}
-			}
+		
 
 
 			modifier = {
@@ -91,11 +87,7 @@ ideas = {
 		#Secular Institutions
 		r56i_laws_leadership_secular = {
 
-			available = {
-				NOT = {
-					has_global_flag = NATIONAL_CHARACTERS_BLOCKED
-				}
-			}
+	
 			
 			modifier = {
 				democratic_drift = 0.05
@@ -131,7 +123,7 @@ ideas = {
 							ruling_only = yes
 						}					
 				}
-				NOT = {has_global_flag = NATIONAL_CHARACTERS_BLOCKED}
+			
 				NOT = {tag = USA}
 
 			}
