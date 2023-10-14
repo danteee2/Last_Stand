@@ -3,9 +3,9 @@ select_host_country = {
 	group = "HOST TOOL OPTIONS"
 	icon = "GFX_volunteers"
 	default = {
-		name = NONE
-		text = "Disabled"
-		desc = "Host tool is disabled and no host country is selected"
+		name = USA
+		text = "United States"
+		desc = ""
 	}
 	option = {
 		name = AFG
@@ -542,13 +542,6 @@ select_host_country = {
 	option = {
 		name = ENG
 		text = "United Kingdom"
-		desc = ""
-	}
-
-
-	option = {
-		name = USA
-		text = "United States"
 		desc = ""
 	}
 
