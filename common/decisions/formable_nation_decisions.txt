@@ -11225,7 +11225,6 @@ greater_italy_category = {
 		}
 
 		available = {
-			has_completed_focus = ITA_towards_a_greater_italy
 			custom_trigger_tooltip = {
 				tooltip = greater_italy_required_states
 				controls_state = 852 # Istria
@@ -11245,179 +11244,233 @@ greater_italy_category = {
 				controls_state = 115 # Sicilia
 				controls_state = 114 # Sardegna
 			}  
-			complete_effect = {
-				set_cosmetic_tag = greater_italy 
-				
-				custom_effect_tooltip = greater_italy_effect_tooltip
-				
-				add_ideas = ITA_italia_irredenta_achieved
-				
-				hidden_effect = { 
-	
-					# Zara
-					ITA = {
-						transfer_state = 163
-					} 
-					163 = { add_core_of = ROOT }
-	
-					ITA = {
-						transfer_state = 102
-					} 
-					102 = { add_core_of = ROOT }
-	
-					ITA = {
-						transfer_state = 956
-					} 
-					956 = { add_core_of = ROOT }
-	
-					ITA = {
-						transfer_state = 109
-					} 
-					109 = { add_core_of = ROOT }
-	
-					ITA = {
-						transfer_state = 958
-					} 
-					958 = { add_core_of = ROOT }
-	
-					ITA = {
-						transfer_state = 961
-					} 
-					961 = { add_core_of = ROOT }
-	
-					ITA = {
-						transfer_state = 959
-					} 
-					959 = { add_core_of = ROOT }
-	
-					ITA = {
-						transfer_state = 962
-					} 
-					962 = { add_core_of = ROOT }
-	
-					ITA = {
-						transfer_state = 804
-					} 
-					804 = { add_core_of = ROOT }
-	
-					ITA = {
-						transfer_state = 45
-					} 
-					45 = { add_core_of = ROOT }
-	
-					ITA = {
-						transfer_state = 952
-					} 
-					952 = { add_core_of = ROOT }
-	
-					ITA = {
-						transfer_state = 107
-					} 
-					107 = { add_core_of = ROOT }
-	
-					ITA = {
-						transfer_state = 963
-					} 
-					963 = { add_core_of = ROOT }
-	
-					ITA = {
-						transfer_state = 105
-					} 
-					105 = { add_core_of = ROOT }
-	
-					ITA = {
-						transfer_state = 802
-					} 
-					802 = { add_core_of = ROOT }
-	
-					ITA = {
-						transfer_state = 953
-					} 
-					953 = { add_core_of = ROOT }
-	
-					ITA = {
-						transfer_state = 108
-					} 
-					108 = { add_core_of = ROOT }
-	
-					ITA = {
-						transfer_state = 803
-					} 
-					803 = { add_core_of = ROOT }
-	
-					ITA = {
-						transfer_state = 106
-					} 
-					106 = { add_core_of = ROOT }
-	
-					ITA = {
-						transfer_state = 950
-					} 
-					950 = { add_core_of = ROOT }
-	
-					ITA = {
-						transfer_state = 104
-					} 
-					104 = { add_core_of = ROOT }
-	
-					ITA = {
-						transfer_state = 764
-					} 
-					764 = { add_core_of = ROOT }
-					
-					# Dalmatia
-					ITA = {
-						transfer_state = 103
+			custom_trigger_tooltip = {
+				tooltip = greater_italy_required_other_states 
+				AND = {
+					OR = {
+						ITA = { 
+						controls_state = 163 # Zara 
+						}
+						any_country = {
+							is_subject_of = ITA
+							controls_state = 163 # Zara
+						}
 					}
-					103 = { 
-						add_core_of = ROOT 
-						set_state_name = ITA_italian_dalmatia_name
+					OR = {
+						ITA = { 
+						controls_state = 103 # Dalmatia 
+						}
+						any_country = {
+							is_subject_of = ITA
+							controls_state = 103 # Dalmatia
+						}
 					}
-					set_province_name = {
-						id = 3924
-						name = ITA_italian_split_name
-					} 
-					set_province_name = {
-						id = 6889  
-						name = ITA_italian_dubrovnik_name
-					} 
-		 
-					# Ljubljana
-					ITA = {
-						transfer_state = 853
+					OR = {
+						ITA = { 
+						controls_state = 853 # Ljubljana 
+						}
+						any_country = {
+							is_subject_of = ITA
+							controls_state = 853 # Ljubljana
+						}
 					}
-					853 = { 
-						add_core_of = ROOT 
-						set_state_name = ITA_italian_ljubljana_state_name
+					OR = {
+						ITA = { 
+						controls_state = 164 # Dodecaneso 
+						}
+						any_country = {
+							is_subject_of = ITA
+							controls_state = 164 # Dodecaneso
+						}
 					}
-					set_province_name = {
-						id = 9627
-						name = ITA_italian_ljubljana_name
-					}
-	
-					# Dodecaneso
-					ITA = {
-						transfer_state = 164
-					}
-					164 = { add_core_of = ROOT }
-	
-					news_event = { id = bba_italian_formables_news.1 hours = 8 }	
-	
-					#Albania
-					ITA = {
-						910 = { add_core_of = ROOT }
-						44 = { add_core_of = ROOT }
-						805 = { add_core_of = ROOT }
-					}
-	
-					set_global_flag = greater_italy_flag
-	
 				}
 			}
-	
-			ai_will_do = {
-				factor = 500
+			
+			
+			
+		}
+
+		visible = {
+			OR = {
+				original_tag = ITA # Italy
 			}
+			
+			NOT = { has_global_flag = greater_italy_flag }
+			
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = greater_italy 
+			
+			custom_effect_tooltip = greater_italy_effect_tooltip
+			
+			add_ideas = ITA_italia_irredenta_achieved
+			
+			hidden_effect = { 
+
+				# Zara
+				ITA = {
+					transfer_state = 163
+				} 
+				163 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 102
+				} 
+				102 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 956
+				} 
+				956 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 109
+				} 
+				109 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 958
+				} 
+				958 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 961
+				} 
+				961 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 959
+				} 
+				959 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 962
+				} 
+				962 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 804
+				} 
+				804 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 45
+				} 
+				45 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 952
+				} 
+				952 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 107
+				} 
+				107 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 963
+				} 
+				963 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 105
+				} 
+				105 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 802
+				} 
+				802 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 953
+				} 
+				953 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 108
+				} 
+				108 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 803
+				} 
+				803 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 106
+				} 
+				106 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 950
+				} 
+				950 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 104
+				} 
+				104 = { add_core_of = ROOT }
+
+				ITA = {
+					transfer_state = 764
+				} 
+				764 = { add_core_of = ROOT }
+				
+				# Dalmatia
+				ITA = {
+					transfer_state = 103
+				}
+				103 = { 
+					add_core_of = ROOT 
+					set_state_name = ITA_italian_dalmatia_name
+				}
+				set_province_name = {
+				    id = 3924
+				    name = ITA_italian_split_name
+				} 
+				set_province_name = {
+				    id = 6889  
+				    name = ITA_italian_dubrovnik_name
+				} 
+	 
+				# Ljubljana
+				ITA = {
+					transfer_state = 853
+				}
+				853 = { 
+					add_core_of = ROOT 
+					set_state_name = ITA_italian_ljubljana_state_name
+				}
+				set_province_name = {
+				    id = 9627
+				    name = ITA_italian_ljubljana_name
+				}
+
+				# Dodecaneso
+				ITA = {
+					transfer_state = 164
+				}
+				164 = { add_core_of = ROOT }
+
+				news_event = { id = bba_italian_formables_news.1 hours = 8 }	
+
+				#Albania
+				ITA = {
+					910 = { add_core_of = ROOT }
+					44 = { add_core_of = ROOT }
+					805 = { add_core_of = ROOT }
+				}
+
+				set_global_flag = greater_italy_flag
+
+			}
+		}
+
+		ai_will_do = {
+			factor = 500
 		}
 	}
 }
