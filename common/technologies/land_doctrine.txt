@@ -2,10 +2,12 @@ technologies = {
 
 	mobile_warfare = {
 
+
+		
 		doctrine_name = "MOBILE_WARFARE_DOCTRINE"
 
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 1
 
 		xor = { superior_firepower trench_warfare mass_assault r56_guerilla_warfare }
 
@@ -1003,7 +1005,7 @@ technologies = {
 		doctrine_name = "SUPERIOR_FIREPOWER_DOCTRINE"
 
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 1
 
 		xor = { mobile_warfare trench_warfare mass_assault r56_guerilla_warfare }
 
@@ -1873,7 +1875,7 @@ technologies = {
 		doctrine_name = "GRAND_BATTLEPLAN_DOCTRINE"
 
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 1
 
 		xor = { mobile_warfare superior_firepower mass_assault r56_guerilla_warfare }
 
@@ -2763,7 +2765,7 @@ technologies = {
 		doctrine_name = "MASS_ASSAULT_DOCTRINE"
 
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 1
 		xor = { mobile_warfare superior_firepower trench_warfare r56_guerilla_warfare }
 
 		path = {
@@ -2865,7 +2867,6 @@ technologies = {
 			max_organisation = 5
 		}
 
-		army_core_defence_factor = 0.05
 
 
 		path = {
@@ -3424,7 +3425,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		infantry = {
-			default_morale = 0.30
+			default_morale = 0.2
 		}
 		land_reinforce_rate = 0.05
 
@@ -3521,7 +3522,7 @@ technologies = {
 			combat_width = -0.4
 		}
 
-		land_reinforce_rate = 0.15
+		land_reinforce_rate = 0.05
 
 		path = {
 			leads_to_tech = guerilla_warfare
@@ -3616,7 +3617,7 @@ technologies = {
 		doctrine_name = "ASYMMETRICAL_WARFARE_DOCTRINE"
 
 		xp_research_type = army
-		xp_unlock_cost = 100
+		xp_unlock_cost = 1
 
 		xor = { superior_firepower trench_warfare mass_assault mobile_warfare }
 		
