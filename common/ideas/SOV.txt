@@ -1156,7 +1156,24 @@ ideas = {
 				intelligence_agency_defense = 0.5
 			}
 		}
-
+		SOV_under_the_bear = {
+			allowed = {
+				original_tag = SOV
+				always = no
+			}
+			available = {
+				original_tag = SOV
+			}
+			removal_cost = -1
+			picture = SOV_soviet_railways
+			modifier = {
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.075
+				stability_factor = 0.1
+				economic_surplus = 100
+			}
+		}
 		LS_for_the_motherland = {
 			allowed = {
 				original_tag = SOV

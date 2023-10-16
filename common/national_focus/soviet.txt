@@ -2060,10 +2060,10 @@ focus_tree = {
 		id = SOV_the_ussr_academy_of_sciences
 
 		icon = GFX_goal_SOV_education_initiative
-		prerequisite = { focus = SOV_eastern_development }
-		prerequisite = { focus = SOV_develop_the_urals }
+		prerequisite = { focus = SOV_unleashing_the_bears_prosperity }
+	
 		x = 1
-		y = 1
+		y = 2
 		relative_position_id = SOV_eastern_development
 		cost = 10
 		
@@ -2469,8 +2469,8 @@ focus_tree = {
 
 		icon = GFX_focus_SOV_merge_plants
 		prerequisite = { focus = SOV_modernize_aircraft_facilities }
-		x = -1
-		y = 2
+		x = 0
+		y = 3
 		relative_position_id = SOV_modernize_aircraft_facilities
 		cost = 5
 
@@ -27456,6 +27456,7 @@ focus = {
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
+	#last stand additions
 	focus = {
 		id = SOV_for_the_motherland
 		icon = GFX_goal_generic_red_army
@@ -27504,6 +27505,41 @@ focus = {
 			}
 	}
 }
+
+
+focus = {
+	id = SOV_unleashing_the_bears_prosperity
+	icon = GFX_focus_SWE_the_beast_stirs
+	cost = 10.00
+	prerequisite = { focus = SOV_develop_the_urals }
+	prerequisite = { focus = SOV_eastern_development }
+	relative_position_id = SOV_finish_the_five_year_plan
+	x = 4
+	y = 3
+	
+	available = {
+		
+	}
+	
+	completion_reward = {
+		
+
+		add_ideas = SOV_under_the_bear
+
+
+		every_military_industrial_organization = {
+			tooltip = every_mio_tt
+			add_mio_funds_gain_factor = 0.25
+		}
+	}
+}
+
+
+
+
+
+
+
 ###  ###  ##  ###  ##  #  #  ##  #    	   ## ### #  # ### ###         
 #  # #   #     #  #  # ## # #  # #    	  #    #  #  # #   #   {~._.~} 
 ###  ##  # ##  #  #  # # ## #### #    	   #   #  #  # ##  ##   ( Y )  

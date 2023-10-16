@@ -405,3 +405,7 @@ LS_for_the_motherland:0 "For The Motherland!"
 # LAST STAND SOVIET IDEAS - ADAMSKI (ORGANIZE EVERYTHING RAAAAAAAAAAH)
 SOV_for_the_motherland:0 "§RFor The Motherland"
 SOV_for_the_motherland_desc:0 "The Fascists are at Moscow's doorstep, only the willpower of the motherland and her red army can save us now!"
+SOV_unleashing_the_bears_prosperity_desc:0 "As the end of the five-year plan approaches, the Russian Economic Spirit focus marks a critical turning point. It signifies our commitment to revitalizing the Soviet economy, casting aside stagnation and embracing innovation. Under the emblem of the iconic bear and the Soviet flag, we embark on a journey to diversify production, embrace cutting-edge technologies, and expand our markets."
+SOV_unleashing_the_bears_prosperity:0 "Unleashing the Bear's Prosperity"
+ SOV_under_the_bear_desc:0 "This embodies our determination to prove that socialism not only drives political change but can also usher in a resurgent, thriving economy. The future beckons, and with this, we are poised to seize it."
+ SOV_under_the_bear:0 "Under The Bear"
