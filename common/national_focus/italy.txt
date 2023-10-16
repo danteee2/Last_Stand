@@ -1028,18 +1028,7 @@ focus_tree = {
 		relative_position_id = ITA_ministry_of_italian_africa
 		cost = 5
 		available = {
-			OR = {
-				any_controlled_state = {
-					is_core_of = LBA
-					is_fully_controlled_by = ROOT
-				}
-				any_subject_country = { #FOR PUPPETS
-					any_controlled_state = {
-						is_core_of = LBA
-						is_fully_controlled_by = PREV
-					}
-				}
-			}
+			owns_state = 448
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
