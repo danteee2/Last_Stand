@@ -88,7 +88,7 @@ ideas = {
 
 			modifier = {
 			production_speed_buildings_factor = -0.1
-			consumer_goods_factor = 0.05
+			consumer_goods_factor = 0.15
 			industrial_capacity_factory = -0.1
 			political_power_cost = 0.75
 			}	
@@ -108,7 +108,7 @@ ideas = {
 
 			modifier = {
 			production_speed_buildings_factor = -0.05
-			consumer_goods_factor = 0.025
+			consumer_goods_factor = 0.075
 			industrial_capacity_factory = -0.05 
 			political_power_cost = 0.50
 			}	
@@ -128,7 +128,7 @@ ideas = {
 
 			modifier = {
 				production_speed_buildings_factor = 0
-				consumer_goods_factor = 0
+				consumer_goods_factor = 0.05
 				industrial_capacity_factory = -0.05
 				political_power_cost = 0.25
 				}	
@@ -168,7 +168,7 @@ ideas = {
 
 			modifier = {
 				production_speed_buildings_factor = 0.1
-				consumer_goods_factor = -0.025
+				consumer_goods_factor = -0.075
 				industrial_capacity_factory = 0.1
 				political_power_cost = 0
 				global_building_slots_factor = 0.25
