@@ -152,7 +152,7 @@ buildings = {
 
 	synthetic_refinery = {
 		show_on_map = 1
-		base_cost = 14500
+		base_cost = 9650
 		icon_frame = 10
 		#local_resources_oil = 1 # May use local_resources_ + any resource name
 		local_resources_rubber = 1 # May use local_resources_ + any resource name
@@ -163,12 +163,12 @@ buildings = {
 		infrastructure_construction_effect = yes
 		
 		show_modifier = yes
-		fuel_gain_from_states = 2.0 #per hour
+		fuel_gain_from_states = 6.0 #per hour
 	}
 
 	fuel_silo = {
 		show_on_map = 1
-		base_cost = 5000
+		base_cost = 7000
 		icon_frame = 14
 		#max_level = 1
 		shares_slots = yes
@@ -177,7 +177,7 @@ buildings = {
 		fuel_silo = yes
 		
 		show_modifier = yes
-		max_fuel_building = 100.0 #k
+		max_fuel_building = 250.0 #k
 	}
 
 	radar_station = {
