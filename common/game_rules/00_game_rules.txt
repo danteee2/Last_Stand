@@ -3437,9 +3437,9 @@ maximum_fort_level = {
 	group = "RULE_GROUP_GAMEPLAY"
 	icon = "GFX_maximum_fort_level"
 	option = {
-		name = normal
-		text = "RULE_OPTION_NORMAL"
-		desc = "RULE_MAXIMUM_FORT_LEVEL_NORMAL_DESC"
+		name = level_10
+		text = "RULE_OPTION_5"
+		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
 	}
 	option = {
 		name = level_1
@@ -3462,9 +3462,9 @@ maximum_fort_level = {
 		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
 	}
 	option = {
-		name = level_5
-		text = "RULE_OPTION_5"
-		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
+		name = normal
+		text = "RULE_OPTION_NORMAL"
+		desc = "RULE_MAXIMUM_FORT_LEVEL_NORMAL_DESC"
 	}
 	option = {
 		name = level_6
