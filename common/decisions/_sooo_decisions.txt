@@ -30,6 +30,7 @@ sooo_player_to_ai_to_player = {
 			add_ideas = sooo_player_was_here
 			set_rule = { #DLC
 					can_not_declare_war = no
+					can_create_factions = yes
 				}
 			
 			country_lock_all_division_template = no	
