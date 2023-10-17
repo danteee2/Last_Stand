@@ -168,9 +168,6 @@
 			ship = { name = "HMS Active" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "A/B/C/D Class" } } }	
 			ship = { name = "HMS Wishart" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class"} } }
 			ship = { name = "HMS Wrestler" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class"} } }
-			ship = { name = "HMS Colombo" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
-			ship = { name = "HMS Capetown" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
-			ship = { name = "HMS Wryneck" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class"} } }	
 			# Submarine Division 21
 			ship = { name = "HMS Oxley" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "O/P/R Class" } } }
 			ship = { name = "HMS Swordfish" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ENG version_name = "S Class" } } }
