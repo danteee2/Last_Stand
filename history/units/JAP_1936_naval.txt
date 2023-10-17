@@ -288,9 +288,6 @@ units = {
 
 			#Minelayers
 			ship = { name = "Shirataka" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Katsuriki Class"} } }
-
-			name = "Maizuru Yokobu Renshukan"
-			location = 1136 # Maizuru
 			ship = { name = "Tama" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma Class"} } }
 
 			#Dai 1 Kuchikutai
