@@ -5,8 +5,8 @@ GER = {
 	color_ui = rgb { 138 155 116 }
 }
 ENG = {
-	color = rgb { 201 56 93 }
-	color_ui = rgb { 255 73 121 }
+	color = rgb { 175 20 20 }
+	color_ui = rgb { 175 20 20 }
 }
 SOV = {
 	color = rgb { 125 13 24 }
@@ -342,11 +342,6 @@ XSM = {
 LBA = {
 	color = rgb { 200 180 90 }
 	color_ui = rgb { 200 180 90 }
-}
-
-EGY = {
-	color = rgb { 230 230 70 }
-	color_ui = rgb { 230 230 70 }
 }
 
 

@@ -90,11 +90,6 @@ areas = {
         }
 	}
 
-	egypt = {
-		strategic_regions = {
-			128 # Egypt
-        }
-	}
 
 	southern_finland = {
 		strategic_regions = {
