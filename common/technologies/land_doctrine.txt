@@ -132,6 +132,7 @@ technologies = {
 
 
 		enable_tactic = tactic_elastic_defense
+		
 
 		path = {
 			leads_to_tech = mobile_infantry
@@ -3810,7 +3811,7 @@ technologies = {
 		cavalry = {
 			defense = 0.10
 		}
-		
+		additional_brigade_column_size = 1
 		doctrine = yes
 		research_cost = 4.5
 
