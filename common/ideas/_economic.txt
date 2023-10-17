@@ -834,6 +834,7 @@ ideas = {
 							has_idea = partial_economic_mobilisation
 							has_idea = war_economy
 							has_idea = tot_economic_mobilisation
+							has_idea = emperors_economy
 						}
 					}
 				}

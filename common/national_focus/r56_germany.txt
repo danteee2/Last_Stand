@@ -17679,4 +17679,26 @@ focus = {
 		}
 		}
 }
+focus = {
+	id = GER_military_industry_backing
+	icon = GFX_focus_NOR_approach_kretsen
+		cost = 5
+		prerequisite = {
+			focus = GER_expand_influence_of_the_Wehrmacht
+		}
+		
+		relative_position_id = GER_plunder_the_west
+		x = 3
+		y = 2
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		
+			every_military_industrial_organization = {
+				tooltip = every_mio_tt
+				add_mio_funds_gain_factor = 0.10
+			}
+		}
+}
 }
