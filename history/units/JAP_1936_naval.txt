@@ -162,13 +162,6 @@ units = {
 
 			#Minelayers
 			ship = { name = "Itsukushima" definition = destroyer equipment = { ship_hull_light_1 = {amount = 1 owner = JAP version_name = "Katsuriki Class"} } }
-		}
-		task_force = {
-			name = "Renshukan Hiei"
-			location = 9998  #Yokosuka
-			ship = { name = "Hiei" definition = battleship equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "Kongo Class"} } }
-		}
-	}
 
 			ship = { name = "Hiei" definition = battleship equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "Kongo Class"} } }
 
