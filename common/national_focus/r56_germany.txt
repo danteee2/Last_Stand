@@ -16378,7 +16378,7 @@ focus = {
 }
 focus = {
 	id = GER_a_new_germany
-	icon = GFX_GER_black_sun
+	icon = GFX_focus_SWI_spirit_of_saint_bernard
 	cost = 10.00
 	
 	
