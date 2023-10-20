@@ -15909,34 +15909,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-        id = GER_jewish_question
-        icon = GFX_goal_ISR_aliyah_2
-		prerequisite = {
-			focus = GER_combine_SS_gestapo
-		}
-        x = 3
-        y = 1
-       relative_position_id = GER_combine_SS_gestapo
-
-	   ai_will_do = {
-		factor = 5
-	}
-
-        cost = 5
-
-        completion_reward = {
-
-			add_war_support = 0.15
-			add_stability = 0.1
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.1
-			}
-			add_manpower = -150000
-			add_ideas = population_pure
-        }	
-	}
-	focus = {
 		id = GER_plunder_the_west
 		icon = GFX_goal_generic_growing_economy
 		cost = 15
@@ -16554,7 +16526,7 @@ focus = {
 }
 focus = {
 	id = GER_assert_cultural_dominance
-	icon = GFX_goal_PAL_forcefully_remove_settler
+	icon = GFX_focus_spr_masters_of_our_own_fate
 	cost = 10.00
 	
 	
@@ -17083,10 +17055,7 @@ focus = {
 			add_manpower = -500000
 			add_extra_state_shared_building_slots = 2
 		}
-		add_timed_idea = {
-			days = 60
-			idea = investments_into_the_purge
-		}
+		
 	}
 }
 focus = {
