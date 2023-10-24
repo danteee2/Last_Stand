@@ -17,7 +17,7 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 1100 }
 
 #	focus = {
-#		id = ROM_
+#		id =
 #		icon = GFX_
 #		prerequisite = { focus = }
 #		mutually_exclusive = { focus =  }
@@ -6094,7 +6094,7 @@ focus_tree = {
  focus = {
 	id = ROM_allied_investment
 	icon = GFX_focus_generic_the_giant_wakes
-	prerequisite = {focus = ROM_renew_the_romanian_polish_alliance}
+	prerequisite = {focus = ROM_democratic_institution }
 	relative_position_id = ROM_renew_the_romanian_polish_alliance
 	x = 2
 	y = 2
