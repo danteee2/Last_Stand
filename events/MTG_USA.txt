@@ -2830,7 +2830,7 @@ country_event = {
 	option = { #agree
 		name = mtg_usa_north_american_dominion.1.a
 		ai_chance = {
-			factor = 80
+			factor = 20
 			modifier = {
 				is_in_faction = no
 				not = { has_global_flag = mtg_usa_north_american_dominion_refused_faction }

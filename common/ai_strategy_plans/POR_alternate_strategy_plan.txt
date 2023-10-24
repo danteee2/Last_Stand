@@ -394,7 +394,8 @@ POR_communist_comintern_plan = {
 		POR_merchant_marine_protection
 		POR_national_cruiser_production
 		POR_atlantic_defense_strategy
-		POR_endless_sea			
+		POR_endless_sea
+		POR_protect_chinese_civilians			
 		#1943
 		POR_limited_self_rule
 		POR_submarine_effort

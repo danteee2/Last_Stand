@@ -12,7 +12,6 @@ SAF_alternate_democratic = {
 				option = DEMOCRATIC_ALTERNATE
 			}
 		}
-		has_focus_tree = south_african_focus
 	}
 	abort = {
 		
@@ -62,7 +61,6 @@ SAF_alternate_communist = {
 				option = COMMUNIST
 			}
 		}
-		has_focus_tree = south_african_focus
 	}
 	abort = {
 		
@@ -166,7 +164,6 @@ SAF_alternate_fascist = {
 	 			option = FASCIST
 	 		}
 		}
-		has_focus_tree = south_african_focus
 	}
 	abort = {
 		GER = {
@@ -279,7 +276,6 @@ SAF_alternate_fascist_2 = {
 				has_government = fascism
 			}
 		}
-		has_focus_tree = south_african_focus
 	}
 	abort = {
 	}

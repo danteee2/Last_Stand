@@ -74,8 +74,8 @@ SWE_historical_plan = {
 
 		#1940
 		SWE_modernizing_the_air_force          							#70
-		SWE_medium_frame_craft				   							#35
-		SWE_contract_saab                      							#35
+		#SWE_medium_frame_craft				   							#35
+		#SWE_contract_saab                      							#35
 		SWE_swedish_defence_act				   							#70
 		SWE_air_defence_fortifications         							#70
 		SWE_rationing						   							#70
@@ -95,7 +95,7 @@ SWE_historical_plan = {
 		#1942
 		SWE_civilian_sector_expansion		   							#70
 		SWE_hemvarnet                          							#35
-		SWE_contract_landsverk				   							#70
+		#SWE_contract_landsverk				   							#70
 		SWE_hire_scania_vabis				   							#70
 
 

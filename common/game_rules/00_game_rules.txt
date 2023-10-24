@@ -5,95 +5,18 @@
 
 ###---> Focus Tree Selection <><> <><> <><>
 
-#-> AST: Australia <><>
-AST_focus_tree_selection = {
-	name = "AST_FOCUS_TREE_SELECTION"
-	required_dlc = "Together for Victory"
-	group = "RULE_GROUP_CHOOSE_FOCUS_TREE"
-	default = {
-		name = R56_TREE
-		text = "RULE_OPTION_R56_TREE"
-		desc = "RULE_OPTION_R56_TREE_DESC"
-	}
-	option = {
-		name = STANDARD_TREE
-		text = "RULE_OPTION_STANDARD_TREE"
-		desc = "RULE_OPTION_STANDARD_TREE_DESC"
-		allow_achievements = yes						  
-	}
-}
 
 #-> BUL: Bulgaria <><>
-BUL_focus_tree_selection = {
-	name = "BUL_FOCUS_TREE_SELECTION"
-	required_dlc = "Battle for the Bosporus"
-	group = "RULE_GROUP_CHOOSE_FOCUS_TREE"
-	default = {
-		name = STANDARD_TREE
-		text = "RULE_OPTION_STANDARD_TREE"
-		desc = "RULE_OPTION_STANDARD_TREE_DESC"
-	}
-	option = {
-		name = R56_TREE
-		text = "RULE_OPTION_R56_TREE"
-		desc = "RULE_OPTION_R56_TREE_DESC"
-		allow_achievements = yes
-	}
-}
+
 
 #-> CAN: Canada <><>
-CAN_focus_tree_selection = {
-	name = "CAN_FOCUS_TREE_SELECTION"
-	required_dlc = "Together for Victory"
-	group = "RULE_GROUP_CHOOSE_FOCUS_TREE"
-	default = {
-		name = R56_TREE
-		text = "RULE_OPTION_R56_TREE"
-		desc = "RULE_OPTION_R56_TREE_DESC"
-	}
-	option = {
-		name = STANDARD_TREE
-		text = "RULE_OPTION_STANDARD_TREE"
-		desc = "RULE_OPTION_STANDARD_TREE_DESC"
-		allow_achievements = yes
-	}
-}
+
 
 #-> DEN: Denmark <><>
-DEN_focus_tree_selection = {
-	name = "DEN_FOCUS_TREE_SELECTION"
-	required_dlc = "Arms Against Tyranny"
-	group = "RULE_GROUP_CHOOSE_FOCUS_TREE"
-	default = {
-		name = R56_TREE
-		text = "RULE_OPTION_R56_TREE"
-		desc = "RULE_OPTION_R56_TREE_DESC"
-	}
-	option = {
-		name = STANDARD_TREE
-		text = "RULE_OPTION_STANDARD_TREE"
-		desc = "RULE_OPTION_STANDARD_TREE_DESC"
-		allow_achievements = yes
-	}
-}
+
 
 #-> EST: Estonia <><>
-EST_focus_tree_selection = {
-	name = "EST_FOCUS_TREE_SELECTION"
-	required_dlc = "No Step Back"
-	group = "RULE_GROUP_CHOOSE_FOCUS_TREE"
-	default = {
-		name = STANDARD_TREE
-		text = "RULE_OPTION_STANDARD_TREE"
-		desc = "RULE_OPTION_STANDARD_TREE_DESC"
-	}
-	option = {
-		name = R56_TREE
-		text = "RULE_OPTION_R56_TREE"
-		desc = "RULE_OPTION_R56_TREE_DESC"
-		allow_achievements = yes
-	}
-}
+
 
 #-> FIN: Finland <><>
 FIN_focus_tree_selection = {
@@ -113,40 +36,8 @@ FIN_focus_tree_selection = {
 	}
 }
 
-#-> GER: Germany <><>
-GER_focus_tree_selection = {
-	name = "GER_FOCUS_TREE_SELECTION"
-	group = "RULE_GROUP_CHOOSE_FOCUS_TREE"
-	default = {
-		name = R56_TREE
-		text = "RULE_OPTION_R56_TREE"
-		desc = "RULE_OPTION_R56_TREE_DESC"
-	}
-	option = {
-		name = STANDARD_TREE
-		text = "RULE_OPTION_STANDARD_TREE"
-		desc = "RULE_OPTION_STANDARD_TREE_DESC"
-		allow_achievements = yes
-	}
-}
 
-#-> GRE: Greece <><>
-GRE_focus_tree_selection = {
-	name = "GRE_FOCUS_TREE_SELECTION"
-	required_dlc = "Battle for the Bosporus"
-	group = "RULE_GROUP_CHOOSE_FOCUS_TREE"
-	default = {
-		name = STANDARD_TREE
-		text = "RULE_OPTION_STANDARD_TREE"
-		desc = "RULE_OPTION_STANDARD_TREE_DESC"
-	}
-	option = {
-		name = R56_TREE
-		text = "RULE_OPTION_R56_TREE"
-		desc = "RULE_OPTION_R56_TREE_DESC"
-		allow_achievements = yes
-	}
-}
+
 
 #-> ICE: Iceland <><>
 ICE_focus_tree_selection = {
@@ -184,41 +75,7 @@ RAJ_focus_tree_selection = {
 	}
 }
 
-#-> LAT: Latvia <><>
-LAT_focus_tree_selection = {
-	name = "LAT_FOCUS_TREE_SELECTION"
-	required_dlc = "No Step Back"
-	group = "RULE_GROUP_CHOOSE_FOCUS_TREE"
-	default = {
-		name = STANDARD_TREE
-		text = "RULE_OPTION_STANDARD_TREE"
-		desc = "RULE_OPTION_STANDARD_TREE_DESC"
-	}
-	option = {
-		name = R56_TREE
-		text = "RULE_OPTION_R56_TREE"
-		desc = "RULE_OPTION_R56_TREE_DESC"
-		allow_achievements = yes
-	}
-}
 
-#-> LIT: Lithuania <><>
-LIT_focus_tree_selection = {
-	name = "LIT_FOCUS_TREE_SELECTION"
-	required_dlc = "No Step Back"
-	group = "RULE_GROUP_CHOOSE_FOCUS_TREE"
-	default = {
-		name = R56_TREE
-		text = "RULE_OPTION_R56_TREE"
-		desc = "RULE_OPTION_R56_TREE_DESC"
-	}
-	option = {
-		name = STANDARD_TREE
-		text = "RULE_OPTION_STANDARD_TREE"
-		desc = "RULE_OPTION_STANDARD_TREE_DESC"
-		allow_achievements = yes
-	}
-}
 
 #-> MAN: Manchuria <><>
 MAN_focus_tree_selection = {
@@ -292,23 +149,7 @@ NOR_focus_tree_selection = {
 	}
 }
 
-#-> NZL: New Zealand <><>
-NZL_focus_tree_selection = {
-	name = "NZL_FOCUS_TREE_SELECTION"
-	required_dlc = "Together for Victory"
-	group = "RULE_GROUP_CHOOSE_FOCUS_TREE"
-	default = {
-		name = R56_TREE
-		text = "RULE_OPTION_R56_TREE"
-		desc = "RULE_OPTION_R56_TREE_DESC"
-	}
-	option = {
-		name = STANDARD_TREE
-		text = "RULE_OPTION_STANDARD_TREE"
-		desc = "RULE_OPTION_STANDARD_TREE_DESC"
-		allow_achievements = yes
-	}
-}
+
 
 #-> POR: Portugal <><>
 POR_focus_tree_selection = {
@@ -328,41 +169,8 @@ POR_focus_tree_selection = {
 	}
 }
 
-#-> SAF: South Africa <><>
-SAF_focus_tree_selection = {
-	name = "SAF_FOCUS_TREE_SELECTION"
-	required_dlc = "Together for Victory"
-	group = "RULE_GROUP_CHOOSE_FOCUS_TREE"
-	default = {
-		name = R56_TREE
-		text = "RULE_OPTION_R56_TREE"
-		desc = "RULE_OPTION_R56_TREE_DESC"
-	}
-	option = {
-		name = STANDARD_TREE
-		text = "RULE_OPTION_STANDARD_TREE"
-		desc = "RULE_OPTION_STANDARD_TREE_DESC"
-		allow_achievements = yes
-	}
-}
 
-#-> SPR: Spain <><>
-SPR_focus_tree_selection = {
-	name = "SPR_FOCUS_TREE_SELECTION"
-	required_dlc = "La Resistance"
-	group = "RULE_GROUP_CHOOSE_FOCUS_TREE"
-	default = {
-		name = STANDARD_TREE
-		text = "RULE_OPTION_STANDARD_TREE"
-		desc = "RULE_OPTION_STANDARD_TREE_DESC"
-	}
-	option = {
-		name = R56_TREE
-		text = "RULE_OPTION_R56_TREE"
-		desc = "RULE_OPTION_R56_TREE_DESC"
-		allow_achievements = yes
-	}
-}
+
 
 #-> SWE: Sweden <><>
 SWE_focus_tree_selection = {

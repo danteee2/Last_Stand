@@ -4,7 +4,7 @@ LUX_historical_plan = {
 	
 	enable = {
 		original_tag = LUX
-		is_historical_focus_on = yes
+		LUX_is_on_historical_plan_trigger = yes
 	}
 	
 	abort = {
