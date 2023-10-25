@@ -23,10 +23,10 @@ FIN_state_is_european_and_on_the_atlantic = {
 		state_is_in_the_baltic_sea = no
 		#States in both Baltic and Atlantic (Dannish area)
 		state = 37
-		state = 1025 #Fyn
+		state = 911
 		state = 99 #Northern Denmark not considered in the Baltic for now but just in case
-		state = 964 #Sønderjylland aka Northern Schleswig
-		state = 998 #Schleswig aka Southern Schleswig
+		state = 912
+		state = 909
 		state = 58
 		state = 138
 	}
@@ -41,12 +41,12 @@ FIN_state_is_european_and_on_the_atlantic = {
 FIN_state_is_valid_for_motti_tactics = {
 	OR = {
 		state = 150 #KUOPIO
-		state = 1039 #OULU
+		state = 929 #OULU
 		state = 147 #SALLA
 		state = 148 #LAPPI
 		state = 722 #PETSAMO
 		state = 149 #VAASA
-		state = 1040 #MIKKELI
+		state = 930 #MIKKELI
 	}
 }
 
@@ -97,6 +97,10 @@ FIN_can_purchase_equipment_from_country = {
 	exists = yes
 	has_capitulated = no
 	NOT = { has_war_with = ROOT }
+	NOT = {
+		is_embargoing = ROOT
+		is_embargoed_by = ROOT
+	}
 	ROOT = {
 		OR = {
 			is_in_faction_with = PREV #Ally
@@ -216,7 +220,7 @@ FIN_is_historical_ai = {
 		has_country_flag = FIN_AI_RANDOM_HISTORICAL
 		has_game_rule = {
 			rule = FIN_ai_behavior
-			option = NON_ALIGNED_HISTORICAL
+			option = HISTORICAL
 		}
 	}
 }
@@ -226,7 +230,7 @@ FIN_is_fascist_ai = {
 		has_country_flag = FIN_AI_RANDOM_FASCIST_PLAN
 		has_game_rule = {
 			rule = FIN_ai_behavior
-			option = FASCIST
+			option = FIN_FASCIST_PLAN
 		}
 	}
 }
@@ -236,7 +240,7 @@ FIN_is_communist_ai = {
 		has_country_flag = FIN_AI_RANDOM_COMMUNIST_PLAN
 		has_game_rule = {
 			rule = FIN_ai_behavior
-			option = COMMUNIST
+			option = FIN_COMMUNIST_PLAN
 		}
 	}
 }
@@ -246,7 +250,7 @@ FIN_is_democratic_ai = {
 		has_country_flag = FIN_AI_RANDOM_DEMOCRATIC_PLAN
 		has_game_rule = {
 			rule = FIN_ai_behavior
-			option = DEMOCRATIC
+			option = FIN_DEMOCRATIC_PLAN
 		}
 	}
 }

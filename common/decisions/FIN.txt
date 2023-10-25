@@ -1301,8 +1301,7 @@ FIN_balance_of_power_category = {
 		}
 
 		available = {
-			#has_government = neutrality
-			has_government = democratic #starting ideology
+			has_government = neutrality
 			power_balance_value = {
 				id = FIN_power_balance
 				value < 0.1

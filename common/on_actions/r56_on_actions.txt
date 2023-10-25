@@ -2633,30 +2633,7 @@ effect = {
 				}
 			}
 			# Middle Eastern countries get an option to join war against Israel
-			if = {
-				limit = {
-					has_global_flag = anti_israeli_coalition
-					AND = { tag = EGY FROM = { tag = ISR } }
-				}
-				every_country = {
-					limit = {
-						capital_scope = {
-							is_on_continent = middle_east
-						}
-						is_subject = no
-						NOT = {
-							original_tag = TUR
-							original_tag = EGY
-							original_tag = ISR
-							has_war_with = EGY
-							is_in_faction_with = ISR
-							has_non_aggression_pact_with = ISR
-						}
-					}
-					country_event = { id = egypt.49 days = 2 }
-				}
-			}
-		}
+			
 	}
 
 ###---> On Government Change <><> <><> <><>
@@ -3516,7 +3493,6 @@ effect = {
 									original_tag = HOL
 									original_tag = MAN
 									original_tag = ARM
-									original_tag = EGY
 									original_tag = SAU
 									original_tag = ITA
 
@@ -4506,7 +4482,6 @@ effect = {
 								original_tag = AUS
 								original_tag = HUN
 								original_tag = YUG
-								original_tag = EGY
 								original_tag = SAU
 							}
 						}
@@ -4595,7 +4570,6 @@ effect = {
 							original_tag = AUS
 							original_tag = HUN
 							original_tag = YUG
-							original_tag = EGY
 							original_tag = SOV
 						}
 					}
@@ -6968,7 +6942,6 @@ effect = {
 							original_tag = HOL
 							original_tag = MAN
 							original_tag = ARM
-							original_tag = EGY
 							original_tag = SAU
 							original_tag = ITA
 
@@ -7431,7 +7404,6 @@ effect = {
 						original_tag = CAR
 						original_tag = CAT
 						original_tag = DJI
-						original_tag = EGY
 						original_tag = EQG
 						original_tag = ERI
 						original_tag = NAV
@@ -8216,17 +8188,7 @@ effect = {
 				}
 			}
 
-			if = {
-				limit = {
-					ROOT = { original_tag = EGY }
-					EGY = {
-						has_cosmetic_tag = EGY_BRITISH_PUPPET
-					}
-				}
-				EGY = {
-					set_cosmetic_tag = EGY
-				}
-			}
+			
 		}
 	}
 
@@ -8335,25 +8297,7 @@ effect = {
 				give_resource_rights = { receiver = ITA state = 910 }
 				give_resource_rights = { receiver = ITA state = 44 }
 			}
-			# British control over the very small amount of Sudanese aluminum
-			EGY = {
-				give_resource_rights = { receiver = ENG state = 903 }
-			}
-			903 = {
-				set_state_flag = EGY_britain_owns_darfur_resources
-			}
-			EGY = { #Starts the feedback loop for Sudanese agitation mission. EGY_counter_rebels_in_sudan_category / EGY_sudanese_agitation = here for folder search reasons 
-				if = {
-					limit = {
-						EGY = {
-							exists = yes
-						}
-					}
-					EGY = {
-						set_country_flag = EGY_sudanese_activity_feedback_loop
-					}
-				}
-			}
+	
 			FRI = {
 				#tried to idea...
 				set_division_template_lock = {
@@ -8756,11 +8700,6 @@ effect = {
 						cost_factor = 0
 					}
 				#}
-			}
-
-			# Remove Egyptian bookmark idea - dynamic modifers don't show there
-			EGY = {
-				remove_ideas = EGY_the_egyptian_army_idea
 			}
 
 			if = {
@@ -17131,99 +17070,7 @@ effect = {
 					FROM.FROM = { set_state_flag = UKR_recaptured_territory_flag }
 				}
 			}
-				if = {
-					limit = {
-						ROOT = { NOT = { tag = EGY } }
-						FROM.FROM = { 
-							has_dynamic_modifier = { modifier = EGY_mild_sudanese_separatism }
-							has_state_flag = EGY_sudanese_separatism_flag
-						}
-					}
-					FROM.FROM = { 
-						remove_dynamic_modifier = { modifier = EGY_mild_sudanese_separatism } 
-						clr_state_flag = EGY_sudanese_separatism_flag
-						set_state_flag = EGY_sudanese_state_not_egypt
-					}
-				}
-				if = {
-					limit = {
-						ROOT = { tag = EGY }
-						FROM.FROM = {
-							NOT = {
-								has_country_flag = EGY_sudan_was_pacified
-								has_state_flag = EGY_mild_sudanese_separatism_flag
-							}
-							has_state_flag = EGY_sudanese_state_not_egypt
-						}
-					}
-					FROM.FROM = { 
-						add_dynamic_modifier = { modifier = EGY_mild_sudanese_separatism } 
-						clr_state_flag = EGY_sudanese_state_not_egypt
-						set_state_flag = EGY_sudanese_separatism_flag
-					}
-				}
-				if = {
-					limit = {
-						ROOT = { NOT = { tag = EGY } }
-						FROM.FROM = { 
-							has_dynamic_modifier = { modifier = EGY_moderate_sudanese_separatism }
-							has_state_flag = EGY_sudanese_separatism_flag
-						}
-					}
-					FROM.FROM = { 
-						remove_dynamic_modifier = { modifier = EGY_moderate_sudanese_separatism } 
-						clr_state_flag = EGY_sudanese_separatism_flag
-						set_state_flag = EGY_sudanese_state_not_egypt
-					}
-				}
-				if = {
-					limit = {
-						ROOT = { tag = EGY }
-						FROM.FROM = {
-							NOT = {
-								has_country_flag = EGY_sudan_was_pacified
-								has_state_flag = EGY_mild_sudanese_separatism_flag
-							}
-							has_state_flag = EGY_sudanese_state_not_egypt
-						}
-					}
-					FROM.FROM = { 
-						add_dynamic_modifier = { modifier = EGY_moderate_sudanese_separatism } 
-						clr_state_flag = EGY_sudanese_state_not_egypt
-						set_state_flag = EGY_sudanese_separatism_flag
-					}
-				}
-				if = {
-					limit = {
-						ROOT = { NOT = { tag = EGY } }
-						FROM.FROM = { 
-							has_dynamic_modifier = { modifier = EGY_fierce_sudanese_separatism }
-							has_state_flag = EGY_sudanese_separatism_flag
-						}
-					}
-					FROM.FROM = { 
-						remove_dynamic_modifier = { modifier = EGY_fierce_sudanese_separatism } 
-						clr_state_flag = EGY_sudanese_separatism_flag
-						set_state_flag = EGY_sudanese_state_not_egypt
-					}
-				}
-				if = {
-					limit = {
-						ROOT = { tag = EGY }
-						FROM.FROM = {
-							NOT = {
-								has_country_flag = EGY_sudan_was_pacified
-								has_state_flag = EGY_mild_sudanese_separatism_flag
-							}
-							has_state_flag = EGY_sudanese_state_not_egypt
-						}
-					}
-					FROM.FROM = { 
-						add_dynamic_modifier = { modifier = EGY_fierce_sudanese_separatism } 
-						clr_state_flag = EGY_sudanese_state_not_egypt
-						set_state_flag = EGY_sudanese_separatism_flag
-					}
-				}
+				
 
 				#Danzig auto-annex workaround, but weird, also check DNZ_join_germany
 			#	if = {
