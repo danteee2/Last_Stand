@@ -5,23 +5,23 @@ state={
 	manpower = 450000
 	
 	
-	state_category = town
+	state_category = city
 	
 	resources={
 		tungsten=2 # was: 2
 	}
 
 	history={
-		owner = BHU
+		owner = RAJ
 		buildings = {
 			infrastructure = 1
-			arms_factory = 1
-			industrial_complex = 2 
+			arms_factory = 2
+			industrial_complex = 3
 		}
 		victory_points = {
 			8010 3 
 		}
-		add_core_of = BHU
+		add_core_of = RAJ
 	}
 
 	provinces={

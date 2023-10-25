@@ -4,16 +4,16 @@ state={
 	name="STATE_323"
 	manpower = 5573791
 	
-	state_category = town
+	state_category = city
 	resources={
 		chromium=2 # was: 2
 	}
 	history={
-		owner = NEP
+		owner = RAJ
 		buildings = {
 			infrastructure = 2 #was 3
-			arms_factory = 1
-			industrial_complex = 2 
+			arms_factory = 2
+			industrial_complex = 3
 		}
 		victory_points = {
 			4987 3 
@@ -21,7 +21,7 @@ state={
 		victory_points = {
 			4386 1
 		}
-		add_core_of = NEP
+		add_core_of = RAJ
 	}
 
 	provinces={

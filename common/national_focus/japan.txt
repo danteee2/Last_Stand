@@ -4246,10 +4246,8 @@
 		  id = JAP_showa_restoration
 		  icon = GFX_focus_jap_showa_restoration
 		  prerequisite = { focus = JAP_support_the_kodoha_faction }
-		  x = -5
+		  x = 27
 		  y = 1
-		  relative_position_id = JAP_support_the_kodoha_faction
-  
 		  cost = 5
   
 		  ai_will_do = {

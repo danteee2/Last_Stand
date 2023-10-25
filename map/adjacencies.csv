@@ -157,15 +157,33 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4135;13228;impassable;-1;-1;-1;-1;-1;;Gibraltar
 4135;10094;impassable;-1;-1;-1;-1;-1;;Gibraltar
 4135;7153;impassable;-1;-1;-1;-1;-1;;Gibraltar
+12884;1961;impassable;-1;-1;-1;-1;-1;;Tibet
+4135;7153;impassable;-1;-1;-1;-1;-1;;Tibet
+12884;10802;impassable;-1;-1;-1;-1;-1;;Tibet
+7273;10802;impassable;-1;-1;-1;-1;-1;;Tibet
+5042;10802;impassable;-1;-1;-1;-1;-1;;Tibet
+5042;12884;impassable;-1;-1;-1;-1;-1;;Tibet
+5042;4973;impassable;-1;-1;-1;-1;-1;;Tibet
+5042;8112;impassable;-1;-1;-1;-1;-1;;Tibet
+5042;1970;impassable;-1;-1;-1;-1;-1;;Tibet
+10821;5087;impassable;-1;-1;-1;-1;-1;;Tibet
+10821;1970;impassable;-1;-1;-1;-1;-1;;Tibet
+12892;12807;impassable;-1;-1;-1;-1;-1;;Tibet
+12892;4900;impassable;-1;-1;-1;-1;-1;;Tibet
+2014;4435;impassable;-1;-1;-1;-1;-1;;Tibet
+2014;8010;impassable;-1;-1;-1;-1;-1;;Tibet
+5042;12801;impassable;-1;-1;-1;-1;-1;;Tibet
+2014;12860;impassable;-1;-1;-1;-1;-1;;Tibet
+2098;12860;impassable;-1;-1;-1;-1;-1;;Tibet
+2098;12730;impassable;-1;-1;-1;-1;-1;;Tibet
+4900;4435;impassable;-1;-1;-1;-1;-1;;Tibet
 2455;2506;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;Øresund
 5412;7678;;-1;-1;-1;-1;-1;BOSPHORUS_STRAIT;Bosphorus
 1658;10588;impassable;-1;-1;-1;-1;-1;;Mount Elbert
 10825;1991;impassable;-1;-1;-1;-1;-1;;Himalayas
 10825;8029;impassable;-1;-1;-1;-1;-1;;Himalayas
 10910;1991;impassable;-1;-1;-1;-1;-1;;Himalayas
-10910;12807;impassable;-1;-1;-1;-1;-1;;Himalayas
-12730;12860;impassable;-1;-1;-1;-1;-1;;Himalayas
-12730;12860;impassable;-1;-1;-1;-1;-1;;Himalayas
+10910;12807;impassable;-1;-1;-1;-1;-1;;Himalayas 
 12730;5018;impassable;-1;-1;-1;-1;-1;;Himalayas
 10810;5018;impassable;-1;-1;-1;-1;-1;;Himalayas
 1996;5018;impassable;-1;-1;-1;-1;-1;;Himalayas
@@ -176,19 +194,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 1898;1961;impassable;-1;-1;-1;-1;-1;;Himalayas
 3989;1961;impassable;-1;-1;-1;-1;-1;;Himalayas
 1129;1961;impassable;-1;-1;-1;-1;-1;;Himalayas
-4558;10826;impassable;-1;-1;-1;-1;-1;;peshawar mountains
-4558;12653;impassable;-1;-1;-1;-1;-1;;peshawar mountains
-4558;7519;impassable;-1;-1;-1;-1;-1;;peshawar mountains
-12763;10826;impassable;-1;-1;-1;-1;-1;;peshawar mountains
-2084;7519;impassable;-1;-1;-1;-1;-1;;peshawar mountains
-10821;7519;impassable;-1;-1;-1;-1;-1;;peshawar mountains
-4998;12831;impassable;-1;-1;-1;-1;-1;;peshawar mountains
-4998;5082;impassable;-1;-1;-1;-1;-1;;peshawar mountains
-1978;5082;impassable;-1;-1;-1;-1;-1;;peshawar mountains
-1978;8090;impassable;-1;-1;-1;-1;-1;;peshawar mountains
-7975;8090;impassable;-1;-1;-1;-1;-1;;peshawar mountains
-8044;8090;impassable;-1;-1;-1;-1;-1;;peshawar mountains
-8044;5064;impassable;-1;-1;-1;-1;-1;;peshawar mountains
 12805;7519;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
 12805;5087;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
 12805;1766;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
@@ -200,38 +205,12 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 12218;12314;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
 12370;1766;impassable;-1;-1;-1;-1;-1;;pamir mountains
 12370;12119;impassable;-1;-1;-1;-1;-1;;pamir mountains
-12730;1116;impassable;-1;-1;-1;-1;-1;;pamir mountains
 5062;12119;impassable;-1;-1;-1;-1;-1;;pamir mountains
 5062;4828;impassable;-1;-1;-1;-1;-1;;pamir mountains
 4768;4828;impassable;-1;-1;-1;-1;-1;;pamir mountains
 4391;4828;impassable;-1;-1;-1;-1;-1;;pamir mountains
 4391;1703;impassable;-1;-1;-1;-1;-1;;pamir mountains
 4391;12526;impassable;-1;-1;-1;-1;-1;;pamir mountains
-778;3612;impassable;-1;-1;-1;-1;-1;;swiss alps
-611;3612;impassable;-1;-1;-1;-1;-1;;swiss alps
-11570;3612;impassable;-1;-1;-1;-1;-1;;swiss alps
-11570;9587;impassable;-1;-1;-1;-1;-1;;swiss alps
-6635;9587;impassable;-1;-1;-1;-1;-1;;swiss alps
-6635;3641;impassable;-1;-1;-1;-1;-1;;swiss alps
-6661;9600;impassable;-1;-1;-1;-1;-1;;swiss alps
-6661;3662;impassable;-1;-1;-1;-1;-1;;swiss alps
-11587;3662;impassable;-1;-1;-1;-1;-1;;swiss alps
-6675;9633;impassable;-1;-1;-1;-1;-1;;swiss alps
-11604;636;impassable;-1;-1;-1;-1;-1;;Inner swiss alps
-3660;6680;impassable;-1;-1;-1;-1;-1;;swiss austrian alps
-3660;6678;impassable;-1;-1;-1;-1;-1;;swiss austrian alps
-9630;9633;impassable;-1;-1;-1;-1;-1;;austrian alps
-11618;11615;impassable;-1;-1;-1;-1;-1;;austrian alps
-671;11615;impassable;-1;-1;-1;-1;-1;;austrian alps
-668;3675;impassable;-1;-1;-1;-1;-1;;austrian alps
-3674;3675;impassable;-1;-1;-1;-1;-1;;austrian alps
-3674;6691;impassable;-1;-1;-1;-1;-1;;austrian alps
-3764;9738;impassable;-1;-1;-1;-1;-1;;french italian alps
-6975;11721;impassable;-1;-1;-1;-1;-1;;french italian alps
-3959;11721;impassable;-1;-1;-1;-1;-1;;french italian alps
-3898;11779;impassable;-1;-1;-1;-1;-1;;andorran catalan pyrenees
-3899;3915;impassable;-1;-1;-1;-1;-1;;french spanish pyrenees
-915;9882;impassable;-1;-1;-1;-1;-1;;french spanish pyrenees
 6674;672;impassable;-1;-1;-1;-1;-1;;georgian russian caucasus border
 6674;654;impassable;-1;-1;-1;-1;-1;;georgian russian caucasus border
 9632;654;impassable;-1;-1;-1;-1;-1;;georgian russian caucasus border
@@ -240,55 +219,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 11609;1530;impassable;-1;-1;-1;-1;-1;;georgian russian caucasus border
 11609;4534;impassable;-1;-1;-1;-1;-1;;georgian russian caucasus border
 7554;6436;impassable;-1;-1;-1;-1;-1;;georgian dagestan caucasus border
-3188;9047;impassable;-1;-1;-1;-1;-1;;west norwegian mountains
-6216;9047;impassable;-1;-1;-1;-1;-1;;west norwegian mountains
-6216;11037;impassable;-1;-1;-1;-1;-1;;west norwegian mountains
-6216;6136;impassable;-1;-1;-1;-1;-1;;west norwegian mountains
-6204;6136;impassable;-1;-1;-1;-1;-1;;west norwegian mountains
-3093;6136;impassable;-1;-1;-1;-1;-1;;west norwegian mountains
-21;6118;impassable;-1;-1;-1;-1;-1;;trondheim norwegian mountains
-3096;6118;impassable;-1;-1;-1;-1;-1;;trondheim norwegian mountains
-3096;6114;impassable;-1;-1;-1;-1;-1;;trondheim norwegian mountains
-65;9170;impassable;-1;-1;-1;-1;-1;;south norwegian mountains in hardangenvidda park
-65;11198;impassable;-1;-1;-1;-1;-1;;south norwegian mountains in hardangenvidda park
-11101;11198;impassable;-1;-1;-1;-1;-1;;south norwegian mountains in hardangenvidda park
-11101;6184;impassable;-1;-1;-1;-1;-1;;south norwegian mountains in hardangenvidda park
-100;6184;impassable;-1;-1;-1;-1;-1;;south norwegian mountains in hardangenvidda park
-2065;12756;impassable;-1;-1;-1;-1;-1;;Zagros mountains west of Ahvaz
-1922;12756;impassable;-1;-1;-1;-1;-1;;Zagros mountains west of Ahvaz
-1922;4928;impassable;-1;-1;-1;-1;-1;;Zagros mountains west of Ahvaz
-10881;12780;impassable;-1;-1;-1;-1;-1;;Zagros mountains near Shiraz
-4966;8117;impassable;-1;-1;-1;-1;-1;;Zagros mountains near Shiraz
-4966;10881;impassable;-1;-1;-1;-1;-1;;Zagros mountains near Shiraz
-4580;7969;impassable;-1;-1;-1;-1;-1;;Alborz mountains west of Tehran
-4637;7969;impassable;-1;-1;-1;-1;-1;;Alborz mountains west of Tehran
-4637;7969;impassable;-1;-1;-1;-1;-1;;Alborz mountains west of Tehran
-4637;4553;impassable;-1;-1;-1;-1;-1;;Alborz mountains west of Tehran
-4609;4553;impassable;-1;-1;-1;-1;-1;;Alborz mountains west of Tehran
-4901;4553;impassable;-1;-1;-1;-1;-1;;Alborz mountains west of Tehran
-10385;8093;impassable;-1;-1;-1;-1;-1;;Alborz mountains east of Tehran
-7602;8093;impassable;-1;-1;-1;-1;-1;;Alborz mountains east of Tehran
-7602;11671;impassable;-1;-1;-1;-1;-1;;Alborz mountains east of Tehran
-5050;8040;impassable;-1;-1;-1;-1;-1;;North Zagros mountains in east Kurdistan
-12773;8040;impassable;-1;-1;-1;-1;-1;;North Zagros mountains in east Kurdistan
-9816;8040;impassable;-1;-1;-1;-1;-1;;North Zagros mountains in east Kurdistan
-9816;8125;impassable;-1;-1;-1;-1;-1;;North Zagros mountains in east Kurdistan
-10782;5075;impassable;-1;-1;-1;-1;-1;;Iran Pakistan border region
-10782;12761;impassable;-1;-1;-1;-1;-1;;Iran Pakistan border region
-10782;5043;impassable;-1;-1;-1;-1;-1;;Iran Pakistan border region
-10782;12774;impassable;-1;-1;-1;-1;-1;;Iran Pakistan border region
-13082;12774;impassable;-1;-1;-1;-1;-1;;Iran Pakistan border region
-6571;9425;impassable;-1;-1;-1;-1;-1;;Carpathian mountains
-6571;3743;impassable;-1;-1;-1;-1;-1;;Carpathian mountains
-9704;3743;impassable;-1;-1;-1;-1;-1;;Carpathian mountains
-727;3743;impassable;-1;-1;-1;-1;-1;;Carpathian mountains
-727;9548;impassable;-1;-1;-1;-1;-1;;Carpathian mountains
-727;11689;impassable;-1;-1;-1;-1;-1;;Carpathian mountains
-9685;11689;impassable;-1;-1;-1;-1;-1;;Carpathian mountains
-9685;3728;impassable;-1;-1;-1;-1;-1;;Carpathian mountains
-3676;660;impassable;-1;-1;-1;-1;-1;;Carpathian mountains Central Romania
-11605;6679;impassable;-1;-1;-1;-1;-1;;Carpathian mountains Central Romania
-11605;3665;impassable;-1;-1;-1;-1;-1;;Carpathian mountains Central Romania
 12921;8136;impassable;-1;-1;-1;-1;-1;;Mamib Desert
 10978;8136;impassable;-1;-1;-1;-1;-1;;Mamib Desert
 10978;10957;impassable;-1;-1;-1;-1;-1;;Mamib Desert
