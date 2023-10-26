@@ -7060,6 +7060,7 @@ focus_tree = {
 
 		available = {
 			is_puppet = no
+			fascism > 0.4
 			is_major = yes
 			has_war_support > 0.35
 		}
@@ -7179,6 +7180,7 @@ focus_tree = {
 		}
 		available = {
 			is_puppet = no
+			fascism > 0.4
 			is_major = yes
 		}
 		completion_reward = {
@@ -7201,6 +7203,7 @@ focus_tree = {
 
 		available = {
 			is_puppet = no
+			fascism > 0.4
 			is_major = yes
 		}
 		
@@ -7278,6 +7281,7 @@ focus_tree = {
 
 		available = {
 			is_puppet = no
+			fascism > 0.4
 			is_major = yes
 						
 			any_other_country = {
@@ -7361,6 +7365,7 @@ focus_tree = {
 
 		available = {
 			is_puppet = no
+			fascism > 0.4
 		}
 
 		
@@ -7455,6 +7460,7 @@ focus_tree = {
 
 		available = {
 			is_puppet = no
+			fascism > 0.4
 			is_major = yes
 		}
 		
@@ -7577,6 +7583,7 @@ focus_tree = {
 
 		available = {
 			is_puppet = no
+			fascism > 0.4
 			is_major = yes
 		}
 
@@ -7624,6 +7631,7 @@ focus_tree = {
 			country_exists = AST
 			country_exists = NZL
 			is_puppet = no
+			fascism > 0.4	
 			is_major = yes		
 		}
 		
@@ -7725,6 +7733,7 @@ focus_tree = {
 
 		available = {
 			is_puppet = no
+			fascism > 0.4
 		}
 		
 		bypass = {
@@ -7903,6 +7912,7 @@ focus_tree = {
 
 		available = {
 			is_puppet = no
+			fascism > 0.4
 			is_major = yes
 		}
 

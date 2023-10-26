@@ -3562,7 +3562,7 @@ country_event = { #yes
 
 		name = AAT_Sweden.31.a
 		FROM = {
-			transfer_state = 910
+			transfer_state = 1024
 			country_event = { id = AAT_Sweden.32 hours = 6 }
 			set_country_flag = SWE_DEN_gave_bornholm
 		}
@@ -3593,7 +3593,7 @@ country_event = { #yes
 				create_wargoal = {
 					type = take_state_focus
 					target = PREV
-					generator = { 910 } # optional 
+					generator = { 1024 } # optional 
 				}
 			}
 		}
@@ -3611,7 +3611,7 @@ country_event = { #BOrnhom is accepted
 	option = {
 		name = AAT_Sweden.32.a
 		effect_tooltip = {
-			910 = {
+			1024 = {
 				set_state_owner_to = ROOT 
 			}
 		}
@@ -3630,7 +3630,7 @@ country_event = { #Bornhom is rejected
 		create_wargoal = {
 			type = take_state_focus
 			target = FROM
-			generator = { 910 } # optional 
+			generator = { 1024 } # optional 
 		}
 	}
 }
@@ -3683,7 +3683,7 @@ country_event = { #yes
 
 			modifier = {
 
-				910 = {
+				1024 = {
 					is_owned_and_controlled_by = FROM
 				}
 
@@ -3978,7 +3978,7 @@ country_event = {
 
 			modifier = {
 
-				910 = {
+				1024 = {
 					is_owned_and_controlled_by = FROM
 				}
 
@@ -7707,9 +7707,9 @@ country_event = {
 			base = 1
 			modifier = {
 				SWE = {
-					is_ai = no
+					is_ai = yes
 				}
-				factor = 1
+				factor = 1.2
 			}
 
 			modifier = {
@@ -7720,6 +7720,11 @@ country_event = {
 			modifier = {
 				is_subject = yes
 				factor = 0
+			}
+
+			modifier = {
+				is_guaranteed_by = SWE
+				factor = 1.5
 			}
 
 			modifier = {
@@ -7799,19 +7804,38 @@ country_event = {
 				}
 			}
 		}
-
-		every_unit_leader = {
-			set_variable = { SWE_original_country_member = THIS } 
-			set_nationality = SWE
-		}
 		if = {
 			limit = {
 				is_ai = yes
 			}
+			if = {
+				limit = {
+					original_tag = FIN
+				}
+				FIN_erik_heinrichs = { set_nationality = SWE }
+				FIN_vilho_petter_nenonen = { set_nationality = SWE }
+				FIN_woldemar_hagglund = { set_nationality = SWE }
+				FIN_aarne_juutilainen = { set_nationality = SWE }
+				FIN_karl_oesch = { set_nationality = SWE } 
+				FIN_wiljo_tuompo = { set_nationality = SWE }
+			}
+			else_if = {
+				limit = {
+					original_tag = DEN
+				}
 
-			load_focus_tree = { 
-				tree = generic_focus
-				keep_completed = no
+				DEN_charles_henry_rye = { set_nationality = SWE  }
+				DEN_erik_with = { set_nationality = SWE  }
+				DEN_paul_ramm = { set_nationality = SWE  }
+				DEN_frederik_christian_essemann = { set_nationality = SWE  }
+			}
+			else_if = {
+				limit = {
+					original_tag = NOR
+				}
+				NOR_jacob_hvinden_haug = { set_nationality = SWE }
+				NOR_jacob_ager_laurantzon = { set_nationality = SWE }
+
 			}
 		}
 
@@ -7836,73 +7860,14 @@ country_event = {
             army_ratio = 1       # [0,1] Overrides size modifier for army
             navy_ratio = 0      # [0,1] Overrides size modifier for navy
             air_ratio = 0        # [0,1] Overrides size modifier for air
+        	keep_unit_leaders_trigger = { # Trigger for unit leaders to remain with the original country  # the scope is the unit leader being evaluated # ROOT is the recipient# FROM is the sender# PREV is unset
+        		ROOT = {
+        			original_tag = SWE
+        		}
+        	}
         }
         clear_variable = ROOT.temp_opinion
 		#Remove Maluses that do not fit inside the scope of the tree from different nordic countries if they accept
-		hidden_effect = {
-			if = {
-				limit = {
-					original_tag = NOR
-				}
-
-				if = {
-					limit = { has_idea = NOR_complacent_cabinet_ns }
-					remove_ideas = NOR_complacent_cabinet_ns
-				}
-
-				if = {
-					limit = { has_idea = NOR_the_hard_thirties_ns }
-					remove_ideas = NOR_the_hard_thirties_ns
-				}
-
-				else_if = {
-					limit = { has_idea = NOR_the_hard_thirties_ns_2 }
-					remove_ideas = NOR_the_hard_thirties_ns_2
-				}
-
-				else_if = {
-					limit = { has_idea = NOR_the_hard_thirties_ns_3 }
-					remove_ideas = NOR_the_hard_thirties_ns_3
-				}
-
-				if = {
-					limit = { has_idea = NOR_obsolete_armed_forces_ns_1 }
-					remove_ideas = NOR_obsolete_armed_forces_ns_1
-				}
-			}
-
-			if = {
-				limit = { 
-					original_tag = DEN
-				}
-
-				if = {
-					limit = { has_dynamic_modifier = { modifier = DEN_neglected_military_dynamic_modifier }}
-					remove_dynamic_modifier = { modifier = DEN_neglected_military_dynamic_modifier }
-				}
-
-				if = {
-					limit = { has_dynamic_modifier = { modifier = DEN_economic_crisis_dynamic_modifier }}
-					remove_dynamic_modifier = { modifier = DEN_economic_crisis_dynamic_modifier }
-				}
-
-				if = {
-					limit = { has_dynamic_modifier = { modifier = DEN_industrial_capability_dynamic_modifier }}
-					remove_dynamic_modifier = { modifier = DEN_industrial_capability_dynamic_modifier }
-				}
-			}
-
-			if = {
-				limit = { 
-					original_tag = ICE
-				}
-
-				if = {
-					limit = { has_dynamic_modifier = { modifier = ICE_the_icelandic_economy_modifier }}
-					remove_dynamic_modifier = { modifier = ICE_the_icelandic_economy_modifier }
-				}
-			}
-		}
 	}
 }
 

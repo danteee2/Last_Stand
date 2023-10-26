@@ -4,7 +4,10 @@ characters={
 			allowed = {
 				has_dlc = "La Resistance"
 				NOT = {
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			name=SPR_niceto_alcala_zamora
@@ -24,7 +27,10 @@ characters={
 			allowed = {
 				OR = {
 					NOT = { has_dlc = "La Resistance" }
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			name=SPR_niceto_alcala_zamora
@@ -46,7 +52,10 @@ characters={
 			allowed = {
 				has_dlc = "La Resistance"
 				NOT = {
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			name=SPR_jose_diaz
@@ -66,7 +75,10 @@ characters={
 			allowed = {
 				OR = {
 					NOT = { has_dlc = "La Resistance" }
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			name=SPR_jose_diaz
@@ -167,7 +179,12 @@ characters={
 		instance = {
 			allowed = {
 				has_dlc = "La Resistance"
-				
+				NOT = {
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
+				}
 			}
 			name=SPR_vicente_rojo_lluch
 			portraits={
@@ -190,7 +207,10 @@ characters={
 			allowed = {
 				OR = {
 					NOT = { has_dlc = "La Resistance" }
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			name="Vicente Rojo Lluch"
@@ -207,7 +227,10 @@ characters={
 				allowed = {
 					OR = {
 						NOT = { has_dlc = "La Resistance" }
-						
+						has_game_rule = {
+							rule = SPR_focus_tree_selection
+							option = R56_TREE
+						}
 					}
 					original_tag = SPR
 				}
@@ -254,7 +277,10 @@ characters={
 			allowed = {
 				has_dlc = "La Resistance"
 				NOT = {
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			name=SPR_jose_miaja
@@ -278,7 +304,10 @@ characters={
 			allowed = {
 				OR = {
 					NOT = { has_dlc = "La Resistance" }
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			name=SPR_jose_miaja
@@ -371,7 +400,12 @@ characters={
 		instance = {
 			allowed = {
 				has_dlc = "La Resistance"
-				
+				NOT = {
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
+				}
 			}
 			name=SPR_jose_asensio_torrado
 			portraits={
@@ -394,7 +428,10 @@ characters={
 			allowed = {
 				OR = {
 					NOT = { has_dlc = "La Resistance" }
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			name=SPR_jose_asensio_torrado
@@ -421,7 +458,10 @@ characters={
 			allowed = {
 				has_dlc = "La Resistance"
 				NOT = {
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			name=SPR_valentin_gonzalez
@@ -445,7 +485,10 @@ characters={
 			allowed = {
 				OR = {
 					NOT = { has_dlc = "La Resistance" }
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			name="Valentín González"
@@ -480,7 +523,10 @@ characters={
 			allowed = {
 				has_dlc = "La Resistance"
 				NOT = {
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			name = SPR_enrique_lister
@@ -504,7 +550,10 @@ characters={
 			allowed = {
 				OR = {
 					NOT = { has_dlc = "La Resistance" }
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			name="Enrique Lister"
@@ -523,12 +572,10 @@ characters={
 				logistics_skill=2
 				legacy_id=1119
 				visible = {
-					AND = {
-						tag = S56
-						has_global_flag = spanish_civil_war
-						NOT = {
-							tag = N56
-						}
+					tag = S56
+					has_global_flag = spanish_civil_war
+					NOT = {
+						tag = N56
 					}
 				}
 			}
@@ -540,7 +587,10 @@ characters={
 			allowed = {
 				has_dlc = "La Resistance"
 				NOT = {
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			name=SPR_juan_modesto
@@ -564,7 +614,10 @@ characters={
 			allowed = {
 				OR = {
 					NOT = { has_dlc = "La Resistance" }
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			portraits={
@@ -598,7 +651,10 @@ characters={
 			allowed = {
 				has_dlc = "La Resistance"
 				NOT = {
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			name=SPR_antonio_cordon_garcia
@@ -622,7 +678,10 @@ characters={
 			allowed = {
 				OR = {
 					NOT = { has_dlc = "La Resistance" }
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			portraits={
@@ -654,7 +713,12 @@ characters={
 		instance = {
 			allowed = {
 				has_dlc = "La Resistance"
-				
+				NOT = {
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
+				}
 			}
 			name=SPR_janos_galicz
 			portraits={
@@ -720,7 +784,10 @@ characters={
 			allowed = {
 				OR = {
 					NOT = { has_dlc = "La Resistance" }
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			name="János Gálicz"
@@ -738,12 +805,10 @@ characters={
 				planning_skill=1
 				logistics_skill=1
 				visible = {
+					tag = S56
+					has_global_flag = spanish_civil_war
 					NOT = {
 						tag = N56
-					}
-					AND = {
-						tag = S56
-						has_global_flag = spanish_civil_war
 					}
 				}
 			}
@@ -755,13 +820,16 @@ characters={
 			allowed = {
 				has_dlc = "La Resistance"
 				NOT = {
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			name=SPA_francisco_franco
 			portraits={
 				civilian={
-					large="gfx/leaders/SPR/Portrait_Spain_Francisco_Franco_old.dds"
+					large="gfx/leaders/SPR/r56_portrait_SPR_Francisco_Franco.dds"
 				}
 				army={
 					large="GFX_portrait_spain_francisco_franco"
@@ -793,70 +861,38 @@ characters={
 					}
 				}
 			}
-			advisor = {
-				slot = army_chief
-				idea_token = SPA_francisco_franco
-				name = SPR_fransisco_franco
-				allowed = {
-					OR = {
-						has_dlc = "La Resistance"
-						
-					}
-					original_tag = SPR
-				}
-				visible = {
-					OR = {
-						NOT = { has_global_flag = spanish_civil_war }
-						AND = {
-							tag = SPA
-							has_global_flag = spanish_civil_war
-							NOT = { has_global_flag = SPR_sin_paquito }
-						}
-						AND = {
-							tag = SPD
-							has_global_flag = spanish_civil_war
-							has_global_flag = SPR_sin_paquito
-						}
-					}
-				}
-				available = {
-				has_completed_focus = SPA_caudillo_of_spain
-
-				}
-				traits = {
-					army_chief_offensive_3
-				}
-				cost = 200
-				ai_will_do = {
-					factor = 1.000
-				}
-			}
 		}
 		instance = {
 			allowed = {
 				OR = {
 					NOT = { has_dlc = "La Resistance" }
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
-			name = SPA_francisco_franco
-			portraits = {
-				civilian = {
-					large = "gfx/leaders/SPR/r56_portrait_SPR_Francisco_Franco.dds"
+			name=SPA_francisco_franco
+			portraits={
+				civilian={
+					large="gfx/leaders/SPR/r56_portrait_SPR_Francisco_Franco.dds"
 				}
-				army = {
-					large = "GFX_portrait_spain_francisco_franco"
-					small = "GFX_idea_francisco_franco"
+				army={
+					large="GFX_portrait_spain_francisco_franco"
+					small="GFX_idea_francisco_franco"
 				}
 			}
-			advisor = {
+			advisor={
 				slot = army_chief
 				idea_token = SPA_francisco_franco
 				name = SPR_fransisco_franco
 				allowed = {
 					OR = {
 						NOT = { has_dlc = "La Resistance" }
-						
+						has_game_rule = {
+							rule = SPR_focus_tree_selection
+							option = R56_TREE
+						}
 					}
 					original_tag = SPR
 				}
@@ -908,9 +944,9 @@ characters={
 				}
 			}
 	
-			country_leader = {
-				ideology = fascism_ideology
-				expire = "1965.1.1"
+			country_leader={
+				ideology=fascism_ideology
+				expire="1965.1.1"
 				id=-1
 			}
 		}
@@ -920,7 +956,12 @@ characters={
 		instance = {
 			allowed = {
 				has_dlc = "La Resistance"
-				
+				NOT = {
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
+				}
 			}
 			name=SPR_mohamed_meziane
 			portraits={
@@ -943,7 +984,10 @@ characters={
 			allowed = {
 				OR = {
 					NOT = { has_dlc = "La Resistance" }
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			name="Mohamed Meziane"
@@ -962,7 +1006,6 @@ characters={
 				logistics_skill=3
 				visible={
 					OR = {
-						NOT = { has_global_flag = spanish_civil_war }
 						AND = {
 							tag = N56
 							NOT = {
@@ -981,7 +1024,10 @@ characters={
 			allowed = {
 				has_dlc = "La Resistance"
 				NOT = {
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			name=SPR_gonzalo_queipo_de_llano
@@ -1005,7 +1051,10 @@ characters={
 			allowed = {
 				OR = {
 					NOT = { has_dlc = "La Resistance" }
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			name="Gonzalo Queipo de Llano"
@@ -1023,15 +1072,12 @@ characters={
 				planning_skill=2
 				logistics_skill=2
 				visible = {
-					OR = {
-						NOT = { has_global_flag = spanish_civil_war }
-						AND = {
-							tag = N56
-							NOT = {
-								tag = S56
-							}
-							has_global_flag = spanish_civil_war
+					AND = {
+						tag = N56
+						NOT = {
+							tag = S56
 						}
+						has_global_flag = spanish_civil_war
 					}
 				}
 			}
@@ -1042,7 +1088,12 @@ characters={
 		instance = {
 			allowed = {
 				has_dlc = "La Resistance"
-				
+				NOT = {
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
+				}
 			}
 			name=SPA_emilio_mola
 			portraits={
@@ -1058,7 +1109,12 @@ characters={
 				allowed = {
 					has_dlc = "La Resistance"
 					original_tag = SPR
-					
+					NOT = {
+						has_game_rule = {
+							rule = SPR_focus_tree_selection
+							option = R56_TREE
+						}
+					}
 				}
 	
 				visible = {
@@ -1107,7 +1163,10 @@ characters={
 			allowed = {
 				OR = {
 					NOT = { has_dlc = "La Resistance" }
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			name=SPA_emilio_mola_vidal
@@ -1124,7 +1183,10 @@ characters={
 				allowed = {
 					OR = {
 						NOT = { has_dlc = "La Resistance" }
-						
+						has_game_rule = {
+							rule = SPR_focus_tree_selection
+							option = R56_TREE
+						}
 					}
 					original_tag = SPR
 				}
@@ -1151,7 +1213,6 @@ characters={
 				logistics_skill=2
 				visible = {
 					OR = {
-						NOT = { has_global_flag = spanish_civil_war }
 						AND = {
 							tag = N56
 							NOT = {
@@ -1169,7 +1230,10 @@ characters={
 		instance = {
 			allowed = {
 				has_dlc = "La Resistance"
-				
+				has_game_rule = {
+					rule = SPR_focus_tree_selection
+					option = STANDARD_TREE
+				}
 			}
 			name=SPA_juan_yague
 			portraits={
@@ -1184,7 +1248,12 @@ characters={
 				ledger = army
 				allowed = {
 					has_dlc = "La Resistance"
-					
+					NOT = {
+						has_game_rule = {
+							rule = SPR_focus_tree_selection
+							option = R56_TREE
+						}
+					}
 					original_tag = SPR
 				}
 				visible = {
@@ -1231,7 +1300,10 @@ characters={
 			allowed = {
 				OR = {
 					NOT = { has_dlc = "La Resistance" }
-				
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			name=SPA_juan_yague_blanco
@@ -1248,7 +1320,10 @@ characters={
 				allowed = {
 					OR = {
 						NOT = { has_dlc = "La Resistance" }
-					
+						has_game_rule = {
+							rule = SPR_focus_tree_selection
+							option = R56_TREE
+						}
 					}
 					original_tag = SPR
 				}
@@ -1274,15 +1349,12 @@ characters={
 				planning_skill=2
 				logistics_skill=2
 				visible={
-					OR = {
-						NOT = { has_global_flag = spanish_civil_war }
-						AND = {
-							tag = N56
-							NOT = {
-								tag = S56
-							}
-							has_global_flag = spanish_civil_war
+					AND = {
+						tag = N56
+						NOT = {
+							tag = S56
 						}
+						has_global_flag = spanish_civil_war
 					}
 				}
 			}
@@ -1304,7 +1376,10 @@ characters={
 			allowed = {
 				OR ={
 					NOT = { has_dlc = "La Resistance" }
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 				original_tag = SPR
 			}
@@ -1328,7 +1403,12 @@ characters={
 		instance = {
 			allowed = {
 				has_dlc = "La Resistance"
-				
+				NOT = {
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
+				}
 			}
 			name=SPA_agustin_munoz_grandes
 			portraits={
@@ -1395,7 +1475,10 @@ characters={
 			allowed = {
 				OR = {
 					NOT = { has_dlc = "La Resistance" }
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			name=SPA_agustin_munoz_grandes
@@ -1413,7 +1496,10 @@ characters={
 				allowed = {
 					OR = {
 						NOT = { has_dlc = "La Resistance" }
-						
+						has_game_rule = {
+							rule = SPR_focus_tree_selection
+							option = R56_TREE
+						}
 					}
 					original_tag = SPR
 				}
@@ -1447,15 +1533,12 @@ characters={
 				planning_skill=3
 				logistics_skill=2
 				visible={
-					OR = {
-						NOT = { has_global_flag = spanish_civil_war }
-						AND = {
-							tag = N56
-							NOT = {
-								tag = S56
-							}
-							has_global_flag = spanish_civil_war
+					AND = {
+						tag = N56
+						NOT = {
+							tag = S56
 						}
+						has_global_flag = spanish_civil_war
 					}
 				}
 			}
@@ -1466,7 +1549,12 @@ characters={
 		instance = {
 			allowed = {
 				has_dlc = "La Resistance"
-				
+				NOT = {
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
+				}
 			}
 			name=SPA_jose_enrique_varela
 			portraits={
@@ -1482,7 +1570,12 @@ characters={
 				ledger = army
 				allowed = {
 					has_dlc = "La Resistance"
-					
+					NOT = {
+						has_game_rule = {
+							rule = SPR_focus_tree_selection
+							option = R56_TREE
+						}
+					}
 					original_tag = SPR
 				}
 				visible = {
@@ -1526,7 +1619,7 @@ characters={
 				planning_skill=3
 				logistics_skill=2
 				legacy_id=1114
-				visible = {
+				visible={
 					OR = {
 						NOT = { has_global_flag = spanish_civil_war }
 						AND = {
@@ -1549,7 +1642,10 @@ characters={
 			allowed = {
 				OR = {
 					NOT = { has_dlc = "La Resistance" }
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			name=SPA_jose_enrique_varela
@@ -1568,7 +1664,10 @@ characters={
 				allowed = {
 					OR = {
 						NOT = { has_dlc = "La Resistance" }
-						
+						has_game_rule = {
+							rule = SPR_focus_tree_selection
+							option = R56_TREE
+						}
 					}
 					original_tag = SPR
 				}
@@ -1597,12 +1696,12 @@ characters={
 				defense_skill=2
 				planning_skill=3
 				logistics_skill=2
-				visible = {
+				visible={
+					has_global_flag = spanish_civil_war
 					tag = N56
 					NOT = {
 						tag = S56
 					}
-					has_global_flag = spanish_civil_war
 				}
 			}
 		}
@@ -1612,7 +1711,12 @@ characters={
 		instance = {
 			allowed = {
 				has_dlc = "La Resistance"
-				
+				NOT = {
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
+				}
 			}
 			name=SPA_miguel_cabanellas
 			portraits={
@@ -1681,7 +1785,10 @@ characters={
 			allowed = {
 				OR = {
 					NOT = { has_dlc = "La Resistance" }
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			name=SPA_miguel_cabanellas_ferrer
@@ -1698,7 +1805,10 @@ characters={
 				allowed = {
 					OR = {
 						NOT = { has_dlc = "La Resistance" }
-						
+						has_game_rule = {
+							rule = SPR_focus_tree_selection
+							option = R56_TREE
+						}
 					}
 					original_tag = SPR
 				}
@@ -1730,12 +1840,12 @@ characters={
 				planning_skill = 3
 				logistics_skill = 3
 				legacy_id=-1
-				visible = {
+				visible={
+					has_global_flag = spanish_civil_war
 					tag = N56
 					NOT = {
 						tag = S56
 					}
-					has_global_flag = spanish_civil_war
 				}
 			}
 		}
@@ -1745,7 +1855,12 @@ characters={
 		instance = {
 			allowed = {
 				has_dlc = "La Resistance"
-				
+				NOT = {
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
+				}
 			}
 			name=SPR_jose_millan_astray
 			portraits={
@@ -1768,7 +1883,10 @@ characters={
 			allowed = {
 				OR = {
 					NOT = { has_dlc = "La Resistance" }
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			name=SPR_jose_millan_astray
@@ -1786,6 +1904,13 @@ characters={
 				planning_skill=2
 				logistics_skill=2
 				legacy_id=1118
+				visible={
+					has_global_flag = spanish_civil_war
+					tag = N56
+					NOT = {
+						tag = S56
+					}
+				}
 			}
 		}
 	}
@@ -1794,7 +1919,12 @@ characters={
 		instance = {
 			allowed = {
 				has_dlc = "La Resistance"
-				
+				NOT = {
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
+				}
 			}
 			name=SPR_miguel_buiza_fernandez_palacios
 			portraits={
@@ -1817,7 +1947,10 @@ characters={
 			allowed = {
 				OR = {
 					NOT = { has_dlc = "La Resistance" }
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			name=SPR_miguel_buiza_fernandez_palacios
@@ -1834,7 +1967,10 @@ characters={
 				allowed = {
 					OR = {
 						NOT = { has_dlc = "La Resistance" }
-						
+						has_game_rule = {
+							rule = SPR_focus_tree_selection
+							option = R56_TREE
+						}
 					}
 					original_tag = SPR
 				}
@@ -1863,7 +1999,12 @@ characters={
 		instance = {
 			allowed = {
 				has_dlc = "La Resistance"
-				
+				NOT = {
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
+				}
 			}
 			name=SPA_luis_carrero_blanco
 			portraits={
@@ -1877,7 +2018,12 @@ characters={
 				idea_token = SPA_luis_carrero_blanco
 				allowed = {
 						has_dlc = "La Resistance"
-						
+						NOT = {
+							has_game_rule = {
+								rule = SPR_focus_tree_selection
+								option = R56_TREE
+							}
+						}
 					original_tag = SPR
 				}
 				visible = {
@@ -1908,7 +2054,10 @@ characters={
 			allowed = {
 				OR = {
 					NOT = { has_dlc = "La Resistance" }
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			name=SPA_luis_carrero_blanco
@@ -1925,7 +2074,10 @@ characters={
 				allowed = {
 					OR = {
 						NOT = { has_dlc = "La Resistance" }
-						
+						has_game_rule = {
+							rule = SPR_focus_tree_selection
+							option = R56_TREE
+						}
 					}
 					original_tag = SPR
 				}
@@ -1952,7 +2104,7 @@ characters={
 				maneuvering_skill=2
 				coordination_skill=1
 				legacy_id=-1
-				visible = {
+				visible={
 					tag = N56
 					NOT = {
 						tag = S56
@@ -1967,7 +2119,12 @@ characters={
 		instance = {
 			allowed = {
 				has_dlc = "La Resistance"
-				
+				NOT = {
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
+				}
 			}
 			name=SPA_rafael_garcia_valino
 			portraits={
@@ -1982,7 +2139,12 @@ characters={
 				ledger = army
 				allowed = {
 					has_dlc = "La Resistance"
-					
+					NOT = {
+						has_game_rule = {
+							rule = SPR_focus_tree_selection
+							option = R56_TREE
+						}
+					}
 					original_tag = SPR
 				}
 				visible = {
@@ -2045,7 +2207,10 @@ characters={
 			allowed = {
 				OR = {
 					NOT = { has_dlc = "La Resistance" }
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			name="Rafael Garcia Valino"
@@ -2062,7 +2227,7 @@ characters={
 				defense_skill=1
 				planning_skill=1
 				logistics_skill=1
-				visible = {
+				visible={
 					tag = N56
 					NOT = {
 						tag = S56
@@ -2086,7 +2251,12 @@ characters={
 			ledger = army
 			allowed = {
 				has_dlc = "La Resistance"
-				
+				NOT = {
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
+				}
 				original_tag = SPR
 			}
 
@@ -2130,7 +2300,12 @@ characters={
 		instance = {
 			allowed = {
 				has_dlc = "La Resistance"
-				
+				NOT = {
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
+				}
 			}
 			name=SPA_miguel_ponte
 			portraits={
@@ -2140,12 +2315,17 @@ characters={
 				}
 			}
 			advisor={	
-				slot = high_command
+				slot = army_chief
 				idea_token = SPA_miguel_ponte
 				ledger = army
 				allowed = {
 					has_dlc = "La Resistance"
-					
+					NOT = {
+						has_game_rule = {
+							rule = SPR_focus_tree_selection
+							option = R56_TREE
+						}
+					}
 					original_tag = SPR
 				}
 				visible = {
@@ -2175,7 +2355,7 @@ characters={
 				defense_skill=1
 				planning_skill=1
 				logistics_skill=1
-				visible = {
+				visible={
 					has_global_flag = spanish_civil_war
 					NOT = {
 						tag = SPD
@@ -2191,7 +2371,10 @@ characters={
 			allowed = {
 				OR = {
 					NOT = { has_dlc = "La Resistance" }
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			name="Miguel Ponte"
@@ -2208,7 +2391,7 @@ characters={
 				defense_skill=1
 				planning_skill=1
 				logistics_skill=1
-				visible = {
+				visible={
 					has_global_flag = spanish_civil_war
 					tag = N56
 					NOT = {
@@ -2223,7 +2406,12 @@ characters={
 		instance = {
 			allowed = {
 				has_dlc = "La Resistance"
-				
+				NOT = {
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
+				}
 			}
 			name=SPA_joaquin_garcia_morato
 			portraits={
@@ -2237,7 +2425,12 @@ characters={
 				ledger = air
 				allowed = {
 					has_dlc = "La Resistance"
-					
+					NOT = {
+						has_game_rule = {
+							rule = SPR_focus_tree_selection
+							option = R56_TREE
+						}
+					}
 					original_tag = SPR
 				}
 				visible = {
@@ -2265,7 +2458,10 @@ characters={
 			allowed = {
 				OR = {
 					NOT = { has_dlc = "La Resistance" }
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			name=SPA_joaquin_garcia_morato
@@ -2315,7 +2511,12 @@ characters={
 			ledger = air
 			allowed = {
 				has_dlc = "La Resistance"
-				
+				NOT = {
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
+				}
 				original_tag = SPR
 			}
 			visible = {
@@ -2353,7 +2554,12 @@ characters={
 			ledger = army
 			allowed = {
 				has_dlc = "La Resistance"
-				
+				NOT = {
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
+				}
 				original_tag = SPR
 			}
 			visible = {
@@ -2389,7 +2595,12 @@ characters={
 			ledger = army
 			allowed = {
 				has_dlc = "La Resistance"
-				
+				NOT = {
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
+				}
 				original_tag = SPR
 			}
 			visible = {
@@ -2428,7 +2639,10 @@ characters={
 			allowed = {
 				OR = {
 					NOT = { has_dlc = "La Resistance" }
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 				original_tag = SPR
 			}
@@ -2456,7 +2670,12 @@ characters={
 		instance = {
 			allowed = {
 				has_dlc = "La Resistance"
-				
+				NOT = {
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
+				}
 			}
 			name=SPA_ricardo_rada
 			portraits={
@@ -2471,7 +2690,12 @@ characters={
 				ledger = army
 				allowed = {
 					has_dlc = "La Resistance"
-					
+					NOT = {
+						has_game_rule = {
+							rule = SPR_focus_tree_selection
+							option = R56_TREE
+						}
+					}
 					original_tag = SPR
 				}
 				visible = {
@@ -2499,7 +2723,10 @@ characters={
 			allowed = {		
 				OR = {
 					NOT = { has_dlc = "La Resistance" }
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 			}
 			name=SPA_ricardo_rada
@@ -2546,7 +2773,7 @@ characters={
 				defense_skill=1
 				planning_skill=1
 				logistics_skill=1
-				visible = {
+				visible={
 					has_global_flag = spanish_civil_war
 					tag = N56
 					NOT = {
@@ -2578,7 +2805,7 @@ characters={
 				NOT = {
 					tag = S56
 				}
-				
+				has_completed_focus = SPR_Expand
 			}
 		}
 	}
@@ -2598,12 +2825,12 @@ characters={
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=3
-			visible = {
+			visible={
 				tag = N56
 				NOT = {
 					tag = S56
 				}
-				
+				has_completed_focus = SPR_Expand
 			}
 		}
 	}
@@ -2623,12 +2850,12 @@ characters={
 			defense_skill=2
 			planning_skill=1
 			logistics_skill=2
-			visible = {
+			visible={
 				tag = N56
 				NOT = {
 					tag = S56
 				}
-				
+				has_completed_focus = SPR_Expand
 			}
 		}
 	}
@@ -2648,7 +2875,7 @@ characters={
 			defense_skill=1
 			planning_skill=1
 			logistics_skill=1
-			visible = {
+			visible={
 				NOT = {
 					tag = S56
 				}
@@ -2672,7 +2899,7 @@ characters={
 			defense_skill=2
 			maneuvering_skill=2
 			coordination_skill=1	
-			visible = {
+			visible={
 				OR = {
 					NOT = { has_global_flag = spanish_civil_war }
 					tag = N56
@@ -2700,7 +2927,7 @@ characters={
 			defense_skill=1
 			planning_skill=3
 			logistics_skill=2
-			visible = {
+			visible={
 				has_global_flag = spanish_civil_war
 				NOT = {
 					tag = N56
@@ -2725,13 +2952,15 @@ characters={
 			defense_skill=1
 			planning_skill=3
 			logistics_skill=2
-			visible = {
+			visible={
 				has_global_flag = spanish_civil_war
 				NOT = {
 					tag = N56
 				}
 				tag = S56
-				
+				S56 = {
+					has_completed_focus = SPR_Expand
+				}
 			}
 		}
 	}
@@ -2904,7 +3133,10 @@ characters={
 			allowed = {
 				OR = {
 					NOT = { has_dlc = "La Resistance" }
-					
+					has_game_rule = {
+						rule = SPR_focus_tree_selection
+						option = R56_TREE
+					}
 				}
 				original_tag = SPR
 			}
@@ -4033,8 +4265,8 @@ characters={
 		name=SPR_jose_rovira
 		portraits={
 			army={
+				large = "gfx/leaders/SPR/r56_portrait_SPR_jose_roviro_i_canals.dds"
 				small="gfx/interface/ideas/idea_europe_generic_land_5.dds"
-				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 			}
 		}
 		advisor={
@@ -5222,9 +5454,13 @@ characters={
 			idea_token = SPA_luis_valdes_cavanillas
 			name = SPA_luis_valdes_cavanillas 
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
 				original_tag = SPR
-				has_government = fascism
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
 			}
 			traits = {
 				prince_of_terror 
@@ -5244,9 +5480,13 @@ characters={
 			idea_token = SPA_tomas_garciano_goni
 			name = SPA_tomas_garciano_goni 
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
 				original_tag = SPR
-				has_government = fascism
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
 			}
 			traits = {
 				compassionate_gentleman 
@@ -5266,9 +5506,13 @@ characters={
 			idea_token = SPA_fidel_davila_arrondo
 			name = SPA_fidel_davila_arrondo 
 			allowed = {
-				NOT = { has_dlc = "La Resistance" }
 				original_tag = SPR
-				has_government = fascism
+			}
+			visible = {
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+				}
 			}
 			traits = {
 				war_industrialist 
