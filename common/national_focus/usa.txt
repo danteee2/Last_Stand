@@ -7060,7 +7060,6 @@ focus_tree = {
 
 		available = {
 			is_puppet = no
-			fascism > 0.4
 			is_major = yes
 			has_war_support > 0.35
 		}
