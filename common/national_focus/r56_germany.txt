@@ -2950,41 +2950,41 @@ focus_tree = {
 		}
 		completion_reward = {
 			51 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			63 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
 			5 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -3016,7 +3016,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			64 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -3024,7 +3024,7 @@ focus_tree = {
 				}
 			}
 			59 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -3032,7 +3032,7 @@ focus_tree = {
 				}
 			}
 			60 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -5694,38 +5694,7 @@ focus_tree = {
 		}
 
 	}
-	focus = {
-		id = GER_core_lorraine
-		icon = GFX_goal_GER_claim_alsace_lorraine
-		cost = 5.00
-		available = {
-			OR = {
-				has_government = fascism
-				has_government = neutrality
-			}
-			OR = {
-				controls_state = 28
-				controls_state = 965
-			}
-		}
-		prerequisite = {
-			focus = GER_above_maginot
-			focus = GER_around_maginot
-		}
-		x = 2
-		y = 1
-		relative_position_id = GER_above_maginot
-		ai_will_do = {
-			factor = 5
-		}
-		completion_reward = {
-			add_state_core = 28
-			add_state_core = 965
-		}
-		search_filters = {
-			FOCUS_FILTER_ANNEXATION
-		}
-	}
+	
 	focus = {
 		id = GER_operation_bolivar
 		icon = GFX_goal_generic_intelligence_exchange

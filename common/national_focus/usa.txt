@@ -7028,6 +7028,7 @@ focus_tree = {
 
 		available = {
 			has_completed_focus = USA_war_department
+			date > 1938.06.01
 		}
 
 		cancel_if_invalid = no

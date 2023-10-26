@@ -830,7 +830,7 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 1
-				consumer_goods_factor = 0.3
+				consumer_goods_factor = 0.9
 				conscription_factor = -0.5
 				join_faction_tension = 0.20
 				local_resources_factor = -0.2
@@ -851,7 +851,7 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 0.65
-				consumer_goods_factor = 0.25
+				consumer_goods_factor = 0.60
 				conscription_factor = -0.4
 				join_faction_tension = 0.20
 				local_resources_factor = -0.15
@@ -872,7 +872,7 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 0.25
-				consumer_goods_factor = 0.175
+				consumer_goods_factor = 0.3
 				conscription_factor = -0.2
 				join_faction_tension = 0.20
 				local_resources_factor = -0.1
