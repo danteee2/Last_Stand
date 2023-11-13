@@ -154,11 +154,10 @@ flooded = { # on Province
 }
 
 unplanned_offensive = { # on Province
-	air_cas_present_factor = -0.75
-	army_attack_factor = -0.9
-	army_speed_factor = -0.75
-	ground_attack_factor = -0.75
-	local_org_regain = -0.5
+air_cas_present_factor = -0.25
+army_attack_factor = -0.25
+army_speed_factor = -0.25
+local_org_regain = -0.1
 }
 
 night = { # On province. Multiplied by amount of darkness.
