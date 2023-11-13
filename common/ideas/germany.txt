@@ -220,7 +220,7 @@ ideas = {
 				political_power_factor = 0.05
 				war_support_factor = -0.15
 				stability_factor = 0.05
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.2
 			}
 		}
 		GER_plunder_the_westIII = {
@@ -249,7 +249,7 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.05
 				production_speed_buildings_factor = 0.1
 				stability_factor = -0.05
-				consumer_goods_factor = 0.025
+				consumer_goods_factor = 0.1
 			}
 		}
 		GER_plunder_the_westI = {

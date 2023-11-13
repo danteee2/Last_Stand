@@ -7525,7 +7525,7 @@ BUL_foreign_agreements = {
 		
 		modifier = {
 			political_power_factor = -0.15
-			consumer_goods_factor = 0.5
+			consumer_goods_factor = 0.15
 		}
 		
 		complete_effect = {
