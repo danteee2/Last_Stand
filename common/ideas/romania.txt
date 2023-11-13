@@ -104,7 +104,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				min_export = -0.05
 				trade_cost_for_target_factor = -0.25
 			}
@@ -446,7 +446,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.2
+				consumer_goods_factor = 0.60
 			}
 		}
 
@@ -503,7 +503,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.03
+				consumer_goods_factor = 0.09
 			}
 		}
 
@@ -605,7 +605,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = 0.15
+				consumer_goods_factor = 0.45
 				political_power_gain = -0.25
 			}
 		}
@@ -726,7 +726,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = -0.075
+				consumer_goods_factor = -0.20
 			}
 		}
 
