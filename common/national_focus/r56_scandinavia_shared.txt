@@ -74,8 +74,8 @@
 			}
 		}		
 		offset = {
-			x = 3
-			y = 0
+			x = -23
+			y = 14
 			trigger = {
 				tag = NOR
 			}
@@ -93,7 +93,7 @@
 			trigger = {
 				tag = DEN
 			}
-		}		
+		}
 		ai_will_do = {
 			factor = 5
 		}
@@ -136,9 +136,9 @@
 	}
 	shared_focus = {
 		id = SCA_trans_scandinavian_railway
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_generic_positive_trade_relations
 		cost = 15
-		text = UNIFIED_GENERIC_trans_country_railway
+		text = "Scandinavian Economic Coperatiopn"
 		prerequisite = {
 			focus = SCA_scandinavian_unification
 		}
@@ -152,15 +152,10 @@
 			NOT = {
 				has_idea = generic_recent_economic_unification
 			}
-			controls_state = 144
-			controls_state = 666
-			controls_state = 38
+			controls_state = 110
 			controls_state = 141
-			controls_state = 139
-			controls_state = 138
 			controls_state = 37
-			controls_state = 99
-			controls_state = 964
+			controls_state = 111
 		}
 	
 		bypass = {
@@ -170,16 +165,42 @@
 	
 		}
 		completion_reward = {
-			build_railway = {
-				level = 1
-				build_only_on_allied = yes
-				controller_priority = {
-				  	base = 1
+			random_owned_controlled_state = {
+				prioritize = { 110 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
 				}
-				fallback = yes
-				start_state = 144
-				target_state = 964
-			}											
+			}	
+			random_owned_controlled_state = {
+				prioritize = { 141 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}	
+			random_owned_controlled_state = {
+				prioritize = { 37 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}	
+			random_owned_controlled_state = {
+				prioritize = { 111 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}										
 		}		
 	}	
 	shared_focus = {
@@ -195,10 +216,7 @@
 		ai_will_do = {
 			factor = 5
 		}
-		available = {
-			NOT = {
-				original_tag = SWE
-			}			
+		available = {	
 			138 = {
 				is_core_of = ROOT
 			}
@@ -211,12 +229,8 @@
 		}
 
 		bypass = {
-			original_tag = SWE
 		}
 		allow_branch = {
-			NOT = {
-				original_tag = SWE
-			}
 			OR = {
 				NOT = { tag = DEN }
 				has_cosmetic_tag = SCA
@@ -271,28 +285,14 @@
 				is_core_of = ROOT
 			}
 			controls_state = 142
-			NOT = {
-				any_other_country = {
-					has_completed_focus = NOR_expanded_aluminium_production
-				}
-			}
 			has_tech = aluminum_production_1
 
 		}
 		
 		bypass = {
-			OR = {
-				any_other_country = {
-					has_completed_focus = NOR_expanded_aluminium_production
-				}
-				tag = NOR
-			}
 
 		}
 		allow_branch = {
-			NOT = {
-				original_tag = NOR
-			}
 			OR = {
 				NOT = { tag = DEN }
 				has_cosmetic_tag = SCA
@@ -334,10 +334,10 @@
 			}
 			random_owned_controlled_state = {
 				prioritize = { 142 }
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = aluminum_mill
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -410,18 +410,12 @@
 					level = 2
 					instant_build = yes
 				}
-
 			}
-			if = {
+			every_military_industrial_organization = {
 				limit = {
-					NOT = {
-						original_tag = SWE
-					}
+					has_mio_research_category = armor
 				}
-				custom_effect_tooltip = available_tank_designer
-				show_ideas_tooltip = SWE_volvo
-				show_ideas_tooltip = SWE_ab_landsverk	
-				show_ideas_tooltip = SWE_scania_tank				
+				add_mio_funds = 1000
 			}
 			
 		}
@@ -467,6 +461,12 @@
 		completion_reward = {
 			random_owned_controlled_state = {
 				prioritize = { 144 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = steel_mill
+					level = 1
+					instant_build = yes
+				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -475,6 +475,12 @@
 			}
 			random_owned_controlled_state = {
 				prioritize = { 666 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = steel_mill
+					level = 1
+					instant_build = yes
+				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
