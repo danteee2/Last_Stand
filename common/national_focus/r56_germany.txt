@@ -15880,11 +15880,11 @@ focus_tree = {
 	focus = {
 		id = GER_plunder_the_west
 		icon = GFX_goal_generic_growing_economy
-		cost = 15
+		cost = 20
 		prerequisite = {
 			focus = GER_volkswagen
 		}
-		available = { date > 1939.01.01 }
+		available = { date > 1939.01.01 controls_state = 16 }
 		x = 0
 		y = 2
 		relative_position_id = GER_deutsche_arbeitsfront
