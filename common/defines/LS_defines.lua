@@ -128,13 +128,13 @@ NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 2000 -- Max navy experience a country c
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 2000  -- Max air experience a country can store
 
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.03
-NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 32
+NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 50
 NDefines.NMilitary.RECON_SKILL_IMPACT = 6
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0 -- Base cost to unlock a regiment slot
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0 -- Base cost to change a regiment column.
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0
 
-NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.5
+NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.4
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.000175
 NDefines.NMilitary.FIELD_EXPERIENCE_MAX_PER_DAY = 12
 NDefines.NMilitary.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0.1
