@@ -1007,10 +1007,6 @@ norway_ally = {
 	}
 	enable = {
 		tag = GER
-		NOR = {
-			has_completed_focus = NOR_support_radical_nationalism
-			is_puppet = no
-		}
 
 		has_completed_focus = GER_norway_friend
 		country_exists = NOR

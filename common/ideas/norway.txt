@@ -953,7 +953,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				electronics = 0.15
+				electronics = 0.1
 			}
 			
 			traits = { electronics_concern }
@@ -969,18 +969,12 @@ ideas = {
 		
 			allowed = {
 				original_tag = NOR
-				#has_aat = no
-			}
-
-			visible = {
-				NOT = {
-					has_global_flag = NOR_use_DLC_tree
-				}
+				has_aat = no
 			}
 			
 			research_bonus = {
 				industry = 0.05
-				synth_resources = 0.15
+				synth_resources = 0.1
 			}
 			
 			traits = { refinery_concern }
@@ -999,7 +993,6 @@ ideas = {
 			}
 
 			visible = {
-				has_global_flag = NOR_use_DLC_tree
 				NOT = { has_completed_focus = NOR_nationalize_the_hydro_plants } 
 			}
 
