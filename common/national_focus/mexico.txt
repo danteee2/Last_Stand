@@ -175,14 +175,14 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = MEX_focus_national_bank
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 100
 		}
 
 		available = {
-			
+			has_tech = construction2
 		}
 
 		bypass = {
@@ -210,14 +210,14 @@ focus_tree = {
 		x = -2
 		y = 2
 		relative_position_id = MEX_focus_national_bank
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 100
 		}
 
 		available = {
-			
+			num_of_civilian_factories > 30
 		}
 
 		bypass = {
@@ -255,7 +255,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+			num_of_civilian_factories > 45
 		}
 
 		bypass = {
