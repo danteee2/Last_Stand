@@ -72,7 +72,7 @@ technologies = {
 		xp_unlock_cost = 100
 
 		category_all_infantry = {
-			max_organisation = 15
+			max_organisation = 10
 		}
 
 
@@ -115,7 +115,7 @@ technologies = {
 
 	elastic_defence = {
 
-		land_reinforce_rate = 0.02
+		land_reinforce_rate = 0.05
 		xp_research_type = army
 		xp_unlock_cost = 100
 
@@ -363,8 +363,8 @@ technologies = {
 			breakthrough = 0.03
 		}
 		category_tanks = {
-			max_organisation = 3
-			breakthrough = 0.03
+			max_organisation = 2
+			breakthrough = 0.02
 		}
 
 		armored_car_recon = {
@@ -1097,6 +1097,7 @@ technologies = {
 		xp_unlock_cost = 100
 		category_all_infantry = {
 			defense = 0.10
+			max_organisation = 10
 		}
 
 		enable_tactic = tactic_elastic_defense
@@ -3040,7 +3041,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		max_planning = 0.10
-		land_reinforce_rate = 0.10
+		land_reinforce_rate = 0.05
 		planning_speed = 0.10
 
 		enable_tactic = tactic_elastic_defense
@@ -3090,7 +3091,7 @@ technologies = {
 	vast_offensives = {
 		xp_research_type = army
 		xp_unlock_cost = 100
-		supply_consumption_factor = -0.10
+		army_org_regain = 0.1
 
 		infantry = {
 			combat_width = -0.4
@@ -3523,7 +3524,7 @@ technologies = {
 			combat_width = -0.4
 		}
 
-		land_reinforce_rate = 0.05
+		land_reinforce_rate = 0.1
 
 		path = {
 			leads_to_tech = guerilla_warfare
