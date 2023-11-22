@@ -454,16 +454,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			HUN = {
-				add_offsite_building = {
-					type = industrial_complex
-					level = 5
-				}	
-				
+			76 = {
+				set_state_owner_to = HUN
+				add_core_of = HUN
 			}
 			add_offsite_building = {
 				type = industrial_complex
-				level = 5
+				level = 2
 			}
 			
 			
@@ -1214,7 +1211,7 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
-				prioritize = { 79 81 }
+				prioritize = { 79 }
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -1222,15 +1219,15 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			random_owned_controlled_state = {
-				prioritize = { 79 81 }
+				prioritize = { 81 }
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -1238,7 +1235,7 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -1504,8 +1501,21 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = ROM_iar
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = ROM_iar_organization
+				mio:ROM_iar_organization = {
+					complete_mio_trait = generic_mio_trait_heavily_armed_aircraft
+					add_mio_funds = 2500
+				}
+			}
+			else = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = ROM_iar
+			}
 		}
 	}
 
@@ -1880,6 +1890,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROM_align_hungary
+		text = "Invade Hungary"
 		icon = GFX_goal_generic_attack_hungary
 		prerequisite = { focus = ROM_balkans_dominance }
 		x = 1
@@ -1936,13 +1947,17 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			HUN = { country_event = DOD_romania.50 }
+			create_wargoal = {
+				target = HUN
+				type = annex_everything
+			}
 		}
 	}
 
 	focus = {
 		id = ROM_puppet_bulgaria
 		icon = GFX_goal_ROM_puppet_bulgaria
+		text = "Invade Bulgaria"
 		prerequisite = { focus = ROM_balkans_dominance }
 		x = -2
 		y = 1
@@ -5830,20 +5845,23 @@ focus_tree = {
 #	search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
  Focus = {
 	id = ROM_protect_the_nation
-	icon = GFX_focus_generic_conspiracy 
-	prerequisite = {focus = ROM_preserve_greater_romania}
-	relative_position_id = ROM_preserve_greater_romania
+	icon = GFX_focus_spr_torchbearers_of_tomorrow 
+	text = "A New Guiding Force"
+	prerequisite = {focus = ROM_balkans_dominance }
+	relative_position_id = ROM_balkans_dominance
 	available = {
-		is_ai = no
+		controls_state = 43
+		controls_state = 48
 	}
-	x = -7
-	y = 1
+	x = 0
+	y = 3
 	cost = 10
 	completion_reward = {
-		add_ideas = rom_protect
-	} }
+		add_ideas = ROM_balkans_1
+	} 
+}
  focus = {
-	id = ROM_surrender_contested
+	id = ROM_exploit_the_new_populus
 	icon = GFX_goal_tripartite_pact
 	prerequisite = {focus = ROM_protect_the_nation}
 	relative_position_id = ROM_protect_the_nation
@@ -5851,55 +5869,33 @@ focus_tree = {
 	x = -1
 	y = 1
 	available = {
-		76 = { is_owned_by = ROM }
-		77 = { is_owned_by = ROM }
-		80 = { is_owned_by = ROM }
-		78 = { is_owned_by = ROM }
-		766 = { is_owned_by = ROM }
+		
+	}
+	mutually_exclusive = {
+		focus = ROM_empower_the_populus
 	}
 	completion_reward = { 
-		add_offsite_building = {
-			type = industrial_complex
-			level = 8
-		}
-		add_offsite_building = {
-			type = arms_factory
-			level = 6
-		}
-		SOV = {
-			transfer_state = 78
-			transfer_state = 766
-			transfer_state = 80
-			add_state_core = 78
-			add_state_core = 766
-			add_state_core = 80
-		}
-		HUN = {
-			transfer_state = 76
-			add_state_core = 76
-		}
-		BUL = {
-			transfer_state = 77
-			add_state_core = 77
+		swap_ideas = {
+			add_idea = ROM_balkans_2
+			remove_idea = ROM_balkans_1
 		}
 	}
  }
  focus = {
-	id = ROM_expand_conscription
+	id = ROM_empower_the_populus
 	icon = GFX_focus_generic_little_entente
 	prerequisite = {focus = ROM_protect_the_nation}
 	relative_position_id = ROM_protect_the_nation
+	mutually_exclusive = {
+		focus = ROM_exploit_the_new_populus
+	}
 	cost = 10
 	x = 1
 	y = 1
 	completion_reward = {
-		hidden_effect {
-			remove_ideas = rom_protect
-			add_ideas = rom_protect_2
-		}
 		swap_ideas = {
-			remove_idea = rom_protect
-			add_idea = rom_protect_2
+			remove_idea = ROM_balkans_1
+			add_idea = ROM_balkans_3
 		}
 	}
 	
@@ -5909,136 +5905,71 @@ focus_tree = {
 	id = ROM_better_army
 	icon = GFX_focus_generic_military_mission
 	cost = 10
-	prerequisite = {focus = ROM_expand_conscription}
+	prerequisite = {focus = ROM_empower_the_populus}
 	x = 1
 	y = 2
 	relative_position_id = ROM_protect_the_nation
-	completion_reward = {swap_ideas = {
-		remove_idea = rom_protect_2
-		add_idea =  rom_protect_3
-		} 
+	completion_reward = {
+		division_template = {
+			name = "Balkan Legion"
+			priority = 1
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+	
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+	
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+			}
+			support = {
+				engineer = { x = 0 y = 0 }
+				artillery = {
+					x = 0
+					y = 1
+				}
+			}
+		}
+		random_owned_controlled_state = {
+			limit = { PREV = { has_full_control_of_state = PREV } }
+			create_unit = {
+				division = "name = \"Balkan Legion\" division_template = \"Balkan Legion\" start_experience_factor = 0.9" 
+				owner = PREV
+			}
+			create_unit = {
+				division = "name = \"Balkan Legion\" division_template = \"Balkan Legion\" start_experience_factor = 0.9" 
+				owner = PREV
+				}
+		}
+		random_owned_controlled_state = {
+			limit = { PREV = { has_full_control_of_state = PREV } }
+			create_unit = {
+				division = "name = \"Balkan Legion\" division_template = \"Balkan Legion\" start_experience_factor = 0.9" 
+				owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Balkan Legion\" division_template = \"Balkan Legion\" start_experience_factor = 0.9" 
+					owner = PREV
+					}
+			}
 	}
  }
  focus ={
 	id = expand_romanian_industry
 	icon = GFX_goal_generic_production
-	cost = 20
+	cost = 10
 	relative_position_id = ROM_protect_the_nation
-	prerequisite {focus = ROM_surrender_contested}
+	prerequisite = {focus = ROM_exploit_the_new_populus}
 	x = -1
 	y = 2
 	completion_reward = {
-	46 = {add_extra_state_shared_building_slots = 4}
-	81 = {add_extra_state_shared_building_slots = 4}
-	82 = {add_extra_state_shared_building_slots = 4}
-	84 = {add_extra_state_shared_building_slots = 4}
-	83 = {add_extra_state_shared_building_slots = 4}
-	955 = {add_extra_state_shared_building_slots = 4}
-	79 = {add_extra_state_shared_building_slots = 4}
-	
-	46 = add_building_construction = {
-		type = infrastructure
-		level = 5
-		instant_build = yes
-	}
-	random_owned_controlled_state = {
-		prioritize = { 79 }
-		limit = {
-			free_building_slots = {
-				building = infrastructure
-				size > 0
-			}
+		every_military_industrial_organization = {
+			add_mio_funds = 1000
 		}
-		add_building_construction = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-		}
-	}
-	random_owned_controlled_state = {
-		prioritize = { 955 }
-		limit = {
-			free_building_slots = {
-				building = infrastructure
-				size > 0
-			}
-		}
-		add_building_construction = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-		}
-	}
-	random_owned_controlled_state = {
-		prioritize = { 84 }
-		limit = {
-			free_building_slots = {
-				building = infrastructure
-				size > 0
-			}
-		}
-		add_building_construction = {
-			type = infrastructure
-			level = 3
-			instant_build = yes
-		}
-	}
-	random_owned_controlled_state = {
-		prioritize = { 83 }
-		limit = {
-			free_building_slots = {
-				building = infrastructure
-				size > 0
-			}
-		}
-		add_building_construction = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-		}
-	}
-	random_owned_controlled_state = {
-		prioritize = { 82 }
-		limit = {
-			free_building_slots = {
-				building = infrastructure
-				size > 0
-			}
-		}
-		add_building_construction = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-		}
-	}
-	random_owned_controlled_state = {
-		prioritize = { 46 }
-		limit = {
-			free_building_slots = {
-				building = infrastructure
-				size > 0
-			}
-		}
-		add_building_construction = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-		}
-	}
-	random_owned_controlled_state = {
-		prioritize = { 81 }
-		limit = {
-			free_building_slots = {
-				building = infrastructure
-				size > 0
-			}
-		}
-		add_building_construction = {
-			type = infrastructure
-			level = 2
-			instant_build = yes
-		}
-	}
 	
 	}
 
@@ -6047,37 +5978,15 @@ focus_tree = {
  focus = {
 	id = ROM_proclaim_total_mob
 	icon = GFX_goal_generic_forceful_treaty
-	prerequisite = {focus = ROM_better_army}
-	prerequisite = {focus = expand_romanian_industry}
+	prerequisite = {focus = ROM_better_army focus = expand_romanian_industry}
 	relative_position_id = ROM_protect_the_nation
+	available = {
+		has_war_support > 0.8
+	}
 	cost = 10
 	x = 0
 	y = 3
 	completion_reward = { add_ideas = tot_economic_mobilisation}
- }
- focus = {
-	id = ROM_more_oil
-	icon = GFX_goal_fuel_the_fire
-	prerequisite = {focus = expand_romanian_industry}
-	relative_position_id = ROM_protect_the_nation
-	x = -2
-	y = 3
-	cost  = 5
-	completion_reward = {
-		set_technology = { fuel_refining = 1 }
-		add_resource = {
-			type = oil
-			amount = 13
-			state = 46
-			
-		}
-		add_resource = {
-			type = oil
-			amount = 18
-			state = 84
-			
-		}
-	}
  }
  focus = {
 	id = ROM_democratic_institution
@@ -6112,26 +6021,46 @@ focus_tree = {
 	prerequisite = {focus = ROM_alliance_with_the_kaiserreich focus = ROM_join_axis}
 	x = 3
 	y = 6
-	cost = 15
+	cost = 10
+	available = {
+		is_in_faction_with = GER
+	}
 	completion_reward = {
 		remove_ideas {
 			remove_idea = ROM_king_carol_ii_hedonist
 		}
+		
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.2
+		}add_political_power = 200
 		add_offsite_building = {
 			type = industrial_complex
-			level = 6
+			level = 2 
 		}
-		add_offsite_building = {
-			type = arms_factory
-			level = 8
-		}
-		GER = {
-			puppet = ROM
-		}
+		give_resource_rights = { receiver = GER state = 46 }
 	}
 
  }
 
+
+
+ focus = {
+	id = ROM_more_oil
+	text = "Defend the Nation"
+	icon = GFX_focus_generic_conspiracy
+	prerequisite = { focus = ROM_preserve_greater_romania }
+	relative_position_id = ROM_preserve_greater_romania
+	available = {
+		has_war = yes
+	}
+	x = -5
+	y = 1
+	cost  = 10
+	completion_reward = {
+		add_ideas = rom_protect
+	}
+ }
 #}
 }
 
