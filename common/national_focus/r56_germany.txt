@@ -16096,13 +16096,12 @@ focus_tree = {
 	focus = {
 		id = GER_import_iberian_deposits
 		icon = GFX_focus_por_iberian_summit
-		cost = 5
+		cost = 20
 		prerequisite = {
 			focus = GER_nationalize_resource_industries
 		}
 		available = {
-			OR = {	date > 1937.01.01 
-		threat > 0.1 }
+			date > 1937.01.01 
 			has_full_control_of_state = 66
 			has_full_control_of_state = 67
 		}
@@ -16115,13 +16114,17 @@ focus_tree = {
 		completion_reward = {
 			add_resource = {
 				type = tungsten
-				amount = 42
+				amount = 36
 				state = 66
 			}
 			add_resource = {
 				type = tungsten
-				amount = 36
+				amount = 24
 				state = 67
+			}
+			add_timed_idea = {
+				idea = tungsten_imports
+				days = 365
 			}
 		}
 		search_filters = {

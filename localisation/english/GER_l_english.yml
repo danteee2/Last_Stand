@@ -20,6 +20,7 @@ GER_deutsche_forschungsanstalt_fur_segelflug_desc:0 "Deutsche Forschungsanstalt 
  GER_establish_peenmunde:0 "Establish Peenemünde Laboratory"
  GER_establish_peenmunde_desc:0 "Setting up a new central laboratory will further our scientific knowledge and research to new heights."
  GER_establish_SS:0 "Establish the SS"
+ tungsten_imports:0 "Tungsten Imports"
  GER_establish_SS_desc:0 "The only way to protect the leadership of [GER.GetNameDef] from external threats is by an elite bodyguard. This bodyguard, the SS, will keep the government operating smoothly and deal with those who may want to harm it."
  GER_aux_police_SS:0 "Use SS as Auxiliary Police"
  GER_aux_police_SS_desc:0 "The role of the SS can naturally expand into the civilian sphere, both in Greater Germany and in occupied territories. Hopefully, they can deal with the partisan and terrorist threats that attack troops of the Wehrmacht."
