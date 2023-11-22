@@ -251,10 +251,10 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_continue_the_new_deal }
 		relative_position_id = USA_continue_the_new_deal
-		cost = 5
+		cost = 10
 
 		available = { 
-			congress_low_support_trigger = yes
+			congress_medium_support_trigger = yes
 		}
 
 		ai_will_do = {
@@ -287,8 +287,7 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			add_stability = -0.05
-			add_war_support = 0.05 #upside of going commie
+			add_stability = -0.1
 			custom_effect_tooltip = available_political_advisor
 		    show_ideas_tooltip = earl_browder
 			if = {
@@ -815,7 +814,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_suspend_the_presecution }
 		relative_position_id = USA_suspend_the_presecution
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -824,7 +823,7 @@ focus_tree = {
 		available = {
 			congress_high_support_trigger = yes
 			OR = {
-				has_idea_with_trait = communist_revolutionary
+				communism > 0.20
 				has_government = communism
 			}
 			not = { has_completed_focus = USA_limited_intervention }
@@ -912,7 +911,7 @@ focus_tree = {
 
 		available = {
 			OR = {
-				has_idea_with_trait = communist_revolutionary
+				communism > 0.3
 				has_government = communism
 			}
 			congress_high_support_trigger = yes
@@ -1174,7 +1173,7 @@ focus_tree = {
 
 		available = {
 			OR = {
-				has_government = democratic
+				communism > 0.20
 				has_government = communism
 			}
 		}
@@ -1630,7 +1629,7 @@ focus_tree = {
 		relative_position_id = USA_continue_the_new_deal
 		x = -4
 		y = 1
-		cost = 7.2
+		cost = 10
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1989,7 +1988,7 @@ focus_tree = {
 			}
 			set_rule = { can_send_volunteers = yes }
 			add_ideas = USA_limited_intervention
-			USA_congress_medium_opposition = yes
+			USA_congress_large_opposition = yes
 			if = {
 				limit = {
 					has_war_support < 0.4
@@ -2039,7 +2038,6 @@ focus_tree = {
 		#}
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
-			add_war_support = 0.10
 			if = {
 				limit = {
 					NOT = { has_government = communism }
@@ -2049,9 +2047,9 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					has_war_support < 0.4
+					has_war_support < 0.5
 				}
-				USA_congress_small_opposition = yes
+				USA_congress_large_opposition = yes
 			}
 		}
 	}
@@ -2172,7 +2170,7 @@ focus_tree = {
 					add_idea = rt56_naval_funding_favoritism
 				}
 			}
-			USA_congress_small_opposition = yes
+			USA_congress_large_opposition = yes
 		}
 	}
 	focus = {
@@ -2182,22 +2180,14 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = USA_defense_contractors }
 		relative_position_id = USA_defense_contractors
-		cost = 15
+		cost = 25
 
 		ai_will_do = {
 			factor = 50
 		}
 
 		available = {
-			if = {
-				limit = {
-					has_war = no
-				}
-				congress_high_support_trigger = yes 
-			}
-			else = {
-				congress_low_support_trigger = yes
-			}
+			congress_high_support_trigger = yes 
 			OR = {
 				has_war = yes
 				has_war_support > 0.5
@@ -2378,8 +2368,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_war_support = 0.05
-			add_ideas = r56_USA_over_there
+			add_timed_idea = {
+				idea = r56_USA_over_there
+				days = 90
+			}
 			if = {
 				limit = {
 					NOT = { has_idea = BEL_volunteer_corps }
@@ -3812,7 +3804,6 @@ focus_tree = {
 			has_tech = tactical_bomber2
 		}
 		completion_reward = {
-			add_war_support = 0.05
 			custom_effect_tooltip = USA_tuskegee_airmen_tt
 			hidden_effect = {
 				load_oob = "USA_tuskegee_airmen"
@@ -6161,6 +6152,9 @@ focus_tree = {
 		mutually_exclusive = { focus = USA_continue_the_new_deal }
 		available = {
 			has_government = democratic
+			NOT = {
+				has_country_leader = { ruling_only = yes character = USA_franklin_delano_roosevelt }
+			}
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY FOCUS_FILTER_USA_CONGRESS}
