@@ -1872,7 +1872,7 @@
 		y = 1
 		relative_position_id = JAP_secure_china
 
-		cost = 5
+		cost = 20
 
 		ai_will_do = {
 			factor = 3
@@ -3918,12 +3918,6 @@
 			}
 			if = {
 				limit = {
-					NOT = { has_idea = extensive_conscription }
-				}
-				add_ideas = extensive_conscription
-			}
-			if = {
-				limit = {
 					has_idea = tot_economic_mobilisation
 				}
 				add_political_power = 150
@@ -4236,7 +4230,7 @@
 			mark_focus_tree_layout_dirty = yes
 			set_truce = {
                 target = CHI
-                days = 485
+                days = 730
             }
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -4312,10 +4306,10 @@
 						  include_locked = yes
 					  }
 				  }
-				  add_extra_state_shared_building_slots = 4
+				  add_extra_state_shared_building_slots = 2
 				  add_building_construction = {
 					  type = industrial_complex
-					  level = 4
+					  level = 2
 					  instant_build = yes
 				  }
 				  set_state_flag = JAP_zaibatsus_factories
@@ -4338,10 +4332,10 @@
 						  include_locked = yes
 					  }
 				  }
-				  add_extra_state_shared_building_slots = 4
+				  add_extra_state_shared_building_slots = 2
 				  add_building_construction = {
 					  type = industrial_complex
-					  level = 4
+					  level = 2
 					  instant_build = yes
 				  }
 			  }			
@@ -4361,7 +4355,7 @@
 		  y = 1
 		  completion_reward = {
 			  add_timed_idea = {
-				  days = 60
+				  days = 180
 				  idea = JAP_investment
 			  }
 		  }
