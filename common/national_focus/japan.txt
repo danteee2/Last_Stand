@@ -7536,7 +7536,7 @@
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_0
 				producer = JAP
-				amount = 3000
+				amount = 8000
 			}
 			#bit of help for the AI
 			hidden_effect = {
