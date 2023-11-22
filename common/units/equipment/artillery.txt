@@ -15,14 +15,6 @@ equipments = {
 		group_by = archetype
 		
 		interface_category = interface_category_land
-		
-		# Upgrades (More Variants Mod)
-		upgrades = {
-			ART_reliability_upgrade
-			ART_SA_upgrade
-			ART_HA_upgrade
-			ART_defence_upgrade
-		}
 
 		#Misc Abilities
 		reliability = 0.8
@@ -122,12 +114,6 @@ equipments = {
 		group_by = archetype
 		
 		interface_category = interface_category_land
-		
-		upgrades = {
-			RART_reliability_upgrade
-			RART_SA_upgrade
-			RART_BR_upgrade
-		}
 
 		#Misc Abilities
 		reliability = 0.8

@@ -1872,7 +1872,7 @@
 		y = 1
 		relative_position_id = JAP_secure_china
 
-		cost = 5
+		cost = 20
 
 		ai_will_do = {
 			factor = 3
@@ -3763,7 +3763,7 @@
 		y = 1
 		relative_position_id = JAP_support_the_kodoha_faction
 
-		cost = 10
+		cost = 20
 
 		ai_will_do = {
 			factor = 3
@@ -3915,12 +3915,6 @@
 					has_war_support < 0.8
 				}
 				add_war_support = 0.1
-			}
-			if = {
-				limit = {
-					NOT = { has_idea = extensive_conscription }
-				}
-				add_ideas = extensive_conscription
 			}
 			if = {
 				limit = {
@@ -4236,7 +4230,7 @@
 			mark_focus_tree_layout_dirty = yes
 			set_truce = {
                 target = CHI
-                days = 485
+                days = 730
             }
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -4312,10 +4306,10 @@
 						  include_locked = yes
 					  }
 				  }
-				  add_extra_state_shared_building_slots = 4
+				  add_extra_state_shared_building_slots = 2
 				  add_building_construction = {
 					  type = industrial_complex
-					  level = 4
+					  level = 2
 					  instant_build = yes
 				  }
 				  set_state_flag = JAP_zaibatsus_factories
@@ -4338,10 +4332,10 @@
 						  include_locked = yes
 					  }
 				  }
-				  add_extra_state_shared_building_slots = 4
+				  add_extra_state_shared_building_slots = 2
 				  add_building_construction = {
 					  type = industrial_complex
-					  level = 4
+					  level = 2
 					  instant_build = yes
 				  }
 			  }			
@@ -4361,7 +4355,7 @@
 		  y = 1
 		  completion_reward = {
 			  add_timed_idea = {
-				  days = 60
+				  days = 180
 				  idea = JAP_investment
 			  }
 		  }
@@ -7031,7 +7025,7 @@
 		y = 0
 		relative_position_id = JAP_the_manchurian_project
 
-		cost = 8
+		cost = 20
 
 		ai_will_do = {
 			factor = 2
@@ -7134,7 +7128,9 @@
 		x = 2
 		y = 1
 		relative_position_id = JAP_the_manchurian_project
-
+		mutually_exclusive = {
+			focus = JAP_factory_manchu
+		}
 		cost = 8
 		ai_will_do = {
 			factor = 2
@@ -7343,7 +7339,9 @@
 		x = -2
 		y = 1
 		relative_position_id = JAP_the_manchurian_project
-
+		mutually_exclusive = {
+			focus = JAP_resource_manchu
+		}
 		cost = 5
 
 		ai_will_do = {
@@ -7538,7 +7536,7 @@
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_0
 				producer = JAP
-				amount = 3000
+				amount = 8000
 			}
 			#bit of help for the AI
 			hidden_effect = {
@@ -9231,9 +9229,22 @@
 				uses = 1
 				category = air_doctrine
 			}
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = mitsubishi
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}	
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = JAP_mitsubishi_organization
+				mio:JAP_mitsubishi_organization = {
+					add_mio_funds = 1500
+				}
+			}
+			ELSE = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = mitsubishi
+			}
 		}
+		
 	}
 
 	focus = {

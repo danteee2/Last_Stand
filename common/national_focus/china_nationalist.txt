@@ -2405,12 +2405,9 @@ focus_tree = {
 
 		available = {
 			country_exists = USA
-			USA_can_sell_weapons_trigger = yes
 		}
 		
 		completion_reward = {
-			USA = { country_event = lar_arms_purchases.1 }
-			custom_effect_tooltip = if_they_accept_tt
 			unlock_decision_category_tooltip = CHI_weapons_purchases_category
 		}
 	}
@@ -5439,6 +5436,10 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
+			}
+			mio:CHI_hanyan_arsenal_organization = {
+				complete_mio_trait = china_mio_trait_mass_rifle_production
+				add_mio_funds = 1000
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }

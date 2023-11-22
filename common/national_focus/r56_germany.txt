@@ -1178,6 +1178,26 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_rhineland
 		}
+		available = {
+			is_subject = no
+			has_army_manpower = { size > 499999 }
+
+			check_variable = { num_equipment_in_armies_k@infantry_equipment > 40 }
+			custom_trigger_tooltip = {
+			 	tooltip = GER_anschluss_eq_trigger_tt
+			 	check_variable = { num_equipment_in_armies_k@infantry_equipment > 40 }
+			 }
+			 
+			NOT = { has_idea = rhineland_challenge_met }
+			if = {
+				limit = {
+					SWI = { has_completed_focus = SWI_gotthard_union }
+				}
+				NOT = { 
+					AUS = { has_idea = SWI_swiss_democratic_propaganda }
+				}
+			}
+		}
 		x = 0
 		y = 1
 		relative_position_id = GER_rhineland
@@ -4636,12 +4656,6 @@ focus_tree = {
 			create_equipment_variant = {
 				name = "Volkssturm Small Arms"
 				type = infantry_equipment_0
-				upgrades = {
-					INF_reliability_upgrade = 0
-					INF_SA_upgrade = 4
-					INF_HA_upgrade = 5
-					INF_defence_upgrade = 0
-				}
 			}
 			custom_effect_tooltip = GER_found_the_volkssturm_stockpile_tt
 			hidden_effect = {
@@ -15880,11 +15894,11 @@ focus_tree = {
 	focus = {
 		id = GER_plunder_the_west
 		icon = GFX_goal_generic_growing_economy
-		cost = 15
+		cost = 20
 		prerequisite = {
 			focus = GER_volkswagen
 		}
-		available = { date > 1939.01.01 }
+		available = { date > 1939.01.01 controls_state = 16 }
 		x = 0
 		y = 2
 		relative_position_id = GER_deutsche_arbeitsfront
@@ -16096,13 +16110,12 @@ focus_tree = {
 	focus = {
 		id = GER_import_iberian_deposits
 		icon = GFX_focus_por_iberian_summit
-		cost = 5
+		cost = 20
 		prerequisite = {
 			focus = GER_nationalize_resource_industries
 		}
 		available = {
-			OR = {	date > 1937.01.01 
-		threat > 0.1 }
+			date > 1937.01.01 
 			has_full_control_of_state = 66
 			has_full_control_of_state = 67
 		}
@@ -16115,13 +16128,17 @@ focus_tree = {
 		completion_reward = {
 			add_resource = {
 				type = tungsten
-				amount = 42
+				amount = 36
 				state = 66
 			}
 			add_resource = {
 				type = tungsten
-				amount = 36
+				amount = 24
 				state = 67
+			}
+			add_timed_idea = {
+				idea = tungsten_imports
+				days = 365
 			}
 		}
 		search_filters = {
