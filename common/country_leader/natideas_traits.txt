@@ -788,7 +788,7 @@ leader_traits = {
 	natidea_quantity_2 = {
 		random = no
 		training_time_factor = -0.05
-		supply_consumption_factor = -0.05
+		supply_consumption_factor = -0.025
 		
 		ai_will_do = {
 			factor = 1
@@ -798,7 +798,7 @@ leader_traits = {
 	natidea_quantity_3 = {
 		random = no
 		training_time_factor = -0.05
-		supply_consumption_factor = -0.05
+		supply_consumption_factor = -0.025
 		industrial_capacity_factory = 0.025
 
 		ai_will_do = {
@@ -809,9 +809,9 @@ leader_traits = {
 	natidea_quantity_4 = {
 		random = no
 		training_time_factor = -0.05
-		supply_consumption_factor = -0.05
+		supply_consumption_factor = -0.025
 		industrial_capacity_factory = 0.025
-		conscription = 0.01
+		conscription = 0.005
 
 		ai_will_do = {
 			factor = 1
@@ -821,9 +821,9 @@ leader_traits = {
 	natidea_quantity_5 = {
 		random = no
 		training_time_factor = -0.10
-		supply_consumption_factor = -0.05
+		supply_consumption_factor = -0.025
 		industrial_capacity_factory = 0.025
-		conscription = 0.01
+		conscription = 0.005
 
 		ai_will_do = {
 			factor = 1
@@ -833,9 +833,9 @@ leader_traits = {
 	natidea_quantity_6 = {
 		random = no
 		training_time_factor = -0.10
-		supply_consumption_factor = -0.10
+		supply_consumption_factor = -0.05
 		industrial_capacity_factory = 0.025
-		conscription = 0.01
+		conscription = 0.005
 
 		ai_will_do = {
 			factor = 1
@@ -845,9 +845,9 @@ leader_traits = {
 	natidea_quantity_7 = {
 		random = no
 		training_time_factor = -0.10
-		supply_consumption_factor = -0.10
+		supply_consumption_factor = -0.05
 		industrial_capacity_factory = 0.05
-		conscription = 0.01
+		conscription = 0.005
 
 		ai_will_do = {
 			factor = 1
@@ -857,9 +857,9 @@ leader_traits = {
 	natidea_quantity_8 = {
 		random = no
 		training_time_factor = -0.10
-		supply_consumption_factor = -0.10
+		supply_consumption_factor = -0.05
 		industrial_capacity_factory = 0.05
-		conscription = 0.02
+		conscription = 0.01
 
 		ai_will_do = {
 			factor = 1
@@ -869,9 +869,9 @@ leader_traits = {
 	natidea_quantity_9 = {
 		random = no
 		training_time_factor = -0.10
-		supply_consumption_factor = -0.15
+		supply_consumption_factor = -0.05
 		industrial_capacity_factory = 0.05
-		conscription = 0.02 
+		conscription = 0.01
 		ai_will_do = {
 			factor = 1
 		}
@@ -879,11 +879,10 @@ leader_traits = {
 	
 	natidea_quantity_10 = {
 		random = no
-		training_time_factor = -0.20
-		supply_consumption_factor = -0.15
+		training_time_factor = -0.15
+		supply_consumption_factor = -0.05
 		industrial_capacity_factory = 0.05
-		conscription = 0.02
-		recruitable_population_factor = 0.1
+		conscription = 0.01
 
 		ai_will_do = {
 			factor = 1
