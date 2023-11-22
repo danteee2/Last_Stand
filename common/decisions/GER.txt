@@ -1221,12 +1221,6 @@ GER_reichskommissariats = { # Note that the governments start with no cores henc
 					create_equipment_variant = { #Fun easter egg if you caputre their equipment
 						name = "Volkssturm Small Arms"
 						type = infantry_equipment_0
-						upgrades = {
-							INF_reliability_upgrade = 0
-							INF_SA_upgrade = 4
-							INF_HA_upgrade = 5
-							INF_defence_upgrade = 0
-						}
 					} 
 
 					add_equipment_to_stockpile = { 
@@ -1569,12 +1563,6 @@ GER_reichskommissariats = { # Note that the governments start with no cores henc
 					create_equipment_variant = { #Fun easter egg if you caputre their equipment
 						name = "Volkssturm Small Arms"
 						type = infantry_equipment_0
-						upgrades = {
-							INF_reliability_upgrade = 0
-							INF_SA_upgrade = 4
-							INF_HA_upgrade = 5
-							INF_defence_upgrade = 0
-						}
 					} 
 
 					add_equipment_to_stockpile = { 
@@ -1912,12 +1900,6 @@ GER_reichskommissariats = { # Note that the governments start with no cores henc
 					create_equipment_variant = { #Fun easter egg if you caputre their equipment
 						name = "Volkssturm Small Arms"
 						type = infantry_equipment_0
-						upgrades = {
-							INF_reliability_upgrade = 0
-							INF_SA_upgrade = 4
-							INF_HA_upgrade = 5
-							INF_defence_upgrade = 0
-						}
 					} 
 
 					add_equipment_to_stockpile = { 
@@ -2254,12 +2236,6 @@ GER_reichskommissariats = { # Note that the governments start with no cores henc
 					create_equipment_variant = { #Fun easter egg if you caputre their equipment
 						name = "Volkssturm Small Arms"
 						type = infantry_equipment_0
-						upgrades = {
-							INF_reliability_upgrade = 0
-							INF_SA_upgrade = 4
-							INF_HA_upgrade = 5
-							INF_defence_upgrade = 0
-						}
 					} 
 
 					add_equipment_to_stockpile = { 
@@ -2697,12 +2673,6 @@ GER_reichskommissariats = { # Note that the governments start with no cores henc
 					create_equipment_variant = { #Fun easter egg if you caputre their equipment
 						name = "Volkssturm Small Arms"
 						type = infantry_equipment_0
-						upgrades = {
-							INF_reliability_upgrade = 0
-							INF_SA_upgrade = 4
-							INF_HA_upgrade = 5
-							INF_defence_upgrade = 0
-						}
 					} 
 
 					add_equipment_to_stockpile = { 
@@ -3136,12 +3106,6 @@ GER_reichskommissariats = { # Note that the governments start with no cores henc
 					create_equipment_variant = { #Fun easter egg if you caputre their equipment
 						name = "Volkssturm Small Arms"
 						type = infantry_equipment_0
-						upgrades = {
-							INF_reliability_upgrade = 0
-							INF_SA_upgrade = 4
-							INF_HA_upgrade = 5
-							INF_defence_upgrade = 0
-						}
 					} 
 
 					add_equipment_to_stockpile = { 
@@ -3645,12 +3609,6 @@ GER_reichskommissariats = { # Note that the governments start with no cores henc
 					create_equipment_variant = { #Fun easter egg if you caputre their equipment
 						name = "Volkssturm Small Arms"
 						type = infantry_equipment_0
-						upgrades = {
-							INF_reliability_upgrade = 0
-							INF_SA_upgrade = 4
-							INF_HA_upgrade = 5
-							INF_defence_upgrade = 0
-						}
 					} 
 
 					add_equipment_to_stockpile = { 
@@ -4159,12 +4117,6 @@ GER_reichskommissariats = { # Note that the governments start with no cores henc
 					create_equipment_variant = { #Fun easter egg if you caputre their equipment
 						name = "Volkssturm Small Arms"
 						type = infantry_equipment_0
-						upgrades = {
-							INF_reliability_upgrade = 0
-							INF_SA_upgrade = 4
-							INF_HA_upgrade = 5
-							INF_defence_upgrade = 0
-						}
 					} 
 
 					add_equipment_to_stockpile = { 
@@ -4623,12 +4575,6 @@ GER_reichskommissariats = { # Note that the governments start with no cores henc
 					create_equipment_variant = { #Fun easter egg if you caputre their equipment
 						name = "Volkssturm Small Arms"
 						type = infantry_equipment_0
-						upgrades = {
-							INF_reliability_upgrade = 0
-							INF_SA_upgrade = 4
-							INF_HA_upgrade = 5
-							INF_defence_upgrade = 0
-						}
 					} 
 
 					add_equipment_to_stockpile = { 
@@ -4990,12 +4936,6 @@ GER_reichskommissariats = { # Note that the governments start with no cores henc
 					create_equipment_variant = { #Fun easter egg if you caputre their equipment
 						name = "Volkssturm Small Arms"
 						type = infantry_equipment_0
-						upgrades = {
-							INF_reliability_upgrade = 0
-							INF_SA_upgrade = 4
-							INF_HA_upgrade = 5
-							INF_defence_upgrade = 0
-						}
 					} 
 
 					add_equipment_to_stockpile = { 
