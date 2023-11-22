@@ -1626,10 +1626,10 @@ focus_tree = {
 		complete_tooltip = {
 			every_state = {
 				limit	= {	has_state_flag = SPA_regional_agrarian_commissions_1civ }
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1647,10 +1647,10 @@ focus_tree = {
 					is_core_of = ROOT
 				}
 				set_state_flag = SPA_regional_agrarian_commissions_1civ
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1664,10 +1664,10 @@ focus_tree = {
 					NOT = { has_state_flag = SPA_regional_agrarian_commissions_1civ }
 				}
 				set_state_flag = SPA_regional_agrarian_commissions_1civ
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -3291,10 +3291,10 @@ focus_tree = {
 		complete_tooltip = {
 			every_state = {
 				limit	= {	has_state_flag = SPA_support_the_war_industry_1civ }
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -3314,10 +3314,10 @@ focus_tree = {
 					is_core_of = ROOT
 				}
 				set_state_flag = SPA_support_the_war_industry_1civ
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -3331,10 +3331,10 @@ focus_tree = {
 					NOT = { has_state_flag = SPA_support_the_war_industry_1civ }
 				}
 				set_state_flag = SPA_support_the_war_industry_1civ
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -3348,10 +3348,10 @@ focus_tree = {
 					NOT = { has_state_flag = SPA_support_the_war_industry_1civ }
 				}
 				set_state_flag = SPA_support_the_war_industry_1civ
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -6636,10 +6636,10 @@ focus_tree = {
 					is_core_of = ROOT
 				}
 				set_state_flag = SPA_encourage_local_industrialization_1civ
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -6653,10 +6653,10 @@ focus_tree = {
 					NOT = { has_state_flag = SPA_encourage_local_industrialization_1civ }
 				}
 				set_state_flag = SPA_encourage_local_industrialization_1civ
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -6670,10 +6670,10 @@ focus_tree = {
 					NOT = { has_state_flag = SPA_encourage_local_industrialization_1civ }
 				}
 				set_state_flag = SPA_encourage_local_industrialization_1civ
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -11128,17 +11128,6 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-			every_state = {
-				limit	= {	has_state_flag = SPR_soviet_recovery_aid_2civ }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			add_timed_idea = { idea = SPR_soviet_recovery_aid days = 1095 }
@@ -11161,6 +11150,22 @@ focus_tree = {
 				swap_ideas = {
 					remove_idea = SPA_recovering_from_civil_war
 					add_idea = SPA_recovering_from_civil_war_2
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+					}
+					is_core_of = ROOT
+				}
+				set_state_flag = SPR_soviet_recovery_aid_2civ
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
 				}
 			}
 			random_owned_controlled_state = {
@@ -11453,10 +11458,10 @@ focus_tree = {
 					is_core_of = ROOT
 				}
 				set_state_flag = SPR_nationalize_the_industry_1civ
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -11470,10 +11475,10 @@ focus_tree = {
 					NOT = { has_state_flag = SPR_nationalize_the_industry_1civ }
 				}
 				set_state_flag = SPR_nationalize_the_industry_1civ
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -11487,10 +11492,10 @@ focus_tree = {
 					NOT = { has_state_flag = SPR_nationalize_the_industry_1civ }
 				}
 				set_state_flag = SPR_nationalize_the_industry_1civ
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -11532,10 +11537,10 @@ focus_tree = {
 		complete_tooltip = {
 			every_state = {
 				limit = { has_state_flag = SPR_increase_arms_production_1mil }
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -11551,10 +11556,10 @@ focus_tree = {
 					is_core_of = ROOT
 				}
 				set_state_flag = SPR_increase_arms_production_1mil
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -11568,10 +11573,10 @@ focus_tree = {
 					NOT = { has_state_flag = SPR_increase_arms_production_1mil }
 				}
 				set_state_flag = SPR_increase_arms_production_1mil
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
