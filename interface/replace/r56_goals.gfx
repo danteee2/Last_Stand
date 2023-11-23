@@ -8812,6 +8812,27 @@ spriteType = {
 		name = "GFX_goal_JAP_manchu_special_forces"
 		textureFile = "gfx/interface/goals/jap/JAP_manchu_special_focus.dds"
 	}
+	#### COUNTRY FLAGS ####
+
+	SpriteType = {
+		name = "GFX_focus_TBE_flag_australia"
+		texturefile = "gfx/interface/goals/eng/TBE_flag_australia.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TBE_flag_british_raj"
+		texturefile = "gfx/interface/goals/eng/TBE_flag_british_raj.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_TBE_flag_canada"
+		texturefile = "gfx/interface/goals/eng/TBE_flag_canada.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_TBE_flag_new_zealand"
+		texturefile = "gfx/interface/goals/eng/TBE_flag_new_zealand.dds"
+	}
 }
 
 
