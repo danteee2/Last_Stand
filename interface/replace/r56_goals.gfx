@@ -8833,6 +8833,14 @@ spriteType = {
 		name = "GFX_focus_TBE_flag_new_zealand"
 		texturefile = "gfx/interface/goals/eng/TBE_flag_new_zealand.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_TBE_flag_south_africa"
+		texturefile = "gfx/interface/goals/eng/TBE_flag_south_africa.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ENG_colonial_institutions"
+		texturefile = "gfx/interface/goals/eng/GBR_colonial_institutions.dds"
+	}
 }
 
 
