@@ -12,7 +12,7 @@ leader_traits = {
 	
 	natidea_economic_1 = {
 		random = no
-		industrial_capacity_factory = 0.05
+		industrial_capacity_factory = 0.025
 		
 		ai_will_do = {
 			factor = 1
@@ -21,8 +21,8 @@ leader_traits = {
 	
 	natidea_economic_2 = {
 		random = no
-		industrial_capacity_factory = 0.05
-		production_speed_buildings_factor = 0.05
+		industrial_capacity_factory = 0.025
+		production_speed_buildings_factor = 0.025
 		
 		ai_will_do = {
 			factor = 1
@@ -31,9 +31,9 @@ leader_traits = {
 	
 	natidea_economic_3 = {
 		random = no
-		industrial_capacity_factory = 0.05
-		production_speed_buildings_factor = 0.05
-		local_resources_factor = 0.1
+		industrial_capacity_factory = 0.025
+		production_speed_buildings_factor = 0.025
+		local_resources_factor = 0.05
 		
 		ai_will_do = {
 			factor = 1
@@ -42,9 +42,9 @@ leader_traits = {
 	
 	natidea_economic_4 = {
 		random = no
-		industrial_capacity_factory = 0.1
-		production_speed_buildings_factor = 0.05
-		local_resources_factor = 0.1
+		industrial_capacity_factory = 0.05
+		production_speed_buildings_factor = 0.025
+		local_resources_factor = 0.05
 
 		ai_will_do = {
 			factor = 1
@@ -53,9 +53,9 @@ leader_traits = {
 	
 	natidea_economic_5 = {
 		random = no
-		industrial_capacity_factory = 0.1
-		production_speed_buildings_factor = 0.1
-		local_resources_factor = 0.1
+		industrial_capacity_factory = 0.05
+		production_speed_buildings_factor = 0.05
+		local_resources_factor = 0.05
 
 		ai_will_do = {
 			factor = 1
@@ -64,9 +64,9 @@ leader_traits = {
 	
 	natidea_economic_6 = {
 		random = no
-		industrial_capacity_factory = 0.1
-		production_speed_buildings_factor = 0.1
-		local_resources_factor = 0.2
+		industrial_capacity_factory = 0.05
+		production_speed_buildings_factor = 0.05
+		local_resources_factor = 0.1
 
 		ai_will_do = {
 			factor = 1
@@ -75,9 +75,9 @@ leader_traits = {
 	
 	natidea_economic_7 = {
 		random = no
-		industrial_capacity_factory = 0.15
-		production_speed_buildings_factor = 0.1
-		local_resources_factor = 0.2
+		industrial_capacity_factory = 0.075
+		production_speed_buildings_factor = 0.05
+		local_resources_factor = 0.1
 
 		ai_will_do = {
 			factor = 1
@@ -86,9 +86,9 @@ leader_traits = {
 	
 	natidea_economic_8 = {
 		random = no
-		industrial_capacity_factory = 0.15
-		production_speed_buildings_factor = 0.1
-		local_resources_factor = 0.3
+		industrial_capacity_factory = 0.075
+		production_speed_buildings_factor = 0.05
+		local_resources_factor = 0.1
 
 		ai_will_do = {
 			factor = 1
@@ -97,10 +97,10 @@ leader_traits = {
 	
 	natidea_economic_9 = {
 		random = no
-		industrial_capacity_factory = 0.15
-		production_speed_buildings_factor = 0.1
-		local_resources_factor = 0.3
-		industry_repair_factor = 0.15
+		industrial_capacity_factory = 0.075
+		production_speed_buildings_factor = 0.05
+		local_resources_factor = 0.1
+		industry_repair_factor = 0.5
 
 		ai_will_do = {
 			factor = 1
@@ -109,11 +109,11 @@ leader_traits = {
 	
 	natidea_economic_10 = {
 		random = no
-		industrial_capacity_factory = 0.15
-		production_speed_buildings_factor = 0.1
-		local_resources_factor = 0.3
-		industry_repair_factor = 0.15
-		consumer_goods_factor = -0.15
+		industrial_capacity_factory = 0.075
+		production_speed_buildings_factor = 0.05
+		local_resources_factor = 0.1
+		industry_repair_factor = 0.5
+		consumer_goods_factor = -0.05
 
 		ai_will_do = {
 			factor = 1
@@ -131,7 +131,7 @@ leader_traits = {
 	
 	natidea_expansion_1 = {
 		random = no
-		line_change_production_efficiency_factor = 0.05
+		line_change_production_efficiency_factor = 0.025
 		
 		ai_will_do = {
 			factor = 1
@@ -140,8 +140,8 @@ leader_traits = {
 	
 	natidea_expansion_2 = {
 		random = no
-		line_change_production_efficiency_factor = 0.05
-		global_building_slots_factor = 0.1
+		line_change_production_efficiency_factor = 0.025
+		global_building_slots_factor = 0.05
 		
 		ai_will_do = {
 			factor = 1
@@ -150,9 +150,9 @@ leader_traits = {
 	
 	natidea_expansion_3 = {
 		random = no
-		line_change_production_efficiency_factor = 0.05
-		production_factory_efficiency_gain_factor = 0.05
-		global_building_slots_factor = 0.1
+		production_factory_efficiency_gain_factor = 0.025
+		line_change_production_efficiency_factor = 0.025
+		global_building_slots_factor = 0.05
 		
 		ai_will_do = {
 			factor = 1
@@ -161,9 +161,9 @@ leader_traits = {
 	
 	natidea_expansion_4 = {
 		random = no
-		line_change_production_efficiency_factor = 0.05
-		production_factory_efficiency_gain_factor = 0.05
-		global_building_slots_factor = 0.1
+		production_factory_efficiency_gain_factor = 0.025
+		line_change_production_efficiency_factor = 0.025
+		global_building_slots_factor = 0.05
 		industry_air_damage_factor = -0.1
 		
 		ai_will_do = {
@@ -173,9 +173,9 @@ leader_traits = {
 	
 	natidea_expansion_5 = {
 		random = no
-		line_change_production_efficiency_factor = 0.05
-		production_factory_efficiency_gain_factor = 0.05
-		global_building_slots_factor = 0.2
+		production_factory_efficiency_gain_factor = 0.025
+		line_change_production_efficiency_factor = 0.025
+		global_building_slots_factor = 0.1
 		industry_air_damage_factor = -0.1
 
 		ai_will_do = {
@@ -185,9 +185,9 @@ leader_traits = {
 	
 	natidea_expansion_6 = {
 		random = no
+		production_factory_efficiency_gain_factor = 0.025
 		line_change_production_efficiency_factor = 0.05
-		production_factory_efficiency_gain_factor = 0.1
-		global_building_slots_factor = 0.2
+		global_building_slots_factor = 0.1
 		industry_air_damage_factor = -0.1
 
 		
@@ -199,10 +199,9 @@ leader_traits = {
 	
 	natidea_expansion_7 = {
 		random = no
+		production_factory_efficiency_gain_factor = 0.025
 		line_change_production_efficiency_factor = 0.05
-		production_factory_efficiency_gain_factor = 0.1
-		production_factory_max_efficiency_factor = 0.05
-		global_building_slots_factor = 0.2
+		global_building_slots_factor = 0.15
 		industry_air_damage_factor = -0.1
 		
 		ai_will_do = {
@@ -212,10 +211,9 @@ leader_traits = {
 	
 	natidea_expansion_8 = {
 		random = no
+		production_factory_efficiency_gain_factor = 0.025
 		line_change_production_efficiency_factor = 0.05
-		production_factory_efficiency_gain_factor = 0.1
-		production_factory_max_efficiency_factor = 0.05
-		global_building_slots_factor = 0.3
+		global_building_slots_factor = 0.2
 		industry_air_damage_factor = -0.1
 		
 		ai_will_do = {
@@ -225,10 +223,9 @@ leader_traits = {
 	
 	natidea_expansion_9 = {
 		random = no
+		production_factory_efficiency_gain_factor = 0.025
 		line_change_production_efficiency_factor = 0.05
-		production_factory_efficiency_gain_factor = 0.1
-		production_factory_max_efficiency_factor = 0.1
-		global_building_slots_factor = 0.3
+		global_building_slots_factor = 0.25
 		industry_air_damage_factor = -0.1
 		
 		ai_will_do = {
@@ -238,10 +235,9 @@ leader_traits = {
 	
 	natidea_expansion_10 = {
 		random = no
+		production_factory_efficiency_gain_factor = 0.025
 		line_change_production_efficiency_factor = 0.05
-		production_factory_efficiency_gain_factor = 0.1
-		production_factory_max_efficiency_factor = 0.1
-		global_building_slots_factor = 0.4
+		global_building_slots_factor = 0.3
 		industry_air_damage_factor = -0.1
 		
 		ai_will_do = {
@@ -656,7 +652,7 @@ leader_traits = {
 	natidea_quality_2 = {
 		random = no
 		army_org_Factor = 0.025
-		army_defence_factor = 0.05
+		army_defence_factor = 0.025
 		
 		ai_will_do = {
 			factor = 1
@@ -666,8 +662,8 @@ leader_traits = {
 	natidea_quality_3 = {
 		random = no
 		army_org_Factor = 0.025
-		army_defence_factor = 0.05
-		experience_gain_army_factor = 0.075
+		army_defence_factor = 0.025
+		experience_gain_army_factor = 0.05
 		
 		ai_will_do = {
 			factor = 1
@@ -677,9 +673,9 @@ leader_traits = {
 	natidea_quality_4 = {
 		random = no
 		army_org_Factor = 0.025
-		army_defence_factor = 0.05
-		experience_gain_army_factor = 0.075
-		army_core_defence_factor = 0.01
+		army_defence_factor = 0.025
+		experience_gain_army_factor = 0.05
+		recon_factor = 0.05
 		
 		ai_will_do = {
 			factor = 1
@@ -689,10 +685,10 @@ leader_traits = {
 	natidea_quality_5 = {
 		random = no
 		army_org_Factor = 0.025
-		army_defence_factor = 0.05
-		experience_gain_army_factor = 0.075
-		army_core_defence_factor = 0.10
-		army_attack_factor = 0.05
+		army_defence_factor = 0.025
+		experience_gain_army_factor = 0.05
+		recon_factor = 0.05
+		army_attack_factor = 0.025
 		
 		ai_will_do = {
 			factor = 1
@@ -702,10 +698,10 @@ leader_traits = {
 	natidea_quality_6 = {
 		random = no
 		army_org_Factor = 0.025
-		army_defence_factor = 0.05
-		experience_gain_army_factor = 0.15
-		army_core_defence_factor = 0.10
-		army_attack_factor = 0.05
+		army_defence_factor = 0.025
+		experience_gain_army_factor = 0.10
+		recon_factor = 0.05
+		army_attack_factor = 0.025
 		
 		ai_will_do = {
 			factor = 1
@@ -715,10 +711,10 @@ leader_traits = {
 	natidea_quality_7 = {
 		random = no
 		army_org_Factor = 0.025
-		army_defence_factor = 0.10
-		experience_gain_army_factor = 0.15
-		army_core_defence_factor = 0.10
-		army_attack_factor = 0.05
+		army_defence_factor = 0.05
+		experience_gain_army_factor = 0.10
+		recon_factor = 0.05
+		army_attack_factor = 0.025
 		
 		ai_will_do = {
 			factor = 1
@@ -727,12 +723,12 @@ leader_traits = {
 	
 	natidea_quality_8 = {
 		random = no
-		army_org_Factor = 0.05
-		army_defence_factor = 0.10
-		experience_gain_army_factor = 0.15
-		army_core_defence_factor = 0.10
-		conscription = 0.01
-		army_attack_factor = 0.05
+		army_org_Factor = 0.025
+		army_defence_factor = 0.05
+		experience_gain_army_factor = 0.10
+		recon_factor = 0.05
+		army_attack_factor = 0.025
+		conscription = 0.005
 		
 		ai_will_do = {
 			factor = 1
@@ -742,11 +738,11 @@ leader_traits = {
 	natidea_quality_9 = {
 		random = no
 		army_org_Factor = 0.05
-		army_defence_factor = 0.10
-		experience_gain_army_factor = 0.15
-		army_core_defence_factor = 0.10
-		conscription = 0.01
-		army_attack_factor = 0.05
+		army_defence_factor = 0.05
+		experience_gain_army_factor = 0.10
+		recon_factor = 0.05
+		army_attack_factor = 0.025
+		conscription = 0.005
 		
 		ai_will_do = {
 			factor = 1
@@ -755,14 +751,12 @@ leader_traits = {
 	
 	natidea_quality_10 = {
 		random = no
-		army_org_Factor = 0.15
-		army_defence_factor = 0.10
-		experience_gain_army_factor = 0.15
-		army_core_defence_factor = 0.10
-		army_core_attack_factor = 0.10
-		conscription = 0.01
-		army_attack_factor = 0.05
-		cas_damage_reduction = -0.1
+		army_org_Factor = 0.05
+		army_defence_factor = 0.05
+		experience_gain_army_factor = 0.10
+		recon_factor = 0.10
+		army_attack_factor = 0.025
+		conscription = 0.005
 		
 		ai_will_do = {
 			factor = 1
@@ -790,7 +784,7 @@ leader_traits = {
 	natidea_quantity_2 = {
 		random = no
 		training_time_factor = -0.05
-		supply_consumption_factor = -0.05
+		supply_consumption_factor = -0.025
 		
 		ai_will_do = {
 			factor = 1
@@ -800,7 +794,7 @@ leader_traits = {
 	natidea_quantity_3 = {
 		random = no
 		training_time_factor = -0.05
-		supply_consumption_factor = -0.05
+		supply_consumption_factor = -0.025
 		industrial_capacity_factory = 0.025
 
 		ai_will_do = {
@@ -811,9 +805,9 @@ leader_traits = {
 	natidea_quantity_4 = {
 		random = no
 		training_time_factor = -0.05
-		supply_consumption_factor = -0.05
+		supply_consumption_factor = -0.025
 		industrial_capacity_factory = 0.025
-		conscription = 0.01
+		conscription = 0.005
 
 		ai_will_do = {
 			factor = 1
@@ -823,9 +817,9 @@ leader_traits = {
 	natidea_quantity_5 = {
 		random = no
 		training_time_factor = -0.10
-		supply_consumption_factor = -0.05
+		supply_consumption_factor = -0.025
 		industrial_capacity_factory = 0.025
-		conscription = 0.01
+		conscription = 0.005
 
 		ai_will_do = {
 			factor = 1
@@ -835,9 +829,9 @@ leader_traits = {
 	natidea_quantity_6 = {
 		random = no
 		training_time_factor = -0.10
-		supply_consumption_factor = -0.10
+		supply_consumption_factor = -0.05
 		industrial_capacity_factory = 0.025
-		conscription = 0.01
+		conscription = 0.005
 
 		ai_will_do = {
 			factor = 1
@@ -847,9 +841,9 @@ leader_traits = {
 	natidea_quantity_7 = {
 		random = no
 		training_time_factor = -0.10
-		supply_consumption_factor = -0.10
+		supply_consumption_factor = -0.05
 		industrial_capacity_factory = 0.05
-		conscription = 0.01
+		conscription = 0.005
 
 		ai_will_do = {
 			factor = 1
@@ -859,9 +853,9 @@ leader_traits = {
 	natidea_quantity_8 = {
 		random = no
 		training_time_factor = -0.10
-		supply_consumption_factor = -0.10
+		supply_consumption_factor = -0.05
 		industrial_capacity_factory = 0.05
-		conscription = 0.02
+		conscription = 0.01
 
 		ai_will_do = {
 			factor = 1
@@ -871,9 +865,9 @@ leader_traits = {
 	natidea_quantity_9 = {
 		random = no
 		training_time_factor = -0.10
-		supply_consumption_factor = -0.15
+		supply_consumption_factor = -0.05
 		industrial_capacity_factory = 0.05
-		conscription = 0.02 
+		conscription = 0.01
 		ai_will_do = {
 			factor = 1
 		}
@@ -881,11 +875,10 @@ leader_traits = {
 	
 	natidea_quantity_10 = {
 		random = no
-		training_time_factor = -0.20
-		supply_consumption_factor = -0.15
+		training_time_factor = -0.15
+		supply_consumption_factor = -0.05
 		industrial_capacity_factory = 0.05
-		conscription = 0.02
-		recruitable_population_factor = 0.1
+		conscription = 0.01
 
 		ai_will_do = {
 			factor = 1
