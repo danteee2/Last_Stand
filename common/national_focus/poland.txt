@@ -973,7 +973,7 @@ focus_tree = {
 		prerequisite = { focus = POL_expansion_of_new_towns }
 	
 		available = {
-			num_of_factories > 100
+			num_of_factories > 40
 		}
 
 		bypass = {
@@ -1836,10 +1836,7 @@ focus_tree = {
 		cost = 5
 		
 		available = {
-			OR = {
-				date > 1938.01.01
-				has_war_support > 0.60
-			}
+			date > 1938.01.01
 		}
 
 		ai_will_do = {
@@ -3834,14 +3831,7 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = {
-				OR = {
-					has_completed_focus = POL_camp_of_national_unity
-					has_completed_focus = POL_dissolve_the_bbwr
-					has_completed_focus = POL_ozon
-				}
-			}
-			neutrality > 0.5
+			has_government = neutrality
 		}
 
 		available_if_capitulated = yes
@@ -13071,14 +13061,7 @@ focus_tree = {
 		available = {
 			OR = {
 				has_capitulated = yes
-				AND = {
-					OR = {
-						has_war_with = GER
-						has_war_with = SOV
-					}
-					is_in_faction = yes
-					surrender_progress > 0.5
-				}
+				surrender_progress > 0.1
 			}
 		}
 		allow_branch = { has_dlc = "Man the Guns" }
@@ -13528,7 +13511,10 @@ focus_tree = {
 		icon = GFX_focus_POL_expand_polish_intelligence
 		prerequisite = { focus = POL_prepare_for_the_inevitable }
 		available = {
-			has_intelligence_agency = yes
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.15
+			}
 		}
 		allow_branch = { has_dlc = "La Resistance" }
 
@@ -13617,14 +13603,7 @@ focus_tree = {
 		available = {
 			OR = {
 				has_capitulated = yes
-				AND = {
-					OR = {
-						has_war_with = GER
-						has_war_with = SOV
-					}
-					is_in_faction = yes
-					surrender_progress < 0.5
-				}
+				surrender_progress > 0.30
 			}
 		}
 
@@ -14089,17 +14068,15 @@ focus_tree = {
 		}
 		
 		bypass = {
-			NOT = {
-				has_idea = uncontrolled_exports
+			POL = {
+				owns_state = 85
 			}
-			has_civil_war = no
 		}
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_named_threat = { threat = 1 name = POL_Pressure_Gdansk }
 			add_stability = -0.03
 			add_political_power = 25
 			DNZ = { country_event = poland.30 }

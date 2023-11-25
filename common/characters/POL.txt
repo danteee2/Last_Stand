@@ -2012,13 +2012,7 @@ characters = {
 				falangist_militarist 
 			}
 			ai_will_do = {
-				factor = 1.000
-				modifier = {
-					factor = 0.000
-					NOT = {
-						has_government = fascism 
-					}
-				}
+				factor = 30000
 			}
 		}	
 		advisor={
