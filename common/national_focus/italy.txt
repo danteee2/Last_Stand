@@ -14977,38 +14977,13 @@ focus_tree = {
 		}
 
 		completion_reward = { 
-			every_country = {
-				limit = {
-					OR = {
-						original_tag = POR
-						original_tag = SPR 
-					}
-					has_civil_war = no
-					is_in_faction = no
-					NOT = {
-						has_war_with = ROOT
-						is_justifying_wargoal_against = ROOT
-					}
-				}
-				country_event = {
-				    id = BBA_italy_interaction_events.41
-				    days = 2
-				    random = 6
-				}
+			create_wargoal = {
+				target = POR
+				type = annex_everything
 			}
-			IF = {
-				limit = {
-					has_completed_focus = ITA_deus_vult
-					is_faction_leader = no
-				}
-				create_faction = ITA_papal_faction 
-			}
-			IF = {
-				limit = {
-					has_completed_focus = ITA_mare_nostrum_bba
-					is_faction_leader = no
-				}
-				create_faction = ITA_roman_faction
+			create_wargoal = {
+				target = SPR
+				type = annex_everything
 			}
 		}
 	}

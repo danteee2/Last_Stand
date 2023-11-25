@@ -42,10 +42,25 @@ POL_template_design = {
 		original_tag = POL
 	}
 	enable = {
-		date < 1940.1.1				
+		date < 1936.1.1			
 	}
-	abort = { 
-		date > 1940.1.1
+
+	ai_strategy = {
+		type = force_build_armies
+		value = 150
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 3000
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = arms_factory
+		target = 8030
+		value = 10000
 	}
 
 	ai_strategy = {
