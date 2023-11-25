@@ -1,0 +1,12 @@
+remove_bloat_idea = {
+	remove_ideas = {
+		ic_debloat_1
+		ic_debloat_2
+		ic_debloat_3
+		ic_debloat_4
+		ic_debloat_5
+		ic_debloat_6
+		ic_debloat_7
+		ic_debloat_8
+	}
+}
