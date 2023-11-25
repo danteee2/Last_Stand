@@ -2125,6 +2125,7 @@ focus_tree = {
 		}
 
 		available = {
+			is_ai = no
 			OR = {
 				has_government = communism
 				has_government = democratic
@@ -5325,6 +5326,7 @@ focus_tree = {
 		relative_position_id = FIN_moderate_politics
 		cost = 5
 		available = {
+			is_ai = no
 			is_subject = no
 			threat > 0.5
 			has_war = no
