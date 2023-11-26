@@ -1142,7 +1142,6 @@ country_event = {
 	option = {
 		name = britain.38.a
 		effect_tooltip = {
-			add_timed_idea = {	idea = GBR_british_mobilisation_support	days = 365	}
 			every_owned_state = {
 				limit = {
 					has_state_flag = GBR_supported_local_industry_flag
