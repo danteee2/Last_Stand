@@ -5593,10 +5593,10 @@ mutually_exclusive = {
 						level = 1
 						instant_build = yes
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -6130,17 +6130,17 @@ mutually_exclusive = {
 
 		complete_tooltip = {
 			CAN = {
-				country_event = {	id = GBR_british_empire.5	}
+				country_event = {	id = britain.38	}
 				add_opinion_modifier = { target = ENG modifier = ENG_imperial_trade }
 				add_timed_idea = {	idea = GBR_british_mobilisation_support	days = 365	}
 				every_owned_state = {
 					limit = {
 						has_state_flag = GBR_supported_local_industry_flag
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -6149,7 +6149,7 @@ mutually_exclusive = {
 
 		completion_reward = {
 			CAN = {
-				country_event = {	id = GBR_british_empire.5	}
+				country_event = {	id = britain.38	}
 				add_opinion_modifier = { target = ENG modifier = ENG_imperial_trade }
 				add_timed_idea = {	idea = GBR_british_mobilisation_support	days = 365	}
 				random_owned_controlled_state = {
@@ -6160,10 +6160,10 @@ mutually_exclusive = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 					set_state_flag = GBR_supported_local_industry_flag
@@ -6176,10 +6176,10 @@ mutually_exclusive = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 					set_state_flag = GBR_supported_local_industry_flag
@@ -6217,17 +6217,17 @@ mutually_exclusive = {
 
 		complete_tooltip = {
 			SAF = {
-				country_event = {	id = GBR_british_empire.5	}
+				country_event = {	id = britain.38	}
 				add_opinion_modifier = { target = ENG modifier = ENG_imperial_trade }
 				add_timed_idea = {	idea = GBR_british_mobilisation_support	days = 365	}
 				every_owned_state = {
 					limit = {
 						has_state_flag = GBR_supported_local_industry_flag
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -6236,7 +6236,7 @@ mutually_exclusive = {
 
 		completion_reward = {
 			SAF = {
-				country_event = {	id = GBR_british_empire.5	}
+				country_event = {	id = britain.38	}
 				add_opinion_modifier = { target = ENG modifier = ENG_imperial_trade }
 				add_timed_idea = {	idea = GBR_british_mobilisation_support	days = 365	}
 				random_owned_controlled_state = {
@@ -6247,10 +6247,10 @@ mutually_exclusive = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 					set_state_flag = GBR_supported_local_industry_flag
@@ -6263,10 +6263,10 @@ mutually_exclusive = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 					set_state_flag = GBR_supported_local_industry_flag
@@ -6309,17 +6309,17 @@ mutually_exclusive = {
 
 		complete_tooltip = {
 			RAJ = {
-				country_event = {	id = GBR_british_empire.5	}
+				country_event = {	id = britain.38	}
 				add_opinion_modifier = { target = ENG modifier = ENG_imperial_trade }
 				add_timed_idea = {	idea = GBR_british_mobilisation_support	days = 365	}
 				every_owned_state = {
 					limit = {
 						has_state_flag = GBR_supported_local_industry_flag
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -6328,7 +6328,7 @@ mutually_exclusive = {
 
 		completion_reward = {
 			RAJ = {
-				country_event = {	id = GBR_british_empire.5	}
+				country_event = {	id = britain.38	}
 				add_opinion_modifier = { target = ENG modifier = ENG_imperial_trade }
 				add_timed_idea = {	idea = GBR_british_mobilisation_support	days = 365	}
 				random_owned_controlled_state = {
@@ -6339,10 +6339,10 @@ mutually_exclusive = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 					set_state_flag = GBR_supported_local_industry_flag
@@ -6355,10 +6355,10 @@ mutually_exclusive = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 					set_state_flag = GBR_supported_local_industry_flag
@@ -6399,17 +6399,17 @@ mutually_exclusive = {
 
 		complete_tooltip = {
 			AST = {
-				country_event = {	id = GBR_british_empire.5	}
+				country_event = {	id = britain.38	}
 				add_opinion_modifier = { target = ENG modifier = ENG_imperial_trade }
 				add_timed_idea = {	idea = GBR_british_mobilisation_support	days = 365	}
 				every_owned_state = {
 					limit = {
 						has_state_flag = GBR_supported_local_industry_flag
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -6418,7 +6418,7 @@ mutually_exclusive = {
 
 		completion_reward = {
 			AST = {
-				country_event = {	id = GBR_british_empire.5	}
+				country_event = {	id = britain.38	}
 				add_opinion_modifier = { target = ENG modifier = ENG_imperial_trade }
 				add_timed_idea = {	idea = GBR_british_mobilisation_support	days = 365	}
 				random_owned_controlled_state = {
@@ -6429,10 +6429,10 @@ mutually_exclusive = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 					set_state_flag = GBR_supported_local_industry_flag
@@ -6445,10 +6445,10 @@ mutually_exclusive = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 					set_state_flag = GBR_supported_local_industry_flag
@@ -6486,17 +6486,17 @@ mutually_exclusive = {
 
 		complete_tooltip = {
 			NZL = {
-				country_event = {	id = GBR_british_empire.5	}
+				country_event = {	id = britain.38	}
 				add_opinion_modifier = { target = ENG modifier = ENG_imperial_trade }
 				add_timed_idea = {	idea = GBR_british_mobilisation_support	days = 365	}
 				every_owned_state = {
 					limit = {
 						has_state_flag = GBR_supported_local_industry_flag
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -6505,7 +6505,7 @@ mutually_exclusive = {
 
 		completion_reward = {
 			NZL = {
-				country_event = {	id = GBR_british_empire.5	}
+				country_event = {	id = britain.38	}
 				add_opinion_modifier = { target = ENG modifier = ENG_imperial_trade }
 				add_timed_idea = {	idea = GBR_british_mobilisation_support	days = 365	}
 				random_owned_controlled_state = {
@@ -6516,10 +6516,10 @@ mutually_exclusive = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 					set_state_flag = GBR_supported_local_industry_flag
@@ -6532,10 +6532,10 @@ mutually_exclusive = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 					set_state_flag = GBR_supported_local_industry_flag
@@ -6546,90 +6546,98 @@ mutually_exclusive = {
 
 	focus = {
 		id = ENG_imperial_conference
-		icon = GFX_focus_ENG_colonial_institutions 
-		prerequisite = { focus = uk_india_focus	}
+		prerequisite = { focus = uk_india_focus }
 		prerequisite = { focus = uk_new_zealand_focus }
 		prerequisite = { focus = uk_south_africa_focus }
-		x = 0
-		y = 4
-		relative_position_id = uk_commonwealth_focus
-
-		cost = 5
 
 		allow_branch = {
 			has_dlc = "Man the Guns"
-			NOT = {
-				OR = {
-					has_completed_focus = ENG_imperial_federation
-					has_global_flag = TBE_imperial_federation_formed
-				}
-			}
 		}
 
 		available = {
 			CAN = {
 				OR = {
-					is_subject_of = ROOT
+					AND = {
+						is_subject_of = ENG
+						
+					}
 					exists = no
-				}
-				all_core_state = {
-					is_controlled_by = CAN
 				}
 			}
 			SAF = {
 				OR = {
-					is_subject_of = ROOT
+					AND = {
+						is_subject_of = ENG
+
+					}
+					AND = {
+						is_subject_of = ENG
+						
+					}
 					exists = no
-				}
-				all_core_state = {
-					is_controlled_by = SAF
 				}
 			}
 			AST = {
 				OR = {
-					is_subject_of = ROOT
+					AND = {
+						is_subject_of = ENG
+						
+					}
 					exists = no
-				}
-				all_core_state = {
-					is_controlled_by = AST
 				}
 			}
 			NZL = {
 				OR = {
-					is_subject_of = ROOT
+					AND = {
+						is_subject_of = ENG
+						
+					}
 					exists = no
 				}
-				all_core_state = {
-					is_controlled_by = NZL
-				}
 			}
+	
 		}
 
 		bypass = {
 			CAN = {
-				all_core_state = {
-					is_controlled_by = ROOT
-				}
+				exists = no
 			}
 			SAF = {
-				all_core_state = {
-					is_controlled_by = ROOT
+				exists = no
+			}
+			RAJ = {
+				OR = {
+					exists = no
+					NOT = { is_subject_of = ENG }
 				}
 			}
 			AST = {
-				all_core_state = {
-					is_controlled_by = ROOT
-				}
+				exists = no
 			}
 			NZL = {
-				all_core_state = {
-					is_controlled_by = ROOT
+				exists = no
+			}
+			NOT = {
+				any_state = {
+					OR = {
+						is_core_of = ENG
+						is_core_of = CAN
+						is_core_of = SAF
+						is_core_of = AST
+						is_core_of = NZL
+					}
+					OWNER = {
+						NOT = { tag = ENG }
+					}
 				}
 			}
 		}
+		icon = GFX_focus_ENG_colonial_institutions
 
-		continue_if_invalid = no
-
+		x = -1
+		y = 1
+		relative_position_id = uk_new_zealand_focus
+		cost = 10
 		ai_will_do = {
 			factor = 1
 			#modifier = {
@@ -6652,6 +6660,10 @@ mutually_exclusive = {
 						}
 						AND = {
 							is_subject_of = ENG
+							tag = RAJ
+						}
+						AND = {
+							is_subject_of = ENG
 							tag = AST
 						}
 						AND = {
@@ -6661,12 +6673,13 @@ mutually_exclusive = {
 					}
 				}
 				country_event = { id = mtg_britain.82 hours = 6 }
-				hidden_effect = { news_event = { id = mtg_news.13 days = 1 } }
 			}
+			hidden_effect = { news_event = { id = mtg_news.13 days = 1 } }
 			custom_effect_tooltip = ENG_imperial_conference_tt
+			custom_effect_tooltip = ENG_indian_autonomy_tt
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
-
 	focus = {
 		id = ENG_imperial_federation
 		icon = GFX_focus_eng_imperial_federation

@@ -1132,15 +1132,15 @@ country_event = {
     }
 }
 country_event = {
-	id = GBR_british_empire.5
-	title = GBR_british_empire.5.title
-	desc = GBR_british_empire.5.desc
+	id = britain.38
+	title = britain.38.title
+	desc = britain.38.desc
 	picture = GFX_report_event_uk_aerospace_company
 
 	is_triggered_only = yes
 	
 	option = {
-		name = GBR_british_empire.5.a
+		name = britain.38.a
 		effect_tooltip = {
 			add_timed_idea = {	idea = GBR_british_mobilisation_support	days = 365	}
 			every_owned_state = {

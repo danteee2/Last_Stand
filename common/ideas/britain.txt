@@ -4,7 +4,7 @@ ideas = {
 		##last stand
 		GBR_british_mobilisation_support = {
 			name = GBR_british_mobilisation_support
-			picture = CAN_imperial_investment
+			picture = can_send_in_the_zombies
 			allowed = {
 				is_in_faction_with = ENG
 			}
