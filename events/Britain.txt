@@ -1070,3 +1070,89 @@ country_event = { #
 		
 	}
 }
+
+
+country_event = {
+	id = britain.54
+	title = TBE_imperial_conference_note.title
+	desc = TBE_imperial_conference_note.desc
+	picture = GFX_report_event_imperial_conference
+
+	is_triggered_only = yes
+
+	
+	# Ok
+	option = {
+		name = TBE_imperial_conference_note.a
+		trigger = {
+			tag = ENG
+		}
+		activate_mission = TBE_imperial_conference_decision
+		set_country_flag = { flag = ENG_imperial_conference_timer_flag value = 1 days = 60 }
+	}
+
+	# Ok
+	option = {
+		name = TBE_imperial_conference_note.b
+		trigger = {
+			NOT = { tag = ENG }
+		}
+	}
+}
+#### COMMONWEALTH SECONDMENTS EVENT START ####
+country_event = {
+    id = britain.36
+    title = britain.36.t
+    desc = britain.36.d
+    picture = GFX_report_event_parliament_and_whitehall
+ 
+    is_triggered_only = yes
+
+    option = {
+    	name = britain.36.a
+		unlock_decision_tooltip = { decision = ENG_commonwealth_scientific_cooperation show_effect_tooltip = yes }
+		if = {
+			limit = {
+				NOT = {
+					tag = ENG
+				}
+			}
+			every_country = {
+				limit = {
+					is_subject_of = ROOT
+				}
+				country_event = {
+					id = britain.36 days = 2
+				}
+			}
+		}	
+		country_event = {
+			id = britain.37 days = 2
+		}
+    }
+}
+country_event = {
+	id = britain.38
+	title = britain.38.title
+	desc = britain.38.desc
+	picture = GFX_report_event_uk_aerospace_company
+
+	is_triggered_only = yes
+	
+	option = {
+		name = britain.38.a
+		effect_tooltip = {
+			every_owned_state = {
+				limit = {
+					has_state_flag = GBR_supported_local_industry_flag
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}

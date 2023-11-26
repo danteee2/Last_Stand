@@ -303,3 +303,108 @@ churchills_influence:0 "Churchill's Influence"
 
  ENG_for_the_good_of_the_revolution_idea:1 "For the Good of the Revolution"
  ENG_for_the_good_of_the_revolution_idea_desc:1 "All must be willing to make sacrifices in comfort for the good of the state. The [ROOT.getAdjective] people will keep their heads high in the face of rationing, confident that it will ensure our eventual victory."
+
+
+
+# Imperial Conference Announcement
+TBE_imperial_conference_note.title:0 "The [?global.year|0] Imperial Conference"
+TBE_imperial_conference_note.desc:0 "For the next two months, representatives from the British government and the Dominions will gather in London to discuss matters that concern the entire Empire. This is an excellent time to discuss such matters as defense, trade, or Appeasement, hopefully giving the Empire the unity it needs to weather the current crisis."
+TBE_imperial_conference_note.a:0 "Now is the time to display a united Empire to the world."
+TBE_imperial_conference_note.b:0 "Let our voices be heard in the heart of the Empire."
+
+# Imperial Conference Imperial Preference
+TBE_imperial_preference_event_title:0 "Britain proposes extending the Imperial Preference system"
+TBE_imperial_preference_event_desc:0 "The system of imperial preference, introduced at the Ottowa Conference in 1932 and which has enabled us to protect key [Root.GetAdjective] industrial and agricultural sectors.\n\nThe original agreement was meant to last for five years but Britain is now proposing extending the trade policy for the foreseeable future.\n\nAgreeing would provide [Root.GetAdjective] industrial leaders with the certainty they need to make long term buisness decisions but the political costs should also be considered."
+TBE_imperial_preference_event.a:0 "Imperial trade is the bedrock of the Empire."
+TBE_imperial_preference_event.b:0 "We will trade with the real world beyond Pax Britannica."
+britain.57.title:0 "[From.GetNameDefCap] agrees to maintain Imperial Preference"
+britain.57.desc:0 "Understanding only too well the benefits of greater trade between Britain and [From.GetNameDef] and the rest of the Empire, [From.GetLeader] has eagerly agreed to maintain the current system of preferential tariffs for goods produced within the British Empire. The recovery of the [From.GetAdjective] economy from the effects of the great depression was undoubtedly a major motivation."
+britain.57.a:0 "May the arteries of the Empire flow with [From.GetAdjective] trade."
+britain.58.title:0 "[From.GetNameDefCap] abandons Imperial Preference"
+britain.58.desc:0 "The [From.GetAdjective] Government has decided to not extend the practice of supporting imperial friendly trade policies. Citing a wish to trade with the rest of the world to a greater extent they have begn withdrawing these policies forthwith."
+britain.58.a:0 "Short-sightedness at work"
+# Canada special event localisation
+TBE_imperial_preference_canada.desc:0 "The system of imperial preference, endorsed by the Canadian Conservative Government at the Ottowa Conference in 1932 has had mixed results for Canada. While the increase in preferential trade has allowed our industry room to grow, American producers and suppliers have been negatively affected and the American goverment is keen to support them.\n\nCanadian producers cannot compete on equal terms with their larger American counterparts, but the negative impact of restricted trade with our prosperous neighbour to the south is also costly for our economy. Britain has asked whether we would agree to extend our imperial preference policies for another five years. Our decision will likely shape the direction of our economy over the coming decade profoudly.\n\nThe choice is clear, we either extend the policies and accept the economic difficulties this may bring to Canadian consumers, or we gradually seek to withdraw these policies and attempt to maintain favourable trade with both sides as best we can."
+TBE_imperial_preference_canada.a:0 "Maintain our Trade with the Empire. Try to appease Washington."
+TBE_imperial_preference_canada.b:0 "We are North American, gradually withdraw the policies and maintain trade relations."
+TBE_canada_leaves_imperial_preference.title:0 "[From.GetNameDefCap] announces their withdrawal from Imperial Preference"
+TBE_canada_leaves_imperial_preference.desc:0 "\n\nThe economic cost inflicted upon the Canadian economy by its imperial preference policies, which greatly limited its trade with the prosperous [From.GetName] to its south. Not wishing to completely abandon its trade relations with the Commonwealth, [From.GetLeader] announced a steady and gradual withdrawl of the restrictive policies alongside a growing commitment of Canadian investment and market engagement."
+TBE_canada_leaves_imperial_preference.a:0 "[CAN.GetLeader] succeeds again."
+
+# Imperial Conference Appeasement
+TBE_imperial_conference_appeasement.title:0 "[From.GetLeader] Wishes to Discuss Appeasement"
+TBE_imperial_conference_appeasement.desc:0 "The British policy of Appeasement has only a few critics within the dominions, but they are either very vocal or from New Zealand. The British Prime Minister [From.GetLeader] is bringing the subject of appeasement forward for discussion, and to guage whether the [From.GetAdjective] government believes that a change in diplomatic tone is needed. Britain is unlikely to make a such a significant change in foreign policy unless a majority of the Dominion governments support the move."
+TBE_imperial_conference_appeasement.a:0 "Peace in our time is vital for preserving [ROOT.GetAdjective] lives."
+TBE_imperial_conference_appeasement.b:0 "It is time for a change of course. No more Appeasement."
+TBE_appeasement_policy_support.title:0 "[From.GetNameDefCap] Supports Appeasement"
+TBE_appeasement_policy_support.desc:0 "The [From.GetAdjective] delegation have made it clear that they do not wish to send [From.GetAdjective] soldiers to war once again unless it is absolutely necessary.\n\nThey maintain the view that appeasement could prove enough to maintain peace if the policy is sustained."
+TBE_appeasement_policy_support.a:0 "A clear position of support"
+TBE_appeasement_policy_oppose.title:0 "[From.GetNameDefCap] Opposes Appeasement"
+TBE_appeasement_policy_oppose.desc:0 "The [From.GetAdjective] delegation have stressed their view that appeasement has achieved little and that only military deterrence against the aggressors can ensure continued peace in the Empire."
+TBE_appeasement_policy_oppose.a:0 "Opposition is growing"
+
+TBE_appeasement_policy_conclusion.title:0 "The Future of Appeasement Policy"
+TBE_appeasement_policy_conclusion.desc:0 "With the Dominion Governments having consulted their Cabinet colleagues, it is finally time for the British Cabinet to decide whether or not to continue the policy of appeasement. If there a dominate view has emerged from the Dominion GOernments then this will have decided the matter for us."
+TBE_appeasement_policy_conclusion.a:0 "The Dominions have spoken, Appeasement must be maintained."
+TBE_appeasement_policy_conclusion.b:0 "The Dominions have spoken, Appeasement must be abandoned."
+
+mtg_britain.96.d:0 "The Prime Minister of [From.GetNameDef], [From.GetLeader], admits that the policy of Appeasement is perhaps flawed, and is willing to put this forward for discussion to the [From.GetAdjective] Cabinet, Parliament and public. They are open to changing their diplomatic stance, but will only do so if they have the support of the Empire."
+mtg_britain.96.a:0 "Perhaps we must come to terms with the failure of Appeasement."
+mtg_britain.96.b:0 "We must stay true to our policy of Appeasement."
+mtg_britain.97.t:0 "Imperial Conference: Appeasement - [From.GetName] Accepts"
+mtg_britain.97.d:0 "The Prime Minister of [From.GetNameDef], [From.GetLeader], admits that the policy of Appeasement is perhaps flawed, and is willing to put this forward for discussion to the [From.GetAdjective] Cabinet, Parliament and public.\n\nTo give the empire more bite in its dealings with rogue powers, [From.GetLeader] has agreed that trade embargoes should be undertaken against them."
+mtg_britain.97.a:0 "They see the threat."
+mtg_britain.98.t:0 "Imperial Conference: Appeasement - [From.GetName] Rejects"
+mtg_britain.98.d:0 "The [From.GetAdjective] government disagrees with our doubts on Appeasement, arguing that we cannot afford to be caught up in a war, and that we must maintain our policy of appeasing those who wish to test us."
+mtg_britain.98.a:0 "They have no backbone!"
+
+# Imperial Conference Rearmament
+TBE_imperial_conference_rearmament.title:0 "Britain Proposes Further Rearmament"
+TBE_imperial_conference_rearmament.desc:0 "[From.GetAdjective] representatives at the Imperial Conference have raised the discussion of whether the Empire as a whole should spend more on rearmament and defense. Should we agree, we must accept the neccesity of further funding our own defense industries, and have fewer funds to support other economic programs."
+TBE_imperial_conference_rearmament.a:0 "Our budget does not allow for this. We must focus on our broader economic policy."
+TBE_imperial_conference_rearmament.b:0 "The defense of the Empire relies upon deterence, we must accellerate rearmament."
+TBE_imperial_conference_rearmament_delay.title:0 "[From.GetNameDefCap] Delays Further Rearmament"
+TBE_imperial_conference_rearmament_delay.desc:0 "The [From.GetAdjective] government informs us that they do not currently have the means to increase defense expenditures, and therefore will need to keep their rearmament programmes at ther existing modest level. Future increases were rumoured, but for the time being these have been shelved in favour of broader industrial policy."
+TBE_imperial_conference_rearmament_delay.a:0 "There may be little time for such delays."
+TBE_imperial_conference_rearmament_agree.title:0 "[From.GetNameDefCap] Begins Further Rearmament"
+TBE_imperial_conference_rearmament_agree.desc:0 "The [From.GetAdjective] government has notified us that they have begun increasing defense expenditures. They have vowed to make several large investments in key war related industries over the coming year."
+TBE_imperial_conference_rearmament_agree.a:0 "Let us hope it is not needed."
+
+mtg_britain.91.t:0 "Imperial Conference: Economy"
+mtg_britain.91.d:0 "A powerful economy is the backbone that supports the entire Empire. It is imperative that the Dominions do not neglect their domestic industrial build-up, but invest heavily in the continued advancement of industrialization."
+mtg_britain.92.d:0 "[From.GetAdjective] leaders have made a compelling case for the importance of our domestic industrial build-up. They desire that we increase the government investments in this sector."
+mtg_britain.92.a:0 "Our economy must be strong to weather the storm ahead."
+mtg_britain.92.b:0 "We do not have the funds for this right now."
+mtg_britain.93.t:0 "Imperial Conference: Economy - [From.GetName] Accepts"
+mtg_britain.93.d:0 "The [From.GetAdjective] government has notified us that they agree to our request for increasing investments into their domestic industry. They will free these funds immediately."
+mtg_britain.93.a:0 "Their investments will pay off handsomely."
+mtg_britain.94.t:0 "Imperial Conference: Economy - [From.GetName] Rejects"
+mtg_britain.94.d:0 "The [From.GetAdjective] government has rejected our request for increasing investments into their domestic industry. They claim that natural growth will benefit the sector more in the long-term."
+mtg_britain.94.a:0 "They leech off our wealth!"
+
+
+ britain.36.t:0 "The British Government Proposes Industrial Collaboration"
+ britain.36.d:0 "Officials from the British Ministry of Supply have proposed the creation of an informal council to enable [ROOT.GetNameDef] and our fellow Commonwealth countries to benefit from each other's industrial expertise. The proposal would see prominent industrialists, who have developed deep subject matter expertise in their respective fields, be temporarily seconded to other Commonwealth nations that would benefit from their assistance.\n\nGiven the importance of the production front in the war, this is a proposition that we would be foolish to decline." 
+ britain.36.a:0 "Working together for victory"
+ britain.37.t:0 "Request Industrial Secondments"
+ britain.37.desc:0 "The time has come for us to decide what our industrial priorities are for the forthcoming year. Requests will then be sent to our fellow Commonwealth partners for experts to be seconded to help our industrial plans.\n\nWhat will our priority for the forthcoming year be?"
+ britain.37.a:0 "Support the [ROOT.GetAdjective] Economy"
+ britain.37.b:0 "Shipyard Production"
+ britain.37.c:0 "Vehicle Production"
+ britain.37.d:0 "Aircraft Production"
+
+ britain.38.title:0 "Britain Passes the Colonial Development and Welfare Act"
+ britain.38.desc:0 "Several days ago the British Parliament passed the Colonial Development and Welfare Act, a far reaching piece of legislation which is hoped to further aid the internal development of British colonies outside of India, which seems set on a road to independence.\n\nThe act provides substantial amounts of funding from the British Treasury to Colonial governments for the purposes of economic development, education programmes and greater access to healthcare.\n\nThe Colonial Office has already produced a standard set of proposals for [ROOT.GetAdjective] officials to consider for implementation within [ROOT.GetName]."
+ britain.38.a:0 "With these funds, let us do some good"
+
+ britain.39.title:0 "The Admiralty Undertakes the Tribal Destroyer Programme"
+ britain.39.desc:0 "Believing that the current standard of destroyer designs are being outmatched by foreign designs, the British Admiralty has begun a programme to design and build a series of gun orientated destroyers. These destroyers, with a heavy amount of firepower for their size, are well suited for the Royal [ROOT.GetAdjective] Navy.\n\nWe should make preparations to undertake domestically construction of a flotilla of Tribal Class destroyers and relieve pressure on the Royal Navy dockyards."
+ britain.39.a:0 "They look like cruisers to me"
+
+GBR_british_commonwealth_air_training_plan:0 "British Commonwealth Air Training Plan"
+GBR_british_commonwealth_air_training_plan_desc:0 "Our military success hinges upon our mastery of the air, and therefore the skill of our air crews. We will embark upon the largest aviation training program the world has ever seen to ensure we have all the trained pilots and crews we require to master this new dimension of warfare."
+ 
+britain.38.title:0 "Britain Provides Support for [ROOT.GetAdjective] Mobilisation"
+britain.38.desc:0 "The British Government has sought to support the mobilisation of the [ROOT.GetAdjective] economy towards war production. Many of the experts who learnt important lessons through the British Shadow Scheme and the establishment of the Ministry of Supply are beig seconded to support our own mobilisation."
+britain.38.a:0 "I'm sure we'll find a use for these Brits."
+GBR_british_mobilisation_support:0 "British Mobilisation Support"
