@@ -1836,7 +1836,7 @@ focus_tree = {
 		cost = 5
 		
 		available = {
-			date > 1937.01.01
+			date > 1938.01.01
 		}
 
 		ai_will_do = {
@@ -1846,7 +1846,7 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 10000
+				amount = 2000
 				producer = POL
 			}
 			random_owned_controlled_state = {
