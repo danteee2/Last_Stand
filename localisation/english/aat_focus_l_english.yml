@@ -1299,7 +1299,7 @@
  NOR_battleship_focus_desc: "Only gargantuan, armored hulks can guarantee that we truly rule the waves. The threat of seeing one of our battleships on their coast, will deter any potential invader."
  NOR_kystvakten: "Kystvakten"
  NOR_kystvakten_desc: "In order to protect our extensive coast, numbers are needed so that we can have visibility over every inch of the horizon. Let us create a network of vessels that will guard our land against hostile ships."
- NOR_convert_merchant_ships: "Buy Merchant Ships"
+ NOR_convert_merchant_ships: "Convert Merchant Ships"
  NOR_convert_merchant_ships_desc: "Our merchant marine is the pride of our economy, but it will not do us any good if invaders destroy our lands. Our shipping magnates will have to make a sacrifice for [ROOT.GetName] and let us make these vessels combat worthy."
  NOR_expand_merchant_marine: "Expand Merchant Marine"
  NOR_expand_merchant_marine_desc: "Modern warfare needs resources and equipment, two things that [ROOT.GetName] is desperately lacking. As war looms, we must be certain we have enough ships to bring all we need to survive. Yes, we already have more civilian ships than most nations, but we expect to lose many of them along the way, and we can't afford to be cut short."

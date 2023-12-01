@@ -495,6 +495,56 @@ on_actions = {
 				}
 			}
 
+			### Norway [NOR] [AAT]
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = NOR_focus_tree_selection
+						option = STANDARD_TREE
+					}
+					has_dlc = "Arms Against Tyranny"
+				}
+				set_global_flag = NOR_use_DLC_tree
+				NOR = {
+					load_focus_tree = norwegian_focus
+					remove_ideas = {
+						NOR_haakon
+						NOR_policy_of_disarmament
+						NOR_aftermath_of_the_depression_3
+					}
+					add_ideas = {
+						NOR_complacent_cabinet_ns
+						NOR_obsolete_armed_forces_ns_1
+						NOR_the_hard_thirties_ns
+						NOR_anti_communist_sentiment_ns
+						NOR_crumbling_fortifications_ns
+						NOR_birger_ljungberg
+						NOR_kristian_laake
+					}
+					add_country_leader_role = {
+						character = NOR_fredrik_wedel_jarlsberg
+						country_leader={
+							ideology=despotism
+							expire="1965.1.1.1"
+							traits = { NOR_shrewd_regent }
+							id=-1
+						}
+					}
+					add_country_leader_role = {
+						character = NOR_josef_terboven
+						country_leader={
+							ideology=nazism
+							expire="1965.1.1.1"
+							traits = { NOR_ruthless_administrator }
+							id=-1
+						}
+					}
+					NOR_vidkun_quisling = {
+						add_country_leader_trait = NOR_fascist_lackey	#is modified by focus tree
+					}
+				}
+			}
+
 			### Latvia [LAT] [NSB]
 			if = {# MOD. OPT
 				limit = {

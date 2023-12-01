@@ -556,6 +556,14 @@ on_actions = {
 						DEN = { owns_state = 100 }
 						ICE = { owns_state = 100 }
 					}
+					NOR = {
+						NOT = {
+							has_completed_focus = NOR_reclaim_the_islands
+							has_completed_focus = NOR_icelandic-faroese_revolt
+							has_completed_focus = NOR_reclaim_danish
+							has_completed_focus = NOR_unite_the_scandinavian_workers
+						}
+					}
 				}
 				country_event = { id = wtt_denmark.1 days = 1 }
 			}
@@ -703,6 +711,14 @@ on_actions = {
 						ICE = { is_subject_of = DEN }
 						DEN = { owns_state = 100 }
 						ICE = { owns_state = 100 }
+					}
+					NOR = {
+						NOT = {
+							has_completed_focus = NOR_reclaim_the_islands
+							has_completed_focus = NOR_icelandic-faroese_revolt
+							has_completed_focus = NOR_reclaim_danish
+							has_completed_focus = NOR_unite_the_scandinavian_workers
+						}
 					}
 				}
 				country_event = { id = wtt_denmark.1 days = 1 }
