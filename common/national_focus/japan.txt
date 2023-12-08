@@ -4230,7 +4230,7 @@
 			mark_focus_tree_layout_dirty = yes
 			set_truce = {
                 target = CHI
-                days = 730
+                days = 450
             }
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
