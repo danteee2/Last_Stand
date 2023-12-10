@@ -4308,6 +4308,8 @@ technologies = {
 			breakthrough = 0.02
 			hard_attack = 0.02
 		}
+
+		cas_damage_reduction = 0.1
 		
 		research_cost = 1.6
 		start_year = 1936
