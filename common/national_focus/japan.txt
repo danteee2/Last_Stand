@@ -3763,7 +3763,7 @@
 		y = 1
 		relative_position_id = JAP_support_the_kodoha_faction
 
-		cost = 20
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -7025,7 +7025,7 @@
 		y = 0
 		relative_position_id = JAP_the_manchurian_project
 
-		cost = 20
+		cost = 8
 
 		ai_will_do = {
 			factor = 2
@@ -7128,9 +7128,7 @@
 		x = 2
 		y = 1
 		relative_position_id = JAP_the_manchurian_project
-		mutually_exclusive = {
-			focus = JAP_factory_manchu
-		}
+
 		cost = 8
 		ai_will_do = {
 			factor = 2
@@ -7339,9 +7337,7 @@
 		x = -2
 		y = 1
 		relative_position_id = JAP_the_manchurian_project
-		mutually_exclusive = {
-			focus = JAP_resource_manchu
-		}
+
 		cost = 5
 
 		ai_will_do = {
@@ -9229,22 +9225,9 @@
 				uses = 1
 				category = air_doctrine
 			}
-			IF = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}	
-				custom_effect_tooltip = available_mio_tt
-				show_mio_tooltip = JAP_mitsubishi_organization
-				mio:JAP_mitsubishi_organization = {
-					add_mio_funds = 1500
-				}
-			}
-			ELSE = {
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = mitsubishi
-			}
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = mitsubishi
 		}
-		
 	}
 
 	focus = {
