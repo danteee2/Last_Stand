@@ -37,55 +37,17 @@ ideas = {
 				justify_war_goal_time = -0.75
 			}
 		}
-		ROM_balkans_1 = {
-			allowed = {
-				always = yes
-			}
-			picture = generic_reserve_divisions
-			modifier = {
-				political_power_factor = 0.05
-				stability_factor = 0.1
-				consumer_goods_factor = -0.05
-			}
-			removal_cost = -1
-		}
-		ROM_balkans_2 = { #exploit
-			allowed = {
-				always = yes
-			}
-			picture = generic_reserve_divisions
-			modifier = {
-				political_power_factor = -0.05
-				consumer_goods_factor = -0.15
-				production_speed_buildings_factor = 0.15
-				stability_weekly = -0.001
-			}
-			removal_cost = -1
-		}
-		ROM_balkans_3 = {
-			allowed = {
-				always = yes
-			}
-			picture = generic_reserve_divisions
-			modifier = {
-				political_power_factor = 0.05
-				stability_factor = 0.1
-				consumer_goods_factor = -0.05
-				conscription = 0.02
-				stability_weekly = 0.001
-			}
-			removal_cost = -1
-		}
 		rom_protect = {
 			allowed = {
 				always = yes
 			}
 			picture = YUG_federal_defense_council
 			modifier = {
+				production_factory_max_efficiency_factor = 0.1
 				production_speed_arms_factory_factor = 0.1
-				army_core_attack_factor = 0.1
-				army_core_defence_factor = 0.1
-				
+				army_core_defence_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
 			}
 			removal_cost = -1
 		}
@@ -737,8 +699,8 @@ ideas = {
 			}
 			
 			modifier = {
-				war_support_factor = 0.1
-				stability_factor = 0.1
+				war_support_factor = 0.2
+				stability_factor = 0.2
 			}
 		}
 
