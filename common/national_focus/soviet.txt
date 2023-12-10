@@ -7636,7 +7636,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = SOV_strengthen_the_mobilization_plan
-		cost = 5
+		cost = 10
 
 		mutually_exclusive = { focus = SOV_beaten_but_not_defeated }
 		mutually_exclusive = { focus = SOV_form_a_fifth_column }
@@ -7687,7 +7687,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = SOV_the_path_of_marxism_leninism
-		cost = 5
+		cost = 10
 
 		mutually_exclusive = { focus = SOV_the_right_opposition focus = SOV_the_left_opposition }
 
