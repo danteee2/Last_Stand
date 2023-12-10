@@ -217,7 +217,7 @@ focus_tree = {
 		x = -7
 		y = 1
 		relative_position_id = ITA_italian_highways_bba
-		cost = 10
+		cost = 5
 		available = {
 			NOT = { has_global_flag = second_italo_ethiopian_war_flag }
 			OR = {
@@ -312,7 +312,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = ITA_develop_eritrea
-		cost = 20
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -324,9 +324,6 @@ focus_tree = {
 				any_subject_country = {
 					has_full_control_of_state = 550
 				}
-			}
-			550 = {
-				compliance > 80
 			}
 		}
 		completion_reward = {
@@ -811,7 +808,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = ITA_modernize_ethiopian_roads
-		cost = 10
+		cost = 7.2
 
 		ai_will_do = {
 			factor = 25
@@ -819,9 +816,6 @@ focus_tree = {
 		available = {
 			271 = {
 				state_is_fully_controlled_by_ROOT_or_subject = yes
-			}
-			271 = {
-				compliance > 80
 			}
 		}
 		completion_reward = {
@@ -3196,9 +3190,6 @@ focus_tree = {
 		id = ITA_steel_industry_in_terni
 		icon = GFX_goal_generic_light_industry
 		prerequisite = { focus = ITA_italian_highways_bba }
-		mutually_exclusive = {
-			focus = ITA_power_plants_in_terni
-		}
 		x = -1
 		y = 1
 		relative_position_id = ITA_italian_highways_bba
@@ -3231,9 +3222,6 @@ focus_tree = {
 		id = ITA_power_plants_in_terni
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = ITA_italian_highways_bba }
-		mutually_exclusive = {
-			focus = ITA_steel_in_tripoli
-		}
 		x = 1
 		y = 1
 		relative_position_id = ITA_italian_highways_bba
@@ -3626,7 +3614,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = ITA_italian_highways_bba
-		cost = 10
+		cost = 5
 		available = {
 			controls_state = 2
 			controls_state = 161
@@ -3705,7 +3693,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = ITA_railway_innovations
-		cost = 10
+		cost = 5
 		available = {
 			OR = {
 				has_full_control_of_state = 159
@@ -3779,7 +3767,7 @@ focus_tree = {
 		x = 5
 		y = 1
 		relative_position_id = ITA_italian_highways_bba
-		cost = 10
+		cost = 5
 		available = {
 			has_full_control_of_state = 159
 		}
@@ -3806,7 +3794,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ITA_fiocchi_munizioni
-		cost = 10
+		cost = 5
 		available = {
 			has_full_control_of_state = 159
 		}
@@ -3921,7 +3909,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = ITA_redirect_alfa_romeo_production
-		cost = 10
+		cost = 5
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
@@ -3946,7 +3934,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = ITA_redirect_alfa_romeo_production
-		cost = 10
+		cost = 5
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
