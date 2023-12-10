@@ -16,6 +16,7 @@ formable_nations_mod_category = {
 		complete_effect = {
 			hidden_effect = { clr_country_flag = unform_available }
 			drop_cosmetic_tag = yes
+			add_stability = -0.2
 			random_owned_state = {
 				limit = {
 					has_state_flag = formable_nations_old_capital
@@ -106,9 +107,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_africa
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_AFR
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				every_state = {
@@ -314,9 +313,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_europe
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_EUR
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 6 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -471,9 +468,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_grossdeutschland
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_GRO
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 64 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -695,9 +690,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_latin_union
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_LAU
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				41 = { add_core_of = ROOT }
@@ -885,9 +878,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_chinese_empire
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_QIN
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 608 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -1148,9 +1139,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_frankish_empire
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_FRE
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				3 = { add_core_of = ROOT }
@@ -1388,9 +1377,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_austria_hungary
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_AUH
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 4 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -1583,9 +1570,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_commonwealth
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_COM
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 10 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -1808,9 +1793,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_hre
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_HRE
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 52 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -1945,9 +1928,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_iberia
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_IBE
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			if = {
 				limit = { original_tag = POR }
 				add_ideas = por_divided_officer_corps
@@ -2062,9 +2043,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_scandinavia
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_SCA
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 37 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -2170,9 +2149,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_arabia
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_ARA
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 291 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -2300,9 +2277,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_great_moravia
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_GMO
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 75 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -2395,9 +2370,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_transcaucasia
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_CAU
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 231 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -2455,9 +2428,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_benelux
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_BEN
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 7 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -2548,9 +2519,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_baltic
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_BAL
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				11 = { add_core_of = ROOT }
@@ -2617,9 +2586,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_central_america
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_CEN
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				313 = { add_core_of = ROOT }
@@ -2733,9 +2700,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_hungarian_kingdom
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_HUK
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				43 = { add_core_of = ROOT }
@@ -2850,9 +2815,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_kievan_rus
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_KIE
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 202 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -2979,9 +2942,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_bulgarian_empire
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_BUE
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				46 = { add_core_of = ROOT }
@@ -3093,9 +3054,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_gran_colombia
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_GCO
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 306 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -3182,9 +3141,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_mexican_empire
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_MEE
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				277 = { add_core_of = ROOT }
@@ -3302,9 +3259,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_greater_albania
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_GAL
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				44 = { add_core_of = ROOT }
@@ -3453,9 +3408,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_balkan
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_BAK
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				45 = { add_core_of = ROOT }
@@ -3694,9 +3647,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_poland_hungary
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_POH
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				188 = { add_core_of = ROOT }
@@ -3862,9 +3813,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_angevin_empire
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_ANE
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				113 = { add_core_of = ROOT }
@@ -4117,9 +4066,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_macedonian_empire
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_MAC
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 731 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -4367,9 +4314,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_south_america
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_SOU
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				every_state = {
@@ -4433,9 +4378,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_world
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_WOR
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				every_state = { add_core_of = ROOT }
@@ -4694,9 +4637,7 @@ formable_nations_mod_category = {
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_OTT
 			set_capital = { state = 797 }
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				49 = { add_core_of = ROOT }
@@ -5227,9 +5168,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_mongol_empire
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_MOE
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				330 = { add_core_of = ROOT }
@@ -5544,9 +5483,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_greater_israel
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_GIS
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 454 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -5670,9 +5607,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_mughals
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_MUG
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 439 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -5970,9 +5905,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_persian_empire
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_PEE
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				266 = { add_core_of = ROOT }
@@ -6134,9 +6067,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_north_sea_empire
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_NSE
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				37 = { add_core_of = ROOT }
@@ -6243,9 +6174,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_inca_empire
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_INC
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				302 = { add_core_of = ROOT }
@@ -6321,9 +6250,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_greater_finland
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_GFI
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				111 = { add_core_of = ROOT }
@@ -6447,9 +6374,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_turkestan
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_TKS
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 405 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -6594,9 +6519,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_indochina
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_ICH
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 289 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -6698,9 +6621,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_swedish_empire
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_SEP
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				38 = { add_core_of = ROOT }
@@ -6848,9 +6769,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_greater_tibet
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_GTI
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				322 = { add_core_of = ROOT }
@@ -7021,9 +6940,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_greater_yugoslavia
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_YUG
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 107 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -7152,9 +7069,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_abyssinia
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_ABY
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				271 = { add_core_of = ROOT }
@@ -7321,9 +7236,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_north_america
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_NOA
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 358 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -7414,9 +7327,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_greater_egypt
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_GEG
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				551 = { add_core_of = ROOT }
@@ -7486,9 +7397,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_hispaniola
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_HIS
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 318 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -7546,9 +7455,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_peru_bolivia
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_PRB
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				490 = { add_core_of = ROOT }
@@ -7615,9 +7522,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_caribbean
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_CAB
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 318 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -7699,9 +7604,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_australasia
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_AAS
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				285 = { add_core_of = ROOT }
@@ -7813,9 +7716,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_golden_circle
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_GOL
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 315 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -7943,9 +7844,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_maghreb
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_MAG
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 461 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -8038,9 +7937,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_greater_canada
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_GCA
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				276 = { add_core_of = ROOT }
@@ -8135,9 +8032,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_visegrad
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_VIS
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 43 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -8225,9 +8120,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_la_plata
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_PLA
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 278 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -8299,9 +8192,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_celtic_union
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_CEL
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				113 = { add_core_of = ROOT }
@@ -8367,9 +8258,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_alpine_federation
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_ALP
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 4 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -8431,9 +8320,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_greater_croatia
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_GCR
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				103 = { add_core_of = ROOT }
@@ -8495,9 +8382,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_greater_serbia
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_GSE
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				45 = { add_core_of = ROOT }
@@ -8565,9 +8450,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_greater_lithuania
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_GLI
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				11 = { add_core_of = ROOT }
@@ -8637,9 +8520,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_chile_argentina
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_CHG
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 278 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -8708,9 +8589,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_assyria
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_ASS
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 291 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -8787,9 +8666,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_carpathia
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_CAP
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 43 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -8925,9 +8802,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_asia
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_ASI
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 605 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -9067,9 +8942,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_eurasia
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_EUA
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 219 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -9144,9 +9017,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_great_britain
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_BRI
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				113 = { add_core_of = ROOT }
@@ -9362,9 +9233,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_greater_russia
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_RUE
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				40 = { add_core_of = ROOT }
@@ -9599,9 +9468,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_carthage
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_CAR
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				458 = { add_core_of = ROOT }
@@ -9680,9 +9547,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_east_africa
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_EAF
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 546 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -9743,9 +9608,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_mali_empire
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_MAE
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				556 = { add_core_of = ROOT }
@@ -9816,9 +9679,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_sahel
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_SAH
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				557 = { add_core_of = ROOT }
@@ -9993,9 +9854,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_afro_eurasia
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_AEA
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 797 }
 			set_province_name = { id = 9833 name = "The City" }
 			custom_effect_tooltip = core_land
@@ -10067,9 +9926,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_greater_austria
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_GAU
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				4 = { add_core_of = ROOT }
@@ -10276,9 +10133,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_anglosphere
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_AGL
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			if = {
 				limit = {
 					OR = {
@@ -10447,9 +10302,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_levant
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_LEV
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 554 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -10509,9 +10362,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_greater_korea
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_GKO
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				525 = { add_core_of = ROOT }
@@ -10657,9 +10508,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_middle_east
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_MID
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 291 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -10808,9 +10657,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_greater_japan
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_GJA
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				528 = { add_core_of = ROOT }
@@ -10910,9 +10757,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_khmer_empire
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_KHM
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				741 = { add_core_of = ROOT }
@@ -10969,9 +10814,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_bengal_empire
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_BEE
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				430 = { add_core_of = ROOT }
@@ -11025,9 +10868,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_guyanas
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_GUY
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 687 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -11119,9 +10960,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_americas
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_AME
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 304 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -11188,9 +11027,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_andes
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_AND
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 303 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -11274,9 +11111,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_zapadoslavia
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_ZAP
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 88 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -11356,9 +11191,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_south_german_federation
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_SGF
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 52 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -11436,9 +11269,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_north_german_federation
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_NGF
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 64 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -11540,9 +11371,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_germany
 		complete_effect = {
 			set_cosmetic_tag = GER
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 64 }
 			hidden_effect = { sound_effect = complete_focus
 				if = {
@@ -11730,9 +11559,7 @@ formable_nations_mod_category = {
 
 
 			set_cosmetic_tag = FORM_BYZ
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 797 }
 			set_province_name = { id = 9833 name = "Konstantinoúpolis"}
 			custom_effect_tooltip = core_land
@@ -11954,9 +11781,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_west_rome
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_WRO
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			set_capital = { state = 2 }
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
@@ -12317,9 +12142,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_roman_empire
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_ROE
-			add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+			add_stability = 0.2
 			custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 				#Greece
@@ -12557,9 +12380,7 @@ formable_nations_mod_category = {
 		icon = formable_nations_transcaucasia
 		complete_effect = {  capital_scope = { set_state_flag = formable_nations_old_capital }
 		set_cosmetic_tag = FORM_NEP
-		add_ideas = generic_recent_political_unification
-			add_ideas = generic_recent_army_unification
-			add_ideas = generic_recent_economic_unification		
+		add_stability = 0.2
 		custom_effect_tooltip = core_land
 			hidden_effect = { sound_effect = complete_focus  set_country_flag = unform_available
 
