@@ -5997,8 +5997,7 @@ focus_tree = {
 				}
 				set_state_flag = HUN_boost_hungarian_aviation_industry_AF1
 			}
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = HUN_ikarus	
+			add_ideas = Hun_air_controller
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}

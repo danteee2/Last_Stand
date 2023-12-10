@@ -2,6 +2,20 @@ ideas = {
 
 	country = {
 
+		Hun_air_controller = {
+			picture = dornier
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+				small_plane_cas_airframe = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			}
+		}
+
 		HUN_treaty_of_triannon = {
 
 			available = {
@@ -207,8 +221,9 @@ ideas = {
 			picture = FRA_scw_intervention_republicans_focus
 
 			modifier = {
-				political_power_factor = 0.15
-				consumer_goods_factor = -0.1
+				political_power_factor = 0.20
+				consumer_goods_factor = -0.20
+				production_factory_max_efficiency_factor = 0.1
 			}
 		}
 
@@ -217,7 +232,7 @@ ideas = {
 			picture = FRA_scw_intervention_nationalists_focus
 
 			modifier = {
-				consumer_goods_factor = -0.15
+				consumer_goods_factor = -0.30
 				communism_drift = 0.06
 			}
 		}
