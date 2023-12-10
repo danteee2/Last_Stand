@@ -1484,36 +1484,3 @@ country_event = {
 	}
 	option = {}
 }
-
-
-country_event = {
-	id = soviet.420
-	title = "War In Poland!"
-	desc = "There has been a breakout of war on our borders between [FROM.GetNameDef] and Poland. This could be a good opportunity for us to expand to the west..."
-	fire_only_once = yes
-	is_triggered_only = yes
-	picture = GFX_report_event_polish_tanks_02
-	option = {
-		name = "Seize the Oppertunity!"
-		SOV = {
-			create_wargoal = {
-				target = POL
-				type = puppet_wargoal_focus
-			}
-		}
-		ai_chance = {
-			factor = 0
-		}
-	}
-	option = {
-		name = "Leave them to their fate."
-		diplomatic_relation = {
-			country = POL
-			relation = non_aggression_pact
-			active = yes
-		}
-		ai_chance = {
-			factor = 10
-		}
-	}
-}
