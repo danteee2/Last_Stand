@@ -20,7 +20,7 @@ ideas = {
 			
 			modifier = {
 				attrition = -0.05
-				dig_in_speed_factor = 0.05
+               	max_dig_in = 5
 				justify_war_goal_time = 0.25
 				political_power_cost = 0.05
 			}
