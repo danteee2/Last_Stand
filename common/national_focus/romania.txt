@@ -5982,9 +5982,8 @@ focus_tree = {
 	relative_position_id = ROM_protect_the_nation
 	available = {
 		has_war_support > 0.8
-		has_war = yes
 	}
-	cost = 15
+	cost = 10
 	x = 0
 	y = 3
 	completion_reward = { add_ideas = tot_economic_mobilisation}
