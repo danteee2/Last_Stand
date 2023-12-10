@@ -18,7 +18,7 @@ on_actions = {
 						}
 					}
 				}
-				# SOV={country_event={id=soviet.420}} ##TEMP removal for now
+				SOV={country_event={id=soviet.420}}
 			}
 		}
 	}
