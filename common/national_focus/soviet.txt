@@ -596,7 +596,7 @@ focus_tree = {
 		x = -2
 		y = 2
 		relative_position_id = SOV_third_five_year_plan
-		cost = 10
+		cost = 5
 
 		mutually_exclusive = { focus = SOV_shift_to_armaments_production }
 
@@ -607,7 +607,6 @@ focus_tree = {
 				NOT = { num_of_controlled_factories < SOV_fyp_factory_requirement_tier_3 }
 			}
 			NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
-			date > 1937.06.01
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
@@ -698,7 +697,6 @@ focus_tree = {
 				NOT = { num_of_controlled_factories < SOV_fyp_factory_requirement_tier_4 }
 			}
 			NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
-			date > 1938.06.01
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
@@ -835,7 +833,6 @@ focus_tree = {
 				NOT = { num_of_controlled_factories < SOV_fyp_factory_requirement_tier_3 }
 			}
 			NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
-			date > 1937.06.01
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
@@ -903,7 +900,6 @@ focus_tree = {
 				NOT = { num_of_controlled_factories < SOV_fyp_factory_requirement_tier_4 }
 			}
 			NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
-			date > 1938.06.01
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
@@ -969,7 +965,6 @@ focus_tree = {
 					include_locked = yes
 				}
 			}
-			date > 1938.01.01
 			SOV_third_five_year_plan_available = yes
 			NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
 		}
@@ -1614,7 +1609,7 @@ focus_tree = {
 		x = 2
 		y = 0
 		relative_position_id = SOV_national_specialists
-		cost = 10
+		cost = 5
 
 		mutually_exclusive = { focus = SOV_national_specialists }
 		
@@ -7636,7 +7631,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = SOV_strengthen_the_mobilization_plan
-		cost = 10
+		cost = 5
 
 		mutually_exclusive = { focus = SOV_beaten_but_not_defeated }
 		mutually_exclusive = { focus = SOV_form_a_fifth_column }
@@ -7687,7 +7682,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = SOV_the_path_of_marxism_leninism
-		cost = 10
+		cost = 5
 
 		mutually_exclusive = { focus = SOV_the_right_opposition focus = SOV_the_left_opposition }
 
@@ -7744,7 +7739,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_the_centre
-		cost = 10
+		cost = 5
 		
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
 
@@ -7768,7 +7763,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_the_centre
-		cost = 10
+		cost = 5
 		
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SOV_POLITICAL_PARANOIA FOCUS_FILTER_STABILITY}
 
@@ -7791,7 +7786,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_the_stalin_constitution
-		cost = 10
+		cost = 5
 		
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
 
@@ -8066,7 +8061,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SOV_the_zinovyevite_terrorist_center
-		cost = 10
+		cost = 5
 
 		available = {
 			has_country_flag = {
@@ -8306,7 +8301,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SOV_the_anti_soviet_trotskyist_center
-		cost = 10
+		cost = 5
 
 		available = {
 			has_country_flag = {
@@ -8457,7 +8452,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_the_military_conspiracy
-		cost = 20
+		cost = 10
 
 		available = {
 			has_country_flag = {
@@ -8544,7 +8539,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = SOV_the_military_conspiracy
-		cost = 10
+		cost = 5
 
 		available = {
 			has_government = communism
@@ -14855,7 +14850,7 @@ focus_tree = {
 		available = {
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
 			is_subject = no
-			date > 1938.6.1
+			date > 1937.1.1
 		}
 
 		bypass = {
