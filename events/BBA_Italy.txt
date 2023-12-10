@@ -12800,7 +12800,7 @@ country_event = {
 		name = BBA_italy_interaction_events.41.a 
 
 		ai_chance = { 
-			base = 0
+			base = 70
 			modifier = {
 				factor = 0
 				OR = {
