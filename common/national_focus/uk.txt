@@ -16352,8 +16352,6 @@ mutually_exclusive = {
 		relative_position_id = ENG_Provoke_british_patriotism
 		cost = 10
 		available = {
-			NOT = { has_idea = ENG_devaluated_pound }
-		 
 			controls_state = 122
 			controls_state = 121
 			controls_state = 133
@@ -16679,7 +16677,6 @@ mutually_exclusive = {
 		
          available = {
 			has_war_support > 0.5
-			date > 1937.01.01
             }
 
 		available_if_capitulated = yes
