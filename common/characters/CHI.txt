@@ -971,7 +971,7 @@ characters={
 				original_tag = CHI
 			}
 			ai_will_do = {
-				factor = 2000
+				factor = 2
 			}
 			cost = 100
 			traits = { 
