@@ -1450,7 +1450,7 @@ NOR_allied_democratic_preparation_decisions_category = {
 		}
 
 		modifier = {
-			stability_weekly = -0.001
+			stability_weekly = -0.01
 		}
 
 		remove_effect = {
