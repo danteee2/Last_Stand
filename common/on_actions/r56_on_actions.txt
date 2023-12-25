@@ -1,27 +1,5 @@
 
 on_actions = {
-	on_declare_war = { # sov poland war event
-		effect = {
-			if = {
-				limit = {
-					AND = {
-						FROM = { #dec on poland
-							original_tag = POL
-						}
-						NOT = {
-							ROOT = { # not when sov are doing it
-								original_tag = SOV
-							}
-						}
-						SOV = {
-							is_ai = no
-						}
-					}
-				}
-				# SOV={country_event={id=soviet.420}} ##TEMP removal for now
-			}
-		}
-	}
 	on_create_faction = {
 		effect = {
 			if = {				#from Polish decision where Lithuania reconciled the Wilno issue

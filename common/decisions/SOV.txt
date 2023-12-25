@@ -5745,9 +5745,9 @@ SOV_diplomacy_baltic_decision_category = {
 			has_completed_focus = SOV_claims_in_baltic
 		}
 
-		days_remove = 60
+		days_remove = SOV_ultimatum_days
 
-		cost = 150
+		cost = SOV_send_ultimatum_to_country_cost
 
 		remove_effect = {
 			every_other_country = {

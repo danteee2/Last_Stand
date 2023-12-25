@@ -67,10 +67,6 @@ CHI_unit_production = {
 		id = fighter
 		value = 75 # From 70 to 75
 	}
-	ai_strategy = {
-		type = force_build_armies
-		value = 150
-	}
 	
 	ai_strategy = {
 		type = unit_ratio

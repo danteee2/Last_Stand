@@ -38,16 +38,15 @@ CHI_historical_plan = {
 		
 		#1936
 		KMT_industrial_effort
-		KMT_national_defense_council
+		KMT_science_effort
 		KMT_political_effort
+		KMT_extra_research_slot
+		KMT_unitary_semi_presidential_republic
+		KMT_external_defense					#Xian incident December 1936
+		#1937
+		KMT_national_defense_council
 		KMT_armament_effort
 		KMT_revive_hanyang_armory
-		KMT_external_defense	
-		KMT_unitary_semi_presidential_republic
-		#1937
-		KMT_science_effort
-		KMT_extra_research_slot
-		KMT_arms_purchases_in_the_us
 		KMT_air_effort							#around june 1937
 		KMT_air_base_expansion
 		#1938

@@ -10,25 +10,6 @@
 # protect
 # influence
 
-POL_build_army = {
-	allowed = {
-		original_tag = POL
-	}
-	enable = {
-		always = yes
-	}
-	abort = {
-		OR = {
-			has_war = yes
-			date > 1937.6.1
-		}
-	}
-	ai_strategy = {
-		type = equipment_stockpile_surplus_ratio
-		value = -20
-	}
-}
-
 british_help_against_germany = {
 	allowed = {
 		original_tag = POL
@@ -61,31 +42,10 @@ POL_template_design = {
 		original_tag = POL
 	}
 	enable = {
-		always = yes
+		date < 1940.1.1				
 	}
-
-	ai_strategy = {
-		type = force_build_armies
-		value = 150
-	}
-
-	ai_strategy = {
-		type = build_army
-		id = infantry
-		value = 20000
-	}
-
-	ai_strategy = {
-		type = building_target
-		id = arms_factory
-		value = 3000
-	}
-
-	ai_strategy = {
-		type = build_building
-		id = arms_factory
-		target = 8030
-		value = 10000
+	abort = { 
+		date > 1940.1.1
 	}
 
 	ai_strategy = {

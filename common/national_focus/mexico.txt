@@ -175,14 +175,14 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = MEX_focus_national_bank
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 100
 		}
 
 		available = {
-			has_tech = construction2
+			
 		}
 
 		bypass = {
@@ -210,14 +210,14 @@ focus_tree = {
 		x = -2
 		y = 2
 		relative_position_id = MEX_focus_national_bank
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 100
 		}
 
 		available = {
-			num_of_civilian_factories > 30
+			
 		}
 
 		bypass = {
@@ -255,7 +255,7 @@ focus_tree = {
 		}
 
 		available = {
-			num_of_civilian_factories > 45
+			
 		}
 
 		bypass = {
@@ -263,10 +263,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_timed_idea = {
-				idea = MEX_mexican_miracle
-				days = 365
-			}
+			add_ideas = MEX_mexican_miracle
 			add_political_power = 100
 			478 = {
 				add_extra_state_shared_building_slots = 2
