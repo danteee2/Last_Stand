@@ -1,6 +1,7 @@
 ﻿l_english:
  SOV_ukrainian_reclaimation_desc:0 "Ukrainian nationalists are once again attempting to divide [SOV.GetNameDef] and the government is determined to eliminate the nationalist elements."
  SOV_anti_bolshevik_revolt:0 "Anti-Bolshevik Revolt"
+ SOV_army_purge:0 "Army Purge"
  SOV_put_down_the_ukrainian_revolt:0 "Put Down The Ukrainian Revolt"
  SOV_crush_ukrainian_opposition:0 "Crush Ukrainian Opposition"
  r56_UKR_revolt_active:0 "Ukraine has revolted"

@@ -1014,11 +1014,7 @@ focus_tree = {
 					}
 				}
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
+				
 				add_building_construction = {
 						type = arms_factory
 						level = 2
@@ -1064,11 +1060,7 @@ focus_tree = {
 						level = 2
 						instant_build = yes
 					}
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						insant_build = yes
-					}
+					
 					add_resource = {
 						type = steel
 						amount = 8
@@ -5160,6 +5152,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
+			add_ideas = { SOV_army_purge }
 			add_to_variable = { SOV_the_red_army_mobilization_speed = 0.05 }
 			add_to_variable = { SOV_the_red_army_conscription_factor = 0.03 }
 			custom_effect_tooltip = SOV_strengthen_the_mobilization_plan_ns_tt
@@ -7140,6 +7133,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
+			remove_ideas = { SOV_army_purge}
 			add_to_variable = { SOV_the_red_army_army_org_factor = 0.05 }
 			set_variable = { SOV_the_red_army_experience_gain_army_factor = 0 }
 			set_variable = { SOV_the_red_army_experience_loss_factor = 0 }

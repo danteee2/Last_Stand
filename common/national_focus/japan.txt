@@ -10119,7 +10119,7 @@
 				name = industrial_bonus
 				bonus = 1
 				uses = 2
-				category = naval_gunnery_tech
+				category = naval_shell_tech
 			}
 			add_tech_bonus = {
 				name = SPR_navy_modernization
