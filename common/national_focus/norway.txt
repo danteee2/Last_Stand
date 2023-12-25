@@ -23,7 +23,7 @@ focus_tree = {
 
 	continuous_focus_position = { x = 50 y = 1750 }
 	shared_focus = NORDIC_form_joint_alliance
-	shared_focus = SCA_scandinavian_unification
+
 
 
 #	focus = {
@@ -3907,6 +3907,10 @@ focus_tree = {
 		id = NOR_the_chamberlains_overture
 		
 		icon = GFX_focus_NOR_the_chamberlains_overture
+
+		available = {
+			is_ai = no
+		}
 		
 		prerequisite = { focus = NOR_the_stumbling_storting}
 		mutually_exclusive = { focus = NOR_lurk_in_the_shadows }
