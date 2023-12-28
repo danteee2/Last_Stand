@@ -429,7 +429,7 @@ equipments = {
 			tank_nsb_armor_upgrade
 		}
 		maximum_speed = 4
-		build_cost_ic = 6
+		build_cost_ic = 7
 		reliability = 0.75
 		armor_value = 25
 		resources = {
