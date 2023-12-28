@@ -11,7 +11,7 @@ NDefines.NDiplomacy.MIN_WARGOAL_JUSTIFY_COST = 7.0					-- It always takes atleas
 NDefines.NDiplomacy.PEACE_SCORE_PER_PASS = 100.0
 ----------------------------------
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 30						-- Events are checked every X day per country or state (1 is ideal, but CPU heavy)
-NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.2
+NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 30
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 40
 ----------------------------------
 NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0					-- XP cost for adding a new equipment module in an empty slot when creating an equipment variant.
@@ -23,7 +23,7 @@ NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 100
 NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 100
 NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 100
 NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 30
-NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 3.1
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 2.7
 NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0.05
 ----------------------------------
 NDefines.NTechnology.MAX_SUBTECHS = 4						-- Max number of sub technologies a technology can have.

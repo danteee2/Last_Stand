@@ -3300,7 +3300,6 @@ formable_nations_mod_category = {
 				original_tag = SLV
 				original_tag = BOS
 				original_tag = ROM
-				original_tag = ITA
 			}
 		}
 		
