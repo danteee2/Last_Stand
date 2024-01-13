@@ -806,7 +806,6 @@ formable_nations_mod_category = {
 				original_tag = SIK
 				original_tag = PRC
 				original_tag = MAN
-				original_tag = JAP
 			}
 		}
 		
@@ -10702,6 +10701,12 @@ formable_nations_mod_category = {
 				409 = { add_core_of = ROOT }
 				611 = { add_core_of = ROOT }
 				612 = { add_core_of = ROOT }
+				596 = { add_core_of = ROOT }
+				595 = { add_core_of = ROOT }
+				593 = { add_core_of = ROOT }
+				592 = { add_core_of = ROOT }
+				591 = { add_core_of = ROOT }
+				594 = { add_core_of = ROOT }
 			}
 			608 = { add_core_of = ROOT }
 			614 = { add_core_of = ROOT }

@@ -437,6 +437,7 @@ create_faction = Axis
 add_to_faction = GER
 
 add_ideas = {
+	Ger_luftwaffe_limitations
 	sour_loser
 	general_staff
 	limited_exports

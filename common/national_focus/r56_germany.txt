@@ -16004,6 +16004,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
+			remove_ideas = Ger_luftwaffe_limitations
 			swap_ideas = {
 				remove_idea = GER_plunder_the_westIII
 				add_idea = GER_plunder_the_westV
