@@ -2326,6 +2326,7 @@
 		}
 
 		available = {
+			is_ai = no
 			democratic > 0.70
 			is_power_balance_in_range = {
 				id = SWI_centralization_bop
@@ -2358,6 +2359,7 @@
 		}
 
 		available = {
+			is_ai = false
 			is_power_balance_in_range = {
 				id = SWI_centralization_bop
 				range > SWI_centralization_bop_balanced
@@ -5295,6 +5297,7 @@
 		}
 
 		available = {
+			is_ai = no
 			is_power_balance_in_range = {
 				id = SWI_centralization_bop
 				range < SWI_centralization_bop_fully_cantons  

@@ -155,7 +155,7 @@ flooded = { # on Province
 
 unplanned_offensive = { # on Province
 air_cas_present_factor = -0.65
-	army_attack_factor = -0.75
+	army_attack_factor = -0.90
 	army_speed_factor = -0.5
 	ground_attack_factor = -0.65
 	local_org_regain = -0.5
