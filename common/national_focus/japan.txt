@@ -10120,7 +10120,7 @@
 				bonus = 1
 				uses = 3
 				category = ship_modules_tech
-				
+			
 				
 			}					
 		}
