@@ -40,6 +40,8 @@ CHI_historical_plan = {
 		KMT_industrial_effort
 		KMT_science_effort
 		KMT_political_effort
+		KMT_industrialization_NW
+		KMT_industrialization_S
 		KMT_extra_research_slot
 		KMT_unitary_semi_presidential_republic
 		KMT_external_defense					#Xian incident December 1936
@@ -74,8 +76,6 @@ CHI_historical_plan = {
 		KMT_warlord_after_civil_war
 		KMT_development_of_taiwan
 		KMT_monetary_reform						#gonna get rid of that corruption before building industry
-		KMT_industrialization_NW
-		KMT_industrialization_S
 		KMT_pioneering_the_north_east
 		KMT_national_resources_commission
 		KMT_excavation_NW
