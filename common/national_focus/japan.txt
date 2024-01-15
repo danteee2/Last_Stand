@@ -2869,7 +2869,7 @@
 			else = {
 				add_timed_idea = {
 					idea = JAP_r56_nanshin_ron_player
-					days = 60
+					days = 180
 				}
 			}
 		}

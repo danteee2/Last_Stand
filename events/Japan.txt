@@ -448,6 +448,10 @@ country_event = {
 	option = {
 		name = japan.7.a
 		hidden_effect = {
+			add_timed_idea = {
+				idea = JAP_no_indochina
+				days = 120
+			}
 			news_event = { days = 5 id = news.6 }
 		}
 	}

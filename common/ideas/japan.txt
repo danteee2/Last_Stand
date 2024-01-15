@@ -1,6 +1,17 @@
 ideas = {
 
 	country = {
+		
+		
+		JAP_no_indochina = {
+			picture = jap_militarism_showa
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.2
+			}
+		}
+
 		JAP_cultural_dominance_idea = {
 			picture = state_shintoism
 			removal_cost = -1
@@ -2427,20 +2438,20 @@ ideas = {
 			}
 
 			targeted_modifier = {
-				tag = INS
-				attack_bonus_against = 0.05
+				tag = USA
+				attack_bonus_against = 0.15
 			}
 			targeted_modifier = {
-				tag = MAL
-				attack_bonus_against = 0.05
+				tag = AST
+				attack_bonus_against = 0.15
 			}
 			targeted_modifier = {
-				tag = PHI
-				attack_bonus_against = 0.05
+				tag = RAJ
+				attack_bonus_against = 0.15
 			}
 			targeted_modifier = {
-				tag = FRI
-				attack_bonus_against = 0.05
+				tag = ENG
+				attack_bonus_against = 0.15
 			}
 		}
 		

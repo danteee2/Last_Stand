@@ -111,7 +111,7 @@ ideas = {
 			}
 			
 			modifier = {
-				industrial_capacity_factory = -0.125
+				industrial_capacity_factory = -0.1
 				surrender_limit = -0.18
 				stability_factor = -0.25
 				
