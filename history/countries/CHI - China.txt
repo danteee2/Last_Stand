@@ -188,6 +188,11 @@ add_opinion_modifier = { target = GER modifier = sino_german_cooperation }
 GER = {
 	add_opinion_modifier = { target = CHI modifier = sino_german_cooperation }
 }
+diplomatic_relation = {
+	country = SOV
+	relation = non_aggression_pact
+	active = yes
+}
 
 if = {
 	limit = {
