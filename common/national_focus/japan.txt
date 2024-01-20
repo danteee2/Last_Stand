@@ -1835,6 +1835,11 @@
 		id = JAP_secure_china
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = JAP_intervene_in_china }
+		bypass = {
+			CHI = {
+				exists = no
+			}
+		}
 		x = -1
 		y = 1
 		relative_position_id = JAP_intervene_in_china

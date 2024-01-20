@@ -219,10 +219,16 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 11609;1530;impassable;-1;-1;-1;-1;-1;;georgian russian caucasus border
 11609;4534;impassable;-1;-1;-1;-1;-1;;georgian russian caucasus border
 7554;6436;impassable;-1;-1;-1;-1;-1;;georgian dagestan caucasus border
+11617;672;impassable;-1;-1;-1;-1;-1;;georgian russian caucasus border
+3667;4534;impassable;-1;-1;-1;-1;-1;;georgian russian caucasus border
+3667;6436;impassable;-1;-1;-1;-1;-1;;georgian russian caucasus border
+1455;6436;impassable;-1;-1;-1;-1;-1;;georgian russian caucasus border
+7554;6763;impassable;-1;-1;-1;-1;-1;;georgian russian caucasus border
+11664;672;impassable;-1;-1;-1;-1;-1;;georgian russian caucasus border
+11617;11599;impassable;-1;-1;-1;-1;-1;;georgian russian caucasus border
 12921;8136;impassable;-1;-1;-1;-1;-1;;Mamib Desert
 10978;8136;impassable;-1;-1;-1;-1;-1;;Mamib Desert
 10978;10957;impassable;-1;-1;-1;-1;-1;;Mamib Desert
-3314;6336;sea;2752;2885;1578;2890;1581;;Afsluitdijk
 13268;3988;sea;6801;-1;-1;-1;-1;;Corinth Canal
 8282;843;sea;9417;11559;6758;9417;757;VOLGA_DON_CANAL;Volga-Don
 -1;-1;;-1;-1;-1;-1;-1;-1
