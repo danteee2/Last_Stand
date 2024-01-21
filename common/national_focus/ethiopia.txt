@@ -4606,6 +4606,7 @@ focus_tree = {
 		relative_position_id = ETH_a_federal_empire
 		cost = 10
 		available = {
+			is_ai = no
 		}
 		ai_will_do = {
 			base = 1
