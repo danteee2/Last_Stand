@@ -69,7 +69,8 @@ NDefines.NCountry.NUCLEAR_BOMB_DROP_UNITY_EFFECT_MAX_VP = 1;
 
 -- R56 DEFINES START HERE
 	
-	
+NDefines.NProduction.BASE_LICENSE_IC_COST = 0	
+NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0	
 NDefines.NDiplomacy.LICENSE_ACCEPTANCE_PUPPET_BASE = 20			-- Acceptance modifier for puppets requesting production licenses.
 NDefines.NDiplomacy.LICENSE_ACCEPTANCE_TECH_DIFFERENCE = 2 		-- Acceptance modifier for each year of technology difference.
 NDefines.NDiplomacy.LICENSE_ACCEPTANCE_TECH_DIFFERENCE_BASE = 20    -- Acceptance base for tech difference

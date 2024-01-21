@@ -15975,10 +15975,6 @@ focus_tree = {
 				remove_idea = Ger_luftwaffe_limitations
 				add_idea = Ger_luftwaffe_limitations_2
 			}
-			swap_ideas = {
-				remove_idea = GER_plunder_the_westIII
-				add_idea = GER_plunder_the_westV
-			}
 		} 
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY
