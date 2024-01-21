@@ -6645,9 +6645,9 @@ focus_tree = {
 			if = {
 				limit = {
 					NOT = { has_idea = tot_economic_mobilisation }
-					NOT = { has_idea = war_economy }
+
 				}
-				add_ideas = war_economy
+				add_ideas = tot_economic_mobilisation
 			}
 			if = {
 				limit = {
