@@ -6595,9 +6595,6 @@ focus_tree = {
 		y = 2
 		cost = 10
 
-		available = {
-			has_war = yes
-		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER}
 		completion_reward = {
@@ -6648,14 +6645,6 @@ focus_tree = {
 
 				}
 				add_ideas = tot_economic_mobilisation
-			}
-			if = {
-				limit = {
-					NOT = { has_idea = scraping_the_barrel }
-					NOT = { has_idea = all_adults_serve }
-					NOT = { has_idea = service_by_requirement }
-				}
-				add_ideas = service_by_requirement
 			}
 		}
 	}
