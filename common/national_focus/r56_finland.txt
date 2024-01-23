@@ -4858,7 +4858,7 @@ focus_tree = {
 		id = fin_unitedscandfoc
 		text = fin_unitedscandfoc
 		icon = GFX_goal_scandinavia
-		cost = 25
+		cost = 26
 		prerequisite = {
 			focus = fin_invdenfoc
 		}
