@@ -11,6 +11,9 @@ equipments = {
 			#infantry #Removing inf type 
 			mechanized
 		}
+		upgrades = {
+			mech_cost_upgrade
+		}
 		group_by = archetype
 		
 		interface_category = interface_category_land
