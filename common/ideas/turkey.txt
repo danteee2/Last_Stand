@@ -1627,7 +1627,7 @@ country = {
 
 		modifier = {
 			conscription_factor = -0.05
-			consumer_goods_factor = 015
+			consumer_goods_factor = 0.15
 			join_faction_tension = 0.20
 		}
 	}
@@ -2095,7 +2095,7 @@ country = {
 
 		modifier = {
 			stability_factor = 0.1
-			consumer_goods_factor = 0.5
+			consumer_goods_factor = 0.15
 			political_power_factor = -0.05
 			political_advisor_cost_factor = 0.5
 		}
