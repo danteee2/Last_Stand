@@ -1545,7 +1545,7 @@ country = {
 		removal_cost = -1
 			
 		modifier = {
-			consumer_goods_factor = 0.5
+			consumer_goods_factor = 0.15
 			production_factory_efficiency_gain_factor = -0.5
 		}
 	}
