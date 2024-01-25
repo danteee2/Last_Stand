@@ -54,6 +54,27 @@ ideas = {
 	}
 	
 	country = {
+		r56_raj_forge_our_own_future_idea = {
+		
+			
+			allowed = {
+				is_subject = yes
+			}
+			
+			allowed_civil_war = {
+			
+			}
+			
+			removal_cost = -1
+			
+			picture = r56_CAN_maple_leaf
+			
+			modifier = {
+				autonomy_gain = 1
+			}
+			
+		}
+		
 		RAJ_azad_hind = {
 			picture = generic_morale_bonus
 
