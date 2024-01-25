@@ -39,7 +39,7 @@ adjacency_rule ={
 	required_provinces = { 568 11649 }
 
 	icon = 8131
-	offset = { 17 11 0 }
+	offset = { 20 20 0 }
 }
 Italy-albania strait
 adjacency_rule ={
