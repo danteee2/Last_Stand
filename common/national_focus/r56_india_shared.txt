@@ -1988,15 +1988,6 @@ shared_focus = {
 	icon = GFX_goal_RAJ_native_army
 	cost = 5
 	ai_will_do = { factor = 4 }
-	available = {
-		OR = {
-			has_completed_focus = RAJ_Democracy_and_Socialism
-			has_completed_focus = RAJ_India_United_under_Britain
-			has_completed_focus = RAJ_A_Society_of_All_Classes
-			has_completed_focus = RAJ_Linlithgows_Reign
-			has_focus_tree = r56_indian_revolt_focus
-		}
-	}
 	x = 80
 	y = 0
 	offset = {
@@ -3655,6 +3646,12 @@ shared_focus = {
 	y = 1
 	relative_position_id = RAJ_Reform_the_British_Indian_Army
 	completion_reward = {
+		add_tech_bonus = {
+			name = RAJ_gun_bonus
+			bonus = 0.5
+			uses = 4
+			category = infantry_weapons
+		}
 		add_ideas = RAJ_Military_Academy_Expanded
 	}
 

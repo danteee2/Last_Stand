@@ -67,6 +67,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				breakthrough_factor = 0.15
+				army_attack_factor = 0.1
 				convoy_escort_efficiency = 0.15
 				naval_invasion_capacity = 10
 				invasion_preparation = -0.5

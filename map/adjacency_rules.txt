@@ -7,6 +7,88 @@
 #Rules needs linking from the straits that are affected by the rule ( adjacency_rule =_id )
 
 #Name is how you refer to the rule in adjecencies.csv
+Kurks strait
+adjacency_rule ={
+	name = "Strait Of No Romaina Troll"
+
+	contested =	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	enemy =	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	friend =	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 568 11649 }
+
+	icon = 8131
+	offset = { 20 20 0 }
+}
+Italy-albania strait
+adjacency_rule ={
+	name = "Strait of Otranto"
+
+	is_friend = {
+		if = {
+			limit = {
+				original_tag = SPR
+			}
+			NOT = {
+				has_global_flag = scw_over
+			}
+			NOT = {
+				has_war_with = 118.controller
+			}
+		}
+	}
+
+	contested =	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	enemy =	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	friend =	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 6979 11767 }
+	
+	icon = 5864
+	offset = { 0.0 0.0 0.0 }
+}
 
 #Malacca Strait
 adjacency_rule ={
