@@ -67,10 +67,10 @@ ideas = {
 			
 			removal_cost = -1
 			
-			picture = r56_CAN_maple_leaf
+			picture = raj_all_india_forward_bloc
 			
 			modifier = {
-				autonomy_gain = 1
+				autonomy_gain = 1.5
 			}
 			
 		}
