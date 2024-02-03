@@ -2651,8 +2651,8 @@ ideas = {
 			}
 			picture = generic_war_preparation
 			modifier = {
-				equipment_conversion_speed = 0.25
-				equipment_capture_factor = 0.05
+				equipment_conversion_speed = 0.10
+				equipment_capture_factor = 0.10
 				#unit_upkeep_attrition_factor = 0.01
 			}			
 		}
@@ -2662,8 +2662,8 @@ ideas = {
 			}
 			picture = generic_war_preparation
 			modifier = {
-				equipment_conversion_speed = 0.50
-				equipment_capture_factor = 0.10
+				equipment_conversion_speed = 0.20
+				equipment_capture_factor = 0.15
 				#unit_upkeep_attrition_factor = 0.01
 			}			
 		}
