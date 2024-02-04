@@ -1182,8 +1182,6 @@ technologies = {
 			anti_tank_equipment_2
 		}
 		enable_equipment_modules = {
-			tank_high_velocity_cannon_2
-			tank_medium_cannon_2
 			tank_heavy_cannon_2
 			tank_buster_2
 		}
@@ -1295,6 +1293,9 @@ technologies = {
 			hard_attack = 0.1
 			ap_attack = 0.1
 		}
+		enable_equipment_modules = {
+			tank_medium_cannon_2
+		}
 		
 		path = {
 			leads_to_tech = antitank4
@@ -1393,6 +1394,9 @@ technologies = {
 		path = {
 			leads_to_tech = antitank5
 			research_cost_coeff = 1
+		}
+		enable_equipment_modules = {
+			tank_high_velocity_cannon_2
 		}
 		
 		research_cost = 1

@@ -23,7 +23,7 @@ equipment_modules = {
 			tank_secondary_turret = armor #you don't even have a first one!
 		}
 
-		xp_cost = 2
+		xp_cost = 0
 
 		add_stats = {
 			reliability = 0.20 #the only thing that can go wrong is the gun lol
@@ -61,7 +61,7 @@ equipment_modules = {
 			tank_super_heavy_main_armament = armor
 		}
 
-		xp_cost = 2
+		xp_cost = 0
 		dismantle_cost_ic = 0.5
 		add_stats = {
 			build_cost_ic = 0.75
@@ -96,7 +96,7 @@ equipment_modules = {
 			}
 		}
 
-		xp_cost = 2
+		xp_cost = 0
 
 		add_stats = {
 			reliability = 0.20 #the only thing that can go wrong is the gun lol
@@ -132,7 +132,7 @@ equipment_modules = {
 			build_cost_ic = 0.75
 			breakthrough = 10
 		}
-		xp_cost = 5
+		xp_cost = 0
 		dismantle_cost_ic = 0.5
 		multiply_stats = {
 			armor_value = -0.15	#two-part solution allows for less armor
@@ -157,7 +157,7 @@ equipment_modules = {
 			module_category = tank_small_main_armament
 			convert_cost_ic = 0.5
 		}
-		xp_cost = 1
+		xp_cost = 0
 	}
 
 	tank_anti_tank_rifle_gun_2 = {
@@ -179,7 +179,7 @@ equipment_modules = {
 			convert_cost_ic = 0.5
 		}
 		
-		xp_cost = 1
+		xp_cost = 0
 	}
 
 }
