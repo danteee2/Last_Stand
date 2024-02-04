@@ -6563,9 +6563,7 @@ focus_tree = {
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		completion_reward = {
-			add_political_power = 75
-			add_ideas = r56_CAN_reduced_tariffs
-			USA = { add_ideas = r56_CAN_reduced_tariffs }
+			add_political_power = 200
 		}
 	}
 	
