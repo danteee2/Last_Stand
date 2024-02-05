@@ -2662,7 +2662,7 @@ ideas = {
 			}
 			picture = generic_war_preparation
 			modifier = {
-				equipment_conversion_speed = 0.20
+				equipment_conversion_speed = 0.19
 				equipment_capture_factor = 0.15
 				#unit_upkeep_attrition_factor = 0.01
 			}			
