@@ -4218,6 +4218,7 @@ focus_tree = {
 		relative_position_id = ETH_reclaiming_ethiopia
 		cost = 10
 		available = {
+			is_ai = no
 			all_owned_state = { is_controlled_by_ROOT_or_ally = yes }
 		}
 		ai_will_do = {
