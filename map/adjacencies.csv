@@ -154,10 +154,9 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 3206;316;sea;2506;-1;-1;-1;-1;;Denmark
 5407;5382;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar North
 5407;2400;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar South
-10094;13228;impassable;-1;-1;-1;-1;-1;;Gibraltar
+4135;13228;impassable;-1;-1;-1;-1;-1;;Gibraltar
 4135;10094;impassable;-1;-1;-1;-1;-1;;Gibraltar
 4135;7153;impassable;-1;-1;-1;-1;-1;;Gibraltar
-1048;13228;impassable;-1;-1;-1;-1;-1;;Gibraltar
 12884;1961;impassable;-1;-1;-1;-1;-1;;Tibet
 4135;7153;impassable;-1;-1;-1;-1;-1;;Tibet
 12884;10802;impassable;-1;-1;-1;-1;-1;;Tibet
