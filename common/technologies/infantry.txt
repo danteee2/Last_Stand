@@ -247,13 +247,7 @@ technologies = {
 			soft_attack = 0.05
 		}
 
-		mot_shocktroop = {
-			soft_attack = 0.05
-		}
-
-		mech_shocktroop = {
-			soft_attack = 0.05
-		}
+	
 
 		amphibious_mechanized = {
 			soft_attack = 0.05
@@ -373,13 +367,7 @@ technologies = {
 			soft_attack = 0.05
 		}
 
-		mot_shocktroop = {
-			soft_attack = 0.05
-		}
 
-		mech_shocktroop = {
-			soft_attack = 0.05
-		}
 
 		amphibious_mechanized = {
 			soft_attack = 0.05
@@ -576,13 +564,7 @@ technologies = {
 			soft_attack = 0.05
 		}
 
-		mot_shocktroop = {
-			soft_attack = 0.05
-		}
-
-		mech_shocktroop = {
-			soft_attack = 0.05
-		}
+	
 
 		amphibious_mechanized = {
 			soft_attack = 0.1
@@ -1501,10 +1483,7 @@ technologies = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
-		shocktroop = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
+		
 		
 ###------> Jaeger   <><> <><> <><> <><> <><>
 
@@ -1516,14 +1495,7 @@ technologies = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
-		mot_shocktroop = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		mech_shocktroop = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
+		
 		amphibious_mechanized = {
 			defense = 0.05
 			breakthrough = 0.05
@@ -1625,10 +1597,7 @@ technologies = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
-		shocktroop = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
+		
 		
 ###------> Jaeger   <><> <><> <><> <><> <><>
 
@@ -1640,14 +1609,7 @@ technologies = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
-		mot_shocktroop = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		mech_shocktroop = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
+	
 		amphibious_mechanized = {
 			defense = 0.05
 			breakthrough = 0.05
@@ -1757,10 +1719,8 @@ technologies = {
 			breakthrough = 0.03
 		}
 
-		shocktroop = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
+	
+
 		
 ###------> Jaeger   <><> <><> <><> <><> <><>
 
@@ -1772,14 +1732,7 @@ technologies = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
-		mot_shocktroop = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		mech_shocktroop = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
+	
 		amphibious_mechanized = {
 			defense = 0.05
 			breakthrough = 0.05
@@ -1877,10 +1830,7 @@ technologies = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
-		shocktroop = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
+		
 		
 ###------> X   <><> <><> <><> <><> <><>
 
@@ -1892,14 +1842,7 @@ technologies = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
-		mot_shocktroop = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		mech_shocktroop = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
+		
 		amphibious_mechanized = {
 			defense = 0.05
 			breakthrough = 0.05		  
@@ -2011,12 +1954,7 @@ technologies = {
 		mechanized = {
 			soft_attack = 0.1
 		}
-		mot_shocktroop = {
-			soft_attack = 0.1
-		}
-		mech_shocktroop = {
-			soft_attack = 0.1
-		}
+		
 		amphibious_mechanized = {
 			soft_attack = 0.1
 		}	
@@ -2074,12 +2012,7 @@ technologies = {
 		mechanized = {
 			soft_attack = 0.1
 		}
-		mot_shocktroop = {
-			soft_attack = 0.1
-		}
-		mech_shocktroop = {
-			soft_attack = 0.1
-		}
+		
 		amphibious_mechanized = {
 			soft_attack = 0.1
 		}
@@ -2841,212 +2774,7 @@ technologies = {
 		}		
 	}
 	
-	shocktroops = {
 
-		enable_subunits = {
-			shocktroop
-		}
-
-		enable_subunits = {
-			mot_shocktroop
-		}
-		
-		enable_subunits = {
-			mech_shocktroop
-		}
-		
-		on_research_complete_limit = {
-			NOT = {
-				has_template_containing_unit = shocktroop
-			}
-		}
-		on_research_complete = {	
-			hidden_effect = {
-				load_oob = "unlock_shocktroop"
-			}			
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
-		}
-
-		path = {
-			leads_to_tech = shocktroops2
-			research_cost_coeff = 1
-		}
-
-		research_cost = 2
-		
-		start_year = 1936
-		
-		folder = {
-			name = infantry_folder
-			position = { x = 14 y = @1936 }
-		}
-		
-		categories = {
-			infantry_tech
-			r56_shock_infantry_tech
-		}
-
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	
-	shocktroops2 = {
-
-		shocktroop = {
-			max_organisation = 5
-			soft_attack = 0.05
-		}
-
-		mot_shocktroop = {
-			max_organisation = 2
-			soft_attack = 0.03
-		}
-		
-		mech_shocktroop = {
-			max_organisation = 2
-			soft_attack = 0.03
-		}
-
-		path = {
-			leads_to_tech = shocktroops3
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.5
-		start_year = 1939
-		folder = {
-			name = infantry_folder
-			position = { x = 14 y = @1939 }
-		}
-		
-		categories = {
-			infantry_tech
-			r56_shock_infantry_tech
-		}
-	}
-	
-	shocktroops3 = {
-
-		shocktroop = {
-			max_organisation = 5
-		}
-
-		mot_shocktroop = {
-			max_organisation = 2
-		}
-		
-		mech_shocktroop = {
-			max_organisation = 2
-		}
-		
-		path = {
-			leads_to_tech = shocktroops4
-			research_cost_coeff = 1
-		}
-
-		research_cost = 2.0
-		start_year = 1942
-		folder = {
-			name = infantry_folder
-			position = { x = 14 y = @1942 }
-		}
-		
-		categories = {
-			infantry_tech
-			r56_shock_infantry_tech
-		}
-	}
-	
-	shocktroops4 = {
-
-		shocktroop = {
-			max_organisation = 5
-		}
-
-		mot_shocktroop = {
-			max_organisation = 2
-		}
-		
-		mech_shocktroop = {
-			max_organisation = 2
-		}
-		
-		path = {
-			leads_to_tech = shocktroops5
-			research_cost_coeff = 1
-		}
-
-		research_cost = 2.0
-		start_year = 1945
-		folder = {
-			name = infantry_folder
-			position = { x = 14 y = @1945 }
-		}
-		
-		categories = {
-			infantry_tech
-			r56_shock_infantry_tech
-		}
-	}
-	
-	shocktroops5 = {
-
-		shocktroop = {
-			max_organisation = 5
-		}
-		
-		mot_shocktroop = {
-			max_organisation = 2
-		}
-		
-		mech_shocktroop = {
-			max_organisation = 2
-		}
-		
-		path = {
-			leads_to_tech = shocktroops6
-			research_cost_coeff = 1
-		}
-
-		research_cost = 2.0
-		start_year = 1949
-		folder = {
-			name = infantry_folder
-			position = { x = 14 y = @1949 }
-		}
-		
-		categories = {
-			infantry_tech
-		}
-	}
-	
-	shocktroops6 = {
-
-		shocktroop = {
-			max_organisation = 5
-		}
-
-		mot_shocktroop = {
-			max_organisation = 2
-		}
-		
-		mech_shocktroop = {
-			max_organisation = 2
-		}		
-
-		research_cost = 2.0
-		start_year = 1953
-		folder = {
-			name = infantry_folder
-			position = { x = 14 y = @1953 }
-		}
-		
-		categories = {
-			r56_shock_infantry_tech
-		}
-	}
 	
 	
 ###------> X <><> <><> <><> <><> <><>
@@ -3094,10 +2822,7 @@ technologies = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
-		shocktroop = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
+		
 		
 ###------> X   <><> <><> <><> <><> <><>
 
@@ -3168,10 +2893,7 @@ technologies = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
-		shocktroop = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
+	
 		
 ###------> X   <><> <><> <><> <><> <><>
 
@@ -3183,15 +2905,7 @@ technologies = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
-		mot_shocktroop = {
-			max_organisation = 2
-			soft_attack = 0.03
-		}
-		
-		mech_shocktroop = {
-			max_organisation = 2
-			soft_attack = 0.03
-		}
+
 		
 		path = {
 			leads_to_tech = support_weapons_c
@@ -3277,10 +2991,8 @@ technologies = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
-		shocktroop = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
+		breakthrough = 0.03
+		
 		
 ###------> X   <><> <><> <><> <><> <><>
 
@@ -3292,15 +3004,8 @@ technologies = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
-		mot_shocktroop = {
-			max_organisation = 2
-			soft_attack = 0.03
-		}
 		
-		mech_shocktroop = {
-			max_organisation = 2
-			soft_attack = 0.03
-		}
+	
 		
 		research_cost = 1.5
 		start_year = 1954
