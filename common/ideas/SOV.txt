@@ -15,7 +15,7 @@ ideas = {
 			picture = ENG_the_war_to_end_all_wars
 
 			modifier = {
-				army_core_attack_factor = -0.15
+				army_core_attack_factor = -0.1
 			}
 
 		}
