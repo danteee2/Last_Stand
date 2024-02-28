@@ -228,55 +228,7 @@ technologies = {
 		}
 	}
 	
-	modern_ship_hull_light = {
 
-		enable_equipments = { 
-			ship_hull_light_5
-		}
-		
-		
-		research_cost = 2
-
-		start_year = 1948
-		
-		folder = {
-			name = mtgnavalfolder
-			position = { x = 0 y = 25 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 4
-				OR = {
-					original_tag = ENG
-					original_tag = JAP
-					original_tag = USA
-				}
-			}
-			modifier = {
-				factor = 4
-				has_tech_bonus = {
-    				category = dd_tech
-				}
-			}			
-			modifier = {
-				not = {
-					any_controlled_state = {
-							 
-						is_coastal = yes
-					}
-				}
-				factor = 0.2
-			}			
-		}
-		
-		categories = {
-			naval_equipment
-			dd_tech
-		}
-	}
 	smoke_generator = {
 
 		naval_retreat_speed = 0.2
@@ -878,53 +830,7 @@ technologies = {
 			ca_tech
 		}
 	}
-	modern_ship_hull_cruiser = {
-
-		enable_equipments = {
-			ship_hull_cruiser_5
-		}
-		research_cost = 1.5
-
-		start_year = 1948
-		
-		folder = {
-			name = mtgnavalfolder
-			position = {  x = -1 y = 25 }
-		}
-		
-		ai_will_do = {
-			factor = 4
-			
-			modifier = {
-				factor = 2
-				OR = {
-					tag = ENG
-					tag = USA
-				}
-			}
-			modifier = {
-				not = {
-					any_controlled_state = {
-							 
-						is_coastal = yes
-					}
-				}
-				factor = 0.2
-			}
-			modifier = {
-				factor = 4
-				has_tech_bonus = {
-    				category = cl_tech
-				}
-			}						
-		}
-		
-		categories = {
-			naval_equipment
-			cl_tech
-			ca_tech
-		}
-	}
+	
 	improved_airplane_launcher = {
 
 		
@@ -1411,54 +1317,7 @@ technologies = {
 			bc_tech
 		}
 	}
-	modern_ship_hull_heavy = {
-
-		enable_equipments = {
-			ship_hull_heavy_5
-		}
-		research_cost = 1.5
-
-		start_year = 1948
-		
-		folder = {
-			name = mtgnavalfolder
-			position = {  x = -1 y = 25 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 5
-				tag = USA
-			}
-			modifier = {
-				factor = 4
-				has_tech_bonus = {
-    				category = bb_tech
-				}
-			}			
-			modifier = {
-				is_major = no
-				factor = 0
-			}
-			modifier = {
-				not = {
-					any_controlled_state = {
-							 
-						is_coastal = yes
-					}
-				}
-				factor = 0.2
-			}			
-		}
-		
-		categories = {
-			naval_equipment
-			bb_tech
-			bc_tech
-		}
-	}	
+	
 
  ##   ##  ###  ###  ### ### ###   ## 
 #  # #  # #  # #  #  #  #   #  # #   
@@ -1693,54 +1552,7 @@ early_ship_hull_carrier = {
 			cv_tech
 		}
 	}
-	modern_ship_hull_carrier = {
-
-		enable_equipments = {
-			ship_hull_carrier_4
-		}
-		
-		research_cost = 1.5
-
-		start_year = 1948
-		
-		folder = {
-			name = mtgnavalfolder
-			position = {  x = -1 y = 25 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 8
-				OR = {
-					tag = ENG
-					tag = JAP
-					tag = USA
-				}
-			}
-			modifier = {
-				not = {
-					any_controlled_state = {
-							 
-						is_coastal = yes
-					}
-				}
-				factor = 0.2
-			}	
-			modifier = {
-				factor = 4
-				has_tech_bonus = {
-    				category = cv_tech
-				}
-			}					
-		}
-		
-		categories = {
-			naval_equipment
-			cv_tech
-		}
-	}	
+	
 
 #             ## #  # ###  #   #  ##  ###  ### #  # ###  ##
 #{~._.~}     #   #  # #  # ## ## #  # #  #  #  ## # #   #
@@ -1983,53 +1795,7 @@ early_ship_hull_carrier = {
 		}
 	}
 	
-	modern_ship_hull_submarine = {
-
-		enable_equipments = {
-			ship_hull_submarine_5
-		}
-		
-		research_cost = 2.0
-
-		start_year = 1948
-		
-		folder = {
-			name = mtgnavalfolder
-			position = {  x = -2 y = 25 }
-		}
-		
-		ai_will_do = {
-			factor = 6
-			
-			modifier = {
-				factor = 7
-				OR = {
-					tag = GER
-					tag = USA
-				}
-			}
-			modifier = {
-				not = {
-					any_controlled_state = {
-							 
-						is_coastal = yes
-					}
-				}
-				factor = 0.2
-			}	
-			modifier = {
-				factor = 4
-				has_tech_bonus = {
-    				category = ss_tech
-				}
-			}					
-		}
-		
-		categories = {
-			naval_equipment
-			ss_tech
-		}
-	}
+	
 	basic_submarine_snorkel = {
 
 		enable_equipment_modules = { 

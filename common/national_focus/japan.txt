@@ -9107,7 +9107,7 @@
 					technology = advanced_small_airframe
 				}
 				add_tech_bonus = {
-					technology = photo_reconnaisance
+					category = air_equipment
 					bonus = 1
 					uses = 1
 				}	
