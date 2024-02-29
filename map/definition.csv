@@ -13332,7 +13332,7 @@
 13331;47;97;178;land;true;mountain;1
 13332;83;35;40;land;true;mountain;1
 13333;11;16;81;land;true;mountain;1
-13334;11;44;145;land;true;desert;0
+13334;11;44;145;land;false;desert;5
 13335;46;148;7;land;true;desert;0
 13336;188;254;156;land;true;desert;0
 13337;143;234;66;land;true;desert;0
