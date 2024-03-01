@@ -578,7 +578,6 @@ country_event = {
 	picture = GFX_report_event_potala
 
 	trigger = {
-		has_idea = TIB_tsarong_dzasa
 		has_government = democratic
 	} #write trigger
 
@@ -588,7 +587,6 @@ country_event = {
 
 	option = { 
 		name = himalaya_tibet.22.a
-		remove_ideas = TIB_tsarong_dzasa
 		add_political_power = 150
 		set_country_flag = tsarong_dzasa_in_power
 	}	
