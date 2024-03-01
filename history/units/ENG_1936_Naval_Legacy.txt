@@ -3,10 +3,10 @@
 	### HOME COMMAND ###
 	fleet = {
 		name = "Home Command"
-		naval_base = 13237 # Scapa Flow
+		naval_base = 11374 # Scapa Flow
 		task_force = {
 			name = "Home Fleet"
-			location = 13237 # Scapa Flow
+			location = 11374 # Scapa Flow
 			ship = { name = "HMS Furious" definition = carrier equipment = { carrier_1 = { amount = 1 owner = ENG version_name="Furious Class" } } }
 			ship = { name = "HMS Nelson" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG version_name = "Nelson Class" } } }			
 			ship = { name = "HMS Rodney" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG version_name = "Nelson Class" } } }				
