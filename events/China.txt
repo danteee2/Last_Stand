@@ -101,25 +101,24 @@ country_event = {
 	picture = GFX_report_event_chinese_army_training
 	
 	trigger = {
-		OR = {
-			owns_state = 612
-			owns_state = 610
-			owns_state = 946
-			owns_state = 715
-			owns_state = 761
-			owns_state = 947
-			owns_state = 944
-			owns_state = 714
-			owns_state = 945
-			owns_state = 717
-			owns_state = 943
-			owns_state = 942
-			owns_state = 328	
-			owns_state = 921
-			owns_state = 716
-			owns_state = 328
+		tag = CHI
+     	owns_state = 612
+		owns_state = 610
+		owns_state = 946
+		owns_state = 715
+		owns_state = 761
+		owns_state = 947
+		owns_state = 944
+		owns_state = 714
+		owns_state = 945
+		owns_state = 717
+		owns_state = 943
+		owns_state = 942
+		owns_state = 328	
+		owns_state = 921
+		owns_state = 716
+		owns_state = 328
 
-		}
 
 	}
 	
