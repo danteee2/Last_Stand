@@ -195,6 +195,26 @@ country_event = {
 	}
 }
 
+
+country_event = { 
+	id = siam.troll
+	title = siam.troll.t
+	desc = siam.troll.d
+	
+	trigger = {
+		tag = sia
+		date > 1938.01.01
+		is_ai = yes
+	}
+	
+	option = { 
+		name = siam.troll.a
+		JAP = {
+			puppet = SIA
+		}
+	}
+}
+
 country_event = { #A Letter Of Pridi
 	id = siam.7
 	title = siam.7.t

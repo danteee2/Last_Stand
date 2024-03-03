@@ -2108,6 +2108,12 @@ country_event = {
 	}
 	option = { # Refuse
 		name = france.1.b
+		JAP = {
+			add_timed_idea = {
+				idea = JAP_no_indochina
+				days = 120
+			}
+		}
 		ai_chance = { 
 			factor = 25 
 			modifier = {
