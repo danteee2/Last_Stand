@@ -139,7 +139,7 @@ NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.4
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.000175
 NDefines.NMilitary.FIELD_EXPERIENCE_MAX_PER_DAY = 12
 NDefines.NMilitary.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0.1
-NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.05
+NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.03
 NDefines.NMilitary.DISBAND_MANPOWER_LOSS = 0.0
 NDefines.NMilitary.PLAN_SPREAD_ATTACK_WEIGHT = 4.1 --AI should concentrate forces more a bit experimental. Increased from 4.0 to combat issues with AI death stacks - SpicyAlfredo
 
@@ -152,8 +152,8 @@ NDefines.NMilitary.NEW_COMMANDER_RANDOM_PERSONALITY_TRAIT_CHANCES = { -- Chances
     0.01,
 }
 
-NDefines.NMilitary.PLANNING_DECAY = 0.04
-NDefines.NMilitary.PLANNING_GAIN = 0.06
+NDefines.NMilitary.PLANNING_DECAY = 0.01
+NDefines.NMilitary.PLANNING_GAIN = 0.02
 
 -- PLAN_SPREAD_ATTACK_WEIGHT = 6.0
 --This is a Trace to make sure mod is taken into account
