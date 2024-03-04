@@ -2090,6 +2090,10 @@ foreign_politics = {
 
         days_re_enable = 30
 
+		available = {
+			always = false
+		}
+
         visible = {
         	FROM = {
         		NOT = { has_country_flag = rejected_withdrawing_attache }
