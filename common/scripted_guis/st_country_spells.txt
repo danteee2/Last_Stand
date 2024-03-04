@@ -11,6 +11,7 @@ scripted_gui = {
 				is_ai = no
 				has_country_flag = transfer_enabled
 			}
+			NOT = { has_global_flag = rt56rp_historical_gflag }
 		}
 		
 		effects = {

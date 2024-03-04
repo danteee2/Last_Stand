@@ -19,18 +19,18 @@
  
  ST_TOOLTIP_on:0 "§HActivate 'State Transfer Tool'§!"
  ST_TOOLTIP_off:0 "§HDeactivate 'State Transfer Tool'§!"
- transfer_states_on:0 "State Transfer Tool: £trigger_no"
- transfer_states_off:0 "State Transfer Tool: £trigger_yes"
+ transfer_states_on:0 "STT: £trigger_no"
+ transfer_states_off:0 "STT: £trigger_yes"
  
  mark_status_marked:0   "     Unmark State "
  mark_status_unmarked:0 "      Mark State  "
+
+ RULE_ALLOW_SUBJECT_TRANSFERS:0 "STT: Transfer subjects' states?"
+ RULE_ALLOW_SUBJECT_TRANSFERS_FREE_DESC:0 "Yes - All types of subjects"
+ RULE_ALLOW_SUBJECT_TRANSFERS_LOW_AUTONOMY_ONLY_DESC:0 "Yes - Only low-autonomy subjects (below colony level)"
+ RULE_ALLOW_SUBJECT_TRANSFERS_BLOCKED_DESC:0 "No - Prohibit transfer of subjects' states"
  
- RULE_ALLOW_SUBJECT_TRANSFERS:0 "Transfer states between AI subjects"
- RULE_ALLOW_SUBJECT_TRANSFERS_FREE_DESC:0 "All types of subjects"
- RULE_ALLOW_SUBJECT_TRANSFERS_LOW_AUTONOMY_ONLY_DESC:0 "Only low autonomy subjects (below colony level)"
- RULE_ALLOW_SUBJECT_TRANSFERS_BLOCKED_DESC:0 "Prohibit transfer of subjects' states"
- 
- RULE_USE_NEW_TOOL:0 "Use new version of the mod"
+ RULE_USE_NEW_TOOL:0 "STT: new version?"
  
  GIVE_STATE_ACTION_TITLE:0 "Give states"
  GIVE_STATE_ACTION_ACTION_DESC:0 "Give states to the chosen country"

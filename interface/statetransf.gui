@@ -2,12 +2,14 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "st_open_container"
-		position = { x = 1100 y = 3 }
+		position = { x = 411 y = 76 }
+		orientation = UPPER_LEFT
+		origo = UPPER_LEFT
 
 		buttonType = {
 			name = "open_ST"
-			quadTextureSprite = "GFX_generic_text_bg_203"
-			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_generic_text_bg_60"
+			position = { x = 200 y = 0 }
 			shortcut = "ctrl+shift+t"
 			pdx_tooltip = "[ST_TOOLTIP]"
 			clicksound = click_ok
@@ -16,12 +18,13 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "title"
-			position = {x=22 y=5}
+			position = {x=205 y=4}
 			font = "hoi_18mbs"
 			text = "[transfer_states_tooltip]"
-			maxWidth = 200
-			maxHeight = 23
+			maxWidth = 60
+			maxHeight = 25
 			format = left
+			pdx_tooltip = "[ST_TOOLTIP]"
 		}
 
 	}
@@ -43,8 +46,10 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "st_state_manager_powers_container"
-		position = {x=1250 y=170}
+		position = { x = 605 y = 215 }
 		size = { width=250 height=80 }
+		orientation = UPPER_LEFT
+		origo = UPPER_LEFT
 
 		fade_time = 300
 		fade_type = linear
@@ -101,8 +106,10 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "st_subject_powers_container"
-		position = {x=1250 y=50}
+		position = { x = 605 y = 105 }
 		size = { width=400 height=200 }
+		orientation = UPPER_LEFT
+		origo = UPPER_LEFT
 
 		fade_time = 300
 		fade_type = linear

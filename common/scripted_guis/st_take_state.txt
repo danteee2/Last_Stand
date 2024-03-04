@@ -10,6 +10,7 @@ scripted_gui = {
 			ROOT = {
 				is_ai = no  
 			}
+			NOT = { has_global_flag = rt56rp_historical_gflag }
 		}
 		
 		dynamic_lists = {

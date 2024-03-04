@@ -37,6 +37,7 @@ scripted_gui = {
 					}
 				}
 			}
+			NOT = { has_global_flag = rt56rp_historical_gflag }
 		}
 		
 		effects = {

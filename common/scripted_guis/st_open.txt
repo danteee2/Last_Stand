@@ -13,6 +13,7 @@ scripted_gui = {
 				rule = use_new_tool 
 				option = NO
 			}
+			NOT = { has_global_flag = rt56rp_historical_gflag }
 		}
 
 		effects = {
