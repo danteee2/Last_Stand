@@ -117,8 +117,7 @@ characters = {
 		country_leader = {
 			ideology = fascism_ideology
 			traits = {
-				armaments_organizer
-				BUL_aggressive_revisionist
+				hardened_officer
 			}
 			expire = "1966.1.1"
 			id = -1

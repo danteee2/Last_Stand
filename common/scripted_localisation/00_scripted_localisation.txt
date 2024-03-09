@@ -60,25 +60,6 @@ defined_text = { # Country
 	}
 }
 
-defined_text = { # Country
-	name = GetPolStrengthenDevalue
-	text = {
-		trigger = {
-			has_completed_focus = POL_Budget_Reform
-		}
-		localization_key = POL_STRENGTHEN_CURRENCY
-	}
-	text = {
-		trigger = {
-			has_completed_focus = POL_second_man_of_the_state
-		}
-		localization_key = POL_DEVALUE_CURRENCY
-	}
-	text = {
-		localization_key = POL_STRENGTHEN_DEVALUE_CURRENCY
-	}
-}
-
 defined_text = { # for PRC tree
 	name = GetManchuriaPuppet
 	text = {
@@ -251,239 +232,6 @@ defined_text = { #
 		localization_key = SS_rebellious
 	}
 }
-defined_text = { 
-	name = GetIwLoyalty
-	text = {
-		trigger = {
-			original_tag = LIT
-			check_variable = { var = LIT_iw_loyalty value = 5 compare = equals }
-			check_variable = { var = LIT_iw_seats value = 0 compare = not_equals }
-		}
-		localization_key = LIT_very_supportive
-	}
-	text = {
-		trigger = {
-			original_tag = LIT
-			check_variable = { var = LIT_iw_loyalty value = 4 compare = equals }
-			check_variable = { var = LIT_iw_seats value = 0 compare = not_equals }
-		}
-		localization_key = LIT_supportive
-	}
-	text = {
-		trigger = {
-			original_tag = LIT
-			check_variable = { var = LIT_iw_loyalty value = 3 compare = equals }
-			check_variable = { var = LIT_iw_seats value = 0 compare = not_equals }
-		}
-		localization_key = LIT_neutral
-	}
-	text = {
-		trigger = {
-			original_tag = LIT
-			check_variable = { var = LIT_iw_loyalty value = 2 compare = equals }
-			check_variable = { var = LIT_iw_seats value = 0 compare = not_equals }
-		}
-		localization_key = LIT_unsupportive
-	}
-	text = {
-		trigger = {
-			original_tag = LIT
-			check_variable = { var = LIT_iw_loyalty value = 1 compare = equals }
-			check_variable = { var = LIT_iw_seats value = 0 compare = not_equals }
-		}
-		localization_key = LIT_opposed
-	}
-	text = {
-		trigger = {
-			original_tag = LIT
-			check_variable = { var = LIT_iw_seats value = 0 compare = equals }
-		}
-		localization_key = LIT_irrelevant
-	}
-}
-defined_text = { 
-	name = GetNuLoyalty
-	text = {
-		trigger = {
-			original_tag = LIT
-			check_variable = { var = LIT_nu_loyalty value = 5 compare = equals }
-			check_variable = { var = LIT_nu_seats value = 0 compare = not_equals }
-		}
-		localization_key = LIT_very_supportive
-	}
-	text = {
-		trigger = {
-			original_tag = LIT
-			check_variable = { var = LIT_nu_loyalty value = 4 compare = equals }
-			check_variable = { var = LIT_nu_seats value = 0 compare = not_equals }
-
-		}
-		localization_key = LIT_supportive
-	}
-	text = {
-		trigger = {
-			original_tag = LIT
-			check_variable = { var = LIT_nu_loyalty value = 3 compare = equals }
-			check_variable = { var = LIT_nu_seats value = 0 compare = not_equals }
-
-		}
-		localization_key = LIT_neutral
-	}
-	text = {
-		trigger = {
-			original_tag = LIT
-			check_variable = { var = LIT_nu_loyalty value = 2 compare = equals }
-			check_variable = { var = LIT_nu_seats value = 0 compare = not_equals }
-
-		}
-		localization_key = LIT_unsupportive
-	}
-	text = {
-		trigger = {
-			original_tag = LIT
-			check_variable = { var = LIT_nu_loyalty value = 1 compare = equals }
-			check_variable = { var = LIT_nu_seats value = 0 compare = not_equals }
-
-		}
-		localization_key = LIT_opposed
-	}
-	text = {
-		trigger = {
-			original_tag = LIT
-			check_variable = { var = LIT_nu_seats value = 0 compare = equals }
-		}
-		localization_key = LIT_irrelevant
-	}
-}
-defined_text = { 
-	name = GetCdLoyalty
-	text = {
-		trigger = {
-			original_tag = LIT
-			check_variable = { var = LIT_cd_loyalty value = 5 compare = equals }
-			check_variable = { var = LIT_cd_seats value = 0 compare = not_equals }
-		}
-		localization_key = LIT_very_supportive
-	}
-	text = {
-		trigger = {
-			original_tag = LIT
-			check_variable = { var = LIT_cd_loyalty value = 4 compare = equals }
-			check_variable = { var = LIT_cd_seats value = 0 compare = not_equals }
-
-		}
-		localization_key = LIT_supportive
-	}
-	text = {
-		trigger = {
-			original_tag = LIT
-			check_variable = { var = LIT_cd_loyalty value = 3 compare = equals }
-			check_variable = { var = LIT_cd_seats value = 0 compare = not_equals }
-
-		}
-		localization_key = LIT_neutral
-	}
-	text = {
-		trigger = {
-			original_tag = LIT
-			check_variable = { var = LIT_cd_loyalty value = 2 compare = equals }
-			check_variable = { var = LIT_cd_seats value = 0 compare = not_equals }
-		}
-		localization_key = LIT_unsupportive
-	}
-	text = {
-		trigger = {
-			original_tag = LIT
-			check_variable = { var = LIT_cd_loyalty value = 1 compare = equals }
-			check_variable = { var = LIT_cd_seats value = 0 compare = not_equals }
-		}
-		localization_key = LIT_opposed
-	}
-	text = {
-		trigger = {
-			original_tag = LIT
-			check_variable = { var = LIT_cd_seats value = 0 compare = equals }
-		}
-		localization_key = LIT_irrelevant
-	}
-}
-defined_text = { 
-	name = GetSdLoyalty
-	text = {
-		trigger = {
-			original_tag = LIT
-			check_variable = { var = LIT_sd_loyalty value = 5 compare = equals }
-			check_variable = { var = LIT_sd_seats value = 0 compare = not_equals }
-		}
-		localization_key = LIT_very_supportive
-	}
-	text = {
-		trigger = {
-			original_tag = LIT
-			check_variable = { var = LIT_sd_loyalty value = 4 compare = equals }
-			check_variable = { var = LIT_sd_seats value = 0 compare = not_equals }
-
-		}
-		localization_key = LIT_supportive
-	}
-	text = {
-		trigger = {
-			original_tag = LIT
-			check_variable = { var = LIT_sd_loyalty value = 3 compare = equals }
-			check_variable = { var = LIT_sd_seats value = 0 compare = not_equals }
-
-		}
-		localization_key = LIT_neutral
-	}
-	text = {
-		trigger = {
-			original_tag = LIT
-			check_variable = { var = LIT_sd_loyalty value = 2 compare = equals }
-			check_variable = { var = LIT_sd_seats value = 0 compare = not_equals }
-
-		}
-		localization_key = LIT_unsupportive
-	}
-	text = {
-		trigger = {
-			original_tag = LIT
-			check_variable = { var = LIT_sd_loyalty value = 1 compare = equals }
-			check_variable = { var = LIT_sd_seats value = 0 compare = not_equals }
-		}
-		localization_key = LIT_opposed
-	}
-	text = {
-		trigger = {
-			original_tag = LIT
-			check_variable = { var = LIT_sd_seats value = 0 compare = equals }
-		}
-		localization_key = LIT_irrelevant
-	}
-}
-defined_text = {
-    name = GetIwValues
-    text = {
-        localization_key = LIT_iw_values
-    }
-}
-defined_text = {
-    name = GetNuValues
-    text = {
-        localization_key = LIT_nu_values
-    }
-}
-defined_text = {
-    name = GetCdValues
-    text = {
-        localization_key = LIT_cd_values
-    }
-}
-defined_text = {
-    name = GetSdValues
-    text = {
-        localization_key = LIT_sd_values
-    }
-}
 defined_text = {
 	name = GetSenateElectionOutcome
 	text = {
@@ -573,6 +321,7 @@ defined_text = {
 		}
 	}
 }
+
 defined_text = {
 	name = GETUKPROKINGNEWSPAPER
 	text = {
@@ -1172,15 +921,15 @@ defined_text = { # Country
 	name = GetFrenchCoronationCity
 	text = {
 		trigger = {
-			has_completed_focus = FRA_action_francaise
+			has_completed_focus = FRA_the_legitimate_heir
 		}
 		localization_key = LaR_France_Reims
 	}
 	text = {
 		trigger = {
 			OR = {
-				has_completed_focus = FRA_brumaire_movement
-				has_completed_focus = FRA_side_with_the_orleanists
+				has_completed_focus = FRA_proclaim_the_third_empire
+				has_completed_focus = FRA_orleanist_restoration
 			}
 		}
 		localization_key = LaR_France_Paris
@@ -1191,19 +940,19 @@ defined_text = { # Country
 	name = GetFrenchRoyalTitle
 	text = {
 		trigger = {
-			has_completed_focus = FRA_action_francaise
+			has_completed_focus = FRA_the_legitimate_heir
 		}
 		localization_key = LaR_France_King
 	}
 	text = {
 		trigger = {	
-			has_completed_focus = FRA_side_with_the_orleanists
+			has_completed_focus = FRA_orleanist_restoration
 		}
 		localization_key = LaR_France_King_of_The_French
 	}
 	text = {
 		trigger = {	
-			has_completed_focus = FRA_brumaire_movement
+			has_completed_focus = FRA_proclaim_the_third_empire
 		}
 		localization_key = LaR_France_Emperor
 	}
@@ -1269,38 +1018,6 @@ defined_text = {
 	}
 	text = { #Fascist (else)
 		localization_key = POR_annex_wargoal
-	}
-}
-
-defined_text = { #For Switzerland
-	name = SWI_fascist_leader
-	text = {
-		trigger = {
-			NOT = { has_country_flag = has_henne }
-		}
-		localization_key = "Wilhelm Gustloff"
-	}
-	text = {
-		trigger = {
-			has_country_flag = has_henne
-		}
-		localization_key = "Rolf Henne"
-	}
-}
-
-defined_text = { #For Switzerland
-	name = SWI_ger_or_fra
-	text = {
-		trigger = {
-			original_tag = GER
-		}
-		localization_key = "[FRA.GetNameDef]"
-	}
-	text = {
-		trigger = {
-			original_tag = FRA
-		}
-		localization_key = "[GER.GetNameDef]"
 	}
 }
 
@@ -1584,13 +1301,8 @@ defined_text = {
 	name = GetBulwarkName
 	text = {
 		trigger = {
-			OR = {
-				SOS = {
-					exists = yes
-				}
-				SOV = {
-					has_government = communism
-				}
+			SOV = {
+				has_government = communism
 			}
 		}
 		localization_key = SOV_BULWARK_NAME_COMMUNIST
@@ -1599,11 +1311,6 @@ defined_text = {
 		trigger = {
 			SOV = {
 				has_government = fascism
-			}
-			NOT = {
-				SOS = {
-					exists = yes
-				}
 			}
 		}
 		localization_key = SOV_BULWARK_NAME_FASCISM
@@ -1614,11 +1321,6 @@ defined_text = {
 				OR = {
 					has_government = neutrality
 					has_government = democratic
-				}
-			}
-			NOT = {
-				SOS = {
-					exists = yes
 				}
 			}
 		}
@@ -1936,5 +1638,67 @@ defined_text = {
 			}
 		}
 		localization_key = SOV_STRIKE_AT_THE_SOURCE_DESC_EXILES
+	}
+}
+
+# Governments in Exile
+defined_text = {
+	name = GetGovernmentInExileCategoryDesc
+	text = {
+		trigger = {
+			is_exile_host = yes
+		}
+		localization_key = governments_in_exile_host_desc
+	}
+	text = {
+		trigger = {
+			
+			ROOT = { 
+				is_government_in_exile = yes
+				original_tag = ETH 
+			}
+		}
+		localization_key = governments_in_exile_ETH_desc
+		#TODO_TA set correct texticon
+	}
+	text = {
+		localization_key = governments_in_exile_exiled_desc
+	}
+
+}
+
+#USSR "Fall of London"
+defined_text = {
+	name = GetSOVIdeologyLondonDesc
+	text = {
+		trigger = {
+			SOV = {
+				has_government = communism
+			}
+		}
+		localization_key = get_SOV_ideology_london_desc
+	}
+	text = {
+		
+		localization_key = get_SOV_ideology_london_desc_alt
+		
+	}
+}
+
+#USSR "Fall of London" Response
+defined_text = {
+	name = GetSOVIdeologyLondonResponse
+	text = {
+		trigger = {
+			SOV = {
+				has_government = communism
+			}
+		}
+		localization_key = get_SOV_ideology_london_response
+	}
+	text = {
+		
+		localization_key = get_SOV_ideology_london_response_alt
+		
 	}
 }

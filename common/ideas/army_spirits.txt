@@ -8,7 +8,6 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
 				}
 			}
 			modifier = {
@@ -30,7 +29,6 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
 				}
 			}
 			modifier = {
@@ -52,7 +50,6 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
 				}
 			}
 			modifier = {
@@ -74,7 +71,6 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
 				}
 			}
 			visible = { 
@@ -112,7 +108,6 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
 				}
 			}
 			visible = { 
@@ -149,7 +144,6 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
 				}
 			}
 			visible = { 
@@ -187,7 +181,6 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
 				}
 			}
 			modifier = {
@@ -212,7 +205,6 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
 				}
 			}
 			visible = { has_tech = mobile_warfare }
@@ -243,7 +235,6 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
 				}
 			}
 			visible = { 
@@ -275,13 +266,11 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
 				}
 			}
 			visible = { 
 				OR = {
 					has_tech = trench_warfare
-					has_tech = r56_guerilla_warfare
 				}	 
 			}
 			modifier = {
@@ -306,7 +295,6 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
 				}
 			}
 			visible = { has_tech = mass_assault }
@@ -334,7 +322,6 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
 				}
 			}
 			modifier = {
@@ -359,7 +346,6 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
 				}
 			}
 			modifier = {
@@ -386,7 +372,6 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
 				}
 			}
 			modifier = {
@@ -435,7 +420,6 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
 				}
 			}
 			modifier = {
@@ -460,7 +444,7 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
+
 				}
 			}
 			visible = { has_government = democratic }
@@ -501,7 +485,6 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
 				}
 			}
 			visible = { has_government = communism }
@@ -530,7 +513,6 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
 				}
 			}
 			visible = {
@@ -584,7 +566,6 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
 				}
 			}
 			modifier = {
@@ -620,7 +601,6 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
 				}
 			}
 			modifier = {
@@ -652,7 +632,6 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
 				}
 			}
 			modifier = {
@@ -685,7 +664,6 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
 				}
 			}
 			visible = { has_tech = mass_assault }
@@ -753,7 +731,6 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
 				}
 			}
 			visible = {
@@ -781,7 +758,6 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
 				}
 			}
 			visible = { 
@@ -812,7 +788,6 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
 				}
 			}
 			modifier = {
@@ -837,7 +812,6 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
 				}
 			}
 			modifier = {
@@ -884,7 +858,6 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
 				}
 			}
 			modifier = {
@@ -909,7 +882,6 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
 				}
 			}
 			modifier = {
@@ -956,7 +928,6 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
 				}
 			}
 			visible = { has_tech = superior_firepower }
@@ -981,7 +952,6 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
 				}
 			}
 			visible = { has_tech = trench_warfare }
@@ -1008,7 +978,6 @@ ideas = {
 					has_tech = superior_firepower
 					has_tech = trench_warfare
 					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
 				}
 			}
 			visible = {
@@ -1028,32 +997,6 @@ ideas = {
 					NOT = { has_dlc = "No Step Back" }
 				}
 			}
-		}
-		limited_engagement_spirit = {
-			ledger = army		
-			available = {
-				OR = {
-					has_tech = mobile_warfare
-					has_tech = superior_firepower
-					has_tech = trench_warfare
-					has_tech = mass_assault
-					has_tech = r56_guerilla_warfare
-				}
-			}
-			visible = { has_tech = r56_guerilla_warfare }
-			modifier = {
-				supply_consumption_factor = -0.05
-				experience_gain_infantry_combat_factor = 0.05
-				pocket_penalty = -0.1
-				boost_resistance_factor = 0.1
-			}
-			ai_will_do = {
-				factor = 1.5
-				modifier = {
-					factor = 0
-					NOT = { has_dlc = "No Step Back" }
-				}
-			}
-		}		
+		}	
 	}
 }

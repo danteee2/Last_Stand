@@ -203,7 +203,7 @@ defined_text = {
 	name = GetLightCruisersTooltip
 	text = {
 		trigger = {
-			has_completed_focus = ITA_cavagnari_plan #Focus grants bonuses
+			has_completed_focus = ITA_incrociatori_leggeri #Focus grants bonuses
 		}
 		localization_key = ITA_incrociatori_leggeri_dynamic_modifier_tt
 	}
@@ -216,7 +216,7 @@ defined_text = {
 	name = GetHeavyCruisersTooltip
 	text = {
 		trigger = {
-			has_completed_focus = ITA_appoint_campioni
+			has_completed_focus = ITA_incrociatori_pesanti #Focus grants bonuses
 		}
 		localization_key = ITA_incrociatori_pesanti_dynamic_modifier_tt
 	}
@@ -666,13 +666,17 @@ defined_text = { #The Trial of Mussolini Title
 	name = GetTrialOfMussoliniTitles
 	text = { #INNOCENT
 		trigger = { 
-			has_country_flag = ITA_mussolini_is_innocent 	
+			FROM = {
+				has_country_flag = ITA_mussolini_is_innocent 
+			}
 		}
 		localization_key = bba_news.102.t_innocent
 	}
 	text = { #GUILTY
 		trigger = { 
-			has_country_flag = ITA_mussolini_is_guilty	
+			FROM = {
+				has_country_flag = ITA_mussolini_is_guilty
+			}
 		}
 		localization_key = bba_news.102.t_guilty
 	}
@@ -682,13 +686,17 @@ defined_text = { #The Trial of Mussolini Description
 	name = GetTrialOfMussoliniDesc
 	text = { #INNOCENT
 		trigger = { 
-			has_country_flag = ITA_mussolini_is_innocent 	
+			FROM = {
+				has_country_flag = ITA_mussolini_is_innocent 	
+			}
 		}
 		localization_key = bba_news.102.desc_innocent
 	}
 	text = { #GUILTY
 		trigger = { 
-			has_country_flag = ITA_mussolini_is_guilty	
+			FROM = {
+				has_country_flag = ITA_mussolini_is_guilty	
+			}
 		}
 		localization_key = bba_news.102.desc_guilty
 	}
@@ -698,13 +706,17 @@ defined_text = { #The Assassination of Mussolini Title
 	name = GetAssassinationOfMussoliniTitles
 	text = { #Communists
 		trigger = { 
-			has_country_flag = ITA_mussolini_blame_communists	
+			FROM = {
+				has_country_flag = ITA_mussolini_blame_communists	
+			}
 		}
 		localization_key = bba_news.103.t_communists
 	}
 	text = { #Cover Story
 		trigger = { 
-			has_country_flag = ITA_mussolini_cover_story	
+			FROM = {
+				has_country_flag = ITA_mussolini_cover_story	
+			}
 		}
 		localization_key = bba_news.103.t_coverstory
 	}
@@ -714,13 +726,17 @@ defined_text = { #The Assassination of Mussolini Description
 	name = GetAssassinationOfMussoliniDesc
 	text = { #Communists
 		trigger = { 
-			has_country_flag = ITA_mussolini_blame_communists	
+			FROM = {
+				has_country_flag = ITA_mussolini_blame_communists	
+			}
 		}
 		localization_key = bba_news.103.desc_communists
 	}
 	text = { #Cover Story
 		trigger = { 
-			has_country_flag = ITA_mussolini_cover_story	
+			FROM = {
+				has_country_flag = ITA_mussolini_cover_story	
+			}
 		}
 		localization_key = bba_news.103.desc_coverstory
 	}
@@ -815,14 +831,59 @@ defined_text = { #Moschettieri del Duce name based on political path
 		}
 		localization_key = ITA_moschettieri_del_duce_alt
 	}
+	text = { # Pope
+		trigger = {
+			OR = {
+				has_country_leader = { character = ITA_papa_pio_xi }
+				has_country_leader = { character = ITA_papa_pio_xii }
+			}
+		}
+		localization_key = ITA_moschettieri_del_duce_pope
+	}
 	text = { # King
 		trigger = { 
 			has_completed_focus = ITA_monarchia_d_italia
+			NOT = {
+				has_government = fascism
+				has_government = communism
+			}
 		}
 		localization_key = ITA_moschettieri_del_duce_king
 	}
 	text = { # Default - Duce
 		localization_key = ITA_moschettieri_del_duce_default
+	}
+}
+
+defined_text = { #Moschettieri del Duce desc based on political path
+	name = GetAppropriateMoschetieridelDuceDesc
+	text = { # Anti-Fascist
+		trigger = { 
+			has_completed_focus = ITA_defy_the_duce
+		}
+		localization_key = ITA_moschettieri_del_duce_desc_alt
+	}
+	text = { # Pope
+		trigger = {
+			OR = {
+				has_country_leader = { character = ITA_papa_pio_xi }
+				has_country_leader = { character = ITA_papa_pio_xii }
+			}
+		}
+		localization_key = ITA_moschettieri_del_duce_desc_pope
+	}
+	text = { # King
+		trigger = { 
+			has_completed_focus = ITA_monarchia_d_italia
+			NOT = {
+				has_government = fascism
+				has_government = communism
+			}
+		}
+		localization_key = ITA_moschettieri_del_duce_desc_king
+	}
+	text = { # Default - Duce
+		localization_key = ITA_moschettieri_del_duce_desc_default
 	}
 }
 
@@ -836,6 +897,74 @@ defined_text = { #Albanian Fascist Militia name based on political path
 	}
 	text = { # Default - Duce
 		localization_key = ITA_albanian_fascist_militia_default
+	}
+}
+
+defined_text = { #Fight against Stalinism & alt focus title
+	name = GetAppropriateRussianGovernmentIdeology
+	text = { #  Stalinist
+		trigger = { 
+			SOV = {
+				has_government = communism
+				has_country_leader_ideology = stalinism
+			}
+		}
+		localization_key = ITA_russian_government_ideology_alt
+	}
+	text = { # Communist - but not Stalinist
+		trigger = { 
+			SOV = {
+				has_government = communism
+				NOT = {
+					has_country_leader_ideology = stalinism
+				}
+			}
+		}
+		localization_key = ITA_russian_government_ideology_alt2
+	}
+	text = { # Default - fascist or monarchist
+		trigger = { 
+			SOV = {
+				NOT ={
+					has_government = communism
+				}
+			}
+		}
+		localization_key = ITA_russian_government_ideology_default
+	}
+}
+
+defined_text = { #Fight against Stalinism & alt focus title
+	name = GetAppropriateRussianGovernmentIdeologyDesc
+	text = { #  Stalinist
+		trigger = { 
+			SOV = {
+				has_government = communism
+				has_country_leader_ideology = stalinism
+			}
+		}
+		localization_key = ITA_russian_government_ideology_desc_alt
+	}
+	text = { # Communist - but not Stalinist
+		trigger = { 
+			SOV = {
+				has_government = communism
+				NOT = {
+					has_country_leader_ideology = stalinism
+				}
+			}
+		}
+		localization_key = ITA_russian_government_ideology_desc_alt2
+	}
+	text = { # Default - fascist or monarchist
+		trigger = { 
+			SOV = {
+				NOT ={
+					has_government = communism
+				}
+			}
+		}
+		localization_key = ITA_russian_government_ideology_desc_default
 	}
 }
 
