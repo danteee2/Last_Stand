@@ -16591,8 +16591,8 @@ mutually_exclusive = {
 			add_stability = 0.05
 			add_timed_idea = { idea = ENG_devaluated_pound days = 365 }
 			swap_ideas = {
-				remove_idea = ENG_state_of_the_economy_three
-				add_idea = ENG_state_of_the_economy_four
+				remove_idea = ENG_state_of_the_economy_two
+				add_idea =  ENG_state_of_the_economy_three
 			}
 		}
 		search_filters = {
@@ -16653,8 +16653,8 @@ mutually_exclusive = {
 				}
 				add_ideas = Trade_expanded
 				swap_ideas = {
-					remove_idea = ENG_state_of_the_economy_two
-					add_idea = ENG_state_of_the_economy_three
+					remove_idea = ENG_state_of_the_economy_three
+					add_idea = ENG_state_of_the_economy_four
 				}
 		}
 	
