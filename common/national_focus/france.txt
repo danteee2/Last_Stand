@@ -147,6 +147,9 @@ focus_tree = {
 		id = FRA_radicalize_front
 		icon = GFX_goal_support_communism
 		cost = 10
+		available = {
+			always = false
+		}
 		mutually_exclusive = {
 			focus = FRA_status_quo
 			focus = FRA_far_right_leagues
@@ -257,6 +260,9 @@ focus_tree = {
 		id = FRA_far_right_leagues
 		icon = GFX_goal_FRA_far_right_leagues
 		cost = 5
+		available = {
+			always = false
+		}
 		mutually_exclusive = {
 			focus = FRA_status_quo
 			focus = FRA_radicalize_front
@@ -319,6 +325,9 @@ focus_tree = {
 		relative_position_id = FRA_rearmament	#dont use political ones, which may be hidden
 		x = 39
 		y = 0
+		available = {
+			always = false
+		}
 		offset = {
 			x = -20
 			y = 0

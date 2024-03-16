@@ -1578,7 +1578,8 @@ ideas = {
 			}
 			
 			modifier = {
-				surrender_limit = 0.0050 #makes German need to take one more VP's before killing the Soviets 
+				surrender_limit = -0.1
+				max_dig_in = -0.5
 				drift_defence_factor = 0.50
 				operative_slot = 1
 			}
