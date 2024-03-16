@@ -43,6 +43,14 @@ ideas = {
 
 country = {
 
+	TUR_NO_PLAYER_BLACK_NATION = {
+		modifier = {
+			enemy_justify_war_goal_time = 20000
+			industrial_capacity_factory = -2000
+			recruitable_population = -2000
+		}
+	}
+
 	TUR_kemalist_army_officers_powerful_loyal = { 
 
 		allowed = {

@@ -5367,17 +5367,8 @@ focus_tree = {
 		x = 35
 		y = 1
 
-		offset = {
-			x = -8
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = GER_oppose_hitler
-			}
-		}
+	
+		
 
 		cost = 5
 		ai_will_do = {
@@ -6740,43 +6731,7 @@ focus_tree = {
 		x = 49
 		y = 0
 
-		offset = {
-			x = -8
-			y = 0
-			trigger = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				has_completed_focus = GER_oppose_hitler
-			}
-		}
-		offset = {
-			x = -8
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				OR = {
-					has_completed_focus = GER_reestablish_free_elections
-					has_completed_focus = GER_repeal_the_reichstag_fire_decree
-				}
-			}
-		}
-
-		offset = {
-			x = -1
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = GER_revive_the_kaiserreich
-			}
-		}
+		
 
 		cost = 10
 		ai_will_do = {
@@ -6869,17 +6824,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = GER_revive_the_kaiserreich
-			}
-		}
+	
+		
 		bypass = {
 			has_country_flag = GER_mackensen_dead
 			NOT = { has_government = democratic }
@@ -7564,15 +7510,7 @@ focus_tree = {
 		x = -1
 		y = 3
 		relative_position_id = GER_modular_construction
-		offset = {
-			x = 1
-			y = 1
-			trigger = {
-				NOT = {
-					has_dlc = "Waking the Tiger"
-				}
-			}
-		}
+	
 		
 		cost = 10
 		ai_will_do = {
@@ -8865,17 +8803,8 @@ focus_tree = {
 			factor = 1
 		}
 		
-		offset = {
-			x = -1
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = GER_reestablish_free_elections
-			}
-		}
+	
+		
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_timed_idea = {
@@ -10242,17 +10171,8 @@ focus_tree = {
 		x = 5
 		y = 2
 		relative_position_id = GER_the_monarchy_compromise
-		offset = {
-			x = -11
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = GER_repeal_the_reichstag_fire_decree
-			}
-		}
+	
+		
 		cost = 10
 		ai_will_do = {
 			factor = 5
@@ -10410,17 +10330,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 		}
-		offset = {
-			x = -13
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = GER_repeal_the_reichstag_fire_decree
-			}
-		}
+	
+		
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_timed_idea = {

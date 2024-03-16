@@ -10,7 +10,7 @@ state={
 	
 
 	history={
-		owner = PER
+		owner = TUR
 		buildings = {
 			infrastructure = 1
 		}
@@ -20,7 +20,7 @@ state={
 		victory_points = {
 			8031 1 
 		}
-		add_core_of = PER
+		add_core_of = TUR
 	}
 
 	provinces={

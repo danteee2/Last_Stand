@@ -3,7 +3,7 @@ state={
 	name="STATE_986"
 	
 	history={
-		owner = PER
+		owner = TUR
 		victory_points = {
 			7969 5 
 		}
@@ -14,7 +14,7 @@ state={
 			infrastructure = 1
 
 		}
-		add_core_of = PER
+		add_core_of = TUR
 
 	}
 	

@@ -4682,7 +4682,7 @@ SOV_gosproyektstroy_decision_category = {
 			base = 10
 		}
 
-		targets = { USA ENG GER JAP }
+		targets = {  ENG GER JAP }
 
 		#target_trigger = {
 		#	FROM = { SOV_is_valid_subject = yes }

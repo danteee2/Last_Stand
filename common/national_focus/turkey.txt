@@ -25,6 +25,7 @@ focus_tree = {
 		icon = GFX_goal_TUR_presidental_seal
 		available = {
 			has_government = neutrality
+			always = false
 		}
 		x = 0
 		y = 0
@@ -94,6 +95,7 @@ focus_tree = {
 		available = {
 			has_government = neutrality
 			date < 1937.10.1
+			always = false
 		}
 		x = 8
 		y = 0
@@ -9649,6 +9651,9 @@ focus_tree = {
 		x = 22
 		y = 0
 		cost = 5
+		available = {
+			always = false
+		}
 		ai_will_do = {
 			base = 10
 		}
@@ -9695,6 +9700,9 @@ focus_tree = {
 		y = 0
 		relative_position_id = TUR_learning_from_the_great_war
 		cost = 5
+		available = {
+			always = false
+		}
 		ai_will_do = {
 			base = 10
 		}

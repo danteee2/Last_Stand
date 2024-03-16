@@ -808,26 +808,7 @@ focus_tree = {
 	# 	cost = 1.00
 	# 	x = 51
 	# 	y = 0
-	# 	offset = {
-	# 		x = -29
-	# 		y = 0
-	# 		trigger = {
-	# 			has_completed_focus = GER_kill_hitler
-	# 			has_game_rule = {
-	# 				rule = obsolete_focus_branches_visibility
-	# 				option = HIDE
-	# 			}
-	# 		}
-	# 	}
-	# 	offset = { #mostly in case additional DLC-exclusive focuses are added horizontally, currently theres only one
-	# 		x = -2
-	# 		y = 0
-	# 		trigger = {
-	# 			NOT = {
-	# 				has_dlc = "Waking the Tiger"
-	# 			}
-	# 		}
-	# 	}
+	#
 	# 	ai_will_do = {
 	# 		factor = 75
 	# 	}
@@ -864,17 +845,7 @@ focus_tree = {
 		}
 		x = 40
 		y = 0
-		offset = {
-			x = -19
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = GER_denounce_versailles
-			}
-		}
+	
 		ai_will_do = {
 			factor = 75
 			modifier = {
@@ -891,7 +862,6 @@ focus_tree = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = GER_baldur_von_schirach
 			mark_focus_tree_layout_dirty = yes
-			set_country_flag = r56_befriend_poland_offset
 			hidden_effect = {
 				if = {
 					limit = {
@@ -9462,17 +9432,7 @@ focus = {
 		focus = GER_kill_hitler
 	}
 
-	offset = {
-		x = -75
-		y = 0
-		trigger = {
-			has_game_rule = {
-				rule = obsolete_focus_branches_visibility
-				option = HIDE
-			}
-			has_completed_focus = GER_the_alternative
-		}
-	}
+	
 
 	x = 65
 	y = 0

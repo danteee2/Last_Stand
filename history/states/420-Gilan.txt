@@ -4,7 +4,7 @@ state={
 	name="STATE_420"
 
 	history={
-		owner = PER
+		owner = TUR
 		victory_points = {
 			4637 5
 		}
@@ -14,7 +14,7 @@ state={
 				naval_base = 2
 			}
 		}
-		add_core_of = PER
+		add_core_of = TUR
 	}
 
 	provinces={

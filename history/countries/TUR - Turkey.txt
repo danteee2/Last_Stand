@@ -34,15 +34,9 @@ add_ideas = {
 if = {
 	limit = { has_dlc = "Battle for the Bosporus" }
 	add_ideas = {
-		TUR_sectarian_woes
-		TUR_kemalist_army_officers_limited_power_loyal_dud
-		TUR_disorganized_armed_forces_idea_dud
+		TUR_NO_PLAYER_BLACK_NATION
 	}
-	else = {
-		add_ideas = {
-			TUR_recovering_from_the_war_for_independence	
-		}
-	}
+	
 }
 
 set_cosmetic_tag = TUR_neutrality
@@ -264,8 +258,7 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 10
-	neutrality = 90
+	neutrality = 100
 }
 
 # create_country_leader = {
