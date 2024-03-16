@@ -5977,37 +5977,7 @@ focus_tree = {
 		icon = GFX_goal_CAN_scheme_no1
 		x = 32
 		y = 0
-		offset = {
-			x = -40
-			y = 0
-			trigger = {
-				not = { has_dlc = "Man the Guns" }
-			}
-		}
-		offset = {
-			x = -18
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = USA_continue_the_new_deal
-				has_dlc = "Man the Guns"
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = USA_reestablish_the_gold_standard
-				has_dlc = "Man the Guns"
-			}
-		}
+		
 		available = {
 			has_completed_focus = USA_war_department
 		}
@@ -7133,35 +7103,11 @@ focus_tree = {
 		icon = GFX_Goal_USA_War_dep
 		x = 57
 		y = 0
-		offset = {
+		 = {
 			x = -40
 			y = 0
 			trigger = {
 				not = { has_dlc = "Man the Guns" }
-			}
-		}
-		offset = {
-			x = -18
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = USA_continue_the_new_deal
-				has_dlc = "Man the Guns"
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = USA_reestablish_the_gold_standard
-				has_dlc = "Man the Guns"
 			}
 		}
 		cost = 5 # really doesn't give that much

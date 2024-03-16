@@ -49,6 +49,8 @@ focus_tree = {
 
 
 	focus = {
+		
+
 		id = SOV_infrastructure_effort_nsb
 
 		icon = GFX_goal_generic_road2
@@ -426,6 +428,20 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 	}
+	focus = {
+		id = SOV_unleashing_the_bears_prosperity  
+		icon = GFX_focus_SWE_the_beast_stirs
+		cost = 10.00
+		prerequisite = { focus = SOV_develop_the_urals }
+		prerequisite = { focus = SOV_eastern_development }
+		relative_position_id = SOV_finish_the_five_year_plan
+		x = 4
+		y = 3
+		
+		
+		completion_reward = {
+				add_ideas = SOV_under_the_bear }
+		}
 
 	focus = {
 		id = SOV_improve_railway_network
@@ -9377,70 +9393,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
 		x = -2
 		y = 1
-		offset = {
-			x = -7
-			y = 0
-			trigger = { #Basic offset to compensate for missing Bukharinist branch
-				NOT = { has_dlc = "No Step Back" }
-			}
-		}
-		offset = {
-			x = -19
-			y = 0
-			trigger = { #Trotskyist branch hides
-				NOT = { has_dlc = "No Step Back" }
-				has_completed_focus = SOV_the_centre 
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		offset = {
-			x = -7
-			y = 0
-			trigger = { # Stalinist branch hides
-				NOT = { has_dlc = "No Step Back" }
-				has_completed_focus = SOV_the_left_opposition
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		offset = {
-			x = -26
-			y = 0
-			trigger = {
-				has_dlc = "No Step Back"
-				has_completed_focus = SOV_the_centre
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		offset = {
-			x = -7
-			y = 0
-			trigger = {
-				has_dlc = "No Step Back"
-				OR = {
-					AND = {
-						has_completed_focus = SOV_the_left_opposition
-						has_completed_focus = SOV_left_opposition_coup
-					}
-					AND = {
-						has_completed_focus = SOV_the_right_opposition
-						has_completed_focus = SOV_coup_detat
-					}
-				}
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
+		
 
 		relative_position_id = SOV_the_path_of_marxism_leninism
 		cost = 5
