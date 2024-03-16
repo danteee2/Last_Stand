@@ -4327,18 +4327,18 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     			type = industrial_complex
-    			level = 2
+    			level = 1
     			instant_build = yes
 				}
 			}
 			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     			type = industrial_complex
-    			level = 2
+    			level = 1
     			instant_build = yes
 				}
 			}
@@ -4362,9 +4362,11 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
+		available = [ 
 
-		}
+		]
+			
+	
 		
 		bypass = {
 
@@ -4380,18 +4382,18 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     			type = industrial_complex
-    			level = 2
+    			level = 1
     			instant_build = yes
 				}
 			}
 			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     			type = industrial_complex
-    			level = 2
+    			level = 1
     			instant_build = yes
 				}
 			}
@@ -4433,10 +4435,10 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     			type = industrial_complex
-    			level = 2
+    			level = 1
     			instant_build = yes
 				}
 			}
@@ -4486,10 +4488,10 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
     			type = industrial_complex
-    			level = 2
+    			level = 1
     			instant_build = yes
 				}
 			}
