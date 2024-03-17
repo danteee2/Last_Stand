@@ -955,6 +955,7 @@ if = {
 add_ideas = {	
 	home_of_revolution
 	trotskyite_plot_nsb
+	Stalins_priorities
 	SOV_politicized_military
 	SOV_poor_railnetworks_0 #adding this to the mix - no more ignoring economy early on!
 	SOV_risk_of_disease #and epidemics too!
@@ -1088,6 +1089,7 @@ add_to_faction = TAN
 }
 
 #add_ideas = {
+	Stalins_priorities
 #	trotskyite_plot
 #	home_of_revolution
 #	SOV_poorly_educated_population

@@ -10,6 +10,18 @@ ideas = {
 
 
 	country= {
+		Stalins_priorities = {
+			picture = SOV_ground_based_training
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = 0.10 instant = yes
+				}
+			}
+		}
+
+
+
+
 		SOV_army_purge = {
 			picture = ENG_the_war_to_end_all_wars
 

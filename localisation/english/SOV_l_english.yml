@@ -10,6 +10,7 @@
  SOV_defeat_the_upa_in_89:0 "Defeat the UPA in [89.getname]"
  SOV_defeat_the_upa_in_80:0 "Defeat the UPA in [80.getname]"
  SOV_defeat_the_upa_in_73:0 "Defeat the UPA in [73.getname]"
+ Stalins_priorities:0 "Ignored Airforce"
 
  SOV_iron_curtain_faction:0 "Cominform"
  SOV_Lenin_Cult:0 "Lenin Cult"
