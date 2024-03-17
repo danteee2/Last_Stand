@@ -2828,10 +2828,14 @@ focus_tree = {
 		y = 1
 		relative_position_id = SOV_ground_support
 		cost = 10
+		available = {
+			date > 1940.06.01
+	}
 		
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
+			remove_ideas = Stalins_priorities
 			add_to_variable = { SOV_soviet_airforce_air_night_penalty = -0.1 }
 			add_to_variable = { SOV_soviet_airforce_air_mission_efficiency = 0.1 } 
 			custom_effect_tooltip = SOV_the_modern_war_in_the_skies_ns_tt
