@@ -555,6 +555,10 @@ on_actions = {
 					give_resource_rights = { receiver = USA state = 479 }
 					give_resource_rights = { receiver = USA state = 480 }
 				}
+				TUR = {
+					give_resource_rights = { receiver = ENG state = 413 }
+					give_resource_rights = { receiver = ENG state = 291 }
+				}
 			}
 			# Game Rules - Decolonization
 			if = {
