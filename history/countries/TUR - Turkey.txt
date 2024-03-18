@@ -17,14 +17,14 @@ if = {
 }
 if = {
 	limit = {
-		has_dlc = "No Step Back"
+		has_dlc = "No Step Back"s
 	}
 	set_oob = "TUR_1936_nsb"
 }
-set_convoys = 20
-set_war_support = 0.4
-set_stability = 0.45		#was 55%, but Ataturk was the person rather holding the country together, other did succeed, but not too much - Fantom
-set_research_slots = 4
+set_cosmetic_tag = OTT_UNIFIED_neutrality
+set_war_support = 1
+set_stability = 1		#was 55%, but Ataturk was the person rather holding the country together, other did succeed, but not too much - Fantom
+set_research_slots = 1
 
 add_ideas = {
 	limited_conscription

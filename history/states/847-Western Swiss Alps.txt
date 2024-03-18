@@ -5,12 +5,12 @@ state={
 	manpower = 198600
 	state_category = pastoral
 	history={
-		owner = SWI
+		owner = TUR
 		buildings = {
 			infrastructure = 1 
 			industrial_complex = 1
 		}
-		add_core_of = SWI
+		add_core_of = TUR
 		victory_points = {
 			3612 1
 		}

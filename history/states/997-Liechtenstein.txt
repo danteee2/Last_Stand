@@ -7,8 +7,8 @@ state={
 	state_category = developed_rural
 
 	history={
-		owner = LIE
-		add_core_of = LIE
+		owner = TUR
+		add_core_of = TUR
 		victory_points = {
 			6680 3
 		}

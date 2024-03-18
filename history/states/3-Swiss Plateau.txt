@@ -7,7 +7,7 @@ state={
 	state_category = city
 
 	history={
-		owner = SWI
+		owner = TUR
 		victory_points = { 9620 15 }
 		victory_points = { 663 10 }
 		buildings = {
@@ -16,7 +16,7 @@ state={
 			industrial_complex = 3
 			air_base = 4
 		}
-		add_core_of = SWI
+		add_core_of = TUR
 	}
 
 	provinces={

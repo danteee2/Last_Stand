@@ -1617,43 +1617,8 @@
  
  #TUR/OTT
  #Ottoman Empire
- OTT_UNIFIED_neutrality:0 "Ottoman Empire"
- OTT_UNIFIED_fascism:0 "Ottoman Empire"
- OTT_UNIFIED_democratic:0 "Ottoman Federation"
- OTT_UNIFIED_communism:0 "Near Eastern Socialist Republic"
- OTT_UNIFIED_neutrality_DEF:0 "the Sublime Ottoman State"
- OTT_UNIFIED_fascism_DEF:0 "the Sublime Ottoman State"
- OTT_UNIFIED_democratic_DEF:0 "the Ottoman Federation"
- OTT_UNIFIED_communism_DEF:0 "the Near Eastern Socialist Republic"
- OTT_UNIFIED_neutrality_ADJ:0 "Ottoman"
- OTT_UNIFIED_fascism_ADJ:0 "Ottoman"
- OTT_UNIFIED_democratic_ADJ:0 "Ottoman"
- OTT_UNIFIED_communism_ADJ:0 "Near Eastern" 
- #Ottoman Sultanate
- OTT_SULTANATE_neutrality:0 "Ottoman Sultanate"
- OTT_SULTANATE_fascism:0 "Ottoman Sultanate"
- OTT_SULTANATE_democratic:0 "Ottoman Federation"
- OTT_SULTANATE_communism:0 "Near Eastern Socialist Republic"
- OTT_SULTANATE_neutrality_DEF:0 "the Sublime Ottoman State"
- OTT_SULTANATE_fascism_DEF:0 "the Sublime Ottoman State"
- OTT_SULTANATE_democratic_DEF:0 "the Ottoman Federation"
- OTT_SULTANATE_communism_DEF:0 "the Near Eastern Socialist Republic"
- OTT_SULTANATE_neutrality_ADJ:0 "Ottoman"
- OTT_SULTANATE_fascism_ADJ:0 "Ottoman"
- OTT_SULTANATE_democratic_ADJ:0 "Ottoman"
- OTT_SULTANATE_communism_ADJ:0 "Near Eastern" 
- #Provisionary State
- TUR_PROVISIONARY_communism: "Provisionary State of Anatolia"
- TUR_PROVISIONARY_communism_DEF:0 "the Provisionary State of Anatolia"
- TUR_PROVISIONARY_democratic: "Provisionary State of Anatolia"
- TUR_PROVISIONARY_democratic_DEF:0 "the Provisionary State of Anatolia"
- TUR_PROVISIONARY_fascism: "Provisionary State of Anatolia"
- TUR_PROVISIONARY_fascism_DEF:0 "the Provisionary State of Anatolia"
- TUR_PROVISIONARY_neutrality: "Provisionary State of Anatolia"
- TUR_PROVISIONARY_neutrality_DEF:0 "the Provisionary State of Anatolia"
- TUR_PROVISIONARY:0 "Provisionary State of Anatolia"
- TUR_PROVISIONARY_DEF:0 "the Provisionary State of Anatolia"
- TUR_PROVISIONARY_ADJ:0 "Anatolian"
+ OTT_UNIFIED_neutrality:0 ""
+
 
  #HRE
  HRE_UNIFIED_neutrality:0 "Holy Roman Empire"
