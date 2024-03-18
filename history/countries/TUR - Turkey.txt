@@ -29,7 +29,7 @@ set_research_slots = 1
 add_ideas = {
 	limited_conscription
 	export_focus
-	TUR_etatism_economy_law_idea
+	civilian_economy
 }
 if = {
 	limit = { has_dlc = "Battle for the Bosporus" }

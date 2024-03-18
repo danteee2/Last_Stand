@@ -47,7 +47,8 @@ country = {
 		modifier = {
 			enemy_justify_war_goal_time = 20000
 			industrial_capacity_factory = -2000
-			recruitable_population = -2000
+			recruitable_population_factor = -100
+			consumer_goods_factor = 10
 		}
 	}
 

@@ -85,7 +85,6 @@ formable_nations_mod_category = {
 		icon = formable_nations_great_britain
 		complete_effect = { capital_scope = { set_state_flag = formable_nations_old_capital }
 			set_cosmetic_tag = FORM_BRI
-			set_cosmetic_tag = FORM_ASS
 			add_stability = 0.2
 			set_capital = { state = 291 }
 			custom_effect_tooltip = core_land
@@ -109,14 +108,8 @@ formable_nations_mod_category = {
 				123 = { add_core_of = ROOT }
 				127 = { add_core_of = ROOT }
 				126 = { add_core_of = ROOT }
-				291 = { add_core_of = ROOT }
-				675 = { add_core_of = ROOT }
-				676 = { add_core_of = ROOT }
-				553 = { add_core_of = ROOT }
-				554 = { add_core_of = ROOT }
-				677 = { add_core_of = ROOT }
-				799 = { add_core_of = ROOT }
-				680 = { add_core_of = ROOT }
+
+
 			}
 			656 = { add_core_of = ROOT }
 			454 = { add_core_of = ROOT }
