@@ -4,7 +4,7 @@ state={
 	manpower = 92400
 	state_category = pastoral
 	history={
-		owner = POR
+		owner = SAF
 		buildings = {
 			infrastructure = 2
 			12935 = { # This was a sizeable trade port
@@ -12,7 +12,7 @@ state={
 			}
 
 		}
-		add_core_of = Cyp
+		add_core_of = SAF
 		victory_points = {
 			12935 1
 		}

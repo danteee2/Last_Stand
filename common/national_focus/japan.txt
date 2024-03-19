@@ -853,19 +853,7 @@
 		}
 
 		available = {	
-			r56_script_i_am_sane = yes
 			is_subject = no
-			OR = {
-				INS = {
-					r56_script_target_is_sane = yes
-				}
-				MAL = {
-					r56_script_target_is_sane = yes
-				}
-				PHI = {
-					r56_script_target_is_sane = yes
-				}					
-			}
 		}
 
 		bypass = {
@@ -973,7 +961,7 @@
 					country_exists = PHI					
 				}
 				create_wargoal = {
-					target = PHI
+					target = USA
 					expire = 0
 					type = annex_everything
 				}
@@ -1024,7 +1012,7 @@
 					}
 				}
 				create_wargoal = {
-					target = INS
+					target = ENG
 					expire = 0
 					type = annex_everything
 				}
@@ -1088,7 +1076,7 @@
 					country_exists = MAL
 				}
 				create_wargoal = {
-					target = MAL
+					target = USA
 					expire = 0
 					type = annex_everything
 				}

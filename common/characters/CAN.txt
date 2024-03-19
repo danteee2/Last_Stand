@@ -218,11 +218,11 @@ characters={
 			}
 		}
 		field_marshal = {
-			traits = { politically_connected media_personality trait_cautious trait_engineer caring_leader}
-			skill = 2
-			attack_skill = 1
+			traits = { panzer_leader cavalry_leader } 
+			skill = 5
+			attack_skill = 5
 			defense_skill = 2
-			planning_skill = 1
+			planning_skill = 3
 			logistics_skill = 3	
 			legacy_id=-1		
 		}
@@ -631,12 +631,12 @@ characters={
 			}
 		}	
 		corps_commander = {
-			traits = { armor_officer trait_engineer }
-			skill = 2
-			attack_skill = 2
+			traits = {  trait_engineer panzer_leader cavalry_leader }
+			skill = 5
+			attack_skill = 5
 			defense_skill = 2
-			planning_skill = 1
-			logistics_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
 		}			
 	}
 

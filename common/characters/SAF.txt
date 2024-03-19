@@ -144,9 +144,9 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ desert_fox }
-			skill=3
-			attack_skill = 3
+			traits={ desert_fox panzer_leader cavalry_leader }
+			skill=5
+			attack_skill = 5
 			defense_skill = 3
 			planning_skill = 3
 			logistics_skill = 1
@@ -203,11 +203,11 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { armor_officer  }
-			skill = 1
-			attack_skill = 1
+			traits = { panzer_leader cavalry_leader }
+			skill = 5
+			attack_skill = 5
 			defense_skill = 1
-			planning_skill = 1
+			planning_skill = 3
 			logistics_skill = 1
 			legacy_id=-1
 		}
