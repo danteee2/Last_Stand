@@ -10813,6 +10813,7 @@ focus_tree = {
 	focus = {
 		id = SPR_expand_soviet_aid
 		available = {
+			is_ai = no
 			NOT = { has_war_with = SOV }
 			NOT = { has_global_flag = scw_over }
 			SOV = { has_government = communism }

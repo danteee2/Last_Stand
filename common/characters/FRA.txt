@@ -114,12 +114,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ brilliant_strategist cavalry_officer war_hero trickster }
+			traits={ }
 			skill=4
-			attack_skill=4
-			defense_skill=2
-			planning_skill=4
-			logistics_skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
 			legacy_id=0
 		}
 	}
@@ -133,12 +133,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer trait_cautious armor_officer }
+			traits={  }
 			skill=4
-			attack_skill=3
-			defense_skill=2
-			planning_skill=4
-			logistics_skill=4
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
 			legacy_id=0
 		}
 	}
@@ -2496,13 +2496,13 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ desert_fox }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=-1
+			traits={ ranger panzer_leader cavalry_leader organizer}
+			skill=4
+			attack_skill=6
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=0
 		}
 	}
 	FRA_joseph_vuillemin={
@@ -2913,11 +2913,11 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ career_officer trait_reckless armor_officer }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
+			traits={ brilliant_strategist ranger panzer_leader trickster organizer}
+			skill=4
+			attack_skill=6
+			defense_skill=4
+			planning_skill=6
 			logistics_skill=3
 			legacy_id=0
 		}

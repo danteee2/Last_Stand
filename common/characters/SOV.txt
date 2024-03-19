@@ -228,11 +228,11 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { brilliant_strategist trait_cautious armor_officer }
-			skill = 4
-			attack_skill = 3
-			defense_skill = 4
-			planning_skill = 2
+			traits = { cavalry_leader brilliant_strategist trait_cautious armor_officer panzer_leader trickster trait_engineer urban_assault_specialist ranger  organizer}
+			skill = 7
+			attack_skill = 5
+			defense_skill = 8
+			planning_skill = 4
 			logistics_skill = 4
 			legacy_id = 402
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
@@ -1131,13 +1131,14 @@ characters = {
 				small="gfx/interface/ideas/idea_SOV_matkian_popov.dds"
 			}
 		}
-		corps_commander = {
-			traits = { brilliant_strategist infantry_officer winter_specialist }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 1
-			planning_skill = 2
-			logistics_skill = 2
+		field_marshal = {
+			traits = { skilled_staffer commando cavalry_leader armor_officer panzer_leader trickster trait_engineer urban_assault_specialist ranger winter_specialist organizer offn
+		 }
+			skill = 7
+			attack_skill = 6
+			defense_skill = 6
+			planning_skill = 6
+			logistics_skill = 5
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}

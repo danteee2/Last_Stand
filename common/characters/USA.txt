@@ -269,7 +269,7 @@ characters={
 		}
 
 		corps_commander={
-			traits={ trait_reckless lucky armor_officer war_hero trickster panzer_leader unpopular }
+			traits={ trait_reckless lucky armor_officer war_hero trickster panzer_leader hill_fighter trait_mountaineer }
 			skill=5
 			attack_skill=8
 			defense_skill=3
@@ -956,15 +956,16 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ brilliant_strategist trait_reckless armor_officer }
-			skill=3
-			attack_skill=4
-			defense_skill=1
-			planning_skill=2
+			traits={ brilliant_strategist trait_reckless panzer_leader ranger cavalry_leader organizer }
+			skill=5
+			attack_skill=6
+			defense_skill=2
+			planning_skill=4
 			logistics_skill=3
 			legacy_id=0
-		}
-	}
+		    }
+	    } 
+	
 
 	USA_alexander_vandegrift={
 		name = USA_alexander_vandegrift
