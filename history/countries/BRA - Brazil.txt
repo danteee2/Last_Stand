@@ -4,7 +4,7 @@ set_research_slots = 4
 
 oob = "BRA_1936"
 
-set_stability = 0.40
+set_stability = 0.60
 set_war_support = 0.30
 
 # Starting tech
@@ -110,6 +110,7 @@ add_ideas = {
 	bra_1930 
 	bra_rural_elite
 }
+set_cosmetic_tag = FORM_SOU
 
 set_convoys = 100
 set_politics = {

@@ -8,7 +8,7 @@ state={
 	state_category = rural
 
 	history={
-		owner = PRU
+		owner = BRA
 		buildings = {
 			infrastructure = 2 #was 3
 			industrial_complex = 1
@@ -18,7 +18,7 @@ state={
 				naval_base = 2
 			}
 		}
-		add_core_of = PRU
+		add_core_of = BRA
 		victory_points = {
 			2210 7 
 		}

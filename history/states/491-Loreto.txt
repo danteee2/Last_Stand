@@ -9,11 +9,11 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = PRU
+		owner = BRA
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = PRU
+		add_core_of = BRA
 
          victory_points = {
 			5162 5

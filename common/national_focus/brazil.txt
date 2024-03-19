@@ -765,6 +765,7 @@ focus_tree = {
 		relative_position_id = bra_tecnocratic_reform
 		cost = 10
 		completion_reward = {
+			set_cosmetic_tag = FORM_SOUs
 			if = {
 				limit = { has_completed_focus = bra_monarquia_focus }
 				if = {

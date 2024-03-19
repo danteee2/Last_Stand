@@ -12,11 +12,11 @@ state={
 	}
 
 	history={
-		owner = CHL
+		owner = BRA
 		buildings = {
 			infrastructure = 3 #was: 5
 			arms_factory = 1
-			industrial_complex = 7
+			industrial_complex = 1
 			air_base = 3
 			8222 = {
 				naval_base = 5
@@ -28,7 +28,7 @@ state={
 				bunker = 1
 			}
 		}
-		add_core_of = CHL
+		add_core_of = BRA
 		victory_points = {
 			650 10
 		}

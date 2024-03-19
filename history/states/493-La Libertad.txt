@@ -10,10 +10,10 @@ state={
 	state_category = town
 
 	history={
-		owner = COL
+		owner = BRA
 		buildings = {
 			infrastructure = 2 #was 3
-			industrial_complex = 2
+			industrial_complex = 1
 			dockyard = 1
 			air_base = 4
 			12790 = {
@@ -23,7 +23,7 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = COL
+		add_core_of = BRA
 		victory_points = {
 			2023 1 
 		}

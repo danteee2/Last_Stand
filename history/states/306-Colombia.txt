@@ -7,14 +7,14 @@ state={
 	state_category = city
 	
 	history={
-		owner = COL
+		owner = BRA
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
-			industrial_complex = 5
+			industrial_complex = 2
 			air_base = 2
 		}
-		add_core_of = COL
+		add_core_of = BRA
 		victory_points = {
 			10747 10
 		}
