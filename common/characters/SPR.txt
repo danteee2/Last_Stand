@@ -971,11 +971,11 @@ characters={
 				}
 			}
 			corps_commander={
-				traits={ career_officer harsh_leader trait_SPA_nationalist_sympathies }
-				skill=4
-				attack_skill=5
+				traits={ career_officer harsh_leader trait_SPA_nationalist_sympathies panzer_leader ranger hill_fighter organizers trickster }
+				skill=6
+				attack_skill=6
 				defense_skill=2
-				planning_skill=3
+				planning_skill=5
 				logistics_skill=3
 				legacy_id=1109
 			}
@@ -1278,9 +1278,9 @@ characters={
 			}
 
 			corps_commander={
-				traits={ brilliant_strategist trait_reckless harsh_leader air_force_ties trait_SPA_nationalist_sympathies }
-				skill=3
-				attack_skill=4
+				traits={ brilliant_strategist trait_reckless harsh_leader trait_SPA_nationalist_sympathies panzer_leader ranger hill_fighter organizer }
+				skill=5
+				attack_skill=5
 				defense_skill=2
 				planning_skill=2
 				logistics_skill=2
