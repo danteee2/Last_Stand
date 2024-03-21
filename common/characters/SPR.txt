@@ -971,7 +971,7 @@ characters={
 				}
 			}
 			corps_commander={
-				traits={ career_officer harsh_leader trait_SPA_nationalist_sympathies panzer_leader ranger hill_fighter organizers trickster }
+				traits={ career_officer harsh_leader trait_SPA_nationalist_sympathies panzer_leader ranger hill_fighter organizers trickster cavalry_leader }
 				skill=6
 				attack_skill=6
 				defense_skill=2
@@ -1278,7 +1278,7 @@ characters={
 			}
 
 			corps_commander={
-				traits={ brilliant_strategist trait_reckless harsh_leader trait_SPA_nationalist_sympathies panzer_leader ranger hill_fighter organizer }
+				traits={ brilliant_strategist trait_reckless harsh_leader trait_SPA_nationalist_sympathies panzer_leader ranger hill_fighter organizer cavalry_leaders }
 				skill=5
 				attack_skill=5
 				defense_skill=2

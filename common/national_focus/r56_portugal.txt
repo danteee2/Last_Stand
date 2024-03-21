@@ -491,9 +491,7 @@ focus_tree = {
 		prerequisite = { focus = POR_minas_de_cromio }
 		prerequisite = { focus = POR_minas_de_ferro }
 		available = {
-			POR = {
-				controls_state = 540
-			}
+		
 		}
 		
 		x = 1
@@ -503,7 +501,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			540 = {
+			112 = {
                     add_building_construction = {
                         type = infrastructure
                         level = 2
@@ -1659,7 +1657,6 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = por_military_youth_focus
 			army_experience = 20
-			add_ideas = ideological_fanaticism_focus
 			set_rule = {
 				can_create_factions = yes
 			}

@@ -181,54 +181,6 @@ units = {
 		start_experience_factor = 0.3
 	}
 
-	### Colonial Forces ###
-	division = { # "Caçadores de Azores"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 21
-		}
-		location = 1751
-		division_template = "Força de Caçadores"
-		start_experience_factor = 0.3
-	}
-
-	division = { # "1a Caçadores de Angola"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 22
-		}
-		location = 8248
-		division_template = "Força de Caçadores"
-		start_experience_factor = 0.3
-	}
-	division = { # "2a Caçadores de Angola"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 23
-		}
-		location = 10966
-		division_template = "Força de Caçadores"
-		start_experience_factor = 0.3
-	}
-
-	division = { # "1a Caçadores de Moçambique"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 24
-		}
-		location = 8245
-		division_template = "Força de Caçadores"
-		start_experience_factor = 0.3
-	}
-	division = { # "2a Caçadores de Moçambique"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 25
-		}
-		location = 8245
-		division_template = "Força de Caçadores"
-		start_experience_factor = 0.3
-	}
 }
 
 instant_effect = {

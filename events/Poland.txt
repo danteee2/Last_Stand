@@ -36,6 +36,10 @@ country_event = {
 		name = poland.111.r
 		GER = {
 			if = {
+				limit = { POL = { owns_state = 85 controls_state = 72 } }
+				transfer_state = 72
+			}
+			if = {
 				limit = { POL = { owns_state = 85 controls_state = 85 } }
 				transfer_state = 85
 			}
