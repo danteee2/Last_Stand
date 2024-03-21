@@ -976,10 +976,7 @@ focus_tree = {
 		id = SPA_the_corpo_truppe_volontarie
 		available = {
 			NOT = { has_global_flag = scw_over }
-			has_volunteers_amount_from = {
-				tag = ITA
-				count > 0
-			}
+			
 		}
 		prerequisite = { focus = SPA_the_phalanx_ascendant focus = SPA_unify_the_nationalist_front }
 		
@@ -1015,10 +1012,7 @@ focus_tree = {
 		id = SPA_the_condor_legion
 		available = {
 			NOT = { has_global_flag = scw_over }
-			has_volunteers_amount_from = {
-				tag = GER
-				count > 0
-			}
+		
 		}
 		prerequisite = { focus = SPA_the_phalanx_ascendant focus = SPA_unify_the_nationalist_front }
 		
@@ -1056,16 +1050,7 @@ focus_tree = {
 		id = SPA_equipment_shipments
 		available = {
 			NOT = { has_global_flag = scw_over }
-			OR = {
-				has_volunteers_amount_from = {
-					tag = ITA
-					count > 0
-				}
-				has_volunteers_amount_from = {
-					tag = GER
-					count > 0
-				}
-			}
+		
 		}
 		prerequisite = { focus = SPA_the_corpo_truppe_volontarie }
 		prerequisite = { focus = SPA_the_condor_legion }
@@ -1096,16 +1081,7 @@ focus_tree = {
 		id = SPA_obtain_training_staff
 		available = {
 			NOT = { has_global_flag = scw_over }
-			OR = {
-				has_volunteers_amount_from = {
-					tag = ITA
-					count > 0
-				}
-				has_volunteers_amount_from = {
-					tag = GER
-					count > 0
-				}
-			}
+		 
 		}
 		prerequisite = { focus = SPA_equipment_shipments }
 		
@@ -1128,16 +1104,7 @@ focus_tree = {
 		id = SPA_doctrinal_advancements
 		available = {
 			NOT = { has_global_flag = scw_over }
-			OR = {
-				has_volunteers_amount_from = {
-					tag = ITA
-					count > 0
-				}
-				has_volunteers_amount_from = {
-					tag = GER
-					count > 0
-				}
-			}
+		
 		}
 		prerequisite = { focus = SPA_equipment_shipments }
 		
@@ -3504,6 +3471,25 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			hidden_effect = {
+				41 = { add_core_of = ROOT }
+				169 = { add_core_of = ROOT }
+				170 = { add_core_of = ROOT }
+				789 = { add_core_of = ROOT }
+				173 = { add_core_of = ROOT }
+				168 = { add_core_of = ROOT }
+				167 = { add_core_of = ROOT }
+				165 = { add_core_of = ROOT }
+				794 = { add_core_of = ROOT }
+				166 = { add_core_of = ROOT }
+				792 = { add_core_of = ROOT }
+				790 = { add_core_of = ROOT }
+				793 = { add_core_of = ROOT }
+				788 = { add_core_of = ROOT }
+				166 = { add_core_of = ROOT }
+			}
+				
+			
 			add_timed_idea = { idea = SPA_national_recovery_1 days = 1825 }
 			random_owned_controlled_state = {
 				limit = {

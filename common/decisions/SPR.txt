@@ -17156,6 +17156,7 @@ SPR_the_seeds_of_revolution = {
 		state_target = yes
 
 		on_map_mode = map_only
+		
 
 		#targets = {  }
 

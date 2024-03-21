@@ -16,6 +16,23 @@ focus_tree = {
 	continuous_focus_position = { x = 800 y = 1000 }	
 
 	focus = {
+		id = Investment
+		icon = GFX_focus_ger_reichskommisariats
+		prerequisite = { focus = POR_acores }
+		cost = 10
+		x = 4
+		y = 2
+		available = {
+			SPR = {
+				is_ai = no
+			}
+		}
+		completion_reward = { 
+			add_ideas = Investments
+		}
+	}
+
+	focus = {
 		id = POR_desenvolver_o_interior
 		icon = GFX_goal_generic_position_armies
 		x = 1
@@ -362,7 +379,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-                698 = {
+                112 = {
                     add_building_construction = {
                         type = infrastructure
                         level = 1
@@ -380,42 +397,7 @@ focus_tree = {
             search_filters = { FOCUS_FILTER_INDUSTRY }
 		}
 	
-	focus = {
-		id = POR_acores_fort
-		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = POR_acores }
-		x = 4
-		y = 2
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}	
-	completion_reward = {
-                698 = {
-                    add_building_construction = {
-					type = coastal_bunker
-					level = 2
-					province = 1751
-					instant_build = yes
-                }
-                    add_building_construction = {
-					type = air_base
-					level = 5
-					#province = 1751
-					instant_build = yes
-                }
-                    add_building_construction = {
-					type = anti_air_building
-					level = 2
-					#province = 1751
-					instant_build = yes
-                }
-
-            }
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		
-	}
+	
 
 	focus = {
 		id = POR_madeira

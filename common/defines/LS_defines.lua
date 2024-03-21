@@ -12,8 +12,6 @@ NDefines.NDiplomacy.MIN_WARGOAL_JUSTIFY_COST = 7.0					-- It always takes atleas
 NDefines.NDiplomacy.PEACE_SCORE_PER_PASS = 100.0
 ----------------------------------
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 30						-- Events are checked every X day per country or state (1 is ideal, but CPU heavy)
-NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 30
-NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 40
 ----------------------------------
 NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0					-- XP cost for adding a new equipment module in an empty slot when creating an equipment variant.
 NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0				-- XP cost for replacing one equipment module with an unrelated module when creating an equipment variant.
@@ -32,6 +30,11 @@ NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 50.0 --#base game 30 changed t
 NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 2.5		-- Base year ahead penalty
 NDefines.NTechnology.BASE_TECH_COST = 80					-- Base cost for a tech. multiplied with tech cost and ahead of time penalties
 ----------------------------------
+NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0.5			    -- Volunteer shit to prevent 2w spam
+NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0.5				    -- Volunteer shit to prevent 2w spam
+NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 1				    -- Volunteer shit to prevent 2w spam
+NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 9999						    -- Unlimited special forces
+NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.00   
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 50
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 50
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 5000
@@ -92,8 +95,7 @@ NDefines.NDiplomacy.MAX_OPINION_FROM_VOLUNTEERS = 50				-- Opinion bonus per one
 NDefines.NDiplomacy.OPINION_FOR_DEMO_FROM_WT_GENERATION = -1.0		-- How much less do democracies like us if we generate world tension
 
 
-NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 0.1
-NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 40
+
 NDefines.NCountry.BASE_RESEARCH_SLOTS = 3
 NDefines.NCountry.FEMALE_UNIT_LEADER_BASE_CHANCE = { 
         -- applies as a factor to female unit leader randomization

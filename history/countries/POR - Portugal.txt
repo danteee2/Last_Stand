@@ -9,6 +9,9 @@ if = {
 		set_naval_oob = "POR_1936_naval_legacy"
 	}
 }
+add_ideas = {
+	SPA_la_division_azul
+}
 
 set_war_support = 0.15
 set_stability = 0.6 

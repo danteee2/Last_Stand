@@ -1,5 +1,33 @@
 ideas = {
 	country = {
+		Investments = {
+			picture = generic_foreign_capital
+
+			modifier = {
+				global_building_slots_factor = 0.25
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
+
+		SPA_la_division_azul = {
+
+			picture = SPA_la_division_azul
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				send_volunteer_size = 999
+				send_volunteer_divisions_required = -0.25
+				send_volunteers_tension = -0.20
+			}
+		}
 		POR_civil_war_surrender_debuff = {
 			picture = generic_army_problems
 			allowed = {
