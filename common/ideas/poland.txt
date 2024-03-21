@@ -2,6 +2,12 @@ ideas = {
 
 country = {
 
+	No_invade = {
+		modifier = {
+			enemy_justify_war_goal_time = 200000
+		}
+	}
+
 	POL_new_military_academy_idea = {
 
 		allowed = {
