@@ -1,6 +1,5 @@
 NDefines.NFocus.FOCUS_POINT_DAYS = 3.5 -- 2x focuses
 
-NDefines.NGame.GAME_SPEED_SECONDS = { 1000.0, 0.25, 0.19, 0.06, 0.0 } 
 NDefines.NDiplomacy.DIPLOMACY_REQUEST_EXPIRY_DAYS = 30
 NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_KICKING_NEW_MEMBERS_OF_FACTION = 1			-- Number of days before being able to kick a new member of faction
 NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_REINVITE_KICKED_NATIONS = 1			-- Number of days before being able to re invite a kicked nation to your faction
