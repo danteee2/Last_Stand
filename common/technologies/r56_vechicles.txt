@@ -720,53 +720,7 @@ technologies = {
 
 	###------> New Mechanized Infantry   <><> <><> <><> <><> <><>
 
-	mechanised_infantry_a = {
-
-		enable_equipments = {
-			mechanized_equipment_x
-		}
-
-		mechanized = {
-			soft_attack = 0.10
-			hard_attack = 0.10
-		}
-
-		mech_shocktroop = {
-			soft_attack = 0.10
-			hard_attack = 0.10
-		}
-
-		amphibious_mechanized = {
-			soft_attack = 0.10
-			hard_attack = 0.10
-		}
-
-		research_cost = 3
-		start_year = 1949
-		folder = {
-			name = r56_vechicles_folder
-			position = { x = -7 y = 22 }
-		}
-		
-		categories = {
-			motorized_equipment
-			infantry_tech
-			cat_mechanized_equipment
-			cat_light_armor
-		}
-		
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				tag = USA
-				factor = 2
-			}
-			modifier = {
-				tag = CAN
-				factor = 2
-			}			
-		}
-	}
+	
 
 	###------> LaR Armored Car <><> <><> <><> <><> <><>
 	armored_car1 = {
