@@ -7,7 +7,15 @@
  #  #  # #  # # # ## 
 
  #################### 
+ POR_porsche = {
+	include = generic_heavy_tank_organization
+	icon = GFX_idea_porsche
+	allowed = { 
+		tag = POR
+	}
 
+	
+}#
 POR_fiat_p_organization = {
 	name = fiat_p
 	include = generic_mobile_tank_organization

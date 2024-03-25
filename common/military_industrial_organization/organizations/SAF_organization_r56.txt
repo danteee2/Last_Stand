@@ -16,6 +16,15 @@ SAF_cape_town_yard_organization = {
 		}
 	}	
 }
+SAF_Vickars = {
+	include = generic_heavy_tank_organization
+	icon = GFX_idea_vickers_armstrong_bel
+	allowed = { 
+		tag = SAF
+	}
+
+	
+}#
 
 SAF_durban_yard_organization = {
 	name = SAF_durban_yard

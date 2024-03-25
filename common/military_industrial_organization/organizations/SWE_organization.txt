@@ -47,6 +47,16 @@ SWE_landsverk_organization = {
 	}
 }#
 
+SWE_porsche = {
+	include = generic_heavy_tank_organization
+	icon = GFX_idea_porsche
+	allowed = { 
+		tag = SWE
+	}
+
+	
+}#
+
 #####################
 
  ## #  # ### ###   ## 
