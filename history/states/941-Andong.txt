@@ -7,8 +7,8 @@ state={
 	manpower=4324174
 	state_category=rural
 	history={
-		owner = MAN
-		add_core_of = MAN
+		owner = JAP
+		add_core_of = JAP
 		add_core_of = CHI
 		victory_points = {
 			6981 1

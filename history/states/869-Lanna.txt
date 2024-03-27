@@ -11,8 +11,8 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		owner = SIA
-		add_core_of = SIA
+		owner = JAP
+		add_core_of = JAP
 	}
 	manpower=2000000
 	state_category = rural

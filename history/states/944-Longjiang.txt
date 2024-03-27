@@ -5,8 +5,8 @@ state={
 		1499 1588 1627 4506 4561 7613 7832 7897 12485 12618 13272
 	}
 	history={
-		owner = MAN
-		add_core_of = MAN
+		owner = JAP
+		add_core_of = JAP
 		add_core_of = CHI
 		victory_points = {
 			4506 8

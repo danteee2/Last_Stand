@@ -8,8 +8,8 @@ state={
 	manpower=2324174
 	state_category=pastoral
 	history={
-		owner = MAN
-		add_core_of = MAN
+		owner = JAP
+		add_core_of = JAP
 		add_core_of = CHI
 		
 		buildings = {

@@ -2583,7 +2583,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_further_armament_program
-		icon = GFX_focus_secret_rearmament
+		icon = GFX_focus_chi_reach_out_to_france
 		cost = 10
 		prerequisite = {
 			focus = FRA_wartime_organisation_act

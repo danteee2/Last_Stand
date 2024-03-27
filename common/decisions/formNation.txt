@@ -216,21 +216,7 @@ formable_nations_mod_category = {
 					}
 				}
 			}
-			custom_trigger_tooltip = {
-				tooltip = germany_expansion_continued_requirement_tooltip
-				OR = {
-					AND = {
-						OR = {
-							39 = { is_controlled_by = ROOT }
-							28 = { is_controlled_by = ROOT }
-						}
-					}
-					AND = {
-						has_global_flag = debug_mode
-						is_ai = no
-					}
-				}
-			}
+			
 			custom_trigger_tooltip = { tooltip = not_already_existing_tt NOT = { any_country = { has_cosmetic_tag = FORM_GRO } } }
 		}
 		icon = formable_nations_grossdeutschland

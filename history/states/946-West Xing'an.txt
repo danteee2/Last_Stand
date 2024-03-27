@@ -7,8 +7,8 @@ state={
 	manpower=1724174
 	state_category=rural
 	history={
-		owner = MAN
-		add_core_of = MAN
+		owner = JAP
+		add_core_of = JAP
 		add_core_of = CHI
 		
 		buildings = {

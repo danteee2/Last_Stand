@@ -4,8 +4,8 @@ state={
 	name="STATE_610" # Jehol
 
 	history={
-		owner = MAN
-		add_core_of = MAN
+		owner = JAP
+		add_core_of = JAP
 		add_core_of = CHI
 		
 		buildings = {
