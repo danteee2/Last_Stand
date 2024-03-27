@@ -53,6 +53,8 @@ country = {
 		rule = {
 			can_access_market = no
 		}
+
+		picture = TUR_no_player
 	}
 
 	TUR_kemalist_army_officers_powerful_loyal = { 
@@ -98,32 +100,32 @@ country = {
 		}
 	}
 
-	TUR_disorganized_armed_forces_idea_dud = { 
-
-		name = TUR_disorganized_armed_forces_dynamic_modifier
-
-		allowed = {
-			original_tag = TUR
-		}
-
-		allowed_civil_war = {
-			always = yes
-		}
-
-		picture = tur_disorganised_armed_forces
-			
-		removal_cost = -1
-			
-		modifier = {
-			naval_coordination = -0.15
-			army_speed_factor = -0.1
-			army_org_factor = -0.1
-			air_accidents_factor = 0.15
-			war_support_factor = -0.15
-			training_time_factor = 0.25
-			minimum_training_level = -0.1
-		}
-	}
+#	TUR_disorganized_armed_forces_idea_dud = { 
+#
+#		name = TUR_disorganized_armed_forces_dynamic_modifier
+#
+#		allowed = {
+#			original_tag = TUR
+#		}
+#
+#		allowed_civil_war = {
+#			always = yes
+#		}
+#
+#		picture = tur_disorganised_armed_forces
+#			
+#		removal_cost = -1
+#			
+#		modifier = {
+#			naval_coordination = -0.15
+#			army_speed_factor = -0.1
+#			army_org_factor = -0.1
+#			air_accidents_factor = 0.15
+#			war_support_factor = -0.15
+#			training_time_factor = 0.25
+#			minimum_training_level = -0.1
+#		}
+#	}
 
 	TUR_kemalist_army_officers_limited_power_loyal_dud = { 
 
