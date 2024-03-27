@@ -44,6 +44,7 @@ ideas = {
 country = {
 
 	TUR_NO_PLAYER_BLACK_NATION = {
+		picture = TUR_no_player
 		modifier = {
 			enemy_justify_war_goal_time = 20000
 			industrial_capacity_factory = -2000
@@ -53,8 +54,6 @@ country = {
 		rule = {
 			can_access_market = no
 		}
-
-		picture = TUR_no_player
 	}
 
 	TUR_kemalist_army_officers_powerful_loyal = { 
