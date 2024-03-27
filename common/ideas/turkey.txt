@@ -521,25 +521,25 @@ country = {
 		}
 	}
 
-	TUR_sectarian_woes = { 
-
-		allowed = {
-			original_tag = TUR
-		}
-
-		allowed_civil_war = {
-			always = yes
-		}
-
-		picture = tur_sectarian_woes
-			
-		removal_cost = -1
-			
-		modifier = {
-			stability_factor = -0.15
-			war_support_factor = -0.15
-		}
-	}
+#	TUR_sectarian_woes = { 
+#
+#		allowed = {
+#			original_tag = TUR
+#		}
+#
+#		allowed_civil_war = {
+#			always = yes
+#		}
+#
+#		picture = tur_sectarian_woes
+#			
+#		removal_cost = -1
+#			
+#		modifier = {
+#			stability_factor = -0.15
+#			war_support_factor = -0.15
+#		}
+#	}
 
 	TUR_sectarian_woes_1 = { 
 
