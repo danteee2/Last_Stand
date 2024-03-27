@@ -153,8 +153,8 @@ focus_tree = {
 			focus = FRA_radicalize_front
 			focus = FRA_action_francaise
 		}
-		relative_position_id = FRA_rearmament	#dont use political ones, which may be hidden
-		x = 10
+		relative_position_id = FRA_giraud_plan
+		x = -10
 		y = 0
 		offset = {
 			x = -5
@@ -164,21 +164,6 @@ focus_tree = {
 				has_game_rule = {
 					rule = obsolete_focus_branches_visibility
 					option = HIDE
-				}
-			}
-		}
-		allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					has_completed_focus = FRA_radicalize_front
-					has_completed_focus = FRA_far_right_leagues
-					has_completed_focus = FRA_action_francaise
 				}
 			}
 		}
@@ -192,7 +177,6 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 			add_political_power = 120
-			mark_focus_tree_layout_dirty = yes
 		}
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 	}
@@ -495,6 +479,7 @@ focus_tree = {
 							level = 3
 							instant_build = yes
 						}
+						add_extra_state_shared_building_slots = 8
 						add_core_of = FRA
 					}
 				}
@@ -524,7 +509,7 @@ focus_tree = {
 							instant_build = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 10
+					add_extra_state_shared_building_slots = 8
 					add_building_construction = {
 						type = industrial_complex
 						level = 1
@@ -2687,10 +2672,6 @@ focus_tree = {
 				neutrality < 0.1
 				fascism < 0.1
 			}
-			modifier = {
-				factor = 1.5
-				has_completed_focus = FRA_radicalize_front
-			}
 		}
 		completion_reward = {
 			set_temp_variable = { FRA_rw_support = party_popularity@neutrality }
@@ -4599,47 +4580,7 @@ focus_tree = {
 		}
 		x = 19
 		y = 0
-		offset = {
-			x = -20
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = FRA_action_francaise
-			}
-		}
-		offset = {
-			x = -18
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				OR = {
-					has_completed_focus = FRA_brumaire_movement
-					has_completed_focus = FRA_support_the_legitimatises
-					has_completed_focus = FRA_side_with_the_orleanists
-				}
-			}
-		}
-		offset = {
-			x = -47
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				OR = {
-					has_completed_focus = FRA_status_quo
-					has_completed_focus = FRA_far_right_leagues
-					has_completed_focus = FRA_radicalize_front
-				}
-			}
-		}
+		
 		relative_position_id = FRA_rearmament
 		ai_will_do = {
 			factor = 2
