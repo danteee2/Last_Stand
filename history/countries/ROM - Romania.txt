@@ -158,6 +158,7 @@ if = {
 	}
 	give_guarantee = CZE
 	give_guarantee = GRE
+	give_guarantee = TUR
 	give_guarantee = YUG
 }
 if = {
@@ -166,6 +167,7 @@ if = {
 		has_dlc = "Battle for the Bosporus"
 	}
 	give_guarantee = GRE
+	give_guarantee = TUR
 	give_guarantee = YUG
 }
 add_ideas = neutrality_idea
