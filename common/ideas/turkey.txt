@@ -255,26 +255,26 @@ country = {
 #		}
 #	}
 
-	TUR_kemalist_army_officers_limited_power_loyal = { 
-
-		allowed = {
-			original_tag = TUR
-		}
-
-		allowed_civil_war = {
-			always = yes
-		}
-
-		picture = tur_kemalist_army_officers_limited_power_loyal
-			
-		removal_cost = -1
-			
-		modifier = {
-			stability_factor = 0.05
-			max_planning = 0.1
-			experience_gain_army_factor = -0.1
-		}
-	}
+#	TUR_kemalist_army_officers_limited_power_loyal = { 
+#
+#		allowed = {
+#			original_tag = TUR
+#		}
+#
+#		allowed_civil_war = {
+#			always = yes
+#		}
+#
+#		picture = tur_kemalist_army_officers_limited_power_loyal
+#			
+#		removal_cost = -1
+#			
+#		modifier = {
+#			stability_factor = 0.05
+#			max_planning = 0.1
+#			experience_gain_army_factor = -0.1
+#		}
+#	}
 
 	TUR_kemalist_army_officers_limited_power_neutral = { 
 
